@@ -5,7 +5,7 @@ Resource  ../../../Resources/DefinedKeywords.robot
 Resource  ../../../Resources/PageObjects/BarronsArticlePage.robot
 Resource  ../../../Resources/PageObjects/BarronsPreferenceCenterPage.robot
 
-Test Setup  CommonFunctionality.Start S Dev Barrons Article
+Test Setup  CommonFunctionality.Start Stage Barrons Article
 Test Teardown  CommonFunctionality.Finish Testcase
 
 *** Variables ***
