@@ -17,3 +17,11 @@ Validate the follow button from article page
 
     DefinedKeywords.Validate Follow Button
     DefinedKeywords.Click Follow Button
+    DefinedKeywords.Set Implicit Wait
+#    DefinedKeywords.Validate Sign In Modal
+    DefinedKeywords.Click Modal Sign In Button
+    DefinedKeywords.Sign In Process
+    DefinedKeywords.Set Implicit Wait
+    DefinedKeywords.Validate Follow Button
+    DefinedKeywords.Click Follow Button
+    DefinedKeywords.Set Implicit Wait
