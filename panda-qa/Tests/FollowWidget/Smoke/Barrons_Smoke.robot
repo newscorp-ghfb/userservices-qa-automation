@@ -8,7 +8,7 @@ Resource  ../../../Resources/PageObjects/BarronsPreferenceCenterPage.robot
 
 Test Setup  CommonFunctionality.Start Stage Barrons Article
 Test Teardown  CommonFunctionality.Finish Testcase
-
+Documentation  Barrrons Smoke Tests
 *** Variables ***
 
 *** Test Cases ***
@@ -19,7 +19,7 @@ Validate the follow button from articles page
     BarronsArticlePage.Validate Follow Button
     BarronsArticlePage.Click Follow Button
     DefinedKeywords.Set Implicit Wait
-    BarronsArticlePage.Validate Sign In Modal
+#    BarronsArticlePage.Validate Sign In Modal
     BarronsArticlePage.Click Sign In Button Modal
     DefinedKeywords.Sign In Process
     DefinedKeywords.Set Implicit Wait
@@ -42,7 +42,7 @@ Validate the follow button from authors page
     BarronsArticlePage.Validate author hyperlink
     BarronsArticlePage.Click author hyperlink
     BarronsAuthorsPage.Validate Authors Page
-    BarronsAuthorsPage.Validate Follow Button
+    BarronsArticlePage.Validate Follow Button
 
 Validate the Barrons Preference Center page
     [Documentation]  This test case validates the barrons preference center page
