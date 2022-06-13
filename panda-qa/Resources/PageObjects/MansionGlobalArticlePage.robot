@@ -2,10 +2,9 @@
 Library  SeleniumLibrary
 
 *** Variables ***
-${JSFollowButtonPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
-    ...  .querySelector('ufc-follow-widget')  #2
-    ...  .querySelector('ufc-follow-button').shadowRoot  #3
-    ...  .querySelector('button')  #4
+${JSFollowButtonGMPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
+    ...  .querySelector('ufc-follow-button').shadowRoot  #2
+    ...  .querySelector('button')  #3
 
 
 ${JSFollowSignInButtonPath}=  document.querySelector('ufc-portal')  #1
@@ -24,27 +23,29 @@ ${JSFollowSignInHeaderPath}=  document.querySelector('ufc-portal')  #1
 
 *** Keywords ***
 Validate Follow Button
-    Wait Until Element is Visible  dom:${JSFollowButtonPath}
-    Element Text Should Be  dom:${JSFollowButtonPath}  Follow  timeout=30
+    Wait Until Element is Visible  dom:${JSFollowButtonGMPath}
+    Element Text Should Be  dom:${JSFollowButtonGMPath}  Follow  timeout=30
 
 Validate Following Button
-    Wait Until Element is Visible  dom:${JSFollowButtonPath}
-    Element Text Should Be  dom:${JSFollowButtonPath}  Following  timeout=30
+    Wait Until Element is Visible  dom:${JSFollowButtonGMPath}
+    Element Text Should Be  dom:${JSFollowButtonGMPath}  Following  timeout=30
 
 Click Follow Button
-    Click Button  dom:${JSFollowButtonPath}
-
-Click Following Button
-    Click Button  dom:${JSFollowButtonPath}
+    Click Button  dom:${JSFollowButtonGMPath}
 
 Validate Sign In Modal
     Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}
     Page Should Contain Element  dom:${JSFollowSignInHeaderPath}
 
 Click Sign In Button Modal
+    Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}
+    Click Button  dom:${JSFollowSignInButtonPath}
+
+Click Sign In Button Modal
     Click Button  dom:${JSFollowSignInButtonPath}
 
 Click Undo Link
+    Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[2]/div/div/div[1]/div/div[2]/div/ufc-follow-author-widget//ufc-follow-widget//ufc-snackbar//div/div/button
     Click Button  //*[@id="root"]/div/div/div/div[2]/div/div/div[1]/div/div[2]/div/ufc-follow-author-widget//ufc-follow-widget//ufc-snackbar//div/div/button
 
 Validate Preference Center Pop Up

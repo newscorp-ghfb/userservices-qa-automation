@@ -6,7 +6,7 @@ Resource  ../../../Resources/PageObjects/MansionGlobalArticlePage.robot
 Resource  ../../../Resources/PageObjects/MansionGlobalAuthorsPage.robot
 Resource  ../../../Resources/PageObjects/MansionGlobalPreferenceCenterPage.robot
 
-Test Setup  CommonFunctionality.Start S Dev Mansion Global Article
+Test Setup  CommonFunctionality.Start Mansion Global Article
 Test Teardown  CommonFunctionality.Finish Testcase
 Documentation  MansionGlobal Smoke Tests
 *** Variables ***
@@ -19,7 +19,7 @@ Validate the follow button from articles page
     MansionGlobalArticlePage.Validate Follow Button
     MansionGlobalArticlePage.Click Follow Button
     DefinedKeywords.Set Implicit Wait
-#    MansionGlobalArticlePage.Validate Sign In Modal
+    MansionGlobalArticlePage.Validate Sign In Modal
     MansionGlobalArticlePage.Click Sign In Button Modal
     DefinedKeywords.Sign In Process
     DefinedKeywords.Set Implicit Wait

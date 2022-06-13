@@ -6,7 +6,7 @@ Resource  ../../../Resources/PageObjects/BarronsArticlePage.robot
 Resource  ../../../Resources/PageObjects/BarronsAuthorsPage.robot
 Resource  ../../../Resources/PageObjects/BarronsPreferenceCenterPage.robot
 
-Test Setup  CommonFunctionality.Start Stage Barrons Article
+Test Setup  CommonFunctionality.Start Barrons Article
 Test Teardown  CommonFunctionality.Finish Testcase
 Documentation  Barrrons Smoke Tests
 *** Variables ***
@@ -19,7 +19,6 @@ Validate the follow button from articles page
     BarronsArticlePage.Validate Follow Button
     BarronsArticlePage.Click Follow Button
     DefinedKeywords.Set Implicit Wait
-#    BarronsArticlePage.Validate Sign In Modal
     BarronsArticlePage.Click Sign In Button Modal
     DefinedKeywords.Sign In Process
     DefinedKeywords.Set Implicit Wait
@@ -31,7 +30,6 @@ Validate the follow button from articles page
     BarronsArticlePage.Click Following Button
     BarronsArticlePage.Validate Follow Button
     BarronsArticlePage.Click Follow Button
-    BarronsArticlePage.Validate Preference Center Pop Up
     BarronsArticlePage.Click Preference Center link
     BarronsPreferenceCenterPage.Validate Preference Center page
 
