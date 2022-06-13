@@ -2,11 +2,26 @@
 Library  SeleniumLibrary
 
 *** Variables ***
-${JSFollowButtonPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
+${JSFollowButtonBarronsPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
     ...  .querySelector('ufc-follow-widget')  #2
     ...  .querySelector('ufc-follow-button').shadowRoot  #3
     ...  .querySelector('button')  #4
 
+${JSUndoButtonBarronsPath}=  document.querySelector('ufc-snackbar').shadowRoot  #1
+    ...  .querySelector('div')  #2
+    ...  .querySelector('div')  #3
+    ...  .querySelector('button')  #4
+
+${JSPreferenceCenterLinkBarronsPath}=  document.querySelector('ufc-snackbar').shadowRoot  #1
+    ...  .querySelector('div')  #2
+    ...  .querySelector('div')  #3
+    ...  .querySelector('span')  #4
+    ...  .querySelector('a')  #5
+
+${JSPreferenceCenterPopUpBarronsPath}=  document.querySelector('ufc-snackbar').shadowRoot  #1
+    ...  .querySelector('div')  #2
+    ...  .querySelector('div')  #3
+    ...  .querySelector('span')  #4
 
 ${JSFollowSignInButtonPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('ufc-signin-modal').shadowRoot  #2
@@ -24,35 +39,36 @@ ${JSFollowSignInHeaderPath}=  document.querySelector('ufc-portal')  #1
 
 *** Keywords ***
 Validate Follow Button
-    Wait Until Element is Visible  dom:${JSFollowButtonPath}
-    Element Text Should Be  dom:${JSFollowButtonPath}  Follow  timeout=30
+    Wait Until Element is Visible  dom:${JSFollowButtonBarronsPath}
+    Wait Until Element Contains  dom:${JSFollowButtonBarronsPath}  Follow  timeout=15
+    Element Text Should Be  dom:${JSFollowButtonBarronsPath}  Follow  timeout=15
 
 Validate Following Button
-    Wait Until Element is Visible  dom:${JSFollowButtonPath}
-    Element Text Should Be  dom:${JSFollowButtonPath}  Following  timeout=30
+    Wait Until Element is Visible  dom:${JSFollowButtonBarronsPath}
+    Wait Until Element Contains  dom:${JSFollowButtonBarronsPath}  Following  timeout=15
+    Element Text Should Be  dom:${JSFollowButtonBarronsPath}  Following  timeout=15
 
 Click Follow Button
-    Click Button  dom:${JSFollowButtonPath}
+    Click Button  dom:${JSFollowButtonBarronsPath}
 
 Click Following Button
-    Click Button  dom:${JSFollowButtonPath}
+    Click Button  dom:${JSFollowButtonBarronsPath}
 
 Validate Sign In Modal
     Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}
     Page Should Contain Element  dom:${JSFollowSignInHeaderPath}
 
 Click Sign In Button Modal
+    Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}
     Click Button  dom:${JSFollowSignInButtonPath}
 
 Click Undo Link
-    Click Button  //*[@id="article_body"]/ufc-snackbar//div/div/button
-
-Validate Preference Center Pop Up
-    Page Should Contain  Author Bill Alpert followed! You can change your email alert frequency in
+    Wait Until Element is Visible  dom:${JSUndoButtonBarronsPath}
+    Click Button  dom:${JSUndoButtonBarronsPath}
 
 Click Preference Center Link
-    Click Link  //*[@id="snackbar-message"]/a
-
+    Wait Until Element is Visible  dom:${JSPreferenceCenterLinkBarronsPath}
+    Click Button  dom:${JSPreferenceCenterLinkBarronsPath}
 Validate author hyperlink
     Page Should Contain Element  //*[@id="article-contents"]/header/div[2]/div/div[1]/a/span
 
