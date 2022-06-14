@@ -12,6 +12,7 @@ Set Implicit Wait
     Set Selenium Implicit Wait  25s
 
 Sign In Process
+    Wait Until Element Is Visible  //input[@type='email']
     Click Button  //input[@type='email']
     Input Text  //input[@type='email']  QABARRONSONLY
     Set Selenium Implicit Wait  10s

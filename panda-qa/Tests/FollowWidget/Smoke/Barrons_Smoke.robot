@@ -8,7 +8,6 @@ Resource  ../../../Resources/PageObjects/BarronsPreferenceCenterPage.robot
 
 Test Setup  CommonFunctionality.Start Barrons Article
 Test Teardown  CommonFunctionality.Finish Testcase
-Documentation  Barrrons Smoke Tests
 *** Variables ***
 
 *** Test Cases ***
@@ -51,5 +50,6 @@ Validate the Barrons Preference Center page
     DefinedKeywords.Set Implicit Wait
     BarronsPreferenceCenterPage.Validate Followed Authors
     BarronsPreferenceCenterPage.Validate Following Toggle Feature
+    BarronsPreferenceCenterPage.Click Following Toggle Feature
     BarronsPreferenceCenterPage.Validate Following Toggle Alert Pop up
     BarronsPreferenceCenterPage.Validate Author Updates From Preference Center Reflected In Articles
