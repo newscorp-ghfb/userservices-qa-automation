@@ -8,12 +8,11 @@ Resource  ../../../Resources/PageObjects/MansionGlobalPreferenceCenterPage.robot
 
 Test Setup  CommonFunctionality.Start Mansion Global Article
 Test Teardown  CommonFunctionality.Finish Testcase
-Documentation  MansionGlobal Smoke Tests
 *** Variables ***
 
 *** Test Cases ***
 Validate the follow button from articles page
-    [Documentation]  This test case validates the follow button from articles page
+    [Documentation]  These test cases validate the follow button from articles page
     [Tags]  Smoke
 
     MansionGlobalArticlePage.Validate Follow Button
@@ -35,15 +34,6 @@ Validate the follow button from articles page
     MansionGlobalArticlePage.Click Preference Center link
     MansionGlobalPreferenceCenterPage.Validate Preference Center page
 
-Validate the follow button from authors page
-    [Documentation]  This test case validates the follow button from authors page
-    [Tags]  Smoke
-
-    MansionGlobalArticlePage.Validate author hyperlink
-    MansionGlobalArticlePage.Click author hyperlink
-    MansionGlobalAuthorsPage.Validate Authors Page
-    MansionGlobalArticlePage.Validate Follow Button
-
 Validate the Barrons Preference Center page
     [Documentation]  This test case validates the mansion global preference center page
     [Tags]  Smoke
@@ -53,5 +43,6 @@ Validate the Barrons Preference Center page
     DefinedKeywords.Set Implicit Wait
     MansionGlobalPreferenceCenterPage.Validate Followed Authors
     MansionGlobalPreferenceCenterPage.Validate Following Toggle Feature
+    MansionGlobalPreferenceCenterPage.Click Following Toggle Feature
     MansionGlobalPreferenceCenterPage.Validate Following Toggle Alert Pop up
     MansionGlobalPreferenceCenterPage.Validate Author Updates From Preference Center Reflected In Articles
