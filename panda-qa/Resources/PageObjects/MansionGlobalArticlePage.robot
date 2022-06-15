@@ -26,6 +26,17 @@ ${JSFollowSignInHeaderPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('div.body')  #4
     ...  .querySelector('p')  #5
 
+${JSPreferenceCenterPopUpGlobalMansionPath}=  document.querySelector('ufc-snackbar').shadowRoot  #1
+    ...  .querySelector('div')  #2
+    ...  .querySelector('div')  #3
+    ...  .querySelector('span')  #4
+
+${JSPreferenceCenterLinkGlobalMansionPath}=  document.querySelector('ufc-snackbar').shadowRoot  #1
+    ...  .querySelector('div')  #2
+    ...  .querySelector('div')  #3
+    ...  .querySelector('span')  #4
+    ...  .querySelector('a')  #5
+
 *** Keywords ***
 Validate Follow Button
     Wait Until Element is Visible  dom:${JSFollowButtonGMPath}
@@ -53,11 +64,9 @@ Click Undo Link
     Wait Until Element is Visible  dom:${JSUndoButtonGlobalMansionPath}
     Click Button  dom:${JSUndoButtonGlobalMansionPath}
 
-Validate Preference Center Pop Up
-    Page Should Contain  Author Bill Alpert followed! You can change your email alert frequency in
-
 Click Preference Center Link
-    Click Link  //*[@id="snackbar-message"]/a
+    Wait Until Element is Visible  dom:${JSPreferenceCenterLinkGlobalMansionPath}
+    Click Element  dom:${JSPreferenceCenterLinkGlobalMansionPath}
 
 Validate author name
     Page Should Contain Element  //*[@id="mg-pre-body-article-wrap"]/div[3]/div/div/strong

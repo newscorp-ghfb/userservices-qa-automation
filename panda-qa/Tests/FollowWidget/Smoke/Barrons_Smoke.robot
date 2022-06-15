@@ -17,14 +17,12 @@ Validate the follow button from articles page
 
     BarronsArticlePage.Validate Follow Button
     BarronsArticlePage.Click Follow Button
-    DefinedKeywords.Set Implicit Wait
+    #BarronsArticlePage.Validate Sign In Modal
     BarronsArticlePage.Click Sign In Button Modal
     DefinedKeywords.Sign In Process
-    DefinedKeywords.Set Implicit Wait
     BarronsArticlePage.Validate Following Button
     BarronsArticlePage.Click Following Button
     BarronsArticlePage.Click Undo Link
-    DefinedKeywords.Set Implicit Wait
     BarronsArticlePage.Validate Following Button
     BarronsArticlePage.Click Following Button
     BarronsArticlePage.Validate Follow Button
@@ -47,9 +45,9 @@ Validate the Barrons Preference Center page
 
     BarronsPreferenceCenterPage.Navigate Preference Center page
     DefinedKeywords.Sign In Process
-    DefinedKeywords.Set Implicit Wait
     BarronsPreferenceCenterPage.Validate Followed Authors
     BarronsPreferenceCenterPage.Validate Following Toggle Feature
     BarronsPreferenceCenterPage.Click Following Toggle Feature
     BarronsPreferenceCenterPage.Validate Following Toggle Alert Pop up
+    BarronsPreferenceCenterPage.Navigate Article page
     BarronsPreferenceCenterPage.Validate Author Updates From Preference Center Reflected In Articles

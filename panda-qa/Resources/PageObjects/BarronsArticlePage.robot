@@ -40,8 +40,7 @@ ${JSFollowSignInHeaderPath}=  document.querySelector('ufc-portal')  #1
 *** Keywords ***
 Validate Follow Button
     Wait Until Element is Visible  dom:${JSFollowButtonBarronsPath}
-    Wait Until Element Contains  dom:${JSFollowButtonBarronsPath}  Follow  timeout=15
-    Element Text Should Be  dom:${JSFollowButtonBarronsPath}  Follow  timeout=15
+    Element Text Should Be  dom:${JSFollowButtonBarronsPath}  Follow  timeout=30
 
 Validate Following Button
     Wait Until Element is Visible  dom:${JSFollowButtonBarronsPath}
@@ -59,8 +58,8 @@ Validate Sign In Modal
     Page Should Contain Element  dom:${JSFollowSignInHeaderPath}
 
 Click Sign In Button Modal
-    Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}
-    Click Button  dom:${JSFollowSignInButtonPath}
+    #Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}
+    Click Element  dom:${JSFollowSignInButtonPath}
 
 Click Undo Link
     Wait Until Element is Visible  dom:${JSUndoButtonBarronsPath}
@@ -69,6 +68,7 @@ Click Undo Link
 Click Preference Center Link
     Wait Until Element is Visible  dom:${JSPreferenceCenterLinkBarronsPath}
     Click Button  dom:${JSPreferenceCenterLinkBarronsPath}
+
 Validate author hyperlink
     Page Should Contain Element  //*[@id="article-contents"]/header/div[2]/div/div[1]/a/span
 

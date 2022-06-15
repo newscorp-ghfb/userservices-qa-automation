@@ -17,20 +17,14 @@ Validate the follow button from articles page
 
     MansionGlobalArticlePage.Validate Follow Button
     MansionGlobalArticlePage.Click Follow Button
-    DefinedKeywords.Set Implicit Wait
     MansionGlobalArticlePage.Validate Sign In Modal
     MansionGlobalArticlePage.Click Sign In Button Modal
     DefinedKeywords.Sign In Process
-    DefinedKeywords.Set Implicit Wait
     MansionGlobalArticlePage.Validate Following Button
     MansionGlobalArticlePage.Click Following Button
     MansionGlobalArticlePage.Click Undo Link
-    DefinedKeywords.Set Implicit Wait
-    MansionGlobalArticlePage.Validate Following Button
-    MansionGlobalArticlePage.Click Following Button
     MansionGlobalArticlePage.Validate Follow Button
     MansionGlobalArticlePage.Click Follow Button
-    MansionGlobalArticlePage.Validate Preference Center Pop Up
     MansionGlobalArticlePage.Click Preference Center link
     MansionGlobalPreferenceCenterPage.Validate Preference Center page
 
@@ -40,9 +34,10 @@ Validate the Barrons Preference Center page
 
     MansionGlobalPreferenceCenterPage.Navigate Preference Center page
     DefinedKeywords.Sign In Process
-    DefinedKeywords.Set Implicit Wait
     MansionGlobalPreferenceCenterPage.Validate Followed Authors
     MansionGlobalPreferenceCenterPage.Validate Following Toggle Feature
     MansionGlobalPreferenceCenterPage.Click Following Toggle Feature
     MansionGlobalPreferenceCenterPage.Validate Following Toggle Alert Pop up
-    MansionGlobalPreferenceCenterPage.Validate Author Updates From Preference Center Reflected In Articles
+    MansionGlobalPreferenceCenterPage.Click Following Toggle Alert Pop up
+    MansionGlobalPreferenceCenterPage.Navigate Article page
+    MansionGlobalArticlePage.Validate Follow Button
