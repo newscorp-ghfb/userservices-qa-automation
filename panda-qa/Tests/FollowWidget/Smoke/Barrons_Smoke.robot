@@ -49,5 +49,6 @@ Validate the Barrons Preference Center page
     BarronsPreferenceCenterPage.Validate Following Toggle Feature
     BarronsPreferenceCenterPage.Click Following Toggle Feature
     BarronsPreferenceCenterPage.Validate Following Toggle Alert Pop up
+    BarronsPreferenceCenterPage.Click Following Toggle Alert Pop up
     BarronsPreferenceCenterPage.Navigate Article page
-    BarronsPreferenceCenterPage.Validate Author Updates From Preference Center Reflected In Articles
+    BarronsArticlePage.Validate Follow Button
