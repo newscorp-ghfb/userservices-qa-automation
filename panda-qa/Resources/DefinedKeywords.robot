@@ -9,7 +9,7 @@ Library  SeleniumLibrary
 *** Keywords ***
 
 Set Implicit Wait
-    Set Selenium Implicit Wait  25s
+    Set Selenium Implicit Wait  15000s
 
 Sign In Process
     Wait Until Element Is Visible  //input[@type='email']

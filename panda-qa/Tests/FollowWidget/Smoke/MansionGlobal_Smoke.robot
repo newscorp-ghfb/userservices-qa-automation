@@ -23,6 +23,11 @@ Validate the follow button from articles page
     MansionGlobalArticlePage.Validate Following Button
     MansionGlobalArticlePage.Click Following Button
     MansionGlobalArticlePage.Click Undo Link
+    MansionGlobalArticlePage.Validate Author Label
+    DefinedKeywords.Set Implicit Wait
+    MansionGlobalArticlePage.Validate Following Button
+    MansionGlobalArticlePage.Click Following Button
+    DefinedKeywords.Set Implicit Wait
     MansionGlobalArticlePage.Validate Follow Button
     MansionGlobalArticlePage.Click Follow Button
     MansionGlobalArticlePage.Click Preference Center link

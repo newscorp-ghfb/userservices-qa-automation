@@ -40,11 +40,11 @@ ${JSPreferenceCenterLinkGlobalMansionPath}=  document.querySelector('ufc-snackba
 *** Keywords ***
 Validate Follow Button
     Wait Until Element is Visible  dom:${JSFollowButtonGMPath}
-    Element Text Should Be  dom:${JSFollowButtonGMPath}  Follow  timeout=30
+    Element Text Should Be  dom:${JSFollowButtonGMPath}  Follow  timeout=60s
 
 Validate Following Button
     Wait Until Element is Visible  dom:${JSFollowButtonGMPath}
-    Element Text Should Be  dom:${JSFollowButtonGMPath}  Following  timeout=30
+    Element Text Should Be  dom:${JSFollowButtonGMPath}  Following  timeout=60s
 
 Click Follow Button
     Click Button  dom:${JSFollowButtonGMPath}
@@ -63,10 +63,12 @@ Click Sign In Button Modal
 Click Undo Link
     Wait Until Element is Visible  dom:${JSUndoButtonGlobalMansionPath}
     Click Button  dom:${JSUndoButtonGlobalMansionPath}
+    Wait Until Element is Not Visible  dom:${JSUndoButtonGlobalMansionPath}
 
 Click Preference Center Link
     Wait Until Element is Visible  dom:${JSPreferenceCenterLinkGlobalMansionPath}
     Click Element  dom:${JSPreferenceCenterLinkGlobalMansionPath}
 
-Validate author name
+Validate Author Label
+    Wait Until Element is Visible  //*[@id="mg-pre-body-article-wrap"]/div[3]/div/div/strong
     Page Should Contain Element  //*[@id="mg-pre-body-article-wrap"]/div[3]/div/div/strong

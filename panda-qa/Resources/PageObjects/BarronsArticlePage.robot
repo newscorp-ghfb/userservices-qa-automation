@@ -58,7 +58,7 @@ Validate Sign In Modal
     Page Should Contain Element  dom:${JSFollowSignInHeaderPath}
 
 Click Sign In Button Modal
-    #Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}
+    #Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}  20s
     Click Element  dom:${JSFollowSignInButtonPath}
 
 Click Undo Link
@@ -67,7 +67,7 @@ Click Undo Link
 
 Click Preference Center Link
     Wait Until Element is Visible  dom:${JSPreferenceCenterLinkBarronsPath}
-    Click Button  dom:${JSPreferenceCenterLinkBarronsPath}
+    Click Element  dom:${JSPreferenceCenterLinkBarronsPath}
 
 Validate author hyperlink
     Page Should Contain Element  //*[@id="article-contents"]/header/div[2]/div/div[1]/a/span
