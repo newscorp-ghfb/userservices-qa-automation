@@ -22,5 +22,10 @@ Start Mansion Global Article
     Wait Until Page Contains Element  dom:${JSFollowButtonMGPath}
     Maximize Browser Window
 
+Start FN Article
+    Open Browser  https://www.fnlondon.com/articles/complaints-commissioner-fca-transparency-20220615  ff
+    Wait Until Page Contains Element  dom:${JSFollowButtonBarronsPath}
+    Maximize Browser Window
+
 Finish Testcase
     Close Browser
