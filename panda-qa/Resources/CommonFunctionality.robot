@@ -27,5 +27,18 @@ Start FN Article
     Wait Until Page Contains Element  dom:${JSFollowButtonBarronsPath}
     Maximize Browser Window
 
+Start WSJ Article
+    Open Browser  https://www.wsj.com/articles/israel-headed-for-new-elections-as-coalition-moves-to-dissolve-parliament-11655741947?mod=hp_lead_pos11  ff
+    Wait Until Element Is Visible  //*[@id="__next"]/div/main/article/div/div[2]/div
+    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    Wait Until Element Is Visible  //*[@id="__next"]/div/main/article/div/div[2]/div/span/a
+    Wait Until Element Is Visible  dom:${JSFollowButtonMGPath}  timeout=60s
+    Maximize Browser Window
+
 Finish Testcase
     Close Browser
