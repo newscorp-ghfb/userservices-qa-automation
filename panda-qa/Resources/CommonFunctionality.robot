@@ -36,6 +36,12 @@ Start WSJ Article
     Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
     Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
     Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
     Wait Until Element Is Visible  //*[@id="__next"]/div/main/article/div/div[2]/div/span/a
     Wait Until Element Is Visible  dom:${JSFollowButtonMGPath}  timeout=60s
     Maximize Browser Window

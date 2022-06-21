@@ -12,7 +12,7 @@ Navigate Preference Center page
     Go To  https://www.wsj.com/follow
 
 Navigate Article page
-    Go To  https://www.fnlondon.com/articles/complaints-commissioner-fca-transparency-20220615
+    Go To  https://www.wsj.com/articles/israel-headed-for-new-elections-as-coalition-moves-to-dissolve-parliament-11655741947?mod=hp_lead_pos11
 
 Validate Followed Authors
     Page Should Contain  Authors
