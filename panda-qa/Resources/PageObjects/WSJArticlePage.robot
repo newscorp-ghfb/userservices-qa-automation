@@ -3,9 +3,8 @@ Library  SeleniumLibrary
 
 *** Variables ***
 ${JSFollowButtonWSJPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
-    ...  .querySelector('ufc-follow-widget')  #2
-    ...  .querySelector('ufc-follow-button').shadowRoot  #3
-    ...  .querySelector('button')  #4
+    ...  .querySelector('ufc-follow-button').shadowRoot  #2
+    ...  .querySelector('button')  #3
 
 ${JSUndoButtonWSJPath}=  document.querySelector('ufc-snackbar').shadowRoot  #1
     ...  .querySelector('div')  #2
@@ -39,6 +38,18 @@ ${JSFollowSignInHeaderPath}=  document.querySelector('ufc-portal')  #1
 
 *** Keywords ***
 Validate Follow Button
+    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
     Wait Until Element is Visible  dom:${JSFollowButtonWSJPath}
     Element Text Should Be  dom:${JSFollowButtonWSJPath}  Follow  timeout=30
 
@@ -70,7 +81,7 @@ Click Preference Center Link
     Click Element  dom:${JSPreferenceCenterLinkWSJPath}
 
 Validate author hyperlink
-    Page Should Contain Element  //*[@id="fn-pre-body-article-wrap"]/div[3]/div/div/div/span/a
+    Page Should Contain Element  //*[@id="__next"]/div/main/article/div/div[2]/div/span/a
 
 Click author hyperlink
-    Click Element  //*[@id="fn-pre-body-article-wrap"]/div[3]/div/div/div/span/a
+    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div/span/a

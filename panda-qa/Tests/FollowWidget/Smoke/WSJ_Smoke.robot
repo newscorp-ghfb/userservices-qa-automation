@@ -38,7 +38,7 @@ Validate the follow button from authors page
     WSJArticlePage.Click author hyperlink
     DefinedKeywords.Set Implicit Wait
     WSJAuthorsPage.Validate Authors Page
-    WSJArticlePage.Validate Follow Button
+    WSJAuthorsPage.Validate Follow Button
 
 Validate the Barrons Preference Center page
     [Documentation]  This test case validates the barrons preference center page
