@@ -35,3 +35,6 @@ Mansion Global Sign In Process
     Set Selenium Implicit Wait  10s
     Click Button  //*[@id="password-login"]/div/form/div/div[5]/div[1]/button
     Wait Until Element Is Not Visible  //*[@id="password-login"]/div/form/div/div[5]/div[1]/button
+
+Accept Cookies
+    Click Button  //*[@id="notice"]/div[4]/div/div[2]/button[2]
