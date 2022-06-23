@@ -26,7 +26,6 @@ Validate the follow button from articles page
     MarketWatchArticlePage.Validate Following Button
     MarketWatchArticlePage.Click Following Button
     MarketWatchArticlePage.Click Undo Link
-    MarketWatchArticlePage.Validate Author Label
     DefinedKeywords.Set Implicit Wait
     MarketWatchArticlePage.Validate Following Button
     MarketWatchArticlePage.Click Following Button
@@ -34,5 +33,28 @@ Validate the follow button from articles page
     MarketWatchArticlePage.Validate Follow Button
     MarketWatchArticlePage.Click Follow Button
     MarketWatchArticlePage.Click Preference Center link
-    #MansionGlobalPreferenceCenterPage.Validate Preference Center page
+    MarketWatchPreferenceCenterPage.Validate Preference Center page
+
+Validate the follow button from authors page
+    [Documentation]  This test case validates the follow button from authors page
+    [Tags]  Smoke
+
+    MarketWatchArticlePage.Validate author hyperlink
+    MarketWatchArticlePage.Click author hyperlink
+    MarketWatchAuthorsPage.Validate Authors Page
+    MarketWatchArticlePage.Validate Follow Button
+
+Validate the Market Watch Preference Center page
+    [Documentation]  This test case validates the barrons preference center page
+    [Tags]  Smoke
+
+    MarketWatchPreferenceCenterPage.Navigate Preference Center page
+    DefinedKeywords.Sign In Process
+    MarketWatchPreferenceCenterPage.Validate Followed Authors
+    MarketWatchPreferenceCenterPage.Validate Following Toggle Feature
+    MarketWatchPreferenceCenterPage.Click Following Toggle Feature
+    MarketWatchPreferenceCenterPage.Validate Following Toggle Alert Pop up
+    MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
+    MarketWatchPreferenceCenterPage.Navigate Article page
+    MarketWatch ArticlePage.Validate Follow Button
 

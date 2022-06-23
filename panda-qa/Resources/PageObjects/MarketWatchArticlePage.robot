@@ -3,8 +3,9 @@ Library  SeleniumLibrary
 
 *** Variables ***
 ${JSFollowButtonMWPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
-    ...  .querySelector('ufc-follow-button').shadowRoot  #2
-    ...  .querySelector('button')  #3
+    ...  .querySelector('ufc-follow-widget')  #2
+    ...  .querySelector('ufc-follow-button').shadowRoot  #3
+    ...  .querySelector('button')  #4
 
 ${JSUndoButtonMarketWatchPath}=  document.querySelector('ufc-snackbar').shadowRoot  #1
     ...  .querySelector('div') #2
@@ -39,11 +40,12 @@ ${JSPreferenceCenterLinkMarketWatchPath}=  document.querySelector('ufc-snackbar'
 *** Keywords ***
 Validate Follow Button
     Wait Until Element is Visible  dom:${JSFollowButtonMWPath}
-    Element Text Should Be  dom:${JSFollowButtonMWPath}  Follow  timeout=60s
+    Element Text Should Be  dom:${JSFollowButtonMWPath}  Follow  timeout=40s
 
 Validate Following Button
     Wait Until Element is Visible  dom:${JSFollowButtonMWPath}
-    Element Text Should Be  dom:${JSFollowButtonMWPath}  Following  timeout=60s
+    Wait Until Element Contains  dom:${JSFollowButtonMWPath}  Following  timeout=15
+    Element Text Should Be  dom:${JSFollowButtonMWPath}  Following  timeout=45s
 
 Click Follow Button
     Click Button  dom:${JSFollowButtonMWPath}
@@ -56,11 +58,11 @@ Validate Sign In Modal
     Page Should Contain Element  dom:${JSFollowSignInHeaderPath}
 
 Click Sign In Button Modal
-    Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}
+    #Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}  timeout=45s
     Click Button  dom:${JSFollowSignInButtonPath}
 
 Click Undo Link
-    Wait Until Element is Visible  dom:${JSUndoButtonMarketWatchPath}
+    Wait Until Element is Visible  dom:${JSUndoButtonMarketWatchPath} timeout=30s
     Click Button  dom:${JSUndoButtonMarketWatchPath}
     Wait Until Element is Not Visible  dom:${JSUndoButtonMarketWatchPath}
 
@@ -68,6 +70,8 @@ Click Preference Center Link
     Wait Until Element is Visible  dom:${JSPreferenceCenterLinkMarketWatchPath}
     Click Element  dom:${JSPreferenceCenterLinkMarketWatchPath}
 
-Validate Author Label
-    Wait Until Element is Visible  //*[@id="mg-pre-body-article-wrap"]/div[3]/div/div/strong
-    Page Should Contain Element  //*[@id="mg-pre-body-article-wrap"]/div[3]/div/div/strong
+Validate author hyperlink
+    Page Should Contain Element  //*[@id="maincontent"]/div[1]/div[1]/div[2]/div[2]/div/a
+
+Click author hyperlink
+    Click Element  //*[@id="maincontent"]/div[1]/div[1]/div[2]/div[2]/div/a/h4
