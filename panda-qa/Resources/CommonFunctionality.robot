@@ -1,5 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
+Resource  ../Resources/DefinedKeywords.robot
 
 *** Variables ***
 ${JSFollowButtonBarronsPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
@@ -8,6 +9,10 @@ ${JSFollowButtonBarronsPath}=  document.querySelector('ufc-follow-author-widget'
     ...  .querySelector('button')  #4
 
 ${JSFollowButtonMGPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
+    ...  .querySelector('ufc-follow-button').shadowRoot  #2
+    ...  .querySelector('button')  #3
+
+${JSFollowButtonMWPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
     ...  .querySelector('ufc-follow-button').shadowRoot  #2
     ...  .querySelector('button')  #3
 
@@ -56,6 +61,11 @@ Start WSJ Article
     Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
     Wait Until Element Is Visible  //*[@id="__next"]/div/main/article/div/div[2]/div/span/a
     Wait Until Element Is Visible  dom:${JSFollowButtonMGPath}  timeout=60s
+    Maximize Browser Window
+
+Start Market Watch Article
+    Open Browser  https://www.marketwatch.com/story/is-the-u-s-stock-market-closed-on-juneteenth-what-investors-need-to-know-11655230158  chrome
+    Wait Until Page Contains Element  dom:${JSFollowButtonMWPath}
     Maximize Browser Window
 
 Start PEN Article

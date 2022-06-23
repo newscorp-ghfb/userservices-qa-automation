@@ -1,7 +1,8 @@
 *** Settings ***
 Documentation  Shadow DOM in Robot Framework
 Library  SeleniumLibrary
-Library  SeleniumLibrary
+
+
 
 *** Variables ***
 
