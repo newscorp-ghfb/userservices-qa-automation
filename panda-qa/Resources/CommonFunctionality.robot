@@ -89,9 +89,9 @@ Start WSJ Article
 
 Start Market Watch Article
     IF  ${Env} == "prod"
-        Open Browser  https://www.marketwatch.com/story/is-the-u-s-stock-market-closed-on-juneteenth-what-investors-need-to-know-11655230158  chrome
+        Open Browser  https://www.marketwatch.com/story/is-the-u-s-stock-market-closed-on-juneteenth-what-investors-need-to-know-11655230158  ${Browser}
     ELSE IF  ${Env} == "dev"
-        Open Browser  https://www.s.dev.marketwatch.com/story/lisa-bb-test-11645706835  chrome
+        Open Browser  https://www.s.dev.marketwatch.com/story/lisa-bb-test-11645706835  ${Browser}
     Wait Until Page Contains Element  dom:${JSFollowButtonMWPath}
     Maximize Browser Window
 
