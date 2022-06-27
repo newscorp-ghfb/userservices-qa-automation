@@ -3,6 +3,10 @@ Library  SeleniumLibrary
 Resource  ../Resources/DefinedKeywords.robot
 
 *** Variables ***
+${Browser}=  ff  #ff, chrome, edge, safari
+
+${Env}=  "dev"  #dev, stg, prod
+
 ${JSFollowButtonBarronsPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
     ...  .querySelector('ufc-follow-widget')  #2
     ...  .querySelector('ufc-follow-button').shadowRoot  #3
@@ -20,7 +24,13 @@ ${CookieManagerYesPath}=  //*[@id="notice"]/div[4]/div/div/button[2]
 
 *** Keywords ***
 Start Barrons Article
-    Open Browser  https://www.barrons.com/articles/twitter-stock-pick-ceo-51638548530  ff
+    IF  ${Env} == "prod"
+        Open Browser  https://www.barrons.com/articles/twitter-stock-pick-ceo-51638548530  ${Browser}
+    ELSE IF  ${Env} == "stg"
+        Open Browser  https://www.stg.internal.barrons.com/articles/twitter-stock-pick-ceo-51638548530?tesla=y  ${Browser}
+    ELSE IF  ${Env} == "dev"
+        Open Browser  https://www.s.dev.barrons.com/articles/twitter-stock-pick-ceo-51638548530  ${Browser}
+    END
     ${cookie_manager_items}=  Get Element Count  ${CookieManagerYesPath}
     Run Keyword If  ${cookie_manager_items} > 0  DefinedKeywords.Accept Cookies
     Wait Until Page Contains Element  dom:${JSFollowButtonBarronsPath}
@@ -28,14 +38,22 @@ Start Barrons Article
 
 
 Start Mansion Global Article
-    Open Browser  https://www.mansionglobal.com/articles/are-there-tax-breaks-on-agricultural-land-in-pennsylvania-01648119848  ff
+    IF  ${Env} == "prod"
+        Open Browser  https://www.mansionglobal.com/articles/are-there-tax-breaks-on-agricultural-land-in-pennsylvania-01648119848  ${Browser}
+    ELSE IF  ${Env} == "dev"
+        Open Browser  https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212  ${Browser}
+    END
     ${cookie_manager_items}=  Get Element Count  ${CookieManagerYesPath}
     Run Keyword If  ${cookie_manager_items} > 0  DefinedKeywords.Accept Cookies
     Wait Until Page Contains Element  dom:${JSFollowButtonMGPath}
     Maximize Browser Window
 
 Start FN Article
-    Open Browser  https://www.fnlondon.com/articles/complaints-commissioner-fca-transparency-20220615  ff
+    IF  ${Env} == "prod"
+        Open Browser  https://www.fnlondon.com/articles/complaints-commissioner-fca-transparency-20220615  ${Browser}
+    ELSE IF  ${Env} == "dev"
+        Open Browser  https://www.s.dev.fnlondon.com/articles/testpanda-test-wsj-digest-2-20211020  ${Browser}
+    END
     ${cookie_manager_items}=  Get Element Count  ${CookieManagerYesPath}
     Run Keyword If  ${cookie_manager_items} > 0  DefinedKeywords.Accept Cookies
     Wait Until Page Contains Element  dom:${JSFollowButtonBarronsPath}
@@ -43,7 +61,13 @@ Start FN Article
 
 
 Start WSJ Article
-    Open Browser  https://www.wsj.com/articles/israel-headed-for-new-elections-as-coalition-moves-to-dissolve-parliament-11655741947?mod=hp_lead_pos11  ff
+    IF  ${Env} == "prod"
+        Open Browser  https://www.wsj.com/articles/israel-headed-for-new-elections-as-coalition-moves-to-dissolve-parliament-11655741947?mod=hp_lead_pos11  ${Browser}
+    ELSE IF  ${Env} == "stg"
+        Open Browser  https://www.stg.internal.wsj.com/articles/israel-headed-for-new-elections-as-coalition-moves-to-dissolve-parliament-11655741947?mod=hp_lead_pos11  ${Browser}
+    ELSE IF  ${Env} == "dev"
+        Open Browser  https://www.s.dev.wsj.com/articles/test-hey-2021-grads-these-apps-can-prepare-you-for-adulting-11623797766  ${Browser}
+    END
     ${cookie_manager_items}=  Get Element Count  ${CookieManagerYesPath}
     Run Keyword If  ${cookie_manager_items} > 0  DefinedKeywords.Accept Cookies
     Wait Until Element Is Visible  //*[@id="__next"]/div/main/article/div/div[2]/div
@@ -64,12 +88,19 @@ Start WSJ Article
     Maximize Browser Window
 
 Start Market Watch Article
-    Open Browser  https://www.marketwatch.com/story/is-the-u-s-stock-market-closed-on-juneteenth-what-investors-need-to-know-11655230158  chrome
+    IF  ${Env} == "prod"
+        Open Browser  https://www.marketwatch.com/story/is-the-u-s-stock-market-closed-on-juneteenth-what-investors-need-to-know-11655230158  chrome
+    ELSE IF  ${Env} == "dev"
+        Open Browser  https://www.s.dev.marketwatch.com/story/lisa-bb-test-11645706835  chrome
     Wait Until Page Contains Element  dom:${JSFollowButtonMWPath}
     Maximize Browser Window
 
 Start PEN Article
-    Open Browser  https://www.penews.com/articles/lp-survey-warns-brace-for-some-high-profile-fundraising-failures-20220622  ff
+    IF  ${Env} == "prod"
+        Open Browser  https://www.penews.com/articles/lp-survey-warns-brace-for-some-high-profile-fundraising-failures-20220622  ${Browser}
+    ELSE IF  ${Env} == "dev"
+        Open Browser  https://www.s.dev.penews.com/articles/test-3testing-wsj-full-bleed-3k-words-20220215  ${Browser}
+    END
     ${cookie_manager_items}=  Get Element Count  ${CookieManagerYesPath}
     Run Keyword If  ${cookie_manager_items} > 0  DefinedKeywords.Accept Cookies
     Wait Until Element Is Visible  dom:${JSFollowButtonMGPath}

@@ -1,5 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
+Resource  ../../Resources/CommonFunctionality.robot
 
 *** Variables ***
 
@@ -9,8 +10,13 @@ Validate Preference Center page
     Page Should Contain  Follow Alerts
 
 Navigate Preference Center page
-    Go To  https://www.barrons.com/follow
-
+    IF  ${Env} == "prod"
+        Go To  https://www.barrons.com/follow
+    ELSE IF  ${Env} == "stg"
+        Go To  https://www.stg.internal.barrons.com/follow
+    ELSE IF  ${Env} == "dev"
+        Go To  https://www.s.dev.barrons.com/follow
+    END
 Navigate Article page
     Go To  https://www.barrons.com/articles/twitter-stock-pick-ceo-51638548530
 

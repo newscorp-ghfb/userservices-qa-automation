@@ -1,6 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
-
+Resource  ../../Resources/CommonFunctionality.robot
 *** Variables ***
 
 *** Keywords ***
@@ -9,8 +9,11 @@ Validate Preference Center page
     Page Should Contain  Follow Alerts
 
 Navigate Preference Center page
-    Go To  https://www.penews.com/follow
-
+    IF  ${Env} == "prod"
+        Go To  https://www.penews.com/follow
+    ELSE IF  ${Env} == "dev"
+        Go To  https://www.s.dev.penews.com/follow
+    END
 Navigate Article page
     Go To  https://www.penews.com/articles/lp-survey-warns-brace-for-some-high-profile-fundraising-failures-20220622
 
