@@ -1,5 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
+Resource  ../../Resources/CommonFunctionality.robot
 
 *** Variables ***
 
@@ -9,8 +10,11 @@ Validate Preference Center page
     Page Should Contain  Follow Alerts
 
 Navigate Preference Center page
-    Go To  https://www.mansionglobal.com/follow
-
+    IF  ${Env} == "prod"
+        Go To  https://www.mansionglobal.com/follow
+    ELSE IF  ${Env} == "dev"
+        Go To  https://www.s.dev.mansionglobal.com/follow
+    END
 Navigate Article page
     Go To  https://www.mansionglobal.com/articles/are-there-tax-breaks-on-agricultural-land-in-pennsylvania-01648119848
 
