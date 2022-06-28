@@ -16,8 +16,11 @@ Navigate Preference Center page
         Go To  https://www.s.dev.mansionglobal.com/follow
     END
 Navigate Article page
-    Go To  https://www.mansionglobal.com/articles/are-there-tax-breaks-on-agricultural-land-in-pennsylvania-01648119848
-
+    IF  ${Env} == "prod"
+        Go To  https://www.mansionglobal.com/articles/are-there-tax-breaks-on-agricultural-land-in-pennsylvania-01648119848
+    ELSE IF  ${Env} == "dev"
+        Go To  https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212
+    END
 Validate Followed Authors
     Page Should Contain  Authors
 

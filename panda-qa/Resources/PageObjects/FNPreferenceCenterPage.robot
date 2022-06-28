@@ -16,8 +16,11 @@ Navigate Preference Center page
         Go To  https://www.s.dev.fnlondon.com/follow
     END
 Navigate Article page
-    Go To  https://www.fnlondon.com/articles/complaints-commissioner-fca-transparency-20220615
-
+    IF  ${Env} == "prod"
+        Go To  https://www.fnlondon.com/articles/complaints-commissioner-fca-transparency-20220615
+    ELSE IF  ${Env} == "dev"
+        Go To  https://www.s.dev.fnlondon.com/articles/testpanda-test-wsj-digest-2-20211020
+    END
 Validate Followed Authors
     Page Should Contain  Authors
 

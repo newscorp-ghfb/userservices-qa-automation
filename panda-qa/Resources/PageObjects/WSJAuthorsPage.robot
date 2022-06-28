@@ -8,7 +8,13 @@ ${JSFollowButtonWSJPath}=  document.querySelector('ufc-follow-author-widget').sh
 
 *** Keywords ***
 Validate Authors Page
-    Page Should Contain Element  //*[@id="author-card"]/div/div[2]/h1
+    IF  ${Env} == "prod"
+        Page Should Contain  Dov Lieber
+    ELSE IF  ${Env} == "stg"
+        Page Should Contain  Dov Lieber
+    ELSE IF  ${Env} == "dev"
+        Page Should Contain  Julie Jargon
+    END
 
 Validate Follow Button
     Click Element  //*[@id="author-card"]/div/div[2]/h1

@@ -17,8 +17,13 @@ Navigate Preference Center page
         Go To  https://www.s.dev.wsj.com/follow
     END
 Navigate Article page
-    Go To  https://www.wsj.com/articles/israel-headed-for-new-elections-as-coalition-moves-to-dissolve-parliament-11655741947?mod=hp_lead_pos11
-
+    IF  ${Env} == "prod"
+        Go To  https://www.wsj.com/articles/israel-headed-for-new-elections-as-coalition-moves-to-dissolve-parliament-11655741947?mod=hp_lead_pos11
+    ELSE IF  ${Env} == "stg"
+        Go To  https://www.stg.internal.wsj.com/articles/israel-headed-for-new-elections-as-coalition-moves-to-dissolve-parliament-11655741947?mod=hp_lead_pos11
+    ELSE IF  ${Env} == "dev"
+        Go To  https://www.s.dev.wsj.com/articles/test-hey-2021-grads-these-apps-can-prepare-you-for-adulting-11623797766
+    END
 Validate Followed Authors
     Page Should Contain  Authors
 
