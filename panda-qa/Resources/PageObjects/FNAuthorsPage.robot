@@ -5,8 +5,10 @@ Library  SeleniumLibrary
 
 *** Keywords ***
 Validate Authors Page
-    Page Should Contain  Justin Cash
-
-
+    IF  ${Env} == "prod"
+        Page Should Contain  Justin Cash
+    ELSE IF  ${Env} == "dev"
+        Page Should Contain  Sunita Adhikarla
+    END
 
 

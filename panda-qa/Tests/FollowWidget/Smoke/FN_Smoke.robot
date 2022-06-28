@@ -40,7 +40,7 @@ Validate the follow button from authors page
     FNAuthorsPage.Validate Authors Page
     FNArticlePage.Validate Follow Button
 
-Validate the Barrons Preference Center page
+Validate the FN Preference Center page
     [Documentation]  This test case validates the barrons preference center page
     [Tags]  Smoke
 

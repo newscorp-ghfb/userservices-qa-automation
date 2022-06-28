@@ -18,8 +18,13 @@ Navigate Preference Center page
         Go To  https://www.s.dev.barrons.com/follow
     END
 Navigate Article page
-    Go To  https://www.barrons.com/articles/twitter-stock-pick-ceo-51638548530
-
+    IF  ${Env} == "prod"
+        Go To  https://www.barrons.com/articles/twitter-stock-pick-ceo-51638548530
+    ELSE IF  ${Env} == "stg"
+        Go To  https://www.stg.internal.barrons.com/articles/twitter-stock-pick-ceo-51638548530
+    ELSE IF  ${Env} == "dev"
+        Go To  https://www.s.dev.barrons.com/articles/twitter-stock-pick-ceo-51638548530
+    END
 Validate Followed Authors
     Page Should Contain  Authors
 

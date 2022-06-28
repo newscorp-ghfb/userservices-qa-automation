@@ -8,11 +8,17 @@ Validate Preference Center page
     Page Should Contain  Follow Alerts
 
 Navigate Preference Center page
-    Go To  https://www.marketwatch.com/follow
-
+    IF  ${Env} == "prod"
+        Go To  https://www.marketwatch.com/follow
+    ELSE IF  ${Env} == "dev"
+        Go To  https://www.s.dev.marketwatch.com/follow
+    END
 Navigate Article page
-    Go To  https://www.marketwatch.com/story/is-the-u-s-stock-market-closed-on-juneteenth-what-investors-need-to-know-11655230158
-
+    IF  ${Env} == "prod"
+        Go To  https://www.marketwatch.com/story/is-the-u-s-stock-market-closed-on-juneteenth-what-investors-need-to-know-11655230158
+    ELSE IF  ${Env} == "dev"
+        Go To  https://www.s.dev.marketwatch.com/story/lisa-bb-test-11645706835
+    END
 Validate Followed Authors
     Page Should Contain  Authors
 

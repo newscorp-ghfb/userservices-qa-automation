@@ -33,7 +33,7 @@ Validate the follow button from articles page
     MansionGlobalArticlePage.Click Preference Center link
     MansionGlobalPreferenceCenterPage.Validate Preference Center page
 
-Validate the Barrons Preference Center page
+Validate the Mansion Global Preference Center page
     [Documentation]  This test case validates the mansion global preference center page
     [Tags]  Smoke
 

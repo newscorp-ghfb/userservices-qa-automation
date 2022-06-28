@@ -40,7 +40,7 @@ Validate the follow button from authors page
     WSJAuthorsPage.Validate Authors Page
     WSJAuthorsPage.Validate Follow Button
 
-Validate the Barrons Preference Center page
+Validate the WSJ Preference Center page
     [Documentation]  This test case validates the barrons preference center page
     [Tags]  Smoke
 

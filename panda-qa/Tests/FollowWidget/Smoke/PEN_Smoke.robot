@@ -41,7 +41,7 @@ Validate the follow button from authors page
     PENAuthorsPage.Validate Authors Page
     PENArticlePage.Validate Follow Button
 
-Validate the Barrons Preference Center page
+Validate the PEN Preference Center page
     [Documentation]  This test case validates the barrons preference center page
     [Tags]  Smoke
 

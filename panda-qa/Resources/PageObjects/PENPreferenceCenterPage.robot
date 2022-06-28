@@ -15,8 +15,11 @@ Navigate Preference Center page
         Go To  https://www.s.dev.penews.com/follow
     END
 Navigate Article page
-    Go To  https://www.penews.com/articles/lp-survey-warns-brace-for-some-high-profile-fundraising-failures-20220622
-
+    IF  ${Env} == "prod"
+        Go To  https://www.penews.com/articles/lp-survey-warns-brace-for-some-high-profile-fundraising-failures-20220622
+    ELSE IF  ${Env} == "dev"
+        Go To  https://www.s.dev.penews.com/articles/test-3testing-wsj-full-bleed-3k-words-20220215
+    END
 Validate Followed Authors
     Page Should Contain  Authors
 
