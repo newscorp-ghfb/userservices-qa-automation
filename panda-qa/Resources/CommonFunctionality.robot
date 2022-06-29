@@ -5,7 +5,7 @@ Resource  ../Resources/DefinedKeywords.robot
 *** Variables ***
 ${Browser}=  ff  #ff, chrome, edge, safari
 
-${Env}=  "prod"  #dev, stg, prod
+${Env}=  "dev"  #dev, stg, prod
 
 ${JSFollowButtonBarronsPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
     ...  .querySelector('ufc-follow-widget')  #2
@@ -92,6 +92,7 @@ Start Market Watch Article
         Open Browser  https://www.marketwatch.com/story/is-the-u-s-stock-market-closed-on-juneteenth-what-investors-need-to-know-11655230158  ${Browser}
     ELSE IF  ${Env} == "dev"
         Open Browser  https://www.s.dev.marketwatch.com/story/lisa-bb-test-11645706835  ${Browser}
+    END
     Wait Until Page Contains Element  dom:${JSFollowButtonMWPath}
     Maximize Browser Window
 

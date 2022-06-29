@@ -8,9 +8,9 @@ ${JSFollowButtonMWPath}=  document.querySelector('ufc-follow-author-widget').sha
     ...  .querySelector('button')  #4
 
 ${JSUndoButtonMarketWatchPath}=  document.querySelector('ufc-snackbar').shadowRoot  #1
-    ...  .querySelector('div') #2
+    ...  .querySelector('div')  #2
     ...  .querySelector('div')  #3
-    ...  .querySelector('button') #4
+    ...  .querySelector('button')  #4
 
 ${JSFollowSignInButtonPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('ufc-signin-modal').shadowRoot  #2
@@ -62,7 +62,7 @@ Click Sign In Button Modal
     Click Button  dom:${JSFollowSignInButtonPath}
 
 Click Undo Link
-    Wait Until Element is Visible  dom:${JSUndoButtonMarketWatchPath} timeout=30s
+    Wait Until Element is Visible  dom:${JSUndoButtonMarketWatchPath}
     Click Button  dom:${JSUndoButtonMarketWatchPath}
     Wait Until Element is Not Visible  dom:${JSUndoButtonMarketWatchPath}
 
