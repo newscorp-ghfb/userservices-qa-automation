@@ -5,7 +5,7 @@ Resource  ../Resources/DefinedKeywords.robot
 *** Variables ***
 ${Browser}=  ff  #ff, chrome, edge, safari
 
-${Env}=  "dev"  #dev, stg, prod
+${Env}=  "prod"  #dev, stg, prod
 
 ${JSFollowButtonBarronsPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
     ...  .querySelector('ufc-follow-widget')  #2
