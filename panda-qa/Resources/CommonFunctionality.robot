@@ -31,8 +31,6 @@ Start Barrons Article
     ELSE IF  ${Env} == "dev"
         Open Browser  https://www.s.dev.barrons.com/articles/twitter-stock-pick-ceo-51638548530  ${Browser}
     END
-    ${cookie_manager_items}=  Get Element Count  ${CookieManagerYesPath}
-    Run Keyword If  ${cookie_manager_items} > 0  DefinedKeywords.Accept Cookies
     Wait Until Page Contains Element  dom:${JSFollowButtonBarronsPath}
     Maximize Browser Window
 
@@ -43,8 +41,6 @@ Start Mansion Global Article
     ELSE IF  ${Env} == "dev"
         Open Browser  https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212  ${Browser}
     END
-    ${cookie_manager_items}=  Get Element Count  ${CookieManagerYesPath}
-    Run Keyword If  ${cookie_manager_items} > 0  DefinedKeywords.Accept Cookies
     Wait Until Page Contains Element  dom:${JSFollowButtonMGPath}
     Maximize Browser Window
 
@@ -54,8 +50,6 @@ Start FN Article
     ELSE IF  ${Env} == "dev"
         Open Browser  https://www.s.dev.fnlondon.com/articles/testpanda-test-wsj-digest-2-20211020  ${Browser}
     END
-    ${cookie_manager_items}=  Get Element Count  ${CookieManagerYesPath}
-    Run Keyword If  ${cookie_manager_items} > 0  DefinedKeywords.Accept Cookies
     Wait Until Page Contains Element  dom:${JSFollowButtonBarronsPath}
     Maximize Browser Window
 
@@ -68,22 +62,20 @@ Start WSJ Article
     ELSE IF  ${Env} == "dev"
         Open Browser  https://www.s.dev.wsj.com/articles/test-hey-2021-grads-these-apps-can-prepare-you-for-adulting-11623797766  ${Browser}
     END
-    ${cookie_manager_items}=  Get Element Count  ${CookieManagerYesPath}
-    Run Keyword If  ${cookie_manager_items} > 0  DefinedKeywords.Accept Cookies
-    Wait Until Element Is Visible  //*[@id="__next"]/div/main/article/div/div[2]/div
-    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
-    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
-    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
-    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
-    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
-    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
-    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
-    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
-    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
-    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
-    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
-    Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
-    Wait Until Element Is Visible  //*[@id="__next"]/div/main/article/div/div[2]/div/span/a
+    #Wait Until Element Is Visible  //*[@id="__next"]/div/main/article/div/div[2]/div
+    #Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    #Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    #Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    #Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    #Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    #Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    #Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    #Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    #Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    #Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    #Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    #Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
+    #Wait Until Element Is Visible  //*[@id="__next"]/div/main/article/div/div[2]/div/span/a
     Wait Until Element Is Visible  dom:${JSFollowButtonMGPath}  timeout=60s
     Maximize Browser Window
 
@@ -102,8 +94,6 @@ Start PEN Article
     ELSE IF  ${Env} == "dev"
         Open Browser  https://www.s.dev.penews.com/articles/test-3testing-wsj-full-bleed-3k-words-20220215  ${Browser}
     END
-    ${cookie_manager_items}=  Get Element Count  ${CookieManagerYesPath}
-    Run Keyword If  ${cookie_manager_items} > 0  DefinedKeywords.Accept Cookies
     Wait Until Element Is Visible  dom:${JSFollowButtonMGPath}
     Wait Until Page Contains Element  dom:${JSFollowButtonMGPath}
     Maximize Browser Window

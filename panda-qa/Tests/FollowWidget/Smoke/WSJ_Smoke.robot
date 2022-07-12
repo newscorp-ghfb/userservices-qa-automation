@@ -23,10 +23,10 @@ Validate the follow button from articles page
     WSJArticlePage.Validate Following Button
     WSJArticlePage.Click Following Button
     WSJArticlePage.Click Undo Link
-    WSJArticlePage.Validate Following Button
-    WSJArticlePage.Click Following Button
+    #WSJArticlePage.Validate Following Button
+    #WSJArticlePage.Click Following Button
     #WSJArticlePage.Validate Follow Button
-    WSJArticlePage.Click Follow Button
+    #WSJArticlePage.Click Follow Button
     WSJArticlePage.Click Preference Center link
     WSJPreferenceCenterPage.Validate Preference Center page
 

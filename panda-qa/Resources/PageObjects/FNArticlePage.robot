@@ -7,6 +7,11 @@ ${JSFollowButtonFNPath}=  document.querySelector('ufc-follow-author-widget').sha
     ...  .querySelector('ufc-follow-button').shadowRoot  #3
     ...  .querySelector('button')  #4
 
+${JSFollowingButtonFNPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
+    ...  .querySelector('ufc-follow-widget')  #2
+    ...  .querySelector('ufc-follow-button').shadowRoot  #3
+    ...  .querySelector('button')  #4
+
 ${JSUndoButtonFNPath}=  document.querySelector('ufc-snackbar').shadowRoot  #1
     ...  .querySelector('div')  #2
     ...  .querySelector('div')  #3
@@ -40,18 +45,19 @@ ${JSFollowSignInHeaderPath}=  document.querySelector('ufc-portal')  #1
 *** Keywords ***
 Validate Follow Button
     Wait Until Element is Visible  dom:${JSFollowButtonFNPath}
-    Element Text Should Be  dom:${JSFollowButtonFNPath}  Follow  timeout=30
+    Wait Until Element Contains  dom:${JSFollowButtonFNPath}  Follow  timeout=15
+    Element Text Should Be  dom:${JSFollowButtonFNPath}  Follow  timeout=15
 
 Validate Following Button
-    Wait Until Element is Visible  dom:${JSFollowButtonFNPath}
-    Wait Until Element Contains  dom:${JSFollowButtonFNPath}  Following  timeout=15
-    Element Text Should Be  dom:${JSFollowButtonFNPath}  Following  timeout=15
+    Wait Until Element is Visible  dom:${JSFollowingButtonFNPath}
+    Wait Until Element Contains  dom:${JSFollowingButtonFNPath}  Following  timeout=15
+    Element Text Should Be  dom:${JSFollowingButtonFNPath}  Following  timeout=15
 
 Click Follow Button
     Click Button  dom:${JSFollowButtonFNPath}
 
 Click Following Button
-    Click Button  dom:${JSFollowButtonFNPath}
+    Click Button  dom:${JSFollowingButtonFNPath}
 
 Validate Sign In Modal
     Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}

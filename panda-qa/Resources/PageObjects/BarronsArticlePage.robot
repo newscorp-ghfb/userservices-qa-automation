@@ -45,6 +45,15 @@ ${JSFollowSignInButton2Path}=  document.querySelectorAll('div')[189]  #1
     ...  .querySelector('ufc-button').shadowRoot  #7
     ...  .querySelector('button')  #8
 
+${JSFollowSignInButton3Path}=  document.querySelectorAll('div')[208]  #1
+    ...  .querySelector('ufc-portal')  #2
+    ...  .querySelector('ufc-signin-modal').shadowRoot  #3
+    ...  .querySelector('div.modal-wrapper')  #4
+    ...  .querySelector('div.modal')  #5
+    ...  .querySelector('div.footer')  #6
+    ...  .querySelector('ufc-button').shadowRoot  #7
+    ...  .querySelector('button')  #8
+
 ${JSFollowSignInHeaderPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('ufc-signin-modal').shadowRoot  #2
     ...  .querySelector('div')  #3
@@ -94,6 +103,10 @@ Click Sign In Button Modal
 Click Sign In Button 2 Modal
     Wait Until Element is Visible  dom:${JSFollowSignInButtonPath}  20s
     Click Element  dom:${JSFollowSignInButtonPath}
+
+Click Sign In Button 3 Modal
+    Wait Until Element is Visible  dom:${JSFollowSignInButton3Path}  20s
+    Click Element  dom:${JSFollowSignInButton3Path}
 
 Click Undo Link
     Wait Until Element is Visible  dom:${JSUndoButtonBarronsPath}
