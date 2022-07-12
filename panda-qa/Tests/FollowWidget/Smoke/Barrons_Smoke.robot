@@ -30,25 +30,6 @@ Validate the author follow button from articles page
     BarronsArticlePage.Click Preference Center link
     BarronsPreferenceCenterPage.Validate Preference Center page
 
-Validate the stock pick follow button from articles page
-    [Documentation]  This test case validates the stock pick follow button from articles page
-    [Tags]  Smoke
-
-    BarronsArticlePage.Validate Stock Pick Follow Button
-    BarronsArticlePage.Click Stock Pick Follow Button
-    #BarronsArticlePage.Validate Sign In Modal
-    BarronsArticlePage.Click Sign In Button Modal
-    DefinedKeywords.Sign In Process
-    BarronsArticlePage.Validate Stock Pick Following Button
-    BarronsArticlePage.Click Stock Pick Following Button
-    BarronsArticlePage.Click Undo Link
-    BarronsArticlePage.Validate Stock Pick Following Button
-    BarronsArticlePage.Click Stock Pick Following Button
-    BarronsArticlePage.Validate Stock Pick Follow Button
-    BarronsArticlePage.Click Stock Pick Follow Button
-    BarronsArticlePage.Click Preference Center link
-    BarronsPreferenceCenterPage.Validate Preference Center page
-
 Validate the follow button from authors page
     [Documentation]  This test case validates the follow button from authors page
     [Tags]  Smoke
@@ -71,3 +52,22 @@ Validate the Barrons Preference Center page
     BarronsPreferenceCenterPage.Click Following Toggle Alert Pop up
     BarronsPreferenceCenterPage.Navigate Article page
     BarronsArticlePage.Validate Follow Button
+
+#Validate the stock pick follow button from articles page
+#    [Documentation]  This test case validates the stock pick follow button from articles page
+#    [Tags]  Smoke
+
+#    BarronsArticlePage.Validate Stock Pick Follow Button
+#    BarronsArticlePage.Click Stock Pick Follow Button
+    #BarronsArticlePage.Validate Sign In Modal
+#    BarronsArticlePage.Click Sign In Button 3 Modal
+#    DefinedKeywords.Sign In Process
+#    BarronsArticlePage.Validate Stock Pick Following Button
+#    BarronsArticlePage.Click Stock Pick Following Button
+#    BarronsArticlePage.Click Undo Link
+#    BarronsArticlePage.Validate Stock Pick Following Button
+#    BarronsArticlePage.Click Stock Pick Following Button
+#    BarronsArticlePage.Validate Stock Pick Follow Button
+#    BarronsArticlePage.Click Stock Pick Follow Button
+#    BarronsArticlePage.Click Preference Center link
+#    BarronsPreferenceCenterPage.Validate Preference Center page

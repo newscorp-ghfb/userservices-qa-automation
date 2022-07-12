@@ -22,16 +22,16 @@ Validate the follow button from articles page
     MarketWatchArticlePage.Click Follow Button
     MarketWatchArticlePage.Validate Sign In Modal
     MarketWatchArticlePage.Click Sign In Button Modal
-    DefinedKeywords.Sign In Process
+    DefinedKeywords.Market Watch Sign In Process
     MarketWatchArticlePage.Validate Following Button
     MarketWatchArticlePage.Click Following Button
     MarketWatchArticlePage.Click Undo Link
     DefinedKeywords.Set Implicit Wait
     MarketWatchArticlePage.Validate Following Button
-    MarketWatchArticlePage.Click Following Button
+    #MarketWatchArticlePage.Click Following Button
     DefinedKeywords.Set Implicit Wait
-    MarketWatchArticlePage.Validate Follow Button
-    MarketWatchArticlePage.Click Follow Button
+    #MarketWatchArticlePage.Validate Follow Button
+    #MarketWatchArticlePage.Click Follow Button
     MarketWatchArticlePage.Click Preference Center link
     MarketWatchPreferenceCenterPage.Validate Preference Center page
 
@@ -49,7 +49,7 @@ Validate the Market Watch Preference Center page
     [Tags]  Smoke
 
     MarketWatchPreferenceCenterPage.Navigate Preference Center page
-    DefinedKeywords.Sign In Process
+    DefinedKeywords.Market Watch Sign In Process
     MarketWatchPreferenceCenterPage.Validate Followed Authors
     MarketWatchPreferenceCenterPage.Validate Following Toggle Feature
     MarketWatchPreferenceCenterPage.Click Following Toggle Feature
