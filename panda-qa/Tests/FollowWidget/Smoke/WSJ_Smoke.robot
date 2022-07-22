@@ -20,13 +20,14 @@ Validate the follow button from articles page
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
     DefinedKeywords.Sign In Process
+    Set Selenium Speed  0.2 seconds
     WSJArticlePage.Validate Following Button
     WSJArticlePage.Click Following Button
     WSJArticlePage.Click Undo Link
-    #WSJArticlePage.Validate Following Button
-    #WSJArticlePage.Click Following Button
-    #WSJArticlePage.Validate Follow Button
-    #WSJArticlePage.Click Follow Button
+    WSJArticlePage.Validate Following Button
+    WSJArticlePage.Click Following Button
+    WSJArticlePage.Validate Follow Button
+    WSJArticlePage.Click Follow Button
     WSJArticlePage.Click Preference Center link
     WSJPreferenceCenterPage.Validate Preference Center page
 

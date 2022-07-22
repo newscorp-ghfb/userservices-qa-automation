@@ -38,18 +38,6 @@ ${JSFollowSignInHeaderPath}=  document.querySelector('ufc-portal')  #1
 
 *** Keywords ***
 Validate Follow Button
-    #Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
-    #Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
-    #Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
-    #Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
-    #Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
-    #Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
-    #Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
-    #Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
-    #Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
-    #Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
-    #Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
-    #Click Element  //*[@id="__next"]/div/main/article/div/div[2]/div
     Wait Until Element is Visible  dom:${JSFollowButtonWSJPath}
     Element Text Should Be  dom:${JSFollowButtonWSJPath}  Follow  timeout=30
 
@@ -81,7 +69,7 @@ Click Preference Center Link
     Click Element  dom:${JSPreferenceCenterLinkWSJPath}
 
 Validate author hyperlink
-    Page Should Contain Element  //*[text()='Dov Lieber']
+    Page Should Contain Element  //*[text()='Dave Michaels']
 
 Click author hyperlink
-    Click Element  //*[text()='Dov Lieber']
+    Click Element  //*[text()='Dave Michaels']

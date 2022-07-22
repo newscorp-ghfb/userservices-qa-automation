@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation  FN Smoke Tests
+Documentation  PEN Smoke Tests
 Resource  ../../../Resources/CommonFunctionality.robot
 Resource  ../../../Resources/DefinedKeywords.robot
 Resource  ../../../Resources/PageObjects/PENArticlePage.robot
@@ -20,14 +20,15 @@ Validate the follow button from articles page
     PENArticlePage.Validate Sign In Modal
     PENArticlePage.Click Sign In Button Modal
     DefinedKeywords.Sign In Process
+    Set Selenium Speed  0.2 seconds
     PENArticlePage.Validate Following Button
     PENArticlePage.Click Following Button
     PENArticlePage.Click Undo Link
     PENArticlePage.Validate Following Button
-    #PENArticlePage.Click Following Button
-    #PENArticlePage.Validate Follow Button
-    #PENArticlePage.Click Follow Button
-    #PENArticlePage.Validate Following Button
+    PENArticlePage.Click Following Button
+    PENArticlePage.Validate Follow Button
+    PENArticlePage.Click Follow Button
+    PENArticlePage.Validate Following Button
     PENArticlePage.Click Preference Center link
     PENPreferenceCenterPage.Validate Preference Center page
 
