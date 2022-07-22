@@ -20,13 +20,14 @@ Validate the follow button from articles page
     FNArticlePage.Validate Sign In Modal
     FNArticlePage.Click Sign In Button Modal
     DefinedKeywords.Sign In Process
+    Set Selenium Speed  0.2 seconds
     FNArticlePage.Validate Following Button
     FNArticlePage.Click Following Button
     FNArticlePage.Click Undo Link
-    #FNArticlePage.Validate Following Button
-    #FNArticlePage.Click Following Button
-    #FNArticlePage.Validate Follow Button
-    #FNArticlePage.Click Follow Button
+    FNArticlePage.Validate Following Button
+    FNArticlePage.Click Following Button
+    FNArticlePage.Validate Follow Button
+    FNArticlePage.Click Follow Button
     FNArticlePage.Click Preference Center link
     FNPreferenceCenterPage.Validate Preference Center page
 
@@ -46,7 +47,9 @@ Validate the FN Preference Center page
 
     FNPreferenceCenterPage.Navigate Preference Center page
     DefinedKeywords.Sign In Process
+    Set Selenium Speed  5 seconds  #US-297
     FNPreferenceCenterPage.Validate Followed Authors
+    Set Selenium Speed  0.5 seconds
     FNPreferenceCenterPage.Validate Following Toggle Feature
     FNPreferenceCenterPage.Click Following Toggle Feature
     FNPreferenceCenterPage.Validate Following Toggle Alert Pop up

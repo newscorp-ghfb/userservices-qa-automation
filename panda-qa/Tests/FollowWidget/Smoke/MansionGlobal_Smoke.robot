@@ -20,6 +20,7 @@ Validate the follow button from articles page
     MansionGlobalArticlePage.Validate Sign In Modal
     MansionGlobalArticlePage.Click Sign In Button Modal
     DefinedKeywords.Sign In Process
+    Set Selenium Speed  0.2 seconds
     MansionGlobalArticlePage.Validate Following Button
     MansionGlobalArticlePage.Click Following Button
     MansionGlobalArticlePage.Click Undo Link

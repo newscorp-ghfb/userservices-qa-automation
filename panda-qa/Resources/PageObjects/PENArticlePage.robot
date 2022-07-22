@@ -28,7 +28,7 @@ ${JSFollowSignInButtonPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('div.modal')  #4
     ...  .querySelector('div.footer')  #5
     ...  .querySelector('ufc-button').shadowRoot  #6
-    ...  .querySelector('button')  #7
+    ...  .querySelector('button.primary')  #7
 
 ${JSFollowSignInHeaderPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('ufc-signin-modal').shadowRoot  #2
@@ -61,7 +61,8 @@ Validate Sign In Modal
     Page Should Contain Element  dom:${JSFollowSignInHeaderPath}
 
 Click Sign In Button Modal
-    #Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}  20s
+    Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}
+    Wait Until Element is Visible  dom:${JSFollowSignInButtonPath}
     Click Element  dom:${JSFollowSignInButtonPath}
 
 Click Undo Link
