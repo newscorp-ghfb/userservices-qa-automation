@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation  FN Smoke Tests
+Documentation  WSJ Smoke Tests
 Resource  ../../../Resources/CommonFunctionality.robot
 Resource  ../../../Resources/DefinedKeywords.robot
 Resource  ../../../Resources/PageObjects/WSJArticlePage.robot
@@ -19,8 +19,9 @@ Validate the follow button from articles page
     WSJArticlePage.Click Follow Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
-    DefinedKeywords.Sign In Process
+    DefinedKeywords.Market Watch Sign In Process
     Set Selenium Speed  0.2 seconds
+    #WSJArticlePage.Reload Article Page
     WSJArticlePage.Validate Following Button
     WSJArticlePage.Click Following Button
     WSJArticlePage.Click Undo Link
@@ -46,7 +47,7 @@ Validate the WSJ Preference Center page
     [Tags]  Smoke
 
     WSJPreferenceCenterPage.Navigate Preference Center page
-    DefinedKeywords.Sign In Process
+    DefinedKeywords.Market Watch Sign In Process
     WSJPreferenceCenterPage.Validate Followed Authors
     WSJPreferenceCenterPage.Validate Following Toggle Feature
     WSJPreferenceCenterPage.Click Following Toggle Feature

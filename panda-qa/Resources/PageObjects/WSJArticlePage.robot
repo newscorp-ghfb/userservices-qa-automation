@@ -41,7 +41,11 @@ Validate Follow Button
     Wait Until Element is Visible  dom:${JSFollowButtonWSJPath}
     Element Text Should Be  dom:${JSFollowButtonWSJPath}  Follow  timeout=30
 
+Reload Article Page
+    Reload Page
+
 Validate Following Button
+    Set Focus To Element  //*[text()='Dave Michaels']
     Wait Until Element is Visible  dom:${JSFollowButtonWSJPath}
     Wait Until Element Contains  dom:${JSFollowButtonWSJPath}  Following  timeout=15
     Element Text Should Be  dom:${JSFollowButtonWSJPath}  Following  timeout=15

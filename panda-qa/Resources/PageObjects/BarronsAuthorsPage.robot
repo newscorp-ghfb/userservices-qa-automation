@@ -5,6 +5,13 @@ Library  SeleniumLibrary
 
 *** Keywords ***
 Validate Authors Page
-    Page Should Contain  Bill Alpert
+     IF  ${Env} == "prod"
+        Page Should Contain  Angela Palumbo
+    ELSE IF  ${Env} == "stg"
+        Page Should Contain  Angela Palumbo
+    ELSE IF  ${Env} == "dev"
+        Page Should Contain  Teresa Rivas
+    END
+
 
 

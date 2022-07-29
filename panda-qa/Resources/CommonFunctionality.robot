@@ -5,7 +5,7 @@ Resource  ../Resources/DefinedKeywords.robot
 *** Variables ***
 ${Browser}=  headlessfirefox  #ff, chrome, edge, safari
 
-${Env}=  "dev"  #dev, stg, prod
+${Env}=  "prod"  #dev, stg, prod
 
 ${JSFollowButtonBarronsPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
     ...  .querySelector('ufc-follow-widget')  #2
@@ -26,18 +26,18 @@ ${CookieManagerYesPath}=  //*[@id="notice"]/div[4]/div/div/button[2]
 Start Barrons Article
     Set Selenium Speed  0.5 seconds
     IF  ${Env} == "prod"
-        Open Browser  https://www.barrons.com/articles/twitter-stock-pick-ceo-51638548530  ${Browser}
+        Open Browser  https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634  ${Browser}
     ELSE IF  ${Env} == "stg"
-        Open Browser  https://www.stg.internal.barrons.com/articles/twitter-stock-pick-ceo-51638548530?tesla=y  ${Browser}
+        Open Browser  https://www.stg.internal.barrons.com/articles/wendys-wen-stock-earnings-51652268634  ${Browser}
     ELSE IF  ${Env} == "dev"
-        Open Browser  https://www.s.dev.barrons.com/articles/twitter-stock-pick-ceo-51638548530  ${Browser}
+        Open Browser  https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000  ${Browser}
     END
     Wait Until Page Contains Element  dom:${JSFollowButtonBarronsPath}
     Maximize Browser Window
 
 
 Start Mansion Global Article
-    Set Selenium Speed  0.5 seconds
+    Set Selenium Speed  1 seconds
     IF  ${Env} == "prod"
         Open Browser  https://www.mansionglobal.com/articles/are-there-tax-breaks-on-agricultural-land-in-pennsylvania-01648119848  ${Browser}
     ELSE IF  ${Env} == "dev"
