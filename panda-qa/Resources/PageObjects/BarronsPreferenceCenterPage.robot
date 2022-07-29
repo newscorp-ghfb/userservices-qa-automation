@@ -45,7 +45,7 @@ Validate Author Updates From Preference Center Reflected In Articles
     Click Button  //*[@id="root"]/div/div/div/div[2]/div[2]/div/div/button
 
 Add Author By Hotlink
-    Go To  https://www.s.dev.barrons.com/follow?alert=author&id=8553_BARRONS&frequency=realtime
+    Go To  https://www.barrons.com/follow?alert=author&id=8553_BARRONS&frequency=realtime
 
 Validate Author Name
     Page Should Contain  Teresa Rivas
@@ -84,8 +84,8 @@ Click Company Toggle Feature
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[3]/tbody/tr[1]/td[3]/div
 
 Validate Company Frequency
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[3]/tbody/tr[1]/td[2]/div/label[1]/span[2]
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[3]/tbody/tr[1]/td[2]/div/label[2]/span[2]
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[2]/div/label[1]/span[2]
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[2]/div/label[2]/span[2]
 
 Validate Company Quote Link
     Page Should Contain Element  //*[@href="https://www.barrons.com/market-data/stocks/AMZN"]

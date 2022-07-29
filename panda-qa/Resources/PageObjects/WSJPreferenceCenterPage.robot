@@ -44,7 +44,7 @@ Validate Author Updates From Preference Center Reflected In Articles
     Click Button  //*[@id="root"]/div/div/div/div[2]/div[2]/div/div/button
 
 Add Author By Hotlink
-    Go To  https://www.s.dev.wsj.com/follow?alert=author&id=7872
+    Go To  https://www.wsj.com/follow?alert=author&id=7872
 
 Validate Author Name
     Page Should Contain  Joanna Stern
@@ -67,7 +67,7 @@ Validate Author On All Tab
     Page Should Contain  Joanna Stern
 
 Add Company By Hotlink
-    Go To  https://www.s.dev.wsj.com/follow?alert=company&fcode=AMZCOM
+    Go To  https://www.wsj.com/follow?alert=company&fcode=AMZCOM
 
 Validate Followed Companies
     Page Should Contain  Companies
@@ -77,14 +77,14 @@ Validate Company Frequency
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[3]/tbody/tr[1]/td[2]/div/label[2]/span[2]
 
 Validate Company Quote Link
-    Page Should Contain Element  //*[@href="https://www.s.dev.wsj.com/market-data/stocks/AMZN"]
+    Page Should Contain Element  //*[@href="https://www.wsj.com/market-data/stocks/AMZN"]
 
 Validate Company On All Tab
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[7]
     Page Should Contain  Amazon Com Inc
 
 Click WSJ tab
-    Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[2]
+    Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[6]
 
 Validate Company Toggle Feature
     Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[3]/tbody/tr[1]/td[3]/div/div

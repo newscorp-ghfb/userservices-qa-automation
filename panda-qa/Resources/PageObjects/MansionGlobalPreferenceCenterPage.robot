@@ -41,10 +41,10 @@ Validate Author Updates From Preference Center Reflected In Articles
     Click Button  //*[@id="root"]/div/div/div/div[2]/div[2]/div/div/button
 
 Add Author By Hotlink
-    Go To  https://www.s.dev.mansionglobal.com/follow?alert=author&id=8683_MG
+    Go To  https://www.mansionglobal.com/follow?alert=author&id=9010_MG
 
 Validate Author Name
-    Page Should Contain  Gavin Corbett
+    Page Should Contain  Liz Lucking
 
 Validate Following Frequency
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[1]/span[2]
@@ -61,27 +61,27 @@ Validate All Tabs Displayed
 
 Validate Author On All Tab
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[7]
-    Page Should Contain  Gavin Corbett
+    Page Should Contain  Liz Lucking
 
 Add Company By Hotlink
-    Go To  https://www.s.dev.mansionglobal.com/follow?alert=company&fcode=AMZCOM
+    Go To  https://www.mansionglobal.com/follow?alert=company&fcode=AMZCOM
 
 Validate Followed Companies
     Page Should Contain  Companies
 
 Validate Company Frequency
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[3]/tbody/tr[1]/td[2]/div/label[1]/span[2]
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[3]/tbody/tr[1]/td[2]/div/label[2]/span[2]
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[2]/div/label[1]/span[2]
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[2]/div/label[2]/span[2]
 
 Validate Company Quote Link
-    Page Should Contain Element  //*[@href="https://www.s.dev.mansionglobal.com/market-data/stocks/AMZN"]
+    Page Should Contain Element  //*[@href="https://www.mansionglobal.com/market-data/stocks/AMZN"]
 
 Validate Company On All Tab
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[7]
     Page Should Contain  Amazon Com Inc
 
 Click Mansion Global tab
-    Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[2]
+    Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[3]
 
 Validate Company Toggle Feature
     Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[3]/tbody/tr[1]/td[3]/div/div
