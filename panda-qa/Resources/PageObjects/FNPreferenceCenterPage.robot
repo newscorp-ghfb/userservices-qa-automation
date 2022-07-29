@@ -41,10 +41,10 @@ Validate Author Updates From Preference Center Reflected In Articles
     Click Button  //*[@id="root"]/div/div/div/div[2]/div[2]/div/div/button
 
 Add Author By Hotlink
-    Go To  https://www.s.dev.fnlondon.com/follow?alert=author&id=8681_FN
+    Go To  https://www.fnlondon.com/follow?alert=author&id=9004_FN
 
 Validate Author Name
-    Page Should Contain  Gavin Corbett
+    Page Should Contain  Paul Clarke
 
 Validate Following Frequency
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[1]/span[2]
@@ -61,20 +61,20 @@ Validate All Tabs Displayed
 
 Validate Author On All Tab
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[7]
-    Page Should Contain  Gavin Corbett
+    Page Should Contain  Paul Clarke
 
 Add Company By Hotlink
-    Go To  https://www.s.dev.fnlondon.com/follow?alert=company&fcode=AMZCOM
+    Go To  https://www.fnlondon.com/follow?alert=company&fcode=AMZCOM
 
 Validate Followed Companies
     Page Should Contain  Companies
 
 Validate Company Frequency
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[3]/tbody/tr[1]/td[2]/div/label[1]/span[2]
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[3]/tbody/tr[1]/td[2]/div/label[2]/span[2]
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[2]/div/label[1]/span[2]
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[2]/div/label[2]/span[2]
 
 Validate Company Quote Link
-    Page Should Contain Element  //*[@href="https://www.s.dev.fnlondon.com/market-data/stocks/AMZN"]
+    Page Should Contain Element  //*[@href="https://www.fnlondon.com/market-data/stocks/AMZN"]
 
 Validate Company On All Tab
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[7]
