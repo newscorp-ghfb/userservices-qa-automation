@@ -65,12 +65,35 @@ Validate the FN Preference Center page
     #FNPreferenceCenterPage.Navigate Article page
     #FNArticlePage.Scroll stories
 
-Validate the FN Capabilites Dashboard page
-    [Documentation]  This test case validates the barrons capabilites dashboard page
+Validate Authors for FN Capabilites Dashboard page
+    [Documentation]  This test case validates authors for fn capabilites dashboard page
     [Tags]  Regression
 
-    FNCapabilitesDashboardPage.Navigate Capabilities Dashboard page
-    FNCapabilitesDashboardPage.Validate Authors Reflected On Dashboard
-    FNCapabilitesDashboardPage.Validate Authors On Search Tab
-    FNCapabilitesDashboardPage.Validate Follow Hotlink for Authors
-    FNCapabilitesDashboardPage.Validate Custome Topics On Dashboard
+    FNCapabilitiesPage.Navigate Capabilities Dashboard page
+    FNCapabilitiesPage.Click Author Tab
+    FNCapabilitiesPage.Validate Authors Reflected On Dashboard
+    FNCapabilitiesPage.Validate Authors On Search Tab
+    FNCapabilitiesPage.Validate Follow Hotlink for Authors
+    FNCapabilitiesPage.Validate Custome Topics On Dashboard
+
+Validate Company for FN Capabilites Dashboard page
+    [Documentation]  This test case validates authors for fn capabilites dashboard page
+    [Tags]  Regression
+
+    FNCapabilitiesPage.Navigate Capabilities Dashboard page
+    FNCapabilitiesPage.Click Company Tab
+    FNCapabilitiesPage.Validate Authors Reflected On Dashboard
+    FNCapabilitiesPage.Validate Authors On Search Tab
+    FNCapabilitiesPage.Validate Follow Hotlink for Authors
+    FNCapabilitiesPage.Validate Custome Topics On Dashboard
+
+Validate Industry for FN Capabilites Dashboard page
+    [Documentation]  This test case validates authors for fn capabilites dashboard page
+    [Tags]  Regression
+
+    FNCapabilitiesPage.Navigate Capabilities Dashboard page
+    FNCapabilitiesPage.Click Industry Tab
+    FNCapabilitiesPage.Validate Authors Reflected On Dashboard
+    FNCapabilitiesPage.Validate Authors On Search Tab
+    FNCapabilitiesPage.Validate Follow Hotlink for Authors
+    FNCapabilitiesPage.Validate Custome Topics On Dashboard

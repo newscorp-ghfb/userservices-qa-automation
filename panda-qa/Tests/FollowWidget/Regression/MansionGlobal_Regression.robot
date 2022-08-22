@@ -64,12 +64,43 @@ Validate the Mansion GLobal Preference Center page
     #MansionGLobalPreferenceCenterPage.Navigate Article page
     #MansionGLobalArticlePage.Scroll stories
 
-Validate the Mansion GLobal Capabilites Dashboard page
-    [Documentation]  This test case validates the barrons capabilites dashboard page
+Validate Authors for Mansion Global Capabilites Dashboard page
+    [Documentation]  This test case validates authors for mansion global capabilites dashboard page
     [Tags]  Regression
 
-    MansionGLobalCapabilitesDashboardPage.Navigate Capabilities Dashboard page
-    MansionGLobalCapabilitesDashboardPage.Validate Authors Reflected On Dashboard
-    MansionGLobalCapabilitesDashboardPage.Validate Authors On Search Tab
-    MansionGLobalCapabilitesDashboardPage.Validate Follow Hotlink for Authors
-    MansionGLobalCapabilitesDashboardPage.Validate Custome Topics On Dashboard
+    MansionGlobalCapabilitiesPage.Navigate Capabilities Dashboard page
+    MansionGlobalCapabilitiesPage.Validate Authors Reflected On Dashboard
+    MansionGlobalCapabilitiesPage.Validate Authors On Search Tab
+    MansionGlobalCapabilitiesPage.Validate Follow Hotlink for Authors
+    MansionGlobalCapabilitiesPage.Validate Custome Topics On Dashboard
+
+Validate Company for Mansion Global Capabilites Dashboard page
+    [Documentation]  This test case validates authors for mansion global capabilites dashboard page
+    [Tags]  Regression
+
+    MansionGlobalCapabilitiesPage.Navigate Capabilities Dashboard page
+    MansionGlobalCapabilitiesPage.Validate Authors Reflected On Dashboard
+    MansionGlobalCapabilitiesPage.Validate Authors On Search Tab
+    MansionGlobalCapabilitiesPage.Validate Follow Hotlink for Authors
+    MansionGlobalCapabilitiesPage.Validate Custome Topics On Dashboard
+
+Validate Industry for Mansion Global Capabilites Dashboard page
+    [Documentation]  This test case validates authors for mansion global capabilites dashboard page
+    [Tags]  Regression
+
+    MansionGlobalCapabilitiesPage.Navigate Capabilities Dashboard page
+    MansionGlobalCapabilitiesPage.Validate Authors Reflected On Dashboard
+    MansionGlobalCapabilitiesPage.Validate Authors On Search Tab
+    MansionGlobalCapabilitiesPage.Validate Follow Hotlink for Authors
+    MansionGlobalCapabilitiesPage.Validate Custome Topics On Dashboard
+
+
+Validate Real State Search for Mansion Global Capabilites Dashboard page
+    [Documentation]  This test case validates real state for Mansion Global capabilites dashboard page
+    [Tags]  Regression
+
+    MansionGlobalCapabilitiesPage.Navigate Capabilities Dashboard page
+    MansionGlobalCapabilitiesPage.Validate Authors Reflected On Dashboard
+    MansionGlobalCapabilitiesPage.Validate Authors On Search Tab
+    MansionGlobalCapabilitiesPage.Validate Follow Hotlink for Authors
+    MansionGlobalCapabilitiesPage.Validate Custome Topics On Dashboard

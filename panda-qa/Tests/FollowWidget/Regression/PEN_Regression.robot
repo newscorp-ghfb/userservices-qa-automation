@@ -64,12 +64,33 @@ Validate the PEN Preference Center page
     #PENlPreferenceCenterPage.Navigate Article page
     #PENArticlePage.Scroll stories
 
-Validate the PEN Capabilites Dashboard page
-    [Documentation]  This test case validates the PEN capabilites dashboard page
+Validate Authors for PEN Capabilites Dashboard page
+    [Documentation]  This test case validates authors for PEN capabilites dashboard page
     [Tags]  Regression
 
-    PENCapabilitesDashboardPage.Navigate Capabilities Dashboard page
-    PENCapabilitesDashboardPage.Validate Authors Reflected On Dashboard
-    PENCapabilitesDashboardPage.Validate Authors On Search Tab
-    PENCapabilitesDashboardPage.Validate Follow Hotlink for Authors
-    PENCapabilitesDashboardPage.Validate Custome Topics On Dashboard
+    PENCapabilitiesPage.Navigate Capabilities Dashboard page
+    PENCapabilitiesPage.Click on Author tab
+    PENCapabilitiesPage.Validate Authors Reflected On Dashboard
+    PENCapabilitiesPage.Validate Authors On Search Tab
+    PENCapabilitiesPage.Validate Follow Hotlink for Authors
+    PENCapabilitiesPage.Validate Custome Topics On Dashboard
+
+Validate Company for PEN Capabilites Dashboard page
+    [Documentation]  This test case validates authors for PEN capabilites dashboard page
+    [Tags]  Regression
+
+    PENCapabilitiesPage.Navigate Capabilities Dashboard page
+    PENCapabilitiesPage.Validate Authors Reflected On Dashboard
+    PENCapabilitiesPage.Validate Authors On Search Tab
+    PENCapabilitiesPage.Validate Follow Hotlink for Authors
+    PENCapabilitiesPage.Validate Custome Topics On Dashboard
+
+Validate Industry for PEN Capabilites Dashboard page
+    [Documentation]  This test case validates authors for PEN capabilites dashboard page
+    [Tags]  Regression
+
+    PENCapabilitiesPage.Navigate Capabilities Dashboard page
+    PENCapabilitiesPage.Validate Authors Reflected On Dashboard
+    PENCapabilitiesPage.Validate Authors On Search Tab
+    PENCapabilitiesPage.Validate Follow Hotlink for Authors
+    PENCapabilitiesPage.Validate Custome Topics On Dashboard

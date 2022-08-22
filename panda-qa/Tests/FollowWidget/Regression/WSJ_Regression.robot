@@ -66,12 +66,42 @@ Validate the WSJ Preference Center page
     #WSJPreferenceCenterPage.Navigate Article page
     #WSJArticlePage.Scroll stories
 
-Validate the WSJ Capabilites Dashboard page
-    [Documentation]  This test case validates the WSJ capabilites dashboard page
+Validate Authors for WSJ Capabilites Dashboard page
+    [Documentation]  This test case validates authors for WSJ capabilites dashboard page
     [Tags]  Regression
 
-    WSJCapabilitesDashboardPage.Navigate Capabilities Dashboard page
-    WSJCapabilitesDashboardPage.Validate Authors Reflected On Dashboard
-    WSJCapabilitesDashboardPage.Validate Authors On Search Tab
-    WSJCapabilitesDashboardPage.Validate Follow Hotlink for Authors
-    WSJCapabilitesDashboardPage.Validate Custome Topics On Dashboard
+    WSJCapabilitiesPage.Navigate Capabilities Dashboard page
+    WSJCapabilitiesPage.Validate Authors Reflected On Dashboard
+    WSJCapabilitiesPage.Validate Authors On Search Tab
+    WSJCapabilitiesPage.Validate Follow Hotlink for Authors
+    WSJCapabilitiesPage.Validate Custome Topics On Dashboard
+
+Validate Company for WSJ Capabilites Dashboard page
+    [Documentation]  This test case validates authors for WSJ capabilites dashboard page
+    [Tags]  Regression
+
+    WSJCapabilitiesPage.Navigate Capabilities Dashboard page
+    WSJCapabilitiesPage.Validate Authors Reflected On Dashboard
+    WSJCapabilitiesPage.Validate Authors On Search Tab
+    WSJCapabilitiesPage.Validate Follow Hotlink for Authors
+    WSJCapabilitiesPage.Validate Custome Topics On Dashboard
+
+Validate Custome Topics for WSJ Capabilites Dashboard page
+    [Documentation]  This test case validates authors for WSJ capabilites dashboard page
+    [Tags]  Regression
+
+    WSJCapabilitiesPage.Navigate Capabilities Dashboard page
+    WSJCapabilitiesPage.Validate Authors Reflected On Dashboard
+    WSJCapabilitiesPage.Validate Authors On Search Tab
+    WSJCapabilitiesPage.Validate Follow Hotlink for Authors
+    WSJCapabilitiesPage.Validate Custome Topics On Dashboard
+
+Validate Industry for WSJ Capabilites Dashboard page
+    [Documentation]  This test case validates authors for WSJ capabilites dashboard page
+    [Tags]  Regression
+
+    WSJCapabilitiesPage.Navigate Capabilities Dashboard page
+    WSJCapabilitiesPage.Validate Authors Reflected On Dashboard
+    WSJCapabilitiesPage.Validate Authors On Search Tab
+    WSJCapabilitiesPage.Validate Follow Hotlink for Authors
+    WSJCapabilitiesPage.Validate Custome Topics On Dashboard
