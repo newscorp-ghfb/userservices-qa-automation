@@ -5,6 +5,8 @@ Resource  ../../../Resources/DefinedKeywords.robot
 Resource  ../../../Resources/PageObjects/BarronsArticlePage.robot
 Resource  ../../../Resources/PageObjects/BarronsAuthorsPage.robot
 Resource  ../../../Resources/PageObjects/BarronsPreferenceCenterPage.robot
+Resource  ../../../Resources/PageObjects/CapabilitiesPage.robot
+
 
 Test Setup  CommonFunctionality.Start Barrons Article
 Test Teardown  CommonFunctionality.Finish Testcase
@@ -63,12 +65,37 @@ Validate the Barrons Preference Center page
     #BarronsPreferenceCenterPage.Navigate Article page
     #BarronsArticlePage.Scroll stories
 
-Validate the Barrons Capabilites Dashboard page
-    [Documentation]  This test case validates the barrons capabilites dashboard page
+Validate Authors for Barrons Capabilites Dashboard page
+    [Documentation]  This test case validates authors for barrons capabilites dashboard page
     [Tags]  Regression
 
-    BarronsCapabilitesDashboardPage.Navigate Capabilities Dashboard page
-    BarronsCapabilitesDashboardPage.Validate Authors Reflected On Dashboard
-    BarronsCapabilitesDashboardPage.Validate Authors On Search Tab
-    BarronsCapabilitesDashboardPage.Validate Follow Hotlink for Authors
-    BarronsCapabilitesDashboardPage.Validate Custome Topics On Dashboard
+    BarronsCapabilitiesPage.Navigate Capabilities Dashboard page
+    BarronsCapabilitiesPage.Click Author Tab
+    BarronsCapabilitiesPage.Validate Authors Reflected On Dashboard
+    BarronsCapabilitiesPage.Validate Authors On Search Tab
+    BarronsCapabilitiesPage.Validate Follow Hotlink for Authors
+
+Validate Company for Barrons Capabilites Dashboard page
+    [Documentation]  This test case validates authors for barrons capabilites dashboard page
+    [Tags]  Regression
+
+    BarronsCapabilitiesPage.Navigate Capabilities Dashboard page
+    BarronsCapabilitiesPage.Click Company Tab
+    BarronsCapabilitiesPage.Validate Company Reflected On Dashboard
+    BarronsCapabilitiesPage.Validate Company On Search Tab
+
+Validate Custom Topics for Barrons Capabilites Dashboard page
+    [Documentation]  This test case validates custom topics for barrons capabilites dashboard page
+    [Tags]  Regression
+
+    BarronsCapabilitiesPage.Navigate Capabilities Dashboard page
+    CapabiBarronsCapabilitiesPagelitiesPage.Validate Custom Topic On Dashboard
+
+Validate Industry for Barrons Capabilites Dashboard page
+    [Documentation]  This test case validates authors for barrons capabilites dashboard page
+    [Tags]  Regression
+
+    BarronsCapabilitiesPage.Navigate Capabilities Dashboard page
+    BarronsCapabilitiesPage.Click Industry Tab
+    BarronsCapabilitiesPage.Validate Industry Reflected On Dashboard
+    BarronsCapabilitiesPage.Validate Industry On Search Tab

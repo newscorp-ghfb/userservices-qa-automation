@@ -65,12 +65,32 @@ Validate the Market Watch Preference Center page
     #MarketWatchPreferenceCenterPage.Navigate Article page
     #MarketWatchArticlePage.Scroll stories
 
-Validate the Market Watch Capabilites Dashboard page
-    [Documentation]  This test case validates the Market Watch capabilites dashboard page
+Validate Authors for Market Watch Capabilites Dashboard page
+    [Documentation]  This test case validates authors for Market Watch capabilites dashboard page
     [Tags]  Regression
 
-    MarketWatchCapabilitesDashboardPage.Navigate Capabilities Dashboard page
-    MarketWatchCapabilitesDashboardPage.Validate Authors Reflected On Dashboard
-    MarketWatchCapabilitesDashboardPage.Validate Authors On Search Tab
-    MarketWatchCapabilitesDashboardPage.Validate Follow Hotlink for Authors
-    MarketWatchCapabilitesDashboardPage.Validate Custome Topics On Dashboard
+    MarketWatchCapabilitiesPage.Navigate Capabilities Dashboard page
+    MarketWatchCapabilitiesPage.Validate Authors Reflected On Dashboard
+    MarketWatchCapabilitiesPage.Validate Authors On Search Tab
+    MarketWatchCapabilitiesPage.Validate Follow Hotlink for Authors
+    MarketWatchCapabilitiesPage.Validate Custome Topics On Dashboard
+
+Validate Company for Market Watch Capabilites Dashboard page
+    [Documentation]  This test case validates authors for Market Watch capabilites dashboard page
+    [Tags]  Regression
+
+    MarketWatchCapabilitiesPage.Navigate Capabilities Dashboard page
+    MarketWatchCapabilitiesPage.Validate Authors Reflected On Dashboard
+    MarketWatchCapabilitiesPage.Validate Authors On Search Tab
+    MarketWatchCapabilitiesPage.Validate Follow Hotlink for Authors
+    MarketWatchCapabilitiesPage.Validate Custome Topics On Dashboard
+
+Validate Industry for Market Watch Capabilites Dashboard page
+    [Documentation]  This test case validates authors for Market Watch capabilites dashboard page
+    [Tags]  Regression
+
+    MarketWatchCapabilitiesPage.Navigate Capabilities Dashboard page
+    MarketWatchCapabilitiesPage.Validate Authors Reflected On Dashboard
+    MarketWatchCapabilitiesPage.Validate Authors On Search Tab
+    MarketWatchCapabilitiesPage.Validate Follow Hotlink for Authors
+    MarketWatchCapabilitiesPage.Validate Custome Topics On Dashboard
