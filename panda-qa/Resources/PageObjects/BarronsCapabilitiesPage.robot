@@ -11,12 +11,15 @@ ${JSFollowButtonBarronsPath}=  document.querySelector('ufc-follow-author-widget'
 
 *** Keywords ***
 
+
+
 Navigate Capabilities Dashboard page
     IF  ${Env} == "prod"
         Go To  https://int-prod-capabilities-dashboard.vir.onservo.com/app
     ELSE IF  ${Env} == "dev"
         Go To  https://int-int-capabilities-dashboard.vir-dev.onservo.com/app
     END
+    Pause Execution  Click to coninute
 
 Click Author Tab
     Click Button  //*[@href="/app/follow/author/tab/dashboard"]/*[text()="Author"]
