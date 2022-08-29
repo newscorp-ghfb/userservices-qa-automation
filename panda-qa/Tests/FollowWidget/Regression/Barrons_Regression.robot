@@ -5,11 +5,13 @@ Resource  ../../../Resources/DefinedKeywords.robot
 Resource  ../../../Resources/PageObjects/BarronsArticlePage.robot
 Resource  ../../../Resources/PageObjects/BarronsAuthorsPage.robot
 Resource  ../../../Resources/PageObjects/BarronsPreferenceCenterPage.robot
-Resource  ../../../Resources/PageObjects/CapabilitiesPage.robot
+Resource  ../../../Resources/PageObjects/BarronsCapabilitiesPage.robot
+Resource  ../../../Resources/PageObjects/BarronsCMSPage.robot
+Resource  ../../../Resources/PageObjects/BarronsMailboxPage.robot
 
 
 Test Setup  CommonFunctionality.Start Barrons Article
-Test Teardown  CommonFunctionality.Finish Testcase
+#Test Teardown  CommonFunctionality.Finish Testcase
 *** Variables ***
 
 *** Test Cases ***
@@ -99,3 +101,24 @@ Validate Industry for Barrons Capabilites Dashboard page
     BarronsCapabilitiesPage.Click Industry Tab
     BarronsCapabilitiesPage.Validate Industry Reflected On Dashboard
     BarronsCapabilitiesPage.Validate Industry On Search Tab
+
+Validate Publishing Author Company for Barrons CMS page
+    [Documentation]  This test case validates publishing author company for barrons cms page
+    [Tags]  Regression
+
+    BarronsCMSPage.Navigate CMS page
+    BarronsCMSPage.Type Headline
+    BarronsCMSPage.Type Summary
+    BarronsCMSPage.Type Slug
+    BarronsCMSPage.Type By
+    BarronsCMSPage.Click Pub Panel Button
+
+Validate Notification On Mailbox page
+    [Documentation]  This test case validates notifications on mailbox page
+    [Tags]  Regression
+
+    BarronsMailboxPage.Navigate Mailbox page
+    BarronsMailboxPage.Login
+    BarronsMailboxPage.Search Barrons Notification
+#    BarronsMailboxPage.Validate Author Notification
+#    BarronsMailboxPage.Validate Company Notification

@@ -3,9 +3,9 @@ Library  SeleniumLibrary
 Resource  ../Resources/DefinedKeywords.robot
 
 *** Variables ***
-${Browser}=  firefox  #ff, chrome, edge, safari
+${Browser}=  headlessfirefox  #headless, ff, chrome, edge, safari
 
-${Env}=  "dev"  #dev, stg, prod
+${Env}=  "prod"  #dev, stg, prod
 
 ${JSFollowButtonBarronsPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
     ...  .querySelector('ufc-follow-widget')  #2

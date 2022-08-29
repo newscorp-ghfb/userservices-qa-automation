@@ -4,7 +4,9 @@ Resource  ../../../Resources/CommonFunctionality.robot
 Resource  ../../../Resources/DefinedKeywords.robot
 Resource  ../../../Resources/PageObjects/WSJArticlePage.robot
 Resource  ../../../Resources/PageObjects/WSJAuthorsPage.robot
-Resource  ../../../Resources/PageObjects/WSJPreferenceCenterPage.robot
+Resource  ../../../Resources/PageObjects/WSJCMSPage.robot
+Resource  ../../../Resources/PageObjects/WSJInflationPage.robot
+Resource  ../../../Resources/PageObjects/WSJMailboxPage.robot
 
 Test Setup  CommonFunctionality.Start WSJ Article
 #Test Teardown  CommonFunctionality.Finish Testcase
@@ -105,3 +107,15 @@ Validate Industry for WSJ Capabilites Dashboard page
     WSJCapabilitiesPage.Validate Authors On Search Tab
     WSJCapabilitiesPage.Validate Follow Hotlink for Authors
     WSJCapabilitiesPage.Validate Custome Topics On Dashboard
+
+Validate Inflation page
+    [Documentation]  This test case validates inflation for WSJ page
+    [Tags]  Regression
+
+    WSJArticlePage.Validate Follow Button
+    WSJArticlePage.Click Follow Button
+    WSJArticlePage.Validate Sign In Modal
+    WSJArticlePage.Click Sign In Button Modal
+    DefinedKeywords.Market Watch Sign In Process
+    WSJInflationPage.Navigate Inflation page
+    WSJInflationPage.Validate Subscription To All Basket Items
