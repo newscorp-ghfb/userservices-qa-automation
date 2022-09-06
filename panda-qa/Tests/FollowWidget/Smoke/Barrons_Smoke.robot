@@ -17,23 +17,22 @@ Validate the author follow button from articles page
 
     BarronsArticlePage.Validate Follow Button
     BarronsArticlePage.Click Follow Button
+    Set Selenium Speed  0.3 seconds
     BarronsArticlePage.Validate Sign In Modal
     BarronsArticlePage.Click Sign In Button Modal
     DefinedKeywords.Sign In Process
-    Set Selenium Speed  0.2 seconds
     BarronsArticlePage.Validate Following Button
     BarronsArticlePage.Click Following Button
     BarronsArticlePage.Click Undo Link
     BarronsArticlePage.Validate Following Button
-    BarronsArticlePage.Click Following Button
-    BarronsArticlePage.Validate Follow Button
-    BarronsArticlePage.Click Follow Button
     BarronsArticlePage.Click Preference Center link
     BarronsPreferenceCenterPage.Validate Preference Center page
 
 Validate the follow button from authors page
     [Documentation]  This test case validates the follow button from authors page
     [Tags]  Smoke
+
+    Set Selenium Speed  0.5 seconds
 
     BarronsArticlePage.Validate author hyperlink
     BarronsArticlePage.Click author hyperlink
@@ -43,7 +42,7 @@ Validate the follow button from authors page
 Validate the Barrons Preference Center page
     [Documentation]  This test case validates the barrons preference center page
     [Tags]  Smoke
-
+    Set Selenium Speed  0.2 seconds
     BarronsPreferenceCenterPage.Navigate Preference Center page
     DefinedKeywords.Sign In Process
     BarronsPreferenceCenterPage.Validate Followed Authors

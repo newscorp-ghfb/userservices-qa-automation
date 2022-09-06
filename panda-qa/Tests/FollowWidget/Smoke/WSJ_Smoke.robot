@@ -19,10 +19,20 @@ Validate the follow button from articles page
     WSJArticlePage.Click Follow Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
-    DefinedKeywords.Market Watch Sign In Process
+    IF  ${Env} == "prod"
+        DefinedKeywords.Market Watch Sign In Process
+    ELSE IF  ${Env} == "dev"
+        DefinedKeywords.Sign In Process
+    END
     Set Selenium Speed  0.2 seconds
-    #WSJArticlePage.Reload Article Page
+    WSJArticlePage.Scroll Down
     WSJArticlePage.Validate Following Button
+    IF  ${Env} == "prod"
+        Set Selenium Speed  0.1 seconds
+    ELSE IF  ${Env} == "dev"
+        WSJArticlePage.Scroll Down
+        Set Selenium Speed  0.01 seconds
+    END
     WSJArticlePage.Click Following Button
     WSJArticlePage.Click Undo Link
     WSJArticlePage.Validate Following Button
@@ -46,12 +56,18 @@ Validate the WSJ Preference Center page
     [Documentation]  This test case validates the barrons preference center page
     [Tags]  Smoke
 
+    Set Selenium Speed  0.2 seconds
     WSJPreferenceCenterPage.Navigate Preference Center page
-    DefinedKeywords.Market Watch Sign In Process
+    IF  ${Env} == "prod"
+        DefinedKeywords.Market Watch Sign In Process
+    ELSE IF  ${Env} == "dev"
+        DefinedKeywords.Sign In Process
+    END
     WSJPreferenceCenterPage.Validate Followed Authors
     WSJPreferenceCenterPage.Validate Following Toggle Feature
     WSJPreferenceCenterPage.Click Following Toggle Feature
     WSJPreferenceCenterPage.Validate Following Toggle Alert Pop up
     WSJPreferenceCenterPage.Click Following Toggle Alert Pop up
     WSJPreferenceCenterPage.Navigate Article page
+    WSJArticlePage.Scroll Down
     WSJArticlePage.Validate Follow Button

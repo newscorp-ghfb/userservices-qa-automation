@@ -159,3 +159,125 @@ Validate Industry On Search Tab
     Input Text   //*[@placeholder="Industry"]  Indigestion Remedies
     Click Button  //*[text()="Indigestion Remedies"]
     Element Text Should Be  //*[text()="Aliases:"]/../../h2  0 Followers
+
+Capabilities Dashboard WSJ Menu
+    Click Button  //*[text()="The Wall Street Journal"]/../../a
+    Wait Until Element Is Visible  //h1[text()="The Wall Street Journal"]
+    Wait Until Element Is Visible  //*[text()="Alert type:"]
+    Wait Until Element Is Visible  //option[text()="All"]
+    Wait Until Element Is Visible  //option[text()="Digest"]
+    Wait Until Element Is Visible  //option[text()="Author"]
+    Wait Until Element Is Visible  //option[text()="Company"]
+    Wait Until Element Is Visible  //option[text()="Custom Topic"]
+    Wait Until Element Is Visible  //option[text()="Industry"]
+    Wait Until Element Is Visible  //option[text()="Inflation"]
+    Wait Until Element Is Visible  //*[text()="From:"]
+    Wait Until Element Is Visible  //*[text()="To:"]
+    Wait Until Element Is Visible  //th[text()="Stats"]
+    Wait Until Element Is Visible  //th[text()="Engagement"]
+    Wait Until Element Is Visible  //span[text()="Product"]
+    Wait Until Element Is Visible  //span[text()="Sent"]
+    Wait Until Element Is Visible  //span[text()="Bounced"]
+    Wait Until Element Is Visible  //span[text()="Bounced %"]
+    Wait Until Element Is Visible  //span[text()="Clicked"]
+    Wait Until Element Is Visible  //span[text()="Clicked %"]
+    Wait Until Element Is Visible  //td[text()="The Wall Street Journal"]
+    IF  //td[text()="The Wall Street Journal"]/../*[@data-label="Sent"] >= 0
+        Log  The Wall Street Journal Sent value is not null
+    ELSE
+        Log  Error on The Wall Street Journal Sent value
+    END
+    IF  //td[text()="The Wall Street Journal"]/../*[@data-label="Bounced"] >= 0
+        Log  The Wall Street Journal Bounced value is not null
+    ELSE
+        Log  Error on The Wall Street Journal Bounced value
+    END
+    IF  //td[text()="The Wall Street Journal"]/../*[@data-label="Clicked"] >= 0
+        Log  The Wall Street Journal Clicked value is not null
+    ELSE
+        Log  Error on The Wall Street Journal Clicked value
+    END
+    Click Button  //button[text()="Message timeline"]
+    Wait Until Element Is Visible  //*[text()="Alert type:"]
+    Wait Until Element Is Visible  //*[text()="Status:"]
+    Wait Until Element Is Visible  //*[text()="Num results:"]
+    Wait Until Element Is Visible  //option[text()="All"]/../../*[@name="status"]
+    Wait Until Element Is Visible  //option[text()="Delivered"]
+    Wait Until Element Is Visible  //option[text()="Bounced"]
+    Wait Until Element Is Visible  //option[text()="Spam"]
+    Wait Until Element Is Visible  //option[text()="Digest"]
+    Wait Until Element Is Visible  //option[text()="All"]/../../*[@name="alertType"]
+    Wait Until Element Is Visible  //option[text()="Author"]
+    Wait Until Element Is Visible  //option[text()="Company"]
+    Wait Until Element Is Visible  //option[text()="Custom Topic"]
+    Wait Until Element Is Visible  //option[text()="Industry"]
+    Wait Until Element Is Visible  //option[text()="Inflation"]
+    Wait Until Element Is Visible  //option[text()="200"]/../../*[@name="count"]
+    Wait Until Element Is Visible  //option[text()="100"]
+    Wait Until Element Is Visible  //option[text()="50"]
+    IF  //tr[1]/td[5] >= 0
+        Log  The Wall Street Journal Clicked value is not null
+    ELSE
+        Log  Error on The Wall Street Journal Clicked value
+    END
+
+Capabilities Dashboard WSJ Executive Edition Menu
+    Click Button  //*[text()="Executive Edition"]/../../a
+    Wait Until Element Is Visible  //h1[text()="Executive Edition"]
+    Wait Until Element Is Visible  //*[text()="Alert type:"]
+    Wait Until Element Is Visible  //option[text()="All"]
+    Wait Until Element Is Visible  //option[text()="Digest"]
+    Wait Until Element Is Visible  //option[text()="Author"]
+    Wait Until Element Is Visible  //option[text()="Company"]
+    Wait Until Element Is Visible  //option[text()="Custom Topic"]
+    Wait Until Element Is Visible  //option[text()="Industry"]
+    Wait Until Element Is Visible  //option[text()="Inflation"]
+    Wait Until Element Is Visible  //*[text()="From:"]
+    Wait Until Element Is Visible  //*[text()="To:"]
+    Wait Until Element Is Visible  //th[text()="Stats"]
+    Wait Until Element Is Visible  //th[text()="Engagement"]
+    Wait Until Element Is Visible  //span[text()="Product"]
+    Wait Until Element Is Visible  //span[text()="Sent"]
+    Wait Until Element Is Visible  //span[text()="Bounced"]
+    Wait Until Element Is Visible  //span[text()="Bounced %"]
+    Wait Until Element Is Visible  //span[text()="Clicked"]
+    Wait Until Element Is Visible  //span[text()="Clicked %"]
+    Wait Until Element Is Visible  //td[text()="Executive Edition"]
+    IF  //td[text()="Executive Edition"]/../*[@data-label="Sent"] >= 0
+        Log  Executive Edition Sent value is not null
+    ELSE
+        Log  Error on Executive Edition Sent value
+    END
+    IF  //td[text()="Executive Edition"]/../*[@data-label="Bounced"] >= 0
+        Log  Executive Edition Bounced value is not null
+    ELSE
+        Log  Error on Executive Edition Bounced value
+    END
+    IF  //td[text()="Executive Edition"]/../*[@data-label="Clicked"] >= 0
+        Log  Executive Edition Clicked value is not null
+    ELSE
+        Log  Error on Executive Edition Clicked value
+    END
+    Click Button  //button[text()="Message timeline"]
+    Wait Until Element Is Visible  //*[text()="Alert type:"]
+    Wait Until Element Is Visible  //*[text()="Status:"]
+    Wait Until Element Is Visible  //*[text()="Num results:"]
+    Wait Until Element Is Visible  //option[text()="All"]/../../*[@name="status"]
+    Wait Until Element Is Visible  //option[text()="Delivered"]
+    Wait Until Element Is Visible  //option[text()="Bounced"]
+    Wait Until Element Is Visible  //option[text()="Spam"]
+    Wait Until Element Is Visible  //option[text()="Digest"]
+    Wait Until Element Is Visible  //option[text()="All"]/../../*[@name="alertType"]
+    Wait Until Element Is Visible  //option[text()="Author"]
+    Wait Until Element Is Visible  //option[text()="Company"]
+    Wait Until Element Is Visible  //option[text()="Custom Topic"]
+    Wait Until Element Is Visible  //option[text()="Industry"]
+    Wait Until Element Is Visible  //option[text()="Inflation"]
+    Wait Until Element Is Visible  //option[text()="200"]/../../*[@name="count"]
+    Wait Until Element Is Visible  //option[text()="100"]
+    Wait Until Element Is Visible  //option[text()="50"]
+    IF  //tr[1]/td[5] >= 0
+        Log  Executive Edition Clicked value is not null
+    ELSE
+        Log  Error on Executive Edition Clicked value
+    END

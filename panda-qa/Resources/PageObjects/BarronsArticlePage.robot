@@ -146,6 +146,7 @@ Click Preference Center Link
     Click Element  dom:${JSPreferenceCenterLinkBarronsPath}
 
 Validate author hyperlink
+    Execute javascript  window.scrollTo(0,500)
     Page Should Contain Element  //*[@id="article-contents"]/header/div[2]/div/div[1]/a/span
 
 Click author hyperlink

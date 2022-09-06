@@ -159,3 +159,64 @@ Validate Industry On Search Tab
     Input Text   //*[@placeholder="Industry"]  Indigestion Remedies
     Click Button  //*[text()="Indigestion Remedies"]
     Element Text Should Be  //*[text()="Aliases:"]/../../h2  0 Followers
+
+Capabilities Dashboard PEN Menu
+    Click Button  //*[text()="Private Equity News"]/../../a
+    Wait Until Element Is Visible  //h1[text()="Private Equity News"]
+    Wait Until Element Is Visible  //*[text()="Alert type:"]
+    Wait Until Element Is Visible  //option[text()="All"]
+    Wait Until Element Is Visible  //option[text()="Digest"]
+    Wait Until Element Is Visible  //option[text()="Author"]
+    Wait Until Element Is Visible  //option[text()="Company"]
+    Wait Until Element Is Visible  //option[text()="Custom Topic"]
+    Wait Until Element Is Visible  //option[text()="Industry"]
+    Wait Until Element Is Visible  //option[text()="Inflation"]
+    Wait Until Element Is Visible  //*[text()="From:"]
+    Wait Until Element Is Visible  //*[text()="To:"]
+    Wait Until Element Is Visible  //th[text()="Stats"]
+    Wait Until Element Is Visible  //th[text()="Engagement"]
+    Wait Until Element Is Visible  //span[text()="Product"]
+    Wait Until Element Is Visible  //span[text()="Sent"]
+    Wait Until Element Is Visible  //span[text()="Bounced"]
+    Wait Until Element Is Visible  //span[text()="Bounced %"]
+    Wait Until Element Is Visible  //span[text()="Clicked"]
+    Wait Until Element Is Visible  //span[text()="Clicked %"]
+    Wait Until Element Is Visible  //td[text()="Private Equity News"]
+    IF  //td[text()="Private Equity News"]/../*[@data-label="Sent"] >= 0
+        Log  Private Equity News Sent value is not null
+    ELSE
+        Log  Error on Private Equity News Sent value
+    END
+    IF  //td[text()="Private Equity News"]/../*[@data-label="Bounced"] >= 0
+        Log  Private Equity News Bounced value is not null
+    ELSE
+        Log  Error on Private Equity News Bounced value
+    END
+    IF  //td[text()="Private Equity News"]/../*[@data-label="Clicked"] >= 0
+        Log  Private Equity News Clicked value is not null
+    ELSE
+        Log  Error on Private Equity News Clicked value
+    END
+    Click Button  //button[text()="Message timeline"]
+    Wait Until Element Is Visible  //*[text()="Alert type:"]
+    Wait Until Element Is Visible  //*[text()="Status:"]
+    Wait Until Element Is Visible  //*[text()="Num results:"]
+    Wait Until Element Is Visible  //option[text()="All"]/../../*[@name="status"]
+    Wait Until Element Is Visible  //option[text()="Delivered"]
+    Wait Until Element Is Visible  //option[text()="Bounced"]
+    Wait Until Element Is Visible  //option[text()="Spam"]
+    Wait Until Element Is Visible  //option[text()="Digest"]
+    Wait Until Element Is Visible  //option[text()="All"]/../../*[@name="alertType"]
+    Wait Until Element Is Visible  //option[text()="Author"]
+    Wait Until Element Is Visible  //option[text()="Company"]
+    Wait Until Element Is Visible  //option[text()="Custom Topic"]
+    Wait Until Element Is Visible  //option[text()="Industry"]
+    Wait Until Element Is Visible  //option[text()="Inflation"]
+    Wait Until Element Is Visible  //option[text()="200"]/../../*[@name="count"]
+    Wait Until Element Is Visible  //option[text()="100"]
+    Wait Until Element Is Visible  //option[text()="50"]
+    IF  //tr[1]/td[5] >= 0
+        Log  Private Equity Clicked value is not null
+    ELSE
+        Log  Error on Private Equity Clicked value
+    END

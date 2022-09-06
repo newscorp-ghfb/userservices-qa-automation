@@ -77,3 +77,6 @@ Validate author hyperlink
 
 Click author hyperlink
     Click Element  //*[text()='Dave Michaels']
+
+Scroll Down
+    Set Focus To Element  //*[text()='Dave Michaels']

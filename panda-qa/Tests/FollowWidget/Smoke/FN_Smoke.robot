@@ -17,10 +17,11 @@ Validate the follow button from articles page
 
     FNArticlePage.Validate Follow Button
     FNArticlePage.Click Follow Button
-    FNArticlePage.Validate Sign In Modal
+    Set Selenium Speed  0.2 seconds
+    #FNArticlePage.Validate Sign In Modal
     FNArticlePage.Click Sign In Button Modal
     DefinedKeywords.Sign In Process
-    Set Selenium Speed  0.2 seconds
+    #Set Selenium Speed  0.2 seconds
     FNArticlePage.Validate Following Button
     FNArticlePage.Click Following Button
     FNArticlePage.Click Undo Link
