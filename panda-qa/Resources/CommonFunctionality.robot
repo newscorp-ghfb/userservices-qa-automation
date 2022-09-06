@@ -5,7 +5,7 @@ Resource  ../Resources/DefinedKeywords.robot
 *** Variables ***
 ${Browser}=  headlessfirefox  #headless, ff, chrome, edge, safari
 
-${Env}=  "prod"  #dev, stg, prod
+${Env}=  "dev"  #dev, stg, prod
 
 ${JSFollowButtonBarronsPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
     ...  .querySelector('ufc-follow-widget')  #2
@@ -53,6 +53,7 @@ Start FN Article
     ELSE IF  ${Env} == "dev"
         Open Browser  https://www.s.dev.fnlondon.com/articles/testpanda-test-wsj-digest-2-20211020  ${Browser}
     END
+    Execute javascript  window.scrollTo(0,500)
     Wait Until Page Contains Element  dom:${JSFollowButtonBarronsPath}
     Maximize Browser Window
 
@@ -64,11 +65,10 @@ Start WSJ Article
     ELSE IF  ${Env} == "stg"
         Open Browser  https://www.stg.internal.wsj.com/articles/israel-headed-for-new-elections-as-coalition-moves-to-dissolve-parliament-11655741947?mod=hp_lead_pos11  ${Browser}
     ELSE IF  ${Env} == "dev"
-        Open Browser  https://www.s.dev.wsj.com/articles/test-hey-2021-grads-these-apps-can-prepare-you-for-adulting-11623797766  ${Browser}
+        Open Browser  https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s  ${Browser}
     END
-    Wait Until Element Is Visible  //*[@id="__next"]/div/main/article/div/div[2]/div/span/a
-    Set Focus To Element  //*[@id="__next"]/div/main/article/div/div[2]/div/span/a
-    #Wait Until Page Contains Element  dom:${JSFollowButtonMGPath}
+    Wait Until Element Is Visible  //*[text()="Dave Michaels"]
+    Set Focus To Element  //*[text()="Dave Michaels"]
     Wait Until Element Is Visible  dom:${JSFollowButtonMGPath}  30s
     Maximize Browser Window
 

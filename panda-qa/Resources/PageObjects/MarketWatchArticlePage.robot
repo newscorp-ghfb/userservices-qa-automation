@@ -48,7 +48,8 @@ Validate Following Button
     Element Text Should Be  dom:${JSFollowButtonMWPath}  Following  timeout=45s
 
 Click Follow Button
-    Scroll Element Into View  //*[@id="maincontent"]/div[1]/div[1]/div[2]/div[2]/div/a/h4
+    #Scroll Element Into View  //*[@id="maincontent"]/div[1]/div[1]/div[2]/div[2]/div/a/h4
+    Execute javascript  window.scrollTo(0,500)
     Click Button  dom:${JSFollowButtonMWPath}
 
 Click Following Button
@@ -75,5 +76,5 @@ Validate author hyperlink
     Page Should Contain Element  //*[@id="maincontent"]/div[1]/div[1]/div[2]/div[2]/div/a
 
 Click author hyperlink
-    Scroll Element Into View  //*[@id="maincontent"]/div[1]/div[1]/div[2]/div[2]/div/a/h4
+    Execute javascript  window.scrollTo(0,500)
     Click Element  //*[@id="maincontent"]/div[1]/div[1]/div[2]/div[2]/div/a/h4
