@@ -104,3 +104,9 @@ Validate Real State Search for Mansion Global Capabilites Dashboard page
     MansionGlobalCapabilitiesPage.Validate Authors On Search Tab
     MansionGlobalCapabilitiesPage.Validate Follow Hotlink for Authors
     MansionGlobalCapabilitiesPage.Validate Custome Topics On Dashboard
+
+Validate the Mansion Global Campaign Monitor Dashboard page
+    [Documentation]  This test case validates the Mansion Global campaign monitor dashboard page
+    [Tags]  Regression
+    Set Selenium Speed  0.2 seconds
+    MansionGlobalCapabilites.Capabilities Dashboard Mansion Global Menu

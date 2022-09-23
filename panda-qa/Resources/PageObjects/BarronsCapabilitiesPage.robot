@@ -76,15 +76,24 @@ Validate Authors Reflected On Dashboard
 Validate Authors On Search Tab
     Click Button  //*[text()='Search']
     Click Button  //*[@placeholder="Author name"]
-    Input Text   //*[@placeholder="Author name"]  John Smith
-    Click Button  //*[text()="John Smith"]
+    IF  ${Env} == "prod"
+        Input Text   //*[@placeholder="Author name"]  Ben Walsh
+        Click Button  //*[text()="Ben Walsh"]
+    ELSE IF  ${Env} == "dev"
+        Input Text   //*[@placeholder="Author name"]  John Smith
+        Click Button  //*[text()="John Smith"]
+    END
     Element Text Should Be  //*[text()="About"]/../h2[2]  0 Followers
 
 Validate Follow Hotlink for Authors
     Click Author Tab
     Click Button  //*[text()='Follow Hotlinks']
     Click Button  //*[@placeholder="Author name"]
-    Input Text   //*[@placeholder="Author name"]  John Smith
+    IF  ${Env} == "prod"
+        Input Text   //*[@placeholder="Author name"]  Ben Walsh
+    ELSE IF  ${Env} == "dev"
+        Input Text   //*[@placeholder="Author name"]  John Smith
+    END
     Wait Until Element is Visible  //button[text()="Copy"]
     #Click Button  //*[text()='All records']
     ##Validate author is show all records

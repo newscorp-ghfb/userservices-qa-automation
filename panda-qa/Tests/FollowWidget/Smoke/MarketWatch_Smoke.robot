@@ -57,5 +57,6 @@ Validate the Market Watch Preference Center page
     MarketWatchPreferenceCenterPage.Validate Following Toggle Alert Pop up
     MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
     MarketWatchPreferenceCenterPage.Navigate Article page
+    Set Selenium Speed  0.3 seconds
     MarketWatch ArticlePage.Validate Follow Button
 

@@ -11,7 +11,7 @@ Resource  ../../../Resources/PageObjects/BarronsMailboxPage.robot
 
 
 Test Setup  CommonFunctionality.Start Barrons Article
-#Test Teardown  CommonFunctionality.Finish Testcase
+Test Teardown  CommonFunctionality.Finish Testcase
 *** Variables ***
 
 *** Test Cases ***
@@ -105,20 +105,35 @@ Validate Industry for Barrons Capabilites Dashboard page
 Validate Publishing Author Company for Barrons CMS page
     [Documentation]  This test case validates publishing author company for barrons cms page
     [Tags]  Regression
-
+    IF  ${Env} == "dev"
     BarronsCMSPage.Navigate CMS page
     BarronsCMSPage.Type Headline
     BarronsCMSPage.Type Summary
     BarronsCMSPage.Type Slug
     BarronsCMSPage.Type By
     BarronsCMSPage.Click Pub Panel Button
+    END
 
 Validate Notification On Mailbox page
     [Documentation]  This test case validates notifications on mailbox page
     [Tags]  Regression
 
+    IF  ${Env} == "dev"
     BarronsMailboxPage.Navigate Mailbox page
     BarronsMailboxPage.Login
     BarronsMailboxPage.Search Barrons Notification
 #    BarronsMailboxPage.Validate Author Notification
 #    BarronsMailboxPage.Validate Company Notification
+     END
+
+Validate the Capabilities Dashboard Main Menu page
+    [Documentation]  This test case validates the capabilites main menu dashboard page
+    [Tags]  Regression
+    Set Selenium Speed  0.2 seconds
+    DefinedKeywords.Capabilities Dashboard Main Menu
+
+Validate the Barrons Campaign Monitor Dashboard page
+    [Documentation]  This test case validates the Barrons campaign monitor dashboard page
+    [Tags]  Regression
+    Set Selenium Speed  0.2 seconds
+    BarronsCapabilites.Capabilities Dashboard Barrons Menu

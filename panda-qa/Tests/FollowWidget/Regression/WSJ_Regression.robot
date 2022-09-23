@@ -119,3 +119,9 @@ Validate Inflation page
     DefinedKeywords.Market Watch Sign In Process
     WSJInflationPage.Navigate Inflation page
     WSJInflationPage.Validate Subscription To All Basket Items
+
+Validate the WSJ Campaign Monitor Dashboard page
+    [Documentation]  This test case validates the WSJ campaign monitor dashboard page
+    [Tags]  Regression
+    Set Selenium Speed  0.2 seconds
+    WSJCapabilites.Capabilities Dashboard WSJ Menu

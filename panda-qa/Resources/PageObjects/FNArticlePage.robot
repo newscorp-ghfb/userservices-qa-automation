@@ -48,6 +48,9 @@ Validate Follow Button
     Wait Until Element Contains  dom:${JSFollowButtonFNPath}  Follow  timeout=15
     Element Text Should Be  dom:${JSFollowButtonFNPath}  Follow  timeout=15
 
+Scroll Down
+    Execute javascript  window.scrollTo(0,500)
+
 Validate Following Button
     Wait Until Element is Visible  dom:${JSFollowingButtonFNPath}
     Wait Until Element Contains  dom:${JSFollowingButtonFNPath}  Following  timeout=15
@@ -65,7 +68,9 @@ Validate Sign In Modal
 
 Click Sign In Button Modal
     #Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}  20s
+    Set Selenium Speed  0.4 seconds
     Click Element  dom:${JSFollowSignInButtonPath}
+    Set Selenium Speed  0.2 seconds
 
 Click Undo Link
     Wait Until Element is Visible  dom:${JSUndoButtonFNPath}

@@ -41,11 +41,19 @@ Validate Author Updates From Preference Center Reflected In Articles
     Click Button  //*[@id="root"]/div/div/div/div[2]/div[2]/div/div/button
 
 Add Author By Hotlink
-    Go To  https://www.fnlondon.com/follow?alert=author&id=9004_FN
+    IF  ${Env} == "prod"
+        Go To  https://www.fnlondon.com/follow?alert=author&id=9004_FN&frequency=realtime
+    ELSE IF  ${Env} == "dev"
+        Go To  https://www.s.dev.fnlondon.com/follow?alert=author&id=8680_FN&frequency=realtime
+    END
+
 
 Validate Author Name
-    Page Should Contain  Paul Clarke
-
+    IF  ${Env} == "prod"
+        Page Should Contain  Paul Clarke
+    ELSE IF  ${Env} == "dev"
+        Page Should Contain  Sunita Adhikarla
+    END
 Validate Following Frequency
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[1]/span[2]
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[2]/span[2]
@@ -61,10 +69,18 @@ Validate All Tabs Displayed
 
 Validate Author On All Tab
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[7]
-    Page Should Contain  Paul Clarke
+    IF  ${Env} == "prod"
+        Page Should Contain  Paul Clarke
+    ELSE IF  ${Env} == "dev"
+        Page Should Contain  Sunita Adhikarla
+    END
 
 Add Company By Hotlink
-    Go To  https://www.fnlondon.com/follow?alert=company&fcode=AMZCOM
+    IF  ${Env} == "prod"
+        Go To  https://www.fnlondon.com/follow?alert=company&fcode=AMZCOM
+    ELSE IF  ${Env} == "dev"
+        Go To  https://www.s.dev.fnlondon.com/follow?alert=company&fcode=AMZCOM
+    END
 
 Validate Followed Companies
     Page Should Contain  Companies
@@ -74,18 +90,18 @@ Validate Company Frequency
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[2]/div/label[2]/span[2]
 
 Validate Company Quote Link
-    Page Should Contain Element  //*[@href="https://www.fnlondon.com/market-data/stocks/AMZN"]
+    Page Should Contain Element  //a[text()="Amazon.com, Inc."]
 
 Validate Company On All Tab
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[7]
-    Page Should Contain  Amazon Com Inc
+    Page Should Contain Element  //*[text()="Amazon.com, Inc."]/../*[text()="Financial News"]
 
 Click FN tab
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[2]
 
 Validate Company Toggle Feature
-    Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[3]/tbody/tr[1]/td[3]/div/div
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[3]/tbody/tr[1]/td[3]/div/div
+    Wait Until Element is Visible  //*[text()="Amazon.com, Inc."]/../../..//*[@role="switch"]
+    Page Should Contain Element  //*[text()="Amazon.com, Inc."]/../../..//*[@role="switch"]
 
 Click Company Toggle Feature
-    Click Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[3]/tbody/tr[1]/td[3]/div
+    Click Element  //*[text()="Amazon.com, Inc."]/../../..//*[@role="switch"]

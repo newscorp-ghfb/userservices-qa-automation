@@ -94,3 +94,9 @@ Validate Industry for PEN Capabilites Dashboard page
     PENCapabilitiesPage.Validate Authors On Search Tab
     PENCapabilitiesPage.Validate Follow Hotlink for Authors
     PENCapabilitiesPage.Validate Custome Topics On Dashboard
+
+Validate the PEN Campaign Monitor Dashboard page
+    [Documentation]  This test case validates the PEN campaign monitor dashboard page
+    [Tags]  Regression
+    Set Selenium Speed  0.2 seconds
+    PENCapabilites.Capabilities Dashboard PEN Menu

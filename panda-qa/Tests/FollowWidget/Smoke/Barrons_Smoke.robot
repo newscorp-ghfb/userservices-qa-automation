@@ -17,11 +17,12 @@ Validate the author follow button from articles page
 
     BarronsArticlePage.Validate Follow Button
     BarronsArticlePage.Click Follow Button
-    Set Selenium Speed  0.3 seconds
+    Set Selenium Speed  0.4 seconds
     BarronsArticlePage.Validate Sign In Modal
     BarronsArticlePage.Click Sign In Button Modal
     DefinedKeywords.Sign In Process
     BarronsArticlePage.Validate Following Button
+    Set Selenium Speed  0.2 seconds
     BarronsArticlePage.Click Following Button
     BarronsArticlePage.Click Undo Link
     BarronsArticlePage.Validate Following Button

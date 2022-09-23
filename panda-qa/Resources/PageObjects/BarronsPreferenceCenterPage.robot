@@ -24,6 +24,7 @@ Navigate Article page
         Go To  https://www.stg.internal.barrons.com/articles/twitter-stock-pick-ceo-51638548530
     ELSE IF  ${Env} == "dev"
         Go To  https://www.s.dev.barrons.com/articles/twitter-stock-pick-ceo-51638548530
+        Set Selenium Speed  0.4 seconds
     END
 Validate Followed Authors
     Page Should Contain  Authors
@@ -45,7 +46,11 @@ Validate Author Updates From Preference Center Reflected In Articles
     Click Button  //*[@id="root"]/div/div/div/div[2]/div[2]/div/div/button
 
 Add Author By Hotlink
-    Go To  https://www.barrons.com/follow?alert=author&id=8553_BARRONS&frequency=realtime
+    IF  ${Env} == "prod"
+        Go To  https://www.barrons.com/follow?alert=author&id=8553_BARRONS&frequency=realtime
+    ELSE IF  ${Env} == "dev"
+        Go To  https://www.s.dev.barrons.com/follow?alert=author&id=8553_BARRONS&frequency=realtime
+    END
 
 Validate Author Name
     Page Should Contain  Teresa Rivas
@@ -71,25 +76,29 @@ Click Barrons tab
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[1]
 
 Add Company By Hotlink
-    Go To  https://www.barrons.com/follow?alert=company&fcode=AMZCOM
+    IF  ${Env} == "prod"
+        Go To  https://www.barrons.com/follow?alert=author&id=8553_BARRONS&frequency=realtime
+    ELSE IF  ${Env} == "dev"
+        Go To  https://www.s.dev.barrons.com/follow?alert=company&fcode=AMZCOM
+    END
 
 Validate Followed Companies
     Page Should Contain  Companies
 
 Validate Company Toggle Feature
-    Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[3]/tbody/tr[1]/td[3]/div/div
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[3]/tbody/tr[1]/td[3]/div/div
+    Wait Until Element is Visible  //*[text()="Amazon.com, Inc."]/../../..//*[@role="switch"]
+    Page Should Contain Element  //*[text()="Amazon.com, Inc."]/../../..//*[@role="switch"]
 
 Click Company Toggle Feature
-    Click Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[3]/tbody/tr[1]/td[3]/div
+    Click Element  //*[text()="Amazon.com, Inc."]/../../..//*[@role="switch"]
 
 Validate Company Frequency
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[2]/div/label[1]/span[2]
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[2]/div/label[2]/span[2]
 
 Validate Company Quote Link
-    Page Should Contain Element  //*[@href="https://www.barrons.com/market-data/stocks/AMZN"]
+    Page Should Contain Element  //a[text()="Amazon.com, Inc."]
 
 Validate Company On All Tab
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[7]
-    Page Should Contain  Amazon Com Inc
+    Page Should Contain Element  //*[text()="Amazon.com, Inc."]/../*[text()="Barrons"]

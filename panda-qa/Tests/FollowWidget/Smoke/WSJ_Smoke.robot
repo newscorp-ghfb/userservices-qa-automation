@@ -27,11 +27,11 @@ Validate the follow button from articles page
     Set Selenium Speed  0.2 seconds
     WSJArticlePage.Scroll Down
     WSJArticlePage.Validate Following Button
+    WSJArticlePage.Scroll Down
     IF  ${Env} == "prod"
         Set Selenium Speed  0.1 seconds
     ELSE IF  ${Env} == "dev"
-        WSJArticlePage.Scroll Down
-        Set Selenium Speed  0.01 seconds
+        Set Selenium Speed  0.35 seconds
     END
     WSJArticlePage.Click Following Button
     WSJArticlePage.Click Undo Link
@@ -70,4 +70,5 @@ Validate the WSJ Preference Center page
     WSJPreferenceCenterPage.Click Following Toggle Alert Pop up
     WSJPreferenceCenterPage.Navigate Article page
     WSJArticlePage.Scroll Down
+    Set Selenium Speed  0.4 seconds
     WSJArticlePage.Validate Follow Button
