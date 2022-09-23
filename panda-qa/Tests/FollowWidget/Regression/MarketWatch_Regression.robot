@@ -94,3 +94,9 @@ Validate Industry for Market Watch Capabilites Dashboard page
     MarketWatchCapabilitiesPage.Validate Authors On Search Tab
     MarketWatchCapabilitiesPage.Validate Follow Hotlink for Authors
     MarketWatchCapabilitiesPage.Validate Custome Topics On Dashboard
+
+Validate the Market Watch Campaign Monitor Dashboard page
+    [Documentation]  This test case validates the Market Watch campaign monitor dashboard page
+    [Tags]  Regression
+    Set Selenium Speed  0.2 seconds
+    MarketWatchCapabilites.Capabilities Dashboard Market Watch Menu

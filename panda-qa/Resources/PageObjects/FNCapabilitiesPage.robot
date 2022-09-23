@@ -44,11 +44,9 @@ Validate Following Button
 Validate Authors Reflected On Dashboard
     ${Totalauthorsubs} = Get Value  //*[text()="Total subscriptions"]/../div[2]
     IF  ${Env} == "prod"
-        Go To  https://www.barrons.com/follow?alert=author&id=8572_BARRONS&frequency=realtime
-    ELSE IF  ${Env} == "stg"
-        Go To  https://www.stg.internal.barrons.com/follow?alert=author&id=8572_BARRONS&frequency=realtime
+        Go To  https://www.fnlondon.com/follow?alert=author&id=9004_FN&frequency=realtime
     ELSE IF  ${Env} == "dev"
-        Go To  https://www.s.dev.barrons.com/follow?alert=author&id=8572_BARRONS&frequency=realtime
+        Go To  https://www.s.dev.fnlondon.com/follow?alert=author&id=8680_FN&frequency=realtime
     END
     Navigate Capabilities Dashboard page
     Click Author Tab

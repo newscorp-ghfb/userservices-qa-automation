@@ -22,6 +22,7 @@ Validate the follow button from articles page
     FNArticlePage.Click Sign In Button Modal
     DefinedKeywords.Sign In Process
     #Set Selenium Speed  0.2 seconds
+    FNArticlePage.Scroll Down
     FNArticlePage.Validate Following Button
     FNArticlePage.Click Following Button
     FNArticlePage.Click Undo Link

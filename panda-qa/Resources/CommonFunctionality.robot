@@ -27,6 +27,7 @@ Start Barrons Article
     Set Selenium Speed  0.5 seconds
     IF  ${Env} == "prod"
         Open Browser  https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634  ${Browser}
+        Execute javascript  window.scrollTo(0,500)
     ELSE IF  ${Env} == "stg"
         Open Browser  https://www.stg.internal.barrons.com/articles/wendys-wen-stock-earnings-51652268634  ${Browser}
     ELSE IF  ${Env} == "dev"
@@ -67,7 +68,7 @@ Start WSJ Article
     ELSE IF  ${Env} == "dev"
         Open Browser  https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s  ${Browser}
     END
-    Wait Until Element Is Visible  //*[text()="Dave Michaels"]
+    #Wait Until Element Is Visible  //*[text()="Dave Michaels"]
     Set Focus To Element  //*[text()="Dave Michaels"]
     Wait Until Element Is Visible  dom:${JSFollowButtonMGPath}  30s
     Maximize Browser Window

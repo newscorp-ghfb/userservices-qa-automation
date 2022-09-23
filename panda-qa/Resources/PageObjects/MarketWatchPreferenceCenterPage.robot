@@ -73,18 +73,18 @@ Validate Company Frequency
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[2]/div/label[2]/span[2]
 
 Validate Company Quote Link
-    Page Should Contain Element  //*[@href="https://www.marketwatch.com/investing/stock/AMZN"]
+    Page Should Contain Element  //a[text()="Amazon.com, Inc."]
 
 Validate Company On All Tab
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[7]
-    Page Should Contain  Amazon Com Inc
+    Page Should Contain Element  //*[text()="Amazon.com, Inc."]/../*[text()="MarketWatch"]
 
 Click Market Watch tab
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[4]
 
 Validate Company Toggle Feature
-    Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[3]/tbody/tr[1]/td[3]/div/div
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[3]/tbody/tr[1]/td[3]/div/div
+    Wait Until Element is Visible  //*[text()="Amazon.com, Inc."]/../../..//*[@role="switch"]
+    Page Should Contain Element  //*[text()="Amazon.com, Inc."]/../../..//*[@role="switch"]
 
 Click Company Toggle Feature
-    Click Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[3]/tbody/tr[1]/td[3]/div
+    Click Element  //*[text()="Amazon.com, Inc."]/../../..//*[@role="switch"]

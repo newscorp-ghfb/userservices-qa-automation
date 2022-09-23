@@ -39,6 +39,7 @@ ${JSPreferenceCenterLinkMarketWatchPath}=  document.querySelector('ufc-snackbar'
 
 *** Keywords ***
 Validate Follow Button
+    Execute javascript  window.scrollTo(0,500)
     Wait Until Element is Visible  dom:${JSFollowButtonMWPath}
     Element Text Should Be  dom:${JSFollowButtonMWPath}  Follow  timeout=40s
 

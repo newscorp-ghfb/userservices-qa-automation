@@ -97,3 +97,9 @@ Validate Industry for FN Capabilites Dashboard page
     FNCapabilitiesPage.Validate Authors On Search Tab
     FNCapabilitiesPage.Validate Follow Hotlink for Authors
     FNCapabilitiesPage.Validate Custome Topics On Dashboard
+
+Validate the FN Campaign Monitor Dashboard page
+    [Documentation]  This test case validates the FN campaign monitor dashboard page
+    [Tags]  Regression
+    Set Selenium Speed  0.2 seconds
+    FNCapabilites.Capabilities Dashboard FN Menu
