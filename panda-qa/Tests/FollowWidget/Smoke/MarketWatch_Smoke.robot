@@ -13,7 +13,11 @@ Test Teardown  CommonFunctionality.Finish Testcase
 *** Variables ***
 
 *** Test Cases ***
-
+#US-T185
+#US-T13
+#US-T14
+#US-T15
+#US-T16
 Validate the follow button from articles page
     [Documentation]  These test cases validate the follow button from articles page
     [Tags]  Smoke
@@ -35,7 +39,11 @@ Validate the follow button from articles page
     MarketWatchArticlePage.Click Follow Button
     MarketWatchArticlePage.Click Preference Center link
     MarketWatchPreferenceCenterPage.Validate Preference Center page
-
+#US-T185
+#US-T39
+#US-T40
+#US-T41
+#US-T42
 Validate the follow button from authors page
     [Documentation]  This test case validates the follow button from authors page
     [Tags]  Smoke
@@ -44,7 +52,9 @@ Validate the follow button from authors page
     MarketWatchArticlePage.Click author hyperlink
     MarketWatchAuthorsPage.Validate Authors Page
     MarketWatchArticlePage.Validate Follow Button
-
+#US-T185
+#US-T90
+#US-T258
 Validate the Market Watch Preference Center page
     [Documentation]  This test case validates the barrons preference center page
     [Tags]  Smoke
