@@ -72,3 +72,6 @@ Click Preference Center Link
 Validate Author Label
     Wait Until Element is Visible  //*[@id="mg-pre-body-article-wrap"]/div[3]/div/div/strong
     Page Should Contain Element  //*[@id="mg-pre-body-article-wrap"]/div[3]/div/div/strong
+
+Validate author without byline
+    Page Should Contain Element  //div/div/strong[contains(., 'Mary Diduch')]
