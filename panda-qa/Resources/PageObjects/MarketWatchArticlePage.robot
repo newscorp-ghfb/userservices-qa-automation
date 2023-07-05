@@ -39,7 +39,9 @@ ${JSPreferenceCenterLinkMarketWatchPath}=  document.querySelector('ufc-snackbar'
 
 *** Keywords ***
 Validate Follow Button
-    Execute javascript  window.scrollTo(0,500)
+    IF  ${Env} == "prod"
+        Execute javascript  window.scrollTo(0,500)
+    END
     Wait Until Element is Visible  dom:${JSFollowButtonMWPath}
     Element Text Should Be  dom:${JSFollowButtonMWPath}  Follow  timeout=40s
 
@@ -50,7 +52,9 @@ Validate Following Button
 
 Click Follow Button
     #Scroll Element Into View  //*[@id="maincontent"]/div[1]/div[1]/div[2]/div[2]/div/a/h4
-    Execute javascript  window.scrollTo(0,500)
+    IF  ${Env} == "prod"
+        Execute javascript  window.scrollTo(0,500)
+    END
     Click Button  dom:${JSFollowButtonMWPath}
 
 Click Following Button
@@ -79,3 +83,6 @@ Validate author hyperlink
 Click author hyperlink
     Execute javascript  window.scrollTo(0,500)
     Click Element  //*[@id="maincontent"]/div[1]/div[1]/div[2]/div[2]/div/a/h4
+
+Validate author without byline
+    Page Should Contain Element  //div[@class="byline"]/div/div/span[text()="Clare Dickinson"]
