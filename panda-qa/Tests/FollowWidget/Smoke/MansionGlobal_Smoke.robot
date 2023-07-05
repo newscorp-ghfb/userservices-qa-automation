@@ -11,6 +11,11 @@ Test Teardown  CommonFunctionality.Finish Testcase
 *** Variables ***
 
 *** Test Cases ***
+#US-T186
+#US-T9
+#US-T10
+#US-T11
+#US-T12
 Validate the follow button from articles page
     [Documentation]  These test cases validate the follow button from articles page
     [Tags]  Smoke
@@ -33,7 +38,7 @@ Validate the follow button from articles page
     MansionGlobalArticlePage.Click Follow Button
     MansionGlobalArticlePage.Click Preference Center link
     MansionGlobalPreferenceCenterPage.Validate Preference Center page
-
+#US-T186
 Validate the Mansion Global Preference Center page
     [Documentation]  This test case validates the mansion global preference center page
     [Tags]  Smoke
