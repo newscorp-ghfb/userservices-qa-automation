@@ -11,6 +11,11 @@ Test Teardown  CommonFunctionality.Finish Testcase
 *** Variables ***
 
 *** Test Cases ***
+#US-T159
+#US-T24
+#US-T23
+#US-T21
+#US-T22
 Validate the follow button from articles page
     [Documentation]  This test case validates the follow button from articles page
     [Tags]  Smoke
@@ -41,6 +46,11 @@ Validate the follow button from articles page
     WSJArticlePage.Click Follow Button
     WSJArticlePage.Click Preference Center link
     WSJPreferenceCenterPage.Validate Preference Center page
+#US-T159
+#US-T47
+#US-T48
+#US-T49
+#US-T50
 
 Validate the follow button from authors page
     [Documentation]  This test case validates the follow button from authors page
@@ -51,7 +61,10 @@ Validate the follow button from authors page
     DefinedKeywords.Set Implicit Wait
     WSJAuthorsPage.Validate Authors Page
     WSJAuthorsPage.Validate Follow Button
-
+#US-T159
+#US-T97
+#US-T255
+#US-T256
 Validate the WSJ Preference Center page
     [Documentation]  This test case validates the barrons preference center page
     [Tags]  Smoke

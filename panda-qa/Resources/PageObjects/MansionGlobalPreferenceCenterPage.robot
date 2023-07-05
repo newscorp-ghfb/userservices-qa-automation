@@ -29,8 +29,11 @@ Validate Following Toggle Feature
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div
 
 Click Following Toggle Feature
-    Click Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div
-
+    IF  ${Env} == "prod"
+        Click Element  //*[text()="V.L. HENDRICKSON"]/../../../../td[4]/div
+    ELSE IF  ${Env} == "dev"
+        Click Element  //*[text()="Mariana Nuñez"]/../../../../td[4]/div
+    END
 Validate Following Toggle Alert Pop up
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[3]/div/span
 

@@ -17,6 +17,13 @@ ${JSStockPickFollowButtonBarronsPath}=  document.querySelector('ufc-follow-custo
     ...  .querySelector('ufc-follow-button').shadowRoot  #3
     ...  .querySelector('button')  #4
 
+${JSStockPickUndoButtonBarronsPath}=  document.querySelector('ufc-follow-custom-topic-widget').shadowRoot  #1
+    ...  .querySelector('ufc-follow-widget').shadowRoot  #2
+    ...  .querySelector('ufc-snackbar').shadowRoot  #3
+    ...  .querySelector('div')  #4
+    ...  .querySelector('div')  #5
+    ...  .querySelector('button')  #6
+
 ${JSUndoButtonBarronsPath}=  document.querySelector('ufc-snackbar').shadowRoot  #1
     ...  .querySelector('div')  #2
     ...  .querySelector('div')  #3
@@ -27,6 +34,14 @@ ${JSPreferenceCenterLinkBarronsPath}=  document.querySelector('ufc-snackbar').sh
     ...  .querySelector('div')  #3
     ...  .querySelector('span')  #4
     ...  .querySelector('a')  #5
+
+${JSStockPickPreferenceCenterLinkBarronsPath}=  document.querySelector('ufc-follow-custom-topic-widget').shadowRoot  #1
+    ...  .querySelector('ufc-follow-widget').shadowRoot  #2
+    ...  .querySelector('ufc-snackbar').shadowRoot  #3
+    ...  .querySelector('div')  #4
+    ...  .querySelector('div')  #5
+    ...  .querySelector('span')  #6
+    ...  .querySelector('a')  #7
 
 ${JSPreferenceCenterPopUpBarronsPath}=  document.querySelector('ufc-snackbar').shadowRoot  #1
     ...  .querySelector('div')  #2
@@ -141,13 +156,29 @@ Click Undo Link
     Wait Until Element is Visible  dom:${JSUndoButtonBarronsPath}
     Click Button  dom:${JSUndoButtonBarronsPath}
 
+Click Stock Pick Undo Link
+    Wait Until Element is Visible  dom:${JSStockPickUndoButtonBarronsPath}
+    Click Button  dom:${JSStockPickUndoButtonBarronsPath}
+
 Click Preference Center Link
     Wait Until Element is Visible  dom:${JSPreferenceCenterLinkBarronsPath}
     Click Element  dom:${JSPreferenceCenterLinkBarronsPath}
 
+Click Stock Pick Preference Center Link
+    Wait Until Element is Visible  dom:${JSStockPickPreferenceCenterLinkBarronsPath}
+    Click Element  dom:${JSStockPickPreferenceCenterLinkBarronsPath}
+
+
 Validate author hyperlink
-    Execute javascript  window.scrollTo(0,500)
+    IF  ${Env} == "prod"
+        Execute javascript  window.scrollTo(0,500)
+    END
+
+
     Page Should Contain Element  //*[@id="article-contents"]/header/div[2]/div/div[1]/a/span
 
 Click author hyperlink
     Click Element  //*[@id="article-contents"]/header/div[2]/div/div[1]/a/span
+
+Validate author without byline
+    Page Should Contain Element  //div[@class="byline article__byline"]/div/span[text()="John Porter"]

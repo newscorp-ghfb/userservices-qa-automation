@@ -85,3 +85,6 @@ Validate author hyperlink
 
 Click author hyperlink
     Click Element  //*[@id="fn-pre-body-article-wrap"]/div[3]/div/div/div/span/a
+
+Validate author without byline
+    Page Should Contain Element  //div[@class="byline"]/div/div/span[text()="Clare Dickinson"]

@@ -11,6 +11,11 @@ Test Teardown  CommonFunctionality.Finish Testcase
 *** Variables ***
 
 *** Test Cases ***
+#US-T184
+#US-T17
+#US-T18
+#US-T19
+#US-T20
 Validate the follow button from articles page
     [Documentation]  This test case validates the follow button from articles page
     [Tags]  Smoke
@@ -31,7 +36,11 @@ Validate the follow button from articles page
     PENArticlePage.Validate Following Button
     PENArticlePage.Click Preference Center link
     PENPreferenceCenterPage.Validate Preference Center page
-
+#US-T184
+#US-T43
+#US-T44
+#US-T45
+#US-T46
 Validate the follow button from authors page
     [Documentation]  This test case validates the follow button from authors page
     [Tags]  Smoke
@@ -41,7 +50,8 @@ Validate the follow button from authors page
     DefinedKeywords.Set Implicit Wait
     PENAuthorsPage.Validate Authors Page
     PENArticlePage.Validate Follow Button
-
+#US-T184
+#US-T94
 Validate the PEN Preference Center page
     [Documentation]  This test case validates the barrons preference center page
     [Tags]  Smoke
