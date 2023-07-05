@@ -3,42 +3,51 @@ Documentation  WSJ Regression Tests
 Resource  ../../../Resources/CommonFunctionality.robot
 Resource  ../../../Resources/DefinedKeywords.robot
 Resource  ../../../Resources/PageObjects/WSJArticlePage.robot
+Resource  ../../../Resources/PageObjects/WSJWatchlistPage.robot
 Resource  ../../../Resources/PageObjects/WSJAuthorsPage.robot
 Resource  ../../../Resources/PageObjects/WSJCMSPage.robot
 Resource  ../../../Resources/PageObjects/WSJInflationPage.robot
 Resource  ../../../Resources/PageObjects/WSJMailboxPage.robot
+Resource  ../../../Resources/PageObjects/WSJPreferenceCenterPage.robot
 
 Test Setup  CommonFunctionality.Start WSJ Article
 #Test Teardown  CommonFunctionality.Finish Testcase
 *** Variables ***
 
 *** Test Cases ***
-#Validate the multiple authors follow button from articles page
-#    [Documentation]  This test case validates the multiple authors follow button from articles page
-#    [Tags]  Regression
+#US-T78
+#US-T77
+#US-T76
+#US-T75
+Validate the multiple authors follow button from articles page
+    [Documentation]  This test case validates the multiple authors follow button from articles page
+    [Tags]  Regression
 
-#    WSJArticlePage.Validate Follow Button
-#    WSJArticlePage.Click Follow Button
-#    WSJArticlePage.Validate Sign In Modal
-#    WSJArticlePage.Click Sign In Button Modal
-#    DefinedKeywords.Sign In Process
-#    Set Selenium Speed  0.2 seconds
-#    WSJArticlePage.Validate Following Button
-#    WSJArticlePage.Click Follow Button 2
-#    WSJArticlePage.Validate Following Button 2
-#    WSJArticlePage.Click Following Button
-#    WSJArticlePage.Click Undo Link
-#    WSJArticlePage.Validate Following Button
-#    WSJArticlePage.Click Following Button 2
-#    WSJrticlePage.Click Undo Link 2
-#    WSJArticlePage.Validate Following Button 2
-#    WSJPreferenceCenterPage.Navigate Preference Center page
-#    WSJPreferenceCenterPage.Validate Preference Center page
-#    WSJPreferenceCenterPage.Validate Author 1
-#    WSJPreferenceCenterPage.Validate Author 2
+    WSJArticlePage.Validate Follow Button
+    WSJArticlePage.Click Follow Button
+    WSJArticlePage.Validate Sign In Modal
+    WSJArticlePage.Click Sign In Button Modal
+    DefinedKeywords.Sign In Process
+    Set Selenium Speed  0.2 seconds
+    WSJArticlePage.Validate Following Button
+    WSJArticlePage.Click Follow Button 2
+    WSJArticlePage.Validate Following Button 2
+    WSJArticlePage.Click Following Button
+    WSJArticlePage.Click Undo Link
+    WSJArticlePage.Validate Following Button
+    WSJArticlePage.Click Following Button 2
+    WSJrticlePage.Click Undo Link 2
+    WSJArticlePage.Validate Following Button 2
+    WSJPreferenceCenterPage.Navigate Preference Center page
+    WSJPreferenceCenterPage.Validate Preference Center page
+    WSJPreferenceCenterPage.Validate Author 1
+    WSJPreferenceCenterPage.Validate Author 2
 
 
-
+#US-T91
+#US-T98
+#US-T99
+#US-T229
 Validate the WSJ Preference Center page
     [Documentation]  This test case validates the WSJ preference center page
     [Tags]  Regression
@@ -68,46 +77,46 @@ Validate the WSJ Preference Center page
     #WSJPreferenceCenterPage.Navigate Article page
     #WSJArticlePage.Scroll stories
 
-Validate Authors for WSJ Capabilites Dashboard page
-    [Documentation]  This test case validates authors for WSJ capabilites dashboard page
-    [Tags]  Regression
+#Validate Authors for WSJ Capabilites Dashboard page
+#    [Documentation]  This test case validates authors for WSJ capabilites dashboard page
+#    [Tags]  Regression
 
-    WSJCapabilitiesPage.Navigate Capabilities Dashboard page
-    WSJCapabilitiesPage.Validate Authors Reflected On Dashboard
-    WSJCapabilitiesPage.Validate Authors On Search Tab
-    WSJCapabilitiesPage.Validate Follow Hotlink for Authors
-    WSJCapabilitiesPage.Validate Custome Topics On Dashboard
+#    WSJCapabilitiesPage.Navigate Capabilities Dashboard page
+#    WSJCapabilitiesPage.Validate Authors Reflected On Dashboard
+#    WSJCapabilitiesPage.Validate Authors On Search Tab
+#    WSJCapabilitiesPage.Validate Follow Hotlink for Authors
+#    WSJCapabilitiesPage.Validate Custome Topics On Dashboard
 
-Validate Company for WSJ Capabilites Dashboard page
-    [Documentation]  This test case validates authors for WSJ capabilites dashboard page
-    [Tags]  Regression
+#Validate Company for WSJ Capabilites Dashboard page
+#    [Documentation]  This test case validates authors for WSJ capabilites dashboard page
+#    [Tags]  Regression
 
-    WSJCapabilitiesPage.Navigate Capabilities Dashboard page
-    WSJCapabilitiesPage.Validate Authors Reflected On Dashboard
-    WSJCapabilitiesPage.Validate Authors On Search Tab
-    WSJCapabilitiesPage.Validate Follow Hotlink for Authors
-    WSJCapabilitiesPage.Validate Custome Topics On Dashboard
+#    WSJCapabilitiesPage.Navigate Capabilities Dashboard page
+#    WSJCapabilitiesPage.Validate Authors Reflected On Dashboard
+#    WSJCapabilitiesPage.Validate Authors On Search Tab
+#    WSJCapabilitiesPage.Validate Follow Hotlink for Authors
+#    WSJCapabilitiesPage.Validate Custome Topics On Dashboard
 
-Validate Custome Topics for WSJ Capabilites Dashboard page
-    [Documentation]  This test case validates authors for WSJ capabilites dashboard page
-    [Tags]  Regression
+#Validate Custome Topics for WSJ Capabilites Dashboard page
+#    [Documentation]  This test case validates authors for WSJ capabilites dashboard page
+#    [Tags]  Regression
 
-    WSJCapabilitiesPage.Navigate Capabilities Dashboard page
-    WSJCapabilitiesPage.Validate Authors Reflected On Dashboard
-    WSJCapabilitiesPage.Validate Authors On Search Tab
-    WSJCapabilitiesPage.Validate Follow Hotlink for Authors
-    WSJCapabilitiesPage.Validate Custome Topics On Dashboard
+#    WSJCapabilitiesPage.Navigate Capabilities Dashboard page
+#    WSJCapabilitiesPage.Validate Authors Reflected On Dashboard
+#    WSJCapabilitiesPage.Validate Authors On Search Tab
+#    WSJCapabilitiesPage.Validate Follow Hotlink for Authors
+#    WSJCapabilitiesPage.Validate Custome Topics On Dashboard
 
-Validate Industry for WSJ Capabilites Dashboard page
-    [Documentation]  This test case validates authors for WSJ capabilites dashboard page
-    [Tags]  Regression
+#Validate Industry for WSJ Capabilites Dashboard page
+#    [Documentation]  This test case validates authors for WSJ capabilites dashboard page
+#    [Tags]  Regression
 
-    WSJCapabilitiesPage.Navigate Capabilities Dashboard page
-    WSJCapabilitiesPage.Validate Authors Reflected On Dashboard
-    WSJCapabilitiesPage.Validate Authors On Search Tab
-    WSJCapabilitiesPage.Validate Follow Hotlink for Authors
-    WSJCapabilitiesPage.Validate Custome Topics On Dashboard
-
+#    WSJCapabilitiesPage.Navigate Capabilities Dashboard page
+#    WSJCapabilitiesPage.Validate Authors Reflected On Dashboard
+#    WSJCapabilitiesPage.Validate Authors On Search Tab
+#    WSJCapabilitiesPage.Validate Follow Hotlink for Authors
+#    WSJCapabilitiesPage.Validate Custome Topics On Dashboard
+#US-T84
 Validate Inflation page
     [Documentation]  This test case validates inflation for WSJ page
     [Tags]  Regression
@@ -120,8 +129,400 @@ Validate Inflation page
     WSJInflationPage.Navigate Inflation page
     WSJInflationPage.Validate Subscription To All Basket Items
 
-Validate the WSJ Campaign Monitor Dashboard page
-    [Documentation]  This test case validates the WSJ campaign monitor dashboard page
+#Validate the WSJ Campaign Monitor Dashboard page
+#    [Documentation]  This test case validates the WSJ campaign monitor dashboard page
+#    [Tags]  Regression
+#    Set Selenium Speed  0.2 seconds
+#    WSJCapabilites.Capabilities Dashboard WSJ Menu
+#US-T30
+Validate Authors for WSJ Article page without byline
+    [Documentation]  This test case validates authors without byline for WSJ article page
     [Tags]  Regression
+
+    CommonFunctionality.Start WSJ Article without byline
+    WSJArticlePage.Validate author without byline
+
+#US-T183
+#US-T182
+#US-T180
+#US-T181
+Validate the follow button for Letters breadcrumb from articles page
+    [Documentation]  This test case validates the follow button from articles page
+    [Tags]  Regression
+    CommonFunctionality.Start WSJ Article for Letters breadcrumb
+    #WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Click Custom Follow Button
+    WSJArticlePage.Validate Sign In Modal
+    WSJArticlePage.Click Sign In Button Modal
+    IF  ${Env} == "prod"
+        DefinedKeywords.Market Watch Sign In Process
+    ELSE IF  ${Env} == "dev"
+        DefinedKeywords.Sign In Process
+    END
     Set Selenium Speed  0.2 seconds
-    WSJCapabilites.Capabilities Dashboard WSJ Menu
+    WSJArticlePage.Validate Custom Following Button
+    IF  ${Env} == "prod"
+        Set Selenium Speed  0.2 seconds
+    ELSE IF  ${Env} == "dev"
+        Set Selenium Speed  0.35 seconds
+    END
+    WSJArticlePage.Click Custom Following Button
+    WSJArticlePage.Click Undo Link
+    WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Click Custom Following Button
+    WSJArticlePage.Validate Custom Follow Button
+    WSJArticlePage.Click Custom Follow Button
+    WSJArticlePage.Click Preference Center link
+    WSJPreferenceCenterPage.Validate Preference Center page
+#US-T183
+#US-T182
+#US-T180
+#US-T181
+Validate the WSJ Preference Center page for Letters breadcrumb
+    [Documentation]  This test case validates the barrons preference center page
+    [Tags]  Regression
+
+    Set Selenium Speed  0.2 seconds
+    WSJPreferenceCenterPage.Navigate Preference Center page
+    IF  ${Env} == "prod"
+        DefinedKeywords.Market Watch Sign In Process
+    ELSE IF  ${Env} == "dev"
+        DefinedKeywords.Sign In Process
+    END
+    WSJPreferenceCenterPage.Validate Followed Custom Topics
+    WSJPreferenceCenterPage.Validate Custom Topics Following Toggle Feature
+    WSJPreferenceCenterPage.Click Letters Following Toggle Feature
+    WSJPreferenceCenterPage.Validate Following Toggle Alert Pop up
+    WSJPreferenceCenterPage.Click Following Toggle Alert Pop up
+    WSJPreferenceCenterPage.Navigate Letters Article page
+    Set Selenium Speed  0.4 seconds
+    WSJArticlePage.Validate Custom Follow Button
+
+#US-T175
+#US-T174
+#US-T172
+#US-T173
+Validate the follow button for Editorials breadcrumb from articles page
+    [Documentation]  This test case validates the follow button from articles page
+    [Tags]  Regression
+    CommonFunctionality.Start WSJ Article for Editorials breadcrumb
+    #WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Click Custom Follow Button
+    WSJArticlePage.Validate Sign In Modal
+    WSJArticlePage.Click Sign In Button Modal
+    IF  ${Env} == "prod"
+        DefinedKeywords.Market Watch Sign In Process
+    ELSE IF  ${Env} == "dev"
+        DefinedKeywords.Sign In Process
+    END
+    Set Selenium Speed  0.2 seconds
+    WSJArticlePage.Validate Custom Following Button
+    IF  ${Env} == "prod"
+        Set Selenium Speed  0.2 seconds
+    ELSE IF  ${Env} == "dev"
+        Set Selenium Speed  0.35 seconds
+    END
+    WSJArticlePage.Click Custom Following Button
+    WSJArticlePage.Click Undo Link
+    WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Click Custom Following Button
+    WSJArticlePage.Validate Custom Follow Button
+    WSJArticlePage.Click Custom Follow Button
+    WSJArticlePage.Click Preference Center link
+    WSJPreferenceCenterPage.Validate Preference Center page
+#US-T175
+#US-T174
+#US-T172
+#US-T173
+Validate the WSJ Preference Center page for Editorials breadcrumb
+    [Documentation]  This test case validates the barrons preference center page
+    [Tags]  Regression
+
+    Set Selenium Speed  0.2 seconds
+    WSJPreferenceCenterPage.Navigate Preference Center page
+    IF  ${Env} == "prod"
+        DefinedKeywords.Market Watch Sign In Process
+    ELSE IF  ${Env} == "dev"
+        DefinedKeywords.Sign In Process
+    END
+    WSJPreferenceCenterPage.Validate Followed Custom Topics
+    WSJPreferenceCenterPage.Validate Custom Topics Following Toggle Feature
+    WSJPreferenceCenterPage.Click Editorials Following Toggle Feature
+    WSJPreferenceCenterPage.Validate Following Toggle Alert Pop up
+    WSJPreferenceCenterPage.Click Following Toggle Alert Pop up
+    WSJPreferenceCenterPage.Navigate Editorials Article page
+    Set Selenium Speed  0.4 seconds
+    WSJArticlePage.Validate Custom Follow Button
+
+#US-T179
+#US-T178
+#US-T176
+#US-T177
+Validate the follow button for Commentary breadcrumb from articles page
+    [Documentation]  This test case validates the follow button from articles page
+    [Tags]  Regression
+    CommonFunctionality.Start WSJ Article for Commentary breadcrumb
+    #WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Click Custom Follow Button
+    WSJArticlePage.Validate Sign In Modal
+    WSJArticlePage.Click Sign In Button Modal
+    IF  ${Env} == "prod"
+        DefinedKeywords.Market Watch Sign In Process
+    ELSE IF  ${Env} == "dev"
+        DefinedKeywords.Sign In Process
+    END
+    Set Selenium Speed  0.2 seconds
+    WSJArticlePage.Validate Custom Following Button
+    IF  ${Env} == "prod"
+        Set Selenium Speed  0.2 seconds
+    ELSE IF  ${Env} == "dev"
+        Set Selenium Speed  0.35 seconds
+    END
+    WSJArticlePage.Click Custom Following Button
+    WSJArticlePage.Click Undo Link
+    WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Click Custom Following Button
+    WSJArticlePage.Validate Custom Follow Button
+    WSJArticlePage.Click Custom Follow Button
+    WSJArticlePage.Click Preference Center link
+    WSJPreferenceCenterPage.Validate Preference Center page
+#US-T179
+#US-T178
+#US-T176
+#US-T177
+Validate the WSJ Preference Center page for Commentary breadcrumb
+    [Documentation]  This test case validates the barrons preference center page
+    [Tags]  Regression
+
+    Set Selenium Speed  0.2 seconds
+    WSJPreferenceCenterPage.Navigate Preference Center page
+    IF  ${Env} == "prod"
+        DefinedKeywords.Market Watch Sign In Process
+    ELSE IF  ${Env} == "dev"
+        DefinedKeywords.Sign In Process
+    END
+    WSJPreferenceCenterPage.Validate Followed Custom Topics
+    WSJPreferenceCenterPage.Validate Custom Topics Following Toggle Feature
+    WSJPreferenceCenterPage.Click Commentary Following Toggle Feature
+    WSJPreferenceCenterPage.Validate Following Toggle Alert Pop up
+    WSJPreferenceCenterPage.Click Following Toggle Alert Pop up
+    WSJPreferenceCenterPage.Navigate Commentary Article page
+    Set Selenium Speed  0.4 seconds
+    WSJArticlePage.Validate Custom Follow Button
+#US-T164
+#US-T165
+#US-T166
+#US-T167
+Validate the follow button for Commentary breadcrumb from Commentary page
+    [Documentation]  This test case validates the follow button from articles page
+    [Tags]  Regression
+    CommonFunctionality.Start WSJ Commentary for Commentary breadcrumb
+    #WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Click Custom Follow Button
+    WSJArticlePage.Validate Sign In Modal
+    WSJArticlePage.Click Sign In Button Modal
+    IF  ${Env} == "prod"
+        DefinedKeywords.Market Watch Sign In Process
+    ELSE IF  ${Env} == "dev"
+        DefinedKeywords.Sign In Process
+    END
+    Set Selenium Speed  0.2 seconds
+    WSJArticlePage.Validate Custom Following Button
+    IF  ${Env} == "prod"
+        Set Selenium Speed  0.25 seconds
+    ELSE IF  ${Env} == "dev"
+        Set Selenium Speed  0.35 seconds
+    END
+    WSJArticlePage.Click Custom Following Button
+    WSJArticlePage.Click Undo Link
+    WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Click Custom Following Button
+    WSJArticlePage.Validate Custom Follow Button
+    WSJArticlePage.Click Custom Follow Button
+    WSJArticlePage.Click Preference Center link
+    WSJPreferenceCenterPage.Validate Preference Center page
+
+#US-T160
+#US-T161
+#US-T162
+#US-T163
+Validate the follow button for Editorials breadcrumb from Editorials page
+    [Documentation]  This test case validates the follow button from Editorials page
+    [Tags]  Regression
+    CommonFunctionality.Start WSJ Editorials for Editorials breadcrumb
+    #WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Click Custom Follow Button
+    WSJArticlePage.Validate Sign In Modal
+    WSJArticlePage.Click Sign In Button Modal
+    IF  ${Env} == "prod"
+        DefinedKeywords.Market Watch Sign In Process
+    ELSE IF  ${Env} == "dev"
+        DefinedKeywords.Sign In Process
+    END
+    Set Selenium Speed  0.2 seconds
+    WSJArticlePage.Validate Custom Following Button
+    IF  ${Env} == "prod"
+        Set Selenium Speed  0.25 seconds
+    ELSE IF  ${Env} == "dev"
+        Set Selenium Speed  0.35 seconds
+    END
+    WSJArticlePage.Click Custom Following Button
+    WSJArticlePage.Click Undo Link
+    WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Click Custom Following Button
+    WSJArticlePage.Validate Custom Follow Button
+    WSJArticlePage.Click Custom Follow Button
+    WSJArticlePage.Click Preference Center link
+    WSJPreferenceCenterPage.Validate Preference Center page
+#US-T168
+#US-T169
+#US-T170
+#US-T171
+Validate the follow button for Letters breadcrumb from Letters page
+    [Documentation]  This test case validates the follow button from Letters page
+    [Tags]  Regression
+    CommonFunctionality.Start WSJ Letters for Letters breadcrumb
+    #WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Click Custom Follow Button
+    WSJArticlePage.Validate Sign In Modal
+    WSJArticlePage.Click Sign In Button Modal
+    IF  ${Env} == "prod"
+        DefinedKeywords.Market Watch Sign In Process
+    ELSE IF  ${Env} == "dev"
+        DefinedKeywords.Sign In Process
+    END
+    Set Selenium Speed  0.2 seconds
+    WSJArticlePage.Validate Custom Following Button
+    IF  ${Env} == "prod"
+        Set Selenium Speed  0.05 seconds
+    ELSE IF  ${Env} == "dev"
+        Set Selenium Speed  0.35 seconds
+    END
+    WSJArticlePage.Click Custom Following Button
+    WSJArticlePage.Click Undo Link
+    WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Click Custom Following Button
+    WSJArticlePage.Validate Custom Follow Button
+    WSJArticlePage.Click Custom Follow Button
+    WSJArticlePage.Click Preference Center link
+    WSJPreferenceCenterPage.Validate Preference Center page
+
+
+#US-T131
+#US-T132
+#US-T133
+#US-T134
+Validate the follow button for Elections breadcrumb from Elections page
+    [Documentation]  This test case validates the follow button from Elections page
+    [Tags]  Regression
+    CommonFunctionality.Start WSJ Elections for Elections breadcrumb
+    #WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Click Custom Follow Button
+    WSJArticlePage.Validate Sign In Modal
+    WSJArticlePage.Click Sign In Button Modal
+    IF  ${Env} == "prod"
+        DefinedKeywords.Market Watch Sign In Process
+    ELSE IF  ${Env} == "dev"
+        DefinedKeywords.Sign In Process
+    END
+    Set Selenium Speed  0.2 seconds
+    WSJArticlePage.Validate Custom Following Button
+    IF  ${Env} == "prod"
+        Set Selenium Speed  0.25 seconds
+    ELSE IF  ${Env} == "dev"
+        Set Selenium Speed  0.35 seconds
+    END
+    WSJArticlePage.Click Custom Following Button
+    WSJArticlePage.Click Undo Link
+    WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Click Custom Following Button
+    WSJArticlePage.Validate Custom Follow Button
+    WSJArticlePage.Click Custom Follow Button
+    WSJArticlePage.Click Preference Center link
+    WSJPreferenceCenterPage.Validate Preference Center page
+
+#US-T131
+#US-T132
+#US-T133
+#US-T134
+Validate the WSJ Preference Center page for Elections breadcrumb
+    [Documentation]  This test case validates the barrons preference center page
+    [Tags]  Regression
+
+    Set Selenium Speed  0.2 seconds
+    WSJPreferenceCenterPage.Navigate Preference Center page
+    IF  ${Env} == "prod"
+        DefinedKeywords.Market Watch Sign In Process
+    ELSE IF  ${Env} == "dev"
+        DefinedKeywords.Sign In Process
+    END
+    WSJPreferenceCenterPage.Validate Followed Custom Topics
+    WSJPreferenceCenterPage.Validate Custom Topics Following Toggle Feature
+    WSJPreferenceCenterPage.Click Elections Following Toggle Feature
+    WSJPreferenceCenterPage.Validate Following Toggle Alert Pop up
+    WSJPreferenceCenterPage.Click Following Toggle Alert Pop up
+    WSJPreferenceCenterPage.Navigate Elections Article page
+    Set Selenium Speed  0.4 seconds
+    WSJArticlePage.Validate Custom Follow Button
+
+#US-T233
+#US-T232
+#US-T231
+#US-T230
+Validate the follow button for Elections breadcrumb from articles page
+    [Documentation]  This test case validates the follow button from articles page
+    [Tags]  Regression
+    CommonFunctionality.Start WSJ Article for Elections breadcrumb
+    #WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Click Custom Follow Button
+    #WSJArticlePage.Validate Sign In Modal
+    WSJArticlePage.Click Sign In Button Modal
+    IF  ${Env} == "prod"
+        DefinedKeywords.Market Watch Sign In Process
+    ELSE IF  ${Env} == "dev"
+        DefinedKeywords.Sign In Process
+    END
+    Set Selenium Speed  0.2 seconds
+    WSJArticlePage.Validate Custom Following Button
+    IF  ${Env} == "prod"
+        Set Selenium Speed  0.2 seconds
+    ELSE IF  ${Env} == "dev"
+        Set Selenium Speed  0.35 seconds
+    END
+    WSJArticlePage.Click Custom Following Button
+    WSJArticlePage.Click Undo Link
+    WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Click Custom Following Button
+    WSJArticlePage.Validate Custom Follow Button
+    WSJArticlePage.Click Custom Follow Button
+    WSJArticlePage.Click Preference Center link
+    WSJPreferenceCenterPage.Validate Preference Center page
+
+#US-T221
+#US-T222
+#US-T223
+Validate the Watchlist widget from Watchlist page
+    [Documentation]  This test case validates the watchlist widget from watchlist page
+    [Tags]  Regression
+
+    CommonFunctionality.Start WSJ for Watchlist page
+    DefinedKeywords.Sign In Process
+    Set Selenium Speed  0.5 seconds
+    Capture Page Screenshot    screenshot.png
+    WSJWatchlistPage.Validate Watchlist Page
+    WSJWatchlistPage.Validate Default New Watchlist
+    WSJWatchlistPage.Click Add Symbol Input
+    WSJWatchlistPage.Type Symbol
+    WSJWatchlistPage.Select Symbol
+    WSJWatchlistPage.Validate Symbol in Default New Watchlist
+    WSJWatchlistPage.Create Watchlist Name
+    WSJWatchlistPage.Edit Watchlist Name
+    WSJWatchlistPage.Type Symbol
+    WSJWatchlistPage.Select Symbol
+    WSJWatchlistPage.Validate Symbol in Created Watchlist
+    WSJWatchlistPage.Sort Symbols
+    WSJWatchlistPage.Delete Watchlists
+    WSJWatchlistPage.Validate Default New Watchlist
+    WSJWatchlistPage.Validate No Symbol in Default New Watchlist
+
+#US-T229
