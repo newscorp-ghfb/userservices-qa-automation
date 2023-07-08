@@ -40,7 +40,6 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #    BarronsArticlePage.Validate Following Button
 #    BarronsArticlePage.Click Preference Center link
 #    BarronsPreferenceCenterPage.Validate Preference Center page
-
 #US-T188
 #US-T34
 #US-T33
@@ -65,6 +64,30 @@ Validate the follow button from authors page
     Capture Page Screenshot    screenshot.png
     BarronsArticlePage.Validate Follow Button
 
+
+#US-T54
+#US-T53
+#US-T52
+#US-T51
+Validate the stock pick follow button from articles page
+    [Documentation]  This test case validates the stock pick follow button from articles page
+    [Tags]  Smoke
+    CommonFunctionality.Start Barrons Stock Picks for Stock Picks in article
+    BarronsArticlePage.Validate Stock Pick Follow Button
+    BarronsArticlePage.Click Stock Pick Follow Button
+    #BarronsArticlePage.Validate Sign In Modal
+    BarronsArticlePage.Click Sign In Button Modal
+    DefinedKeywords.Sign In Process
+    BarronsArticlePage.Validate Stock Pick Following Button
+    BarronsArticlePage.Click Stock Pick Following Button
+    Set Selenium Speed  0.2 seconds
+    BarronsArticlePage.Click Undo Link
+    BarronsArticlePage.Validate Stock Pick Following Button
+    BarronsArticlePage.Click Stock Pick Following Button
+    BarronsArticlePage.Validate Stock Pick Follow Button
+    BarronsArticlePage.Click Preference Center link
+    BarronsPreferenceCenterPage.Validate Preference Center page
+
 #US-T188
 #US-T79
 #US-T253
@@ -82,29 +105,6 @@ Validate the Barrons Preference Center page
     BarronsPreferenceCenterPage.Click Following Toggle Alert Pop up
     BarronsPreferenceCenterPage.Navigate Article page
     BarronsArticlePage.Validate Follow Button
-
-#US-T54
-#US-T53
-#US-T52
-#US-T51
-Validate the stock pick follow button from articles page
-    [Documentation]  This test case validates the stock pick follow button from articles page
-    [Tags]  Smoke
-    CommonFunctionality.Start Barrons Stock Picks for Stock Picks in article
-    BarronsArticlePage.Validate Stock Pick Follow Button
-    BarronsArticlePage.Click Stock Pick Follow Button
-    BarronsArticlePage.Validate Sign In Modal
-    BarronsArticlePage.Click Sign In Button Modal
-    DefinedKeywords.Sign In Process
-    BarronsArticlePage.Validate Stock Pick Following Button
-    BarronsArticlePage.Click Stock Pick Following Button
-    Set Selenium Speed  0.2 seconds
-    BarronsArticlePage.Click Undo Link
-    BarronsArticlePage.Validate Stock Pick Following Button
-    BarronsArticlePage.Click Stock Pick Following Button
-    BarronsArticlePage.Validate Stock Pick Follow Button
-    BarronsArticlePage.Click Preference Center link
-    BarronsPreferenceCenterPage.Validate Preference Center page
 
 #US-T126
 #US-T127
