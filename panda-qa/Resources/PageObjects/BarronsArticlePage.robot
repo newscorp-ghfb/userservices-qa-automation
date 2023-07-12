@@ -170,11 +170,6 @@ Click Stock Pick Preference Center Link
 
 
 Validate author hyperlink
-    IF  ${Env} == "prod"
-        Execute javascript  window.scrollTo(0,500)
-    END
-
-
     Page Should Contain Element  //*[@id="article-contents"]/header/div[2]/div/div[1]/a/span
 
 Click author hyperlink
