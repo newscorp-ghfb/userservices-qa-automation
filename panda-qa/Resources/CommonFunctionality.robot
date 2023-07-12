@@ -28,7 +28,6 @@ Start Barrons Article
     IF  ${Env} == "prod"
         Open Browser  https://www.barrons.com  ${Browser}
         Go To  https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634
-        Execute javascript  window.scrollTo(0,500)
     ELSE IF  ${Env} == "stg"
         Open Browser  https://www.stg.internal.barrons.com  ${Browser}
         Go To  https://www.stg.internal.barrons.com/articles/wendys-wen-stock-earnings-51652268634

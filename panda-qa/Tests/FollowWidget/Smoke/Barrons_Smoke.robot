@@ -16,30 +16,30 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T3
 #US-T1
 #US-T2
-#Validate the author follow button from articles page
-#    [Documentation]  This test case validates the author follow button from articles page
-#    [Tags]  Smoke
+Validate the author follow button from articles page
+    [Documentation]  This test case validates the author follow button from articles page
+    [Tags]  Smoke
 
-#    BarronsArticlePage.Validate Follow Button
-#    BarronsArticlePage.Click Follow Button
-#    IF  ${Env} == "dev"
-#        BarronsArticlePage.Click Follow Button
-#    END
-#    Set Selenium Speed  0.7 seconds
+    BarronsArticlePage.Validate Follow Button
+    BarronsArticlePage.Click Follow Button
+    IF  ${Env} == "dev"
+        BarronsArticlePage.Click Follow Button
+    END
+    Set Selenium Speed  0.7 seconds
     #BarronsArticlePage.Validate Sign In Modal
-#    BarronsArticlePage.Click Sign In Button Modal
-#    DefinedKeywords.Sign In Process
-#    BarronsArticlePage.Validate Following Button
-#    Set Selenium Speed  0.2 seconds
-#    IF  ${Env} == "dev"
-#        Set Selenium Speed  0.5 seconds
-#    END
-#    BarronsArticlePage.Click Following Button
-#    Set Selenium Speed  0.2 seconds
-#    BarronsArticlePage.Click Undo Link
-#    BarronsArticlePage.Validate Following Button
-#    BarronsArticlePage.Click Preference Center link
-#    BarronsPreferenceCenterPage.Validate Preference Center page
+    BarronsArticlePage.Click Sign In Button Modal
+    DefinedKeywords.Sign In Process
+    BarronsArticlePage.Validate Following Button
+    Set Selenium Speed  0.2 seconds
+    IF  ${Env} == "dev"
+        Set Selenium Speed  0.5 seconds
+    END
+    BarronsArticlePage.Click Following Button
+    Set Selenium Speed  0.2 seconds
+    BarronsArticlePage.Click Undo Link
+    BarronsArticlePage.Validate Following Button
+    BarronsArticlePage.Click Preference Center link
+    BarronsPreferenceCenterPage.Validate Preference Center page
 #US-T188
 #US-T34
 #US-T33
