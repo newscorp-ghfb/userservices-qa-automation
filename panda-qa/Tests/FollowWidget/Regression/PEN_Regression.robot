@@ -115,3 +115,4 @@ Validate Authors for PEN Article page without byline
     PENArticlePage.Validate author without byline
 
 #US-T228
+#Validate the PEN Preference Center page for News Alerts
