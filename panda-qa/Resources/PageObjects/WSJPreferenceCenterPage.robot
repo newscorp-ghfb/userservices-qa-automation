@@ -154,6 +154,10 @@ Validate Company On All Tab
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[7]
     Page Should Contain Element  //*[text()="Amazon.com, Inc."]/../*[text()="The Wall Street Journal"]
 
+Validate Breaking News On All Tab
+    Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[7]
+    Page Should Contain Element  //*[text()="Technology"]/../*[text()="The Wall Street Journal"]
+
 Click WSJ tab
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[6]
 
@@ -161,5 +165,18 @@ Validate Company Toggle Feature
     Wait Until Element is Visible  //*[text()="Amazon.com, Inc."]/../../..//*[@role="switch"]
     Page Should Contain Element  //*[text()="Amazon.com, Inc."]/../../..//*[@role="switch"]
 
+Validate Breaking News Toggle Feature
+    Wait Until Element is Visible  //*[text()="Technology"]/../../..//*[@role="switch"]
+    Page Should Contain Element  //*[text()="Technology"]/../../..//*[@role="switch"]
+
 Click Company Toggle Feature
     Click Element  //*[text()="Amazon.com, Inc."]/../../..//*[@role="switch"]
+
+Click Breaking News Toggle Feature
+    Click Element  //*[text()="Technology"]/../../..//*[@role="switch"]
+
+Add Breaking News By Hotlink
+    Go To  https://s.dev.wsj.com/follow?alert=news_alert&id=NewsAlertEmailTechnology
+
+Validate Followed Breaking News
+    Page Should Contain  NEWS ALERTS

@@ -270,3 +270,4 @@ Validate the Watchlist widget from Market Data page
     BarronsMarketDataPage.Validate No Symbol in Default New Watchlist
 
 #US-T224
+#Validate the Barrons Preference Center page for News Alerts

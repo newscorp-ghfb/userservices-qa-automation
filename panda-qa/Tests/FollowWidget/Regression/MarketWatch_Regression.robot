@@ -144,3 +144,4 @@ Validate the Watchlist widget from Watchlist page
     MarketWatchWatchlistPage.Validate No Symbol in Default New Watchlist
 
 #US-T227
+#Validate the MarketWatch Preference Center page for News Alerts

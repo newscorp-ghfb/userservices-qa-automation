@@ -384,6 +384,17 @@ Start WSJ for Watchlist page
     END
     Maximize Browser Window
 
+Start WSJ for Newsletters page
+    Set Selenium Speed  0.5 seconds
+    IF  ${Env} == "prod"
+        Go To  https://www.wsj.com/newsletters
+    ELSE IF  ${Env} == "stg"
+        Go To  https://www.stg.internal.wsj.com/newsletters
+    ELSE IF  ${Env} == "dev"
+        Go To  https://www.s.dev.wsj.com/newsletters
+    END
+    Maximize Browser Window
+
 Start MarketWatch for Watchlist page
     Set Selenium Speed  0.5 seconds
     IF  ${Env} == "prod"

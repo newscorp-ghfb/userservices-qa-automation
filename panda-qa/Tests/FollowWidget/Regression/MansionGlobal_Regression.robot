@@ -125,3 +125,4 @@ Validate Authors for Mansion Global Article page without byline
     CommonFunctionality.Start Mansion Global Article without byline
     MansionGlobalArticlePage.Validate author without byline
 #US-T226
+#Validate the Mansion Global Preference Center page for News Alerts
