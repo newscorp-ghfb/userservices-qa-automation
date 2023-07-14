@@ -3,6 +3,7 @@ Documentation  WSJ Regression Tests
 Resource  ../../../Resources/CommonFunctionality.robot
 Resource  ../../../Resources/DefinedKeywords.robot
 Resource  ../../../Resources/PageObjects/WSJArticlePage.robot
+Resource  ../../../Resources/PageObjects/WSJNewslettersPage.robot
 Resource  ../../../Resources/PageObjects/WSJWatchlistPage.robot
 Resource  ../../../Resources/PageObjects/WSJAuthorsPage.robot
 Resource  ../../../Resources/PageObjects/WSJCMSPage.robot
@@ -72,6 +73,16 @@ Validate the WSJ Preference Center page
     WSJPreferenceCenterPage.Click WSJ tab
     WSJPreferenceCenterPage.Validate Company Toggle Feature
     WSJPreferenceCenterPage.Click Company Toggle Feature
+    WSJPreferenceCenterPage.Validate Following Toggle Alert Pop up
+    WSJPreferenceCenterPage.Click Following Toggle Alert Pop up
+    WSJPreferenceCenterPage.Add Breaking News By Hotlink
+    WSJPreferenceCenterPage.Validate Followed Breaking News
+    ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
+    Run Keyword If  ${val2} > 0  WSJPreferenceCenterPage.Click Following Toggle Alert Pop up
+    WSJPreferenceCenterPage.Validate Breaking News On All Tab
+    WSJPreferenceCenterPage.Click WSJ tab
+    WSJPreferenceCenterPage.Validate Breaking News Toggle Feature
+    WSJPreferenceCenterPage.Click Breaking News Toggle Feature
     WSJPreferenceCenterPage.Validate Following Toggle Alert Pop up
     WSJPreferenceCenterPage.Click Following Toggle Alert Pop up
     #WSJPreferenceCenterPage.Navigate Article page
@@ -525,4 +536,27 @@ Validate the Watchlist widget from Watchlist page
     WSJWatchlistPage.Validate Default New Watchlist
     WSJWatchlistPage.Validate No Symbol in Default New Watchlist
 
-#US-T229
+#US-T209
+#US-T210
+#US-T211
+#US-T212
+Validate the authors follow toggle button from Newsletters page
+    [Documentation]  This test case validates the authors follow button from newsletters page
+    [Tags]  Regression
+
+    WSJArticlePage.Validate Follow Button
+    WSJArticlePage.Click Follow Button
+    Set Selenium Speed  0.4 seconds
+    WSJArticlePage.Validate Sign In Modal
+    WSJArticlePage.Click Sign In Button Modal
+    DefinedKeywords.Sign In Process
+    WSJArticlePage.Validate Following Button
+    Set Selenium Speed  0.5 seconds
+    Capture Page Screenshot    screenshot.png
+    CommonFunctionality.Start Barrons for Newsletters page
+    WSJNewslettersPage.Validate Newsletters Page
+    WSJNewslettersPage.Click author newsletters toggle
+    WSJNewslettersPage.Validate author newsletters subscription
+    WSJNewslettersPage.Click author newsletters toggle
+    WSJNewslettersPage.Click unsubscription confirmation button
+    WSJNewslettersPage.Validate author newsletters unsubscription
