@@ -56,14 +56,15 @@ ${JSFollowSignInButtonPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('ufc-button').shadowRoot  #6
     ...  .querySelector('button')  #7
 
-${JSFollowSignInButton2Path}=  document.querySelectorAll('div')[191]  #1
+${JSFollowSignInButton2Path}=  document.querySelector('div:nth-of-type(15)')  #1
     ...  .querySelector('ufc-portal')  #2
     ...  .querySelector('ufc-signin-modal').shadowRoot  #3
-    ...  .querySelector('div.modal-wrapper')  #4
+    ...  .querySelector('div')  #4
     ...  .querySelector('div.modal')  #5
-    ...  .querySelector('div.footer')  #6
-    ...  .querySelector('ufc-button').shadowRoot  #7
-    ...  .querySelector('button')  #8
+    ...  .querySelector('focus-trap')  #6
+    ...  .querySelector('div.footer')  #7
+    ...  .querySelector('ufc-button').shadowRoot  #8
+    ...  .querySelector('button')  #9
 
 ${JSFollowSignInButton3Path}=  document.querySelectorAll('div')[208]  #1
     ...  .querySelector('ufc-portal')  #2
