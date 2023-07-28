@@ -71,7 +71,7 @@ Validate the stock pick follow button from articles page
     BarronsArticlePage.Validate Stock Pick Follow Button
     BarronsArticlePage.Click Stock Pick Follow Button
     #BarronsArticlePage.Validate Sign In Modal
-    BarronsArticlePage.Click Sign In Button 2 Modal
+    BarronsArticlePage.Click Sign In Button Modal
     DefinedKeywords.Sign In Process
     Set Selenium Speed  0.1 seconds
     Capture Page Screenshot    screenshot.png
@@ -79,8 +79,8 @@ Validate the stock pick follow button from articles page
     Capture Page Screenshot    screenshot.png
     BarronsArticlePage.Click Stock Pick Following Button
     Capture Page Screenshot    screenshot.png
-    Set Selenium Speed  0.2 seconds
-    BarronsArticlePage.Click Undo Link
+    Set Selenium Speed  0.5 seconds
+    BarronsArticlePage.Click Stock Pick Undo Link
     Capture Page Screenshot    screenshot.png
     BarronsArticlePage.Validate Stock Pick Following Button
     Capture Page Screenshot    screenshot.png
@@ -89,7 +89,7 @@ Validate the stock pick follow button from articles page
     Capture Page Screenshot    screenshot.png
     BarronsArticlePage.Validate Stock Pick Follow Button
     Capture Page Screenshot    screenshot.png
-    BarronsArticlePage.Click Preference Center link
+    BarronsArticlePage.Click Stock Pick Preference Center Link
     Capture Page Screenshot    screenshot.png
     BarronsPreferenceCenterPage.Validate Preference Center page
     Capture Page Screenshot    screenshot.png

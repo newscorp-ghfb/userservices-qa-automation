@@ -12,7 +12,7 @@ ${JSFollowButtonBarrons2Path}=  document.querySelector('ufc-follow-author-widget
     ...  .querySelector('ufc-follow-button').shadowRoot  #3
     ...  .querySelector('button')  #4
 
-${JSStockPickFollowButtonBarronsPath}=  document.querySelector('ufc-follow-custom-topic-widget').shadowRoot  #1
+${JSStockPickFollowButtonBarronsPath}=  document.querySelector('ufc-follow-custom-topic-widget.hydrated').shadowRoot  #1
     ...  .querySelector('ufc-follow-widget')  #2
     ...  .querySelector('ufc-follow-button').shadowRoot  #3
     ...  .querySelector('button')  #4
