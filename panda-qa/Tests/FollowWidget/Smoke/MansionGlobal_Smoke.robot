@@ -42,6 +42,7 @@ Validate the follow button from articles page
 Validate the Mansion Global Preference Center page
     [Documentation]  This test case validates the mansion global preference center page
     [Tags]  Smoke
+    #This is my first PR
 
     MansionGlobalPreferenceCenterPage.Navigate Preference Center page
     DefinedKeywords.Sign In Process
