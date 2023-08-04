@@ -218,14 +218,14 @@ Validate the Watchlist widget from Quotes page
     [Tags]  Regression
 
     CommonFunctionality.Start Barrons for Quotes page
+    BarronsQuotesPage.Validate Quotes Page
     BarronsQuotesPage.Validate Watchlist for non-logged user
+    BarronsQuotesPage.Click on Register Now
     CommonFunctionality.Click Sign In
     DefinedKeywords.Sign In Process
     Set Selenium Speed  0.5 seconds
     Capture Page Screenshot    screenshot.png
     BarronsQuotesPage.Validate Quotes Page
-    BarronsQuotesPage.Click Add Symbol Input
-    BarronsQuotesPage.Validate Default New Watchlist
     BarronsQuotesPage.Click Add Symbol Input
     BarronsQuotesPage.Type Symbol
     BarronsQuotesPage.Select Symbol
@@ -235,7 +235,6 @@ Validate the Watchlist widget from Quotes page
     BarronsQuotesPage.Type Symbol
     BarronsQuotesPage.Select Symbol
     BarronsQuotesPage.Validate Symbol in Created Watchlist
-    BarronsQuotesPage.Sort Symbols
     BarronsQuotesPage.Delete Watchlists
     BarronsQuotesPage.Validate Default New Watchlist
     BarronsQuotesPage.Validate No Symbol in Default New Watchlist
@@ -254,7 +253,6 @@ Validate the Watchlist widget from Market Data page
     Set Selenium Speed  0.5 seconds
     Capture Page Screenshot    screenshot.png
     BarronsMarketDataPage.Validate Market Data Page
-    BarronsMarketDataPage.Validate Default New Watchlist
     BarronsMarketDataPage.Click Add Symbol Input
     BarronsMarketDataPage.Type Symbol
     BarronsMarketDataPage.Select Symbol
@@ -264,7 +262,6 @@ Validate the Watchlist widget from Market Data page
     BarronsMarketDataPage.Type Symbol
     BarronsMarketDataPage.Select Symbol
     BarronsMarketDataPage.Validate Symbol in Created Watchlist
-    BarronsMarketDataPage.Sort Symbols
     BarronsMarketDataPage.Delete Watchlists
     BarronsMarketDataPage.Validate Default New Watchlist
     BarronsMarketDataPage.Validate No Symbol in Default New Watchlist
