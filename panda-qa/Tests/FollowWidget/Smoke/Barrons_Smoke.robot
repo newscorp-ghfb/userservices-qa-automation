@@ -112,7 +112,6 @@ Validate the Barrons Preference Center page
     BarronsPreferenceCenterPage.Navigate Article page
     BarronsArticlePage.Validate Follow Button
 
-
 #US-T126
 #US-T127
 #US-T128
