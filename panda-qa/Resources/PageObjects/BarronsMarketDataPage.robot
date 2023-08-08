@@ -72,10 +72,70 @@ ${JSFollowSignInHeader2Path}=  document.querySelectorAll('div')[186]  #1
     ...  .querySelector('div.body')  #5
     ...  .querySelector('p')  #6
 
+${JSDefaultSymbolDJIA}=  document.querySelector('dj-watchlist').shadowRoot  #1
+    ...  .querySelector('div.watchlist')  #2
+    ...  .querySelector('div.watchlist-content')  #3
+    ...  .querySelector('ul.watchlist-container')  #4
+    ...  .querySelector('li[data-id="0"]')  #5
+    ...  .querySelector('dj-instrument')  #6
+    ...  .querySelector('div')  #7
+    ...  .querySelector('div.sc-dj-instrument-barrons')  #8
+    ...  .querySelector('[href="https://www.barrons.com/market-data/indexes/DJIA?mod=watchlist_ticker"]')  #8
+
+${JSDefaultSymbolABS}=  document.querySelector('dj-watchlist').shadowRoot  #1
+    ...  .querySelector('div.watchlist')  #2
+    ...  .querySelector('div.watchlist-content')  #3
+    ...  .querySelector('ul.watchlist-container')  #4
+    ...  .querySelector('li[data-id="1"]')  #5
+    ...  .querySelector('dj-instrument')  #6
+    ...  .querySelector('div')  #7
+    ...  .querySelector('div.sc-dj-instrument-barrons')  #8
+    ...  .querySelector('[href="https://www.barrons.com/market-data/stocks/ABS?mod=watchlist_ticker"]')  #8
+
 
 *** Keywords ***
 Validate Watchlist for non-logged user
     Wait Until Element is Visible  dom:${JSRegisterNowButtonPath}
     Page Should Contain Element  dom:${JSRegisterNowButtonPath}
     Page Should Contain Element  dom:${JSDefaultSymbolPath}
-#Todo: The default list of symbols are getting shown which is same as on the Watchlist page.
+    Page Should Contain Element  dom:${JSDefaultSymbolDJIA}
+    Page Should Contain Element  dom:${JSDefaultSymbolABS}
+
+
+Validate Market Data Page
+    Page Should Contain Element  dom:${JSDefaultSymbolPath}
+Click Add Symbol Input
+    Page Should Contain Element  dom:${JSDefaultSymbolPath}
+
+Type Symbol
+    Page Should Contain Element  dom:${JSDefaultSymbolPath}
+
+Select Symbol
+    Page Should Contain Element  dom:${JSDefaultSymbolPath}
+
+Validate Symbol in Default New Watchlist
+    Page Should Contain Element  dom:${JSDefaultSymbolPath}
+
+Create Watchlist Name
+    Page Should Contain Element  dom:${JSDefaultSymbolPath}
+
+Edit Watchlist Name
+    Page Should Contain Element  dom:${JSDefaultSymbolPath}
+
+Type Symbol
+    Page Should Contain Element  dom:${JSDefaultSymbolPath}
+
+Select Symbol
+    Page Should Contain Element  dom:${JSDefaultSymbolPath}
+
+Validate Symbol in Created Watchlist
+    Page Should Contain Element  dom:${JSDefaultSymbolPath}
+
+Delete Watchlists
+    Page Should Contain Element  dom:${JSDefaultSymbolPath}
+
+Validate Default New Watchlist
+    Page Should Contain Element  dom:${JSDefaultSymbolPath}
+
+Validate No Symbol in Default New Watchlist
+    Page Should Contain Element  dom:${JSDefaultSymbolPath}
