@@ -21,11 +21,6 @@ ${JSPreferenceCenterLinkWSJPath}=  document.querySelector('ufc-snackbar').shadow
     ...  .querySelector('span')  #4
     ...  .querySelector('a')  #5
 
-${JSPreferenceCenterPopUpWSJPath}=  document.querySelector('ufc-snackbar').shadowRoot  #1
-    ...  .querySelector('div')  #2
-    ...  .querySelector('div')  #3
-    ...  .querySelector('span')  #4
-
 ${JSFollowSignInButtonPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('ufc-signin-modal').shadowRoot  #2
     ...  .querySelector('div')  #3
