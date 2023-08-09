@@ -26,11 +26,6 @@ ${JSFollowSignInHeaderPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('div.body')  #4
     ...  .querySelector('p')  #5
 
-${JSPreferenceCenterPopUpMarketWatchPath}=  document.querySelector('ufc-snackbar').shadowRoot  #1
-    ...  .querySelector('div')  #2
-    ...  .querySelector('div')  #3
-    ...  .querySelector('span')  #4
-
 ${JSPreferenceCenterLinkMarketWatchPath}=  document.querySelector('ufc-snackbar').shadowRoot  #1
     ...  .querySelector('div')  #2
     ...  .querySelector('div')  #3

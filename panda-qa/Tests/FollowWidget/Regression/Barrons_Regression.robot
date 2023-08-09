@@ -199,7 +199,8 @@ Validate the Watchlist widget from Watchlist page
     BarronsWatchlistPage.Click Add Symbol Input
     BarronsWatchlistPage.Type Symbol
     BarronsWatchlistPage.Select Symbol
-    BarronsWatchlistPage.Validate Symbol in Default New Watchlist
+    BarronsWatchlistPage.Validate Symbol in the New Watchlist
+    BarronsWatchlistPage.Save Watchlist Changes
     BarronsWatchlistPage.Create Watchlist Name
     BarronsWatchlistPage.Edit Watchlist Name
     BarronsWatchlistPage.Type Symbol
@@ -246,14 +247,15 @@ Validate the Watchlist widget from Market Data page
     [Documentation]  This test case validates the watchlist widget from market data page
     [Tags]  Regression
 
-    CommonFunctionality.Start Barrons for Watchlist page
+    CommonFunctionality.Start Barrons for Market Data page
     BarronsMarketDataPage.Validate Watchlist for non-logged user
     CommonFunctionality.Click Sign In
     DefinedKeywords.Sign In Process
     Set Selenium Speed  0.5 seconds
     Capture Page Screenshot    screenshot.png
     BarronsMarketDataPage.Validate Market Data Page
-    BarronsMarketDataPage.Click Add Symbol Input
+    BarronsMarketDataPage.Click Create Symbol
+    BarronsMarketDataPage.Type Watchlist Name
     BarronsMarketDataPage.Type Symbol
     BarronsMarketDataPage.Select Symbol
     BarronsMarketDataPage.Validate Symbol in Default New Watchlist

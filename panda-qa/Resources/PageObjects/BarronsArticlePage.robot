@@ -43,11 +43,6 @@ ${JSStockPickPreferenceCenterLinkBarronsPath}=  document.querySelector('ufc-foll
     ...  .querySelector('span')  #6
     ...  .querySelector('a')  #7
 
-${JSPreferenceCenterPopUpBarronsPath}=  document.querySelector('ufc-snackbar').shadowRoot  #1
-    ...  .querySelector('div')  #2
-    ...  .querySelector('div')  #3
-    ...  .querySelector('span')  #4
-
 ${JSFollowSignInButtonPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('ufc-signin-modal').shadowRoot  #2
     ...  .querySelector('div')  #3

@@ -5,7 +5,7 @@ Library  SeleniumLibrary
 
 *** Keywords ***
 Validate Authors Page
-     IF  ${Env} == "prod"
+    IF  ${Env} == "prod"
         Page Should Contain  Angela Palumbo
     ELSE IF  ${Env} == "stg"
         Page Should Contain  Angela Palumbo
