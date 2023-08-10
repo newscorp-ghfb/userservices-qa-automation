@@ -266,4 +266,4 @@ Validate No Symbol in Default New Watchlist
 #The message “Build Your Watchlist” is getting displayed with the “Create List” button.
 #The selected watchlist is showing the same items as shown on the watchlist page.
 #The default list of symbols are getting shown which is same as on the Watchlist page.
-
+#This is the PR for BarronsMarketDataPage
