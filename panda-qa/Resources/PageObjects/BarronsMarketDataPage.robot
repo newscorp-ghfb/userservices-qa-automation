@@ -10,6 +10,11 @@ ${JSFollowSignInButtonPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('ufc-button').shadowRoot  #6
     ...  .querySelector('button')  #7
 
+${JSRegisterNowButtonPath}=  document.querySelector('dj-watchlist').shadowRoot  #1
+    ...  .querySelector('div.watchlist')  #2
+    ...  .querySelector('div.non-logged-in-panel')  #3
+    ...  .querySelector('button')  #4
+
 ${JSDefaultSymbolDJIA-P}=  document.querySelector('dj-watchlist').shadowRoot  #1
     ...  .querySelector('div.watchlist')  #2
     ...  .querySelector('div.watchlist-content')  #3
@@ -183,6 +188,14 @@ ${JSEditWatchlistButtonPath}=  document.querySelector('dj-watchlist').shadowRoot
     ...  .querySelector('div.default-watchlist-view-right')  #7
     ...  .querySelector('button')  #8
 
+${JSAddWatchlistButtonPath}=  document.querySelector('dj-watchlist').shadowRoot  #1
+    ...  .querySelector('div.watchlist')  #2
+    ...  .querySelector('section')  #3
+    ...  .querySelector('div.header-container')  #4
+    ...  .querySelector('div.default-watchlist-view')  #5
+    ...  .querySelector('div.default-watchlist-view-left')  #6
+    ...  .querySelector('.default-watchlist-view-right button.button-icon:nth-child(2)')  #7
+
 ${JSDeleteWatchlistButtonPath}=  document.querySelector('dj-watchlist').shadowRoot  #1
     ...  .querySelector('div.watchlist')  #2
     ...  .querySelector('section')  #3
@@ -191,11 +204,15 @@ ${JSDeleteWatchlistButtonPath}=  document.querySelector('dj-watchlist').shadowRo
     ...  .querySelector('div.edit-watchlist-body')  #6
     ...  .querySelector('button')  #7
 
+${JSDeleteWatchlistConfimationButtonPath}=  document.querySelector('dj-watchlist').shadowRoot  #1
+    ...  .querySelector('dj-modal')  #2
+    ...  .querySelector('div')  #3
+    ...  .querySelector('button')  #4
+
 *** Keywords ***
 Validate Watchlist for non-logged user
     Wait Until Element is Visible  dom:${JSRegisterNowButtonPath}
     Page Should Contain Element  dom:${JSRegisterNowButtonPath}
-    Page Should Contain Element  dom:${JSDefaultSymbolPath}
     IF  ${Env} == "prod"
         Page Should Contain Element  dom:${JSDefaultSymbolDJIA-P}
         Page Should Contain Element  dom:${JSDefaultSymbolABS-P}
@@ -213,8 +230,11 @@ Validate Watchlist for non-logged user
 Validate Market Data Page
     Page Should Contain Element  //span[text()="Overview"]
 
-Click Create Symbol
+Click Create Button
     Click Button  dom:${JSCreateListButtonBarronsPath}
+
+Validate Create Button
+    Page Should Contain Element  dom:${JSCreateListButtonBarronsPath}
 
 Type Watchlist Name
     Input Text  dom:${JSWatchListNameFieldBarronsPath}  TestA
@@ -240,20 +260,16 @@ Save Watchlist Changes
 Delete Watchlist
     Click Button  dom:${JSEditWatchlistButtonPath}
     Click Button  dom:${JSDeleteWatchlistButtonPath}
+    Click Button  dom:${JSDeleteWatchlistConfimationButtonPath}
 
-Create Watchlist Name
-    Page Should Contain Element  dom:${JSDefaultSymbolPath}
+Create Watchlist With Add
+    Click Button  dom:${JSAddWatchlistButtonPath}
 
 Edit Watchlist Name
-    Page Should Contain Element  dom:${JSDefaultSymbolPath}
-
-Select Symbol
-    Page Should Contain Element  dom:${JSDefaultSymbolPath}
+    Click Button  dom:${JSEditWatchlistButtonPath}
+    Input Text  dom:${JSWatchListNameFieldBarronsPath}  TestB
 
 Validate Symbol in Created Watchlist
-    Page Should Contain Element  dom:${JSDefaultSymbolPath}
-
-Delete Watchlists
     Page Should Contain Element  dom:${JSDefaultSymbolPath}
 
 Validate Default New Watchlist
@@ -261,6 +277,14 @@ Validate Default New Watchlist
 
 Validate No Symbol in Default New Watchlist
     Page Should Contain Element  dom:${JSDefaultSymbolPath}
+
+Watchlist Sign In
+    Click Button  dom:${JSRegisterNowButtonPath}
+    Click Button  dom:${JSRegisterNowButtonPath}
+    Wait Until Element is Visible  //div[@class]/div[@class]/a[text()="Sign In"]
+    Click Element  //div[@class]/div[@class]/a[text()="Sign In"]
+
+
 #Navigating successfully on Barron’s market data page.
 #Clicking successfully on Create A Watchlist web element after switching to Watchlist.
 #The message “Build Your Watchlist” is getting displayed with the “Create List” button.
