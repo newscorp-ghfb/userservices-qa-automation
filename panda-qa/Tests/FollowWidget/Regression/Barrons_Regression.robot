@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation  Barrons Regression Tests
+gitDocumentation  Barrons Regression Tests
 Resource  ../../../Resources/CommonFunctionality.robot
 Resource  ../../../Resources/DefinedKeywords.robot
 Resource  ../../../Resources/PageObjects/BarronsArticlePage.robot
@@ -78,84 +78,84 @@ Validate the Barrons Preference Center page
     #BarronsPreferenceCenterPage.Navigate Article page
     #BarronsArticlePage.Scroll stories
 
-#Validate Authors for Barrons Capabilites Dashboard page
-#    [Documentation]  This test case validates authors for barrons capabilites dashboard page
-#    [Tags]  Regression
+Validate Authors for Barrons Capabilites Dashboard page
+    [Documentation]  This test case validates authors for barrons capabilites dashboard page
+    [Tags]  Regression
 
-#    BarronsCapabilitiesPage.Navigate Capabilities Dashboard page
-#    BarronsCapabilitiesPage.Click Author Tab
-#    BarronsCapabilitiesPage.Validate Authors Reflected On Dashboard
-#    BarronsCapabilitiesPage.Validate Authors On Search Tab
-#    BarronsCapabilitiesPage.Validate Follow Hotlink for Authors
+    BarronsCapabilitiesPage.Navigate Capabilities Dashboard page
+    BarronsCapabilitiesPage.Click Author Tab
+    BarronsCapabilitiesPage.Validate Authors Reflected On Dashboard
+    BarronsCapabilitiesPage.Validate Authors On Search Tab
+    BarronsCapabilitiesPage.Validate Follow Hotlink for Authors
 
-#Validate Company for Barrons Capabilites Dashboard page
-#    [Documentation]  This test case validates authors for barrons capabilites dashboard page
-#    [Tags]  Regression
+Validate Company for Barrons Capabilites Dashboard page
+    [Documentation]  This test case validates authors for barrons capabilites dashboard page
+    [Tags]  Regression
 
-#    BarronsCapabilitiesPage.Navigate Capabilities Dashboard page
-#    BarronsCapabilitiesPage.Click Company Tab
-#    BarronsCapabilitiesPage.Validate Company Reflected On Dashboard
-#    BarronsCapabilitiesPage.Validate Company On Search Tab
+    BarronsCapabilitiesPage.Navigate Capabilities Dashboard page
+    BarronsCapabilitiesPage.Click Company Tab
+    BarronsCapabilitiesPage.Validate Company Reflected On Dashboard
+    BarronsCapabilitiesPage.Validate Company On Search Tab
 
-#Validate Custom Topics for Barrons Capabilites Dashboard page
-#    [Documentation]  This test case validates custom topics for barrons capabilites dashboard page
-#    [Tags]  Regression
+Validate Custom Topics for Barrons Capabilites Dashboard page
+    [Documentation]  This test case validates custom topics for barrons capabilites dashboard page
+    [Tags]  Regression
 
-#    BarronsCapabilitiesPage.Navigate Capabilities Dashboard page
-#    CapabiBarronsCapabilitiesPagelitiesPage.Validate Custom Topic On Dashboard
+    BarronsCapabilitiesPage.Navigate Capabilities Dashboard page
+    CapabiBarronsCapabilitiesPagelitiesPage.Validate Custom Topic On Dashboard
 
-#Validate Industry for Barrons Capabilites Dashboard page
-#    [Documentation]  This test case validates authors for barrons capabilites dashboard page
-#    [Tags]  Regression
+Validate Industry for Barrons Capabilites Dashboard page
+    [Documentation]  This test case validates authors for barrons capabilites dashboard page
+    [Tags]  Regression
 
-#    BarronsCapabilitiesPage.Navigate Capabilities Dashboard page
-#    BarronsCapabilitiesPage.Click Industry Tab
-#    BarronsCapabilitiesPage.Validate Industry Reflected On Dashboard
-#    BarronsCapabilitiesPage.Validate Industry On Search Tab
+    BarronsCapabilitiesPage.Navigate Capabilities Dashboard page
+    BarronsCapabilitiesPage.Click Industry Tab
+    BarronsCapabilitiesPage.Validate Industry Reflected On Dashboard
+    BarronsCapabilitiesPage.Validate Industry On Search Tab
 
-#Validate Publishing Author Company for Barrons CMS page
-#    [Documentation]  This test case validates publishing author company for barrons cms page
-#    [Tags]  Regression
-#    IF  ${Env} == "dev"
-#    BarronsCMSPage.Navigate CMS page
-#    BarronsCMSPage.Type Headline
-#    BarronsCMSPage.Type Summary
-#    BarronsCMSPage.Type Slug
-#    BarronsCMSPage.Type By
-#    BarronsCMSPage.Click Pub Panel Button
-#    END
+Validate Publishing Author Company for Barrons CMS page
+    [Documentation]  This test case validates publishing author company for barrons cms page
+    [Tags]  Regression
+    IF  ${Env} == "dev"
+    BarronsCMSPage.Navigate CMS page
+    BarronsCMSPage.Type Headline
+    BarronsCMSPage.Type Summary
+    BarronsCMSPage.Type Slug
+    BarronsCMSPage.Type By
+    BarronsCMSPage.Click Pub Panel Button
+    END
 
-#Validate Notification On Mailbox page
-#    [Documentation]  This test case validates notifications on mailbox page
-#    [Tags]  Regression
+Validate Notification On Mailbox page
+    [Documentation]  This test case validates notifications on mailbox page
+    [Tags]  Regression
 
-#   IF  ${Env} == "dev"
-#    BarronsMailboxPage.Navigate Mailbox page
-#    BarronsMailboxPage.Login
-#    BarronsMailboxPage.Search Barrons Notification
-#    BarronsMailboxPage.Validate Author Notification
-#    BarronsMailboxPage.Validate Company Notification
-#     END
+    IF  ${Env} == "dev"
+    BarronsMailboxPage.Navigate Mailbox page
+    BarronsMailboxPage.Login
+    BarronsMailboxPage.Search Barrons Notification
+    BarronsMailboxPage.Validate Author Notification
+    BarronsMailboxPage.Validate Company Notification
+    END
 
-#Validate the Capabilities Dashboard Main Menu page
-#    [Documentation]  This test case validates the capabilites main menu dashboard page
-#    [Tags]  Regression
-#    Set Selenium Speed  0.2 seconds
-#    DefinedKeywords.Capabilities Dashboard Main Menu
+Validate the Capabilities Dashboard Main Menu page
+    [Documentation]  This test case validates the capabilites main menu dashboard page
+    [Tags]  Regression
+    Set Selenium Speed  0.2 seconds
+    DefinedKeywords.Capabilities Dashboard Main Menu
 
-#Validate the Barrons Campaign Monitor Dashboard page
-#    [Documentation]  This test case validates the Barrons campaign monitor dashboard page
-#    [Tags]  Regression
-#    Set Selenium Speed  0.2 seconds
-#    BarronsCapabilites.Capabilities Dashboard Barrons Menu
+Validate the Barrons Campaign Monitor Dashboard page
+    [Documentation]  This test case validates the Barrons campaign monitor dashboard page
+    [Tags]  Regression
+    Set Selenium Speed  0.2 seconds
+    BarronsCapabilites.Capabilities Dashboard Barrons Menu
 
 #US-T26
-#Validate Authors for Barrons Article page without byline
-#    [Documentation]  This test case validates authors without byline for barrons article page
-#    [Tags]  Regression
+Validate Authors for Barrons Article page without byline
+    [Documentation]  This test case validates authors without byline for barrons article page
+    [Tags]  Regression
 
-#    CommonFunctionality.Start Barrons Article without byline
-#    BarronsArticlePage.Validate author without byline
+    CommonFunctionality.Start Barrons Article without byline
+    BarronsArticlePage.Validate author without byline
 
 #US-T189
 #US-T190
