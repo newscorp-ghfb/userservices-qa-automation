@@ -51,15 +51,14 @@ ${JSFollowSignInButtonPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('ufc-button').shadowRoot  #6
     ...  .querySelector('button')  #7
 
-${JSFollowSignInButton2Path}=  document.querySelector('div:nth-of-type(15)')  #1
-    ...  .querySelector('ufc-portal')  #2
-    ...  .querySelector('ufc-signin-modal').shadowRoot  #3
-    ...  .querySelector('div')  #4
-    ...  .querySelector('div.modal')  #5
-    ...  .querySelector('focus-trap')  #6
-    ...  .querySelector('div.footer')  #7
-    ...  .querySelector('ufc-button').shadowRoot  #8
-    ...  .querySelector('button')  #9
+${JSFollowSignInButton2Path}=  document.querySelector('ufc-portal')  #1
+    ...  .querySelector('ufc-signin-modal').shadowRoot  #2
+    ...  .querySelector('div')  #3
+    ...  .querySelector('div.modal')  #4
+    ...  .querySelector('focus-trap')  #5
+    ...  .querySelector('div.footer')  #6
+    ...  .querySelector('ufc-button').shadowRoot  #7
+    ...  .querySelector('button')  #8
 
 ${JSFollowSignInButton3Path}=  document.querySelectorAll('div')[208]  #1
     ...  .querySelector('ufc-portal')  #2
@@ -137,7 +136,6 @@ Validate Sign In 2 Modal
     Page Should Contain Element  dom:${JSFollowSignInHeader2Path}
 
 Click Sign In Button Modal
-    Wait Until Element is Visible  dom:${JSFollowSignInButtonPath}  20s
     Click Element  dom:${JSFollowSignInButtonPath}
 
 Click Sign In Button 2 Modal

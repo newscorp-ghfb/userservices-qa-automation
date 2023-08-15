@@ -11,7 +11,6 @@ Test Teardown  CommonFunctionality.Finish Testcase
 *** Variables ***
 
 *** Test Cases ***
-#US-T59
 #US-T60
 #US-T61
 #US-T62
