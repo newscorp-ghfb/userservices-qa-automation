@@ -37,7 +37,7 @@ ${JSFollowSignInHeaderPath}=  document.querySelector('ufc-portal')  #1
 
 *** Keywords ***
 Validate Follow Button
-    Wait Until Element is Visible  dom:${JSCFollowButtonWSJPath}
+    Wait Until Element is Visible  dom:${JSFollowButtonWSJPath}
     Element Text Should Be  dom:${JSFollowButtonWSJPath}  Follow  timeout=30
 
 Validate Custom Follow Button
