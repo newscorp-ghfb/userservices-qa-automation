@@ -76,7 +76,7 @@ Click Preference Center Link
     Click Element  dom:${JSPreferenceCenterLinkFNPath}
 
 Validate author hyperlink
-    Page Should Contain Element  //*[@id="fn-pre-body-article-wrap"]/div[3]/div/div/div/span/a
+    Page Should Contain Element  //span[@class="css-1wc2zh5" and text()="Justin Cash"]
 
 Click author hyperlink
     Click Element  //*[@id="fn-pre-body-article-wrap"]/div[3]/div/div/div/span/a
