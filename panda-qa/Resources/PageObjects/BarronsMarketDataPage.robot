@@ -271,12 +271,12 @@ Edit Watchlist Name
     Click Button  dom:${JSEditWatchlistButtonPath}
     Input Text  dom:${JSWatchListNameFieldBarronsPath}  TestB
 
-
 Watchlist Sign In
     Click Element  //*[@id="Layer_2"]
     Click Button  dom:${JSRegisterNowButtonPath}
     Wait Until Element is Visible  //div[@class]/div[@class]/a[text()="Sign In"]
     Click Element  //div[@class]/div[@class]/a[text()="Sign In"]
 
+#This is the PR for BarronsMarketDataPage with correct keywords
 
 
