@@ -229,8 +229,10 @@ Validate Watchlist for non-logged user
 
 Validate Market Data Page
     Page Should Contain Element  //span[text()="Overview"]
+    Click Element  //*[@id="Layer_2"]
 
 Click Create Button
+    Set Focus To Element  dom:${JSCreateListButtonBarronsPath}
     Click Button  dom:${JSCreateListButtonBarronsPath}
 
 Validate Create Button
@@ -269,9 +271,6 @@ Edit Watchlist Name
     Click Button  dom:${JSEditWatchlistButtonPath}
     Input Text  dom:${JSWatchListNameFieldBarronsPath}  TestB
 
-Validate Symbol in Created Watchlist
-    Page Should Contain Element  dom:${JSDefaultSymbolPath}
-
 Validate Default New Watchlist
     Page Should Contain Element  dom:${JSDefaultSymbolPath}
 
@@ -279,7 +278,7 @@ Validate No Symbol in Default New Watchlist
     Page Should Contain Element  dom:${JSDefaultSymbolPath}
 
 Watchlist Sign In
-    Click Button  dom:${JSRegisterNowButtonPath}
+    Click Element  //*[@id="Layer_2"]
     Click Button  dom:${JSRegisterNowButtonPath}
     Wait Until Element is Visible  //div[@class]/div[@class]/a[text()="Sign In"]
     Click Element  //div[@class]/div[@class]/a[text()="Sign In"]
