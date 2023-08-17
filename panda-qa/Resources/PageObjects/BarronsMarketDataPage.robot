@@ -271,11 +271,6 @@ Edit Watchlist Name
     Click Button  dom:${JSEditWatchlistButtonPath}
     Input Text  dom:${JSWatchListNameFieldBarronsPath}  TestB
 
-Validate Default New Watchlist
-    Page Should Contain Element  dom:${JSDefaultSymbolPath}
-
-Validate No Symbol in Default New Watchlist
-    Page Should Contain Element  dom:${JSDefaultSymbolPath}
 
 Watchlist Sign In
     Click Element  //*[@id="Layer_2"]
@@ -284,9 +279,4 @@ Watchlist Sign In
     Click Element  //div[@class]/div[@class]/a[text()="Sign In"]
 
 
-#Navigating successfully on Barron’s market data page.
-#Clicking successfully on Create A Watchlist web element after switching to Watchlist.
-#The message “Build Your Watchlist” is getting displayed with the “Create List” button.
-#The selected watchlist is showing the same items as shown on the watchlist page.
-#The default list of symbols are getting shown which is same as on the Watchlist page.
-#This is the PR for BarronsMarketDataPage
+
