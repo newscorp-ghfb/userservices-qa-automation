@@ -43,13 +43,12 @@ ${JSStockPickPreferenceCenterLinkBarronsPath}=  document.querySelector('ufc-foll
     ...  .querySelector('span')  #6
     ...  .querySelector('a')  #7
 
-${JSFollowSignInButtonPath}=  document.querySelector('ufc-portal')  #1
-    ...  .querySelector('ufc-signin-modal').shadowRoot  #2
-    ...  .querySelector('div')  #3
-    ...  .querySelector('div.modal')  #4
-    ...  .querySelector('div.footer')  #5
-    ...  .querySelector('ufc-button').shadowRoot  #6
-    ...  .querySelector('button')  #7
+${JSFollowSignInButtonPath}=  document.querySelector('ufc-signin-modal[isopen]').shadowRoot  #1
+    ...  .querySelector('div')  #2
+    ...  .querySelector('div.modal')  #3
+    ...  .querySelector('div.footer')  #4
+    ...  .querySelector('ufc-button').shadowRoot  #5
+    ...  .querySelector('button')  #6
 
 ${JSFollowSignInButton2Path}=  document.querySelector('ufc-signin-modal[isopen]').shadowRoot  #1
     ...  .querySelector('div')  #2

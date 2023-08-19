@@ -79,7 +79,7 @@ Validate author hyperlink
     Page Should Contain Element  //span[@class="css-1wc2zh5" and text()="Justin Cash"]
 
 Click author hyperlink
-    Click Element  //*[@id="fn-pre-body-article-wrap"]/div[3]/div/div/div/span/a
+    Click Element  //span[@class='css-1wc2zh5']
 
 Validate author without byline
     Page Should Contain Element  //div[@class="byline"]/div/div/span[text()="Clare Dickinson"]
