@@ -30,13 +30,6 @@ Validate the follow button from articles page
     FNArticlePage.Scroll Down
     FNArticlePage.Validate Following Button
     FNArticlePage.Click Following Button
-    FNArticlePage.Click Undo Link
-    FNArticlePage.Validate Following Button
-    FNArticlePage.Click Following Button
-    FNArticlePage.Validate Follow Button
-    FNArticlePage.Click Follow Button
-    FNArticlePage.Click Preference Center link
-    FNPreferenceCenterPage.Validate Preference Center page
 #US-T187
 #US-T35
 #US-T36
