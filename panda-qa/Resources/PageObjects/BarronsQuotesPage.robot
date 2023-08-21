@@ -229,6 +229,8 @@ Validate Watchlist for non-logged user
 
 Validate Quote Page
     Page Should Contain Element  //h1[text()="Dow Jones Industrial Average"]
+    Execute javascript  window.scrollTo(0,500)
+    Set Focus To Element  dom:${JSCreateListButtonBarronsPath}
 
 Click Create Button
     Click Button  dom:${JSCreateListButtonBarronsPath}
@@ -280,9 +282,12 @@ Validate No Symbol in Default New Watchlist
 
 Watchlist Sign In
     Click Button  dom:${JSRegisterNowButtonPath}
-    Click Button  dom:${JSRegisterNowButtonPath}
     Wait Until Element is Visible  //div[@class]/div[@class]/a[text()="Sign In"]
     Click Element  //div[@class]/div[@class]/a[text()="Sign In"]
+
+Scroll Down
+    Execute javascript  window.scrollTo(0,500)
+
 #Navigating successfully on Barron’s market data page.
 #Clicking successfully on Create A Watchlist web element after switching to Watchlist.
 #The message “Build Your Watchlist” is getting displayed with the “Create List” button.

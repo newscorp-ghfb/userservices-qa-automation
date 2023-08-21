@@ -560,3 +560,35 @@ Validate the authors follow toggle button from Newsletters page
     WSJNewslettersPage.Click author newsletters toggle
     WSJNewslettersPage.Click unsubscription confirmation button
     WSJNewslettersPage.Validate author newsletters unsubscription
+
+#US-T268
+#US-T269
+#US-T270
+#US-T271
+Validate the alert button for Board Pack Exclusive from articles page
+    [Documentation]  This test case validates the alert button for Board Pack Exclusive from articles pag
+    [Tags]  Regression
+    CommonFunctionality.Start WSJ Article for Board Pack Exclusive
+    #WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Click Board Pack Exclusive Button
+    WSJArticlePage.Validate Sign In Modal
+    WSJArticlePage.Click Sign In Button Modal
+    IF  ${Env} == "prod"
+        DefinedKeywords.Market Watch Sign In Process
+    ELSE IF  ${Env} == "dev"
+        DefinedKeywords.Sign In Process
+    END
+    Set Selenium Speed  0.2 seconds
+    IF  ${Env} == "prod"
+        Set Selenium Speed  0.2 seconds
+    ELSE IF  ${Env} == "dev"
+        Set Selenium Speed  0.35 seconds
+    END
+    WSJArticlePage.Click Board Pack Exclusive Button
+    WSJArticlePage.Click Undo Link
+    WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Click Custom Following Button
+    WSJArticlePage.Validate Custom Follow Button
+    WSJArticlePage.Click Custom Follow Button
+    WSJArticlePage.Click Preference Center link
+    WSJPreferenceCenterPage.Validate Preference Center page
