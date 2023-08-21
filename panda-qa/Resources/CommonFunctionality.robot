@@ -430,6 +430,17 @@ Start Barrons for Market Data page
     Execute javascript  window.scrollTo(0,500)
     Maximize Browser Window
 
+Start WSJ Article for Board Pack Exclusive
+    Set Selenium Speed  0.5 seconds
+    IF  ${Env} == "prod"
+        Open Browser  https://www.wsj.com  ${Browser}
+        Go To  https://www.wsj.com/articles/what-the-board-needs-to-know-acec160b?mod=panda_wsj_custom_topic_alert
+    ELSE IF  ${Env} == "dev"
+        Open Browser  https://www.s.dev.wsj.com  ${Browser}
+        Go To  https://www.s.dev.wsj.com/articles/what-the-board-needs-to-know-acec160b?mod=panda_wsj_custom_topic_alert
+    END
+    Maximize Browser Window
+
 Click Sign In
     Click Button  //a[text()="Sign In"]
 

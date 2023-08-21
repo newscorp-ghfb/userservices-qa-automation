@@ -86,6 +86,10 @@ Click Preference Center Link
     Wait Until Element is Visible  dom:${JSPreferenceCenterLinkWSJPath}
     Click Element  dom:${JSPreferenceCenterLinkWSJPath}
 
+Click Board Pack Exclusive Button
+    Click Button  dom:${JSCustomFollowButtonWSJPath}  #This should be the user name
+    Click Button  dom:${JSCustomFollowButtonWSJPath}  #This should be the Board Pack Exclusive Button
+
 Validate author hyperlink
     Page Should Contain Element  //*[text()='Dave Michaels']
 

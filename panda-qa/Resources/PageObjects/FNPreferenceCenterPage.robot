@@ -30,7 +30,7 @@ Validate Following Toggle Feature
 
 Click Following Toggle Feature
     IF  ${Env} == "prod"
-        Click Element  //*[text()="Justin Cash"]/../../../../td[4]/div
+        Click Element  //*[text()="Paul Clarke"]/../../../../td[4]/div
     ELSE IF  ${Env} == "dev"
         Click Element  //*[text()="Sunita Adhikarla"]/../../../../td[4]/div
     END
