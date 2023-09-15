@@ -276,3 +276,14 @@ Validate the Watchlist widget from Market Data page
 
 #US-T224
 #Validate the Barrons Preference Center page for News Alerts
+
+#US-T136
+#US-T119
+#US-T137
+#US-T139
+
+
+
+#US-T142
+#US-T120
+#US-T140
