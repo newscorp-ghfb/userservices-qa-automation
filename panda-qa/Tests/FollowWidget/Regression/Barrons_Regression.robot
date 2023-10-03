@@ -233,9 +233,6 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #Validate the Barrons Preference Center page for News Alerts
 
 #US-T136
-#US-T119
-#US-T137
-#US-T139
 Validate the Barrons digest notification
     [Documentation]  This test case validates the Barrons digest notification
     [Tags]  Regression
@@ -243,6 +240,30 @@ Validate the Barrons digest notification
     BarronsMailboxPage.Login
     BarronsMailboxPage.Select Inbox
     BarronsMailboxPage.Search Your Daily Digest from Barron's
+    BarronsMailboxPage.Validate Barron's Digest notification
+
+#US-T119
+Validate the Barrons real-time author notification
+    [Documentation]  This test case validates the Barrons real-time author notification
+    [Tags]  Regression
+    BarronsMailboxPage.Navigate Mailbox page
+    BarronsMailboxPage.Login
+    BarronsMailboxPage.Select Inbox
+    BarronsMailboxPage.Search Your Barrons real-time author notification
+    BarronsMailboxPage.Validate Barrons real-time author notification
+
+#US-T137
+Validate the Barrons real-time company notification
+    [Documentation]  This test case validates the Barrons real-time company notification
+    [Tags]  Regression
+    BarronsMailboxPage.Navigate Mailbox page
+    BarronsMailboxPage.Login
+    BarronsMailboxPage.Select Inbox
+    BarronsMailboxPage.Search Your Barrons real-time company notification
+    BarronsMailboxPage.Validate Barrons real-time company notification
+
+#US-T139
+
 
 #US-T142
 #US-T120

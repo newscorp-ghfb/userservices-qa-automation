@@ -28,7 +28,7 @@ Login
 
 
 Select Inbox
-    Set Selenium Speed  1.0 seconds
+    Set Selenium Speed  2.0 seconds
     Wait Until Page Contains Element  //input[@id="topSearchInput"]
     Click Element  //input[@id="topSearchInput"]
     Wait Until Page Contains Element  //span[@id="searchScopeButtonId-option"]
@@ -43,10 +43,43 @@ Search Your Daily Digest from Barron's
     Click Element  //button[@aria-label="Search"]
 
 Validate Barron's Digest notification
-    Wait Until Page Contains Element  //*[@id="0efe0b0a-d5c6-05df-f294-385bee594737"]
-    Click Element  //*[@id="0efe0b0a-d5c6-05df-f294-385bee594737"]
+    Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
+    Click Element  //div[@id="groupHeaderTop results"]/../div[2]
     Page Should Contain Element  //a[text()="View in web browser ›"]
-    Page Should Contain Element  //span[@class="markr4jcrkcz7"]
+    Page Should Contain Element  //table[@role="presentation"]//span[text()="Daily"]/../span[text()="Digest"]
+    Page Should Contain Element  //a[text()="Preferences"]
+    Page Should Contain Element  //a[text()="Unsubscribe"]
+    Page Should Contain Element  //a[text()="Privacy Notice"]
+    Page Should Contain Element  //a[text()="Cookie Notice"]
+
+Search Your Barrons real-time author notification
+    Wait Until Page Contains Element  //input[@id="topSearchInput"]
+    Click Element  //input[@id="topSearchInput"]
+    Input Text  //input[@id="topSearchInput"]  The latest from Teresa Rivas
+    Click Element  //button[@aria-label="Search"]
+
+Validate Barrons real-time author notification
+    Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
+    Click Element  //div[@id="groupHeaderTop results"]/../div[2]
+    Page Should Contain Element  //a[text()="View in web browser ›"]
+    Page Should Contain Element  //a[text()="Read More "]
+    Page Should Contain Element  //a[text()="Preferences"]
+    Page Should Contain Element  //a[text()="Unsubscribe"]
+    Page Should Contain Element  //a[text()="Privacy Notice"]
+    Page Should Contain Element  //a[text()="Cookie Notice"]
+
+Search Your Barrons real-time company notification
+    Wait Until Page Contains Element  //input[@id="topSearchInput"]
+    Click Element  //input[@id="topSearchInput"]
+    Input Text  //input[@id="topSearchInput"]  Barrons The latest news on Amazon.com, Inc.
+    Click Element  //button[@aria-label="Search"]
+
+Validate Barrons real-time company notification
+    Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
+    Click Element  //div[@id="groupHeaderTop results"]/../div[2]
+    Page Should Contain Element  //a[text()="View in web browser ›"]
+    Page Should Contain Element  //*[text()="AMZN (U.S.: Nasdaq)"]
+    Page Should Contain Element  //a[text()="Read More "]
     Page Should Contain Element  //a[text()="Preferences"]
     Page Should Contain Element  //a[text()="Unsubscribe"]
     Page Should Contain Element  //a[text()="Privacy Notice"]
