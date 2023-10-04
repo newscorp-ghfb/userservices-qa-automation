@@ -5,6 +5,7 @@ Resource  ../../../Resources/DefinedKeywords.robot
 Resource  ../../../Resources/PageObjects/FNArticlePage.robot
 Resource  ../../../Resources/PageObjects/FNAuthorsPage.robot
 Resource  ../../../Resources/PageObjects/FNPreferenceCenterPage.robot
+Resource  ../../../Resources/PageObjects/FNMailboxPage.robot
 
 Test Setup  CommonFunctionality.Start FN Article
 Test Teardown  CommonFunctionality.Finish Testcase
@@ -117,3 +118,35 @@ Validate Authors for FN Article page without byline
     FNArticlePage.Validate author without byline
 
 #US-T225
+
+
+
+#US-T142
+Validate the FN digest notification
+    [Documentation]  This test case validates the FN digest notification
+    [Tags]  Regression
+    FNMailboxPage.Navigate Mailbox page
+    FNMailboxPage.Login
+    FNMailboxPage.Select Inbox
+    FNMailboxPage.Search Your Daily Digest from FN
+    FNMailboxPage.Validate FN Digest notification
+
+#US-T120
+Validate the FN real-time author notification
+    [Documentation]  This test case validates the FN real-time author notification
+    [Tags]  Regression
+    FNMailboxPage.Navigate Mailbox page
+    FNMailboxPage.Login
+    FNMailboxPage.Select Inbox
+    FNMailboxPage.Search Your FN real-time author notification
+    FNMailboxPage.Validate FN real-time author notification
+
+#US-T140
+Validate the FN real-time company notification
+    [Documentation]  This test case validates the FN real-time company notification
+    [Tags]  Regression
+    FNMailboxPage.Navigate Mailbox page
+    FNMailboxPage.Login
+    FNMailboxPage.Select Inbox
+    FNMailboxPage.Search Your FN real-time company notification
+    FNMailboxPage.Validate FN real-time company notification
