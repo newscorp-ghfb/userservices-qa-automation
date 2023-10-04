@@ -263,8 +263,12 @@ Validate the Barrons real-time company notification
     BarronsMailboxPage.Validate Barrons real-time company notification
 
 #US-T139
+Validate the Barrons real-time stock picks notification
+    [Documentation]  This test case validates the Barrons real-time stock picks notification
+    [Tags]  Regression
+    BarronsMailboxPage.Navigate Mailbox page
+    BarronsMailboxPage.Login
+    BarronsMailboxPage.Select Inbox
+    BarronsMailboxPage.Search Your Barrons real-time stock picks notification
+    BarronsMailboxPage.Validate Barrons real-time stock picks notification
 
-
-#US-T142
-#US-T120
-#US-T140
