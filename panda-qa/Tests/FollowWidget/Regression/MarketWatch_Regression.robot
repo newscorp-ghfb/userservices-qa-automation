@@ -6,6 +6,7 @@ Resource  ../../../Resources/PageObjects/MarketWatchArticlePage.robot
 Resource  ../../../Resources/PageObjects/MarketWatchWatchlistPage.robot
 Resource  ../../../Resources/PageObjects/MarketWatchAuthorsPage.robot
 Resource  ../../../Resources/PageObjects/MarketWatchPreferenceCenterPage.robot
+Resource  ../../../Resources/PageObjects/MarketWatchMailboxPage.robot
 
 Test Setup  CommonFunctionality.Start Market Watch Article
 Test Teardown  CommonFunctionality.Finish Testcase
@@ -145,3 +146,34 @@ Validate the Watchlist widget from Watchlist page
 
 #US-T227
 #Validate the MarketWatch Preference Center page for News Alerts
+
+
+#US-T149
+Validate the MW digest notification
+    [Documentation]  This test case validates the MW digest notification
+    [Tags]  Regression
+    MarketWatchMailboxPage.Navigate Mailbox page
+    MarketWatchMailboxPage.Login
+    MarketWatchMailboxPage.Select Inbox
+    MarketWatchMailboxPage.Search Your Daily Digest from MW
+    MarketWatchMailboxPage.Validate MW Digest notification
+
+#US-T122
+Validate the MW real-time author notification
+    [Documentation]  This test case validates the MW real-time author notification
+    [Tags]  Regression
+    MarketWatchMailboxPage.Navigate Mailbox page
+    MarketWatchMailboxPage.Login
+    MarketWatchMailboxPage.Select Inbox
+    MarketWatchMailboxPage.Search Your MW real-time author notification
+    MarketWatchMailboxPage.Validate MW real-time author notification
+
+#US-T146
+Validate the MW real-time company notification
+    [Documentation]  This test case validates the MW real-time company notification
+    [Tags]  Regression
+    MarketWatchMailboxPage.Navigate Mailbox page
+    MarketWatchMailboxPage.Login
+    MarketWatchMailboxPage.Select Inbox
+    MarketWatchMailboxPage.Search Your MW real-time company notification
+    MarketWatchMailboxPage.Validate MW real-time company notification

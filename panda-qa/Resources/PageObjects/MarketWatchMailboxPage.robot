@@ -36,13 +36,13 @@ Select Inbox
     Wait Until Page Contains Element  //button[@id="searchScopeButtonId-list1"]
     Click Element  //button[@id="searchScopeButtonId-list1"]
 
-Search Your Daily Digest from FN
+Search Your Daily Digest from MW
     Wait Until Page Contains Element  //input[@id="topSearchInput"]
     Click Element  //input[@id="topSearchInput"]
-    Input Text  //input[@id="topSearchInput"]  Your Daily Digest from Financial News
+    Input Text  //input[@id="topSearchInput"]  Your Daily Digest from MarketWatch
     Click Element  //button[@aria-label="Search"]
 
-Validate FN Digest notification
+Validate MW Digest notification
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
     Page Should Contain Element  //a[text()="View in web browser ›"]
@@ -52,34 +52,34 @@ Validate FN Digest notification
     Page Should Contain Element  //a[text()="Privacy Notice"]
     Page Should Contain Element  //a[text()="Cookie Notice"]
 
-Search Your FN real-time author notification
+Search Your MW real-time author notification
     Wait Until Page Contains Element  //input[@id="topSearchInput"]
     Click Element  //input[@id="topSearchInput"]
-    Input Text  //input[@id="topSearchInput"]  The latest from David Wighton
+    Input Text  //input[@id="topSearchInput"]  Mark Hulbert story alert
     Click Element  //button[@aria-label="Search"]
 
-Validate FN real-time author notification
+Validate MW real-time author notification
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
     Page Should Contain Element  //a[text()="View in web browser ›"]
-    Page Should Contain Element  //td/div/span[text()="Wighton"]
+    Page Should Contain Element  //td/div/span[text()="Hulbert"]
     Page Should Contain Element  //a[text()="Read More "]
     Page Should Contain Element  //a[text()="Preferences"]
     Page Should Contain Element  //a[text()="Unsubscribe"]
     Page Should Contain Element  //a[text()="Privacy Notice"]
     Page Should Contain Element  //a[text()="Cookie Notice"]
 
-Search Your FN real-time company notification
+Search Your MW real-time company notification
     Wait Until Page Contains Element  //input[@id="topSearchInput"]
     Click Element  //input[@id="topSearchInput"]
-    Input Text  //input[@id="topSearchInput"]  Financial News The latest news on Blackrock Inc
+    Input Text  //input[@id="topSearchInput"]  MarketWatch The latest news on Alphabet Inc.
     Click Element  //button[@aria-label="Search"]
 
-Validate FN real-time company notification
+Validate MW real-time company notification
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
     Page Should Contain Element  //a[text()="View in web browser ›"]
-    Page Should Contain Element  //*[text()="BLK (U.S.: NYSE)"]
+    Page Should Contain Element  //*[text()="GOOG (U.S.: Nasdaq)"]
     Page Should Contain Element  //a[text()="Read More "]
     Page Should Contain Element  //a[text()="Preferences"]
     Page Should Contain Element  //a[text()="Unsubscribe"]
