@@ -61,4 +61,5 @@ Validate the FN Preference Center page
     FNPreferenceCenterPage.Validate Following Toggle Alert Pop up
     FNPreferenceCenterPage.Click Following Toggle Alert Pop up
     FNPreferenceCenterPage.Navigate Article page
+    FNArticlePage.Scroll Down
     FNArticlePage.Validate Follow Button

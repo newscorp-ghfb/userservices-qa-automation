@@ -5,6 +5,7 @@ Resource  ../../../Resources/DefinedKeywords.robot
 Resource  ../../../Resources/PageObjects/PENArticlePage.robot
 Resource  ../../../Resources/PageObjects/PENAuthorsPage.robot
 Resource  ../../../Resources/PageObjects/PENPreferenceCenterPage.robot
+Resource  ../../../Resources/PageObjects/PENMailboxPage.robot
 
 Test Setup  CommonFunctionality.Start PEN Article
 Test Teardown  CommonFunctionality.Finish Testcase
@@ -116,3 +117,34 @@ Validate Authors for PEN Article page without byline
 
 #US-T228
 #Validate the PEN Preference Center page for News Alerts
+
+
+#US-T123
+Validate the PEN digest notification
+    [Documentation]  This test case validates the PEN digest notification
+    [Tags]  Regression
+    PENMailboxPage.Navigate Mailbox page
+    PENMailboxPage.Login
+    PENMailboxPage.Select Inbox
+    PENMailboxPage.Search Your Daily Digest from PEN
+    PENMailboxPage.Validate PEN Digest notification
+
+#US-T150
+Validate the PEN real-time author notification
+    [Documentation]  This test case validates the PEN real-time author notification
+    [Tags]  Regression
+    PENMailboxPage.Navigate Mailbox page
+    PENMailboxPage.Login
+    PENMailboxPage.Select Inbox
+    PENMailboxPage.Search Your PEN real-time author notification
+    PENMailboxPage.Validate PEN real-time author notification
+
+#US-T152
+Validate the PEN real-time company notification
+    [Documentation]  This test case validates the PEN real-time company notification
+    [Tags]  Regression
+    PENMailboxPage.Navigate Mailbox page
+    PENMailboxPage.Login
+    PENMailboxPage.Select Inbox
+    PENMailboxPage.Search Your PEN real-time company notification
+    PENMailboxPage.Validate PEN real-time company notification
