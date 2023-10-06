@@ -52,4 +52,5 @@ Validate the Mansion Global Preference Center page
     MansionGlobalPreferenceCenterPage.Validate Following Toggle Alert Pop up
     MansionGlobalPreferenceCenterPage.Click Following Toggle Alert Pop up
     MansionGlobalPreferenceCenterPage.Navigate Article page
+    Execute javascript  window.scrollTo(0,500)
     MansionGlobalArticlePage.Validate Follow Button
