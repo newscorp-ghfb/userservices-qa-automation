@@ -5,6 +5,7 @@ Resource  ../../../Resources/DefinedKeywords.robot
 Resource  ../../../Resources/PageObjects/MansionGlobalArticlePage.robot
 Resource  ../../../Resources/PageObjects/MansionGlobalAuthorsPage.robot
 Resource  ../../../Resources/PageObjects/MansionGlobalPreferenceCenterPage.robot
+Resource  ../../../Resources/PageObjects/MansionGlobalMailboxPage.robot
 
 Test Setup  CommonFunctionality.Start Mansion Global Article
 Test Teardown  CommonFunctionality.Finish Testcase
@@ -127,3 +128,33 @@ Validate Authors for Mansion Global Article page without byline
     MansionGlobalArticlePage.Validate author without byline
 #US-T226
 #Validate the Mansion Global Preference Center page for News Alerts
+
+#US-T148
+Validate the Mansion Global digest notification
+    [Documentation]  This test case validates the Mansion Global digest notification
+    [Tags]  Regression
+    MansionGlobalMailboxPage.Navigate Mailbox page
+    MansionGlobalMailboxPage.Login
+    MansionGlobalMailboxPage.Select Inbox
+    MansionGlobalMailboxPage.Search Your Daily Digest from Mansion Global
+    MansionGlobalMailboxPage.Validate Mansion Global Digest notification
+
+#US-T121
+Validate the Mansion Global real-time author notification
+    [Documentation]  This test case validates the Mansion Global real-time author notification
+    [Tags]  Regression
+    MansionGlobalMailboxPage.Navigate Mailbox page
+    MansionGlobalMailboxPage.Login
+    MansionGlobalMailboxPage.Select Inbox
+    MansionGlobalMailboxPage.Search Your Mansion Global real-time author notification
+    MansionGlobalMailboxPage.Validate Mansion Global real-time author notification
+
+#US-T158
+Validate the Mansion Global weekly saved search notification
+    [Documentation]  This test case validates the Mansion Global weekly saved search notification
+    [Tags]  Regression
+    MansionGlobalMailboxPage.Navigate Mailbox page
+    MansionGlobalMailboxPage.Login
+    MansionGlobalMailboxPage.Select Inbox
+    MansionGlobalMailboxPage.Search Your Mansion Global weekly saved search notification
+    MansionGlobalMailboxPage.Validate Mansion Global weekly saved search notification
