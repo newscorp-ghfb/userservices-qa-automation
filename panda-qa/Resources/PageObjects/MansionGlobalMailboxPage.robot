@@ -61,12 +61,12 @@ Search Your Mansion Global real-time author notification
 Validate Mansion Global real-time author notification
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
-    Page Should Contain Element  //a[text()="View in web browser ›"]
+    Page Should Contain Element  //a[text()="Is this email difficult to read? View in browser"]
     Page Should Contain Element  //a[text()="Read More "]
-    Page Should Contain Element  //a[text()="Preferences"]
-    Page Should Contain Element  //a[text()="Unsubscribe"]
-    Page Should Contain Element  //a[text()="Privacy Notice"]
-    Page Should Contain Element  //a[text()="Cookie Notice"]
+    Page Should Contain Element  //a[text()="Alerts Center"]
+    Page Should Contain Element  //a[text()="Contact Us"]
+    Page Should Contain Element  //a[text()="Privacy Policy"]
+    Page Should Contain Element  //a[text()="Cookie Policy"]
 
 Search Your Mansion Global weekly saved search notification
     Wait Until Page Contains Element  //input[@id="topSearchInput"]

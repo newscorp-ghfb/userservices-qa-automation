@@ -162,10 +162,10 @@ Click Stock Pick Preference Center Link
 
 
 Validate author hyperlink
-    Page Should Contain Element  //*[@id="article-contents"]/header/div[2]/div/div[1]/a/span
+    Page Should Contain Element  //span[text()="Angela Palumbo"]
 
 Click author hyperlink
-    Click Element  //*[@id="article-contents"]/header/div[2]/div/div[1]/a/span
+    Click Element  //span[text()="Angela Palumbo"]
 
 Validate author without byline
     Page Should Contain Element  //div[@class="byline article__byline"]/div/span[text()="John Porter"]
