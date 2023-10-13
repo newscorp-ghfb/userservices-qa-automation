@@ -592,3 +592,43 @@ Validate the alert button for Board Pack Exclusive from articles page
     WSJArticlePage.Click Custom Follow Button
     WSJArticlePage.Click Preference Center link
     WSJPreferenceCenterPage.Validate Preference Center page
+
+#US-T153
+Validate the WSJ digest notification
+    [Documentation]  This test case validates the WSJ digest notification
+    [Tags]  Regression
+    WSJMailboxPage.Navigate Mailbox page
+    WSJMailboxPage.Login
+    WSJMailboxPage.Select Inbox
+    WSJMailboxPage.Search Your Daily Digest from WSJ
+    WSJMailboxPage.Validate WSJ Digest notification
+
+#US-T124
+Validate the WSJ real-time author notification
+    [Documentation]  This test case validates the WSJ real-time author notification
+    [Tags]  Regression
+    WSJMailboxPage.Navigate Mailbox page
+    WSJMailboxPage.Login
+    WSJMailboxPage.Select Inbox
+    WSJMailboxPage.Search Your WSJ real-time author notification
+    WSJMailboxPage.Validate WSJ real-time author notification
+
+#US-T154
+Validate the WSJ real-time company notification
+    [Documentation]  This test case validates the WSJ real-time company notification
+    [Tags]  Regression
+    WSJMailboxPage.Navigate Mailbox page
+    WSJMailboxPage.Login
+    WSJMailboxPage.Select Inbox
+    WSJMailboxPage.Search Your WSJ real-time company notification
+    WSJMailboxPage.Validate WSJ real-time company notification
+
+#US-T143
+Validate the WSJ real-time custom topic notification
+    [Documentation]  This test case validates the WSJ real-time custom topic notification
+    [Tags]  Regression
+    WSJMailboxPage.Navigate Mailbox page
+    WSJMailboxPage.Login
+    WSJMailboxPage.Select Inbox
+    WSJMailboxPage.Search Your WSJ real-time custom topic notification
+    WSJMailboxPage.Validate WSJ real-time custom topic notification
