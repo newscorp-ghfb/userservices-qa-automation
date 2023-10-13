@@ -63,10 +63,10 @@ Validate Barrons real-time author notification
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
     Page Should Contain Element  //a[text()="View in web browser ›"]
     Page Should Contain Element  //a[text()="Read More "]
-    Page Should Contain Element  //a[text()="Preferences"]
-    Page Should Contain Element  //a[text()="Unsubscribe"]
-    Page Should Contain Element  //a[text()="Privacy Notice"]
-    Page Should Contain Element  //a[text()="Cookie Notice"]
+    Page Should Contain Element  //a[text()="Alerts Center"]
+    Page Should Contain Element  //a[text()="Contact Us"]
+    Page Should Contain Element  //a[text()="Privacy Policy"]
+    Page Should Contain Element  //a[text()="Cookie Policy"]
 
 Search Your Barrons real-time company notification
     Wait Until Page Contains Element  //input[@id="topSearchInput"]

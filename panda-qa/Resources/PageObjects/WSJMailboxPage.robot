@@ -11,10 +11,10 @@ Resource  ../../Resources/CommonFunctionality.robot
 
 Navigate Mailbox page
     Go To  https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1661294982&rver=7.0.6737.0&wp=MBI_SSL&wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26RpsCsrfState%3dfb29a836-86c5-c6e2-eeef-e3747c5e70dd&id=292841&aadredir=1&CBCXT=out&lw=1&fl=dob%2cflname%2cwld&cobrandid=90015
-
+git pull
 Login
-    #Wait Until Element is Visible  //nav/ul/li/a[text()="Sign in"]
-    #Click Button  //nav/ul/li/a[text()="Sign in"]
+    #Wait Until Element is Visible  //*[text()="Sign in"]
+    #Click Element  //*[text()="Sign in"]
     Wait Until Element is Visible  //*[@id="i0116"]
     Input Text  //*[@id="i0116"]  qapandaautomation@hotmail.com
     Wait Until Element is Visible  //*[@id="idSIButton9"]
@@ -26,11 +26,78 @@ Login
     Wait Until Element is Visible  //input[@id="idBtn_Back"]
     Click Button  //input[@id="idBtn_Back"]
 
-Search Barrons Notification
-    Set Selenium Speed  1.0 seconds
-    Wait Until Element is Not Visible  //*[@id="loadingLogo28"]
-    Wait Until Page Contains Element  //input[@aria-label="Search"]
-    Click Button  //input[@aria-label="Search"]
-    Input Text  //input[@aria-label="Search"]  Email test WSJ Author
-    #Wait Until Element is Visible  //*[@id="searchBoxId-Mail"]/button/span
-    #Click Button  //*[@id="searchBoxId-Mail"]/button/span
+
+Select Inbox
+    Set Selenium Speed  2.0 seconds
+    Wait Until Page Contains Element  //input[@id="topSearchInput"]
+    Click Element  //input[@id="topSearchInput"]
+    Wait Until Page Contains Element  //span[@id="searchScopeButtonId-option"]
+    Click Element  //span[@id="searchScopeButtonId-option"]
+    Wait Until Page Contains Element  //button[@id="searchScopeButtonId-list1"]
+    Click Element  //button[@id="searchScopeButtonId-list1"]
+
+Search Your Daily Digest from WSJ
+    Wait Until Page Contains Element  //input[@id="topSearchInput"]
+    Click Element  //input[@id="topSearchInput"]
+    Input Text  //input[@id="topSearchInput"]  Your daily roundup from WSJ
+    Click Element  //button[@aria-label="Search"]
+
+Validate WSJ Digest notification
+    Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
+    Click Element  //div[@id="groupHeaderTop results"]/../div[2]
+    Page Should Contain Element  //a[text()="View in web browser ›"]
+    Page Should Contain Element  //table[@role="presentation"]//span[text()="Daily"]/../span[text()="Digest"]
+    Page Should Contain Element  //a[text()="Preferences"]
+    Page Should Contain Element  //a[text()="Unsubscribe"]
+    Page Should Contain Element  //a[text()="Privacy Notice"]
+    Page Should Contain Element  //a[text()="Cookie Notice"]
+
+Search Your WSJ real-time author notification
+    Wait Until Page Contains Element  //input[@id="topSearchInput"]
+    Click Element  //input[@id="topSearchInput"]
+    Input Text  //input[@id="topSearchInput"]  The latest from Joanna Stern
+    Click Element  //button[@aria-label="Search"]
+
+Validate WSJ real-time author notification
+    Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
+    Click Element  //div[@id="groupHeaderTop results"]/../div[2]
+    Page Should Contain Element  //a[text()="View in web browser ›"]
+    Page Should Contain Element  //a[text()="Read More "]
+    Page Should Contain Element  //a[text()="Alerts Center"]
+    Page Should Contain Element  //a[text()="Contact Us"]
+    Page Should Contain Element  //a[text()="Privacy Policy"]
+    Page Should Contain Element  //a[text()="Cookie Policy"]
+
+Search Your WSJ real-time company notification
+    Wait Until Page Contains Element  //input[@id="topSearchInput"]
+    Click Element  //input[@id="topSearchInput"]
+    Input Text  //input[@id="topSearchInput"]  WSJ The latest news on Amazon.com, Inc.
+    Click Element  //button[@aria-label="Search"]
+
+Validate WSJ real-time company notification
+    Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
+    Click Element  //div[@id="groupHeaderTop results"]/../div[2]
+    Page Should Contain Element  //a[text()="View in web browser ›"]
+    Page Should Contain Element  //*[text()="AMZN (U.S.: Nasdaq)"]
+    Page Should Contain Element  //a[text()="Read More "]
+    Page Should Contain Element  //a[text()="Preferences"]
+    Page Should Contain Element  //a[text()="Unsubscribe"]
+    Page Should Contain Element  //a[text()="Privacy Notice"]
+    Page Should Contain Element  //a[text()="Cookie Notice"]
+
+Search Your WSJ real-time custom topic notification
+    Wait Until Page Contains Element  //input[@id="topSearchInput"]
+    Click Element  //input[@id="topSearchInput"]
+    Input Text  //input[@id="topSearchInput"]  Latest in Film
+    Click Element  //button[@aria-label="Search"]
+
+Validate WSJ real-time custom topic notification
+    Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
+    Click Element  //div[@id="groupHeaderTop results"]/../div[2]
+    Page Should Contain Element  //a[text()="Is this email difficult to read? View "]git
+    Page Should Contain Element  //div[text()="Latest in Film"]
+    Page Should Contain Element  //a[text()="Read More "]
+    Page Should Contain Element  //a[text()="Alerts Center"]
+    Page Should Contain Element  //a[text()="Contact Us"]
+    Page Should Contain Element  //a[text()="Privacy Policy"]
+    Page Should Contain Element  //a[text()="Cookie Policy"]
