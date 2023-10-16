@@ -632,3 +632,36 @@ Validate the WSJ real-time custom topic notification
     WSJMailboxPage.Select Inbox
     WSJMailboxPage.Search Your WSJ real-time custom topic notification
     WSJMailboxPage.Validate WSJ real-time custom topic notification
+
+
+#US-T252
+Validate the WSJ real-time custom topic video notification
+    [Documentation]  This test case validates the WSJ real-time custom topic video notification
+    [Tags]  Regression
+    WSJMailboxPage.Navigate Mailbox page
+    WSJMailboxPage.Login
+    WSJMailboxPage.Select Inbox
+    WSJMailboxPage.Search Your WSJ real-time custom topic video notification
+    WSJMailboxPage.Validate WSJ real-time custom topic video notification
+
+
+#US-T251
+Validate the WSJ real-time author video notification
+    [Documentation]  This test case validates the WSJ real-time author video notification
+    [Tags]  Regression
+    WSJMailboxPage.Navigate Mailbox page
+    WSJMailboxPage.Login
+    WSJMailboxPage.Select Inbox
+    WSJMailboxPage.Search Your WSJ real-time author video notification
+    WSJMailboxPage.Validate WSJ real-time author video notification
+
+
+#US-T312
+Validate the WSJ real-time campaign notification
+    [Documentation]  This test case validates the WSJ real-time campaign notification
+    [Tags]  Regression
+    WSJMailboxPage.Navigate Mailbox page
+    WSJMailboxPage.Login
+    WSJMailboxPage.Select Inbox
+    WSJMailboxPage.Search Your WSJ real-time campaign notification
+    WSJMailboxPage.Validate WSJ real-time campaign notification
