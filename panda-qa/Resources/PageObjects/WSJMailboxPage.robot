@@ -61,7 +61,7 @@ Search Your WSJ real-time author notification
 Validate WSJ real-time author notification
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
-    Page Should Contain Element  //a[text()="View in web browser ›"]
+    Page Should Contain Element  //a[text()="Is this email difficult to read? View in browser"]
     Page Should Contain Element  //a[text()="Read More "]
     Page Should Contain Element  //a[text()="Alerts Center"]
     Page Should Contain Element  //a[text()="Contact Us"]
@@ -77,7 +77,7 @@ Search Your WSJ real-time company notification
 Validate WSJ real-time company notification
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
-    Page Should Contain Element  //a[text()="View in web browser ›"]
+    Page Should Contain Element  //a[text()="Is this email difficult to read? View in browser"]
     Page Should Contain Element  //*[text()="AMZN (U.S.: Nasdaq)"]
     Page Should Contain Element  //a[text()="Read More "]
     Page Should Contain Element  //a[text()="Preferences"]
@@ -94,8 +94,59 @@ Search Your WSJ real-time custom topic notification
 Validate WSJ real-time custom topic notification
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
-    Page Should Contain Element  //a[text()="Is this email difficult to read? View "]git
+    Page Should Contain Element  //a[text()="Is this email difficult to read? View in browser"]
     Page Should Contain Element  //div[text()="Latest in Film"]
+    Page Should Contain Element  //a[text()="Read More "]
+    Page Should Contain Element  //a[text()="Alerts Center"]
+    Page Should Contain Element  //a[text()="Contact Us"]
+    Page Should Contain Element  //a[text()="Privacy Policy"]
+    Page Should Contain Element  //a[text()="Cookie Policy"]
+
+
+Search Your WSJ real-time custom topic video notification
+    Wait Until Page Contains Element  //input[@id="topSearchInput"]
+    Click Element  //input[@id="topSearchInput"]
+    Input Text  //input[@id="topSearchInput"]  Latest on Evan Gershkovich: Video
+    Click Element  //button[@aria-label="Search"]
+
+Validate WSJ real-time custom topic video notification
+    Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
+    Click Element  //div[@id="groupHeaderTop results"]/../div[2]
+    Page Should Contain Element  //a[text()="Is this email difficult to read? View in browser"]
+    Page Should Contain Element  //div[text()="Latest on Evan Gershkovich"]
+    Page Should Contain Element  //a[text()=" Watch "]
+    Page Should Contain Element  //a[text()="Alerts Center"]
+    Page Should Contain Element  //a[text()="Contact Us"]
+    Page Should Contain Element  //a[text()="Privacy Policy"]
+    Page Should Contain Element  //a[text()="Cookie Policy"]
+
+Search Your WSJ real-time author video notification
+    Wait Until Page Contains Element  //input[@id="topSearchInput"]
+    Click Element  //input[@id="topSearchInput"]
+    Input Text  //input[@id="topSearchInput"]  The latest video from Joanna Stern
+    Click Element  //button[@aria-label="Search"]
+
+Validate WSJ real-time author video notification
+    Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
+    Click Element  //div[@id="groupHeaderTop results"]/../div[2]
+    Page Should Contain Element  //a[text()="Is this email difficult to read? View in browser"]
+    Page Should Contain Element  //a[text()=" Watch "]
+    Page Should Contain Element  //a[text()="Alerts Center"]
+    Page Should Contain Element  //a[text()="Contact Us"]
+    Page Should Contain Element  //a[text()="Privacy Policy"]
+    Page Should Contain Element  //a[text()="Cookie Policy"]
+
+Search Your WSJ real-time campaign notification
+    Wait Until Page Contains Element  //input[@id="topSearchInput"]
+    Click Element  //input[@id="topSearchInput"]
+    Input Text  //input[@id="topSearchInput"]  U.S. Elections Alert: WSJ Election Challenge
+    Click Element  //button[@aria-label="Search"]
+
+Validate WSJ real-time campaign notification
+    Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
+    Click Element  //div[@id="groupHeaderTop results"]/../div[2]
+    Page Should Contain Element  //a[text()="Is this email difficult to read? View in browser"]
+    Page Should Contain Element  //span[text()="Elections"]
     Page Should Contain Element  //a[text()="Read More "]
     Page Should Contain Element  //a[text()="Alerts Center"]
     Page Should Contain Element  //a[text()="Contact Us"]
