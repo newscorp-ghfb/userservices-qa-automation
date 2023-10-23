@@ -22,9 +22,6 @@ Validate the author follow button from articles page
 
     BarronsArticlePage.Validate Follow Button
     BarronsArticlePage.Click Follow Button
-    IF  ${Env} == "dev"
-        BarronsArticlePage.Click Follow Button
-    END
     Set Selenium Speed  0.7 seconds
     #BarronsArticlePage.Validate Sign In Modal
     BarronsArticlePage.Click Sign In Button Modal

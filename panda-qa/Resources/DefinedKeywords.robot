@@ -15,7 +15,7 @@ Set Implicit Wait
 Sign In Process
     Wait Until Element Is Visible  //input[@type='email']
     Click Button  //input[@type='email']
-    Input Text  //input[@type='email']  QABARRONSONLY
+    Input Text  //input[@type='email']  barronsadvisorcs@gmail.com
     Set Selenium Implicit Wait  10s
     Click Button  //*[@id="basic-login"]/div[1]/form/div[2]/div[6]/div[1]/button[2]
     Set Selenium Implicit Wait  10s

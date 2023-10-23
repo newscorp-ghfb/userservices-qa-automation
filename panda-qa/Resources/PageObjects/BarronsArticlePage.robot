@@ -1,5 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
+Resource  ../../Resources/CommonFunctionality.robot
 
 *** Variables ***
 ${JSFollowButtonBarronsPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
@@ -66,6 +67,14 @@ ${JSFollowSignInButton3Path}=  document.querySelectorAll('div')[208]  #1
     ...  .querySelector('div.footer')  #6
     ...  .querySelector('ufc-button').shadowRoot  #7
     ...  .querySelector('button')  #8
+
+${JSFollowSignInButton4Path}=  document.querySelector('ufc-signin-modal[isopen]').shadowRoot  #1
+    ...  .querySelector('div')  #2
+    ...  .querySelector('div.modal')  #3
+    ...  .querySelector('focus-trap')  #4
+    ...  .querySelector('div.footer')  #5
+    ...  .querySelector('ufc-button')  #6
+    ...  .querySelector('button')  #7
 
 ${JSFollowSignInHeaderPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('ufc-signin-modal').shadowRoot  #2
@@ -134,7 +143,11 @@ Validate Sign In 2 Modal
     Page Should Contain Element  dom:${JSFollowSignInHeader2Path}
 
 Click Sign In Button Modal
-    Click Element  dom:${JSFollowSignInButtonPath}
+    IF  ${Env} == "prod"
+        Click Element  dom:${JSFollowSignInButtonPath}
+    ELSE IF  ${Env} == "dev"
+        Click Element  dom:${JSFollowSignInButton4Path}
+    END
 
 Click Sign In Button 2 Modal
     Wait Until Element is Visible  dom:${JSFollowSignInButton2Path}  20s
