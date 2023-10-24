@@ -11,48 +11,36 @@ Validate Preference Center page
 Navigate Preference Center page
     IF  ${Env} == "prod"
         Go To  https://www.wsj.com/follow
-    ELSE IF  ${Env} == "stg"
-        Go To  https://www.stg.internal.wsj.com/follow
     ELSE IF  ${Env} == "dev"
         Go To  https://www.s.dev.wsj.com/follow
     END
 Navigate Article page
     IF  ${Env} == "prod"
         Go To  https://www.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
-    ELSE IF  ${Env} == "stg"
-        Go To  https://www.stg.internal.wsj.com/articles/israel-headed-for-new-elections-as-coalition-moves-to-dissolve-parliament-11655741947?mod=hp_lead_pos11
     ELSE IF  ${Env} == "dev"
         Go To  https://www.s.dev.wsj.com/articles/mass-vaccination-sites-for-covid-19-are-back-11641646804
     END
 Navigate Letters Article page
     IF  ${Env} == "prod"
         Go To  https://www.wsj.com/articles/mary-eberstadt-furman-university-wsj-scott-yenor-campus-protest-speech-869ce29b
-    ELSE IF  ${Env} == "stg"
-        Go To  https://www.stg.internal.wsj.com/articles/israel-headed-for-new-elections-as-coalition-moves-to-dissolve-parliament-11655741947?mod=hp_lead_pos11
     ELSE IF  ${Env} == "dev"
         Go To  https://www.s.dev.wsj.com/articles/mass-vaccination-sites-for-covid-19-are-back-11641646804
     END
 Navigate Editorials Article page
     IF  ${Env} == "prod"
         Go To  https://www.wsj.com/articles/chicago-mayor-wisconsin-supreme-court-election-paul-vallas-brandon-johnson-janet-protasiewicz-dan-kelly-3673d166
-    ELSE IF  ${Env} == "stg"
-        Go To  https://www.stg.internal.wsj.com/articles/israel-headed-for-new-elections-as-coalition-moves-to-dissolve-parliament-11655741947?mod=hp_lead_pos11
     ELSE IF  ${Env} == "dev"
         Go To  https://www.s.dev.wsj.com/articles/mass-vaccination-sites-for-covid-19-are-back-11641646804
     END
 Navigate Commentary Article page
     IF  ${Env} == "prod"
         Go To  https://www.wsj.com/articles/medicare-drug-price-controls-will-make-america-sicker-research-innovation-negotiations-private-insurers-b503b4ba
-    ELSE IF  ${Env} == "stg"
-        Go To  https://www.stg.internal.wsj.com/articles/israel-headed-for-new-elections-as-coalition-moves-to-dissolve-parliament-11655741947?mod=hp_lead_pos11
     ELSE IF  ${Env} == "dev"
         Go To  https://www.s.dev.wsj.com/articles/mass-vaccination-sites-for-covid-19-are-back-11641646804
     END
 Navigate Elections Article page
     IF  ${Env} == "prod"
         Go To  https://www.wsj.com/articles/kyrsten-sinema-joe-manchin-fail-to-attract-small-donors-for-potential-re-election-campaigns-d77506e7
-    ELSE IF  ${Env} == "stg"
-        Go To  https://www.stg.internal.wsj.com/articles/israel-headed-for-new-elections-as-coalition-moves-to-dissolve-parliament-11655741947?mod=hp_lead_pos11
     ELSE IF  ${Env} == "dev"
         Go To  https://www.s.dev.wsj.com/articles/mass-vaccination-sites-for-covid-19-are-back-11641646804
     END
