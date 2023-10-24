@@ -99,8 +99,6 @@ Click author hyperlink
 Scroll Down
     IF  ${Env} == "prod"
         Set Focus To Element  //*[text()='Dave Michaels']
-    ELSE IF  ${Env} == "stg"
-        Set Focus To Element  //*[text()='Dave Michaels']
     ELSE IF  ${Env} == "dev"
         Set Focus To Element  //*[text()='Jennifer Levitz']
     END

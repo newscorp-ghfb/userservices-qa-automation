@@ -5,7 +5,8 @@ Resource  ../Resources/CommonFunctionality.robot
 
 
 *** Variables ***
-
+${Email} =  Set Variable  ${EMPTY}
+${Password} =  Set Variable  ${EMPTY}
 
 *** Keywords ***
 
@@ -13,16 +14,28 @@ Set Implicit Wait
     Set Selenium Implicit Wait  50s
 
 Sign In Process
+    IF  ${Env} == "prod"
+        ${Email}=  Set Variable  ${Email_prod}
+        ${Password}=  Set Variable  ${Password_prod}
+    ELSE IF  ${Env} == "dev"
+        ${Email}=  Set Variable  ${Email_dev}
+        ${Password}=  Set Variable  ${Password_dev}
+    END
     Wait Until Element Is Visible  //input[@type='email']
     Click Button  //input[@type='email']
-    Input Text  //input[@type='email']  barronsadvisorcs@gmail.com
+    Input Text  //input[@type='email']  ${Email}
     Set Selenium Implicit Wait  10s
-    Click Button  //*[@id="basic-login"]/div[1]/form/div[2]/div[6]/div[1]/button[2]
+    Click Element  //span[text()="Continue"]
     Set Selenium Implicit Wait  10s
     Wait Until Element Is Visible  //*[@id="password-login-password"]
-    Input Text  //*[@id="password-login-password"]  password1
+    Input Text  //*[@id="password-login-password"]  ${Password}
     Set Selenium Implicit Wait  10s
-    Click Button  //*[@id="password-login"]/div/form/div/div[5]/div[1]/button
+    Set Selenium Speed  1.0 seconds
+    IF  ${Env} == "prod"
+        Click Element  //*[@id="password-login"]/div/form/div/div[5]/div[1]/button
+    ELSE IF  ${Env} == "dev"
+        Click Element  //*[@id="password-login"]/div/form/div[5]/button
+    END
     Wait Until Element Is Not Visible  //*[@id="password-login"]/div/form/div/div[5]/div[1]/button
 
 

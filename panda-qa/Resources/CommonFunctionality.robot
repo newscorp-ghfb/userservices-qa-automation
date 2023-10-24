@@ -5,7 +5,15 @@ Resource  ../Resources/DefinedKeywords.robot
 *** Variables ***
 ${Browser}=  headlessfirefox  #headless, ff, chrome, edge, safari
 
-${Env}=  "dev"  #dev, stg, prod
+${Env}=  "dev"  #dev, prod
+
+${Email_prod}=  barronsadvisorcs@gmail.com
+
+${Password_prod}=  password1
+
+${Email_dev}=  QABARRONSONLY
+
+${Password_dev}=  password1
 
 ${JSFollowButtonBarronsPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
     ...  .querySelector('ufc-follow-widget')  #2
@@ -28,9 +36,6 @@ Start Barrons Article
     IF  ${Env} == "prod"
         Open Browser  https://www.barrons.com  ${Browser}
         Go To  https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634
-    ELSE IF  ${Env} == "stg"
-        Open Browser  https://www.stg.internal.barrons.com  ${Browser}
-        Go To  https://www.stg.internal.barrons.com/articles/wendys-wen-stock-earnings-51652268634
     ELSE IF  ${Env} == "dev"
         Open Browser  https://www.s.dev.barrons.com  ${Browser}
         Go To  https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000
@@ -70,9 +75,6 @@ Start WSJ Article
     IF  ${Env} == "prod"
         Open Browser  https://www.wsj.com  ${Browser}
         Go To  https://www.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
-    ELSE IF  ${Env} == "stg"
-        Open Browser  https://www.stg.internal.wsj.com  ${Browser}
-        Go To  https://www.stg.internal.wsj.com/articles/israel-headed-for-new-elections-as-coalition-moves-to-dissolve-parliament-11655741947?mod=hp_lead_pos11
     ELSE IF  ${Env} == "dev"
         Open Browser  https://www.s.dev.wsj.com  ${Browser}
         Go To  https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
@@ -113,9 +115,6 @@ Start Barrons Article without byline
         Open Browser  https://www.barrons.com  ${Browser}
         Go To  https://www.barrons.com/articles/how-to-handle-an-uncertain-market-buy-weakness-sell-strength-f145c306
         Execute javascript  window.scrollTo(0,500)
-    ELSE IF  ${Env} == "stg"
-        Open Browser  https://www.stg.internal.barrons.com  ${Browser}
-        Go To  https://www.stg.internal.barrons.com/articles/wendys-wen-stock-earnings-51652268634
     ELSE IF  ${Env} == "dev"
         Open Browser  https://www.s.dev.barrons.com  ${Browser}
         Go To  https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000
@@ -128,9 +127,6 @@ Start FN Article without byline
         Open Browser  https://www.fnlondon.com  ${Browser}
         Go To  https://www.fnlondon.com/articles/meet-the-twenty-most-influential-in-investment-banking-20230326?cx_testId=174&cx_testVariant=cx_3&cx_artPos=0#cxrecs_s
         Execute javascript  window.scrollTo(0,500)
-    ELSE IF  ${Env} == "stg"
-        Open Browser  https://www.stg.internal.fnlondon.com  ${Browser}
-        Go To  https://www.stg.internal.fnlondon.com/articles/wendys-wen-stock-earnings-51652268634
     ELSE IF  ${Env} == "dev"
         Open Browser  https://www.s.dev.fnlondon.com  ${Browser}
         Go To  https://www.s.dev.fnlondon.com/articles/buy-under-armour-stock-pick-51650672000
@@ -175,9 +171,6 @@ Start WSJ Article without byline
     IF  ${Env} == "prod"
         Open Browser  https://www.wsj.com  ${Browser}
         Go To  https://www.wsj.com/articles/let-desantis-fight-trump-before-putin-bakhmut-offensive-cease-fire-settlement-kremlin-weapons-b127514a?cx_testId=3&cx_testVariant=cx_171&cx_artPos=1&mod=WTRN#cxrecs_s
-    ELSE IF  ${Env} == "stg"
-        Open Browser  https://www.stg.internal.wsj.com  ${Browser}
-        Go To  https://www.stg.internal.wsj.com/articles/israel-headed-for-new-elections-as-coalition-moves-to-dissolve-parliament-11655741947?mod=hp_lead_pos11
     ELSE IF  ${Env} == "dev"
         Open Browser  https://www.s.dev.wsj.com  ${Browser}
         Go To  https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
@@ -189,9 +182,6 @@ Start WSJ Article for Letters breadcrumb
     IF  ${Env} == "prod"
         Open Browser  https://www.wsj.com  ${Browser}
         Go To  https://www.wsj.com/articles/mary-eberstadt-furman-university-wsj-scott-yenor-campus-protest-speech-869ce29b
-    ELSE IF  ${Env} == "stg"
-        Open Browser  https://www.stg.internal.wsj.com  ${Browser}
-        Go To  https://www.stg.internal.wsj.com/articles/israel-headed-for-new-elections-as-coalition-moves-to-dissolve-parliament-11655741947?mod=hp_lead_pos11
     ELSE IF  ${Env} == "dev"
         Open Browser  https://www.s.dev.wsj.com  ${Browser}
         Go To  https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
@@ -206,9 +196,6 @@ Start WSJ Letters for Letters breadcrumb
     IF  ${Env} == "prod"
         Open Browser  https://www.wsj.com  ${Browser}
         Go To  https://www.wsj.com/news/types/letters?mod=nav_top_subsection
-    ELSE IF  ${Env} == "stg"
-        Open Browser  https://www.stg.internal.wsj.com  ${Browser}
-        Go To  https://www.stg.internal.wsj.com/articles/israel-headed-for-new-elections-as-coalition-moves-to-dissolve-parliament-11655741947?mod=hp_lead_pos11
     ELSE IF  ${Env} == "dev"
         Open Browser  https://www.s.dev.wsj.com  ${Browser}
         Go To  https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
@@ -223,9 +210,6 @@ Start WSJ Article for Editorials breadcrumb
     IF  ${Env} == "prod"
         Open Browser  https://www.wsj.com  ${Browser}
         Go To  https://www.wsj.com/articles/chicago-mayor-wisconsin-supreme-court-election-paul-vallas-brandon-johnson-janet-protasiewicz-dan-kelly-3673d166
-    ELSE IF  ${Env} == "stg"
-        Open Browser  https://www.stg.internal.wsj.com  ${Browser}
-        Go To  https://www.stg.internal.wsj.com/articles/israel-headed-for-new-elections-as-coalition-moves-to-dissolve-parliament-11655741947?mod=hp_lead_pos11
     ELSE IF  ${Env} == "dev"
         Open Browser  https://www.s.dev.wsj.com  ${Browser}
         Go To  https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
@@ -240,9 +224,6 @@ Start WSJ Editorials for Editorials breadcrumb
     IF  ${Env} == "prod"
         Open Browser  https://www.wsj.com  ${Browser}
         Go To  https://www.wsj.com/news/types/review-outlook-u-s?mod=nav_top_subsection
-    ELSE IF  ${Env} == "stg"
-        Open Browser  https://www.stg.internal.wsj.com  ${Browser}
-        Go To  https://www.stg.internal.wsj.com/articles/israel-headed-for-new-elections-as-coalition-moves-to-dissolve-parliament-11655741947?mod=hp_lead_pos11
     ELSE IF  ${Env} == "dev"
         Open Browser  https://www.s.dev.wsj.com  ${Browser}
         Go To  https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
@@ -257,9 +238,6 @@ Start WSJ Article for Commentary breadcrumb
     IF  ${Env} == "prod"
         Open Browser  https://www.wsj.com  ${Browser}
         Go To  https://www.wsj.com/articles/medicare-drug-price-controls-will-make-america-sicker-research-innovation-negotiations-private-insurers-b503b4ba
-    ELSE IF  ${Env} == "stg"
-        Open Browser  https://www.stg.internal.wsj.com  ${Browser}
-        Go To  https://www.stg.internal.wsj.com/articles/israel-headed-for-new-elections-as-coalition-moves-to-dissolve-parliament-11655741947?mod=hp_lead_pos11
     ELSE IF  ${Env} == "dev"
         Open Browser  https://www.s.dev.wsj.com  ${Browser}
         Go To  https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
@@ -274,9 +252,6 @@ Start WSJ Commentary for Commentary breadcrumb
     IF  ${Env} == "prod"
         Open Browser  https://www.wsj.com  ${Browser}
         Go To  https://www.wsj.com/news/types/commentary-u-s?mod=nav_top_subsection
-    ELSE IF  ${Env} == "stg"
-        Open Browser  https://www.stg.internal.wsj.com  ${Browser}
-        Go To  https://www.stg.internal.wsj.com/articles/israel-headed-for-new-elections-as-coalition-moves-to-dissolve-parliament-11655741947?mod=hp_lead_pos11
     ELSE IF  ${Env} == "dev"
         Open Browser  https://www.s.dev.wsj.com  ${Browser}
         Go To  https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
@@ -291,9 +266,6 @@ Start WSJ Article for Elections breadcrumb
     IF  ${Env} == "prod"
         Open Browser  https://www.wsj.com  ${Browser}
         Go To  https://www.wsj.com/articles/mike-pompeo-says-he-wont-run-for-president-in-2024-5406e61c
-    ELSE IF  ${Env} == "stg"
-        Open Browser  https://www.stg.internal.wsj.com  ${Browser}
-        Go To  https://www.stg.internal.wsj.com/articles/israel-headed-for-new-elections-as-coalition-moves-to-dissolve-parliament-11655741947?mod=hp_lead_pos11
     ELSE IF  ${Env} == "dev"
         Open Browser  https://www.s.dev.wsj.com  ${Browser}
         Go To  https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
@@ -308,9 +280,6 @@ Start WSJ Elections for Elections breadcrumb
     IF  ${Env} == "prod"
         Open Browser  https://www.wsj.com  ${Browser}
         Go To  https://www.wsj.com/news/types/election-2024?mod=breadcrumb
-    ELSE IF  ${Env} == "stg"
-        Open Browser  https://www.stg.internal.wsj.com  ${Browser}
-        Go To  https://www.stg.internal.wsj.com/articles/israel-headed-for-new-elections-as-coalition-moves-to-dissolve-parliament-11655741947?mod=hp_lead_pos11
     ELSE IF  ${Env} == "dev"
         Open Browser  https://www.s.dev.wsj.com  ${Browser}
         Go To  https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
@@ -325,9 +294,6 @@ Start Barrons Stock Picks for Stock Picks breadcrumb
     IF  ${Env} == "prod"
         Open Browser  https://www.barrons.com  ${Browser}
         Go To  https://www.barrons.com/market-data/stocks/stock-picks?mod=BOL_TOPNAV
-    ELSE IF  ${Env} == "stg"
-        Open Browser  https://www.stg.internal.barrons.com  ${Browser}
-        Go To  https://www.stg.internal.wsj.com/articles/israel-headed-for-new-elections-as-coalition-moves-to-dissolve-parliament-11655741947?mod=hp_lead_pos11
     ELSE IF  ${Env} == "dev"
         Open Browser  https://www.s.dev.barrons.com  ${Browser}
         Go To  https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
@@ -342,9 +308,6 @@ Start Barrons Stock Picks for Stock Picks in article
     IF  ${Env} == "prod"
         Open Browser  https://www.barrons.com  ${Browser}
         Go To  https://www.barrons.com/articles/buy-rockwell-automation-stock-pick-price-cc120733?mod=stock_picks_lp
-    ELSE IF  ${Env} == "stg"
-        Open Browser  https://www.stg.internal.barrons.com  ${Browser}
-        Go To  https://www.stg.internal.wsj.com/articles/israel-headed-for-new-elections-as-coalition-moves-to-dissolve-parliament-11655741947?mod=hp_lead_pos11
     ELSE IF  ${Env} == "dev"
         Open Browser  https://www.s.dev.barrons.com  ${Browser}
         Go To  https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
@@ -355,8 +318,6 @@ Start Barrons for Newsletters page
     Set Selenium Speed  0.5 seconds
     IF  ${Env} == "prod"
         Go To  https://www.barrons.com/newsletters
-    ELSE IF  ${Env} == "stg"
-        Go To  https://www.stg.internal.barrons.com/newsletters
     ELSE IF  ${Env} == "dev"
         Go To  https://www.s.dev.barrons.com/newsletters
     END
@@ -366,8 +327,6 @@ Start Barrons for Watchlist page
     Set Selenium Speed  0.5 seconds
     IF  ${Env} == "prod"
         Go To  https://www.barrons.com/watchlist
-    ELSE IF  ${Env} == "stg"
-        Go To  https://www.stg.internal.barrons.com/watchlist
     ELSE IF  ${Env} == "dev"
         Go To  https://www.s.dev.barrons.com/watchlist
     END
@@ -377,8 +336,6 @@ Start WSJ for Watchlist page
     Set Selenium Speed  0.5 seconds
     IF  ${Env} == "prod"
         Go To  https://www.wsj.com/watchlist
-    ELSE IF  ${Env} == "stg"
-        Go To  https://www.stg.internal.wsj.com/watchlist
     ELSE IF  ${Env} == "dev"
         Go To  https://www.s.dev.wsj.com/watchlist
     END
@@ -388,8 +345,6 @@ Start WSJ for Newsletters page
     Set Selenium Speed  0.5 seconds
     IF  ${Env} == "prod"
         Go To  https://www.wsj.com/newsletters
-    ELSE IF  ${Env} == "stg"
-        Go To  https://www.stg.internal.wsj.com/newsletters
     ELSE IF  ${Env} == "dev"
         Go To  https://www.s.dev.wsj.com/newsletters
     END
@@ -399,8 +354,6 @@ Start MarketWatch for Watchlist page
     Set Selenium Speed  0.5 seconds
     IF  ${Env} == "prod"
         Go To  https://www.marketwatch.com/watchlist?mod=top_nav
-    ELSE IF  ${Env} == "stg"
-        Go To  https://www.stg.internal.marketwatch.com/watchlist
     ELSE IF  ${Env} == "dev"
         Go To  https://www.s.dev.marketwatch.com/watchlist
     END
@@ -410,8 +363,6 @@ Start Barrons for Quotes page
     Set Selenium Speed  0.5 seconds
     IF  ${Env} == "prod"
         Go To  https://www.barrons.com/market-data/indexes/djia
-    ELSE IF  ${Env} == "stg"
-        Go To  https://www.stg.internal.barrons.com/market-data/indexes/djia
     ELSE IF  ${Env} == "dev"
         Go To  https://www.s.dev.barrons.com/market-data/indexes/djia
     END
@@ -422,8 +373,6 @@ Start Barrons for Market Data page
     Set Selenium Speed  0.5 seconds
     IF  ${Env} == "prod"
         Go To  https://www.barrons.com/market-data
-    ELSE IF  ${Env} == "stg"
-        Go To  https://www.stg.internal.barrons.com/market-data
     ELSE IF  ${Env} == "dev"
         Go To  https://www.s.dev.barrons.com/market-data
     END

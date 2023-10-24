@@ -12,16 +12,12 @@ Validate Preference Center page
 Navigate Preference Center page
     IF  ${Env} == "prod"
         Go To  https://www.barrons.com/follow
-    ELSE IF  ${Env} == "stg"
-        Go To  https://www.stg.internal.barrons.com/follow
     ELSE IF  ${Env} == "dev"
         Go To  https://www.s.dev.barrons.com/follow
     END
 Navigate Article page
     IF  ${Env} == "prod"
         Go To  https://www.barrons.com/articles/twitter-stock-pick-ceo-51638548530
-    ELSE IF  ${Env} == "stg"
-        Go To  https://www.stg.internal.barrons.com/articles/twitter-stock-pick-ceo-51638548530
     ELSE IF  ${Env} == "dev"
         Go To  https://www.s.dev.barrons.com/articles/twitter-stock-pick-ceo-51638548530
         Set Selenium Speed  0.4 seconds

@@ -7,8 +7,6 @@ Library  SeleniumLibrary
 Navigate Inflation page
     IF  ${Env} == "prod"
         Go To  https://www.wsj.com/articles/inflation-tracker-cpi-data-prices-11657717467
-    ELSE IF  ${Env} == "stg"
-        Go To  https://www.stg.internal.wsj.com/articles/inflation-tracker-cpi-data-prices-11657717467
     ELSE IF  ${Env} == "dev"
         Go To  https://www.s.dev.wsj.com/articles/inflation-tracker-cpi-data-prices-11657717467
     END

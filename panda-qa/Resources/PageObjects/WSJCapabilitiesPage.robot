@@ -45,8 +45,6 @@ Validate Authors Reflected On Dashboard
     ${Totalauthorsubs} = Get Value  //*[text()="Total subscriptions"]/../div[2]
     IF  ${Env} == "prod"
         Go To  https://www.barrons.com/follow?alert=author&id=8572_BARRONS&frequency=realtime
-    ELSE IF  ${Env} == "stg"
-        Go To  https://www.stg.internal.barrons.com/follow?alert=author&id=8572_BARRONS&frequency=realtime
     ELSE IF  ${Env} == "dev"
         Go To  https://www.s.dev.barrons.com/follow?alert=author&id=8572_BARRONS&frequency=realtime
     END
@@ -56,15 +54,11 @@ Validate Authors Reflected On Dashboard
     ${Totalauthorsubs2} == ${Totalauthorsubs} + 1
     IF  ${Env} == "prod"
         Go To  https://www.barrons.com/follow
-    ELSE IF  ${Env} == "stg"
-        Go To  https://www.stg.internal.barrons.com/follow
     ELSE IF  ${Env} == "dev"
         Go To  https://www.s.dev.barrons.com/follow
     END
     IF  ${Env} == "prod"
         Go To  https://www.barrons.com/follow
-    ELSE IF  ${Env} == "stg"
-        Go To  https://www.stg.internal.barrons.com/follow
     ELSE IF  ${Env} == "dev"
         Click Button  //*[@href="https://www.s.dev.barrons.com/authors/8572?mod=followUI"]/../../../../*/*[@role="switch"]
     END
@@ -94,8 +88,6 @@ Validate Company Reflected On Dashboard
     ${Totalauthorsubs} = Get Value  //*[text()="Total subscriptions"]/../div[2]
     IF  ${Env} == "prod"
         Go To  https://www.barrons.com/follow?alert=company&fcode=SGPM
-    ELSE IF  ${Env} == "stg"
-        Go To  https://www.stg.internal.barrons.com/follow?alert=company&fcode=SGPM
     ELSE IF  ${Env} == "dev"
         Go To  https://www.s.dev.barrons.com/follow?alert=company&fcode=SGPM
     END
@@ -105,15 +97,11 @@ Validate Company Reflected On Dashboard
     ${Totalauthorsubs2} == ${Totalauthorsubs} + 1
     IF  ${Env} == "prod"
         Go To  https://www.barrons.com/follow
-    ELSE IF  ${Env} == "stg"
-        Go To  https://www.stg.internal.barrons.com/follow
     ELSE IF  ${Env} == "dev"
         Go To  https://www.s.dev.barrons.com/follow
     END
     IF  ${Env} == "prod"
         Go To  https://www.barrons.com/follow
-    ELSE IF  ${Env} == "stg"
-        Go To  https://www.stg.internal.barrons.com/follow
     ELSE IF  ${Env} == "dev"
         Click Button  //*[@href="https://www.s.dev.barrons.com/market-data/stocks/eQSGO"]/../../../*/*[@role="switch"]
     END
@@ -129,8 +117,6 @@ Validate Industry Reflected On Dashboard
     ${Totalauthorsubs} = Get Value  //*[text()="Total subscriptions"]/../div[2]
     IF  ${Env} == "prod"
         Go To  https://www.barrons.com/follow?alert=industry&fcode=indcera
-    ELSE IF  ${Env} == "stg"
-        Go To  https://www.stg.internal.barrons.com/follow?alert=industry&fcode=indcera
     ELSE IF  ${Env} == "dev"
         Go To  https://www.s.dev.barrons.com/follow?alert=industry&fcode=indcera
     END
@@ -140,15 +126,11 @@ Validate Industry Reflected On Dashboard
     ${Totalauthorsubs2} == ${Totalauthorsubs} + 1
     IF  ${Env} == "prod"
         Go To  https://www.barrons.com/follow
-    ELSE IF  ${Env} == "stg"
-        Go To  https://www.stg.internal.barrons.com/follow
     ELSE IF  ${Env} == "dev"
         Go To  https://www.s.dev.barrons.com/follow
     END
     IF  ${Env} == "prod"
         Go To  https://www.barrons.com/follow
-    ELSE IF  ${Env} == "stg"
-        Go To  https://www.stg.internal.barrons.com/follow
     ELSE IF  ${Env} == "dev"
         Click Button  //*[text()="Industrial Ceramics"]/../../*/*[@role="switch"]
     END

@@ -10,8 +10,6 @@ ${JSFollowButtonWSJPath}=  document.querySelector('ufc-follow-author-widget').sh
 Validate Authors Page
     IF  ${Env} == "prod"
         Page Should Contain  Dave Michaels
-    ELSE IF  ${Env} == "stg"
-        Page Should Contain  Dov Lieber
     ELSE IF  ${Env} == "dev"
         Page Should Contain  Julie Jargon
     END
