@@ -104,7 +104,7 @@ Validate the stock pick follow button from stock pick page
     CommonFunctionality.Start Barrons Stock Picks for Stock Picks breadcrumb
     BarronsArticlePage.Validate Stock Pick Follow Button
     BarronsArticlePage.Click Stock Pick Follow Button
-    Set Selenium Speed  0.4 seconds
+    Set Selenium Speed  0.3 seconds
     BarronsArticlePage.Validate Sign In Modal
     BarronsArticlePage.Click Sign In Button Modal
     DefinedKeywords.Sign In Process
