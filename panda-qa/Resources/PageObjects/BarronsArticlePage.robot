@@ -175,10 +175,18 @@ Click Stock Pick Preference Center Link
 
 
 Validate author hyperlink
-    Page Should Contain Element  //span[text()="Angela Palumbo"]
+    IF  ${Env} == "prod"
+        Page Should Contain Element  //span[text()="Angela Palumbo"]
+    ELSE IF  ${Env} == "dev"
+        Page Should Contain Element  //span[text()="Teresa Rivas"]
+    END
 
 Click author hyperlink
-    Click Element  //span[text()="Angela Palumbo"]
+    IF  ${Env} == "prod"
+        Click Element  //span[text()="Angela Palumbo"]
+    ELSE IF  ${Env} == "dev"
+        Click Element  //span[text()="Teresa Rivas"]
+    END
 
 Validate author without byline
     Page Should Contain Element  //div[@class="byline article__byline"]/div/span[text()="John Porter"]
