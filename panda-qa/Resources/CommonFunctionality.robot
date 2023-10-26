@@ -296,7 +296,7 @@ Start Barrons Stock Picks for Stock Picks breadcrumb
         Go To  https://www.barrons.com/market-data/stocks/stock-picks?mod=BOL_TOPNAV
     ELSE IF  ${Env} == "dev"
         Open Browser  https://www.s.dev.barrons.com  ${Browser}
-        Go To  https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
+        Go To  https://www.s.dev.barrons.com/market-data/stocks/stock-picks?mod=BOL_TOPNAV
     END
     #Wait Until Element Is Visible  //*[text()="Dave Michaels"]
     Set Focus To Element  //*[text()="Barron's Latest Stock Picks"]
