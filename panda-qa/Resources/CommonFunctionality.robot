@@ -64,6 +64,7 @@ Start FN Article
     ELSE IF  ${Env} == "dev"
         Open Browser  https://www.s.dev.fnlondon.com  ${Browser}
         Go To  https://www.s.dev.fnlondon.com/articles/testpanda-test-wsj-digest-2-20211020
+        Execute javascript  window.scrollTo(0,500)
     END
     Execute javascript  window.scrollTo(0,500)
     Wait Until Page Contains Element  dom:${JSFollowButtonBarronsPath}
