@@ -151,7 +151,7 @@ Click Sign In Button Modal
 
 Click Sign In Button 2 Modal
     IF  ${Env} == "prod"
-        Wait Until Element is Visible  dom:${JSFollowSignInButton2Path}  20s
+        Click Element  dom:${JSFollowSignInButton2Path}
     ELSE IF  ${Env} == "dev"
         Click Element  dom:${JSFollowSignInButton4Path}
     END
