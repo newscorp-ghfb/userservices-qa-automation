@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "13832cfa-3b91-4511-ab07-82f499c874db",
+		"name": "Buyside",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21090963"
+	},
+	"item": [
+		{
+			"name": "Add products",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "apollographql-client-name",
+						"value": "studio-explorer"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjY2ZDZkNmZlLTRmN2UtNGQxYy05ZmQzLTA2MTg1N2VkZDVlOSJ9.eyJlbmMiOiJFZW93SDlValRvd3lBMDcyVmMrMm1BPT0uYjQwTTlYWVZUdFV5MElGczFHVDZJRGpSU3NhWjd2clBNSEhPM21XSlRYc0JyYVNsR25tQno2TVZnazVGanlOMyIsInJvbGVzIjpbIkZSRUVSRUctSU5ESVZJRFVBTCJdLCJ0cmFja2lkIjoiY2Y3YjkzN2YzNGE0Mjk1ZWIwMTk0YTQxNWNjNDQ0MDI2NDE5OGQ3NzhiMzdlYzM2Y2UwZTNmZTVkMDA4YWQ3NiIsImlhdCI6MTY5Mzg1NjI4NiwiZXhwIjoxNjkzODU3MTg2LCJpc3MiOiJodHRwczovL3d3dy53c2ouY29tL2NsaWVudCJ9.CSJaCklVfval7lYLBXUEj75VjySnxPeq5GL2vobVZ7wH2MRux3GacmtCpW3Bj-slo2Z0nwlEHcBDpcCl_tAGVyfB6c67AgIoKSkpheV4lpNneXdzdli5RmvsemL-hEicnaeWpj_Z2YT4veAaeFBiZsOs6C1w59-cjlI0r_2_1Ktq0bx3JB1qWc3HtGyx2puUKG7h0EUR2G9nDQTtkO0PLMCYn9qk--7RYrk9bE-y_CMDT_5vUNWKrxoe-HnnPkPMe0cKMMIiSHPvkCzgxXi8Lfz27HEjIoupuleIzSjPxLV1cBwcOhdq2ET7A5348l3w947X6uH0zFys-iwOoxiBO-EVchUyzX7LPQLlssunMbrmlr3dcgOjWq3XpVE3xio3hs2nt_x-Ee5ck5X4zxKkQJQkgGWbekk0P808uHA3Hk-SlIHNW_o5SL-ZcRhXU7yhKhV6Gz3aFWl5R-jhrP7pKhEbfU1unex9D62153M6CLcSkrM7RuQ-lDCMuJc6ivNi5YRPJ6rK7SprMWWQFv-DKbcvQv7oIsSrBi3hHHDEinmWkl8rF4Pm-fj3GWIlpQu8WFDg5UHGmd-S7Ugo2n2XWhtIQfBFcZgfcnVCeA_gjG2HjFUr12a5-_KwHjuKSU30FoISnw1cTqvkFWN1p15rb4OWmXRsahcSyOzV6pGghzM"
+					}
+				],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation UpdateUserCommerceProductContent(\n  $site: Site!\n  $contentIds: [String!]!\n) {\n  updateUserCommerceProductContent(site: $site, contentIds: $contentIds) {\n    originId\n    product\n    productBrand\n    productName\n  }\n}",
+						"variables": "{\n  \"site\": \"wsj\",\n  \"contentIds\": [\n    \"CP-WSJ-b72c096a-e0db-4539-86c8-dcbe26ab5768\",\n    \"CP-WSJ-e3dd89ed-d29d-40c2-8e23-7a8e7be27477\",\n    \"CP-WSJ-519e640e-2e6c-45c3-96e7-5fd52933c3fe\",\n    \"CP-WSJ-511e6232-37d4-4d3e-9d50-3b42a16f2c43\"\n  ]\n}"
+					}
+				},
+				"url": {
+					"raw": "https://dj-shared-data-gateway-dev.sc.onservo.com/gateway/graphql",
+					"protocol": "https",
+					"host": [
+						"dj-shared-data-gateway-dev",
+						"sc",
+						"onservo",
+						"com"
+					],
+					"path": [
+						"gateway",
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List products",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "apollographql-client-name",
+						"value": "studio-explorer"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjY2ZDZkNmZlLTRmN2UtNGQxYy05ZmQzLTA2MTg1N2VkZDVlOSJ9.eyJlbmMiOiJFZW93SDlValRvd3lBMDcyVmMrMm1BPT0uYjQwTTlYWVZUdFV5MElGczFHVDZJRGpSU3NhWjd2clBNSEhPM21XSlRYc0JyYVNsR25tQno2TVZnazVGanlOMyIsInJvbGVzIjpbIkZSRUVSRUctSU5ESVZJRFVBTCJdLCJ0cmFja2lkIjoiY2Y3YjkzN2YzNGE0Mjk1ZWIwMTk0YTQxNWNjNDQ0MDI2NDE5OGQ3NzhiMzdlYzM2Y2UwZTNmZTVkMDA4YWQ3NiIsImlhdCI6MTY5Mzg1NjI4NiwiZXhwIjoxNjkzODU3MTg2LCJpc3MiOiJodHRwczovL3d3dy53c2ouY29tL2NsaWVudCJ9.CSJaCklVfval7lYLBXUEj75VjySnxPeq5GL2vobVZ7wH2MRux3GacmtCpW3Bj-slo2Z0nwlEHcBDpcCl_tAGVyfB6c67AgIoKSkpheV4lpNneXdzdli5RmvsemL-hEicnaeWpj_Z2YT4veAaeFBiZsOs6C1w59-cjlI0r_2_1Ktq0bx3JB1qWc3HtGyx2puUKG7h0EUR2G9nDQTtkO0PLMCYn9qk--7RYrk9bE-y_CMDT_5vUNWKrxoe-HnnPkPMe0cKMMIiSHPvkCzgxXi8Lfz27HEjIoupuleIzSjPxLV1cBwcOhdq2ET7A5348l3w947X6uH0zFys-iwOoxiBO-EVchUyzX7LPQLlssunMbrmlr3dcgOjWq3XpVE3xio3hs2nt_x-Ee5ck5X4zxKkQJQkgGWbekk0P808uHA3Hk-SlIHNW_o5SL-ZcRhXU7yhKhV6Gz3aFWl5R-jhrP7pKhEbfU1unex9D62153M6CLcSkrM7RuQ-lDCMuJc6ivNi5YRPJ6rK7SprMWWQFv-DKbcvQv7oIsSrBi3hHHDEinmWkl8rF4Pm-fj3GWIlpQu8WFDg5UHGmd-S7Ugo2n2XWhtIQfBFcZgfcnVCeA_gjG2HjFUr12a5-_KwHjuKSU30FoISnw1cTqvkFWN1p15rb4OWmXRsahcSyOzV6pGghzM"
+					}
+				],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query UserCommerceProductContent($site: Site!) {\n  userCommerceProductContent(site: $site) {\n    originId\n    product\n    productName\n  }\n}\n",
+						"variables": "{\n    \"site\": \"wsj\"\n}"
+					}
+				},
+				"url": {
+					"raw": "https://dj-shared-data-gateway-dev.sc.onservo.com/gateway/graphql",
+					"protocol": "https",
+					"host": [
+						"dj-shared-data-gateway-dev",
+						"sc",
+						"onservo",
+						"com"
+					],
+					"path": [
+						"gateway",
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get one product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "apollographql-client-name",
+						"value": "studio-explorer"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjY2ZDZkNmZlLTRmN2UtNGQxYy05ZmQzLTA2MTg1N2VkZDVlOSJ9.eyJlbmMiOiJFZW93SDlValRvd3lBMDcyVmMrMm1BPT0uYjQwTTlYWVZUdFV5MElGczFHVDZJRGpSU3NhWjd2clBNSEhPM21XSlRYc0JyYVNsR25tQno2TVZnazVGanlOMyIsInJvbGVzIjpbIkZSRUVSRUctSU5ESVZJRFVBTCJdLCJ0cmFja2lkIjoiY2Y3YjkzN2YzNGE0Mjk1ZWIwMTk0YTQxNWNjNDQ0MDI2NDE5OGQ3NzhiMzdlYzM2Y2UwZTNmZTVkMDA4YWQ3NiIsImlhdCI6MTY5Mzg1NjI4NiwiZXhwIjoxNjkzODU3MTg2LCJpc3MiOiJodHRwczovL3d3dy53c2ouY29tL2NsaWVudCJ9.CSJaCklVfval7lYLBXUEj75VjySnxPeq5GL2vobVZ7wH2MRux3GacmtCpW3Bj-slo2Z0nwlEHcBDpcCl_tAGVyfB6c67AgIoKSkpheV4lpNneXdzdli5RmvsemL-hEicnaeWpj_Z2YT4veAaeFBiZsOs6C1w59-cjlI0r_2_1Ktq0bx3JB1qWc3HtGyx2puUKG7h0EUR2G9nDQTtkO0PLMCYn9qk--7RYrk9bE-y_CMDT_5vUNWKrxoe-HnnPkPMe0cKMMIiSHPvkCzgxXi8Lfz27HEjIoupuleIzSjPxLV1cBwcOhdq2ET7A5348l3w947X6uH0zFys-iwOoxiBO-EVchUyzX7LPQLlssunMbrmlr3dcgOjWq3XpVE3xio3hs2nt_x-Ee5ck5X4zxKkQJQkgGWbekk0P808uHA3Hk-SlIHNW_o5SL-ZcRhXU7yhKhV6Gz3aFWl5R-jhrP7pKhEbfU1unex9D62153M6CLcSkrM7RuQ-lDCMuJc6ivNi5YRPJ6rK7SprMWWQFv-DKbcvQv7oIsSrBi3hHHDEinmWkl8rF4Pm-fj3GWIlpQu8WFDg5UHGmd-S7Ugo2n2XWhtIQfBFcZgfcnVCeA_gjG2HjFUr12a5-_KwHjuKSU30FoISnw1cTqvkFWN1p15rb4OWmXRsahcSyOzV6pGghzM"
+					}
+				],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query UserCommerceProductContent($site: Site!, $contentId: String!) {\n  userCommerceProductItem(site: $site, contentId: $contentId) {\n    originId\n    product\n    productBrand\n    productName\n  }\n}\n",
+						"variables": "{\n    \"site\": \"wsj\",\n    \"contentId\": \"CP-WSJ-e3dd89ed-d29d-40c2-8e23-7a8e7be27477\"\n}"
+					}
+				},
+				"url": {
+					"raw": "https://dj-shared-data-gateway-dev.sc.onservo.com/gateway/graphql",
+					"protocol": "https",
+					"host": [
+						"dj-shared-data-gateway-dev",
+						"sc",
+						"onservo",
+						"com"
+					],
+					"path": [
+						"gateway",
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete products",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "apollographql-client-name",
+						"value": "studio-explorer"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjY2ZDZkNmZlLTRmN2UtNGQxYy05ZmQzLTA2MTg1N2VkZDVlOSJ9.eyJlbmMiOiJFZW93SDlValRvd3lBMDcyVmMrMm1BPT0uYjQwTTlYWVZUdFV5MElGczFHVDZJRGpSU3NhWjd2clBNSEhPM21XSlRYc0JyYVNsR25tQno2TVZnazVGanlOMyIsInJvbGVzIjpbIkZSRUVSRUctSU5ESVZJRFVBTCJdLCJ0cmFja2lkIjoiY2Y3YjkzN2YzNGE0Mjk1ZWIwMTk0YTQxNWNjNDQ0MDI2NDE5OGQ3NzhiMzdlYzM2Y2UwZTNmZTVkMDA4YWQ3NiIsImlhdCI6MTY5Mzg1NjI4NiwiZXhwIjoxNjkzODU3MTg2LCJpc3MiOiJodHRwczovL3d3dy53c2ouY29tL2NsaWVudCJ9.CSJaCklVfval7lYLBXUEj75VjySnxPeq5GL2vobVZ7wH2MRux3GacmtCpW3Bj-slo2Z0nwlEHcBDpcCl_tAGVyfB6c67AgIoKSkpheV4lpNneXdzdli5RmvsemL-hEicnaeWpj_Z2YT4veAaeFBiZsOs6C1w59-cjlI0r_2_1Ktq0bx3JB1qWc3HtGyx2puUKG7h0EUR2G9nDQTtkO0PLMCYn9qk--7RYrk9bE-y_CMDT_5vUNWKrxoe-HnnPkPMe0cKMMIiSHPvkCzgxXi8Lfz27HEjIoupuleIzSjPxLV1cBwcOhdq2ET7A5348l3w947X6uH0zFys-iwOoxiBO-EVchUyzX7LPQLlssunMbrmlr3dcgOjWq3XpVE3xio3hs2nt_x-Ee5ck5X4zxKkQJQkgGWbekk0P808uHA3Hk-SlIHNW_o5SL-ZcRhXU7yhKhV6Gz3aFWl5R-jhrP7pKhEbfU1unex9D62153M6CLcSkrM7RuQ-lDCMuJc6ivNi5YRPJ6rK7SprMWWQFv-DKbcvQv7oIsSrBi3hHHDEinmWkl8rF4Pm-fj3GWIlpQu8WFDg5UHGmd-S7Ugo2n2XWhtIQfBFcZgfcnVCeA_gjG2HjFUr12a5-_KwHjuKSU30FoISnw1cTqvkFWN1p15rb4OWmXRsahcSyOzV6pGghzM"
+					}
+				],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation DeleteUserCommerceProductContent(\n  $site: Site!\n  $contentIds: [String!]!\n) {\n  deleteUserCommerceProductContent(site: $site, contentIds: $contentIds) {\n    originId\n    product\n    productBrand\n    productName\n  }\n}\n",
+						"variables": "{\n    \"site\": \"wsj\",\n    \"contentIds\": [\n        \"CP-WSJ-511e6232-37d4-4d3e-9d50-3b42a16f2c43\"\n    ]\n}"
+					}
+				},
+				"url": {
+					"raw": "https://dj-shared-data-gateway-dev.sc.onservo.com/gateway/graphql",
+					"protocol": "https",
+					"host": [
+						"dj-shared-data-gateway-dev",
+						"sc",
+						"onservo",
+						"com"
+					],
+					"path": [
+						"gateway",
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
