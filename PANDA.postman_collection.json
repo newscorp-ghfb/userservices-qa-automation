@@ -39,12 +39,12 @@
 								"header": [
 									{
 										"key": "Cookie",
-										"value": "djcs_session=M1664243285%2FqXMh9sansxK2r5RFLnqH2BeyU4vuB0xgvp78qwqfhH0G9AuYorBhUy%2B1N2PNaYdZS6GGRXZONFqwZ%2BGWd9j9NPwKsUVCxl22d7E1rGCxs7RM%2FLPFKFpGSPq%2FBAQmXQq7anIrpTjUBp4x89yK%2F0F7w%2Fj4xAJgILQeY7%2BOmk612LN1Lkm4pQz6msdLQu1RWBIEr4JuFy52%2F2ulRcm%2F%2BfOBfPTv5kOY8geqceVvK1wYYbmhSJ0muHGEkTeljQgesbnBZQLS5PzYwSqPfsTY%2BY9h%2FofS7H68fQDaPWJ0ctPDLkez8RzAD9wCV8qw5RvxhaziygtrjA1Gbn7QPhXI0fNc8mFfC8urV4Uu%2B95K5Y3cIHIzVsY%2BUM0nyBiyU%2FzmuLFeQ5ZwWX1Tdo624LoEYDc4y0qdvOOG6xgR2fazKtOL3AVrwtQpY1dEGoKTw2H9dTlruFQrYhA2Iomkw4amSTox6gudRy21ryFwltRgsoxn9MFxu9xviOWaieqG%2F60vTc8wt0XPCxyV9OZr41r58abynw%3D%3DG",
+										"value": "{{DJCS_SESSION}}",
 										"type": "text"
 									}
 								],
 								"url": {
-									"raw": "{{PANDA_API}}/subscription/filter/company?product=wsj-executive-edition&value=2",
+									"raw": "{{PANDA_API}}/subscription/filter/company?product=wsj&value=CCRED",
 									"host": [
 										"{{PANDA_API}}"
 									],
@@ -56,11 +56,11 @@
 									"query": [
 										{
 											"key": "product",
-											"value": "wsj-executive-edition"
+											"value": "wsj"
 										},
 										{
 											"key": "value",
-											"value": "2"
+											"value": "CCRED"
 										}
 									]
 								},
@@ -98,22 +98,33 @@
 									},
 									{
 										"key": "Cookie",
-										"value": "djcs_session=M1664243285%2FqXMh9sansxK2r5RFLnqH2BeyU4vuB0xgvp78qwqfhH0G9AuYorBhUy%2B1N2PNaYdZS6GGRXZONFqwZ%2BGWd9j9NPwKsUVCxl22d7E1rGCxs7RM%2FLPFKFpGSPq%2FBAQmXQq7anIrpTjUBp4x89yK%2F0F7w%2Fj4xAJgILQeY7%2BOmk612LN1Lkm4pQz6msdLQu1RWBIEr4JuFy52%2F2ulRcm%2F%2BfOBfPTv5kOY8geqceVvK1wYYbmhSJ0muHGEkTeljQgesbnBZQLS5PzYwSqPfsTY%2BY9h%2FofS7H68fQDaPWJ0ctPDLkez8RzAD9wCV8qw5RvxhaziygtrjA1Gbn7QPhXI0fNc8mFfC8urV4Uu%2B95K5Y3cIHIzVsY%2BUM0nyBiyU%2FzmuLFeQ5ZwWX1Tdo624LoEYDc4y0qdvOOG6xgR2fazKtOL3AVrwtQpY1dEGoKTw2H9dTlruFQrYhA2Iomkw4amSTox6gudRy21ryFwltRgsoxn9MFxu9xviOWaieqG%2F60vTc8wt0XPCxyV9OZr41r58abynw%3D%3DG",
+										"value": "{{DJCS_SESSION}}",
 										"type": "text"
 									}
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"engine\": \"Allesseh\",\n    \"product\": \"fnews\",\n    \"alertType\": \"author\",\n    \"term\": {\n        \"operator\": \"equal_to\",\n        \"field\": \"AuthorId\",\n        \"value\": \"1111_FN\"\n    }\n}"
+									"raw": "{\n    \"engine\": \"Allesseh\",\n    \"product\": \"wsj\",\n    \"alertType\": \"company\",\n    \"term\": {\n        \"operator\": \"equal_to\",\n        \"field\": \"AuthorId\",\n        \"value\": \"CCRED\"\n    }\n}"
 								},
 								"url": {
-									"raw": "{{PANDA_API}}/subscription/filter",
+									"raw": "{{PANDA_API}}/subscription/filter/company?product=wsj&value=CCRED",
 									"host": [
 										"{{PANDA_API}}"
 									],
 									"path": [
 										"subscription",
-										"filter"
+										"filter",
+										"company"
+									],
+									"query": [
+										{
+											"key": "product",
+											"value": "wsj"
+										},
+										{
+											"key": "value",
+											"value": "CCRED"
+										}
 									]
 								}
 							},
@@ -148,13 +159,13 @@
 									},
 									{
 										"key": "Cookie",
-										"value": "djcs_session=M1664243285%2FqXMh9sansxK2r5RFLnqH2BeyU4vuB0xgvp78qwqfhH0G9AuYorBhUy%2B1N2PNaYdZS6GGRXZONFqwZ%2BGWd9j9NPwKsUVCxl22d7E1rGCxs7RM%2FLPFKFpGSPq%2FBAQmXQq7anIrpTjUBp4x89yK%2F0F7w%2Fj4xAJgILQeY7%2BOmk612LN1Lkm4pQz6msdLQu1RWBIEr4JuFy52%2F2ulRcm%2F%2BfOBfPTv5kOY8geqceVvK1wYYbmhSJ0muHGEkTeljQgesbnBZQLS5PzYwSqPfsTY%2BY9h%2FofS7H68fQDaPWJ0ctPDLkez8RzAD9wCV8qw5RvxhaziygtrjA1Gbn7QPhXI0fNc8mFfC8urV4Uu%2B95K5Y3cIHIzVsY%2BUM0nyBiyU%2FzmuLFeQ5ZwWX1Tdo624LoEYDc4y0qdvOOG6xgR2fazKtOL3AVrwtQpY1dEGoKTw2H9dTlruFQrYhA2Iomkw4amSTox6gudRy21ryFwltRgsoxn9MFxu9xviOWaieqG%2F60vTc8wt0XPCxyV9OZr41r58abynw%3D%3DG",
+										"value": "{{DJCS_SESSION}}",
 										"type": "text"
 									}
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"vxid\": \"TEST2\",\n  \"deliveryPreferences\": {\n    \"method\": \"email\",\n    \"deliveryDetails\": {\n    \t\"email\": \"sample@dev.user2\"\n    },\n    \"type\": \"instant\"\n  }\n}"
+									"raw": "{\n    \"deliveryPreferences\": [{\"method\": \"email\", \"type\":\"realtime\"}],\n    \"timezone\": \"UTC-05:00\",\n    \"criteria\": {\n        \"engine\": \"Allesseh\",\n        \"product\": \"barrons\",\n        \"alertType\": \"author\",\n        \"term\": {\n                    \"operator\": \"equal_to\",\n                    \"field\": \"AuthorId\",\n                    \"value\": \"7308_BARRONS\"\n                }\n    }\n}"
 								},
 								"url": {
 									"raw": "{{PANDA_API}}/subscription/",
@@ -206,7 +217,7 @@
 									},
 									{
 										"key": "Cookie",
-										"value": "djcs_session=M1664243285%2FqXMh9sansxK2r5RFLnqH2BeyU4vuB0xgvp78qwqfhH0G9AuYorBhUy%2B1N2PNaYdZS6GGRXZONFqwZ%2BGWd9j9NPwKsUVCxl22d7E1rGCxs7RM%2FLPFKFpGSPq%2FBAQmXQq7anIrpTjUBp4x89yK%2F0F7w%2Fj4xAJgILQeY7%2BOmk612LN1Lkm4pQz6msdLQu1RWBIEr4JuFy52%2F2ulRcm%2F%2BfOBfPTv5kOY8geqceVvK1wYYbmhSJ0muHGEkTeljQgesbnBZQLS5PzYwSqPfsTY%2BY9h%2FofS7H68fQDaPWJ0ctPDLkez8RzAD9wCV8qw5RvxhaziygtrjA1Gbn7QPhXI0fNc8mFfC8urV4Uu%2B95K5Y3cIHIzVsY%2BUM0nyBiyU%2FzmuLFeQ5ZwWX1Tdo624LoEYDc4y0qdvOOG6xgR2fazKtOL3AVrwtQpY1dEGoKTw2H9dTlruFQrYhA2Iomkw4amSTox6gudRy21ryFwltRgsoxn9MFxu9xviOWaieqG%2F60vTc8wt0XPCxyV9OZr41r58abynw%3D%3DG",
+										"value": "{{DJCS_SESSION}}",
 										"type": "text"
 									}
 								],
@@ -259,7 +270,7 @@
 									},
 									{
 										"key": "Cookie",
-										"value": "djcs_session=M1664243285%2FqXMh9sansxK2r5RFLnqH2BeyU4vuB0xgvp78qwqfhH0G9AuYorBhUy%2B1N2PNaYdZS6GGRXZONFqwZ%2BGWd9j9NPwKsUVCxl22d7E1rGCxs7RM%2FLPFKFpGSPq%2FBAQmXQq7anIrpTjUBp4x89yK%2F0F7w%2Fj4xAJgILQeY7%2BOmk612LN1Lkm4pQz6msdLQu1RWBIEr4JuFy52%2F2ulRcm%2F%2BfOBfPTv5kOY8geqceVvK1wYYbmhSJ0muHGEkTeljQgesbnBZQLS5PzYwSqPfsTY%2BY9h%2FofS7H68fQDaPWJ0ctPDLkez8RzAD9wCV8qw5RvxhaziygtrjA1Gbn7QPhXI0fNc8mFfC8urV4Uu%2B95K5Y3cIHIzVsY%2BUM0nyBiyU%2FzmuLFeQ5ZwWX1Tdo624LoEYDc4y0qdvOOG6xgR2fazKtOL3AVrwtQpY1dEGoKTw2H9dTlruFQrYhA2Iomkw4amSTox6gudRy21ryFwltRgsoxn9MFxu9xviOWaieqG%2F60vTc8wt0XPCxyV9OZr41r58abynw%3D%3DG",
+										"value": "{{DJCS_SESSION}}",
 										"type": "text"
 									}
 								],
@@ -308,7 +319,7 @@
 									},
 									{
 										"key": "Cookie",
-										"value": "djcs_session=M1664243285%2FqXMh9sansxK2r5RFLnqH2BeyU4vuB0xgvp78qwqfhH0G9AuYorBhUy%2B1N2PNaYdZS6GGRXZONFqwZ%2BGWd9j9NPwKsUVCxl22d7E1rGCxs7RM%2FLPFKFpGSPq%2FBAQmXQq7anIrpTjUBp4x89yK%2F0F7w%2Fj4xAJgILQeY7%2BOmk612LN1Lkm4pQz6msdLQu1RWBIEr4JuFy52%2F2ulRcm%2F%2BfOBfPTv5kOY8geqceVvK1wYYbmhSJ0muHGEkTeljQgesbnBZQLS5PzYwSqPfsTY%2BY9h%2FofS7H68fQDaPWJ0ctPDLkez8RzAD9wCV8qw5RvxhaziygtrjA1Gbn7QPhXI0fNc8mFfC8urV4Uu%2B95K5Y3cIHIzVsY%2BUM0nyBiyU%2FzmuLFeQ5ZwWX1Tdo624LoEYDc4y0qdvOOG6xgR2fazKtOL3AVrwtQpY1dEGoKTw2H9dTlruFQrYhA2Iomkw4amSTox6gudRy21ryFwltRgsoxn9MFxu9xviOWaieqG%2F60vTc8wt0XPCxyV9OZr41r58abynw%3D%3DG",
+										"value": "{{DJCS_SESSION}}",
 										"type": "text"
 									}
 								],
@@ -363,7 +374,7 @@
 									},
 									{
 										"key": "Cookie",
-										"value": "djcs_session=M1664243285%2FqXMh9sansxK2r5RFLnqH2BeyU4vuB0xgvp78qwqfhH0G9AuYorBhUy%2B1N2PNaYdZS6GGRXZONFqwZ%2BGWd9j9NPwKsUVCxl22d7E1rGCxs7RM%2FLPFKFpGSPq%2FBAQmXQq7anIrpTjUBp4x89yK%2F0F7w%2Fj4xAJgILQeY7%2BOmk612LN1Lkm4pQz6msdLQu1RWBIEr4JuFy52%2F2ulRcm%2F%2BfOBfPTv5kOY8geqceVvK1wYYbmhSJ0muHGEkTeljQgesbnBZQLS5PzYwSqPfsTY%2BY9h%2FofS7H68fQDaPWJ0ctPDLkez8RzAD9wCV8qw5RvxhaziygtrjA1Gbn7QPhXI0fNc8mFfC8urV4Uu%2B95K5Y3cIHIzVsY%2BUM0nyBiyU%2FzmuLFeQ5ZwWX1Tdo624LoEYDc4y0qdvOOG6xgR2fazKtOL3AVrwtQpY1dEGoKTw2H9dTlruFQrYhA2Iomkw4amSTox6gudRy21ryFwltRgsoxn9MFxu9xviOWaieqG%2F60vTc8wt0XPCxyV9OZr41r58abynw%3D%3DG",
+										"value": "{{DJCS_SESSION}}",
 										"type": "text"
 									}
 								],
@@ -413,7 +424,7 @@
 									},
 									{
 										"key": "Cookie",
-										"value": "djcs_session=M1664243285%2FqXMh9sansxK2r5RFLnqH2BeyU4vuB0xgvp78qwqfhH0G9AuYorBhUy%2B1N2PNaYdZS6GGRXZONFqwZ%2BGWd9j9NPwKsUVCxl22d7E1rGCxs7RM%2FLPFKFpGSPq%2FBAQmXQq7anIrpTjUBp4x89yK%2F0F7w%2Fj4xAJgILQeY7%2BOmk612LN1Lkm4pQz6msdLQu1RWBIEr4JuFy52%2F2ulRcm%2F%2BfOBfPTv5kOY8geqceVvK1wYYbmhSJ0muHGEkTeljQgesbnBZQLS5PzYwSqPfsTY%2BY9h%2FofS7H68fQDaPWJ0ctPDLkez8RzAD9wCV8qw5RvxhaziygtrjA1Gbn7QPhXI0fNc8mFfC8urV4Uu%2B95K5Y3cIHIzVsY%2BUM0nyBiyU%2FzmuLFeQ5ZwWX1Tdo624LoEYDc4y0qdvOOG6xgR2fazKtOL3AVrwtQpY1dEGoKTw2H9dTlruFQrYhA2Iomkw4amSTox6gudRy21ryFwltRgsoxn9MFxu9xviOWaieqG%2F60vTc8wt0XPCxyV9OZr41r58abynw%3D%3DG",
+										"value": "{{DJCS_SESSION}}",
 										"type": "text"
 									}
 								],
@@ -442,12 +453,35 @@
 						},
 						{
 							"name": "Create Sub Inflation",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											"",
+											"pm.test(\"Response time is less than 1000ms\", function () {",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);",
+											"});",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"request": {
 								"method": "POST",
 								"header": [
 									{
 										"key": "Content-Type",
 										"value": "application/json"
+									},
+									{
+										"key": "Cookie",
+										"value": "{{DJCS_SESSION}}",
+										"type": "text"
 									}
 								],
 								"body": {
@@ -497,17 +531,34 @@
 								"header": [
 									{
 										"key": "Cookie",
-										"value": "djcs_session=M1664243285%2FqXMh9sansxK2r5RFLnqH2BeyU4vuB0xgvp78qwqfhH0G9AuYorBhUy%2B1N2PNaYdZS6GGRXZONFqwZ%2BGWd9j9NPwKsUVCxl22d7E1rGCxs7RM%2FLPFKFpGSPq%2FBAQmXQq7anIrpTjUBp4x89yK%2F0F7w%2Fj4xAJgILQeY7%2BOmk612LN1Lkm4pQz6msdLQu1RWBIEr4JuFy52%2F2ulRcm%2F%2BfOBfPTv5kOY8geqceVvK1wYYbmhSJ0muHGEkTeljQgesbnBZQLS5PzYwSqPfsTY%2BY9h%2FofS7H68fQDaPWJ0ctPDLkez8RzAD9wCV8qw5RvxhaziygtrjA1Gbn7QPhXI0fNc8mFfC8urV4Uu%2B95K5Y3cIHIzVsY%2BUM0nyBiyU%2FzmuLFeQ5ZwWX1Tdo624LoEYDc4y0qdvOOG6xgR2fazKtOL3AVrwtQpY1dEGoKTw2H9dTlruFQrYhA2Iomkw4amSTox6gudRy21ryFwltRgsoxn9MFxu9xviOWaieqG%2F60vTc8wt0XPCxyV9OZr41r58abynw%3D%3DG",
+										"value": "{{DJCS_SESSION}}",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
 										"type": "text"
 									}
 								],
 								"url": {
-									"raw": "{{PANDA_API}}/subscription",
+									"raw": "{{PANDA_API}}/subscription/filter/company?product=wsj&value=CCRED",
 									"host": [
 										"{{PANDA_API}}"
 									],
 									"path": [
-										"subscription"
+										"subscription",
+										"filter",
+										"company"
+									],
+									"query": [
+										{
+											"key": "product",
+											"value": "wsj"
+										},
+										{
+											"key": "value",
+											"value": "CCRED"
+										}
 									]
 								}
 							},
@@ -541,7 +592,7 @@
 									},
 									{
 										"key": "Cookie",
-										"value": "djcs_session=M1664243285%2FqXMh9sansxK2r5RFLnqH2BeyU4vuB0xgvp78qwqfhH0G9AuYorBhUy%2B1N2PNaYdZS6GGRXZONFqwZ%2BGWd9j9NPwKsUVCxl22d7E1rGCxs7RM%2FLPFKFpGSPq%2FBAQmXQq7anIrpTjUBp4x89yK%2F0F7w%2Fj4xAJgILQeY7%2BOmk612LN1Lkm4pQz6msdLQu1RWBIEr4JuFy52%2F2ulRcm%2F%2BfOBfPTv5kOY8geqceVvK1wYYbmhSJ0muHGEkTeljQgesbnBZQLS5PzYwSqPfsTY%2BY9h%2FofS7H68fQDaPWJ0ctPDLkez8RzAD9wCV8qw5RvxhaziygtrjA1Gbn7QPhXI0fNc8mFfC8urV4Uu%2B95K5Y3cIHIzVsY%2BUM0nyBiyU%2FzmuLFeQ5ZwWX1Tdo624LoEYDc4y0qdvOOG6xgR2fazKtOL3AVrwtQpY1dEGoKTw2H9dTlruFQrYhA2Iomkw4amSTox6gudRy21ryFwltRgsoxn9MFxu9xviOWaieqG%2F60vTc8wt0XPCxyV9OZr41r58abynw%3D%3DG",
+										"value": "{{DJCS_SESSION}}",
 										"type": "text"
 									}
 								],
@@ -586,7 +637,7 @@
 								"header": [
 									{
 										"key": "Cookie",
-										"value": "djcs_session=M1664243285%2FqXMh9sansxK2r5RFLnqH2BeyU4vuB0xgvp78qwqfhH0G9AuYorBhUy%2B1N2PNaYdZS6GGRXZONFqwZ%2BGWd9j9NPwKsUVCxl22d7E1rGCxs7RM%2FLPFKFpGSPq%2FBAQmXQq7anIrpTjUBp4x89yK%2F0F7w%2Fj4xAJgILQeY7%2BOmk612LN1Lkm4pQz6msdLQu1RWBIEr4JuFy52%2F2ulRcm%2F%2BfOBfPTv5kOY8geqceVvK1wYYbmhSJ0muHGEkTeljQgesbnBZQLS5PzYwSqPfsTY%2BY9h%2FofS7H68fQDaPWJ0ctPDLkez8RzAD9wCV8qw5RvxhaziygtrjA1Gbn7QPhXI0fNc8mFfC8urV4Uu%2B95K5Y3cIHIzVsY%2BUM0nyBiyU%2FzmuLFeQ5ZwWX1Tdo624LoEYDc4y0qdvOOG6xgR2fazKtOL3AVrwtQpY1dEGoKTw2H9dTlruFQrYhA2Iomkw4amSTox6gudRy21ryFwltRgsoxn9MFxu9xviOWaieqG%2F60vTc8wt0XPCxyV9OZr41r58abynw%3D%3DG",
+										"value": "{{DJCS_SESSION}}",
 										"type": "text"
 									}
 								],
@@ -595,13 +646,13 @@
 									"formdata": []
 								},
 								"url": {
-									"raw": "{{PANDA_API}}/subscription/0131b846d02e17658781486587bb54558507f638",
+									"raw": "{{PANDA_API}}/subscription/ead16307a98b76b56b368304b50e662ea606ed91",
 									"host": [
 										"{{PANDA_API}}"
 									],
 									"path": [
 										"subscription",
-										"0131b846d02e17658781486587bb54558507f638"
+										"ead16307a98b76b56b368304b50e662ea606ed91"
 									]
 								}
 							},
@@ -631,7 +682,7 @@
 								"header": [
 									{
 										"key": "Cookie",
-										"value": "djcs_session=M1664243285%2FqXMh9sansxK2r5RFLnqH2BeyU4vuB0xgvp78qwqfhH0G9AuYorBhUy%2B1N2PNaYdZS6GGRXZONFqwZ%2BGWd9j9NPwKsUVCxl22d7E1rGCxs7RM%2FLPFKFpGSPq%2FBAQmXQq7anIrpTjUBp4x89yK%2F0F7w%2Fj4xAJgILQeY7%2BOmk612LN1Lkm4pQz6msdLQu1RWBIEr4JuFy52%2F2ulRcm%2F%2BfOBfPTv5kOY8geqceVvK1wYYbmhSJ0muHGEkTeljQgesbnBZQLS5PzYwSqPfsTY%2BY9h%2FofS7H68fQDaPWJ0ctPDLkez8RzAD9wCV8qw5RvxhaziygtrjA1Gbn7QPhXI0fNc8mFfC8urV4Uu%2B95K5Y3cIHIzVsY%2BUM0nyBiyU%2FzmuLFeQ5ZwWX1Tdo624LoEYDc4y0qdvOOG6xgR2fazKtOL3AVrwtQpY1dEGoKTw2H9dTlruFQrYhA2Iomkw4amSTox6gudRy21ryFwltRgsoxn9MFxu9xviOWaieqG%2F60vTc8wt0XPCxyV9OZr41r58abynw%3D%3DG",
+										"value": "{{DJCS_SESSION}}",
 										"type": "text"
 									}
 								],
@@ -675,7 +726,7 @@
 									},
 									{
 										"key": "Cookie",
-										"value": "djcs_session=M1664243285%2FqXMh9sansxK2r5RFLnqH2BeyU4vuB0xgvp78qwqfhH0G9AuYorBhUy%2B1N2PNaYdZS6GGRXZONFqwZ%2BGWd9j9NPwKsUVCxl22d7E1rGCxs7RM%2FLPFKFpGSPq%2FBAQmXQq7anIrpTjUBp4x89yK%2F0F7w%2Fj4xAJgILQeY7%2BOmk612LN1Lkm4pQz6msdLQu1RWBIEr4JuFy52%2F2ulRcm%2F%2BfOBfPTv5kOY8geqceVvK1wYYbmhSJ0muHGEkTeljQgesbnBZQLS5PzYwSqPfsTY%2BY9h%2FofS7H68fQDaPWJ0ctPDLkez8RzAD9wCV8qw5RvxhaziygtrjA1Gbn7QPhXI0fNc8mFfC8urV4Uu%2B95K5Y3cIHIzVsY%2BUM0nyBiyU%2FzmuLFeQ5ZwWX1Tdo624LoEYDc4y0qdvOOG6xgR2fazKtOL3AVrwtQpY1dEGoKTw2H9dTlruFQrYhA2Iomkw4amSTox6gudRy21ryFwltRgsoxn9MFxu9xviOWaieqG%2F60vTc8wt0XPCxyV9OZr41r58abynw%3D%3DG",
+										"value": "{{DJCS_SESSION}}",
 										"type": "text"
 									}
 								],
@@ -699,7 +750,21 @@
 							"name": "Permission",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "https://www.s.dev.wsj.com/permissions",
+									"protocol": "https",
+									"host": [
+										"www",
+										"s",
+										"dev",
+										"wsj",
+										"com"
+									],
+									"path": [
+										"permissions"
+									]
+								}
 							},
 							"response": []
 						}
@@ -1435,22 +1500,26 @@
 								}
 							]
 						},
-						"method": "GET",
+						"method": "POST",
 						"header": [
 							{
 								"key": "X-AUTH-TOKEN",
-								"value": "{{PANDA_DIGEST_TRIGGER_KEY}}",
+								"value": "e253a900-eb65-4000-982d-512dcb87f681",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "{{PANDA_DIGEST}}/trigger/19%7C14%7C00",
+							"raw": "https://int-integration-panda-digest.vir-dev.onservo.com/trigger/15|15",
+							"protocol": "https",
 							"host": [
-								"{{PANDA_DIGEST}}"
+								"int-integration-panda-digest",
+								"vir-dev",
+								"onservo",
+								"com"
 							],
 							"path": [
 								"trigger",
-								"19%7C14%7C00"
+								"15|15"
 							]
 						}
 					},
@@ -1596,7 +1665,13 @@
 					],
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "{{DJCS_SESSION}}",
+								"type": "text"
+							}
+						],
 						"url": {
 							"raw": ""
 						}
@@ -1635,7 +1710,7 @@
 								"header": [
 									{
 										"key": "Cookie",
-										"value": "djcs_session=M1664243285%2FqXMh9sansxK2r5RFLnqH2BeyU4vuB0xgvp78qwqfhH0G9AuYorBhUy%2B1N2PNaYdZS6GGRXZONFqwZ%2BGWd9j9NPwKsUVCxl22d7E1rGCxs7RM%2FLPFKFpGSPq%2FBAQmXQq7anIrpTjUBp4x89yK%2F0F7w%2Fj4xAJgILQeY7%2BOmk612LN1Lkm4pQz6msdLQu1RWBIEr4JuFy52%2F2ulRcm%2F%2BfOBfPTv5kOY8geqceVvK1wYYbmhSJ0muHGEkTeljQgesbnBZQLS5PzYwSqPfsTY%2BY9h%2FofS7H68fQDaPWJ0ctPDLkez8RzAD9wCV8qw5RvxhaziygtrjA1Gbn7QPhXI0fNc8mFfC8urV4Uu%2B95K5Y3cIHIzVsY%2BUM0nyBiyU%2FzmuLFeQ5ZwWX1Tdo624LoEYDc4y0qdvOOG6xgR2fazKtOL3AVrwtQpY1dEGoKTw2H9dTlruFQrYhA2Iomkw4amSTox6gudRy21ryFwltRgsoxn9MFxu9xviOWaieqG%2F60vTc8wt0XPCxyV9OZr41r58abynw%3D%3DG",
+										"value": "{{DJCS_SESSION}}",
 										"type": "text"
 									}
 								],
