@@ -5,7 +5,7 @@ Resource  ../Resources/DefinedKeywords.robot
 *** Variables ***
 ${Browser}=  headlessfirefox  #headless, ff, chrome, edge, safari
 
-${Env}=  "dev"  #dev, prod
+${Env}=  "prod"  #dev, prod
 
 ${Email_prod}=  barronsadvisorcs@gmail.com
 
@@ -63,7 +63,7 @@ Start FN Article
         Go To  https://www.fnlondon.com/articles/complaints-commissioner-fca-transparency-20220615
     ELSE IF  ${Env} == "dev"
         Open Browser  https://www.s.dev.fnlondon.com  ${Browser}
-        Go To  https://www.s.dev.fnlondon.com/articles/testpanda-test-wsj-digest-2-20211020
+        Go To  https://www.s.dev.fnlondon.com/articles/testing-article-timestamp-20231102
         Execute javascript  window.scrollTo(0,500)
     END
     Execute javascript  window.scrollTo(0,500)
