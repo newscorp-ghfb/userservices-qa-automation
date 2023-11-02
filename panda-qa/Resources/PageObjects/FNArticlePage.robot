@@ -1,5 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
+Resource  ../../Resources/CommonFunctionality.robot
 
 *** Variables ***
 ${JSFollowButtonFNPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
@@ -29,6 +30,14 @@ ${JSFollowSignInButtonPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('div.modal')  #4
     ...  .querySelector('div.footer')  #5
     ...  .querySelector('ufc-button').shadowRoot  #6
+    ...  .querySelector('button')  #7
+
+${JSFollowSignInButton2Path}=  document.querySelector('ufc-signin-modal[isopen]')  #1
+    ...  .shadowRoot.querySelector('div')  #2
+    ...  .querySelector('div.modal')  #3
+    ...  .querySelector('focus-trap')  #4
+    ...  .querySelector('div.footer')  #5
+    ...  .querySelector('ufc-button')  #6
     ...  .querySelector('button')  #7
 
 ${JSFollowSignInHeaderPath}=  document.querySelector('ufc-portal')  #1
@@ -64,7 +73,11 @@ Validate Sign In Modal
 Click Sign In Button Modal
     #Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}  20s
     Set Selenium Speed  0.4 seconds
-    Click Element  dom:${JSFollowSignInButtonPath}
+    IF  ${Env} == "prod"
+       Click Element  dom:${JSFollowSignInButtonPath}
+    ELSE IF  ${Env} == "dev"
+        Click Element  dom:${JSFollowSignInButton2Path}
+    END
     Set Selenium Speed  0.2 seconds
 
 Click Undo Link
