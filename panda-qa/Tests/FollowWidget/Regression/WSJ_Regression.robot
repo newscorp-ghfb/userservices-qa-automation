@@ -88,63 +88,7 @@ Validate the WSJ Preference Center page
     #WSJPreferenceCenterPage.Navigate Article page
     #WSJArticlePage.Scroll stories
 
-#Validate Authors for WSJ Capabilites Dashboard page
-#    [Documentation]  This test case validates authors for WSJ capabilites dashboard page
-#    [Tags]  Regression
 
-#    WSJCapabilitiesPage.Navigate Capabilities Dashboard page
-#    WSJCapabilitiesPage.Validate Authors Reflected On Dashboard
-#    WSJCapabilitiesPage.Validate Authors On Search Tab
-#    WSJCapabilitiesPage.Validate Follow Hotlink for Authors
-#    WSJCapabilitiesPage.Validate Custome Topics On Dashboard
-
-#Validate Company for WSJ Capabilites Dashboard page
-#    [Documentation]  This test case validates authors for WSJ capabilites dashboard page
-#    [Tags]  Regression
-
-#    WSJCapabilitiesPage.Navigate Capabilities Dashboard page
-#    WSJCapabilitiesPage.Validate Authors Reflected On Dashboard
-#    WSJCapabilitiesPage.Validate Authors On Search Tab
-#    WSJCapabilitiesPage.Validate Follow Hotlink for Authors
-#    WSJCapabilitiesPage.Validate Custome Topics On Dashboard
-
-#Validate Custome Topics for WSJ Capabilites Dashboard page
-#    [Documentation]  This test case validates authors for WSJ capabilites dashboard page
-#    [Tags]  Regression
-
-#    WSJCapabilitiesPage.Navigate Capabilities Dashboard page
-#    WSJCapabilitiesPage.Validate Authors Reflected On Dashboard
-#    WSJCapabilitiesPage.Validate Authors On Search Tab
-#    WSJCapabilitiesPage.Validate Follow Hotlink for Authors
-#    WSJCapabilitiesPage.Validate Custome Topics On Dashboard
-
-#Validate Industry for WSJ Capabilites Dashboard page
-#    [Documentation]  This test case validates authors for WSJ capabilites dashboard page
-#    [Tags]  Regression
-
-#    WSJCapabilitiesPage.Navigate Capabilities Dashboard page
-#    WSJCapabilitiesPage.Validate Authors Reflected On Dashboard
-#    WSJCapabilitiesPage.Validate Authors On Search Tab
-#    WSJCapabilitiesPage.Validate Follow Hotlink for Authors
-#    WSJCapabilitiesPage.Validate Custome Topics On Dashboard
-#US-T84
-Validate Inflation page
-    [Documentation]  This test case validates inflation for WSJ page
-    [Tags]  Regression
-
-    WSJArticlePage.Validate Follow Button
-    WSJArticlePage.Click Follow Button
-    WSJArticlePage.Validate Sign In Modal
-    WSJArticlePage.Click Sign In Button Modal
-    DefinedKeywords.Market Watch Sign In Process
-    WSJInflationPage.Navigate Inflation page
-    WSJInflationPage.Validate Subscription To All Basket Items
-
-#Validate the WSJ Campaign Monitor Dashboard page
-#    [Documentation]  This test case validates the WSJ campaign monitor dashboard page
-#    [Tags]  Regression
-#    Set Selenium Speed  0.2 seconds
-#    WSJCapabilites.Capabilities Dashboard WSJ Menu
 #US-T30
 Validate Authors for WSJ Article page without byline
     [Documentation]  This test case validates authors without byline for WSJ article page
@@ -535,31 +479,6 @@ Validate the Watchlist widget from Watchlist page
     WSJWatchlistPage.Delete Watchlists
     WSJWatchlistPage.Validate Default New Watchlist
     WSJWatchlistPage.Validate No Symbol in Default New Watchlist
-
-#US-T209
-#US-T210
-#US-T211
-#US-T212
-Validate the authors follow toggle button from Newsletters page
-    [Documentation]  This test case validates the authors follow button from newsletters page
-    [Tags]  Regression
-
-    WSJArticlePage.Validate Follow Button
-    WSJArticlePage.Click Follow Button
-    Set Selenium Speed  0.4 seconds
-    WSJArticlePage.Validate Sign In Modal
-    WSJArticlePage.Click Sign In Button Modal
-    DefinedKeywords.Sign In Process
-    WSJArticlePage.Validate Following Button
-    Set Selenium Speed  0.5 seconds
-    Capture Page Screenshot    screenshot.png
-    CommonFunctionality.Start Barrons for Newsletters page
-    WSJNewslettersPage.Validate Newsletters Page
-    WSJNewslettersPage.Click author newsletters toggle
-    WSJNewslettersPage.Validate author newsletters subscription
-    WSJNewslettersPage.Click author newsletters toggle
-    WSJNewslettersPage.Click unsubscription confirmation button
-    WSJNewslettersPage.Validate author newsletters unsubscription
 
 #US-T268
 #US-T269
