@@ -584,3 +584,227 @@ Validate the WSJ real-time campaign notification
     WSJMailboxPage.Select Inbox
     WSJMailboxPage.Search Your WSJ real-time campaign notification
     WSJMailboxPage.Validate WSJ real-time campaign notification
+
+#US-T319
+#US-T320
+#US-T321
+#US-T322
+Validate the alert button for Education
+    [Documentation]  This test case validates the alert button for Education
+    [Tags]  Regression
+    CommonFunctionality.Start WSJ Article for Board Pack Exclusive
+    #WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Click Board Pack Exclusive Button
+    WSJArticlePage.Validate Sign In Modal
+    WSJArticlePage.Click Sign In Button Modal
+    IF  ${Env} == "prod"
+        DefinedKeywords.Market Watch Sign In Process
+    ELSE IF  ${Env} == "dev"
+        DefinedKeywords.Sign In Process
+    END
+    Set Selenium Speed  0.2 seconds
+    IF  ${Env} == "prod"
+        Set Selenium Speed  0.2 seconds
+    ELSE IF  ${Env} == "dev"
+        Set Selenium Speed  0.35 seconds
+    END
+    WSJArticlePage.Click Board Pack Exclusive Button
+    WSJArticlePage.Click Undo Link
+    WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Click Custom Following Button
+    WSJArticlePage.Validate Custom Follow Button
+    WSJArticlePage.Click Custom Follow Button
+    WSJArticlePage.Click Preference Center link
+    WSJPreferenceCenterPage.Validate Preference Center page
+
+#US-T323
+#US-T324
+#US-T325
+#US-T326
+Validate the alert button for heard on the steet
+    [Documentation]  This test case validates the alert button for heard on the street
+    [Tags]  Regression
+    CommonFunctionality.Start WSJ Article for Board Pack Exclusive
+    #WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Click Board Pack Exclusive Button
+    WSJArticlePage.Validate Sign In Modal
+    WSJArticlePage.Click Sign In Button Modal
+    IF  ${Env} == "prod"
+        DefinedKeywords.Market Watch Sign In Process
+    ELSE IF  ${Env} == "dev"
+        DefinedKeywords.Sign In Process
+    END
+    Set Selenium Speed  0.2 seconds
+    IF  ${Env} == "prod"
+        Set Selenium Speed  0.2 seconds
+    ELSE IF  ${Env} == "dev"
+        Set Selenium Speed  0.35 seconds
+    END
+    WSJArticlePage.Click Board Pack Exclusive Button
+    WSJArticlePage.Click Undo Link
+    WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Click Custom Following Button
+    WSJArticlePage.Validate Custom Follow Button
+    WSJArticlePage.Click Custom Follow Button
+    WSJArticlePage.Click Preference Center link
+    WSJPreferenceCenterPage.Validate Preference Center page
+
+#US-T327
+#US-T328
+#US-T329
+#US-T330
+Validate the alert button for On Wine
+    [Documentation]  This test case validates the alert button for On Wine
+    [Tags]  Regression
+    CommonFunctionality.Start WSJ Article for Board Pack Exclusive
+    #WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Click Board Pack Exclusive Button
+    WSJArticlePage.Validate Sign In Modal
+    WSJArticlePage.Click Sign In Button Modal
+    IF  ${Env} == "prod"
+        DefinedKeywords.Market Watch Sign In Process
+    ELSE IF  ${Env} == "dev"
+        DefinedKeywords.Sign In Process
+    END
+    Set Selenium Speed  0.2 seconds
+    IF  ${Env} == "prod"
+        Set Selenium Speed  0.2 seconds
+    ELSE IF  ${Env} == "dev"
+        Set Selenium Speed  0.35 seconds
+    END
+    WSJArticlePage.Click Board Pack Exclusive Button
+    WSJArticlePage.Click Undo Link
+    WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Click Custom Following Button
+    WSJArticlePage.Validate Custom Follow Button
+    WSJArticlePage.Click Custom Follow Button
+    WSJArticlePage.Click Preference Center link
+    WSJPreferenceCenterPage.Validate Preference Center page
+
+#US-T331
+#US-T332
+#US-T333
+#US-T334
+Validate the alert button for Personal Finance
+    [Documentation]  This test case validates the alert button for Personal Finance
+    [Tags]  Regression
+    CommonFunctionality.Start WSJ Article for Board Pack Exclusive
+    #WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Click Board Pack Exclusive Button
+    WSJArticlePage.Validate Sign In Modal
+    WSJArticlePage.Click Sign In Button Modal
+    IF  ${Env} == "prod"
+        DefinedKeywords.Market Watch Sign In Process
+    ELSE IF  ${Env} == "dev"
+        DefinedKeywords.Sign In Process
+    END
+    Set Selenium Speed  0.2 seconds
+    IF  ${Env} == "prod"
+        Set Selenium Speed  0.2 seconds
+    ELSE IF  ${Env} == "dev"
+        Set Selenium Speed  0.35 seconds
+    END
+    WSJArticlePage.Click Board Pack Exclusive Button
+    WSJArticlePage.Click Undo Link
+    WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Click Custom Following Button
+    WSJArticlePage.Validate Custom Follow Button
+    WSJArticlePage.Click Custom Follow Button
+    WSJArticlePage.Click Preference Center link
+    WSJPreferenceCenterPage.Validate Preference Center page
+
+#US-T335
+#US-T336
+#US-T337
+#US-T338
+Validate the alert button for Personal Technology
+    [Documentation]  This test case validates the alert button for Personal Technology
+    [Tags]  Regression
+    CommonFunctionality.Start WSJ Article for Board Pack Exclusive
+    #WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Click Board Pack Exclusive Button
+    WSJArticlePage.Validate Sign In Modal
+    WSJArticlePage.Click Sign In Button Modal
+    IF  ${Env} == "prod"
+        DefinedKeywords.Market Watch Sign In Process
+    ELSE IF  ${Env} == "dev"
+        DefinedKeywords.Sign In Process
+    END
+    Set Selenium Speed  0.2 seconds
+    IF  ${Env} == "prod"
+        Set Selenium Speed  0.2 seconds
+    ELSE IF  ${Env} == "dev"
+        Set Selenium Speed  0.35 seconds
+    END
+    WSJArticlePage.Click Board Pack Exclusive Button
+    WSJArticlePage.Click Undo Link
+    WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Click Custom Following Button
+    WSJArticlePage.Validate Custom Follow Button
+    WSJArticlePage.Click Custom Follow Button
+    WSJArticlePage.Click Preference Center link
+    WSJPreferenceCenterPage.Validate Preference Center page
+
+#US-T339
+#US-T340
+#US-T341
+#US-T342
+Validate the alert button for Personal Technology
+    [Documentation]  This test case validates the alert button for Personal Technology
+    [Tags]  Regression
+    CommonFunctionality.Start WSJ Article for Board Pack Exclusive
+    #WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Click Board Pack Exclusive Button
+    WSJArticlePage.Validate Sign In Modal
+    WSJArticlePage.Click Sign In Button Modal
+    IF  ${Env} == "prod"
+        DefinedKeywords.Market Watch Sign In Process
+    ELSE IF  ${Env} == "dev"
+        DefinedKeywords.Sign In Process
+    END
+    Set Selenium Speed  0.2 seconds
+    IF  ${Env} == "prod"
+        Set Selenium Speed  0.2 seconds
+    ELSE IF  ${Env} == "dev"
+        Set Selenium Speed  0.35 seconds
+    END
+    WSJArticlePage.Click Board Pack Exclusive Button
+    WSJArticlePage.Click Undo Link
+    WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Click Custom Following Button
+    WSJArticlePage.Validate Custom Follow Button
+    WSJArticlePage.Click Custom Follow Button
+    WSJArticlePage.Click Preference Center link
+    WSJPreferenceCenterPage.Validate Preference Center page
+
+#US-T343
+#US-T344
+#US-T345
+#US-T346
+Validate the alert button for Energy
+    [Documentation]  This test case validates the alert button for Energy
+    [Tags]  Regression
+    CommonFunctionality.Start WSJ Article for Board Pack Exclusive
+    #WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Click Board Pack Exclusive Button
+    WSJArticlePage.Validate Sign In Modal
+    WSJArticlePage.Click Sign In Button Modal
+    IF  ${Env} == "prod"
+        DefinedKeywords.Market Watch Sign In Process
+    ELSE IF  ${Env} == "dev"
+        DefinedKeywords.Sign In Process
+    END
+    Set Selenium Speed  0.2 seconds
+    IF  ${Env} == "prod"
+        Set Selenium Speed  0.2 seconds
+    ELSE IF  ${Env} == "dev"
+        Set Selenium Speed  0.35 seconds
+    END
+    WSJArticlePage.Click Board Pack Exclusive Button
+    WSJArticlePage.Click Undo Link
+    WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Click Custom Following Button
+    WSJArticlePage.Validate Custom Follow Button
+    WSJArticlePage.Click Custom Follow Button
+    WSJArticlePage.Click Preference Center link
+    WSJPreferenceCenterPage.Validate Preference Center page
