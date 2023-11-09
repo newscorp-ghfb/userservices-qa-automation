@@ -12,34 +12,6 @@ Test Teardown  CommonFunctionality.Finish Testcase
 *** Variables ***
 
 *** Test Cases ***
-#US-T71
-#US-T72
-#US-T73
-#US-T74
-#Validate the multiple authors follow button from articles page
-#    [Documentation]  This test case validates the multiple authors follow button from articles page
-#    [Tags]  Regression
-
-#    PENArticlePage.Validate Follow Button
-#    PENArticlePage.Click Follow Button
-#    PENArticlePage.Validate Sign In Modal
-#    PENArticlePage.Click Sign In Button Modal
-#    DefinedKeywords.Sign In Process
-#    Set Selenium Speed  0.2 seconds
-#    PENArticlePage.Validate Following Button
-#    PENArticlePage.Click Follow Button 2
-#    PENArticlePage.Validate Following Button 2
-#    PENArticlePage.Click Following Button
-#    PENArticlePage.Click Undo Link
-#    PENArticlePage.Validate Following Button
-#    PENArticlePage.Click Following Button 2
-#    PENArticlePage.Click Undo Link 2
-#    PENArticlePage.Validate Following Button 2
-#    PENPreferenceCenterPage.Navigate Preference Center page
-#    PENPreferenceCenterPage.Validate Preference Center page
-#    PENPreferenceCenterPage.Validate Author 1
-#    PENPreferenceCenterPage.Validate Author 2
-
 #US-T95
 #US-T96
 Validate the PEN Preference Center page
@@ -71,42 +43,6 @@ Validate the PEN Preference Center page
     #PENlPreferenceCenterPage.Navigate Article page
     #PENArticlePage.Scroll stories
 
-#Validate Authors for PEN Capabilites Dashboard page
-#    [Documentation]  This test case validates authors for PEN capabilites dashboard page
-#    [Tags]  Regression
-
-#    PENCapabilitiesPage.Navigate Capabilities Dashboard page
-#    PENCapabilitiesPage.Click on Author tab
-#    PENCapabilitiesPage.Validate Authors Reflected On Dashboard
-#    PENCapabilitiesPage.Validate Authors On Search Tab
-#    PENCapabilitiesPage.Validate Follow Hotlink for Authors
-#    PENCapabilitiesPage.Validate Custome Topics On Dashboard
-
-#Validate Company for PEN Capabilites Dashboard page
-#    [Documentation]  This test case validates authors for PEN capabilites dashboard page
-#    [Tags]  Regression
-
-#    PENCapabilitiesPage.Navigate Capabilities Dashboard page
-#    PENCapabilitiesPage.Validate Authors Reflected On Dashboard
-#    PENCapabilitiesPage.Validate Authors On Search Tab
-#    PENCapabilitiesPage.Validate Follow Hotlink for Authors
-#    PENCapabilitiesPage.Validate Custome Topics On Dashboard
-
-#Validate Industry for PEN Capabilites Dashboard page
-#    [Documentation]  This test case validates authors for PEN capabilites dashboard page
-#    [Tags]  Regression
-
-#    PENCapabilitiesPage.Navigate Capabilities Dashboard page
-#    PENCapabilitiesPage.Validate Authors Reflected On Dashboard
-#    PENCapabilitiesPage.Validate Authors On Search Tab
-#    PENCapabilitiesPage.Validate Follow Hotlink for Authors
-#    PENCapabilitiesPage.Validate Custome Topics On Dashboard
-
-#Validate the PEN Campaign Monitor Dashboard page
-#    [Documentation]  This test case validates the PEN campaign monitor dashboard page
-#    [Tags]  Regression
-#    Set Selenium Speed  0.2 seconds
-#    PENCapabilites.Capabilities Dashboard PEN Menu
 #US-T29
 Validate Authors for PEN Article page without byline
     [Documentation]  This test case validates authors without byline for PEN article page
@@ -114,10 +50,6 @@ Validate Authors for PEN Article page without byline
 
     CommonFunctionality.Start PEN Article without byline
     PENArticlePage.Validate author without byline
-
-#US-T228
-#Validate the PEN Preference Center page for News Alerts
-
 
 #US-T123
 Validate the PEN digest notification

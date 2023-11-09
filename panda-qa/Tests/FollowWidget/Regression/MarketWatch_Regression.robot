@@ -13,35 +13,6 @@ Test Teardown  CommonFunctionality.Finish Testcase
 *** Variables ***
 
 *** Test Cases ***
-#US-T67
-#US-T68
-#US-T69
-#US-T70
-
-Validate the multiple authors follow button from articles page
-    [Documentation]  This test case validates the multiple authors follow button from articles page
-    [Tags]  Regression
-
-    MarketWatchArticlePage.Validate Follow Button
-    MarketWatchArticlePage.Click Follow Button
-    MarketWatchArticlePage.Validate Sign In Modal
-    MarketWatchArticlePage.Click Sign In Button Modal
-    DefinedKeywords.Sign In Process
-    Set Selenium Speed  0.2 seconds
-    MarketWatchArticlePage.Validate Following Button
-    MarketWatchArticlePage.Click Follow Button 2
-    MarketWatchArticlePage.Validate Following Button 2
-    MarketWatchArticlePage.Click Following Button
-    MarketWatchArticlePage.Click Undo Link
-    MarketWatchArticlePage.Validate Following Button
-    MarketWatchArticlePage.Click Following Button 2
-    MarketWatchArticlePage.Click Undo Link 2
-    MarketWatchArticlePage.Validate Following Button 2
-    MarketWatchPreferenceCenterPage.Navigate Preference Center page
-    MarketWatchPreferenceCenterPage.Validate Preference Center page
-    MarketWatchPreferenceCenterPage.Validate Author 1
-    MarketWatchPreferenceCenterPage.Validate Author 2
-
 #US-T92
 #US-T93
 Validate the Market Watch Preference Center page
@@ -73,41 +44,6 @@ Validate the Market Watch Preference Center page
     #MarketWatchPreferenceCenterPage.Navigate Article page
     #MarketWatchArticlePage.Scroll stories
 
-#Validate Authors for Market Watch Capabilites Dashboard page
-#    [Documentation]  This test case validates authors for Market Watch capabilites dashboard page
-#    [Tags]  Regression
-
-#    MarketWatchCapabilitiesPage.Navigate Capabilities Dashboard page
-#    MarketWatchCapabilitiesPage.Validate Authors Reflected On Dashboard
-#    MarketWatchCapabilitiesPage.Validate Authors On Search Tab
-#    MarketWatchCapabilitiesPage.Validate Follow Hotlink for Authors
-#    MarketWatchCapabilitiesPage.Validate Custome Topics On Dashboard
-
-#Validate Company for Market Watch Capabilites Dashboard page
-#    [Documentation]  This test case validates authors for Market Watch capabilites dashboard page
-#    [Tags]  Regression
-
-#    MarketWatchCapabilitiesPage.Navigate Capabilities Dashboard page
-#    MarketWatchCapabilitiesPage.Validate Authors Reflected On Dashboard
-#    MarketWatchCapabilitiesPage.Validate Authors On Search Tab
-#    MarketWatchCapabilitiesPage.Validate Follow Hotlink for Authors
-#    MarketWatchCapabilitiesPage.Validate Custome Topics On Dashboard
-
-#Validate Industry for Market Watch Capabilites Dashboard page
-#    [Documentation]  This test case validates authors for Market Watch capabilites dashboard page
-#    [Tags]  Regression
-
-#    MarketWatchCapabilitiesPage.Navigate Capabilities Dashboard page
-#    MarketWatchCapabilitiesPage.Validate Authors Reflected On Dashboard
-#    MarketWatchCapabilitiesPage.Validate Authors On Search Tab
-#   MarketWatchCapabilitiesPage.Validate Follow Hotlink for Authors
-#    MarketWatchCapabilitiesPage.Validate Custome Topics On Dashboard
-
-#Validate the Market Watch Campaign Monitor Dashboard page
-#    [Documentation]  This test case validates the Market Watch campaign monitor dashboard page
-#    [Tags]  Regression
-#    Set Selenium Speed  0.2 seconds
-#    MarketWatchCapabilites.Capabilities Dashboard Market Watch Menu
 #US-T28
 Validate Authors for MarketWatch Article page without byline
     [Documentation]  This test case validates authors without byline for Market Watch article page
@@ -143,10 +79,6 @@ Validate the Watchlist widget from Watchlist page
     MarketWatchWatchlistPage.Delete Watchlists
     MarketWatchWatchlistPage.Validate Default New Watchlist
     MarketWatchWatchlistPage.Validate No Symbol in Default New Watchlist
-
-#US-T227
-#Validate the MarketWatch Preference Center page for News Alerts
-
 
 #US-T149
 Validate the MW digest notification

@@ -1,5 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
+Resource  ../../Resources/CommonFunctionality.robot
 
 *** Variables ***
 ${JSFollowButtonGMPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
@@ -20,6 +21,15 @@ ${JSFollowSignInButtonPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('ufc-button').shadowRoot  #6
     ...  .querySelector('button')  #7
 
+${JSFollowSignInButton2Path}=  document.querySelector('ufc-portal')  #1
+    ...  .querySelector('ufc-signin-modal').shadowRoot  #2
+    ...  .querySelector('div')  #3
+    ...  .querySelector('div.modal')  #4
+    ...  .querySelector('focus-trap')  #5
+    ...  .querySelector('div.footer')  #6
+    ...  .querySelector('ufc-button')  #7
+    ...  .querySelector('button')  #8
+
 ${JSFollowSignInHeaderPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('ufc-signin-modal').shadowRoot  #2
     ...  .querySelector('div')  #3
@@ -34,6 +44,7 @@ ${JSPreferenceCenterLinkGlobalMansionPath}=  document.querySelector('ufc-snackba
 
 *** Keywords ***
 Validate Follow Button
+
     Wait Until Element is Visible  dom:${JSFollowButtonGMPath}
     Element Text Should Be  dom:${JSFollowButtonGMPath}  Follow  timeout=60s
 
@@ -53,7 +64,13 @@ Validate Sign In Modal
 
 Click Sign In Button Modal
     Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}
-    Click Button  dom:${JSFollowSignInButtonPath}
+    IF  ${Env} == "prod"
+        Click Button  dom:${JSFollowSignInButtonPath}
+    ELSE IF  ${Env} == "dev"
+        Click Element  dom:${JSFollowSignInButton2Path}
+    END
+
+
 
 Click Undo Link
     Wait Until Element is Visible  dom:${JSUndoButtonGlobalMansionPath}
