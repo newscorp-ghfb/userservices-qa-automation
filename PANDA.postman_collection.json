@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "4a680288-719e-45b5-bc8c-4fba2556f590",
+		"_postman_id": "378bc55e-de39-4161-a7e4-ae9cacdd79cf",
 		"name": "PANDA",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "21090963"
@@ -1170,7 +1170,7 @@
 									"raw": "{\n    \"engine\": \"Allesseh\",\n    \"product\": \"wsj\",\n    \"alertType\": \"author\",\n    \"term\": {\n        \"operator\": \"equal_to\",\n        \"field\": \"AuthorId\",\n        \"value\": \"7872\"\n    }\n}"
 								},
 								"url": {
-									"raw": "{{PANDA_API}}/secure/subscription/filter?",
+									"raw": "{{PANDA_API}}/secure/subscription/filter?=",
 									"host": [
 										"{{PANDA_API}}"
 									],

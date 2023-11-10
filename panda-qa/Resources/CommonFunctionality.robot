@@ -391,6 +391,83 @@ Start WSJ Article for Board Pack Exclusive
     END
     Maximize Browser Window
 
+Start WSJ Article for Education
+    Set Selenium Speed  0.5 seconds
+    IF  ${Env} == "prod"
+        Open Browser  https://www.wsj.com  ${Browser}
+        Go To  https://www.wsj.com/articles/what-the-board-needs-to-know-acec160b?mod=panda_wsj_custom_topic_alert
+    ELSE IF  ${Env} == "dev"
+        Open Browser  https://www.s.dev.wsj.com  ${Browser}
+        Go To  https://www.s.dev.wsj.com/articles/what-the-board-needs-to-know-acec160b?mod=panda_wsj_custom_topic_alert
+    END
+    Maximize Browser Window
+
+Start WSJ Article for heard on the street
+    Set Selenium Speed  0.5 seconds
+    IF  ${Env} == "prod"
+        Open Browser  https://www.wsj.com  ${Browser}
+        Go To  https://www.wsj.com/articles/what-the-board-needs-to-know-acec160b?mod=panda_wsj_custom_topic_alert
+    ELSE IF  ${Env} == "dev"
+        Open Browser  https://www.s.dev.wsj.com  ${Browser}
+        Go To  https://www.s.dev.wsj.com/articles/what-the-board-needs-to-know-acec160b?mod=panda_wsj_custom_topic_alert
+    END
+    Maximize Browser Window
+
+Start WSJ Article for On Wine
+    Set Selenium Speed  0.5 seconds
+    IF  ${Env} == "prod"
+        Open Browser  https://www.wsj.com  ${Browser}
+        Go To  https://www.wsj.com/articles/what-the-board-needs-to-know-acec160b?mod=panda_wsj_custom_topic_alert
+    ELSE IF  ${Env} == "dev"
+        Open Browser  https://www.s.dev.wsj.com  ${Browser}
+        Go To  https://www.s.dev.wsj.com/articles/what-the-board-needs-to-know-acec160b?mod=panda_wsj_custom_topic_alert
+    END
+    Maximize Browser Window
+
+Start WSJ Article for Personal Finance
+    Set Selenium Speed  0.5 seconds
+    IF  ${Env} == "prod"
+        Open Browser  https://www.wsj.com  ${Browser}
+        Go To  https://www.wsj.com/articles/what-the-board-needs-to-know-acec160b?mod=panda_wsj_custom_topic_alert
+    ELSE IF  ${Env} == "dev"
+        Open Browser  https://www.s.dev.wsj.com  ${Browser}
+        Go To  https://www.s.dev.wsj.com/articles/what-the-board-needs-to-know-acec160b?mod=panda_wsj_custom_topic_alert
+    END
+    Maximize Browser Window
+
+Start WSJ Article for Personal Technology
+    Set Selenium Speed  0.5 seconds
+    IF  ${Env} == "prod"
+        Open Browser  https://www.wsj.com  ${Browser}
+        Go To  https://www.wsj.com/articles/what-the-board-needs-to-know-acec160b?mod=panda_wsj_custom_topic_alert
+    ELSE IF  ${Env} == "dev"
+        Open Browser  https://www.s.dev.wsj.com  ${Browser}
+        Go To  https://www.s.dev.wsj.com/articles/what-the-board-needs-to-know-acec160b?mod=panda_wsj_custom_topic_alert
+    END
+    Maximize Browser Window
+
+Start WSJ Article for Puzzles
+    Set Selenium Speed  0.5 seconds
+    IF  ${Env} == "prod"
+        Open Browser  https://www.wsj.com  ${Browser}
+        Go To  https://www.wsj.com/articles/what-the-board-needs-to-know-acec160b?mod=panda_wsj_custom_topic_alert
+    ELSE IF  ${Env} == "dev"
+        Open Browser  https://www.s.dev.wsj.com  ${Browser}
+        Go To  https://www.s.dev.wsj.com/articles/what-the-board-needs-to-know-acec160b?mod=panda_wsj_custom_topic_alert
+    END
+    Maximize Browser Window
+
+Start WSJ Article for Energy
+    Set Selenium Speed  0.5 seconds
+    IF  ${Env} == "prod"
+        Open Browser  https://www.wsj.com  ${Browser}
+        Go To  https://www.wsj.com/articles/what-the-board-needs-to-know-acec160b?mod=panda_wsj_custom_topic_alert
+    ELSE IF  ${Env} == "dev"
+        Open Browser  https://www.s.dev.wsj.com  ${Browser}
+        Go To  https://www.s.dev.wsj.com/articles/what-the-board-needs-to-know-acec160b?mod=panda_wsj_custom_topic_alert
+    END
+    Maximize Browser Window
+
 Click Sign In
     Click Button  //a[text()="Sign In"]
 

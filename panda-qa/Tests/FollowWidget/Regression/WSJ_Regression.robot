@@ -592,9 +592,8 @@ Validate the WSJ real-time campaign notification
 Validate the alert button for Education
     [Documentation]  This test case validates the alert button for Education
     [Tags]  Regression
-    CommonFunctionality.Start WSJ Article for Board Pack Exclusive
-    #WSJArticlePage.Validate Custom Following Button
-    WSJArticlePage.Click Board Pack Exclusive Button
+    CommonFunctionality.Start WSJ Article for Education
+    WSJArticlePage.Click Education Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
     IF  ${Env} == "prod"
@@ -608,7 +607,7 @@ Validate the alert button for Education
     ELSE IF  ${Env} == "dev"
         Set Selenium Speed  0.35 seconds
     END
-    WSJArticlePage.Click Board Pack Exclusive Button
+    WSJArticlePage.Click Education Button
     WSJArticlePage.Click Undo Link
     WSJArticlePage.Validate Custom Following Button
     WSJArticlePage.Click Custom Following Button
@@ -624,9 +623,8 @@ Validate the alert button for Education
 Validate the alert button for heard on the steet
     [Documentation]  This test case validates the alert button for heard on the street
     [Tags]  Regression
-    CommonFunctionality.Start WSJ Article for Board Pack Exclusive
-    #WSJArticlePage.Validate Custom Following Button
-    WSJArticlePage.Click Board Pack Exclusive Button
+    CommonFunctionality.Start WSJ Article for heard on the street
+    WSJArticlePage.Click heard on the street Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
     IF  ${Env} == "prod"
@@ -640,7 +638,7 @@ Validate the alert button for heard on the steet
     ELSE IF  ${Env} == "dev"
         Set Selenium Speed  0.35 seconds
     END
-    WSJArticlePage.Click Board Pack Exclusive Button
+    WSJArticlePage.Click heard on the street Button
     WSJArticlePage.Click Undo Link
     WSJArticlePage.Validate Custom Following Button
     WSJArticlePage.Click Custom Following Button
@@ -656,9 +654,8 @@ Validate the alert button for heard on the steet
 Validate the alert button for On Wine
     [Documentation]  This test case validates the alert button for On Wine
     [Tags]  Regression
-    CommonFunctionality.Start WSJ Article for Board Pack Exclusive
-    #WSJArticlePage.Validate Custom Following Button
-    WSJArticlePage.Click Board Pack Exclusive Button
+    CommonFunctionality.Start WSJ Article for On Wine
+    WSJArticlePage.Click On Wine Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
     IF  ${Env} == "prod"
@@ -672,7 +669,7 @@ Validate the alert button for On Wine
     ELSE IF  ${Env} == "dev"
         Set Selenium Speed  0.35 seconds
     END
-    WSJArticlePage.Click Board Pack Exclusive Button
+    WSJArticlePage.Click On Wine Button
     WSJArticlePage.Click Undo Link
     WSJArticlePage.Validate Custom Following Button
     WSJArticlePage.Click Custom Following Button
@@ -688,9 +685,8 @@ Validate the alert button for On Wine
 Validate the alert button for Personal Finance
     [Documentation]  This test case validates the alert button for Personal Finance
     [Tags]  Regression
-    CommonFunctionality.Start WSJ Article for Board Pack Exclusive
-    #WSJArticlePage.Validate Custom Following Button
-    WSJArticlePage.Click Board Pack Exclusive Button
+    CommonFunctionality.Start WSJ Article for Personal Finance
+    WSJArticlePage.Click Personal Finance Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
     IF  ${Env} == "prod"
@@ -704,7 +700,7 @@ Validate the alert button for Personal Finance
     ELSE IF  ${Env} == "dev"
         Set Selenium Speed  0.35 seconds
     END
-    WSJArticlePage.Click Board Pack Exclusive Button
+    WSJArticlePage.Click Personal Finance Button
     WSJArticlePage.Click Undo Link
     WSJArticlePage.Validate Custom Following Button
     WSJArticlePage.Click Custom Following Button
@@ -720,9 +716,8 @@ Validate the alert button for Personal Finance
 Validate the alert button for Personal Technology
     [Documentation]  This test case validates the alert button for Personal Technology
     [Tags]  Regression
-    CommonFunctionality.Start WSJ Article for Board Pack Exclusive
-    #WSJArticlePage.Validate Custom Following Button
-    WSJArticlePage.Click Board Pack Exclusive Button
+    CommonFunctionality.Start WSJ Article for Personal Technology
+    WSJArticlePage.Click Personal Technology Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
     IF  ${Env} == "prod"
@@ -736,7 +731,7 @@ Validate the alert button for Personal Technology
     ELSE IF  ${Env} == "dev"
         Set Selenium Speed  0.35 seconds
     END
-    WSJArticlePage.Click Board Pack Exclusive Button
+    WSJArticlePage.Click Personal Technology Button
     WSJArticlePage.Click Undo Link
     WSJArticlePage.Validate Custom Following Button
     WSJArticlePage.Click Custom Following Button
@@ -749,12 +744,11 @@ Validate the alert button for Personal Technology
 #US-T340
 #US-T341
 #US-T342
-Validate the alert button for Personal Technology
-    [Documentation]  This test case validates the alert button for Personal Technology
+Validate the alert button for Puzzles
+    [Documentation]  This test case validates the alert button for Puzzles
     [Tags]  Regression
-    CommonFunctionality.Start WSJ Article for Board Pack Exclusive
-    #WSJArticlePage.Validate Custom Following Button
-    WSJArticlePage.Click Board Pack Exclusive Button
+    CommonFunctionality.Start WSJ Article for Puzzles
+    WSJArticlePage.Click Puzzles Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
     IF  ${Env} == "prod"
@@ -768,7 +762,7 @@ Validate the alert button for Personal Technology
     ELSE IF  ${Env} == "dev"
         Set Selenium Speed  0.35 seconds
     END
-    WSJArticlePage.Click Board Pack Exclusive Button
+    WSJArticlePage.Click Puzzles Button
     WSJArticlePage.Click Undo Link
     WSJArticlePage.Validate Custom Following Button
     WSJArticlePage.Click Custom Following Button
@@ -784,9 +778,8 @@ Validate the alert button for Personal Technology
 Validate the alert button for Energy
     [Documentation]  This test case validates the alert button for Energy
     [Tags]  Regression
-    CommonFunctionality.Start WSJ Article for Board Pack Exclusive
-    #WSJArticlePage.Validate Custom Following Button
-    WSJArticlePage.Click Board Pack Exclusive Button
+    CommonFunctionality.Start WSJ Article for Energy
+    WSJArticlePage.Click Energy Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
     IF  ${Env} == "prod"
@@ -800,7 +793,7 @@ Validate the alert button for Energy
     ELSE IF  ${Env} == "dev"
         Set Selenium Speed  0.35 seconds
     END
-    WSJArticlePage.Click Board Pack Exclusive Button
+    WSJArticlePage.Click Energy Button
     WSJArticlePage.Click Undo Link
     WSJArticlePage.Validate Custom Following Button
     WSJArticlePage.Click Custom Following Button
