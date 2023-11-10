@@ -90,6 +90,34 @@ Click Board Pack Exclusive Button
     Click Button  dom:${JSCustomFollowButtonWSJPath}  #This should be the user name
     Click Button  dom:${JSCustomFollowButtonWSJPath}  #This should be the Board Pack Exclusive Button
 
+Click Education Button
+    Click Button  dom:${JSCustomFollowButtonWSJPath}
+    Click Button  dom:${JSCustomFollowButtonWSJPath}
+
+Click heard on the street Button
+    Click Button  dom:${JSCustomFollowButtonWSJPath}
+    Click Button  dom:${JSCustomFollowButtonWSJPath}
+
+Click On Wine Button
+    Click Button  dom:${JSCustomFollowButtonWSJPath}
+    Click Button  dom:${JSCustomFollowButtonWSJPath}
+
+Click Personal Finance Button
+    Click Button  dom:${JSCustomFollowButtonWSJPath}
+    Click Button  dom:${JSCustomFollowButtonWSJPath}
+
+Click Personal Technology Button
+    Click Button  dom:${JSCustomFollowButtonWSJPath}
+    Click Button  dom:${JSCustomFollowButtonWSJPath}
+
+Click Puzzles Button
+    Click Button  dom:${JSCustomFollowButtonWSJPath}
+    Click Button  dom:${JSCustomFollowButtonWSJPath}
+
+Click Energy Button
+    Click Button  dom:${JSCustomFollowButtonWSJPath}
+    Click Button  dom:${JSCustomFollowButtonWSJPath}
+
 Validate author hyperlink
     Page Should Contain Element  //*[text()='Dave Michaels']
 
