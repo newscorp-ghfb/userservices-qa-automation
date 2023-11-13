@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "378bc55e-de39-4161-a7e4-ae9cacdd79cf",
+		"_postman_id": "bea28aac-eac1-4cd7-a779-1545e82b78c5",
 		"name": "PANDA",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "21090963"
@@ -39,7 +39,7 @@
 								"header": [
 									{
 										"key": "Cookie",
-										"value": "{{DJCS_SESSION}}",
+										"value": "{{CA_ID}}",
 										"type": "text"
 									}
 								],
@@ -98,7 +98,7 @@
 									},
 									{
 										"key": "Cookie",
-										"value": "{{DJCS_SESSION}}",
+										"value": "{{CA_ID}}",
 										"type": "text"
 									}
 								],
@@ -159,7 +159,7 @@
 									},
 									{
 										"key": "Cookie",
-										"value": "{{DJCS_SESSION}}",
+										"value": "{{CA_ID}}",
 										"type": "text"
 									}
 								],
@@ -217,7 +217,7 @@
 									},
 									{
 										"key": "Cookie",
-										"value": "{{DJCS_SESSION}}",
+										"value": "{{CA_ID}}",
 										"type": "text"
 									}
 								],
@@ -270,7 +270,7 @@
 									},
 									{
 										"key": "Cookie",
-										"value": "{{DJCS_SESSION}}",
+										"value": "{{CA_ID}}",
 										"type": "text"
 									}
 								],
@@ -374,7 +374,7 @@
 									},
 									{
 										"key": "Cookie",
-										"value": "{{DJCS_SESSION}}",
+										"value": "{{CA_ID}}",
 										"type": "text"
 									}
 								],
@@ -424,7 +424,7 @@
 									},
 									{
 										"key": "Cookie",
-										"value": "{{DJCS_SESSION}}",
+										"value": "{{CA_ID}}",
 										"type": "text"
 									}
 								],
@@ -480,7 +480,7 @@
 									},
 									{
 										"key": "Cookie",
-										"value": "{{DJCS_SESSION}}",
+										"value": "{{CA_ID}}",
 										"type": "text"
 									}
 								],
@@ -531,7 +531,7 @@
 								"header": [
 									{
 										"key": "Cookie",
-										"value": "{{DJCS_SESSION}}",
+										"value": "{{CA_ID}}",
 										"type": "text"
 									},
 									{
@@ -592,7 +592,7 @@
 									},
 									{
 										"key": "Cookie",
-										"value": "{{DJCS_SESSION}}",
+										"value": "{{CA_ID}}",
 										"type": "text"
 									}
 								],
@@ -637,7 +637,7 @@
 								"header": [
 									{
 										"key": "Cookie",
-										"value": "{{DJCS_SESSION}}",
+										"value": "{{CA_ID}}",
 										"type": "text"
 									}
 								],
@@ -682,7 +682,7 @@
 								"header": [
 									{
 										"key": "Cookie",
-										"value": "{{DJCS_SESSION}}",
+										"value": "{{CA_ID}}",
 										"type": "text"
 									}
 								],
@@ -726,7 +726,7 @@
 									},
 									{
 										"key": "Cookie",
-										"value": "{{DJCS_SESSION}}",
+										"value": "{{CA_ID}}",
 										"type": "text"
 									}
 								],
@@ -1668,7 +1668,7 @@
 						"header": [
 							{
 								"key": "Cookie",
-								"value": "{{DJCS_SESSION}}",
+								"value": "{{CA_ID}}",
 								"type": "text"
 							}
 						],
@@ -1710,7 +1710,7 @@
 								"header": [
 									{
 										"key": "Cookie",
-										"value": "{{DJCS_SESSION}}",
+										"value": "{{CA_ID}}",
 										"type": "text"
 									}
 								],
