@@ -1,5 +1,6 @@
 *** Settings ***
 Documentation  Market Watch Regression Tests
+Force Tags  MarketWatch
 Resource  ../../../Resources/CommonFunctionality.robot
 Resource  ../../../Resources/DefinedKeywords.robot
 Resource  ../../../Resources/PageObjects/MarketWatchArticlePage.robot

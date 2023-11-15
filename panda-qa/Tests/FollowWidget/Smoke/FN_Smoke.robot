@@ -1,5 +1,6 @@
 *** Settings ***
 Documentation  FN Smoke Tests
+Force Tags  FinancialNews
 Resource  ../../../Resources/CommonFunctionality.robot
 Resource  ../../../Resources/DefinedKeywords.robot
 Resource  ../../../Resources/PageObjects/FNArticlePage.robot
@@ -18,7 +19,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T8
 Validate the follow button from articles page
     [Documentation]  This test case validates the follow button from articles page
-    [Tags]  Smoke
+    [Tags]  Smoke  Follow
 
     FNArticlePage.Validate Follow Button
     FNArticlePage.Click Follow Button
@@ -37,7 +38,7 @@ Validate the follow button from articles page
 #US-T38
 Validate the follow button from authors page
     [Documentation]  This test case validates the follow button from authors page
-    [Tags]  Smoke
+    [Tags]  Smoke  Follow  Author
 
     FNArticlePage.Validate author hyperlink
     FNArticlePage.Click author hyperlink
@@ -49,7 +50,7 @@ Validate the follow button from authors page
 #US-T257
 Validate the FN Preference Center page
     [Documentation]  This test case validates the barrons preference center page
-    [Tags]  Smoke
+    [Tags]  Smoke  PreferenceCenter
 
     FNPreferenceCenterPage.Navigate Preference Center page
     DefinedKeywords.Sign In Process

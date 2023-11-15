@@ -1,5 +1,6 @@
 *** Settings ***
 Documentation  Mansion Global Regression Tests
+Force Tags  MansionGlobal
 Resource  ../../../Resources/CommonFunctionality.robot
 Resource  ../../../Resources/DefinedKeywords.robot
 Resource  ../../../Resources/PageObjects/MansionGlobalArticlePage.robot

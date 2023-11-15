@@ -1,5 +1,6 @@
 *** Settings ***
 Documentation  PEN Regression Tests
+Force Tags  PENews
 Resource  ../../../Resources/CommonFunctionality.robot
 Resource  ../../../Resources/DefinedKeywords.robot
 Resource  ../../../Resources/PageObjects/PENArticlePage.robot

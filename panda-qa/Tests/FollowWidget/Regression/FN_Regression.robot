@@ -1,5 +1,6 @@
 *** Settings ***
 Documentation  FN Regression Tests
+Force Tags  FinancialNews
 Resource  ../../../Resources/CommonFunctionality.robot
 Resource  ../../../Resources/DefinedKeywords.robot
 Resource  ../../../Resources/PageObjects/FNArticlePage.robot
@@ -17,7 +18,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 Validate the FN Preference Center page
 #This is my third PR
     [Documentation]  This test case validates the barrons preference center page
-    [Tags]  Regression
+    [Tags]  Regression  PreferenceCenter
 
     FNPreferenceCenterPage.Add Author By Hotlink
     DefinedKeywords.Sign In Process
@@ -47,7 +48,7 @@ Validate the FN Preference Center page
 #US-T25
 Validate Authors for FN Article page without byline
     [Documentation]  This test case validates authors without byline for FN article page
-    [Tags]  Regression
+    [Tags]  Regression  Author
 
     CommonFunctionality.Start FN Article without byline
     FNArticlePage.Validate author without byline
@@ -55,7 +56,7 @@ Validate Authors for FN Article page without byline
 #US-T142
 Validate the FN digest notification
     [Documentation]  This test case validates the FN digest notification
-    [Tags]  Regression
+    [Tags]  Regression  Notifications
     FNMailboxPage.Navigate Mailbox page
     FNMailboxPage.Login
     FNMailboxPage.Select Inbox
@@ -65,7 +66,7 @@ Validate the FN digest notification
 #US-T120
 Validate the FN real-time author notification
     [Documentation]  This test case validates the FN real-time author notification
-    [Tags]  Regression
+    [Tags]  Regression  Author  Notifications
     FNMailboxPage.Navigate Mailbox page
     FNMailboxPage.Login
     FNMailboxPage.Select Inbox
@@ -75,7 +76,7 @@ Validate the FN real-time author notification
 #US-T140
 Validate the FN real-time company notification
     [Documentation]  This test case validates the FN real-time company notification
-    [Tags]  Regression
+    [Tags]  Regression  Company  Notifications
     FNMailboxPage.Navigate Mailbox page
     FNMailboxPage.Login
     FNMailboxPage.Select Inbox

@@ -1,5 +1,6 @@
 *** Settings ***
 Documentation  PEN Smoke Tests
+Force Tags  PENews
 Resource  ../../../Resources/CommonFunctionality.robot
 Resource  ../../../Resources/DefinedKeywords.robot
 Resource  ../../../Resources/PageObjects/PENArticlePage.robot
@@ -18,7 +19,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T20
 Validate the follow button from articles page
     [Documentation]  This test case validates the follow button from articles page
-    [Tags]  Smoke
+    [Tags]  Smoke  Follow
 
     PENArticlePage.Validate Follow Button
     PENArticlePage.Click Follow Button
@@ -43,7 +44,7 @@ Validate the follow button from articles page
 #US-T46
 Validate the follow button from authors page
     [Documentation]  This test case validates the follow button from authors page
-    [Tags]  Smoke
+    [Tags]  Smoke  Follow
 
     PENArticlePage.Validate author hyperlink
     PENArticlePage.Click author hyperlink
@@ -54,7 +55,7 @@ Validate the follow button from authors page
 #US-T94
 Validate the PEN Preference Center page
     [Documentation]  This test case validates the barrons preference center page
-    [Tags]  Smoke
+    [Tags]  Smoke  PreferenceCenter
 
     PENPreferenceCenterPage.Navigate Preference Center page
     DefinedKeywords.Sign In Process

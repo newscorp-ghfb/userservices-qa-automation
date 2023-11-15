@@ -1,5 +1,6 @@
 *** Settings ***
 Documentation  Barrons Regression Tests
+Force Tags  Barrons
 Resource  ../../../Resources/CommonFunctionality.robot
 Resource  ../../../Resources/DefinedKeywords.robot
 Resource  ../../../Resources/PageObjects/BarronsArticlePage.robot

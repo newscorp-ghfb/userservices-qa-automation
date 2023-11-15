@@ -1,5 +1,6 @@
 *** Settings ***
 Documentation  Barrons Smoke Tests
+Force Tags  Barrons
 Resource  ../../../Resources/CommonFunctionality.robot
 Resource  ../../../Resources/DefinedKeywords.robot
 Resource  ../../../Resources/PageObjects/BarronsArticlePage.robot
@@ -18,7 +19,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T2
 Validate the author follow button from articles page
     [Documentation]  This test case validates the author follow button from articles page
-    [Tags]  Smoke
+    [Tags]  Smoke  Follow
 
     BarronsArticlePage.Validate Follow Button
     BarronsArticlePage.Click Follow Button
@@ -44,7 +45,7 @@ Validate the author follow button from articles page
 #US-T32
 Validate the follow button from authors page
     [Documentation]  This test case validates the follow button from authors page
-    [Tags]  Smoke
+    [Tags]  Smoke  Follow
 
     Set Selenium Speed  0.5 seconds
 
@@ -63,7 +64,7 @@ Validate the follow button from authors page
 #US-T51
 Validate the stock pick follow button from articles page
     [Documentation]  This test case validates the stock pick follow button from articles page
-    [Tags]  Smoke
+    [Tags]  Smoke  Follow  CustomTopic
     CommonFunctionality.Start Barrons Stock Picks for Stock Picks in article
     BarronsArticlePage.Validate Stock Pick Follow Button
     BarronsArticlePage.Click Stock Pick Follow Button
@@ -81,7 +82,7 @@ Validate the stock pick follow button from articles page
 #US-T254
 Validate the Barrons Preference Center page
     [Documentation]  This test case validates the barrons preference center page
-    [Tags]  Smoke
+    [Tags]  Smoke  PreferenceCenter
     Set Selenium Speed  0.2 seconds
     BarronsPreferenceCenterPage.Navigate Preference Center page
     DefinedKeywords.Sign In Process
@@ -99,7 +100,7 @@ Validate the Barrons Preference Center page
 #US-T135
 Validate the stock pick follow button from stock pick page
     [Documentation]  This test case validates the stock pick follow button from stock pick page
-    [Tags]  Smoke
+    [Tags]  Smoke  Follow  CustomTopic
 
     CommonFunctionality.Start Barrons Stock Picks for Stock Picks breadcrumb
     BarronsArticlePage.Validate Stock Pick Follow Button

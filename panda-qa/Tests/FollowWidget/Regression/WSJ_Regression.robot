@@ -1,5 +1,6 @@
 *** Settings ***
 Documentation  WSJ Regression Tests
+Force Tags  WSJ
 Resource  ../../../Resources/CommonFunctionality.robot
 Resource  ../../../Resources/DefinedKeywords.robot
 Resource  ../../../Resources/PageObjects/WSJArticlePage.robot

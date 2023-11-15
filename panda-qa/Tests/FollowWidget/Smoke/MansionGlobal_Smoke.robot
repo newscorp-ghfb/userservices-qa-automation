@@ -1,5 +1,6 @@
 *** Settings ***
 Documentation  Mansion Global Smoke Tests
+Force Tags  MansionGlobal
 Resource  ../../../Resources/CommonFunctionality.robot
 Resource  ../../../Resources/DefinedKeywords.robot
 Resource  ../../../Resources/PageObjects/MansionGlobalArticlePage.robot
@@ -18,7 +19,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T12
 Validate the follow button from articles page
     [Documentation]  These test cases validate the follow button from articles page
-    [Tags]  Smoke
+    [Tags]  Smoke  Follow
 
     MansionGlobalArticlePage.Validate Follow Button
     MansionGlobalArticlePage.Click Follow Button
@@ -41,7 +42,7 @@ Validate the follow button from articles page
 #US-T186
 Validate the Mansion Global Preference Center page
     [Documentation]  This test case validates the mansion global preference center page
-    [Tags]  Smoke
+    [Tags]  Smoke  PreferenceCenter
     #This is my second PR
 
     MansionGlobalPreferenceCenterPage.Navigate Preference Center page
