@@ -19,7 +19,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T22
 Validate the follow button from articles page
     [Documentation]  This test case validates the follow button from articles page
-    [Tags]  Smoke  Follow
+    [Tags]  Smoke  Follow  Article
 
     WSJArticlePage.Validate Follow Button
     WSJArticlePage.Click Follow Button
@@ -55,7 +55,7 @@ Validate the follow button from articles page
 
 Validate the follow button from authors page
     [Documentation]  This test case validates the follow button from authors page
-    [Tags]  Smoke  Follow
+    [Tags]  Smoke  Follow  Authors
 
     WSJArticlePage.Validate author hyperlink
     WSJArticlePage.Click author hyperlink

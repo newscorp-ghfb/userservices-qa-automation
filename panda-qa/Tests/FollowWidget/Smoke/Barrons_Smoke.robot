@@ -19,7 +19,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T2
 Validate the author follow button from articles page
     [Documentation]  This test case validates the author follow button from articles page
-    [Tags]  Smoke  Follow
+    [Tags]  Smoke  Follow Article
 
     BarronsArticlePage.Validate Follow Button
     BarronsArticlePage.Click Follow Button
@@ -45,7 +45,7 @@ Validate the author follow button from articles page
 #US-T32
 Validate the follow button from authors page
     [Documentation]  This test case validates the follow button from authors page
-    [Tags]  Smoke  Follow
+    [Tags]  Smoke  Follow  Author
 
     Set Selenium Speed  0.5 seconds
 

@@ -48,7 +48,7 @@ Validate the FN Preference Center page
 #US-T25
 Validate Authors for FN Article page without byline
     [Documentation]  This test case validates authors without byline for FN article page
-    [Tags]  Regression  Author
+    [Tags]  Regression  Author  Article
 
     CommonFunctionality.Start FN Article without byline
     FNArticlePage.Validate author without byline

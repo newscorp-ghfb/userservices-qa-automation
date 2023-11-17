@@ -19,7 +19,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T12
 Validate the follow button from articles page
     [Documentation]  These test cases validate the follow button from articles page
-    [Tags]  Smoke  Follow
+    [Tags]  Smoke  Follow  Article
 
     MansionGlobalArticlePage.Validate Follow Button
     MansionGlobalArticlePage.Click Follow Button

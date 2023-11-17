@@ -19,7 +19,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T20
 Validate the follow button from articles page
     [Documentation]  This test case validates the follow button from articles page
-    [Tags]  Smoke  Follow
+    [Tags]  Smoke  Follow  Article
 
     PENArticlePage.Validate Follow Button
     PENArticlePage.Click Follow Button
@@ -44,7 +44,7 @@ Validate the follow button from articles page
 #US-T46
 Validate the follow button from authors page
     [Documentation]  This test case validates the follow button from authors page
-    [Tags]  Smoke  Follow
+    [Tags]  Smoke  Follow  Author
 
     PENArticlePage.Validate author hyperlink
     PENArticlePage.Click author hyperlink
