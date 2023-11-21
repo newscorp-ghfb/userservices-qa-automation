@@ -26,7 +26,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T56
 Validate the multiple authors follow button from articles page
     [Documentation]  This test case validates the multiple authors follow button from articles page
-    [Tags]  Regression  Follow  Author  Article
+    [Tags]  Regression  Follow  MultipleAuthors  Article
 
     BarronsArticlePage.Validate Follow Button 2
     BarronsArticlePage.Click Follow Button 2
@@ -66,6 +66,7 @@ Validate the Barrons Preference Center page
     BarronsPreferenceCenterPage.Validate Author On All Tab
     BarronsPreferenceCenterPage.Add Company By Hotlink
     BarronsPreferenceCenterPage.Validate Followed Companies
+
     ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
     Run Keyword If  ${val2} > 0  BarronsPreferenceCenterPage.Click Following Toggle Alert Pop up
     BarronsPreferenceCenterPage.Validate Company Frequency
@@ -83,7 +84,7 @@ Validate the Barrons Preference Center page
 #US-T26
 Validate Authors for Barrons Article page without byline
     [Documentation]  This test case validates authors without byline for barrons article page
-    [Tags]  Regression  Aurhor  Article
+    [Tags]  Regression  Author  Article
 
     CommonFunctionality.Start Barrons Article without byline
     BarronsArticlePage.Validate author without byline

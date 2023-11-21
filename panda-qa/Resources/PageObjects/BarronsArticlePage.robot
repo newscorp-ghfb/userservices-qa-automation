@@ -192,4 +192,9 @@ Click author hyperlink
     END
 
 Validate author without byline
+    IF  ${Env} == "prod"
     Page Should Contain Element  //div[@class="byline article__byline"]/div/span[text()="John Porter"]
+    ELSE IF  ${Env} == "dev"
+    Page Should Contain Element  //div[@class="standard__ArticleBylineWrapper-sc-14sjre0-1 kwytpC"]/div/div/a/span/span[text()="Teresa Rivas"]
+    END
+    # //div[@class="byline article__byline"]/div/span[text()="John Porter"]
