@@ -139,8 +139,16 @@ ${JSSymbolAMZN-D}=  document.querySelector('dj-watchlist').shadowRoot  #1
 
 ${JSCreateListButtonBarronsPath}=  document.querySelector('dj-watchlist').shadowRoot  #1
     ...  .querySelector('div.watchlist')  #2
-    ...  .querySelector('div.non-logged-in-panel')  #3
-    ...  .querySelector('button')  #4
+    ...  .querySelector('section')  #3
+    ...  .querySelector('div.header-container')  #4
+    ...  .querySelector('div.default-watchlist-view')  #5
+    ...  .querySelector('div.default-watchlist-view-right')  #6
+    ...  .querySelector('button:nth-child(2)')  #7
+
+# document.querySelector('dj-watchlist').shadowRoot  #1
+#    ...  .querySelector('div.watchlist')  #2
+#    ...  .querySelector('div.non-logged-in-panel')  #3
+#   ...  .querySelector('button')  #4
 
 ${JSWatchListNameFieldBarronsPath}=  document.querySelector('dj-watchlist').shadowRoot  #1
     ...  .querySelector('div.watchlist')  #2

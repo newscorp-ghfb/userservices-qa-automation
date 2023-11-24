@@ -23,22 +23,22 @@ Login
     Input Text  //*[@id="i0118"]  Testing.123
     Wait Until Element is Visible  //*[@id="idSIButton9"]
     Click Button  //*[@id="idSIButton9"]
-    Wait Until Element is Visible  //input[@id="idBtn_Back"]
-    Click Button  //input[@id="idBtn_Back"]
+    # Wait Until Element is Visible  //input[@id="idBtn_Back"]
+    # Click Button  //input[@id="idBtn_Back"]
 
 
 Select Inbox
     Set Selenium Speed  2.0 seconds
-    Wait Until Page Contains Element  //input[@id="topSearchInput"]
-    Click Element  //input[@id="topSearchInput"]
-    Wait Until Page Contains Element  //span[@id="searchScopeButtonId-option"]
-    Click Element  //span[@id="searchScopeButtonId-option"]
+    Wait Until Page Contains Element  //input[@id="iProof0"]  #//input[@id="topSearchInput"]
+    Click Element  //input[@id="iProof0"]  #//input[@id="topSearchInput"]
+    Wait Until Page Contains Element  //input[@id="iSelectProofAction"]  #//span[@id="searchScopeButtonId-option"]
+    Click Element  //input[@id="iSelectProofAction"]  #//span[@id="searchScopeButtonId-option"]
     Wait Until Page Contains Element  //button[@id="searchScopeButtonId-list1"]
     Click Element  //button[@id="searchScopeButtonId-list1"]
 
 Search Your Daily Digest from Barron's
-    Wait Until Page Contains Element  //input[@id="topSearchInput"]
-    Click Element  //input[@id="topSearchInput"]
+    Wait Until Page Contains Element  //input[@id="iProof0"]
+    Click Element  //input[@id="iProof0"] #//input[@id="topSearchInput"]
     Input Text  //input[@id="topSearchInput"]  Your Daily Digest from Barron's
     Click Element  //button[@aria-label="Search"]
 
