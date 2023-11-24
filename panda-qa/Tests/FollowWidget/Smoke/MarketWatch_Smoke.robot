@@ -1,5 +1,6 @@
 *** Settings ***
 Documentation  Market Watch Smoke Tests
+Force Tags  MarketWatch
 Resource  ../../../Resources/CommonFunctionality.robot
 Resource  ../../../Resources/DefinedKeywords.robot
 Resource  ../../../Resources/PageObjects/MarketWatchArticlePage.robot
@@ -20,7 +21,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T16
 Validate the follow button from articles page
     [Documentation]  These test cases validate the follow button from articles page
-    [Tags]  Smoke
+    [Tags]  Smoke  Follow  Article
 
     MarketWatchArticlePage.Validate Follow Button
     Capture Page Screenshot    screenshot.png
@@ -63,7 +64,7 @@ Validate the follow button from articles page
 #US-T42
 Validate the follow button from authors page
     [Documentation]  This test case validates the follow button from authors page
-    [Tags]  Smoke
+    [Tags]  Smoke  Follow  Author
 
     MarketWatchArticlePage.Validate author hyperlink
     Capture Page Screenshot    screenshot.png
@@ -77,7 +78,7 @@ Validate the follow button from authors page
 #US-T258
 Validate the Market Watch Preference Center page
     [Documentation]  This test case validates the barrons preference center page
-    [Tags]  Smoke
+    [Tags]  Smoke  PreferenceCenter
 
     MarketWatchPreferenceCenterPage.Navigate Preference Center page
     Capture Page Screenshot    screenshot.png

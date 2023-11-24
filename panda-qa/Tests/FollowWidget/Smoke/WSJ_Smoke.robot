@@ -1,5 +1,6 @@
 *** Settings ***
 Documentation  WSJ Smoke Tests
+Force Tags  WSJ
 Resource  ../../../Resources/CommonFunctionality.robot
 Resource  ../../../Resources/DefinedKeywords.robot
 Resource  ../../../Resources/PageObjects/WSJArticlePage.robot
@@ -18,7 +19,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T22
 Validate the follow button from articles page
     [Documentation]  This test case validates the follow button from articles page
-    [Tags]  Smoke
+    [Tags]  Smoke  Follow  Article
 
     WSJArticlePage.Validate Follow Button
     WSJArticlePage.Click Follow Button
@@ -54,7 +55,7 @@ Validate the follow button from articles page
 
 Validate the follow button from authors page
     [Documentation]  This test case validates the follow button from authors page
-    [Tags]  Smoke
+    [Tags]  Smoke  Follow  Authors
 
     WSJArticlePage.Validate author hyperlink
     WSJArticlePage.Click author hyperlink
@@ -67,7 +68,7 @@ Validate the follow button from authors page
 #US-T256
 Validate the WSJ Preference Center page
     [Documentation]  This test case validates the barrons preference center page
-    [Tags]  Smoke
+    [Tags]  Smoke  PreferenceCenter
 
     Set Selenium Speed  0.2 seconds
     WSJPreferenceCenterPage.Navigate Preference Center page
