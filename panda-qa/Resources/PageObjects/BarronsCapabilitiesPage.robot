@@ -154,8 +154,8 @@ Validate Industry On Search Tab
 
 
 Capabilities Dashboard Barrons Menu
-    Click Button  //*[text()="Barron's"]/../../a
-    Wait Until Element Is Visible  //h1[text()="Barron's"]
+    Click Button  //*[text()="Barrons"]/../../a
+    Wait Until Element Is Visible  //h1[text()="Barrons"]
     Wait Until Element Is Visible  //*[text()="Alert type:"]
     Wait Until Element Is Visible  //option[text()="All"]
     Wait Until Element Is Visible  //option[text()="Digest"]
