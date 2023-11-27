@@ -8,7 +8,7 @@ Validate Watchlist Page
     Page Should Contain Element  //*[text()="Add Symbol"]
 
 Validate Default New Watchlist
-    Page Should Contain Element  //button[text()="New Watchlist"]
+    Page Should Contain Element   //button[text()="New Watchlist"]  # //*[text()="New Watchlist"]
 
 Click Add Symbol Input
     Click Element  //input[@id="symbol-search"]

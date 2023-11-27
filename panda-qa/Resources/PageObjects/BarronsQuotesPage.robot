@@ -253,7 +253,11 @@ Type Symbol
     Input Text  dom:${JSWatchListSymbolFieldBarronsPath}  AMZN
 
 Select Symbol
-    Click Element  dom:${JSFirstSymbolResultBarronsPath}
+    Click Element  dom:${JSWatchListSymbolFieldBarronsPath}
+    Press Keys  dom:${JSWatchListSymbolFieldBarronsPath}  \\9  # \\9 represents the Tab key
+    #Click Element  dom:${JSWatchListSymbolFieldBarronsPath}
+    Press Keys   dom:${JSWatchListSymbolFieldBarronsPath}  \\13  # \\13 represents the Return key
+        # Click Element  dom:${JSFirstSymbolResultBarronsPath}
 
 Validate Symbol in the New Watchlist
     IF  ${Env} == "prod"

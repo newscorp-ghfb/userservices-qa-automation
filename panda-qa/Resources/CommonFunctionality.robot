@@ -5,7 +5,7 @@ Resource  ../Resources/DefinedKeywords.robot
 *** Variables ***
 ${Browser}=  headlessfirefox  #headless, ff, chrome, edge, safari
 
-${Env}=  "dev"  #dev, prod
+${Env}=  "prod"  #dev, prod
 
 ${Email_prod}=  barronsadvisorcs@gmail.com
 
