@@ -4,7 +4,7 @@ Resource  ../../Resources/CommonFunctionality.robot
 
 *** Variables ***
 
-${JSFollowButtonBarrons1Path}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
+${JSFollowButtonBarronsPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
     ...  .querySelector('ufc-follow-widget')  #2
     ...  .querySelector('ufc-follow-button').shadowRoot  #3
     ...  .querySelector('button')  #4
