@@ -167,7 +167,18 @@ ${JSFirstSymbolResultBarronsPath}=  document.querySelector('dj-watchlist').shado
     ...  .querySelector('div.watchlist')  #2
     ...  .querySelector('section')  #3
     ...  .querySelector('div.watchlist-instrument-search')  #4
-    ...  .querySelector('div.watchlist-instruments-result')  #5
+    ...  .querySelector('div.instruments-result')  #5
+    ...  .querySelector('ul')  #6
+    ...  .querySelector('li')  #7
+    ...  .querySelector('button')
+
+
+
+#document.querySelector('dj-watchlist').shadowRoot  #1
+#    ...  .querySelector('div.watchlist')  #2
+ #   ...  .querySelector('section')  #3
+  #  ...  .querySelector('div.watchlist-instrument-search')  #4
+   # ...  .querySelector('div.watchlist-instruments-result')  #5
 
 ${JSClickSaveButtonBarronsPath}=  document.querySelector('dj-watchlist').shadowRoot  #1
     ...  .querySelector('div.watchlist')  #2
@@ -253,11 +264,12 @@ Type Symbol
     Input Text  dom:${JSWatchListSymbolFieldBarronsPath}  AMZN
 
 Select Symbol
-    Click Element  dom:${JSWatchListSymbolFieldBarronsPath}
-    Press Keys  dom:${JSWatchListSymbolFieldBarronsPath}  \\9  # \\9 represents the Tab key
+
+   # Click Element  dom:${JSWatchListSymbolFieldBarronsPath}
+    #Press Keys  dom:${JSWatchListSymbolFieldBarronsPath}  \\9  # \\9 represents the Tab key
     #Click Element  dom:${JSWatchListSymbolFieldBarronsPath}
-    Press Keys   dom:${JSWatchListSymbolFieldBarronsPath}  \\13  # \\13 represents the Return key
-        # Click Element  dom:${JSFirstSymbolResultBarronsPath}
+    #Press Keys   dom:${JSWatchListSymbolFieldBarronsPath}  \\13  # \\13 represents the Return key
+      Click Element  dom:${JSFirstSymbolResultBarronsPath}
 
 Validate Symbol in the New Watchlist
     IF  ${Env} == "prod"
