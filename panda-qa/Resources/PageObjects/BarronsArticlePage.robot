@@ -3,7 +3,8 @@ Library  SeleniumLibrary
 Resource  ../../Resources/CommonFunctionality.robot
 
 *** Variables ***
-${JSFollowButtonBarronsPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
+
+${JSFollowButtonBarrons1Path}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
     ...  .querySelector('ufc-follow-widget')  #2
     ...  .querySelector('ufc-follow-button').shadowRoot  #3
     ...  .querySelector('button')  #4
