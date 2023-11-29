@@ -5,7 +5,7 @@ Resource  ../Resources/DefinedKeywords.robot
 *** Variables ***
 ${Browser}=  headlessfirefox  #headless, ff, chrome, edge, safari
 
-${Env}=  "dev"  #dev, prod
+${Env}=  "prod"  #dev, prod
 
 ${Email_prod}=  barronsadvisorcs@gmail.com
 
@@ -71,7 +71,7 @@ Start FN Article
     Maximize Browser Window
 
 
-Start WSJ Article
+ Start WSJ Article
     Set Selenium Speed  0.5 seconds
     IF  ${Env} == "prod"
         Open Browser  https://www.wsj.com  ${Browser}
@@ -81,7 +81,9 @@ Start WSJ Article
         Go To  https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     END
     #Wait Until Element Is Visible  //*[text()="Dave Michaels"]
-    Set Focus To Element  //*[text()="Dave Michaels"]
+    #Click Element   //*[@id="latest-stories"]/article[10]/div[2]/div[1]/h2/a/span
+    Set Selenium Speed  0.5 seconds
+    Set Focus To Element  //*[text()="Dave Michaels"]  # //*[text()="David Wainer"]
     Wait Until Element Is Visible  dom:${JSFollowButtonMGPath}  30s
     Maximize Browser Window
 
@@ -411,7 +413,9 @@ Start WSJ Article for heard on the street
         Open Browser  https://www.s.dev.wsj.com  ${Browser}
         Go To  https://www.s.dev.wsj.com/news/types/heard-on-the-street?mod=breadcrumb
     END
+    #Set Selenium Speed  0.5 seconds
     Maximize Browser Window
+    #Set Selenium Speed  0.5 seconds
 
 Start WSJ Article for On Wine
     Set Selenium Speed  0.5 seconds

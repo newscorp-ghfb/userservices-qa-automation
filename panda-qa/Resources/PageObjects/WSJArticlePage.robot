@@ -6,9 +6,13 @@ ${JSFollowButtonWSJPath}=  document.querySelector('ufc-follow-author-widget').sh
     ...  .querySelector('ufc-follow-button').shadowRoot  #2
     ...  .querySelector('button')  #3
 
-${JSCustomFollowButtonWSJPath}=  document.querySelector('ufc-follow-custom-topic-widget').shadowRoot  #1
+${JSCustomFollowButtonWSJPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
     ...  .querySelector('ufc-follow-button').shadowRoot  #2
     ...  .querySelector('button')  #3
+
+ #document.querySelector('ufc-follow-custom-topic-widget').shadowRoot  #1
+  #  ...  .querySelector('ufc-follow-button').shadowRoot  #2
+   # ...  .querySelector('button')  #3
 
 ${JSUndoButtonWSJPath}=  document.querySelector('ufc-snackbar').shadowRoot  #1
     ...  .querySelector('div')  #2
@@ -95,8 +99,10 @@ Click Education Button
     Click Button  dom:${JSCustomFollowButtonWSJPath}
 
 Click heard on the street Button
+    Click Element   //*[@id="latest-stories"]/article[1]/div[2]/div[1]/h2/a/span
+    Wait Until Element is Visible  dom:${JSCustomFollowButtonWSJPath}
     Click Button  dom:${JSCustomFollowButtonWSJPath}
-    Click Button  dom:${JSCustomFollowButtonWSJPath}
+    #Click Button  dom:${JSCustomFollowButtonWSJPath}
 
 Click On Wine Button
     Click Button  dom:${JSCustomFollowButtonWSJPath}

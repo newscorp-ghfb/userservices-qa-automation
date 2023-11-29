@@ -623,7 +623,7 @@ Validate the alert button for Education
 #US-T326
 Validate the alert button for heard on the steet
     [Documentation]  This test case validates the alert button for heard on the street
-    [Tags]  Regression  Alerts
+    [Tags]  Regression  AlertsHeard
     CommonFunctionality.Start WSJ Article for heard on the street
     WSJArticlePage.Click heard on the street Button
     WSJArticlePage.Validate Sign In Modal
@@ -654,7 +654,7 @@ Validate the alert button for heard on the steet
 #US-T330
 Validate the alert button for On Wine
     [Documentation]  This test case validates the alert button for On Wine
-    [Tags]  Regression  Alerts
+    [Tags]  Regression  AlertsonWine
     CommonFunctionality.Start WSJ Article for On Wine
     WSJArticlePage.Click On Wine Button
     WSJArticlePage.Validate Sign In Modal
@@ -747,7 +747,7 @@ Validate the alert button for Personal Technology
 #US-T342
 Validate the alert button for Puzzles
     [Documentation]  This test case validates the alert button for Puzzles
-    [Tags]  Regression  Alerts
+    [Tags]  Regression  Alerts  Puzzles
     CommonFunctionality.Start WSJ Article for Puzzles
     WSJArticlePage.Click Puzzles Button
     WSJArticlePage.Validate Sign In Modal
