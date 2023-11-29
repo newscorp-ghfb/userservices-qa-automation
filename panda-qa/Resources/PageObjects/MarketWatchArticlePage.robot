@@ -37,8 +37,14 @@ Validate Follow Button
     IF  ${Env} == "prod"
         Execute javascript  window.scrollTo(0,500)
     END
-    Wait Until Element is Visible  dom:${JSFollowButtonMWPath}
-    Element Text Should Be  dom:${JSFollowButtonMWPath}  Follow  timeout=40s
+    Wait Until Element is Visible  'dom:${JSFollowButtonMWPath= document.querySelector('ufc-follow-author-widget').shadowRoot  #1
+    ...  .querySelector('ufc-follow-widget')  #2
+    ...  .querySelector('ufc-follow-button').shadowRoot  #3
+    ...  .querySelector('button')' #4
+    Element Text Should Be  'dom:${JSFollowButtonMWPath} = document.querySelector('ufc-follow-author-widget').shadowRoot  #1
+    ...  .querySelector('ufc-follow-widget')  #2
+    ...  .querySelector('ufc-follow-button').shadowRoot  #3
+    ...  .querySelector('button')'  #4  Follow  timeout=40s
 
 Validate Following Button
     Wait Until Element is Visible  dom:${JSFollowButtonMWPath}
