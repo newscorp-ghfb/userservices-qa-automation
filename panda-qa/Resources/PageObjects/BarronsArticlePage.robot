@@ -128,7 +128,7 @@ Click Follow Button 2
     Click Button  dom:${JSFollowButtonBarrons2Path}
 
 Click Stock Pick Follow Button
-    Click Button  dom:${JSStockPickFollowButtonBarronsPath}=
+    Click Button  dom:${JSStockPickFollowButtonBarronsPath}
 
 Click Following Button
     Click Button  dom:${JSFollowButtonBarronsPath}
