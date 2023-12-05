@@ -55,7 +55,7 @@ Validate Author Name
     IF  ${Env} == "prod"
         Page Should Contain  Paul Clarke
     ELSE IF  ${Env} == "dev"
-        Page Should Contain  Christopher Mims
+        Page Should Contain  Sunita Adhikarla
     END
 Validate Following Frequency
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr/td[1]/div/div/a
