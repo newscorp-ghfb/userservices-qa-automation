@@ -14,6 +14,7 @@ ${JSFollowButtonBarrons2Path}=  document.querySelector('ufc-follow-author-widget
     ...  .querySelector('ufc-follow-button').shadowRoot  #3
     ...  .querySelector('button')  #4
 
+
 ${JSStockPickFollowButtonBarronsPath}=  document.querySelector('ufc-follow-custom-topic-widget.hydrated').shadowRoot  #1
     ...  .querySelector('ufc-follow-widget')  #2
     ...  .querySelector('ufc-follow-button').shadowRoot  #3
@@ -110,7 +111,7 @@ Validate Following Button
     Element Text Should Be  dom:${JSFollowButtonBarronsPath}  Following  timeout=15
 
 Validate Following Button 2
-    Wait Until Element is Visible  dom:${JSFollowButtonBarrons2Path}
+    Wait Until Element is Visible  dom:${JSFollowButtonBarrons2Path} Follow Button
     Wait Until Element Contains  dom:${JSFollowButtonBarrons2Path}  Following  timeout=15
     Element Text Should Be  dom:${JSFollowButtonBarrons2Path}  Following  timeout=15
 
