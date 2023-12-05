@@ -68,7 +68,10 @@ Click Follow Button
 
 
 Click Following Button
-    Click Button  dom:${JSFollowingButtonFNPath}
+    Click Button  dom:${JSFollowingButtonFNPath}=document.querySelector('ufc-follow-author-widget').shadowRoot  #1
+    ...  .querySelector('ufc-follow-widget')  #2
+    ...  .querySelector('ufc-follow-button').shadowRoot  #3
+    ...  .querySelector('button')  #4
 
 Validate Sign In Modal
     Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}
