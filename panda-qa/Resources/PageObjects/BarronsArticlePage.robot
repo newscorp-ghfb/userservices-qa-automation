@@ -122,10 +122,7 @@ Validate Stock Pick Following Button
     Element Text Should Be  dom:${JSStockPickFollowButtonBarronsPath}  Following  timeout=15
 
 Click Follow Button
-    Click Button  dom:${JSFollowButtonBarronsPath}= document.querySelector('ufc-follow-author-widget').shadowRoot  #1
-    ...  .querySelector('ufc-follow-widget')  #2
-    ...  .querySelector('ufc-follow-button').shadowRoot  #3
-    ...  .querySelector('button')  #4
+    Click Button  dom:${JSFollowButtonBarronsPath}
 
 Click Follow Button 2
     Click Button  dom:${JSFollowButtonBarrons2Path}
