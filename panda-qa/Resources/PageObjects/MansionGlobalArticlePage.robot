@@ -5,7 +5,7 @@ Resource  ../../Resources/CommonFunctionality.robot
 *** Variables ***
 ${JSFollowButtonGMPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
     ...  .querySelector('ufc-follow-button').shadowRoot  #2
-    ...  .querySelector('button') #3
+    ...  .querySelector('button')  #3
 
 ${JSUndoButtonGlobalMansionPath}=  document.querySelector('ufc-snackbar').shadowRoot  #1
     ...  .querySelector('div')  #2
