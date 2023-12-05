@@ -48,7 +48,7 @@ ${JSFollowSignInHeaderPath}=  document.querySelector('ufc-portal')  #1
 
 *** Keywords ***
 Validate Follow Button
-    Wait Until Element is Visible  dom:${JSFollowButtonFNPath}
+    Wait Until Element is Visible  dom:${JSFollowButtonFNPath} #//FollowButton
     Wait Until Element Contains  dom:${JSFollowButtonFNPath}  Follow  timeout=15
     Element Text Should Be  dom:${JSFollowButtonFNPath}  Follow  timeout=15
 
@@ -61,7 +61,11 @@ Validate Following Button
     Element Text Should Be  dom:${JSFollowingButtonFNPath}  Following  timeout=15
 
 Click Follow Button
-    Click Button  dom:${JSFollowButtonFNPath}
+    Click Button  dom:${JSFollowButtonFNPath}= document.querySelector('ufc-follow-author-widget').shadowRoot  #1
+    ...  .querySelector('ufc-follow-widget')  #2
+    ...  .querySelector('ufc-follow-button').shadowRoot  #3
+    ...  .querySelector('button')  #4
+
 
 Click Following Button
     Click Button  dom:${JSFollowingButtonFNPath}
