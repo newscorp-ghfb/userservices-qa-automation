@@ -77,8 +77,8 @@ Validate Authors On Search Tab
         Input Text   //*[@placeholder="Author name"]  Ben Walsh
         Click Button  //*[text()="Ben Walsh"]
     ELSE IF  ${Env} == "dev"
-        Input Text   //*[@placeholder="Author name"]  John Smith
-        Click Button  //*[text()="John Smith"]
+        Input Text   //*[@placeholder="Author name"]  Andrew Bary
+        Click Button  //*[text()="Andrew Bary"]
     END
     Element Text Should Be  //*[text()="About"]/../h2[2]  0 Followers
 
