@@ -3,7 +3,6 @@ Library  SeleniumLibrary
 Resource  ../../Resources/CommonFunctionality.robot
 
 *** Variables ***
-
 ${JSFollowButtonBarronsPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
     ...  .querySelector('ufc-follow-widget')  #2
     ...  .querySelector('ufc-follow-button').shadowRoot  #3
@@ -106,12 +105,12 @@ Validate Stock Pick Follow Button
     Element Text Should Be  dom:${JSStockPickFollowButtonBarronsPath}  Follow  timeout=30
 
 Validate Following Button
-    Wait Until Element is Visible  dom:${JSFollowButtonBarronsPath}  Follow Button
+    Wait Until Element is Visible  dom:${JSFollowButtonBarronsPath}
     Wait Until Element Contains  dom:${JSFollowButtonBarronsPath}  Following  timeout=15
     Element Text Should Be  dom:${JSFollowButtonBarronsPath}  Following  timeout=15
 
 Validate Following Button 2
-    Wait Until Element is Visible  dom:${JSFollowButtonBarrons2Path} Follow Button
+    Wait Until Element is Visible  dom:${JSFollowButtonBarrons2Path}
     Wait Until Element Contains  dom:${JSFollowButtonBarrons2Path}  Following  timeout=15
     Element Text Should Be  dom:${JSFollowButtonBarrons2Path}  Following  timeout=15
 
