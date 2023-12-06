@@ -76,3 +76,4 @@ Click author hyperlink
 
 Validate author without byline
     Page Should Contain Element  //span[text()="James Booth"]
+
