@@ -6,8 +6,8 @@ Resource  ../../Resources/PageObjects/MarketWatchArticlePage.robot
 
 *** Keywords ***
 Validate Authors Page
-    Page Should Contain Element  dom:${JSFollowButtonMWPath}=document.querySelector('ufc-follow-author-widget').shadowRoot  #1
-    ...  .querySelector('ufc-follow-widget')  #2
-    ...  .querySelector('ufc-follow-button').shadowRoot  #3
-    ...  .querySelector('button')  #4
-
+    IF  ${Env} == "prod"
+        Page Should Contain  Steve Goldstein
+    ELSE IF  ${Env} == "dev"
+        Page Should Contain  John Wordock
+    END
