@@ -35,7 +35,7 @@ ${JSFollowSignInHeaderPath}=  document.querySelector('ufc-portal')  #1
 Validate Follow Button
     Wait Until Element is Visible  dom:${JSFollowButtonPENPath}
     Wait Until Element Contains  dom:${JSFollowButtonPENPath}  Follow  timeout=15
-    #Element Text Should Be  dom:${JSFollowButtonPENPath}  Follow  timeout=30
+    Element Text Should Be  dom:${JSFollowButtonPENPath}  Follow  timeout=30
 
 Validate Following Button
     Wait Until Element is Visible  dom:${JSFollowButtonPENPath}
@@ -76,3 +76,4 @@ Click author hyperlink
 
 Validate author without byline
     Page Should Contain Element  //span[text()="James Booth"]
+

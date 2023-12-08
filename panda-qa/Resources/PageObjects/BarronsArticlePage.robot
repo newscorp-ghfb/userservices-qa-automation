@@ -13,10 +13,12 @@ ${JSFollowButtonBarrons2Path}=  document.querySelector('ufc-follow-author-widget
     ...  .querySelector('ufc-follow-button').shadowRoot  #3
     ...  .querySelector('button')  #4
 
+
 ${JSStockPickFollowButtonBarronsPath}=  document.querySelector('ufc-follow-custom-topic-widget.hydrated').shadowRoot  #1
     ...  .querySelector('ufc-follow-widget')  #2
     ...  .querySelector('ufc-follow-button').shadowRoot  #3
     ...  .querySelector('button')  #4
+
 
 ${JSStockPickUndoButtonBarronsPath}=  document.querySelector('ufc-follow-custom-topic-widget').shadowRoot  #1
     ...  .querySelector('ufc-follow-widget').shadowRoot  #2
@@ -100,7 +102,7 @@ Validate Follow Button 2
     Element Text Should Be  dom:${JSFollowButtonBarrons2Path}  Follow  timeout=30
 
 Validate Stock Pick Follow Button
-    Wait Until Element is Visible  dom:${JSStockPickFollowButtonBarronsPath}
+    Wait Until Element is Visible  dom:${JSStockPickFollowButtonBarronsPath}= StockPickFollowButton
     Element Text Should Be  dom:${JSStockPickFollowButtonBarronsPath}  Follow  timeout=30
 
 Validate Following Button
