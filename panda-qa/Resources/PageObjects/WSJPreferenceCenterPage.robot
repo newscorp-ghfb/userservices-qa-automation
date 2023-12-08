@@ -62,14 +62,14 @@ Click Following Toggle Feature
     IF  ${Env} == "prod"
         Click Element  //*[text()="Dave Michaels"]/../../../../td[4]/div
     ELSE IF  ${Env} == "dev"
-        Click Element  //*[text()="Jennifer Levitz"]/../../../../td[4]/div
+        Click Element  //*[text()="Joanna Stern"]/../../../../td[4]/div
     END
 
 Click Letters Following Toggle Feature
     IF  ${Env} == "prod"
         Click Element  //*[text()="Opinion: Letters to the Editor"]/../td[4]/div
     ELSE IF  ${Env} == "dev"
-        Click Element  //*[text()="Jennifer Levitz"]/../../../../td[4]/div
+        Click Element  //*[text()="Joanna Stern"]/../../../../td[4]/div
     END
 
 Click Editorials Following Toggle Feature
@@ -83,7 +83,7 @@ Click Commentary Following Toggle Feature
     IF  ${Env} == "prod"
         Click Element  //*[text()="Opinion: Commentary"]/../td[4]/div
     ELSE IF  ${Env} == "dev"
-        Click Element  //*[text()="Jennifer Levitz"]/../../../../td[4]/div
+        Click Element  //*[text()="Joanna Stern"]/../../../../td[4]/div
     END
 
 Click Elections Following Toggle Feature
@@ -122,7 +122,8 @@ Validate All Tabs Displayed
     Page Should Contain  View All
 
 Validate Author On All Tab
-    Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[7]
+    Click Element  //*[@id="root"]/div/div/div/div[3]/div/ul/li[7]
+  #  //*[@id="author-card"]/div/div[3]/div/ufc-follow-author-widget//ufc-follow-widget/ufc-follow-button
     Page Should Contain  Joanna Stern
 
 Add Company By Hotlink

@@ -6,4 +6,8 @@ Resource  ../../Resources/PageObjects/MarketWatchArticlePage.robot
 
 *** Keywords ***
 Validate Authors Page
-    Page Should Contain Element  dom:${JSFollowButtonMWPath}
+    IF  ${Env} == "prod"
+        Page Should Contain  Steve Goldstein
+    ELSE IF  ${Env} == "dev"
+        Page Should Contain  John Wordock
+    END
