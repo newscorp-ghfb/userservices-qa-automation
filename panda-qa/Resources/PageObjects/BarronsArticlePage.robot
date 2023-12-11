@@ -102,7 +102,7 @@ Validate Follow Button 2
     Element Text Should Be  dom:${JSFollowButtonBarrons2Path}  Follow  timeout=30
 
 Validate Stock Pick Follow Button
-    Wait Until Element is Visible  dom:${JSStockPickFollowButtonBarronsPath}= StockPickFollowButton
+    Wait Until Element is Visible  dom:${JSStockPickFollowButtonBarronsPath}
     Element Text Should Be  dom:${JSStockPickFollowButtonBarronsPath}  Follow  timeout=30
 
 Validate Following Button
