@@ -25,7 +25,7 @@ ${JSPreferenceCenterLinkFNPath}=  document.querySelector('ufc-snackbar').shadowR
     ...  .querySelector('a')  #5
 
 ${JSFollowSignInButtonPath}=  document.querySelector('ufc-portal')  #1
-    ...  .querySelector('ufc-signin-modal').shadowRoot  #2
+    ...  .querySelector('ufc-signin-modal')  #2
     ...  .querySelector('div')  #3
     ...  .querySelector('div.modal')  #4
     ...  .querySelector('div.footer')  #5
