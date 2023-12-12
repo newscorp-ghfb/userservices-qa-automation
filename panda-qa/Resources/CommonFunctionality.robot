@@ -71,9 +71,15 @@ Start Mansion Global Article
             ${chrome_options} =    Evaluate    selenium.webdriver.ChromeOptions()
             Call Method    ${chrome_options}    add_argument    --start-maximized
             Call Method    ${chrome_options}    add_argument    --disable-dev-shm-usage
-#            Call Method    ${chrome_options}    add_argument    --headless
+            Call Method    ${chrome_options}    add_argument    --headless
             Call Method    ${chrome_options}    add_argument    --no-sandbox
             Call Method    ${chrome_options}    add_argument    --disable-gpu
+            Call Method    ${chrome_options}    add_argument    --autoplay-policy=no-user-gesture-required
+            Call Method    ${chrome_options}    add_argument    --no-first-run
+            Call Method    ${chrome_options}    add_argument    --use-fake-ui-for-media-stream
+            Call Method    ${chrome_options}    add_argument    --use-fake-device-for-media-stream
+            Call Method    ${chrome_options}    add_argument    --disable-sync
+            Call Method    ${chrome_options}    add_argument    --remote-debugging-port=9222
             SeleniumLibrary.Open Browser   https://www.s.dev.mansionglobal.com  chrome  options=${chrome_options}
         ELSE
             Open Browser  https://www.s.dev.mansionglobal.com   ${Browser}
