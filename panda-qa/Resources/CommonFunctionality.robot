@@ -49,7 +49,7 @@ Start Barrons Article
             Call Method    ${chrome_options}    add_argument    --use-fake-ui-for-media-stream
             Call Method    ${chrome_options}    add_argument    --use-fake-device-for-media-stream
             Call Method    ${chrome_options}    add_argument    --disable-sync
-            Call Method    ${chrome_options}    add_argument    --remote-debugging-port=9222
+#            Call Method    ${chrome_options}    add_argument    --remote-debugging-port=9222
             SeleniumLibrary.Open Browser  https://www.s.dev.barrons.com  chrome  options=${chrome_options}
         ELSE
             Open Browser  https://www.s.dev.barrons.com   ${Browser}
@@ -79,7 +79,7 @@ Start Mansion Global Article
             Call Method    ${chrome_options}    add_argument    --use-fake-ui-for-media-stream
             Call Method    ${chrome_options}    add_argument    --use-fake-device-for-media-stream
             Call Method    ${chrome_options}    add_argument    --disable-sync
-            Call Method    ${chrome_options}    add_argument    --remote-debugging-port=9222
+#            Call Method    ${chrome_options}    add_argument    --remote-debugging-port=9222
             SeleniumLibrary.Open Browser   https://www.s.dev.mansionglobal.com  chrome  options=${chrome_options}
         ELSE
             Open Browser  https://www.s.dev.mansionglobal.com   ${Browser}
