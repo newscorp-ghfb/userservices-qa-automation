@@ -3,7 +3,7 @@ Library  SeleniumLibrary
 Resource  ../Resources/DefinedKeywords.robot
 
 *** Variables ***
-${Browser}=  "chrome"  #headless, ff, chrome, edge, safari
+${Browser}=  "headlesschrome"  #headless, ff, chrome, edge, safari
 
 ${Env}=  "dev"  #dev, prod
 
@@ -37,12 +37,12 @@ Start Barrons Article
         Open Browser  https://www.barrons.com  ${Browser}
         Go To  https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634
     ELSE IF  ${Env} == "dev"
-     IF  ${Browser} == "chrome"
+     IF  ${Browser} == "headlesschrome"
             ${chrome_options} =    Evaluate    selenium.webdriver.ChromeOptions()
             Call Method    ${chrome_options}    add_argument    --start-maximized
             Call Method    ${chrome_options}    add_argument    --disable-dev-shm-usage
-            Call Method    ${chrome_options}    add_argument    --headless
             Call Method    ${chrome_options}    add_argument    --no-sandbox
+            Call Method    ${chrome_options}    add_argument    --headless
             Call Method    ${chrome_options}    add_argument    --disable-gpu
             Call Method    ${chrome_options}    add_argument    --no-user-gesture-required
             Call Method    ${chrome_options}    add_argument    --no-first-run
@@ -67,12 +67,12 @@ Start Mansion Global Article
         Open Browser  https://www.mansionglobal.com  ${Browser}
         Go To  https://www.mansionglobal.com/articles/are-there-tax-breaks-on-agricultural-land-in-pennsylvania-01648119848
     ELSE IF  ${Env} == "dev"
-        IF  ${Browser} == "chrome"
+        IF  ${Browser} == "headlesschrome"
             ${chrome_options} =    Evaluate    selenium.webdriver.ChromeOptions()
             Call Method    ${chrome_options}    add_argument    --start-maximized
             Call Method    ${chrome_options}    add_argument    --disable-dev-shm-usage
-            Call Method    ${chrome_options}    add_argument    --headless
             Call Method    ${chrome_options}    add_argument    --no-sandbox
+            Call Method    ${chrome_options}    add_argument    --headless
             Call Method    ${chrome_options}    add_argument    --disable-gpu
             Call Method    ${chrome_options}    add_argument    --no-user-gesture-required
             Call Method    ${chrome_options}    add_argument    --no-first-run
