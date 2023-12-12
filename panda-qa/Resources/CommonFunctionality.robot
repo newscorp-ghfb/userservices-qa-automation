@@ -44,7 +44,7 @@ Start Barrons Article
             Call Method    ${chrome_options}    add_argument    --headless
             Call Method    ${chrome_options}    add_argument    --no-sandbox
             Call Method    ${chrome_options}    add_argument    --disable-gpu
-            Call Method    ${chrome_options}    add_argument    --autoplay-policy=no-user-gesture-required
+            Call Method    ${chrome_options}    add_argument    --no-user-gesture-required
             Call Method    ${chrome_options}    add_argument    --no-first-run
             Call Method    ${chrome_options}    add_argument    --use-fake-ui-for-media-stream
             Call Method    ${chrome_options}    add_argument    --use-fake-device-for-media-stream
@@ -74,7 +74,7 @@ Start Mansion Global Article
             Call Method    ${chrome_options}    add_argument    --headless
             Call Method    ${chrome_options}    add_argument    --no-sandbox
             Call Method    ${chrome_options}    add_argument    --disable-gpu
-            Call Method    ${chrome_options}    add_argument    --autoplay-policy=no-user-gesture-required
+            Call Method    ${chrome_options}    add_argument    --no-user-gesture-required
             Call Method    ${chrome_options}    add_argument    --no-first-run
             Call Method    ${chrome_options}    add_argument    --use-fake-ui-for-media-stream
             Call Method    ${chrome_options}    add_argument    --use-fake-device-for-media-stream
