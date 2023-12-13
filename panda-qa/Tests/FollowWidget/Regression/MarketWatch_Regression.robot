@@ -1,5 +1,6 @@
 *** Settings ***
 Documentation  Market Watch Regression Tests
+Force Tags  MarketWatch
 Resource  ../../../Resources/CommonFunctionality.robot
 Resource  ../../../Resources/DefinedKeywords.robot
 Resource  ../../../Resources/PageObjects/MarketWatchArticlePage.robot
@@ -17,7 +18,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T93
 Validate the Market Watch Preference Center page
     [Documentation]  This test case validates the Market Watch preference center page
-    [Tags]  Regression
+    [Tags]  Regression  PreferenceCenter
 
     MarketWatchPreferenceCenterPage.Add Author By Hotlink
     DefinedKeywords.Sign In Process
@@ -47,7 +48,7 @@ Validate the Market Watch Preference Center page
 #US-T28
 Validate Authors for MarketWatch Article page without byline
     [Documentation]  This test case validates authors without byline for Market Watch article page
-    [Tags]  Regression
+    [Tags]  Regression  Author  Article
 
     CommonFunctionality.Start Market Watch Article without byline
     MarketWatchArticlePage.Validate author without byline
@@ -57,7 +58,7 @@ Validate Authors for MarketWatch Article page without byline
 #US-T220
 Validate the Watchlist widget from Watchlist page
     [Documentation]  This test case validates the watchlist widget from watchlist page
-    [Tags]  Regression
+    [Tags]  Regression  Watchlist
 
     CommonFunctionality.Start MarketWatch for Watchlist page
     MarketWatchWatchlistPage.Click Sign in
@@ -83,7 +84,7 @@ Validate the Watchlist widget from Watchlist page
 #US-T149
 Validate the MW digest notification
     [Documentation]  This test case validates the MW digest notification
-    [Tags]  Regression
+    [Tags]  Regression  Notifications
     MarketWatchMailboxPage.Navigate Mailbox page
     MarketWatchMailboxPage.Login
     MarketWatchMailboxPage.Select Inbox
@@ -93,7 +94,7 @@ Validate the MW digest notification
 #US-T122
 Validate the MW real-time author notification
     [Documentation]  This test case validates the MW real-time author notification
-    [Tags]  Regression
+    [Tags]  Regression  Notifications  Author
     MarketWatchMailboxPage.Navigate Mailbox page
     MarketWatchMailboxPage.Login
     MarketWatchMailboxPage.Select Inbox
@@ -103,7 +104,7 @@ Validate the MW real-time author notification
 #US-T146
 Validate the MW real-time company notification
     [Documentation]  This test case validates the MW real-time company notification
-    [Tags]  Regression
+    [Tags]  Regression  Notifications  Company
     MarketWatchMailboxPage.Navigate Mailbox page
     MarketWatchMailboxPage.Login
     MarketWatchMailboxPage.Select Inbox
