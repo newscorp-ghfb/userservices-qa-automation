@@ -3,11 +3,9 @@ Library  SeleniumLibrary
 Resource  ../Resources/DefinedKeywords.robot
 
 *** Variables ***
-${Browser}=  "chrome"  #headless, firefox, chrome, edge, safari
+${Browser}=  "chrome"  #headless, ff, chrome, edge, safari
 
 ${Env}=  "dev"  #dev, prod
-
-${options}=  ""
 
 ${Email_prod}=  barronsadvisorcs@gmail.com
 
@@ -41,7 +39,8 @@ Start Barrons Article
         Open Browser  https://www.barrons.com  ${Browser}
         Go To  https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634
     ELSE IF  ${Env} == "dev"
-        Open Browser  https://www.s.dev.barrons.com  ${Browser}
+            Open Browser  https://www.s.dev.barrons.com   ${Browser}
+#        Open Browser  https://www.s.dev.barrons.com  ${Browser}
         Go To  https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000
     END
     Wait Until Page Contains Element  dom:${JSFollowButtonBarronsPath}
@@ -54,11 +53,8 @@ Start Mansion Global Article
         Open Browser  https://www.mansionglobal.com  ${Browser}
         Go To  https://www.mansionglobal.com/articles/are-there-tax-breaks-on-agricultural-land-in-pennsylvania-01648119848
     ELSE IF  ${Env} == "dev"
-        IF  ${Browser} == "firefox"
-             ${options} =    Evaluate    selenium.webdriver.FirefoxOptions()
-        ELSE IF  ${Browser} == "chrome"
-            ${options} =    Evaluate    selenium.webdriver.ChromeOptions()
-        END
+        IF  ${Browser} == "chrome"
+             ${options} =    Evaluate    selenium.webdriver.ChromeOptions()
             Call Method    ${options}    add_argument    --start-maximized
             Call Method    ${options}    add_argument    --disable-dev-shm-usage
             Call Method    ${options}    add_argument    --no-sandbox
@@ -70,14 +66,10 @@ Start Mansion Global Article
             Call Method    ${options}    add_argument    --use-fake-device-for-media-stream
             Call Method    ${options}    add_argument    --disable-sync
 #            Call Method    ${options}    add_argument    --remote-debugging-port=9222
-        IF  ${Browser} == "firefox"
-             SeleniumLibrary.Open Browser  https://www.s.dev.barrons.com  firefox  options=${options}
-        ELSE IF  ${Browser} == "chrome"
             SeleniumLibrary.Open Browser  https://www.s.dev.barrons.com  chrome  options=${options}
+        ELSE
+            Open Browser  https://www.s.dev.mansionglobal.com   ${Browser}
         END
-#        ELSE
-#            Open Browser  https://www.s.dev.mansionglobal.com   ${Browser}
-#        END
 #        Open Browser  https://www.s.dev.mansionglobal.com  ${Browser}
         Go To  https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212
     END
