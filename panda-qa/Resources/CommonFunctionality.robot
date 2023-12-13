@@ -3,9 +3,11 @@ Library  SeleniumLibrary
 Resource  ../Resources/DefinedKeywords.robot
 
 *** Variables ***
-${Browser}=  "headlesschrome"  #headless, ff, chrome, edge, safari
+${Browser}=  "firefox"  #headless, firefox, chrome, edge, safari
 
 ${Env}=  "dev"  #dev, prod
+
+${options}=  ""
 
 ${Email_prod}=  barronsadvisorcs@gmail.com
 
@@ -30,6 +32,8 @@ ${JSFollowButtonMWPath}=  document.querySelector('ufc-follow-author-widget').sha
 
 ${CookieManagerYesPath}=  //*[@id="notice"]/div[4]/div/div/button[2]
 
+
+
 *** Keywords ***
 Start Barrons Article
     Set Selenium Speed  0.5 seconds
@@ -37,24 +41,7 @@ Start Barrons Article
         Open Browser  https://www.barrons.com  ${Browser}
         Go To  https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634
     ELSE IF  ${Env} == "dev"
-     IF  ${Browser} == "headlesschrome"
-            ${chrome_options} =    Evaluate    selenium.webdriver.ChromeOptions()
-            Call Method    ${chrome_options}    add_argument    --start-maximized
-            Call Method    ${chrome_options}    add_argument    --disable-dev-shm-usage
-            Call Method    ${chrome_options}    add_argument    --no-sandbox
-            Call Method    ${chrome_options}    add_argument    --headless
-            Call Method    ${chrome_options}    add_argument    --disable-gpu
-            Call Method    ${chrome_options}    add_argument    --no-user-gesture-required
-            Call Method    ${chrome_options}    add_argument    --no-first-run
-            Call Method    ${chrome_options}    add_argument    --use-fake-ui-for-media-stream
-            Call Method    ${chrome_options}    add_argument    --use-fake-device-for-media-stream
-            Call Method    ${chrome_options}    add_argument    --disable-sync
-#            Call Method    ${chrome_options}    add_argument    --remote-debugging-port=9222
-            SeleniumLibrary.Open Browser  https://www.s.dev.barrons.com  chrome  options=${chrome_options}
-        ELSE
-            Open Browser  https://www.s.dev.barrons.com   ${Browser}
-        END
-#        Open Browser  https://www.s.dev.barrons.com  ${Browser}
+        Open Browser  https://www.s.dev.barrons.com  ${Browser}
         Go To  https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000
     END
     Wait Until Page Contains Element  dom:${JSFollowButtonBarronsPath}
@@ -67,23 +54,30 @@ Start Mansion Global Article
         Open Browser  https://www.mansionglobal.com  ${Browser}
         Go To  https://www.mansionglobal.com/articles/are-there-tax-breaks-on-agricultural-land-in-pennsylvania-01648119848
     ELSE IF  ${Env} == "dev"
-        IF  ${Browser} == "headlesschrome"
-            ${chrome_options} =    Evaluate    selenium.webdriver.ChromeOptions()
-            Call Method    ${chrome_options}    add_argument    --start-maximized
-            Call Method    ${chrome_options}    add_argument    --disable-dev-shm-usage
-            Call Method    ${chrome_options}    add_argument    --no-sandbox
-            Call Method    ${chrome_options}    add_argument    --headless
-            Call Method    ${chrome_options}    add_argument    --disable-gpu
-            Call Method    ${chrome_options}    add_argument    --no-user-gesture-required
-            Call Method    ${chrome_options}    add_argument    --no-first-run
-            Call Method    ${chrome_options}    add_argument    --use-fake-ui-for-media-stream
-            Call Method    ${chrome_options}    add_argument    --use-fake-device-for-media-stream
-            Call Method    ${chrome_options}    add_argument    --disable-sync
-#            Call Method    ${chrome_options}    add_argument    --remote-debugging-port=9222
-            SeleniumLibrary.Open Browser   https://www.s.dev.mansionglobal.com  chrome  options=${chrome_options}
-        ELSE
-            Open Browser  https://www.s.dev.mansionglobal.com   ${Browser}
+        IF  ${Browser} == "firefox"
+             ${options} =    Evaluate    selenium.webdriver.FirefoxOptions()
+        ELSE IF  ${Browser} == "chrome"
+            ${options} =    Evaluate    selenium.webdriver.ChromeOptions()
         END
+            Call Method    ${options}    add_argument    --start-maximized
+            Call Method    ${options}    add_argument    --disable-dev-shm-usage
+            Call Method    ${options}    add_argument    --no-sandbox
+            Call Method    ${options}    add_argument    --headless
+            Call Method    ${options}    add_argument    --disable-gpu
+            Call Method    ${options}    add_argument    --no-user-gesture-required
+            Call Method    ${options}    add_argument    --no-first-run
+            Call Method    ${options}    add_argument    --use-fake-ui-for-media-stream
+            Call Method    ${options}    add_argument    --use-fake-device-for-media-stream
+            Call Method    ${options}    add_argument    --disable-sync
+#            Call Method    ${options}    add_argument    --remote-debugging-port=9222
+        IF  ${Browser} == "firefox"
+             SeleniumLibrary.Open Browser  https://www.s.dev.barrons.com  firefox  options=${options}
+        ELSE IF  ${Browser} == "chrome"
+            SeleniumLibrary.Open Browser  https://www.s.dev.barrons.com  chrome  options=${options}
+        END
+#        ELSE
+#            Open Browser  https://www.s.dev.mansionglobal.com   ${Browser}
+#        END
 #        Open Browser  https://www.s.dev.mansionglobal.com  ${Browser}
         Go To  https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212
     END
