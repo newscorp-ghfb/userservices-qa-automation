@@ -63,7 +63,6 @@ Validate Following Button
 Click Follow Button
     Click Button  dom:${JSFollowButtonFNPath}
 
-
 Click Following Button
     Click Button  dom:${JSFollowingButtonFNPath}
 
