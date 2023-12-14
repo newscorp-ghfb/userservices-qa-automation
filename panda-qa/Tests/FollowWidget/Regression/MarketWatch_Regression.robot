@@ -110,3 +110,30 @@ Validate the MW real-time company notification
     MarketWatchMailboxPage.Select Inbox
     MarketWatchMailboxPage.Search Your MW real-time company notification
     MarketWatchMailboxPage.Validate MW real-time company notification
+
+#US-T356
+Validate Postback on Preference Center
+    [Documentation]  This test case validates the MW Postback on Preference Center
+    [Tags]  Regression  Postback
+    MarketWatchPreferenceCenterPage.Add Newsletter By Hotlink
+#    DefinedKeywords.Sign In Process
+#    MarketWatchPreferenceCenterPage.Validate Followed Authors
+#    ${val}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
+#    Run Keyword If  ${val} > 0  MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
+#    MarketWatchPreferenceCenterPage.Validate Author Name
+#    MarketWatchPreferenceCenterPage.Validate Following Toggle Feature
+#    MarketWatchPreferenceCenterPage.Validate Following Frequency
+#    MarketWatchPreferenceCenterPage.Validate All Tabs Displayed
+#    MarketWatchPreferenceCenterPage.Validate Author On All Tab
+#    MarketWatchPreferenceCenterPage.Add Company By Hotlink
+#    MarketWatchPreferenceCenterPage.Validate Followed Companies
+#    ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
+#    Run Keyword If  ${val2} > 0  MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
+#    MarketWatchPreferenceCenterPage.Validate Company Frequency
+#    MarketWatchPreferenceCenterPage.Validate Company Quote Link
+#    MarketWatchPreferenceCenterPage.Validate Company On All Tab
+#    MarketWatchPreferenceCenterPage.Click Market Watch tab
+#    MarketWatchPreferenceCenterPage.Validate Company Toggle Feature
+#    MarketWatchPreferenceCenterPage.Click Company Toggle Feature
+#    MarketWatchPreferenceCenterPage.Validate Following Toggle Alert Pop up
+#    MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up

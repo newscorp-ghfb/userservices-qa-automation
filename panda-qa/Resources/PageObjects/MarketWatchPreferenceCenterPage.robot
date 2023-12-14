@@ -91,3 +91,10 @@ Validate Company Toggle Feature
 
 Click Company Toggle Feature
     Click Element  //*[text()="Amazon.com, Inc."]/../../..//*[@role="switch"]
+
+Add Newsletter By Hotlink  #Add Newsletter hotlink below
+     IF  ${Env} == "prod"
+        Go To  https://www.marketwatch.com/follow?alert=author&id=15_MW
+        ELSE IF  ${Env} == "dev"
+        Go To  https://www.s.dev.marketwatch.com/follow?alert=author&id=18_MW&frequency=realtime
+     END
