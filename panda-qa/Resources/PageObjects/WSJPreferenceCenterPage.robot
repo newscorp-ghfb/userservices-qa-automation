@@ -60,7 +60,7 @@ Validate Custom Topics Following Toggle Feature
 
 Click Following Toggle Feature
     IF  ${Env} == "prod"
-        Click Element  //*[text()="Dave Michaels"]/../../../../td[4]/div
+        Click Element  //*[text()="John West"]/../../../../td[4]/div
     ELSE IF  ${Env} == "dev"
         Click Element  //*[text()="Joanna Stern"]/../../../../td[4]/div
     END
