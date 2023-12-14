@@ -17,7 +17,7 @@ Login
     Click Element  //*[text()="Sign in"]
     Wait Until Element is Visible  //*[@id="i0116"]
     Input Text  //*[@id="i0116"]  qapandaautomation@hotmail.com
-    Wait Until Element is Visible  //*[@id="idSIButton9"]
+    Wait Until Element is Visible  //*[@id="idSIButton8"]
     Click Button  //*[@id="idSIButton9"]
     Wait Until Element is Visible  //*[@id="i0118"]
     Input Text  //*[@id="i0118"]  Testing.123

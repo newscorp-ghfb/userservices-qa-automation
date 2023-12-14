@@ -216,4 +216,3 @@ Capabilities Dashboard Barrons Menu
     ELSE
         Log  Error on Barrons Clicked value
     END
-I
