@@ -42,16 +42,16 @@ Start Barrons Article
     ELSE IF  ${Env} == "dev"
     IF  ${Browser1} == "firefox"
              ${options} =    Evaluate    selenium.webdriver.FirefoxOptions()
-            Call Method    ${options}    add_argument    --start-maximized
-            Call Method    ${options}    add_argument    --disable-dev-shm-usage
-            Call Method    ${options}    add_argument    --no-sandbox
-            Call Method    ${options}    add_argument    --headless
-            Call Method    ${options}    add_argument    --disable-gpu
-            Call Method    ${options}    add_argument    --no-user-gesture-required
-            Call Method    ${options}    add_argument    --no-first-run
-            Call Method    ${options}    add_argument    --use-fake-ui-for-media-stream
-            Call Method    ${options}    add_argument    --use-fake-device-for-media-stream
-            Call Method    ${options}    add_argument    --disable-sync
+            Call Method    ${options}    add_argument    -start-maximized
+            Call Method    ${options}    add_argument    -disable-dev-shm-usage
+            Call Method    ${options}    add_argument    -no-sandbox
+            Call Method    ${options}    add_argument    -headless
+            Call Method    ${options}    add_argument    -disable-gpu
+            Call Method    ${options}    add_argument    -no-user-gesture-required
+            Call Method    ${options}    add_argument    -no-first-run
+            Call Method    ${options}    add_argument    -use-fake-ui-for-media-stream
+            Call Method    ${options}    add_argument    -use-fake-device-for-media-stream
+            Call Method    ${options}    add_argument    -disable-sync
 #            Call Method    ${options}    add_argument    --remote-debugging-port=9222
             SeleniumLibrary.Open Browser  https://www.s.dev.barrons.com  firefox  options=${options}
         ELSE
