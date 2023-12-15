@@ -82,6 +82,7 @@ Validate FN real-time company notification
     Page Should Contain Element  //*[text()="BLK (U.S.: NYSE)"]
     Page Should Contain Element  //a[text()="Read More "]
     Page Should Contain Element  //a[text()="Preferences"]
+    Page Should Contain Element  //a[text()="Alerts Center"]
     Page Should Contain Element  //a[text()="Unsubscribe"]
     Page Should Contain Element  //a[text()="Privacy Notice"]
     Page Should Contain Element  //a[text()="Cookie Notice"]
