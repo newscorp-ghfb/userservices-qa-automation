@@ -77,8 +77,8 @@ Validate Follow Hotlink for Authors
     Click Button  //*[@placeholder="Author name"]
     Input Text   //*[@placeholder="Author name"]  John Smith
     Wait Until Element is Visible  //button[text()="Copy"]
-    #Click Button  //*[text()='All records']
-    ##Validate author is show all records
+    Click Button  //*[text()='All records']
+    #Validate author is show all records
 
 Validate Custom Topic On Dashboard
     Click Custom Topic Tab
