@@ -42,18 +42,27 @@ Start Barrons Article
     ELSE IF  ${Env} == "dev"
     IF  ${Browser1} == "firefox"
              ${options} =    Evaluate    selenium.webdriver.FirefoxOptions()
-            Call Method    ${options}    add_argument    -CreateProfile "headless /moz-headless"
-            Call Method    ${options}    add_argument    -start-maximized
-            Call Method    ${options}    add_argument    -disable-dev-shm-usage
-            Call Method    ${options}    add_argument    -no-sandbox
+            Call Method    ${options}    add_argument    --CreateProfile
+            Call Method    ${options}    add_argument    --start-maximized
             Call Method    ${options}    add_argument    -headless
-            Call Method    ${options}    add_argument    -disable-gpu
-            Call Method    ${options}    add_argument    -no-user-gesture-required
-            Call Method    ${options}    add_argument    -no-first-run
-            Call Method    ${options}    add_argument    -use-fake-ui-for-media-stream
-            Call Method    ${options}    add_argument    -use-fake-device-for-media-stream
-            Call Method    ${options}    add_argument    -disable-sync
+            Call Method    ${options}    add_argument    --devtools.debugger.force-local
+            Call Method    ${options}    add_argument    --devtools.debugger.remote-enabled
+            Call Method    ${options}    add_argument    --devtools.chrome.enabled
+            Call Method    ${options}    add_argument    --devtools.debugger.prompt-connection
+            Call Method    ${options}    add_argument    --browser.dom.window.dump.enabled
 #            Call Method    ${options}    add_argument    --remote-debugging-port=9222
+
+#${options}.set_preference('browser.download.folderList', 1)
+#options.set_preference('browser.download.manager.showWhenStarting', False)
+#options.set_preference('browser.download.manager.focusWhenStarting', False)
+#options.set_preference('browser.download.useDownloadDir', True)
+#options.set_preference('browser.helperApps.alwaysAsk.force', False)
+#options.set_preference('browser.download.manager.alertOnEXEOpen', False)
+#options.set_preference('browser.download.manager.closeWhenDone', True)
+#options.set_preference('browser.download.manager.showAlertOnComplete', False)
+#options.set_preference('browser.download.manager.useWindow', False)
+# You will need to find the content-type of your app and set it here. We are downloading a gzip file.
+#options.set_preference('browser.helperApps.neverAsk.saveToDisk', 'application/octet-stream')
             SeleniumLibrary.Open Browser  https://www.s.dev.barrons.com  firefox  options=${options}
         ELSE
             Open Browser  https://www.s.dev.barrons.com   ${Browser1}
