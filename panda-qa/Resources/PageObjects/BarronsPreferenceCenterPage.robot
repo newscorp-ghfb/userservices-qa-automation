@@ -77,7 +77,6 @@ Click Barrons tab
 Add Company By Hotlink
     IF  ${Env} == "prod"
         Go To  https://www.barrons.com/follow?alert=company&fcode=AMZCOM
-        # https://www.barrons.com/follow?alert=author&id=8553_BARRONS&frequency=realtime
     ELSE IF  ${Env} == "dev"
         Go To  https://www.s.dev.barrons.com/follow?alert=company&fcode=AMZCOM
     END
