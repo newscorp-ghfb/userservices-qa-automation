@@ -178,7 +178,6 @@ Click Stock Pick Preference Center Link
     Wait Until Element is Visible  dom:${JSStockPickPreferenceCenterLinkBarronsPath}
     Click Element  dom:${JSStockPickPreferenceCenterLinkBarronsPath}
 
-
 Validate author hyperlink
     IF  ${Env} == "prod"
         Page Should Contain Element  //span[text()="Angela Palumbo"]
