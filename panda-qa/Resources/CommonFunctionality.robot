@@ -44,7 +44,7 @@ Start Barrons Article
              ${options} =    Evaluate    selenium.webdriver.FirefoxOptions()
             Call Method    ${options}    add_argument    --CreateProfile
             Call Method    ${options}    add_argument    --start-maximized
-            Call Method    ${options}    add_argument    -headless
+            Call Method    ${options}    add_argument    --headless
             Call Method    ${options}    add_argument    --devtools.debugger.force-local
             Call Method    ${options}    add_argument    --devtools.debugger.remote-enabled
             Call Method    ${options}    add_argument    --devtools.chrome.enabled
@@ -52,24 +52,13 @@ Start Barrons Article
             Call Method    ${options}    add_argument    --browser.dom.window.dump.enabled
 #            Call Method    ${options}    add_argument    --remote-debugging-port=9222
 
-#${options}.set_preference('browser.download.folderList', 1)
-#options.set_preference('browser.download.manager.showWhenStarting', False)
-#options.set_preference('browser.download.manager.focusWhenStarting', False)
-#options.set_preference('browser.download.useDownloadDir', True)
-#options.set_preference('browser.helperApps.alwaysAsk.force', False)
-#options.set_preference('browser.download.manager.alertOnEXEOpen', False)
-#options.set_preference('browser.download.manager.closeWhenDone', True)
-#options.set_preference('browser.download.manager.showAlertOnComplete', False)
-#options.set_preference('browser.download.manager.useWindow', False)
-# You will need to find the content-type of your app and set it here. We are downloading a gzip file.
-#options.set_preference('browser.helperApps.neverAsk.saveToDisk', 'application/octet-stream')
-            SeleniumLibrary.Open Browser  https://www.s.dev.barrons.com  firefox  options=${options}
+            SeleniumLibrary.Open Browser  https://www.google.com  firefox  options=${options}
         ELSE
             Open Browser  https://www.s.dev.barrons.com   ${Browser1}
         END
 
 #        Open Browser  https://www.s.dev.barrons.com  ${Browser}
-        Go To  https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000
+        Go To  https://stackoverflow.com/questions/56548947/geckodriver-firefox-issue-when-running-robot-framework-selenium-tests-inside-doc
     END
     Wait Until Page Contains Element  dom:${JSFollowButtonBarronsPath}
     Maximize Browser Window
