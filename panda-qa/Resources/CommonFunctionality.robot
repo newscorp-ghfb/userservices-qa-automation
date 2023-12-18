@@ -52,13 +52,13 @@ Start Barrons Article
             Call Method    ${options}    add_argument    --browser.dom.window.dump.enabled
 #            Call Method    ${options}    add_argument    --remote-debugging-port=9222
 
-            SeleniumLibrary.Open Browser  https://www.google.com  firefox  options=${options}
+            SeleniumLibrary.Open Browser  https://www.s.dev.barrons.com  firefox  options=${options}
         ELSE
             Open Browser  https://www.s.dev.barrons.com   ${Browser1}
         END
 
 #        Open Browser  https://www.s.dev.barrons.com  ${Browser}
-        Go To  https://stackoverflow.com/questions/56548947/geckodriver-firefox-issue-when-running-robot-framework-selenium-tests-inside-doc
+        Go To  https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000
     END
     Wait Until Page Contains Element  dom:${JSFollowButtonBarronsPath}
     Maximize Browser Window
