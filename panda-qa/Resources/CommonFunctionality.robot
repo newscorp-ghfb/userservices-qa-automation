@@ -44,7 +44,7 @@ Start Barrons Article
              ${options} =    Evaluate    selenium.webdriver.FirefoxOptions()
             Call Method    ${options}    add_argument    --CreateProfile
             Call Method    ${options}    add_argument    --start-maximized
-             Call Method    ${options}    add_argument    --disable-dev-shm-usage
+            Call Method    ${options}    add_argument    --disable-dev-shm-usage
             Call Method    ${options}    add_argument    --no-sandbox
             Call Method    ${options}    add_argument    --disable-gpu
             Call Method    ${options}    add_argument    --headless
@@ -56,7 +56,7 @@ Start Barrons Article
 
 #            Call Method    ${options}    add_argument    --remote-debugging-port=9222
 
-            SeleniumLibrary.Open Browser  https://www.s.dev.barrons.com  firefox  options=${options}
+            SeleniumLibrary.Open Browser  https://www.barrons.com  firefox  options=${options}
         ELSE
             Open Browser  https://www.s.dev.barrons.com   ${Browser1}
         END
