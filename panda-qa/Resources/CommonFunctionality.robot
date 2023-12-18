@@ -44,12 +44,16 @@ Start Barrons Article
              ${options} =    Evaluate    selenium.webdriver.FirefoxOptions()
             Call Method    ${options}    add_argument    --CreateProfile
             Call Method    ${options}    add_argument    --start-maximized
+             Call Method    ${options}    add_argument    --disable-dev-shm-usage
+            Call Method    ${options}    add_argument    --no-sandbox
+            Call Method    ${options}    add_argument    --disable-gpu
             Call Method    ${options}    add_argument    --headless
             Call Method    ${options}    add_argument    --devtools.debugger.force-local
             Call Method    ${options}    add_argument    --devtools.debugger.remote-enabled
             Call Method    ${options}    add_argument    --devtools.chrome.enabled
             Call Method    ${options}    add_argument    --devtools.debugger.prompt-connection
             Call Method    ${options}    add_argument    --browser.dom.window.dump.enabled
+
 #            Call Method    ${options}    add_argument    --remote-debugging-port=9222
 
             SeleniumLibrary.Open Browser  https://www.s.dev.barrons.com  firefox  options=${options}
