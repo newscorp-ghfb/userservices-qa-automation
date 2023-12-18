@@ -44,9 +44,9 @@ Validate Following Button
 Validate Authors Reflected On Dashboard
     ${Totalauthorsubs} = Get Value  //*[text()="Total subscriptions"]/../div[2]
     IF  ${Env} == "prod"
-        Go To  https://www.barrons.com/follow?alert=author&id=8572_BARRONS&frequency=realtime
+        Go To  https://www.barrons.com/follow?alert=author&id=6151_BARRONS&frequency=realtime
     ELSE IF  ${Env} == "dev"
-        Go To  https://www.s.dev.barrons.com/follow?alert=author&id=8572_BARRONS&frequency=realtime
+        Go To  https://www.s.dev.barrons.com/follow?alert=author&id=6151_BARRONS&frequency=realtime
     END
     Navigate Capabilities Dashboard page
     Click Author Tab
@@ -67,18 +67,17 @@ Validate Authors Reflected On Dashboard
 Validate Authors On Search Tab
     Click Button  //*[text()='Search']
     Click Button  //*[@placeholder="Author name"]
-    Input Text   //*[@placeholder="Author name"]  Liz Lucking
-    Click Button  //*[text()="liz Lucking"]
+    Input Text   //*[@placeholder="Author name"]  Andrew Bary
+    Click Button  //*[text()="Andrew Bary"]
     Element Text Should Be  //*[text()="About"]/../h2[2]  0 Followers
 
 Validate Follow Hotlink for Authors
     Click Author Tab
     Click Button  //*[text()='Follow Hotlinks']
     Click Button  //*[@placeholder="Author name"]
-    Input Text   //*[@placeholder="Author name"]  
+    Input Text   //*[@placeholder="Author name"]  Andrew Bary
     Wait Until Element is Visible  //button[text()="Copy"]
-    #Click Button  //*[text()='All records']
-    ##Validate author is show all records
+
 
 Validate Custom Topic On Dashboard
     Click Custom Topic Tab
