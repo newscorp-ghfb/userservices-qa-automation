@@ -62,7 +62,7 @@ Start Barrons Article
         END
 
 #        Open Browser  https://www.s.dev.barrons.com  ${Browser}
-        Go To  https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000
+        Go To  https://www.barrons.com/articles/buy-under-armour-stock-pick-51650672000
     END
     Wait Until Page Contains Element  dom:${JSFollowButtonBarronsPath}
     Maximize Browser Window
