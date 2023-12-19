@@ -80,4 +80,4 @@ Click author hyperlink
     Click Element  //*[@id="maincontent"]/div[1]/div[1]/div[2]/div[2]/div/a/h4
 
 Validate author without byline
-    Page Should Contain Element  //div[@class="byline"]/div[1]/div[2]/span[text()="Catey Hill"]
+    Page Should Contain Element  //div[@class="byline"]/div/div/span[text()="Catey Hill"]
