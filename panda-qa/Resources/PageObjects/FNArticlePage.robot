@@ -61,17 +61,10 @@ Validate Following Button
     Element Text Should Be  dom:${JSFollowingButtonFNPath}  Following  timeout=15
 
 Click Follow Button
-    Click Button  dom:${JSFollowButtonFNPath}= document.querySelector('ufc-follow-author-widget').shadowRoot  #1
-    ...  .querySelector('ufc-follow-widget')  #2
-    ...  .querySelector('ufc-follow-button').shadowRoot  #3
-    ...  .querySelector('button')  #4
-
+    Click Button  dom:${JSFollowButtonFNPath}
 
 Click Following Button
-    Click Button  dom:${JSFollowingButtonFNPath}=document.querySelector('ufc-follow-author-widget').shadowRoot  #1
-    ...  .querySelector('ufc-follow-widget')  #2
-    ...  .querySelector('ufc-follow-button').shadowRoot  #3
-    ...  .querySelector('button')  #4
+    Click Button  dom:${JSFollowingButtonFNPath}
 
 Validate Sign In Modal
     Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}
@@ -102,4 +95,4 @@ Click author hyperlink
     Click Element  //span[@class='css-1wc2zh5']
 
 Validate author without byline
-    Page Should Contain Element  //div[@class="byline"]/div/div/span[text()="Clare Dickinson"]
+    Page Should Contain Element  //div[@class="byline"]/div/div/span[text()="Sunita Adhikarla"]

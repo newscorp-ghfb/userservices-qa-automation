@@ -1,6 +1,5 @@
 *** Settings ***
 Library  SeleniumLibrary
-Resource    BarronsQuotesPage.robot
 
 *** Variables ***
 
@@ -32,15 +31,13 @@ Click Following Toggle Feature
     IF  ${Env} == "prod"
         Click Element  //*[text()="Steve Goldstein"]/../../../../td[4]/div
     ELSE IF  ${Env} == "dev"
-        Click Element  //*[text()="Angela Moore"]/../../../../td[4]/div   #Jonathan Burton
+        Click Element  //*[text()="Angela Moore"]/../../../../td[4]/div
     END
 Validate Following Toggle Alert Pop up
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[3]/div
-    #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[1]/div/div/a
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[1]/div/div/a
 
 Click Following Toggle Alert Pop up
-    Click Button  //*[@id="root"]/div/div/div/div[3]/div/div/button
-    #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[1]/div/div/a
+    Click Button  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[1]/div/div/a
 
 Validate Author Updates From Preference Center Reflected In Articles
     Click Button  //*[@id="root"]/div/div/div/div[2]/div[2]/div/div/button
@@ -49,18 +46,11 @@ Add Author By Hotlink
     Go To  https://www.marketwatch.com/follow?alert=author&id=15_MW
 
 Validate Author Name
-    IF  ${Env} == "prod"
-       Page Should Contain  Steve Goldstein
-    ELSE IF  ${Env} == "dev"
-        Page Should Contain  Angela Moore
-    END
-
+    Page Should Contain  Steve Goldstein
 
 Validate Following Frequency
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div/div[2]/label[1]/span[2]
-    #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[1]/span[2]
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div/div[2]/label[2]/span[2]
-    #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[2]/span[2]
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[1]/span[2]
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[2]/span[2]
 
 Validate All Tabs Displayed
     Page Should Contain  Barron's
@@ -101,38 +91,3 @@ Validate Company Toggle Feature
 
 Click Company Toggle Feature
     Click Element  //*[text()="Amazon.com, Inc."]/../../..//*[@role="switch"]
-
-Validate Author Toggle Feature
-    Wait Until Element is Visible  //*[text()="Catey Hill"]/../../../..//*[@role="switch"]
-    #//*[text()="Amazon.com, Inc."]/../../..//*[@role="switch"]
-    Page Should Contain Element  //*[text()="Catey Hill"]/../../../..//*[@role="switch"]
-    #//*[text()="Amazon.com, Inc."]/../../..//*[@role="switch"]
-
-Click Author Toggle Feature
-     Click Element  //*[text()="Catey Hill"]/../../../..//*[@role="switch"]
-     #//*[text()="Amazon.com, Inc."]/../../..//*[@role="switch"]
-
-
-
-Add Breaking News By Hotlink
-     IF  ${Env} == "prod"
-        Go To  https://www.marketwatch.com/follow?alert=news_alert&id=NewsAlertEmailTechnology
-        ELSE IF  ${Env} == "dev"
-        Go To  https://www.s.dev.marketwatch.com/follow?alert=news_alert&id=NewsAlertEmailTechnology
-
-     END
-
-Validate Followed Breaking News
-    Scroll Down
-    Page Should Contain  News Alerts
-
-Validate Breaking News Toggle Feature
-    Wait Until Element is Visible  //*[text()="Technology"]/../../..//*[@role="switch"]
-    Page Should Contain Element  //*[text()="Technology"]/../../..//*[@role="switch"]
-
-Click Breaking News Toggle Feature
-    Click Element  //*[text()="Technology"]/../../..//*[@role="switch"]
-    
- Validate Over Mouse On Notification Tooltip
-    Click Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/thead/tr/th[3]/div/button/span
-    Page Should Contain  Choose whether you want to receive alerts as soon as an article gets published or once a day as a digest.

@@ -37,14 +37,8 @@ Validate Follow Button
     IF  ${Env} == "prod"
         Execute javascript  window.scrollTo(0,500)
     END
-    Wait Until Element is Visible  'dom:${JSFollowButtonMWPath= document.querySelector('ufc-follow-author-widget').shadowRoot  #1
-    ...  .querySelector('ufc-follow-widget')  #2
-    ...  .querySelector('ufc-follow-button').shadowRoot  #3
-    ...  .querySelector('button')' #4
-    Element Text Should Be  'dom:${JSFollowButtonMWPath} = document.querySelector('ufc-follow-author-widget').shadowRoot  #1
-    ...  .querySelector('ufc-follow-widget')  #2
-    ...  .querySelector('ufc-follow-button').shadowRoot  #3
-    ...  .querySelector('button')'  #4  Follow  timeout=40s
+    Wait Until Element is Visible  dom:${JSFollowButtonMWPath}
+    Element Text Should Be  'dom:${JSFollowButtonMWPath}
 
 Validate Following Button
     Wait Until Element is Visible  dom:${JSFollowButtonMWPath}
@@ -66,7 +60,7 @@ Validate Sign In Modal
     Page Should Contain Element  dom:${JSFollowSignInHeaderPath}
 
 Click Sign In Button Modal
-    #Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}  timeout=45s
+    Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}  timeout=45s
     Click Button  dom:${JSFollowSignInButtonPath}
 
 Click Undo Link
@@ -86,4 +80,4 @@ Click author hyperlink
     Click Element  //*[@id="maincontent"]/div[1]/div[1]/div[2]/div[2]/div/a/h4
 
 Validate author without byline
-    Page Should Contain Element  //div[@class="byline"]/div/div/span[text()="Clare Dickinson"]
+    Page Should Contain Element  //div[@class="byline"]/div/div/span[text()="Catey Hill"]
