@@ -120,40 +120,17 @@ Validate Postback on Preference Center
     MarketWatchPreferenceCenterPage.Validate Followed Breaking News
     ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
     Run Keyword If  ${val2} > 0  MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
-    #MarketWatchPreferenceCenterPage.Validate Breaking News On All Tab
-    #WSJPreferenceCenterPage.Click WSJ tab
     MarketWatchPreferenceCenterPage.Validate Breaking News Toggle Feature
-    MarketWatchPreferenceCenterPage.Click Breaking News Toggle Feature
-    MarketWatchPreferenceCenterPage.Validate Following Toggle Alert Pop up
-    MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
-
-
-
-
-
-   # MarketWatchPreferenceCenterPage.Add Newsletter By Hotlink
-    #DefinedKeywords.Sign In Process
-    #MarketWatchPreferenceCenterPage.Validate Followed Authors
-    #${val}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
-    #Run Keyword If  ${val} > 0  MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
-   # MarketWatchPreferenceCenterPage.Validate Author Name
-    #MarketWatchPreferenceCenterPage.Validate Following Toggle Feature
-    #MarketWatchPreferenceCenterPage.Validate Following Frequency
-   # MarketWatchPreferenceCenterPage.Validate Author Toggle Feature
-   # MarketWatchPreferenceCenterPage.Click Author Toggle Feature
-    #MarketWatchPreferenceCenterPage.Validate Following Toggle Alert Pop up
-    #MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
-    #MarketWatchPreferenceCenterPage.Validate Over Mouse On Notification Tooltip
-#    MarketWatchPreferenceCenterPage.Validate Author On All Tab
-#    MarketWatchPreferenceCenterPage.Add Company By Hotlink
-#    MarketWatchPreferenceCenterPage.Validate Followed Companies
-#    ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
-#    Run Keyword If  ${val2} > 0  MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
-#    MarketWatchPreferenceCenterPage.Validate Company Frequency
-#    MarketWatchPreferenceCenterPage.Validate Company Quote Link
-#    MarketWatchPreferenceCenterPage.Validate Company On All Tab
-#    MarketWatchPreferenceCenterPage.Click Market Watch tab
-#    MarketWatchPreferenceCenterPage.Validate Company Toggle Feature
-#    MarketWatchPreferenceCenterPage.Click Company Toggle Feature
-#    MarketWatchPreferenceCenterPage.Validate Following Toggle Alert Pop up
-#    MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
+   # MarketWatchPreferenceCenterPage.Click Breaking News Toggle Feature  --unsubscribe functionality
+   # MarketWatchPreferenceCenterPage.Validate Following Toggle Alert Pop up
+   # MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
+    MarketWatchPreferenceCenterPage.Validate Over Mouse On Notification Tooltip
+    MarketWatchMailboxPage.Navigate Mailbox page
+    MarketWatchMailboxPage.Login
+    MarketWatchMailboxPage.Select Inbox
+    MarketWatchMailboxPage.Search Your MW real-time company notification for Postback
+    MarketWatchMailboxPage.Validate MW real-time company notification for Postback
+    #MarketWatchMailboxPage.Search Your MW news alert notification  --alerts can be removed
+    #MarketWatchMailboxPage.Validate MW news alert notification
+    MarketWatchMailboxPage.Unsubscribe the mails
+   #Vaidate the page is empty  https://www.s.dev.marketwatch.com/follow

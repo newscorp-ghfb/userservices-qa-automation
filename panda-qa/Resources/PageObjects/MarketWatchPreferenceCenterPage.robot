@@ -112,12 +112,9 @@ Click Author Toggle Feature
      Click Element  //*[text()="Catey Hill"]/../../../..//*[@role="switch"]
      #//*[text()="Amazon.com, Inc."]/../../..//*[@role="switch"]
 
-Validate Over Mouse On Notification Tooltip
-    Mouse Over    //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/thead/tr/th[3]/div/button/span
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/thead/tr/th[3]/div/div/div/div/span/text()
 
 
-Add Breaking News By Hotlink  #Add Newsletter hotlink below
+Add Breaking News By Hotlink
      IF  ${Env} == "prod"
         Go To  https://www.marketwatch.com/follow?alert=news_alert&id=NewsAlertEmailTechnology
         ELSE IF  ${Env} == "dev"
@@ -126,8 +123,7 @@ Add Breaking News By Hotlink  #Add Newsletter hotlink below
      END
 
 Validate Followed Breaking News
-    Scroll Down  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[4]/tbody/tr[2]/td[1]
-   # Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[3]/div
+    Scroll Down
     Page Should Contain  News Alerts
 
 Validate Breaking News Toggle Feature
@@ -136,3 +132,7 @@ Validate Breaking News Toggle Feature
 
 Click Breaking News Toggle Feature
     Click Element  //*[text()="Technology"]/../../..//*[@role="switch"]
+    
+ Validate Over Mouse On Notification Tooltip
+    Click Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/thead/tr/th[3]/div/button/span
+    Page Should Contain  Choose whether you want to receive alerts as soon as an article gets published or once a day as a digest.

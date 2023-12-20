@@ -13,6 +13,7 @@ Resource  ../../../Resources/PageObjects/BarronsPreferenceCenterPage.robot
 Resource  ../../../Resources/PageObjects/BarronsCapabilitiesPage.robot
 Resource  ../../../Resources/PageObjects/BarronsCMSPage.robot
 Resource  ../../../Resources/PageObjects/BarronsMailboxPage.robot
+Resource  ../../../Resources/PageObjects/BarronsCreateArticlePage.robot
 Library  SeleniumLibrary
 
 Test Setup  CommonFunctionality.Start Barrons Article
@@ -221,3 +222,38 @@ Validate the Barrons real-time stock picks notification
     BarronsMailboxPage.Search Your Barrons real-time stock picks notification
     BarronsMailboxPage.Validate Barrons real-time stock picks notification
 
+#US T357
+Validate Postback on Preference Center
+    [Documentation]  This test case validates the Barrons Postback on Preference Center
+    [Tags]  Regression  Postback
+    BarronsPreferenceCenterPage.Validate Breaking News Toggle Feature
+    BarronsPreferenceCenterPage.Click Breaking News Toggle Feature
+    BarronsPreferenceCenterPage.Validate Following Toggle Alert Pop up
+    BarronsPreferenceCenterPage.Click Following Toggle Alert Pop up
+    BarronsPreferenceCenterPage.Add Breaking News By Hotlink
+    DefinedKeywords.Sign In Process
+    BarronsPreferenceCenterPage.Validate Followed Breaking News
+    ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
+    Run Keyword If  ${val2} > 0  BarronsPreferenceCenterPage.Click Following Toggle Alert Pop up
+    #BarronsPreferenceCenterPage.Validate Breaking News Toggle Feature
+    #BarronsPreferenceCenterPage.Click Breaking News Toggle Feature
+    #BarronsPreferenceCenterPage.Validate Following Toggle Alert Pop up
+    #BarronsPreferenceCenterPage.Click Following Toggle Alert Pop up
+    BarronsPreferenceCenterPage.Validate Over Mouse On Notification Tooltip
+    BarronsMailboxPage.Navigate Mailbox page
+    BarronsMailboxPage.Login
+    #BarronsMailboxPage.Select Inbox
+    BarronsMailboxPage.Search Barrons real-time company notification for Postback
+    BarronsMailboxPage.Validate Barrons real-time company notification for Postback
+    #MarketWatchMailboxPage.Search Your MW news alert notification  --alerts can be removed
+    #MarketWatchMailboxPage.Validate MW news alert notification
+            # MarketWatchMailboxPage.Unsubscribe the mails
+   #Vaidate the page is empty  https://www.s.dev.marketwatch.com/follow
+
+
+Create CMS article for Postback by followed company
+    [Documentation]  This test case creates  Barrons article by followed company (Amazon)
+    [Tags]  Regression  CompanyArticle
+    CommonFunctionality.Start CMS page for Barrons
+    DefinedKeywords.Market Watch Sign In Process
+    BarronsCreateArticlePage.Type Headline
