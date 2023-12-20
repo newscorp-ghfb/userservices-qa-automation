@@ -60,7 +60,7 @@ Validate Authors Reflected On Dashboard
     IF  ${Env} == "prod"
         Go To  https://www.barrons.com/follow
     ELSE IF  ${Env} == "dev"
-        Click Button  //*[@href="https://www.s.dev.barrons.com/authors/8572?mod=followUI"]/../../../../*/*[@role="switch"]
+        Click Button  //*[@href="https://www.s.dev.barrons.com/authors/6151?mod=followUI"]/../../../../*/*[@role="switch"]
     END
 
 
