@@ -50,7 +50,7 @@ Validate Author Name
     Page Should Contain  Mariana Nuñez
 
 Validate Following Frequency
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[4]/div/label[1]/span[1]
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[1]/div/div/div/table[1]/tbody/tr[1]/td[4]/div/label[1]/span[1]
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[4]/div/label[2]/span[2]
 
 Validate All Tabs Displayed
