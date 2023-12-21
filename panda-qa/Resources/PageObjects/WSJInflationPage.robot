@@ -12,9 +12,9 @@ Navigate Inflation page
     END
 
 Validate Subscription To All Basket Items
-    #Click Button  //*[text()="Sign In"]
+    Click Button  //*[text()="Sign In"]
     Execute javascript  window.scrollTo(0,6000)
-    #Scroll ELement Into View  //*[text()="You can edit your selection by choosing new items directly from the grid."]
+    Scroll ELement Into View  //*[text()="You can edit your selection by choosing new items directly from the grid."]
     Click Button  //*[text()="Breakfast cereal"]/input
     Click Button  //*[text()="Rice, pasta, cornmeal"]/input
     Click Button  //*[text()="Bread"]/input
