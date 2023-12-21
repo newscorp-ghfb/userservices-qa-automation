@@ -75,7 +75,7 @@ Validate Sign In Modal
     Page Should Contain Element  dom:${JSFollowSignInHeaderPath}
 
 Click Sign In Button Modal
-    #Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}  20s
+    Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}  20s
     Click Element  dom:${JSFollowSignInButtonPath}
 
 Click Undo Link
