@@ -802,3 +802,25 @@ Validate the alert button for Energy
     WSJArticlePage.Click Custom Follow Button
     WSJArticlePage.Click Preference Center link
     WSJPreferenceCenterPage.Validate Preference Center page
+
+#US-T361
+Validate Postback on Preference Center
+    [Documentation]  This test case validates the WSJ Postback on Preference Center
+    [Tags]  Regression  Postback
+    WSJPreferenceCenterPage.Add Breaking News By Hotlink
+    DefinedKeywords.Sign In Process
+    WSJPreferenceCenterPage.Validate Followed Breaking News
+    ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
+    Run Keyword If  ${val2} > 0  WSJPreferenceCenterPage.Click Following Toggle Alert Pop up
+    WSJPreferenceCenterPage.Validate Breaking News Toggle Feature
+    WSJPreferenceCenterPage.Click Breaking News Toggle Feature  #--unsubscribe functionality
+    WSJPreferenceCenterPage.Validate Following Toggle Alert Pop up
+    WSJPreferenceCenterPage.Click Following Toggle Alert Pop up
+    WSJPreferenceCenterPage.Validate Over Mouse On Notification Tooltip
+    WSJMailboxPage.Navigate Mailbox page
+    WSJMailboxPage.Login
+    WSJMailboxPage.Select Inbox
+    WSJMailboxPage.Search WSJ real-time company notification for Postback
+    WSJMailboxPage.Validate WSJ real-time company notification for Postback
+    WSJMailboxPage.Unsubscribe the mails
+    WSJMailboxPage.Verify the mail is unsubscribed

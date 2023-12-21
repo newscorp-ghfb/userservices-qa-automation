@@ -81,3 +81,25 @@ Validate the PEN real-time company notification
     PENMailboxPage.Select Inbox
     PENMailboxPage.Search Your PEN real-time company notification
     PENMailboxPage.Validate PEN real-time company notification
+
+#US-T3600
+Validate Postback on Preference Center
+    [Documentation]  This test case validates the FN Postback on Preference Center
+    [Tags]  Regression  Postback
+    PENPreferenceCenterPage.Add Breaking News By Hotlink
+    DefinedKeywords.Sign In Process
+    PENPreferenceCenterPage.Validate Followed Breaking News
+    ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
+    Run Keyword If  ${val2} > 0  PENPreferenceCenterPage.Click Following Toggle Alert Pop up
+    PENPreferenceCenterPage.Validate Breaking News Toggle Feature
+    PENPreferenceCenterPage.Click Breaking News Toggle Feature  #--unsubscribe functionality
+    PENPreferenceCenterPage.Validate Following Toggle Alert Pop up
+    PENPreferenceCenterPage.Click Following Toggle Alert Pop up
+    PENPreferenceCenterPage.Validate Over Mouse On Notification Tooltip
+    PENMailboxPage.Navigate Mailbox page
+    PENMailboxPage.Login
+    PENMailboxPage.Select Inbox
+    PENMailboxPage.Search PEN real-time company notification for Postback
+    PENMailboxPage.Validate PEN real-time company notification for Postback
+    PENMailboxPage.Unsubscribe the mails
+    PENMailboxPage.Verify the mail is unsubscribed

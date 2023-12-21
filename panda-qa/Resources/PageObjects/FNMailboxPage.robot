@@ -86,3 +86,32 @@ Validate FN real-time company notification
     Page Should Contain Element  //a[text()="Unsubscribe"]
     Page Should Contain Element  //a[text()="Privacy Notice"]
     Page Should Contain Element  //a[text()="Cookie Notice"]
+
+Search FN real-time company notification for Postback
+    Wait Until Page Contains Element  //input[@id="topSearchInput"]
+    Click Element  //input[@id="topSearchInput"]
+    Input Text  //input[@id="topSearchInput"]  Financial News The latest news on Blackrock Inc
+    Click Element  //button[@aria-label="Search"]
+
+Validate FN real-time company notification for Postback
+    Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
+    Click Element  //div[@id="groupHeaderTop results"]/../div[2]
+    Page Should Contain Element  //a[text()="View in web browser ›"]
+    Page Should Contain Element  //*[text()="BLK (U.S.: NYSE)"]
+    Page Should Contain Element  //a[text()="Read More "]
+    Page Should Contain Element  //a[text()="Preferences"]
+    #Page Should Contain Element  //a[text()="Alerts Center"]
+    Page Should Contain Element  //a[text()="Unsubscribe"]
+    Page Should Contain Element  //a[text()="Privacy Notice"]
+    Page Should Contain Element  //a[text()="Cookie Notice"]
+
+
+Unsubscribe the mails
+    #Outlook code
+    #Page Should Contain  //*[@id="ConversationReadingPaneContainer"]/div/div/div[3]/div[1]/div/div/div/div/div[1]/div[1]/div[1]/div[2]/span[2]/div
+    Click Element  //*[@id="ConversationReadingPaneContainer"]/div/div/div[3]/div[1]/div/div/div/div/div[1]/div[1]/div[1]/div[2]/span[2]/div
+    Wait Until Page Contains  //*[@id="id__1763"]
+    Click Element  //*[@id="id__1763"]
+
+Verify the mail is unsubscribed
+    Page Should Not Contain  //*[@id="ConversationReadingPaneContainer"]/div/div/div[3]/div[1]/div/div/div/div/div[1]/div[1]/div[1]/div[2]/span[2]/div

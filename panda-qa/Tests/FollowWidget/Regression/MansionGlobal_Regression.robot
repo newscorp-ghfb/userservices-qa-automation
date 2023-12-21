@@ -83,3 +83,25 @@ Validate the Mansion Global weekly saved search notification
     MansionGlobalMailboxPage.Select Inbox
     MansionGlobalMailboxPage.Search Your Mansion Global weekly saved search notification
     MansionGlobalMailboxPage.Validate Mansion Global weekly saved search notification
+
+#US-T359
+Validate Postback on Preference Center
+    [Documentation]  This test case validates the Mansion Global Postback on Preference Center
+    [Tags]  Regression  Postback
+    MansionGlobalPreferenceCenterPage.Add Breaking News By Hotlink
+    DefinedKeywords.Sign In Process
+    MansionGlobalPreferenceCenterPage.Validate Followed Breaking News
+    ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
+    Run Keyword If  ${val2} > 0  MansionGlobalPreferenceCenterPage.Click Following Toggle Alert Pop up
+    MansionGlobalPreferenceCenterPage.Validate Breaking News Toggle Feature
+    MansionGlobalPreferenceCenterPage.Click Breaking News Toggle Feature  #--unsubscribe functionality
+    MansionGlobalPreferenceCenterPage.Validate Following Toggle Alert Pop up
+    MansionGlobalPreferenceCenterPage.Click Following Toggle Alert Pop up
+    MansionGlobalPreferenceCenterPage.Validate Over Mouse On Notification Tooltip
+    MansionGlobalMailboxPage.Navigate Mailbox page
+    MansionGlobalMailboxPage.Login
+    MansionGlobalMailboxPage.Select Inbox
+    MansionGlobalMailboxPage.Search Mansion Global real-time company notification for Postback
+    MansionGlobalMailboxPage.Validate Mansion Global real-time company notification for Postback
+    MansionGlobalMailboxPage.Unsubscribe the mails
+    MansionGlobalMailboxPage.Verify the mail is unsubscribed

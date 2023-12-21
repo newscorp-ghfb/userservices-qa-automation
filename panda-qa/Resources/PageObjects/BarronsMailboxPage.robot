@@ -119,14 +119,14 @@ Validate Barrons real-time company notification for Postback
     Page Should Contain Element  //a[text()="Privacy Policy"]  #//a[text()="Privacy Notice"]
     Page Should Contain Element  //a[text()="Cookie Policy"]  #//a[text()="Cookie Notice"]
 
+
 Unsubscribe the mails
     #Outlook code
-    #Page Should Contain Element    //*[@id="ConversationReadingPaneContainer"]/div/div/div[3]/div[1]/div/div/div/div/div[1]/div[1]/div[1]/div[2]/span[2]/div
-    #Click Element    //*[@id="ConversationReadingPaneContainer"]/div/div/div[3]/div[1]/div/div/div/div/div[1]/div[1]/div[1]/div[2]/span[2]/div
-    #Wait Until Page Contains Element    //*[@id="id__1763"]
-    #Click Element    //*[@id="id__1763"]
-    #GMail code
-    Page Should Contain Element  //*[@id=":un"]/div[1]/div[2]/div[1]/table/tbody/tr[1]/td[1]/table/tbody/tr/td/h3/span[2]
-    Click Element    //*[@id=":un"]/div[1]/div[2]/div[1]/table/tbody/tr[1]/td[1]/table/tbody/tr/td/h3/span[2]
-    Page Should Contain Element    //button[text()='Unsubscribe']
-    Click Element    //button[text()='Unsubscribe']
+    #Page Should Contain  //*[@id="ConversationReadingPaneContainer"]/div/div/div[3]/div[1]/div/div/div/div/div[1]/div[1]/div[1]/div[2]/span[2]/div
+    Click Element  //*[@id="ConversationReadingPaneContainer"]/div/div/div[3]/div[1]/div/div/div/div/div[1]/div[1]/div[1]/div[2]/span[2]/div
+    Wait Until Page Contains  //*[@id="id__1763"]
+    Click Element  //*[@id="id__1763"]
+
+Verify the mail is unsubscribed
+    Page Should Not Contain  //*[@id="ConversationReadingPaneContainer"]/div/div/div[3]/div[1]/div/div/div/div/div[1]/div[1]/div[1]/div[2]/span[2]/div
+
