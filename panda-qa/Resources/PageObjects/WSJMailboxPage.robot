@@ -44,7 +44,7 @@ Search Your Daily Digest from WSJ
 
 Validate WSJ Digest notification
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
-    Click Element  //div[@id="groupHeaderTop results"]/../div[2]
+    Click Element  //div[@id="groupHeaderTop results"]/../div/div[2]
     Page Should Contain Element  //a[text()="View in web browser ›"]
     Page Should Contain Element  //table[@role="presentation"]//span[text()="Daily"]/../span[text()="Digest"]
     Page Should Contain Element  //a[text()="Preferences"]
