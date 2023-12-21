@@ -55,7 +55,7 @@ Validate Subscription To All Basket Items
     Click Button  //*[text()="Haircuts and other personal care services"]/input
     Click Button  //*[text()="Laundry and dry cleaning services"]/input
     Click Button  //*[text()="Gasoline (all types)"]/input
-    #Scroll Element Into View  //button[text()="Subscribe"]
+    Scroll Element Into View  //button[text()="Subscribe"]
     Click Button  //button[text()="Subscribe"]
     Wait Until Element is Visible  //em[text()="You have been subscribed."]
     Element Text Should Be  //em[text()="You have been subscribed."]  You have been subscribed.
