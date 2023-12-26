@@ -84,7 +84,7 @@ Validate the PEN real-time company notification
 
 #US-T3600
 Validate Postback on Preference Center
-    [Documentation]  This test case validates the FN Postback on Preference Center
+    [Documentation]  This test case validates the PEN Postback on Preference Center
     [Tags]  Regression  Postback
     PENPreferenceCenterPage.Add Breaking News By Hotlink
     DefinedKeywords.Sign In Process
