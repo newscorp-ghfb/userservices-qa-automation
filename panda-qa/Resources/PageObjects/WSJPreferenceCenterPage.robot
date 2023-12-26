@@ -127,7 +127,11 @@ Validate Author On All Tab
     Page Should Contain  Joanna Stern
 
 Add Company By Hotlink
-    Go To  https://www.wsj.com/follow?alert=company&fcode=AMZCOM
+    IF  ${Env} == "prod"
+        Go To  https://www.wsj.com/follow?alert=company&fcode=AMZCOM
+    ELSE IF  ${Env} == "dev"
+        Go To  https://www.s.dev.wsj.com/follow?alert=company&fcode=AMZCOM
+    END
 
 Validate Followed Companies
     Page Should Contain  Companies

@@ -824,3 +824,4 @@ Validate Postback on Preference Center
     WSJMailboxPage.Validate WSJ real-time company notification for Postback
     WSJMailboxPage.Unsubscribe the mails
     WSJMailboxPage.Verify the mail is unsubscribed
+    WSJPreferenceCenterPage.Add Company By Hotlink

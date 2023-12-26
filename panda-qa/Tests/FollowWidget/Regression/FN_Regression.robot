@@ -105,3 +105,4 @@ Validate Postback on Preference Center
     FNMailboxPage.Validate FN real-time company notification for Postback
     FNMailboxPage.Unsubscribe the mails
     FNMailboxPage.Verify the mail is unsubscribed
+    FNPreferenceCenterPage.Add Company By Hotlink

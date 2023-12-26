@@ -243,6 +243,7 @@ Validate Postback on Preference Center
     BarronsMailboxPage.Validate Barrons real-time company notification for Postback
     BarronsMailboxPage.Unsubscribe the mails
     BarronsMailboxPage.Verify the mail is unsubscribed
+    BarronsPreferenceCenterPage.Add Company By Hotlink
 
 
 

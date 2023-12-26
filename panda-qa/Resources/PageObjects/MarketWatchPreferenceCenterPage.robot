@@ -67,7 +67,12 @@ Validate Author On All Tab
     Page Should Contain  Angela Moore
 
 Add Company By Hotlink
-    Go To  https://www.marketwatch.com/follow?alert=company&fcode=AMZCOM
+    IF  ${Env} == "prod"
+        Go To  https://www.marketwatch.com/follow?alert=company&fcode=AMZCOM
+    ELSE IF  ${Env} == "dev"
+        Go To  https://www.s.dev.marketwatch.com/follow?alert=company&fcode=AMZCOM
+    END
+
 
 Validate Followed Companies
     Page Should Contain  Companies

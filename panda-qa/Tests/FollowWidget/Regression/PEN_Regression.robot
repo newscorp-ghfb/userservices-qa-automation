@@ -103,3 +103,4 @@ Validate Postback on Preference Center
     PENMailboxPage.Validate PEN real-time company notification for Postback
     PENMailboxPage.Unsubscribe the mails
     PENMailboxPage.Verify the mail is unsubscribed
+    PENPreferenceCenterPage.Add Company By Hotlink

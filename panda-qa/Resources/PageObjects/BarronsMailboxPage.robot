@@ -119,14 +119,12 @@ Validate Barrons real-time company notification for Postback
     Page Should Contain Element  //a[text()="Privacy Policy"]  #//a[text()="Privacy Notice"]
     Page Should Contain Element  //a[text()="Cookie Policy"]  #//a[text()="Cookie Notice"]
 
-
 Unsubscribe the mails
     Page Should Contain Element  //div[text()="Unsubscribe"]
     Click Element  //div[text()="Unsubscribe"]
     Set Selenium Implicit Wait  50s
     Page Should Contain Element  //button[@id="ok-1"]
     Click Element  //button[@id="ok-1"]
-
 
 Verify the mail is unsubscribed
     Page Should Not Contain  //div[text()="Unsubscribe"]

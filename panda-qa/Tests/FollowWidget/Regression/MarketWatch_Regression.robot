@@ -132,3 +132,4 @@ Validate Postback on Preference Center
     MarketWatchMailboxPage.Validate MW real-time company notification for Postback
     MarketWatchMailboxPage.Unsubscribe the mails
     MarketWatchMailboxPage.Verify the mail is unsubscribed
+    MarketWatchPreferenceCenterPage.Add Company By Hotlink

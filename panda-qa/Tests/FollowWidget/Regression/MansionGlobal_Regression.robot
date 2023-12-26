@@ -105,3 +105,4 @@ Validate Postback on Preference Center
     MansionGlobalMailboxPage.Validate Mansion Global real-time company notification for Postback
     MansionGlobalMailboxPage.Unsubscribe the mails
     MansionGlobalMailboxPage.Verify the mail is unsubscribed
+    MansionGlobalPreferenceCenterPage.Add Company By Hotlink
