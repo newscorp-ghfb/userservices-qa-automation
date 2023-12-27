@@ -6,7 +6,7 @@ Library  SeleniumLibrary
 
 *** Keywords ***
 Validate Newsletters Page
-    Page Should Contain Element  //h1[text()="Barron's Newsletters"]
+    Page Should Contain Element  //h1[text()="Newsletters"]
 
 Click author newsletters toggle
     Click Element  //*[text()="The Barron's Daily"]//../../div[2]/div/div

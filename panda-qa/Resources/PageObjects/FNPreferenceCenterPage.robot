@@ -32,10 +32,10 @@ Click Following Toggle Feature
     IF  ${Env} == "prod"
         Click Element  //*[text()="Paul Clarke"]/../../../../td[4]/div
     ELSE IF  ${Env} == "dev"
-        Click Element  //*[text()="Sunita Adhikarla"]/../../../../td[4]/div
+        Click Element  //*[text()="Christopher Mims"]/../../../../td[4]/div
     END
 Validate Following Toggle Alert Pop up
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[3]/div/span
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr/td[1]/div/div/a
 
 Click Following Toggle Alert Pop up
     Click Button  //*[@id="root"]/div/div/div/div[3]/div/div/button

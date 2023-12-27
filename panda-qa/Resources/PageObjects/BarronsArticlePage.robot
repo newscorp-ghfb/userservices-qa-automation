@@ -13,10 +13,12 @@ ${JSFollowButtonBarrons2Path}=  document.querySelector('ufc-follow-author-widget
     ...  .querySelector('ufc-follow-button').shadowRoot  #3
     ...  .querySelector('button')  #4
 
+
 ${JSStockPickFollowButtonBarronsPath}=  document.querySelector('ufc-follow-custom-topic-widget.hydrated').shadowRoot  #1
     ...  .querySelector('ufc-follow-widget')  #2
     ...  .querySelector('ufc-follow-button').shadowRoot  #3
     ...  .querySelector('button')  #4
+
 
 ${JSStockPickUndoButtonBarronsPath}=  document.querySelector('ufc-follow-custom-topic-widget').shadowRoot  #1
     ...  .querySelector('ufc-follow-widget').shadowRoot  #2
@@ -157,7 +159,7 @@ Click Sign In Button 2 Modal
     END
 
 Click Sign In Button 3 Modal
-    Wait Until Element is Visible  dom:${JSFollowSignInButton3Path}  20s
+    Wait Until Element is Visible  dom:${JSFollowSignInButton3Path}  timeout=15s
     Click Element  dom:${JSFollowSignInButton3Path}
 
 Click Undo Link
@@ -192,4 +194,8 @@ Click author hyperlink
     END
 
 Validate author without byline
+    IF  ${Env} == "prod"
     Page Should Contain Element  //div[@class="byline article__byline"]/div/span[text()="John Porter"]
+    ELSE IF  ${Env} == "dev"
+    Page Should Contain Element  //div[@class="standard__ArticleBylineWrapper-sc-14sjre0-1 kwytpC"]/div/div/a/span/span[text()="Teresa Rivas"]
+    END

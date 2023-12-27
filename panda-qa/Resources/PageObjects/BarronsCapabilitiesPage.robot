@@ -40,7 +40,10 @@ Click Real State Search Tab
     Click Button  //*[@href="/app/follow/real_estate_search/tab/dashboard"]/*[text()="Real Estate Search"]
 
 Validate Following Button
-    Wait Until Element is Visible  dom:${JSFollowButtonBarronsPath}
+    Wait Until Element is Visible  dom:${JSFollowButtonBarronsPath}= document.querySelector('ufc-follow-author-widget').shadowRoot  #1
+    ...  .querySelector('ufc-follow-widget')  #2
+    ...  .querySelector('ufc-follow-button').shadowRoot  #3
+    ...  .querySelector('button')  #4
     Wait Until Element Contains  dom:${JSFollowButtonBarronsPath}  Following  timeout=15
     Element Text Should Be  dom:${JSFollowButtonBarronsPath}  Following  timeout=15
 
@@ -74,8 +77,8 @@ Validate Authors On Search Tab
         Input Text   //*[@placeholder="Author name"]  Ben Walsh
         Click Button  //*[text()="Ben Walsh"]
     ELSE IF  ${Env} == "dev"
-        Input Text   //*[@placeholder="Author name"]  John Smith
-        Click Button  //*[text()="John Smith"]
+        Input Text   //*[@placeholder="Author name"]  Andrew Bary
+        Click Button  //*[text()="Andrew Bary"]
     END
     Element Text Should Be  //*[text()="About"]/../h2[2]  0 Followers
 
@@ -154,8 +157,8 @@ Validate Industry On Search Tab
 
 
 Capabilities Dashboard Barrons Menu
-    Click Button  //*[text()="Barron's"]/../../a
-    Wait Until Element Is Visible  //h1[text()="Barron's"]
+    Click Button  //*[text()="Barrons"]/../../a
+    Wait Until Element Is Visible  //h1[text()="Barrons"]
     Wait Until Element Is Visible  //*[text()="Alert type:"]
     Wait Until Element Is Visible  //option[text()="All"]
     Wait Until Element Is Visible  //option[text()="Digest"]

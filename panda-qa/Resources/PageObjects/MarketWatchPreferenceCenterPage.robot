@@ -29,15 +29,15 @@ Validate Following Toggle Feature
 
 Click Following Toggle Feature
     IF  ${Env} == "prod"
-        Click Element  //*[text()="Isabel Wang"]/../../../../td[4]/div
+        Click Element  //*[text()="Steve Goldstein"]/../../../../td[4]/div
     ELSE IF  ${Env} == "dev"
-        Click Element  //*[text()="Jonathan Burton"]/../../../../td[4]/div
+        Click Element  //*[text()="John Wordock"]/../../../../td[4]/div
     END
 Validate Following Toggle Alert Pop up
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[3]/div/span
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[1]/div/div/a
 
 Click Following Toggle Alert Pop up
-    Click Button  //*[@id="root"]/div/div/div/div[3]/div/div/button
+    Click Button  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[1]/div/div/a
 
 Validate Author Updates From Preference Center Reflected In Articles
     Click Button  //*[@id="root"]/div/div/div/div[2]/div[2]/div/div/button
@@ -46,7 +46,7 @@ Add Author By Hotlink
     Go To  https://www.marketwatch.com/follow?alert=author&id=15_MW
 
 Validate Author Name
-    Page Should Contain  Angela Moore
+    Page Should Contain  Steve Goldstein
 
 Validate Following Frequency
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[1]/span[2]
