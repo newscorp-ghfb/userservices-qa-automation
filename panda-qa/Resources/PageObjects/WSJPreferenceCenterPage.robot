@@ -103,7 +103,12 @@ Validate Author Updates From Preference Center Reflected In Articles
     Click Button  //*[@id="root"]/div/div/div/div[2]/div[2]/div/div/button
 
 Add Author By Hotlink
-    Go To  https://www.wsj.com/follow?alert=author&id=7872
+    IF  ${Env} == "prod"
+        Go To  https://www.wsj.com/follow?alert=author&id=7872
+        Go To  https://www.wsj.com/follow?alert=author&id=8736
+    ELSE IF  ${Env} == "dev"
+        Go To  https://www.s.dev.wsj.com/follow?alert=author&id=7872
+    END
 
 Validate Author Name
     Page Should Contain  Joanna Stern

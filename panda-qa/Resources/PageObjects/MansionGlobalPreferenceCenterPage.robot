@@ -45,7 +45,11 @@ Validate Author Updates From Preference Center Reflected In Articles
     Click Button  //*[@id="root"]/div/div/div/div[2]/div[2]/div/div/button
 
 Add Author By Hotlink
-    Go To  https://www.s.dev.mansionglobal.com/follow?alert=author&id=8686_MG&frequency=realtime
+     IF  ${Env} == "prod"
+        Go To  https://www.mansionglobal.com/follow?alert=author&id=8686_MG&frequency=realtime
+     ELSE IF  ${Env} == "dev"
+        Go To  https://www.s.dev.mansionglobal.com/follow?alert=author&id=8686_MG&frequency=realtime
+     END
 
 Validate Author Name
     Page Should Contain  Mariana Nuñez
@@ -68,7 +72,11 @@ Validate Author On All Tab
     Page Should Contain  Mariana Nuñez
 
 Add Company By Hotlink
-    Go To  https://www.s.dev.mansionglobal.com/follow?alert=company&fcode=AMZCOM
+     IF  ${Env} == "prod"
+         Go To  https://www.mansionglobal.com/follow?alert=company&fcode=AMZCOM
+     ELSE IF  ${Env} == "dev"
+         Go To  https://www.s.dev.mansionglobal.com/follow?alert=company&fcode=AMZCOM
+     END
 
 Validate Followed Companies
     Page Should Contain  Companies

@@ -89,7 +89,7 @@ Validate MW real-time company notification
 Search Your MW real-time company notification for Postback
     Wait Until Page Contains Element  //input[@id="topSearchInput"]
     Click Element  //input[@id="topSearchInput"]
-    Input Text  //input[@id="topSearchInput"]  Barrons The latest news on Amazon.com, Inc.  #TEST: The latest news on Amazon Com Inc
+    Input Text  //input[@id="topSearchInput"]  Marketwatch The latest news on Amazon.com, Inc.  #TEST: The latest news on Amazon Com Inc
     Click Element  //button[@aria-label="Search"]
 
 Validate MW real-time company notification for Postback

@@ -101,8 +101,8 @@ Validate Postback on Preference Center
     MansionGlobalMailboxPage.Navigate Mailbox page
     MansionGlobalMailboxPage.Login
     MansionGlobalMailboxPage.Select Inbox
-    MansionGlobalMailboxPage.Search Mansion Global real-time company notification for Postback
-    MansionGlobalMailboxPage.Validate Mansion Global real-time company notification for Postback
+    MansionGlobalMailboxPage.Search Mansion Global real-time author notification for Postback
+    MansionGlobalMailboxPage.Validate Mansion Global real-time author notification for Postback
     MansionGlobalMailboxPage.Unsubscribe the mails
     MansionGlobalMailboxPage.Verify the mail is unsubscribed
-    MansionGlobalPreferenceCenterPage.Add Company By Hotlink
+    MansionGlobalPreferenceCenterPage.Add Author By Hotlink

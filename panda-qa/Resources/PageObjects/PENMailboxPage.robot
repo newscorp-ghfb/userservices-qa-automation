@@ -88,7 +88,7 @@ Validate PEN real-time company notification
 Search PEN real-time company notification for Postback
     Wait Until Page Contains Element  //input[@id="topSearchInput"]
     Click Element  //input[@id="topSearchInput"]
-    Input Text  //input[@id="topSearchInput"]  Barrons The latest news on Amazon.com, Inc.
+    Input Text  //input[@id="topSearchInput"]  The latest from Sebastian McCarthy
     Click Element  //button[@aria-label="Search"]
 
 Validate PEN real-time company notification for Postback

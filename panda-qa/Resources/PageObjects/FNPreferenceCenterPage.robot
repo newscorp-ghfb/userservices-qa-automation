@@ -81,8 +81,10 @@ Validate Author On All Tab
 Add Company By Hotlink
     IF  ${Env} == "prod"
         Go To  https://www.fnlondon.com/follow?alert=company&fcode=AMZCOM
+        Go To  https://www.fnlondon.com/follow?alert=company&fcode=BLAMAN
     ELSE IF  ${Env} == "dev"
         Go To  https://www.s.dev.fnlondon.com/follow?alert=company&fcode=AMZCOM
+        Go To  https://www.s.dev.fnlondon.com/follow?alert=company&fcode=BLAMAN
     END
 
 Validate Followed Companies

@@ -44,7 +44,12 @@ Validate Author Updates From Preference Center Reflected In Articles
     Click Button  //*[@id="root"]/div/div/div/div[2]/div[2]/div/div/button
 
 Add Author By Hotlink
-    Go To  https://www.penews.com/follow?alert=author&id=1_PEN
+    IF  ${Env} == "prod"
+    Go To  https://www.penews.com/follow?alert=author&id=5_PEN
+    ELSE IF  ${Env} == "dev"
+    Go To  https://www.s.dev.penews.com/follow?alert=author&id=8680_PEN
+    END
+
 
 Validate Author Name
     Page Should Contain  Mark Latham
@@ -70,7 +75,7 @@ Add Company By Hotlink
     IF  ${Env} == "prod"
         Go To  https://www.penews.com/follow?alert=company&fcode=AMZCOM
     ELSE IF  ${Env} == "dev"
-        GGo To  https://www.s.dev.penews.com/follow?alert=company&fcode=AMZCOM
+        Go To  https://www.s.dev.penews.com/follow?alert=company&fcode=AMZCOM
     END
 
 Validate Followed Companies

@@ -820,8 +820,8 @@ Validate Postback on Preference Center
     WSJMailboxPage.Navigate Mailbox page
     WSJMailboxPage.Login
     WSJMailboxPage.Select Inbox
-    WSJMailboxPage.Search WSJ real-time company notification for Postback
-    WSJMailboxPage.Validate WSJ real-time company notification for Postback
+    WSJMailboxPage.Search WSJ real-time author notification for Postback
+    WSJMailboxPage.Validate WSJ real-time author notification for Postback
     WSJMailboxPage.Unsubscribe the mails
     WSJMailboxPage.Verify the mail is unsubscribed
-    WSJPreferenceCenterPage.Add Company By Hotlink
+    WSJPreferenceCenterPage.Add Author By Hotlink
