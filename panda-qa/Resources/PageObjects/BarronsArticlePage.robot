@@ -196,5 +196,5 @@ Validate author without byline
     IF  ${Env} == "prod"
     Page Should Contain Element  //div[@class="byline article__byline"]/div/span[text()="Brain Swint"]
     ELSE IF  ${Env} == "dev"
-    Page Should Contain Element  //div[@class="standard__ArticleBylineWrapper"]/div/div/a/span/span[text()="Teresa Rivas"]
+    Page Should Contain Element  //div[@class="standard__ArticleBylineWrapper"]/div/span[text()="Teresa Rivas"]
     END
