@@ -88,14 +88,14 @@ Validate Barrons real-time company notification
 Search Your Barrons real-time stock picks notification
     Wait Until Page Contains Element  //input[@id="topSearchInput"]
     Click Element  //input[@id="topSearchInput"]
-    Input Text  //input[@id="topSearchInput"]  Barron's Stock Picks
+    Input Text  //input[@id="topSearchInput"] Barron's Stock Picks
     Click Element  //button[@aria-label="Search"]
 
 Validate Barrons real-time stock picks notification
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
     Page Should Contain Element  //a[text()="Is this email difficult to read? View in browser"]
-    Page Should Contain Element  //div/span[text()="Barrons"]/../span[text()="Stock"]/../span[text()="Picks"]
+    Page Should Contain Element  //div/span[text()="Barron's Stock Picks"]
     Page Should Contain Element  //a[text()="Read More "]
     Page Should Contain Element  //a[text()="Alerts Center"]
     Page Should Contain Element  //a[text()="Contact Us"]
