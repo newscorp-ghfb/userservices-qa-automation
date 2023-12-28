@@ -84,3 +84,29 @@ Validate Mansion Global weekly saved search notification
     Page Should Contain Element  //a[text()="Unsubscribe"]
     Page Should Contain Element  //a[text()="Privacy Notice"]
     Page Should Contain Element  //a[text()="Cookie Notice"]
+
+Search Mansion Global real-time author notification for Postback
+    Wait Until Page Contains Element  //input[@id="topSearchInput"]
+    Click Element  //input[@id="topSearchInput"]
+    Input Text  //input[@id="topSearchInput"]  The latest from Casey Farmer
+    Click Element  //button[@aria-label="Search"]
+
+Validate Mansion Global real-time author notification for Postback
+    Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
+    Click Element  //div[@id="groupHeaderTop results"]/../div[2]
+    Page Should Contain Element  //a[text()="Is this email difficult to read? View in browser"]
+    Page Should Contain Element  //a[text()="Read More "]
+    Page Should Contain Element  //a[text()="Alerts Center"]
+    Page Should Contain Element  //a[text()="Contact Us"]
+    Page Should Contain Element  //a[text()="Privacy Policy"]
+    Page Should Contain Element  //a[text()="Cookie Policy"]
+
+Unsubscribe the mails
+    Page Should Contain Element  //div[text()="Unsubscribe"]
+    Click Element  //div[text()="Unsubscribe"]
+    Set Selenium Implicit Wait  50s
+    Page Should Contain Element  //button[@id="ok-1"]
+    Click Element  //button[@id="ok-1"]
+
+Verify the mail is unsubscribed
+    Page Should Not Contain  //div[text()="Unsubscribe"]

@@ -38,7 +38,7 @@ Validate Follow Button
         Execute javascript  window.scrollTo(0,500)
     END
     Wait Until Element is Visible  dom:${JSFollowButtonMWPath}
-    Element Text Should Be  dom:${JSFollowButtonMWPath}  Follow  timeout=40s
+    Element Text Should Be  'dom:${JSFollowButtonMWPath}
 
 Validate Following Button
     Wait Until Element is Visible  dom:${JSFollowButtonMWPath}
@@ -60,7 +60,7 @@ Validate Sign In Modal
     Page Should Contain Element  dom:${JSFollowSignInHeaderPath}
 
 Click Sign In Button Modal
-    #Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}  timeout=45s
+    Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}  timeout=45s
     Click Button  dom:${JSFollowSignInButtonPath}
 
 Click Undo Link
@@ -80,4 +80,4 @@ Click author hyperlink
     Click Element  //*[@id="maincontent"]/div[1]/div[1]/div[2]/div[2]/div/a/h4
 
 Validate author without byline
-    Page Should Contain Element  //div[@class="byline"]/div/div/span[text()="Clare Dickinson"]
+    Page Should Contain Element  //div[@class="byline"]/div/div/span[text()="Catey Hill"]

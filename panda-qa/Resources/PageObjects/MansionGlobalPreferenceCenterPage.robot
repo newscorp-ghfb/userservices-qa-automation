@@ -1,6 +1,7 @@
 *** Settings ***
 Library  SeleniumLibrary
 Resource  ../../Resources/CommonFunctionality.robot
+Resource    BarronsQuotesPage.robot
 
 *** Variables ***
 
@@ -44,14 +45,18 @@ Validate Author Updates From Preference Center Reflected In Articles
     Click Button  //*[@id="root"]/div/div/div/div[2]/div[2]/div/div/button
 
 Add Author By Hotlink
-    Go To  https://www.s.dev.mansionglobal.com/follow?alert=author&id=8686_MG&frequency=realtime
+     IF  ${Env} == "prod"
+        Go To  https://www.mansionglobal.com/follow?alert=author&id=8686_MG&frequency=realtime
+     ELSE IF  ${Env} == "dev"
+        Go To  https://www.s.dev.mansionglobal.com/follow?alert=author&id=8686_MG&frequency=realtime
+     END
 
 Validate Author Name
     Page Should Contain  Mariana Nuñez
 
 Validate Following Frequency
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[1]/span[2]
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[2]/span[2]
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[4]/div/label[1]/span[1]
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[4]/div/label[2]/span[2]
 
 Validate All Tabs Displayed
     Page Should Contain  Barron's
@@ -67,7 +72,11 @@ Validate Author On All Tab
     Page Should Contain  Mariana Nuñez
 
 Add Company By Hotlink
-    Go To  https://www.s.dev.mansionglobal.com/follow?alert=company&fcode=AMZCOM
+     IF  ${Env} == "prod"
+         Go To  https://www.mansionglobal.com/follow?alert=company&fcode=AMZCOM
+     ELSE IF  ${Env} == "dev"
+         Go To  https://www.s.dev.mansionglobal.com/follow?alert=company&fcode=AMZCOM
+     END
 
 Validate Followed Companies
     Page Should Contain  Companies
@@ -91,3 +100,27 @@ Validate Company Toggle Feature
 
 Click Company Toggle Feature
     Click Element  //*[text()="Amazon.com, Inc."]/../../..//*[@role="switch"]
+
+Add Breaking News By Hotlink
+     IF  ${Env} == "prod"
+        Go To  https://www.mansionglobal.com/follow?alert=news_alert&id=NewsAlertEmailTechnology
+        ELSE IF  ${Env} == "dev"
+        Go To  https://www.s.dev.mansionglobal.com/follow?alert=news_alert&id=NewsAlertEmailTechnology
+
+     END
+
+Validate Followed Breaking News
+    Scroll Down
+    Page Should Contain  News Alerts
+
+Validate Breaking News Toggle Feature
+    Wait Until Element is Visible  //*[text()="Technology"]/../../..//*[@role="switch"]
+    Page Should Contain Element  //*[text()="Technology"]/../../..//*[@role="switch"]
+
+Click Breaking News Toggle Feature
+    Click Element  //*[text()="Technology"]/../../..//*[@role="switch"]
+
+Validate Over Mouse On Notification Tooltip
+    Click Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/thead/tr/th[3]/div/button/span
+    Page Should Contain  Choose whether you want to receive alerts as soon as an article gets published or once a day as a digest.
+

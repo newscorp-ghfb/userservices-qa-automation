@@ -3,9 +3,9 @@ Library  SeleniumLibrary
 Resource  ../Resources/DefinedKeywords.robot
 
 *** Variables ***
-${Browser}=  chrome  #headless, ff, chrome, edge, safari
+${Browser}=  ff  #headless, ff, chrome, edge, safari
 
-${Env}=  "prod"  #dev, prod
+${Env}=  "dev"  #dev, prod
 
 ${Email_prod}=  barronsadvisorcs@gmail.com
 
@@ -473,3 +473,12 @@ Click Sign In
 
 Finish Testcase
     Close Browser
+
+Start CMS page for Barrons
+    Set Selenium Speed  0.5 seconds
+    IF  ${Env} == "prod"
+        Go To  https://www.barrons.com/watchlist
+    ELSE IF  ${Env} == "dev"
+        Go To  https://newspress.int.dowjones.io/barrons/wp-admin/post-new.php  #https://www.s.dev.barrons.com/watchlist
+    END
+    Maximize Browser Window

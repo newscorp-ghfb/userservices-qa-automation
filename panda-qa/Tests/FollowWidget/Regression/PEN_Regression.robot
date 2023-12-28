@@ -1,5 +1,6 @@
 *** Settings ***
 Documentation  PEN Regression Tests
+Force Tags  PENews
 Resource  ../../../Resources/CommonFunctionality.robot
 Resource  ../../../Resources/DefinedKeywords.robot
 Resource  ../../../Resources/PageObjects/PENArticlePage.robot
@@ -16,7 +17,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T96
 Validate the PEN Preference Center page
     [Documentation]  This test case validates the PEN preference center page
-    [Tags]  Regression
+    [Tags]  Regression  PreferenceCenter
 
     PENPreferenceCenterPage.Add Author By Hotlink
     DefinedKeywords.Sign In Process
@@ -46,7 +47,7 @@ Validate the PEN Preference Center page
 #US-T29
 Validate Authors for PEN Article page without byline
     [Documentation]  This test case validates authors without byline for PEN article page
-    [Tags]  Regression
+    [Tags]  Regression  Article  Author
 
     CommonFunctionality.Start PEN Article without byline
     PENArticlePage.Validate author without byline
@@ -54,7 +55,7 @@ Validate Authors for PEN Article page without byline
 #US-T123
 Validate the PEN digest notification
     [Documentation]  This test case validates the PEN digest notification
-    [Tags]  Regression
+    [Tags]  Regression  Notifications
     PENMailboxPage.Navigate Mailbox page
     PENMailboxPage.Login
     PENMailboxPage.Select Inbox
@@ -64,7 +65,7 @@ Validate the PEN digest notification
 #US-T150
 Validate the PEN real-time author notification
     [Documentation]  This test case validates the PEN real-time author notification
-    [Tags]  Regression
+    [Tags]  Regression  Notifications  Author
     PENMailboxPage.Navigate Mailbox page
     PENMailboxPage.Login
     PENMailboxPage.Select Inbox
@@ -74,9 +75,32 @@ Validate the PEN real-time author notification
 #US-T152
 Validate the PEN real-time company notification
     [Documentation]  This test case validates the PEN real-time company notification
-    [Tags]  Regression
+    [Tags]  Regression  Company  Notifications
     PENMailboxPage.Navigate Mailbox page
     PENMailboxPage.Login
     PENMailboxPage.Select Inbox
     PENMailboxPage.Search Your PEN real-time company notification
     PENMailboxPage.Validate PEN real-time company notification
+
+#US-T3600
+Validate Postback on Preference Center
+    [Documentation]  This test case validates the PEN Postback on Preference Center
+    [Tags]  Regression  Postback
+    PENPreferenceCenterPage.Add Breaking News By Hotlink
+    DefinedKeywords.Sign In Process
+    PENPreferenceCenterPage.Validate Followed Breaking News
+    ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
+    Run Keyword If  ${val2} > 0  PENPreferenceCenterPage.Click Following Toggle Alert Pop up
+    PENPreferenceCenterPage.Validate Breaking News Toggle Feature
+    PENPreferenceCenterPage.Click Breaking News Toggle Feature  #--unsubscribe functionality
+    PENPreferenceCenterPage.Validate Following Toggle Alert Pop up
+    PENPreferenceCenterPage.Click Following Toggle Alert Pop up
+    PENPreferenceCenterPage.Validate Over Mouse On Notification Tooltip
+    PENMailboxPage.Navigate Mailbox page
+    PENMailboxPage.Login
+    PENMailboxPage.Select Inbox
+    PENMailboxPage.Search PEN real-time company notification for Postback
+    PENMailboxPage.Validate PEN real-time company notification for Postback
+    PENMailboxPage.Unsubscribe the mails
+    PENMailboxPage.Verify the mail is unsubscribed
+    PENPreferenceCenterPage.Add Company By Hotlink

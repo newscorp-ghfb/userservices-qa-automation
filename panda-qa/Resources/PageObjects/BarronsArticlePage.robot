@@ -13,10 +13,12 @@ ${JSFollowButtonBarrons2Path}=  document.querySelector('ufc-follow-author-widget
     ...  .querySelector('ufc-follow-button').shadowRoot  #3
     ...  .querySelector('button')  #4
 
+
 ${JSStockPickFollowButtonBarronsPath}=  document.querySelector('ufc-follow-custom-topic-widget.hydrated').shadowRoot  #1
     ...  .querySelector('ufc-follow-widget')  #2
     ...  .querySelector('ufc-follow-button').shadowRoot  #3
     ...  .querySelector('button')  #4
+
 
 ${JSStockPickUndoButtonBarronsPath}=  document.querySelector('ufc-follow-custom-topic-widget').shadowRoot  #1
     ...  .querySelector('ufc-follow-widget').shadowRoot  #2
@@ -157,7 +159,7 @@ Click Sign In Button 2 Modal
     END
 
 Click Sign In Button 3 Modal
-    Wait Until Element is Visible  dom:${JSFollowSignInButton3Path}  20s
+    Wait Until Element is Visible  dom:${JSFollowSignInButton3Path}  timeout=15s
     Click Element  dom:${JSFollowSignInButton3Path}
 
 Click Undo Link
@@ -176,20 +178,23 @@ Click Stock Pick Preference Center Link
     Wait Until Element is Visible  dom:${JSStockPickPreferenceCenterLinkBarronsPath}
     Click Element  dom:${JSStockPickPreferenceCenterLinkBarronsPath}
 
-
 Validate author hyperlink
     IF  ${Env} == "prod"
-        Page Should Contain Element  //span[text()="Angela Palumbo"]
+        Page Should Contain Element  //span[text()="Brian Swint"]
     ELSE IF  ${Env} == "dev"
         Page Should Contain Element  //span[text()="Teresa Rivas"]
     END
 
 Click author hyperlink
     IF  ${Env} == "prod"
-        Click Element  //span[text()="Angela Palumbo"]
+        Click Element  //span[text()="Brian Swint"]
     ELSE IF  ${Env} == "dev"
         Click Element  //span[text()="Teresa Rivas"]
     END
 
 Validate author without byline
-    Page Should Contain Element  //div[@class="byline article__byline"]/div/span[text()="John Porter"]
+    IF  ${Env} == "prod"
+    Page Should Contain Element  //div[@class="byline article__byline"]/div/span[text()="Brain Swint"]
+    ELSE IF  ${Env} == "dev"
+    Page Should Contain Element  //div[@class="standard__ArticleBylineWrapper-sc-14sjre0-1 kwytpC"]/div/div/a/span/span[text()="Teresa Rivas"]
+    END

@@ -11,7 +11,7 @@ Validate Authors Page
     IF  ${Env} == "prod"
         Page Should Contain  Dave Michaels
     ELSE IF  ${Env} == "dev"
-        Page Should Contain  Julie Jargon
+        Page Should Contain  Joanna Stern
     END
 
 Validate Follow Button

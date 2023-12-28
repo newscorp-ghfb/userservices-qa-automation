@@ -72,16 +72,44 @@ Validate MW real-time author notification
 Search Your MW real-time company notification
     Wait Until Page Contains Element  //input[@id="topSearchInput"]
     Click Element  //input[@id="topSearchInput"]
-    Input Text  //input[@id="topSearchInput"]  MarketWatch The latest news on Alphabet Inc.
+    Input Text  //input[@id="topSearchInput"]  MarketWatch The latest news on GOOGLE
     Click Element  //button[@aria-label="Search"]
 
 Validate MW real-time company notification
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
-    Page Should Contain Element  //a[text()="View in web browser ›"]
-    Page Should Contain Element  //*[text()="GOOG (U.S.: Nasdaq)"]
+    Page Should Contain Element  //a[text()="View in web browser"]
+    Page Should Contain Element  //*[text()="GOOGLE (U.S.: Nasdaq)"]
     Page Should Contain Element  //a[text()="Read More "]
     Page Should Contain Element  //a[text()="Preferences"]
     Page Should Contain Element  //a[text()="Unsubscribe"]
     Page Should Contain Element  //a[text()="Privacy Notice"]
     Page Should Contain Element  //a[text()="Cookie Notice"]
+
+Search Your MW real-time company notification for Postback
+    Wait Until Page Contains Element  //input[@id="topSearchInput"]
+    Click Element  //input[@id="topSearchInput"]
+    Input Text  //input[@id="topSearchInput"]  Marketwatch The latest news on Amazon.com, Inc.  #TEST: The latest news on Amazon Com Inc
+    Click Element  //button[@aria-label="Search"]
+
+Validate MW real-time company notification for Postback
+    Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
+    Click Element  //div[@id="groupHeaderTop results"]/../div[2]
+    #Page Should Contain Element   //a[text()="Is this email difficult to read? View in browser"]  #//a[text()="View in web browser ›"]
+    #Page Should Contain Element  //div/span[text()="Amazon"]  #//*[text()="GOOGLE (U.S.: Nasdaq)"]
+    #Page Should Contain Element  //a[text()="Read More "]
+    #Page Should Contain Element  //a[text()="Preferences"]
+    Page Should Contain Element  //a[text()="Unsubscribe"]
+    #Page Should Contain Element  //a[text()="Privacy Policy"]  #//a[text()="Privacy Notice"]
+    #Page Should Contain Element  //a[text()="Cookie Policy"]  #//a[text()="Cookie Notice"]
+
+Unsubscribe the mails
+    Page Should Contain Element  //div[text()="Unsubscribe"]
+    Click Element  //div[text()="Unsubscribe"]
+    Set Selenium Implicit Wait  50s
+    Page Should Contain Element  //button[@id="ok-1"]
+    Click Element  //button[@id="ok-1"]
+
+Verify the mail is unsubscribed
+    Page Should Not Contain  //div[text()="Unsubscribe"]
+

@@ -86,4 +86,4 @@ Validate Author Label
     Page Should Contain Element  //*[@id="mg-pre-body-article-wrap"]/div[3]/div/div/strong
 
 Validate author without byline
-    Page Should Contain Element  //div/div/strong[contains(., 'Mary Diduch')]
+    Page Should Contain Element  //div/div/strong[contains(., 'Mariana Nuñez')]
