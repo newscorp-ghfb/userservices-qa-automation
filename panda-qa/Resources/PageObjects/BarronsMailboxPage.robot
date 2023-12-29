@@ -114,7 +114,7 @@ Validate Barrons real-time company notification for Postback
     Page Should Contain Element  //a[text()="Is this email difficult to read? View in browser"]  #//a[text()="View in web browser ›"]
     Page Should Contain Element  //div/span[text()="Amazon"]  #//*[text()="GOOGLE (U.S.: Nasdaq)"]
     Page Should Contain Element  //a[text()="Read More "]
-    #Page Should Contain Element  //a[text()="Preferences"]
+    Page Should Contain Element  //a[text()="Preferences"]
     Page Should Contain Element  //a[text()="Unsubscribe"]
     Page Should Contain Element  //a[text()="Privacy Policy"]  #//a[text()="Privacy Notice"]
     Page Should Contain Element  //a[text()="Cookie Policy"]  #//a[text()="Cookie Notice"]
