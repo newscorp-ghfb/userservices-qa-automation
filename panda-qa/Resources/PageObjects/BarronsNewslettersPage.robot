@@ -11,6 +11,9 @@ Validate Newsletters Page
 Click author newsletters toggle
     Click Element  //*[text()="The Barron's Daily"]//../../div[2]/div/div
 
+Click subscription confirmation button
+    Click Button  SUBSCRIBE
+
 Validate author newsletters subscription
     Wait Until Element is Visible  //*[text()="The Barron's Daily"]//../../div[2]/div/div[@aria-checked="true"]
 
