@@ -48,7 +48,7 @@ Reload Article Page
     Reload Page
 
 Validate Following Button
-    Set Focus To Element  //*[text()='Dave Michaels']
+    Set Focus To Element  //*[text()='John West']
     Wait Until Element is Visible  dom:${JSFollowButtonWSJPath}
     Wait Until Element Contains  dom:${JSFollowButtonWSJPath}  Following  timeout=15
     Element Text Should Be  dom:${JSFollowButtonWSJPath}  Following  timeout=15
@@ -119,16 +119,16 @@ Click Energy Button
     Click Button  dom:${JSCustomFollowButtonWSJPath}
 
 Validate author hyperlink
-    Page Should Contain Element  //*[text()='Dave Michaels']
+    Page Should Contain Element  //*[text()='John West']
 
 Click author hyperlink
-    Click Element  //*[text()='Dave Michaels']
+    Click Element  //*[text()='John West']
 
 Scroll Down
     IF  ${Env} == "prod"
-        Set Focus To Element  //*[text()='Dave Michaels']
+        Set Focus To Element  //*[text()='John West']
     ELSE IF  ${Env} == "dev"
-        Set Focus To Element  //*[text()='Jennifer Levitz']
+        Set Focus To Element  //*[text()='Joanna Stern']
     END
 
 Validate author without byline
