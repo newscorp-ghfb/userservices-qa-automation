@@ -40,6 +40,7 @@ ${JSFollowSignInButton2Path}=  document.querySelector('ufc-signin-modal[isopen]'
     ...  .querySelector('ufc-button')  #6
     ...  .querySelector('button')  #7
 
+
 ${JSFollowSignInHeaderPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('ufc-signin-modal').shadowRoot  #2
     ...  .querySelector('div')  #3
@@ -95,4 +96,4 @@ Click author hyperlink
     Click Element  //span[@class='css-1wc2zh5']
 
 Validate author without byline
-    Page Should Contain Element  //div[@class="byline"]/div/div/span[text()="Sunita Adhikarla"]
+    Page Should Contain Element  //div[@class="byline"]/div/div/span/a

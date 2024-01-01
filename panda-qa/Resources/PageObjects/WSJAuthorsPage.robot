@@ -2,9 +2,6 @@
 Library  SeleniumLibrary
 
 *** Variables ***
-${JSFollowButtonWSJPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
-    ...  .querySelector('ufc-follow-button').shadowRoot  #2
-    ...  .querySelector('button')  #3
 
 *** Keywords ***
 Validate Authors Page
