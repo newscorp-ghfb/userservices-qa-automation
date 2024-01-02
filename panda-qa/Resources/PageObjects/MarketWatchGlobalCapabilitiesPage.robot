@@ -197,7 +197,8 @@ Capabilities Dashboard Market Watch Menu
     Wait Until Element Is Visible  //option[text()="100"]
     Wait Until Element Is Visible  //option[text()="50"]
     IF  //tr[1]/td[5] >= 0
-        Log  MarketWatch Clicked value is not null
+        Log  Market
+        Watch Clicked value is not null
     ELSE
         Log  Error on MarketWatch Clicked value
     END
