@@ -14,10 +14,10 @@ Set Implicit Wait
     Set Selenium Implicit Wait  50s
 
 Sign In Process
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         ${Email}=  Set Variable  ${Email_prod}
         ${Password}=  Set Variable  ${Password_prod}
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         ${Email}=  Set Variable  ${Email_dev}
         ${Password}=  Set Variable  ${Password_dev}
     END
@@ -31,9 +31,9 @@ Sign In Process
     Input Text  //*[@id="password-login-password"]  ${Password}
     Set Selenium Implicit Wait  10s
     Set Selenium Speed  1.0 seconds
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Click Element  //*[@id="password-login"]/div/form/div/div[5]/div[1]/button
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Click Element  //*[@id="password-login"]/div/form/div[5]/button
     END
     Wait Until Element Is Not Visible  //*[@id="password-login"]/div/form/div/div[5]/div[1]/button
@@ -69,9 +69,9 @@ Accept Cookies
     Click Button  //*[@id="notice"]/div[4]/div/div[2]/button[2]
 
 Capabilities Dashboard Main Menu
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Open Browser  https://int-prod-capabilities-dashboard.vir.onservo.com/app  ${Browser}
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Open Browser  https://int-int-capabilities-dashboard.vir-dev.onservo.com/app  ${Browser}
     END
     Wait Until Element Is Visible  //h1[text()="Dashboard"]

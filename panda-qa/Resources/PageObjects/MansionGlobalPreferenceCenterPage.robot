@@ -10,28 +10,50 @@ Validate Preference Center page
     Page Should Contain  Follow Alerts
 
 Navigate Preference Center page
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.mansionglobal.com/follow
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.mansionglobal.com/follow
     END
 Navigate Article page
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.mansionglobal.com/articles/are-there-tax-breaks-on-agricultural-land-in-pennsylvania-01648119848
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212
     END
 Validate Followed Authors
     Page Should Contain  Authors
 
 Validate Following Toggle Feature
-    Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div
+    IF  "${Env}" == "prod"
+        Wait Until Element is Visible   //*[text()="V.L. HENDRICKSON"]/../../../../td[4]/div
+        Page Should Contain Element  //*[text()="Mariana Nuñez"]/../../../../td[4]/div
+    ELSE IF  "${Env}" == "dev"
+        Wait Until Element is Visible   //*[text()="Mariana Nuñez"]/../../../../td[4]/div
+        Page Should Contain Element  //*[text()="Mariana Nuñez"]/../../../../td[4]/div
+    END
 
+#    ${count} =  Get Element Count  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr
+#    ${val}    Set Variable    ${0}
+#    FOR    ${val}    IN RANGE    10
+#        IF    ${val} > 0
+##             ${path}    //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[${val}]/td/div/div/a
+##             ${test}=    Convert To String    ${val}[0:32]
+#             ${authorElem}=  Get Text 	//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[${val}]/td/div/div/a
+##             Get Text    //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[${val}]/td/div/div/a
+#            IF    "Mariana" in "${authorElem}"
+#                BREAK
+#            END
+##            Run Keyword If ${authorElem} == "Mariana" BREAK
+#        END
+#    END
+##    Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div
+#    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[${val}]/td/div/div/a
+#    Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div
 Click Following Toggle Feature
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Click Element  //*[text()="V.L. HENDRICKSON"]/../../../../td[4]/div
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Click Element  //*[text()="Mariana Nuñez"]/../../../../td[4]/div
     END
 Validate Following Toggle Alert Pop up

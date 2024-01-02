@@ -10,15 +10,15 @@ Validate Preference Center page
     Page Should Contain  Follow Alerts
 
 Navigate Preference Center page
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.fnlondon.com/follow
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.fnlondon.com/follow
     END
 Navigate Article page
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.fnlondon.com/articles/complaints-commissioner-fca-transparency-20220615
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.fnlondon.com/articles/testpanda-test-wsj-digest-2-20211020
     END
 Validate Followed Authors
@@ -29,9 +29,9 @@ Validate Following Toggle Feature
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div
 
 Click Following Toggle Feature
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Click Element  //*[text()="Paul Clarke"]/../../../../td[4]/div
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Click Element  //*[text()="Christopher Mims"]/../../../../td[4]/div
     END
 Validate Following Toggle Alert Pop up
@@ -44,17 +44,17 @@ Validate Author Updates From Preference Center Reflected In Articles
     Click Button  //*[@id="root"]/div/div/div/div[2]/div[2]/div/div/button
 
 Add Author By Hotlink
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.fnlondon.com/follow?alert=author&id=9004_FN&frequency=realtime
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.fnlondon.com/follow?alert=author&id=8680_FN&frequency=realtime
     END
 
 
 Validate Author Name
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Page Should Contain  Paul Clarke
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Page Should Contain  Sunita Adhikarla
     END
 Validate Following Frequency
@@ -72,16 +72,16 @@ Validate All Tabs Displayed
 
 Validate Author On All Tab
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[7]
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Page Should Contain  Paul Clarke
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Page Should Contain  Sunita Adhikarla
     END
 
 Add Company By Hotlink
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.fnlondon.com/follow?alert=company&fcode=AMZCOM
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.fnlondon.com/follow?alert=company&fcode=AMZCOM
     END
 

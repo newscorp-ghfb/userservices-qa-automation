@@ -125,9 +125,9 @@ Click author hyperlink
     Click Element  //*[text()='Dave Michaels']
 
 Scroll Down
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Set Focus To Element  //*[text()='Dave Michaels']
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Set Focus To Element  //*[text()='Jennifer Levitz']
     END
 

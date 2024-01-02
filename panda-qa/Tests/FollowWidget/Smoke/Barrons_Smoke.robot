@@ -29,7 +29,7 @@ Validate the author follow button from articles page
     DefinedKeywords.Sign In Process
     BarronsArticlePage.Validate Following Button
     Set Selenium Speed  0.2 seconds
-    IF  ${Env} == "dev"
+    IF  "${Env}" == "dev"
         Set Selenium Speed  0.5 seconds
     END
     BarronsArticlePage.Click Following Button
@@ -51,7 +51,7 @@ Validate the follow button from authors page
 
     BarronsArticlePage.Validate author hyperlink
     BarronsArticlePage.Click author hyperlink
-    IF  ${Env} == "dev"
+    IF  "${Env}" == "dev"
         BarronsArticlePage.Click author hyperlink
     END
     BarronsAuthorsPage.Validate Authors Page

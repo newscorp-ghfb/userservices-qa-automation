@@ -10,15 +10,15 @@ Validate Preference Center page
     Page Should Contain  Follow Alerts
 
 Navigate Preference Center page
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.barrons.com/follow
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.barrons.com/follow
     END
 Navigate Article page
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.barrons.com/articles/twitter-stock-pick-ceo-51638548530
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.barrons.com/articles/twitter-stock-pick-ceo-51638548530
         Set Selenium Speed  0.4 seconds
     END
@@ -30,9 +30,9 @@ Validate Following Toggle Feature
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div
 
 Click Following Toggle Feature
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Click Element  //*[text()="Angela Palumbo"]/../../../../td[4]/div
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Click Element  //*[text()="Teresa Rivas"]/../../../../td[4]/div
     END
 Validate Following Toggle Alert Pop up
@@ -45,9 +45,9 @@ Validate Author Updates From Preference Center Reflected In Articles
     Click Button  //*[@id="root"]/div/div/div/div[2]/div[2]/div/div/button
 
 Add Author By Hotlink
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.barrons.com/follow?alert=author&id=8553_BARRONS&frequency=realtime
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.barrons.com/follow?alert=author&id=8553_BARRONS&frequency=realtime
     END
 
@@ -77,10 +77,10 @@ Click Barrons tab
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[1]
 
 Add Company By Hotlink
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.barrons.com/follow?alert=company&fcode=AMZCOM
         # https://www.barrons.com/follow?alert=author&id=8553_BARRONS&frequency=realtime
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.barrons.com/follow?alert=company&fcode=AMZCOM
     END
 

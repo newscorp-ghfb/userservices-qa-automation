@@ -80,9 +80,9 @@ Validate Sign In Modal
 Click Sign In Button Modal
     #Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}  20s
     Set Selenium Speed  0.4 seconds
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
        Click Element  dom:${JSFollowSignInButtonPath}
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Click Element  dom:${JSFollowSignInButton2Path}
     END
     Set Selenium Speed  0.2 seconds

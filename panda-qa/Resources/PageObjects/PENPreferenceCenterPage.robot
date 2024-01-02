@@ -9,15 +9,15 @@ Validate Preference Center page
     Page Should Contain  Follow Alerts
 
 Navigate Preference Center page
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.penews.com/follow
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.penews.com/follow
     END
 Navigate Article page
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.penews.com/articles/lp-survey-warns-brace-for-some-high-profile-fundraising-failures-20220622
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.penews.com/articles/test-3testing-wsj-full-bleed-3k-words-20220215
     END
 Validate Followed Authors
@@ -28,9 +28,9 @@ Validate Following Toggle Feature
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div
 
 Click Following Toggle Feature
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Click Element  //*[text()="Sebastian McCarthy"]/../../../../td[4]/div
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Click Element  //*[text()="Sunita Adhikarla"]/../../../../td[4]/div
     END
 Validate Following Toggle Alert Pop up

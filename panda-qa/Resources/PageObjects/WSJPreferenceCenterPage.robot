@@ -9,39 +9,39 @@ Validate Preference Center page
     Page Should Contain  Follow Alerts
 
 Navigate Preference Center page
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.wsj.com/follow
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.wsj.com/follow
     END
 Navigate Article page
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.wsj.com/articles/mass-vaccination-sites-for-covid-19-are-back-11641646804
     END
 Navigate Letters Article page
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.wsj.com/articles/mary-eberstadt-furman-university-wsj-scott-yenor-campus-protest-speech-869ce29b
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.wsj.com/articles/mass-vaccination-sites-for-covid-19-are-back-11641646804
     END
 Navigate Editorials Article page
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.wsj.com/articles/chicago-mayor-wisconsin-supreme-court-election-paul-vallas-brandon-johnson-janet-protasiewicz-dan-kelly-3673d166
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.wsj.com/articles/mass-vaccination-sites-for-covid-19-are-back-11641646804
     END
 Navigate Commentary Article page
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.wsj.com/articles/medicare-drug-price-controls-will-make-america-sicker-research-innovation-negotiations-private-insurers-b503b4ba
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.wsj.com/articles/mass-vaccination-sites-for-covid-19-are-back-11641646804
     END
 Navigate Elections Article page
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.wsj.com/articles/kyrsten-sinema-joe-manchin-fail-to-attract-small-donors-for-potential-re-election-campaigns-d77506e7
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.wsj.com/articles/mass-vaccination-sites-for-covid-19-are-back-11641646804
     END
 Validate Followed Authors
@@ -59,37 +59,37 @@ Validate Custom Topics Following Toggle Feature
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[3]/div
 
 Click Following Toggle Feature
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Click Element  //*[text()="Dave Michaels"]/../../../../td[4]/div
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Click Element  //*[text()="Joanna Stern"]/../../../../td[4]/div
     END
 
 Click Letters Following Toggle Feature
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Click Element  //*[text()="Opinion: Letters to the Editor"]/../td[4]/div
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Click Element  //*[text()="Joanna Stern"]/../../../../td[4]/div
     END
 
 Click Editorials Following Toggle Feature
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Click Element  //*[text()="Opinion: Editorials"]/../td[4]/div
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Click Element  //*[text()="Jennifer Levitz"]/../../../../td[4]/div
     END
 
 Click Commentary Following Toggle Feature
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Click Element  //*[text()="Opinion: Commentary"]/../td[4]/div
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Click Element  //*[text()="Joanna Stern"]/../../../../td[4]/div
     END
 
 Click Elections Following Toggle Feature
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Click Element  //*[text()="U.S. Elections"]/../td[4]/div
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Click Element  //*[text()="Jennifer Levitz"]/../../../../td[4]/div
     END
 

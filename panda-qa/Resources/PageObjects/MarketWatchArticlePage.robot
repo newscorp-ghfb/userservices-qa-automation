@@ -34,7 +34,7 @@ ${JSPreferenceCenterLinkMarketWatchPath}=  document.querySelector('ufc-snackbar'
 
 *** Keywords ***
 Validate Follow Button
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Execute javascript  window.scrollTo(0,500)
     END
     Wait Until Element is Visible  'dom:${JSFollowButtonMWPath= document.querySelector('ufc-follow-author-widget').shadowRoot  #1
@@ -53,7 +53,7 @@ Validate Following Button
 
 Click Follow Button
     #Scroll Element Into View  //*[@id="maincontent"]/div[1]/div[1]/div[2]/div[2]/div/a/h4
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Execute javascript  window.scrollTo(0,500)
     END
     Click Button  dom:${JSFollowButtonMWPath}

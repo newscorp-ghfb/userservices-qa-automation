@@ -213,12 +213,12 @@ ${JSDeleteWatchlistConfimationButtonPath}=  document.querySelector('dj-watchlist
 Validate Watchlist for non-logged user
     Wait Until Element is Visible  dom:${JSRegisterNowButtonPath}
     Page Should Contain Element  dom:${JSRegisterNowButtonPath}
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Page Should Contain Element  dom:${JSDefaultSymbolDJIA-P}
         Page Should Contain Element  dom:${JSDefaultSymbolABS-P}
         Page Should Contain Element  dom:${JSDefaultSymbolMSFT-P}
         Page Should Contain Element  dom:${JSDefaultSymbolGOOG-P}
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Page Should Contain Element  dom:${JSDefaultSymbolDJIA-D}
         Page Should Contain Element  dom:${JSDefaultSymbolABS-D}
         Page Should Contain Element  dom:${JSDefaultSymbolMSFT-D}
@@ -248,9 +248,9 @@ Select Symbol
     Click Element  dom:${JSFirstSymbolResultBarronsPath}
 
 Validate Symbol in the New Watchlist
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Page Should Contain Element  dom:${JSSymbolAMZN-P}
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Page Should Contain Element  dom:${JSSymbolAMZN-D}
     END
 
