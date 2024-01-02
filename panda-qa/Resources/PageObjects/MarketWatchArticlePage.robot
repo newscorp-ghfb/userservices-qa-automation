@@ -36,9 +36,18 @@ ${JSPreferenceCenterLinkMarketWatchPath}=  document.querySelector('ufc-snackbar'
 Validate Follow Button
     IF  ${Env} == "prod"
         Execute javascript  window.scrollTo(0,500)
+    #ELSE IF  ${Env} == "dev"
+        # Execute javascript  window.scrollTo(0,500)
     END
+
     Wait Until Element is Visible  dom:${JSFollowButtonMWPath}
-    Element Text Should Be  'dom:${JSFollowButtonMWPath}
+    Select Frame  //*[@id="LOCSTORAGE"]
+    #Element Should Contain  //*[@id="maincontent"]/div[1]/div[1]/div[2]/div/div/div/header/h1/ufc-follow-author-widget//ufc-follow-widget/ufc-follow-button//button    Follow
+    
+    #Select Frame  //*[@id="maincontent"]/div[1]/div[1]/div[2]/div/div/div/header/h1/ufc-follow-author-widget//ufc-follow-widget/ufc-follow-button//button
+    #//*[@id="maincontent"]/div[1]/div[1]/div[2]/div/div/div/header/h1/ufc-follow-author-widget//ufc-follow-widget/ufc-follow-button//button
+
+    Element Text Should Be  'dom:${JSFollowButtonMWPath}  Follow  timeout=15
 
 Validate Following Button
     Wait Until Element is Visible  dom:${JSFollowButtonMWPath}
@@ -48,6 +57,8 @@ Validate Following Button
 Click Follow Button
     #Scroll Element Into View  //*[@id="maincontent"]/div[1]/div[1]/div[2]/div[2]/div/a/h4
     IF  ${Env} == "prod"
+        Execute javascript  window.scrollTo(0,500)
+    ELSE IF  ${Env} == "dev"
         Execute javascript  window.scrollTo(0,500)
     END
     Click Button  dom:${JSFollowButtonMWPath}

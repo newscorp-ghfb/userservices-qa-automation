@@ -93,6 +93,8 @@ Start Market Watch Article
     ELSE IF  ${Env} == "dev"
         Open Browser  https://www.dev.marketwatch.com  ${Browser}
         Go To  https://www.dev.marketwatch.com/author/Catey-Hill
+        Wait Until Page Contains Element  //*[@id="cx-scrim-wrapper"]/button
+        Click Button  //*[@id="cx-scrim-wrapper"]/button
     END
     Wait Until Page Contains Element  dom:${JSFollowButtonMWPath}
     Maximize Browser Window
