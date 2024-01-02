@@ -473,3 +473,12 @@ Click Sign In
 
 Finish Testcase
     Close Browser
+
+Start CMS page for Barrons
+    Set Selenium Speed  0.5 seconds
+    IF  ${Env} == "prod"
+        Go To  https://www.barrons.com/watchlist
+    ELSE IF  ${Env} == "dev"
+        Go To  https://newspress.int.dowjones.io/barrons/wp-admin/post-new.php  #https://www.s.dev.barrons.com/watchlist
+    END
+    Maximize Browser Window

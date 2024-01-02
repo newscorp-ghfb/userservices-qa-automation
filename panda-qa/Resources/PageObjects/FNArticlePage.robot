@@ -95,4 +95,4 @@ Click author hyperlink
     Click Element  //span[@class='css-1wc2zh5']
 
 Validate author without byline
-    Page Should Contain Element  //div[@class="byline"]/div/div/span[text()="Clare Dickinson"]
+    Page Should Contain Element  //div[@class="byline"]/div/div/span[text()="Sunita Adhikarla"]
