@@ -6,7 +6,7 @@ Resource  ../Resources/DefinedKeywords.robot
 ${Browser}=  chrome
 #${browser_name}
 #"chrome"  #headless, ff, chrome, edge, safari
-${options}=  ${null}
+#${options}=  Set Browser Options
 #"firefox"  #headless, ff, chrome, edge, safari
 
 ${Env}=  dev
@@ -45,19 +45,19 @@ Set Browser Options
             Call Method    ${options}    add_argument    --disable-dev-shm-usage
             Call Method    ${options}    add_argument    --no-sandbox
             Call Method    ${options}    add_argument    --disable-gpu
-            Call Method    ${options}    add_argument    --headless
+#            Call Method    ${options}    add_argument    --headless
             Call Method    ${options}    add_argument    --devtools.debugger.force-local
             Call Method    ${options}    add_argument    --devtools.debugger.remote-enabled
             Call Method    ${options}    add_argument    --devtools.chrome.enabled
             Call Method    ${options}    add_argument    --devtools.debugger.prompt-connection
             Call Method    ${options}    add_argument    --browser.dom.window.dump.enabled
-
+            RETURN    ${options}
         ELSE IF  "${Browser}" == "chrome"
             ${options} =    Evaluate    selenium.webdriver.ChromeOptions()
             Call Method    ${options}    add_argument    --start-maximized
             Call Method    ${options}    add_argument    --disable-dev-shm-usage
             Call Method    ${options}    add_argument    --no-sandbox
-            Call Method    ${options}    add_argument    --headless
+#            Call Method    ${options}    add_argument    --headless
             Call Method    ${options}    add_argument    --disable-gpu
             Call Method    ${options}    add_argument    --ignore-certificate-errors
             Call Method    ${options}    add_argument    --disable-extensions
@@ -66,6 +66,7 @@ Set Browser Options
             Call Method    ${options}    add_argument    --use-fake-ui-for-media-stream
             Call Method    ${options}    add_argument    --use-fake-device-for-media-stream
             Call Method    ${options}    add_argument    --disable-sync
+            RETURN    ${options}
         END
 
 Start Barrons Article
@@ -115,7 +116,7 @@ Start FN Article
 
 Start WSJ Article
     Set Selenium Speed  0.5 seconds
-    Set Browser Options
+    ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.wsj.com  ${Browser}  options=${options}
         Go To  https://www.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
