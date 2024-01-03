@@ -11,7 +11,7 @@ ${Email_prod}=  barronsadvisorcs@gmail.com
 
 ${Password_prod}=  password1
 
-${Email_dev}=  QABARRONSONLY
+${Email_dev}=  QABARRONSONLY  #priyanka.bhoomraogari@dowjones.com  #
 
 ${Password_dev}=  password1
 
@@ -81,8 +81,8 @@ Start WSJ Article
         Go To  https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     END
     #Wait Until Element Is Visible  //*[text()="Dave Michaels"]
-    Set Focus To Element  //*[text()="Dave Michaels"]
-    Wait Until Element Is Visible  dom:${JSFollowButtonMGPath}  30s
+    #Set Focus To Element  //*[text()="Dave Michaels"]
+    #Wait Until Element Is Visible  dom:${JSFollowButtonMGPath}  30s
     Maximize Browser Window
 
 Start Market Watch Article
