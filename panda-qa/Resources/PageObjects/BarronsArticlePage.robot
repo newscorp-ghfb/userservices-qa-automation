@@ -84,7 +84,7 @@ ${JSFollowSignInHeaderPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('div.body')  #4
     ...  .querySelector('p')  #5
 
-#${JSFollowSignInHeader2Path}=  document.querySelectorAll('div')[186]  #1
+${JSFollowSignInHeader2Path}=  document.querySelectorAll('div')  #1
     ...  .querySelector('ufc-portal')  #2
     ...  .querySelector('ufc-signin-modal').shadowRoot  #3
     ...  .querySelector('div')  #4

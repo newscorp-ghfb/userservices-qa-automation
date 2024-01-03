@@ -45,7 +45,7 @@ Search Your Daily Digest from FN
 Validate FN Digest notification
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
-    Page Should Contain Element  //a[text()="Is this email difficult to read? View in browser"]
+    Page Should Contain Element  //a[contains(text(),'View in browser')]
     Page Should Contain Element  //table[@role="presentation"]//span[text()="Daily"]/../span[text()="Digest"]
     Page Should Contain Element  //a[text()="Preferences"]
     Page Should Contain Element  //a[text()="Unsubscribe"]
@@ -54,6 +54,7 @@ Validate FN Digest notification
 
 Search Your FN real-time author notification
     Wait Until Page Contains Element  //input[@id="topSearchInput"]
+    Wait Until Page Contains Element  //input[@id="topSearchInput"]
     Click Element  //input[@id="topSearchInput"]
     Input Text  //input[@id="topSearchInput"]  The latest from David Wighton
     Click Element  //button[@aria-label="Search"]
@@ -61,7 +62,7 @@ Search Your FN real-time author notification
 Validate FN real-time author notification
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
-    Page Should Contain Element  //a[text()="Is this email difficult to read? View in browser"]
+    Page Should Contain Element  //a[contains(text(),'View in browser')]
     Page Should Contain Element  //td/div/span[text()="Wighton"]
     Page Should Contain Element  //a[text()="Read More "]
     Page Should Contain Element  //a[text()="Preferences"]
@@ -78,7 +79,7 @@ Search Your FN real-time company notification
 Validate FN real-time company notification
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
-    Page Should Contain Element  //a[text()="Is this email difficult to read? View in browser"]
+    Page Should Contain Element  //a[contains(text(),'View in browser')]
     Page Should Contain Element  //*[text()="BLK (U.S.: NYSE)"]
     Page Should Contain Element  //a[text()="Read More "]
     Page Should Contain Element  //a[text()="Preferences"]

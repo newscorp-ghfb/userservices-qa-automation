@@ -25,8 +25,13 @@ Validate Followed Authors
     Page Should Contain  Authors
 
 Validate Following Toggle Feature
-    Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div
+      IF  "${Env}" == "prod"
+        Wait Until Element is Visible   //*[text()="V.L. HENDRICKSON"]/../../../../td[4]/div
+        Page Should Contain Element  //*[text()="Mariana Nuñez"]/../../../../td[4]/div
+    ELSE IF  "${Env}" == "dev"
+        Wait Until Element is Visible   //*[text()="Mariana Nuñez"]/../../../../td[4]/div
+        Page Should Contain Element  //*[text()="Mariana Nuñez"]/../../../../td[4]/div
+    END
 
 Click Following Toggle Feature
     IF  ${Env} == "prod"
@@ -34,6 +39,7 @@ Click Following Toggle Feature
     ELSE IF  ${Env} == "dev"
         Click Element  //*[text()="Mariana Nuñez"]/../../../../td[4]/div
     END
+
 Validate Following Toggle Alert Pop up
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[3]/div/span
 

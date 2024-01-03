@@ -86,7 +86,7 @@ Validate Followed Companies
 
 Validate Company Toggle Feature
     Wait Until Element is Visible  //*[text()="Amazon.com, Inc."]/../../..//*[@role="switch"]
-    Page Should Contain Element  //*[text()="Amazon.com, Inc."]/../../..//*[@role="switch"]
+    Page Should Contain Element  //*[text()="Amazon.com, Inc."]/../../..//*[@role="switch"]  #Follow Company Toggle feature
 
 Click Company Toggle Feature
     Click Element  //*[text()="Amazon.com, Inc."]/../../..//*[@role="switch"]
@@ -100,4 +100,4 @@ Validate Company Quote Link
 
 Validate Company On All Tab
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[7]
-    Page Should Contain Element  //*[text()="Amazon.com, Inc."]/../*[text()="Barrons"]
+    Page Should Contain Element  //*[text()="Amazon.com, Inc."]

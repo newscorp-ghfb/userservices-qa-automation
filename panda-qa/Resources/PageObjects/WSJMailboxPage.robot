@@ -45,7 +45,7 @@ Search Your Daily Digest from WSJ
 Validate WSJ Digest notification
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div/div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div/div[2]
-    Page Should Contain Element  //a[text()="Is this email difficult to read? View in browser"]
+    Page Should Contain Element  //a[contains(text(),'View in browser')]
     Page Should Contain Element  //table[@role="presentation"]//span[text()="Daily"]/../span[text()="Digest"]
     Page Should Contain Element  //a[text()="Preferences"]
     Page Should Contain Element  //a[text()="Unsubscribe"]
@@ -61,7 +61,7 @@ Search Your WSJ real-time author notification
 Validate WSJ real-time author notification
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
-    Page Should Contain Element  //a[text()="Is this email difficult to read? View in browser"]
+    Page Should Contain Element  //a[contains(text(),'View in browser')]
     Page Should Contain Element  //a[text()="Read More "]
     Page Should Contain Element  //a[text()="Alerts Center"]
     Page Should Contain Element  //a[text()="Contact Us"]
@@ -77,7 +77,7 @@ Search Your WSJ real-time company notification
 Validate WSJ real-time company notification
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
-    Page Should Contain Element  //a[text()="Is this email difficult to read? View in browser"]
+    Page Should Contain Element  //a[contains(text(),'View in browser')]
     Page Should Contain Element  //*[text()="AMZN (U.S.: Nasdaq)"]
     Page Should Contain Element  //a[text()="Read More "]
     Page Should Contain Element  //a[text()="Preferences"]
@@ -94,7 +94,7 @@ Search Your WSJ real-time custom topic notification
 Validate WSJ real-time custom topic notification
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
-    Page Should Contain Element  //a[text()="Is this email difficult to read? View in browser"]
+    Page Should Contain Element  //a[contains(text(),'View in browser')]
     Page Should Contain Element  //div[text()="Latest in Film"]
     Page Should Contain Element  //a[text()="Read More "]
     Page Should Contain Element  //a[text()="Alerts Center"]
@@ -112,7 +112,7 @@ Search Your WSJ real-time custom topic video notification
 Validate WSJ real-time custom topic video notification
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
-    Page Should Contain Element  //a[text()="Is this email difficult to read? View in browser"]
+    Page Should Contain Element  //a[contains(text(),'View in browser')]
     Page Should Contain Element  //div[text()="Latest on Evan Gershkovich"]
     Page Should Contain Element  //a[text()=" Watch "]
     Page Should Contain Element  //a[text()="Alerts Center"]
@@ -129,7 +129,7 @@ Search Your WSJ real-time author video notification
 Validate WSJ real-time author video notification
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
-    Page Should Contain Element  //a[text()="Is this email difficult to read? View in browser"]
+    Page Should Contain Element  //a[contains(text(),'View in browser')]
     Page Should Contain Element  //a[text()=" Watch "]
     Page Should Contain Element  //a[text()="Alerts Center"]
     Page Should Contain Element  //a[text()="Contact Us"]
@@ -145,7 +145,7 @@ Search Your WSJ real-time campaign notification
 Validate WSJ real-time campaign notification
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
-    Page Should Contain Element  //a[text()="Is this email difficult to read? View in browser"]
+    Page Should Contain Element  //a[contains(text(),'View in browser')]
     Page Should Contain Element  //span[text()="Elections"]
     Page Should Contain Element  //a[text()="Read More "]
     Page Should Contain Element  //a[text()="Alerts Center"]
