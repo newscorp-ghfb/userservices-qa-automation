@@ -45,7 +45,7 @@ Set Browser Options
             Call Method    ${options}    add_argument    --disable-dev-shm-usage
             Call Method    ${options}    add_argument    --no-sandbox
             Call Method    ${options}    add_argument    --disable-gpu
-#            Call Method    ${options}    add_argument    --headless
+            Call Method    ${options}    add_argument    --headless
             Call Method    ${options}    add_argument    --devtools.debugger.force-local
             Call Method    ${options}    add_argument    --devtools.debugger.remote-enabled
             Call Method    ${options}    add_argument    --devtools.chrome.enabled
@@ -57,7 +57,7 @@ Set Browser Options
             Call Method    ${options}    add_argument    --start-maximized
             Call Method    ${options}    add_argument    --disable-dev-shm-usage
             Call Method    ${options}    add_argument    --no-sandbox
-#            Call Method    ${options}    add_argument    --headless
+            Call Method    ${options}    add_argument    --headless
             Call Method    ${options}    add_argument    --disable-gpu
             Call Method    ${options}    add_argument    --ignore-certificate-errors
             Call Method    ${options}    add_argument    --disable-extensions
@@ -71,7 +71,7 @@ Set Browser Options
 
 Start Barrons Article
     Set Selenium Speed  0.5 seconds
-    Set Browser Options
+    ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.barrons.com  ${Browser}  options=${options}
         Go To  https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634
@@ -86,7 +86,7 @@ Start Barrons Article
 
 Start Mansion Global Article
     Set Selenium Speed  1 seconds
-    Set Browser Options
+    ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.mansionglobal.com  ${Browser}  options=${options}
         Go To  https://www.mansionglobal.com/articles/are-there-tax-breaks-on-agricultural-land-in-pennsylvania-01648119848
@@ -100,7 +100,7 @@ Start Mansion Global Article
 
 Start FN Article
     Set Selenium Speed  0.5 seconds
-    Set Browser Options
+    ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.fnlondon.com  ${Browser}  options=${options}
         Go To  https://www.fnlondon.com/articles/complaints-commissioner-fca-transparency-20220615
@@ -131,7 +131,7 @@ Start WSJ Article
 
 Start Market Watch Article
     Set Selenium Speed  1 seconds
-    Set Browser Options
+    ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.marketwatch.com  ${Browser}  options=${options}
         Go To  https://www.marketwatch.com/story/is-the-u-s-stock-market-closed-on-juneteenth-what-investors-need-to-know-11655230158
@@ -144,7 +144,7 @@ Start Market Watch Article
 
 Start PEN Article
     Set Selenium Speed  0.5 seconds
-    Set Browser Options
+    ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.penews.com  ${Browser}  options=${options}
         Go To  https://www.penews.com/articles/lp-survey-warns-brace-for-some-high-profile-fundraising-failures-20220622
@@ -158,7 +158,7 @@ Start PEN Article
 
 Start Barrons Article without byline
     Set Selenium Speed  0.5 seconds
-    Set Browser Options
+    ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.barrons.com  ${Browser}  options=${options}
         Go To  https://www.barrons.com/articles/how-to-handle-an-uncertain-market-buy-weakness-sell-strength-f145c306
@@ -171,7 +171,7 @@ Start Barrons Article without byline
 
 Start FN Article without byline
     Set Selenium Speed  0.5 seconds
-    Set Browser Options
+    ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.fnlondon.com  ${Browser}  options=${options}
         Go To  https://www.fnlondon.com/articles/meet-the-twenty-most-influential-in-investment-banking-20230326?cx_testId=174&cx_testVariant=cx_3&cx_artPos=0#cxrecs_s
@@ -184,7 +184,7 @@ Start FN Article without byline
 
 Start Mansion Global Article without byline
     Set Selenium Speed  1 seconds
-    Set Browser Options
+    ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.mansionglobal.com  ${Browser}  options=${options}
         Go To  https://www.mansionglobal.com/articles/what-property-tax-changes-are-in-store-for-luxury-home-owners-in-edmonton-canada-e0d92933
@@ -196,7 +196,7 @@ Start Mansion Global Article without byline
 
 Start Market Watch Article without byline
     Set Selenium Speed  1 seconds
-    Set Browser Options
+    ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.marketwatch.com  ${Browser}  options=${options}
         Go To  https://www.marketwatch.com/story/is-the-u-s-stock-market-closed-on-juneteenth-what-investors-need-to-know-11655230158
@@ -208,7 +208,7 @@ Start Market Watch Article without byline
 
 Start PEN Article without byline
     Set Selenium Speed  0.5 seconds
-    Set Browser Options
+    ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.penews.com  ${Browser}  options=${options}
         Go To  https://www.penews.com/articles/dickson-minto-merger-driven-by-americanisation-of-private-equity-law-20221214
@@ -220,7 +220,7 @@ Start PEN Article without byline
 
 Start WSJ Article without byline
     Set Selenium Speed  0.5 seconds
-    Set Browser Options
+    ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.wsj.com  ${Browser}  options=${options}
         Go To  https://www.wsj.com/articles/let-desantis-fight-trump-before-putin-bakhmut-offensive-cease-fire-settlement-kremlin-weapons-b127514a?cx_testId=3&cx_testVariant=cx_171&cx_artPos=1&mod=WTRN#cxrecs_s
@@ -232,7 +232,7 @@ Start WSJ Article without byline
 
 Start WSJ Article for Letters breadcrumb
     Set Selenium Speed  0.5 seconds
-    Set Browser Options
+    ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.wsj.com  ${Browser}  options=${options}
         Go To  https://www.wsj.com/articles/mary-eberstadt-furman-university-wsj-scott-yenor-campus-protest-speech-869ce29b
@@ -247,7 +247,7 @@ Start WSJ Article for Letters breadcrumb
 
 Start WSJ Letters for Letters breadcrumb
     Set Selenium Speed  0.5 seconds
-    Set Browser Options
+    ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.wsj.com  ${Browser}  options=${options}
         Go To  https://www.wsj.com/news/types/letters?mod=nav_top_subsection
@@ -262,7 +262,7 @@ Start WSJ Letters for Letters breadcrumb
 
 Start WSJ Article for Editorials breadcrumb
     Set Selenium Speed  0.5 seconds
-    Set Browser Options
+    ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.wsj.com  ${Browser}  options=${options}
         Go To  https://www.wsj.com/articles/chicago-mayor-wisconsin-supreme-court-election-paul-vallas-brandon-johnson-janet-protasiewicz-dan-kelly-3673d166
@@ -277,7 +277,7 @@ Start WSJ Article for Editorials breadcrumb
 
 Start WSJ Editorials for Editorials breadcrumb
     Set Selenium Speed  0.5 seconds
-    Set Browser Options
+    ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.wsj.com  ${Browser}  options=${options}
         Go To  https://www.wsj.com/news/types/review-outlook-u-s?mod=nav_top_subsection
@@ -292,7 +292,7 @@ Start WSJ Editorials for Editorials breadcrumb
 
 Start WSJ Article for Commentary breadcrumb
     Set Selenium Speed  0.5 seconds
-    Set Browser Options
+    ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.wsj.com  ${Browser}  options=${options}
         Go To  https://www.wsj.com/articles/medicare-drug-price-controls-will-make-america-sicker-research-innovation-negotiations-private-insurers-b503b4ba
@@ -307,7 +307,7 @@ Start WSJ Article for Commentary breadcrumb
 
 Start WSJ Commentary for Commentary breadcrumb
     Set Selenium Speed  0.5 seconds
-    Set Browser Options
+    ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.wsj.com  ${Browser}  options=${options}
         Go To  https://www.wsj.com/news/types/commentary-u-s?mod=nav_top_subsection
@@ -322,7 +322,7 @@ Start WSJ Commentary for Commentary breadcrumb
 
 Start WSJ Article for Elections breadcrumb
     Set Selenium Speed  0.5 seconds
-    Set Browser Options
+    ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.wsj.com  ${Browser}  options=${options}
         Go To  https://www.wsj.com/articles/mike-pompeo-says-he-wont-run-for-president-in-2024-5406e61c
@@ -337,7 +337,7 @@ Start WSJ Article for Elections breadcrumb
 
 Start WSJ Elections for Elections breadcrumb
     Set Selenium Speed  0.5 seconds
-    Set Browser Options
+    ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.wsj.com  ${Browser}  options=${options}
         Go To  https://www.wsj.com/news/types/election-2024?mod=breadcrumb
@@ -352,7 +352,7 @@ Start WSJ Elections for Elections breadcrumb
 
 Start Barrons Stock Picks for Stock Picks breadcrumb
     Set Selenium Speed  0.5 seconds
-    Set Browser Options
+    ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.barrons.com  ${Browser}  options=${options}
         Go To  https://www.barrons.com/market-data/stocks/stock-picks?mod=BOL_TOPNAV
@@ -367,7 +367,7 @@ Start Barrons Stock Picks for Stock Picks breadcrumb
 
 Start Barrons Stock Picks for Stock Picks in article
     Set Selenium Speed  0.5 seconds
-    Set Browser Options
+    ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.barrons.com  ${Browser}  options=${options}
         Go To  https://www.barrons.com/articles/buy-rockwell-automation-stock-pick-price-cc120733?mod=stock_picks_lp
@@ -444,7 +444,7 @@ Start Barrons for Market Data page
 
 Start WSJ Article for Board Pack Exclusive
     Set Selenium Speed  0.5 seconds
-    Set Browser Options
+    ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.wsj.com  ${Browser}  options=${options}
         Go To  https://www.wsj.com/articles/what-the-board-needs-to-know-acec160b?mod=panda_wsj_custom_topic_alert
@@ -456,7 +456,7 @@ Start WSJ Article for Board Pack Exclusive
 
 Start WSJ Article for Education
     Set Selenium Speed  0.5 seconds
-    Set Browser Options
+    ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.wsj.com  ${Browser}  options=${options}
         Go To  https://www.wsj.com/us-news/education?mod=nav_top_subsection
@@ -468,7 +468,7 @@ Start WSJ Article for Education
 
 Start WSJ Article for heard on the street
     Set Selenium Speed  0.5 seconds
-    Set Browser Options
+    ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.wsj.com  ${Browser}  options=${options}
         Go To  https://www.wsj.com/news/types/heard-on-the-street?mod=breadcrumb
@@ -480,7 +480,7 @@ Start WSJ Article for heard on the street
 
 Start WSJ Article for On Wine
     Set Selenium Speed  0.5 seconds
-    Set Browser Options
+    ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.wsj.com  ${Browser}  options=${options}
         Go To  https://www.wsj.com/news/types/on-wine-lettie-teague?mod=bigtop-breadcrumb
@@ -492,7 +492,7 @@ Start WSJ Article for On Wine
 
 Start WSJ Article for Personal Finance
     Set Selenium Speed  0.5 seconds
-    Set Browser Options
+    ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.wsj.com  ${Browser}  options=${options}
         Go To  https://www.wsj.com/personal-finance?mod=breadcrumb
@@ -504,7 +504,7 @@ Start WSJ Article for Personal Finance
 
 Start WSJ Article for Personal Technology
     Set Selenium Speed  0.5 seconds
-    Set Browser Options
+    ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.wsj.com  ${Browser}  options=${options}
         Go To  https://www.wsj.com/tech/personal-tech?mod=breadcrumb
@@ -527,7 +527,7 @@ Start WSJ Article for Puzzles
 
 Start WSJ Article for Energy
     Set Selenium Speed  0.5 seconds
-    Set Browser Options
+    ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.wsj.com  ${Browser}  options=${options}
         Go To  https://www.wsj.com/business/energy-oil?mod=nav_top_subsection
