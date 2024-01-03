@@ -89,8 +89,8 @@ Validate Followed Companies
     Page Should Contain  Companies
 
 Validate Company Frequency
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[2]/div/label[1]/span[2]
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[2]/div/label[2]/span[2]
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[4]/span
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[4]/span
 
 Validate Company Quote Link
     Page Should Contain Element  //a[text()="Amazon.com, Inc."]
