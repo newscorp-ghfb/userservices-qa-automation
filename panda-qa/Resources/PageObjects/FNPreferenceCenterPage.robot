@@ -32,7 +32,7 @@ Click Following Toggle Feature
     IF  ${Env} == "prod"
         Click Element  //*[text()="Paul Clarke"]/../../../../td[4]/div
     ELSE IF  ${Env} == "dev"
-        Click Element  //*[text()="Christopher Mims"]/../../../../td[4]/div
+        Click Element  //*[text()="Sunita Adhikarla"]/../../../../td[4]/div  #//*[text()="Christopher Mims"]/../../../../td[4]/div
     END
 Validate Following Toggle Alert Pop up
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr/td[1]/div/div/a
@@ -48,6 +48,9 @@ Add Author By Hotlink
         Go To  https://www.fnlondon.com/follow?alert=author&id=9004_FN&frequency=realtime
     ELSE IF  ${Env} == "dev"
         Go To  https://www.s.dev.fnlondon.com/follow?alert=author&id=8680_FN&frequency=realtime
+        Set Selenium Speed  0.5 seconds
+        Click Button  //*[@id="root"]/div/div/div/div[3]/div/div/button
+
     END
 
 

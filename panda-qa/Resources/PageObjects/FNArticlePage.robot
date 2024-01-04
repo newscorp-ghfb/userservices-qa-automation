@@ -48,7 +48,7 @@ ${JSFollowSignInHeaderPath}=  document.querySelector('ufc-portal')  #1
 
 *** Keywords ***
 Validate Follow Button
-    Wait Until Element is Visible  dom:${JSFollowButtonFNPath} #//FollowButton
+    Wait Until Element is Visible  dom:${JSFollowButtonFNPath}
     Wait Until Element Contains  dom:${JSFollowButtonFNPath}  Follow  timeout=15
     Element Text Should Be  dom:${JSFollowButtonFNPath}  Follow  timeout=15
 
@@ -89,10 +89,21 @@ Click Preference Center Link
     Click Element  dom:${JSPreferenceCenterLinkFNPath}
 
 Validate author hyperlink
-    Page Should Contain Element  //span[@class="css-1wc2zh5" and text()="Justin Cash"]
+    IF  ${Env} == "prod"
+       Page Should Contain Element  //span[@class="css-1wc2zh5" and text()="Justin Cash"]
+    ELSE IF  ${Env} == "dev"
+       Page Should Contain Element  //a[@class="author-link" and text()="Sunita Adhikarla"]  #//span[@class="css-1wc2zh5" and text()="Justin Cash"]
+    END
+
 
 Click author hyperlink
-    Click Element  //span[@class='css-1wc2zh5']
+    IF  ${Env} == "prod"
+       Click Element  //span[@class='css-1wc2zh5']
+    ELSE IF  ${Env} == "dev"
+        Click Element  //a[@class="author-link"]
+    END
+
+
 
 Validate author without byline
     Page Should Contain Element  //div[@class="byline"]/div/div/span[text()="Sunita Adhikarla"]
