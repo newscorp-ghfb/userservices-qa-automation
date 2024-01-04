@@ -3,7 +3,7 @@ Library  SeleniumLibrary
 Resource  ../Resources/DefinedKeywords.robot
 
 *** Variables ***
-${Browser}=  ff  #headless, ff, chrome, edge, safari
+${Browser}=  edge  #headless, ff, chrome, edge, safari
 
 ${Env}=  "dev"  #dev, prod
 
