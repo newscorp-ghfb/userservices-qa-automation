@@ -825,3 +825,18 @@ Validate Postback on Preference Center
     WSJMailboxPage.Unsubscribe the mails
     WSJMailboxPage.Verify the mail is unsubscribed
     WSJPreferenceCenterPage.Add Author By Hotlink
+
+#US-T374
+Validate all the links and tabs are working on New Preference Center
+    [Documentation]  This test case validates that all the links and tabs are working on New Preference Center
+    [Tags]  Regression  NewPreferenceCenter
+    DefinedKeywords.WSJ Sign In Process
+    WSJPreferenceCenterPage.Navigate New Preference Center page
+    WSJPreferenceCenterPage.Click Menu on left corner
+    WSJPreferenceCenterPage.Validate Menu
+    WSJPreferenceCenterPage.Validate Section contains options
+    WSJPreferenceCenterPage.Navigate to Print Edition Page
+    WSJPreferenceCenterPage.Validate Print Edition Page
+
+
+

@@ -182,3 +182,37 @@ Validate Followed Breaking News
 Validate Over Mouse On Notification Tooltip
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/thead/tr/th[3]/div/button/span
     Page Should Contain  Choose whether you want to receive alerts as soon as an article gets published or once a day as a digest.
+
+Navigate New Preference Center page
+    IF  ${Env} == "prod"
+        Go To  https://www.wsj.com/follow
+    ELSE IF  ${Env} == "dev"
+        Go To  https://dev.next.wsj.com/preference-center/alerts
+    END
+
+Click Menu on left corner
+    Click Button  //*[@id="__next"]/div[1]/header/div/button
+
+Validate Menu
+    Page Should Contain  Sections
+    Page Should Contain  My Account
+    Page Should Contain Element  //*[@id="__next"]/div[1]/header/div/dialog/div/div/button[1]
+    Page Should Contain Element  //*[@id="__next"]/div[1]/header/div/dialog/div/div/button[2]
+
+Validate Section contains options
+    Page Should Contain Element    //a[text()="Print Edition"]
+    Page Should Contain Element    //a[text()="Video"]
+    Page Should Contain Element    //a[text()="Audio"]
+    Page Should Contain Element    //h4[text()="More"]
+    Page Should Contain Element    //*[@id="sections-scroll-target"]/ul/div/ul/li[1]/a[text()="Buy Side from WSJ"]
+    Page Should Contain Element    //*[@id="sections-scroll-target"]/ul/div/ul/li[2]/a[text()="WSJ Shop"]
+    Page Should Contain Element    //*[@id="sections-scroll-target"]/ul/div/ul/li[3]/a[text()="WSJ Wine"]
+
+Navigate to Print Edition Page
+    Click Element  //*[@id="sections-scroll-target"]/ul/ul/li[19]/a
+    #//*[@href="https://www.wsj.com/digital-print-edition?mod=nav_left_section"]
+
+Validate Print Edition Page
+    Page Should Contain Element    //*[text()="Print Edition Website"]
+
+
