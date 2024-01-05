@@ -3,6 +3,7 @@ Library  SeleniumLibrary
 Resource  ../../Resources/CommonFunctionality.robot
 
 *** Variables ***
+${viewInBrowserPath}=  //*[contains(text(),'View in browser')]
 
 
 *** Keywords ***
@@ -45,7 +46,7 @@ Search Your Daily Digest from Mansion Global
 Validate Mansion Global Digest notification
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
-    Page Should Contain Element  //a[text()="View in web browser ›"]
+    Page Should Contain Element  ${viewInBrowserPath}
     Page Should Contain Element  //table[@role="presentation"]//span[text()="Daily"]/../span[text()="Digest"]
     Page Should Contain Element  //a[text()="Preferences"]
     Page Should Contain Element  //a[text()="Unsubscribe"]
@@ -61,7 +62,7 @@ Search Your Mansion Global real-time author notification
 Validate Mansion Global real-time author notification
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
-    Page Should Contain Element  //a[text()="Is this email difficult to read? View in browser"]
+    Page Should Contain Element  ${viewInBrowserPath}
     Page Should Contain Element  //a[text()="Read More "]
     Page Should Contain Element  //a[text()="Alerts Center"]
     Page Should Contain Element  //a[text()="Contact Us"]
@@ -77,7 +78,7 @@ Search Your Mansion Global weekly saved search notification
 Validate Mansion Global weekly saved search notification
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
-    Page Should Contain Element  //a[text()="View in web browser ›"]
+    Page Should Contain Element  ${viewInBrowserPath}
     Page Should Contain Element  //*[text()="AMZN (U.S.: Nasdaq)"]
     Page Should Contain Element  //a[text()="Read More "]
     Page Should Contain Element  //a[text()="Preferences"]
@@ -94,7 +95,7 @@ Search Mansion Global real-time author notification for Postback
 Validate Mansion Global real-time author notification for Postback
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
-    Page Should Contain Element  //a[text()="Is this email difficult to read? View in browser"]
+    Page Should Contain Element  ${viewInBrowserPath}
     Page Should Contain Element  //a[text()="Read More "]
     Page Should Contain Element  //a[text()="Alerts Center"]
     Page Should Contain Element  //a[text()="Contact Us"]

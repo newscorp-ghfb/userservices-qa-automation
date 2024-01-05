@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20240105 10:19:10.496" rpa="false" schemaversion="4">
+<suite id="s1" name="Userservices-Qa-Automation" source="D:\Codes\Jenkins_2050\userservices-qa-automation">
+<suite id="s1-s1" name="Panda-Qa" source="D:\Codes\Jenkins_2050\userservices-qa-automation\panda-qa">
+<suite id="s1-s1-s1" name="Tests" source="D:\Codes\Jenkins_2050\userservices-qa-automation\panda-qa\Tests">
+<suite id="s1-s1-s1-s1" name="FollowWidget" source="D:\Codes\Jenkins_2050\userservices-qa-automation\panda-qa\Tests\FollowWidget">
+<suite id="s1-s1-s1-s1-s1" name="Regression" source="D:\Codes\Jenkins_2050\userservices-qa-automation\panda-qa\Tests\FollowWidget\Regression">
+<suite id="s1-s1-s1-s1-s1-s1" name="MansionGlobal Regression" source="D:\Codes\Jenkins_2050\userservices-qa-automation\panda-qa\Tests\FollowWidget\Regression\MansionGlobal_Regression.robot">
+<test id="s1-s1-s1-s1-s1-s1-t1" name="Validate the Mansion GLobal Preference Center page" line="20">
+<kw name="Start Mansion Global Article" library="CommonFunctionality" type="SETUP">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240105 10:19:10.958" endtime="20240105 10:19:10.958"/>
+</kw>
+<if>
+<branch type="IF" condition="${Env} == &quot;prod&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:10.959" endtime="20240105 10:19:10.959"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com/articles/are-there-tax-breaks-on-agricultural-land-in-pennsylvania-01648119848</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:10.959" endtime="20240105 10:19:10.959"/>
+</kw>
+<status status="NOT RUN" starttime="20240105 10:19:10.958" endtime="20240105 10:19:10.959"/>
+</branch>
+<branch type="ELSE IF" condition="${Env} == &quot;dev&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240105 10:19:10.960" level="INFO">Opening browser 'chromeheadlessff' to base url 'https://www.s.dev.mansionglobal.com'.</msg>
+<msg timestamp="20240105 10:19:10.960" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20240105 10:19:10.960" level="FAIL">ValueError: chromeheadlessff is not a supported browser.</msg>
+<status status="FAIL" starttime="20240105 10:19:10.959" endtime="20240105 10:19:10.964"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:10.964" endtime="20240105 10:19:10.964"/>
+</kw>
+<status status="FAIL" starttime="20240105 10:19:10.959" endtime="20240105 10:19:10.964"/>
+</branch>
+<status status="FAIL" starttime="20240105 10:19:10.958" endtime="20240105 10:19:10.964"/>
+</if>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>dom:${JSFollowButtonMGPath}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:10.965" endtime="20240105 10:19:10.965"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:10.965" endtime="20240105 10:19:10.965"/>
+</kw>
+<status status="FAIL" starttime="20240105 10:19:10.958" endtime="20240105 10:19:10.965"/>
+</kw>
+<kw name="Finish Testcase" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240105 10:19:10.966" endtime="20240105 10:19:10.966"/>
+</kw>
+<status status="PASS" starttime="20240105 10:19:10.965" endtime="20240105 10:19:10.966"/>
+</kw>
+<doc>This test case validates the Mansion GLobal preference center page</doc>
+<tag>MansionGlobal</tag>
+<tag>PrefrenceCenter</tag>
+<tag>Regression</tag>
+<status status="FAIL" starttime="20240105 10:19:10.957" endtime="20240105 10:19:10.966">Setup failed:
+ValueError: chromeheadlessff is not a supported browser.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s1-t2" name="Validate Authors for Mansion Global Article page without byline" line="50">
+<kw name="Start Mansion Global Article" library="CommonFunctionality" type="SETUP">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240105 10:19:10.968" endtime="20240105 10:19:10.968"/>
+</kw>
+<if>
+<branch type="IF" condition="${Env} == &quot;prod&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:10.969" endtime="20240105 10:19:10.969"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com/articles/are-there-tax-breaks-on-agricultural-land-in-pennsylvania-01648119848</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:10.969" endtime="20240105 10:19:10.969"/>
+</kw>
+<status status="NOT RUN" starttime="20240105 10:19:10.968" endtime="20240105 10:19:10.969"/>
+</branch>
+<branch type="ELSE IF" condition="${Env} == &quot;dev&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240105 10:19:10.971" level="INFO">Opening browser 'chromeheadlessff' to base url 'https://www.s.dev.mansionglobal.com'.</msg>
+<msg timestamp="20240105 10:19:10.972" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20240105 10:19:10.972" level="FAIL">ValueError: chromeheadlessff is not a supported browser.</msg>
+<status status="FAIL" starttime="20240105 10:19:10.969" endtime="20240105 10:19:10.973"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:10.973" endtime="20240105 10:19:10.973"/>
+</kw>
+<status status="FAIL" starttime="20240105 10:19:10.969" endtime="20240105 10:19:10.973"/>
+</branch>
+<status status="FAIL" starttime="20240105 10:19:10.968" endtime="20240105 10:19:10.973"/>
+</if>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>dom:${JSFollowButtonMGPath}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:10.973" endtime="20240105 10:19:10.973"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:10.973" endtime="20240105 10:19:10.973"/>
+</kw>
+<status status="FAIL" starttime="20240105 10:19:10.968" endtime="20240105 10:19:10.973"/>
+</kw>
+<kw name="Finish Testcase" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240105 10:19:10.974" endtime="20240105 10:19:10.974"/>
+</kw>
+<status status="PASS" starttime="20240105 10:19:10.974" endtime="20240105 10:19:10.974"/>
+</kw>
+<doc>This test case validates authors without byline for Mansion Global article page</doc>
+<tag>Article</tag>
+<tag>Author</tag>
+<tag>MansionGlobal</tag>
+<tag>Regression</tag>
+<status status="FAIL" starttime="20240105 10:19:10.967" endtime="20240105 10:19:10.974">Setup failed:
+ValueError: chromeheadlessff is not a supported browser.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s1-t3" name="Validate the Mansion Global digest notification" line="58">
+<kw name="Start Mansion Global Article" library="CommonFunctionality" type="SETUP">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240105 10:19:10.976" endtime="20240105 10:19:10.976"/>
+</kw>
+<if>
+<branch type="IF" condition="${Env} == &quot;prod&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:10.977" endtime="20240105 10:19:10.977"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com/articles/are-there-tax-breaks-on-agricultural-land-in-pennsylvania-01648119848</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:10.977" endtime="20240105 10:19:10.977"/>
+</kw>
+<status status="NOT RUN" starttime="20240105 10:19:10.976" endtime="20240105 10:19:10.977"/>
+</branch>
+<branch type="ELSE IF" condition="${Env} == &quot;dev&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240105 10:19:10.978" level="INFO">Opening browser 'chromeheadlessff' to base url 'https://www.s.dev.mansionglobal.com'.</msg>
+<msg timestamp="20240105 10:19:10.978" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20240105 10:19:10.978" level="FAIL">ValueError: chromeheadlessff is not a supported browser.</msg>
+<status status="FAIL" starttime="20240105 10:19:10.977" endtime="20240105 10:19:10.978"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:10.979" endtime="20240105 10:19:10.980"/>
+</kw>
+<status status="FAIL" starttime="20240105 10:19:10.977" endtime="20240105 10:19:10.980"/>
+</branch>
+<status status="FAIL" starttime="20240105 10:19:10.976" endtime="20240105 10:19:10.980"/>
+</if>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>dom:${JSFollowButtonMGPath}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:10.980" endtime="20240105 10:19:10.980"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:10.980" endtime="20240105 10:19:10.980"/>
+</kw>
+<status status="FAIL" starttime="20240105 10:19:10.976" endtime="20240105 10:19:10.980"/>
+</kw>
+<kw name="Finish Testcase" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240105 10:19:10.981" endtime="20240105 10:19:10.981"/>
+</kw>
+<status status="PASS" starttime="20240105 10:19:10.980" endtime="20240105 10:19:10.981"/>
+</kw>
+<doc>This test case validates the Mansion Global digest notification</doc>
+<tag>MansionGlobal</tag>
+<tag>Notifications</tag>
+<tag>Regression</tag>
+<status status="FAIL" starttime="20240105 10:19:10.975" endtime="20240105 10:19:10.981">Setup failed:
+ValueError: chromeheadlessff is not a supported browser.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s1-t4" name="Validate the Mansion Global real-time author notification" line="68">
+<kw name="Start Mansion Global Article" library="CommonFunctionality" type="SETUP">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240105 10:19:10.983" endtime="20240105 10:19:10.983"/>
+</kw>
+<if>
+<branch type="IF" condition="${Env} == &quot;prod&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:10.984" endtime="20240105 10:19:10.984"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com/articles/are-there-tax-breaks-on-agricultural-land-in-pennsylvania-01648119848</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:10.984" endtime="20240105 10:19:10.984"/>
+</kw>
+<status status="NOT RUN" starttime="20240105 10:19:10.983" endtime="20240105 10:19:10.984"/>
+</branch>
+<branch type="ELSE IF" condition="${Env} == &quot;dev&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240105 10:19:10.984" level="INFO">Opening browser 'chromeheadlessff' to base url 'https://www.s.dev.mansionglobal.com'.</msg>
+<msg timestamp="20240105 10:19:10.985" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20240105 10:19:10.985" level="FAIL">ValueError: chromeheadlessff is not a supported browser.</msg>
+<status status="FAIL" starttime="20240105 10:19:10.984" endtime="20240105 10:19:10.985"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:10.985" endtime="20240105 10:19:10.985"/>
+</kw>
+<status status="FAIL" starttime="20240105 10:19:10.984" endtime="20240105 10:19:10.986"/>
+</branch>
+<status status="FAIL" starttime="20240105 10:19:10.983" endtime="20240105 10:19:10.986"/>
+</if>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>dom:${JSFollowButtonMGPath}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:10.986" endtime="20240105 10:19:10.986"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:10.986" endtime="20240105 10:19:10.986"/>
+</kw>
+<status status="FAIL" starttime="20240105 10:19:10.983" endtime="20240105 10:19:10.986"/>
+</kw>
+<kw name="Finish Testcase" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240105 10:19:10.987" endtime="20240105 10:19:10.987"/>
+</kw>
+<status status="PASS" starttime="20240105 10:19:10.986" endtime="20240105 10:19:10.987"/>
+</kw>
+<doc>This test case validates the Mansion Global real-time author notification</doc>
+<tag>Author</tag>
+<tag>MansionGlobal</tag>
+<tag>Notifications</tag>
+<tag>Regression</tag>
+<status status="FAIL" starttime="20240105 10:19:10.982" endtime="20240105 10:19:10.987">Setup failed:
+ValueError: chromeheadlessff is not a supported browser.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s1-t5" name="Validate the Mansion Global weekly saved search notification" line="78">
+<kw name="Start Mansion Global Article" library="CommonFunctionality" type="SETUP">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240105 10:19:10.990" endtime="20240105 10:19:10.991"/>
+</kw>
+<if>
+<branch type="IF" condition="${Env} == &quot;prod&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:10.991" endtime="20240105 10:19:10.991"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com/articles/are-there-tax-breaks-on-agricultural-land-in-pennsylvania-01648119848</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:10.991" endtime="20240105 10:19:10.991"/>
+</kw>
+<status status="NOT RUN" starttime="20240105 10:19:10.991" endtime="20240105 10:19:10.991"/>
+</branch>
+<branch type="ELSE IF" condition="${Env} == &quot;dev&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240105 10:19:10.992" level="INFO">Opening browser 'chromeheadlessff' to base url 'https://www.s.dev.mansionglobal.com'.</msg>
+<msg timestamp="20240105 10:19:10.992" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20240105 10:19:10.992" level="FAIL">ValueError: chromeheadlessff is not a supported browser.</msg>
+<status status="FAIL" starttime="20240105 10:19:10.991" endtime="20240105 10:19:10.993"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:10.993" endtime="20240105 10:19:10.993"/>
+</kw>
+<status status="FAIL" starttime="20240105 10:19:10.991" endtime="20240105 10:19:10.993"/>
+</branch>
+<status status="FAIL" starttime="20240105 10:19:10.991" endtime="20240105 10:19:10.993"/>
+</if>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>dom:${JSFollowButtonMGPath}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:10.993" endtime="20240105 10:19:10.993"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:10.993" endtime="20240105 10:19:10.993"/>
+</kw>
+<status status="FAIL" starttime="20240105 10:19:10.990" endtime="20240105 10:19:10.994"/>
+</kw>
+<kw name="Finish Testcase" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240105 10:19:10.994" endtime="20240105 10:19:10.994"/>
+</kw>
+<status status="PASS" starttime="20240105 10:19:10.994" endtime="20240105 10:19:10.994"/>
+</kw>
+<doc>This test case validates the Mansion Global weekly saved search notification</doc>
+<tag>MansionGlobal</tag>
+<tag>Notifications</tag>
+<tag>Regression</tag>
+<status status="FAIL" starttime="20240105 10:19:10.988" endtime="20240105 10:19:10.995">Setup failed:
+ValueError: chromeheadlessff is not a supported browser.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s1-t6" name="Validate Postback on Preference Center" line="88">
+<kw name="Start Mansion Global Article" library="CommonFunctionality" type="SETUP">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240105 10:19:10.996" endtime="20240105 10:19:10.997"/>
+</kw>
+<if>
+<branch type="IF" condition="${Env} == &quot;prod&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:10.997" endtime="20240105 10:19:10.997"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com/articles/are-there-tax-breaks-on-agricultural-land-in-pennsylvania-01648119848</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:10.997" endtime="20240105 10:19:10.997"/>
+</kw>
+<status status="NOT RUN" starttime="20240105 10:19:10.997" endtime="20240105 10:19:10.997"/>
+</branch>
+<branch type="ELSE IF" condition="${Env} == &quot;dev&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240105 10:19:10.999" level="INFO">Opening browser 'chromeheadlessff' to base url 'https://www.s.dev.mansionglobal.com'.</msg>
+<msg timestamp="20240105 10:19:10.999" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20240105 10:19:10.999" level="FAIL">ValueError: chromeheadlessff is not a supported browser.</msg>
+<status status="FAIL" starttime="20240105 10:19:10.997" endtime="20240105 10:19:11.000"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:11.000" endtime="20240105 10:19:11.000"/>
+</kw>
+<status status="FAIL" starttime="20240105 10:19:10.997" endtime="20240105 10:19:11.000"/>
+</branch>
+<status status="FAIL" starttime="20240105 10:19:10.997" endtime="20240105 10:19:11.000"/>
+</if>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>dom:${JSFollowButtonMGPath}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:11.000" endtime="20240105 10:19:11.000"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:11.000" endtime="20240105 10:19:11.000"/>
+</kw>
+<status status="FAIL" starttime="20240105 10:19:10.996" endtime="20240105 10:19:11.000"/>
+</kw>
+<kw name="Finish Testcase" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240105 10:19:11.001" endtime="20240105 10:19:11.001"/>
+</kw>
+<status status="PASS" starttime="20240105 10:19:11.001" endtime="20240105 10:19:11.001"/>
+</kw>
+<doc>This test case validates the Mansion Global Postback on Preference Center</doc>
+<tag>MansionGlobal</tag>
+<tag>Postback</tag>
+<tag>Regression</tag>
+<status status="FAIL" starttime="20240105 10:19:10.996" endtime="20240105 10:19:11.001">Setup failed:
+ValueError: chromeheadlessff is not a supported browser.</status>
+</test>
+<doc>Mansion Global Regression Tests</doc>
+<status status="FAIL" starttime="20240105 10:19:10.546" endtime="20240105 10:19:11.002"/>
+</suite>
+<status status="FAIL" starttime="20240105 10:19:10.542" endtime="20240105 10:19:11.005"/>
+</suite>
+<suite id="s1-s1-s1-s1-s2" name="Smoke" source="D:\Codes\Jenkins_2050\userservices-qa-automation\panda-qa\Tests\FollowWidget\Smoke">
+<suite id="s1-s1-s1-s1-s2-s1" name="MansionGlobal Smoke" source="D:\Codes\Jenkins_2050\userservices-qa-automation\panda-qa\Tests\FollowWidget\Smoke\MansionGlobal_Smoke.robot">
+<test id="s1-s1-s1-s1-s2-s1-t1" name="Validate the follow button from articles page" line="20">
+<kw name="Start Mansion Global Article" library="CommonFunctionality" type="SETUP">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240105 10:19:11.035" endtime="20240105 10:19:11.035"/>
+</kw>
+<if>
+<branch type="IF" condition="${Env} == &quot;prod&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:11.036" endtime="20240105 10:19:11.036"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com/articles/are-there-tax-breaks-on-agricultural-land-in-pennsylvania-01648119848</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:11.036" endtime="20240105 10:19:11.036"/>
+</kw>
+<status status="NOT RUN" starttime="20240105 10:19:11.036" endtime="20240105 10:19:11.036"/>
+</branch>
+<branch type="ELSE IF" condition="${Env} == &quot;dev&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240105 10:19:11.037" level="INFO">Opening browser 'chromeheadlessff' to base url 'https://www.s.dev.mansionglobal.com'.</msg>
+<msg timestamp="20240105 10:19:11.037" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20240105 10:19:11.037" level="FAIL">ValueError: chromeheadlessff is not a supported browser.</msg>
+<status status="FAIL" starttime="20240105 10:19:11.036" endtime="20240105 10:19:11.038"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:11.038" endtime="20240105 10:19:11.038"/>
+</kw>
+<status status="FAIL" starttime="20240105 10:19:11.036" endtime="20240105 10:19:11.038"/>
+</branch>
+<status status="FAIL" starttime="20240105 10:19:11.036" endtime="20240105 10:19:11.038"/>
+</if>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>dom:${JSFollowButtonMGPath}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:11.038" endtime="20240105 10:19:11.038"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:11.038" endtime="20240105 10:19:11.038"/>
+</kw>
+<status status="FAIL" starttime="20240105 10:19:11.035" endtime="20240105 10:19:11.038"/>
+</kw>
+<kw name="Finish Testcase" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240105 10:19:11.039" endtime="20240105 10:19:11.039"/>
+</kw>
+<status status="PASS" starttime="20240105 10:19:11.039" endtime="20240105 10:19:11.039"/>
+</kw>
+<doc>These test cases validate the follow button from articles page</doc>
+<tag>Article</tag>
+<tag>Follow</tag>
+<tag>MansionGlobal</tag>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20240105 10:19:11.034" endtime="20240105 10:19:11.039">Setup failed:
+ValueError: chromeheadlessff is not a supported browser.</status>
+</test>
+<test id="s1-s1-s1-s1-s2-s1-t2" name="Validate the Mansion Global Preference Center page" line="43">
+<kw name="Start Mansion Global Article" library="CommonFunctionality" type="SETUP">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240105 10:19:11.042" endtime="20240105 10:19:11.042"/>
+</kw>
+<if>
+<branch type="IF" condition="${Env} == &quot;prod&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:11.043" endtime="20240105 10:19:11.043"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com/articles/are-there-tax-breaks-on-agricultural-land-in-pennsylvania-01648119848</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:11.043" endtime="20240105 10:19:11.043"/>
+</kw>
+<status status="NOT RUN" starttime="20240105 10:19:11.043" endtime="20240105 10:19:11.043"/>
+</branch>
+<branch type="ELSE IF" condition="${Env} == &quot;dev&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240105 10:19:11.044" level="INFO">Opening browser 'chromeheadlessff' to base url 'https://www.s.dev.mansionglobal.com'.</msg>
+<msg timestamp="20240105 10:19:11.044" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20240105 10:19:11.044" level="FAIL">ValueError: chromeheadlessff is not a supported browser.</msg>
+<status status="FAIL" starttime="20240105 10:19:11.043" endtime="20240105 10:19:11.045"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:11.045" endtime="20240105 10:19:11.045"/>
+</kw>
+<status status="FAIL" starttime="20240105 10:19:11.043" endtime="20240105 10:19:11.045"/>
+</branch>
+<status status="FAIL" starttime="20240105 10:19:11.043" endtime="20240105 10:19:11.045"/>
+</if>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>dom:${JSFollowButtonMGPath}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:11.045" endtime="20240105 10:19:11.045"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20240105 10:19:11.045" endtime="20240105 10:19:11.045"/>
+</kw>
+<status status="FAIL" starttime="20240105 10:19:11.042" endtime="20240105 10:19:11.045"/>
+</kw>
+<kw name="Finish Testcase" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240105 10:19:11.047" endtime="20240105 10:19:11.047"/>
+</kw>
+<status status="PASS" starttime="20240105 10:19:11.046" endtime="20240105 10:19:11.047"/>
+</kw>
+<doc>This test case validates the mansion global preference center page</doc>
+<tag>MansionGlobal</tag>
+<tag>PreferenceCenter</tag>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20240105 10:19:11.040" endtime="20240105 10:19:11.047">Setup failed:
+ValueError: chromeheadlessff is not a supported browser.</status>
+</test>
+<doc>Mansion Global Smoke Tests</doc>
+<status status="FAIL" starttime="20240105 10:19:11.011" endtime="20240105 10:19:11.048"/>
+</suite>
+<status status="FAIL" starttime="20240105 10:19:11.006" endtime="20240105 10:19:11.053"/>
+</suite>
+<status status="FAIL" starttime="20240105 10:19:10.539" endtime="20240105 10:19:11.055"/>
+</suite>
+<status status="FAIL" starttime="20240105 10:19:10.535" endtime="20240105 10:19:11.056"/>
+</suite>
+<status status="FAIL" starttime="20240105 10:19:10.532" endtime="20240105 10:19:11.058"/>
+</suite>
+<status status="FAIL" starttime="20240105 10:19:10.498" endtime="20240105 10:19:11.059"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="8" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="2" skip="0">Article</stat>
+<stat pass="0" fail="2" skip="0">Author</stat>
+<stat pass="0" fail="1" skip="0">Follow</stat>
+<stat pass="0" fail="8" skip="0">MansionGlobal</stat>
+<stat pass="0" fail="3" skip="0">Notifications</stat>
+<stat pass="0" fail="1" skip="0">Postback</stat>
+<stat pass="0" fail="1" skip="0">PreferenceCenter</stat>
+<stat pass="0" fail="1" skip="0">PrefrenceCenter</stat>
+<stat pass="0" fail="6" skip="0">Regression</stat>
+<stat pass="0" fail="2" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="0" fail="8" skip="0" id="s1" name="Userservices-Qa-Automation">Userservices-Qa-Automation</stat>
+<stat pass="0" fail="8" skip="0" id="s1-s1" name="Panda-Qa">Userservices-Qa-Automation.Panda-Qa</stat>
+<stat pass="0" fail="8" skip="0" id="s1-s1-s1" name="Tests">Userservices-Qa-Automation.Panda-Qa.Tests</stat>
+<stat pass="0" fail="8" skip="0" id="s1-s1-s1-s1" name="FollowWidget">Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget</stat>
+<stat pass="0" fail="6" skip="0" id="s1-s1-s1-s1-s1" name="Regression">Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression</stat>
+<stat pass="0" fail="6" skip="0" id="s1-s1-s1-s1-s1-s1" name="MansionGlobal Regression">Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression.MansionGlobal Regression</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s1-s1-s1-s2" name="Smoke">Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Smoke</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s1-s1-s1-s2-s1" name="MansionGlobal Smoke">Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Smoke.MansionGlobal Smoke</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
