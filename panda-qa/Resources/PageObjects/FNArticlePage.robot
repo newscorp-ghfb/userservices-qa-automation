@@ -96,4 +96,4 @@ Click author hyperlink
     Click Element  //span[@class='name']
 
 Validate author without byline
-    Page Should Contain Element  //*[text()='Sunita Adhikarla']
+    Page Should Contain Element  //span[@class="name" and contains(.,'Sunita Adhikarla')]
