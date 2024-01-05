@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="added chrome code for jenkins">
-      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/log/output.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/MansionGlobalMailboxPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/MansionGlobalMailboxPage.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/MansionGlobalPreferenceCenterPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/MansionGlobalPreferenceCenterPage.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/MansionGlobal_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/MansionGlobal_Regression.robot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +35,7 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="Archana_MG_Regression_2432" />
-                    <option name="lastUsedInstant" value="1704407373" />
+                    <option name="lastUsedInstant" value="1704484150" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="develop" />
@@ -123,29 +124,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="robot-line">
-          <url>file://$PROJECT_DIR$/panda-qa/Resources/DefinedKeywords.robot</url>
-          <line>57</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="robot-line">
-          <url>file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJArticlePage.robot</url>
-          <line>74</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="robot-line">
-          <url>file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJArticlePage.robot</url>
-          <line>79</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="robot-line">
-          <url>file://$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Smoke/WSJ_Smoke.robot</url>
-          <line>22</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="robot-line">
-          <url>file://$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Smoke/WSJ_Smoke.robot</url>
-          <line>33</line>
-          <option name="timeStamp" value="10" />
+          <url>file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/MansionGlobalMailboxPage.robot</url>
+          <line>81</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
