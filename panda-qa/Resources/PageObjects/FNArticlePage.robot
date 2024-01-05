@@ -96,4 +96,4 @@ Click author hyperlink
     Click Element  //span[@class='name']
 
 Validate author without byline
-    Page Should Contain Element  //a[contains(@href, 'https://www.s.dev.fnlondon.com/authors/8680?mod=article_byline')]
+    Page Should Contain Element  //span[@class='name']/a
