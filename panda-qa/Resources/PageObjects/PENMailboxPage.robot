@@ -39,7 +39,7 @@ Select Inbox
 Search Your Daily Digest from PEN
     Wait Until Page Contains Element  //input[@id="topSearchInput"]
     Click Element  //input[@id="topSearchInput"]
-    Input Text  //input[@id="topSearchInput"]  Your Daily Digest from Barron's
+    Input Text  //input[@id="topSearchInput"]  Your Daily Digest from PENews
     Click Element  //button[@aria-label="Search"]
 
 Validate PEN Digest notification
@@ -55,7 +55,7 @@ Validate PEN Digest notification
 Search Your PEN real-time author notification
     Wait Until Page Contains Element  //input[@id="topSearchInput"]
     Click Element  //input[@id="topSearchInput"]
-    Input Text  //input[@id="topSearchInput"]  The latest from Teresa Rivas
+    Input Text  //input[@id="topSearchInput"]  The latest from Sebastian McCarthy
     Click Element  //button[@aria-label="Search"]
 
 Validate PEN real-time author notification
@@ -71,7 +71,7 @@ Validate PEN real-time author notification
 Search Your PEN real-time company notification
     Wait Until Page Contains Element  //input[@id="topSearchInput"]
     Click Element  //input[@id="topSearchInput"]
-    Input Text  //input[@id="topSearchInput"]  Barrons The latest news on Amazon.com, Inc.
+    Input Text  //input[@id="topSearchInput"]  PENews The latest news from Sebastian McCarthy
     Click Element  //button[@aria-label="Search"]
 
 Validate PEN real-time company notification

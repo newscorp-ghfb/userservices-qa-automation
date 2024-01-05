@@ -50,8 +50,8 @@ Validate Author Name
     Page Should Contain  Steve Goldstein
 
 Validate Following Frequency
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[1]/span[2]
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[1]/span[2]  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[4]/td[4]/div/div  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[2]/span[2]
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[4]/span
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[4]/span  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[4]/td[4]/div/div
 
 Validate All Tabs Displayed
     Page Should Contain  Barron's
