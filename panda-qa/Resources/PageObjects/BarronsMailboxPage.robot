@@ -81,10 +81,11 @@ Validate Barrons real-time company notification
     Page Should Contain Element  //div/span[text()='Amazon.com']
     Page Should Contain Element  //div/span[text()='Inc']   #//*[contains(text(),'Amazon.com')]  #//*[text()="Amazon.com, Inc."]]
     Page Should Contain Element  //a[text()="Read More "]
-    Page Should Contain Element  //a[text()="Preferences"]
+    Page Should Contain Element  //a[text()="Alerts Center"]
+    Page Should Contain Element  //a[text()="Contact Us"]
     Page Should Contain Element  //a[text()="Unsubscribe"]
-    Page Should Contain Element  //a[text()="Privacy Notice"]
-    Page Should Contain Element  //a[text()="Cookie Notice"]
+    Page Should Contain Element  //a[text()="Privacy Policy"]
+    Page Should Contain Element  //a[text()="Cookie Policy"]
 
 Search Your Barrons real-time stock picks notification
     Wait Until Page Contains Element  //input[@id="topSearchInput"]
@@ -96,7 +97,7 @@ Validate Barrons real-time stock picks notification
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
     Page Should Contain Element  //a[contains(text(),'View in browser')]
-    Page Should Contain Element  //*[text()="Barron's Stock Picks"]  #//*contains[text()="Barron's Stock Picks"]
+    Page Should Contain Element  //span[text()='Picks']  #//*contains[text()="Barron's Stock Picks"]
     Page Should Contain Element  //a[text()="Read More "]
     Page Should Contain Element  //a[text()="Alerts Center"]
     Page Should Contain Element  //a[text()="Contact Us"]
