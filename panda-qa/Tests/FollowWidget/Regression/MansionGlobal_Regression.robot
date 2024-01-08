@@ -86,7 +86,7 @@ Validate the Mansion Global weekly saved search notification
 
 #US-T359
 Validate Postback on Preference Center
-    [Documentation]  This test case validates the Mansion Global Postback on Preference Center
+    [Documentation]  This test case vabrlidates the Mansion Global Postback on Preference Center
     [Tags]  Regression  Postback
     MansionGlobalPreferenceCenterPage.Add Breaking News By Hotlink
     DefinedKeywords.Sign In Process
