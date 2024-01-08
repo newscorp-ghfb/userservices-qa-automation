@@ -2,6 +2,9 @@
 Library  SeleniumLibrary
 
 *** Variables ***
+${JSLogoImagePathWSJShop}=  document.querySelector('h1')  #1
+   ...  .querySelector('a')  #2
+   ...  .querySelector('img')  #3
 
 *** Keywords ***
 
@@ -215,4 +218,39 @@ Navigate to Print Edition Page
 Validate Print Edition Page
     Page Should Contain Element    //*[text()="Print Edition Website"]
 
+Navigate to Video Page
+    Click Element  //*[@id="sections-scroll-target"]/ul/ul/li[20]/a
+
+Validate Video Page
+    Page Should Contain Element  //*[text()="Video Center - The Wall Street Journal"]
+
+Navigate to Audio Page
+    Click Element  //*[@id="sections-scroll-target"]/ul/ul/li[20]/a
+
+Validate Audio Page
+    Page Should Contain Element  //*[text()="Audio Articles & Podcasts - The Wall Street Journal"]
+
+Navigate to Latest Headlines Page
+    Click Element  //*[@id="sections-scroll-target"]/ul/ul/li[22]/a
+
+Validate Latest Headlines Page
+    Page Should Contain Element  //span[text()="Latest Headlines"]
+
+Navigate to Buy side from WSJ Page
+    Click Element  //*[@id="sections-scroll-target"]/ul/div/ul/li[1]/a
+
+Validate Buy side from WSJ Page
+    Page Should Contain Element  //*[text()="Sign In"]
+
+Navigate to WSJ Shop Page
+    Click Element  //*[@id="sections-scroll-target"]/ul/div/ul/li[2]/a
+
+Validate WSJ Shop Page
+    Page Should Contain Element  ${JSLogoImagePathWSJShop}
+
+Navigate to WSJ Wine Page
+    Click Element  //*[@id="sections-scroll-target"]/ul/div/ul/li[3]/a
+
+Validate WSJ Wine Page
+    Page Should Contain Element  //*[text()="MEMBERSHIPS"]
 

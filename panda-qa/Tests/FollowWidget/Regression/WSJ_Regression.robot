@@ -837,6 +837,20 @@ Validate all the links and tabs are working on New Preference Center
     WSJPreferenceCenterPage.Validate Section contains options
     WSJPreferenceCenterPage.Navigate to Print Edition Page
     WSJPreferenceCenterPage.Validate Print Edition Page
+    WSJPreferenceCenterPage.Navigate to Video Page
+    WSJPreferenceCenterPage.Validate Video Page
+    WSJPreferenceCenterPage.Navigate to Audio Page
+    WSJPreferenceCenterPage.Validate Audio Page
+    WSJPreferenceCenterPage.Navigate to Latest Headlines Page
+    WSJPreferenceCenterPage.Validate Latest Headlines Page
+    WSJPreferenceCenterPage.Navigate to Buy side from WSJ Page
+    WSJPreferenceCenterPage.Validate Buy side from WSJ Page
+    WSJPreferenceCenterPage.Navigate to WSJ Shop Page
+    WSJPreferenceCenterPage.Validate WSJ Shop Page
+    WSJPreferenceCenterPage.Navigate to WSJ Wine Page
+    WSJPreferenceCenterPage.Validate WSJ Wine Page
+
+
 
 
 
