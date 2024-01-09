@@ -26,8 +26,8 @@ ${JSFollowSignInButtonPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('div')  #3
     ...  .querySelector('div.modal')  #4
     ...  .querySelector('div.footer')  #5
-    ...  .querySelector('ufc-button').shadowRoot  #6
-    ...  .querySelector('button')  #7
+    ...  .querySelector('ufc-button')  #.shadowRoot  #6
+    #...  .querySelector('button')  #7
 
 ${JSFollowSignInHeaderPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('ufc-signin-modal').shadowRoot  #2
@@ -49,6 +49,7 @@ Reload Article Page
 
 Validate Following Button
     Set Focus To Element  //*[text()='John West']
+    Scroll Down
     Wait Until Element is Visible  dom:${JSFollowButtonWSJPath}
     Wait Until Element Contains  dom:${JSFollowButtonWSJPath}  Following  timeout=15
     Element Text Should Be  dom:${JSFollowButtonWSJPath}  Following  timeout=15

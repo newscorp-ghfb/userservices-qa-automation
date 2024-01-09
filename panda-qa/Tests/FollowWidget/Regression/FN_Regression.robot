@@ -82,3 +82,27 @@ Validate the FN real-time company notification
     FNMailboxPage.Select Inbox
     FNMailboxPage.Search Your FN real-time company notification
     FNMailboxPage.Validate FN real-time company notification
+
+#US-T358
+#US T357
+Validate Postback on Preference Center
+    [Documentation]  This test case validates the FN Postback on Preference Center
+    [Tags]  Regression  Postback
+    FNPreferenceCenterPage.Add Breaking News By Hotlink
+    DefinedKeywords.Sign In Process
+    FNPreferenceCenterPage.Validate Followed Breaking News
+    ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
+    Run Keyword If  ${val2} > 0  FNPreferenceCenterPage.Click Following Toggle Alert Pop up
+    FNPreferenceCenterPage.Validate Breaking News Toggle Feature
+    FNPreferenceCenterPage.Click Breaking News Toggle Feature  #--unsubscribe functionality
+    FNPreferenceCenterPage.Validate Following Toggle Alert Pop up
+    FNPreferenceCenterPage.Click Following Toggle Alert Pop up
+    FNPreferenceCenterPage.Validate Over Mouse On Notification Tooltip
+    FNMailboxPage.Navigate Mailbox page
+    FNMailboxPage.Login
+    FNMailboxPage.Select Inbox
+    FNMailboxPage.Search FN real-time company notification for Postback
+    FNMailboxPage.Validate FN real-time company notification for Postback
+    FNMailboxPage.Unsubscribe the mails
+    FNMailboxPage.Verify the mail is unsubscribed
+    FNPreferenceCenterPage.Add Company By Hotlink

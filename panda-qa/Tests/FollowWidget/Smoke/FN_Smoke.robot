@@ -55,6 +55,7 @@ Validate the FN Preference Center page
     FNPreferenceCenterPage.Navigate Preference Center page
     DefinedKeywords.Sign In Process
     Set Selenium Speed  5 seconds  #US-297
+    FNPreferenceCenterPage.Add Author By Hotlink
     FNPreferenceCenterPage.Validate Followed Authors
     Set Selenium Speed  0.5 seconds
     FNPreferenceCenterPage.Validate Following Toggle Feature

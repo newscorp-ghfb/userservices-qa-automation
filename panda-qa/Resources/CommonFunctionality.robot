@@ -3,7 +3,7 @@ Library  SeleniumLibrary
 Resource  ../Resources/DefinedKeywords.robot
 
 *** Variables ***
-${Browser}=  ff  #headless, ff, chrome, edge, safari
+${Browser}=  chrome  #headless, ff, chrome, edge, safari
 
 ${Env}=  "dev"  #dev, prod
 
@@ -11,7 +11,7 @@ ${Email_prod}=  barronsadvisorcs@gmail.com
 
 ${Password_prod}=  password1
 
-${Email_dev}=  QABARRONSONLY
+${Email_dev}=  QABARRONSONLY  #priyanka.bhoomraogari@dowjones.com  #
 
 ${Password_dev}=  password1
 
@@ -81,8 +81,8 @@ Start WSJ Article
         Go To  https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     END
     #Wait Until Element Is Visible  //*[text()="Dave Michaels"]
-    Set Focus To Element  //*[text()="Dave Michaels"]
-    Wait Until Element Is Visible  dom:${JSFollowButtonMGPath}  30s
+    #Set Focus To Element  //*[text()="Dave Michaels"]
+    #Wait Until Element Is Visible  dom:${JSFollowButtonMGPath}  30s
     Maximize Browser Window
 
 Start Market Watch Article
@@ -93,6 +93,8 @@ Start Market Watch Article
     ELSE IF  ${Env} == "dev"
         Open Browser  https://www.dev.marketwatch.com  ${Browser}
         Go To  https://www.dev.marketwatch.com/author/Catey-Hill
+        Wait Until Page Contains Element  //*[@id="cx-scrim-wrapper"]/button
+        Click Button  //*[@id="cx-scrim-wrapper"]/button
     END
     Wait Until Page Contains Element  dom:${JSFollowButtonMWPath}
     Maximize Browser Window
@@ -473,3 +475,12 @@ Click Sign In
 
 Finish Testcase
     Close Browser
+
+Start CMS page for Barrons
+    Set Selenium Speed  0.5 seconds
+    IF  ${Env} == "prod"
+        Go To  https://www.barrons.com/watchlist
+    ELSE IF  ${Env} == "dev"
+        Go To  https://newspress.int.dowjones.io/barrons/wp-admin/post-new.php  #https://www.s.dev.barrons.com/watchlist
+    END
+    Maximize Browser Window
