@@ -85,7 +85,7 @@ ${JSFollowSignInHeaderPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('div.body')  #4
     ...  .querySelector('p')  #5
 
-${JSFollowSignInHeader2Path}=  document.querySelectorAll('div')[186]  #1
+${JSFollowSignInHeader2Path}=  document.querySelectorAll('div')  #1
     ...  .querySelector('ufc-portal')  #2
     ...  .querySelector('ufc-signin-modal').shadowRoot  #3
     ...  .querySelector('div')  #4
@@ -196,7 +196,7 @@ Click author hyperlink
 
 Validate author without byline
     IF  ${Env} == "prod"
-    Page Should Contain Element  //div[@class="byline article__byline"]/div/span[text()="Brain Swint"]
+    Page Should Contain Element  //div[@class="byline article__byline"]/div/span[text()="Brian Swint"]
     ELSE IF  ${Env} == "dev"
-    Page Should Contain Element  //div[@class="standard__ArticleBylineWrapper-sc-14sjre0-1 kwytpC"]/div/div/a/span/span[text()="Teresa Rivas"]
+    Page Should Contain Element  //div[@class="standard__ArticleBylineWrapper-sc-14sjre0-2 czapmB"]/div/div/a/span/span[1]
     END

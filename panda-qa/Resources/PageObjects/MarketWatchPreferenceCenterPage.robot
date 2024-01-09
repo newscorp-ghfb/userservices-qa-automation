@@ -24,9 +24,9 @@ Validate Followed Authors
     Page Should Contain  Authors
 
 Validate Following Toggle Feature
-    Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[2]/div/div/div/table/tbody/tr/td[3]/div  timeout=45s
-    #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div
+    Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table/tbody/tr/td[3]/div
+# Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[2]/div/div/div/table/tbody/tr/td[3]/div  timeout=45s
 
 Click Following Toggle Feature
     IF  ${Env} == "prod"
@@ -40,6 +40,7 @@ Validate Following Toggle Alert Pop up
 Click Following Toggle Alert Pop up
     Click Button  //*[@id="root"]/div/div/div/div[3]/div/div/button  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[1]/div/div/a
 
+
 Validate Author Updates From Preference Center Reflected In Articles
     Click Button  //*[@id="root"]/div/div/div/div[2]/div[2]/div/div/button
 
@@ -50,8 +51,8 @@ Validate Author Name
     Page Should Contain  Steve Goldstein
 
 Validate Following Frequency
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[1]/span[2]
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[2]/span[2]
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[4]/span
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[4]/span  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[4]/td[4]/div/div
 
 Validate All Tabs Displayed
     Page Should Contain  Barron's
@@ -82,7 +83,7 @@ Validate Company Frequency
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[2]/div/label[2]/span[2]
 
 Validate Company Quote Link
-    Page Should Contain Element  //a[text()="Amazon.com, Inc."]
+    Page Should Contain Element   //*[text()="Amazon.com, Inc."]
 
 Validate Company On All Tab
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[7]

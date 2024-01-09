@@ -18,7 +18,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 Validate the FN Preference Center page
 #This is my third PR
     [Documentation]  This test case validates the barrons preference center page
-    [Tags]  Regression  PreferenceCenter
+    [Tags]  Regression  PreferenceCenter  TagFNPF
 
     FNPreferenceCenterPage.Add Author By Hotlink
     DefinedKeywords.Sign In Process
@@ -48,7 +48,7 @@ Validate the FN Preference Center page
 #US-T25
 Validate Authors for FN Article page without byline
     [Documentation]  This test case validates authors without byline for FN article page
-    [Tags]  Regression  Author  Article
+    [Tags]  Regression  Author  Article   TagFNauthorwb
 
     CommonFunctionality.Start FN Article without byline
     FNArticlePage.Validate author without byline
