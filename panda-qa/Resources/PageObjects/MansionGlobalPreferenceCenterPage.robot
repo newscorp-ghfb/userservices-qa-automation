@@ -26,8 +26,15 @@ Validate Followed Authors
     Page Should Contain  Authors
 
 Validate Following Toggle Feature
-    Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div
+#    Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div
+#    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div
+    IF  ${Env} == "prod"
+        Wait Until Element is Visible   //*[text()="V.L. HENDRICKSON"]/../../../../td[4]/div
+        Page Should Contain Element  //*[text()="V.L. HENDRICKSON"]/../../../../td[4]/div
+    ELSE IF  ${Env} == "dev"
+        Wait Until Element is Visible   //*[text()="Mariana Nuñez"]/../../../../td[4]/div
+        Page Should Contain Element  //*[text()="Mariana Nuñez"]/../../../../td[4]/div
+    END
 
 Click Following Toggle Feature
     IF  ${Env} == "prod"
@@ -55,8 +62,15 @@ Validate Author Name
     Page Should Contain  Mariana Nuñez
 
 Validate Following Frequency
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[4]/div/label[1]/span[1]
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[4]/div/label[2]/span[2]
+#    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[4]/div/label[1]/span[1]
+#    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[4]/div/label[2]/span[2]
+    IF  ${Env} == "prod"
+        Page Should Contain Element  //*[text()="V.L. HENDRICKSON"]/../../../../td[3]/div/div/label[1]/span[2]
+        Page Should Contain Element  //*[text()="V.L. HENDRICKSON"]/../../../../td[3]/div/div/label[2]/span[2]
+    ELSE IF  ${Env} == "dev"
+        Page Should Contain Element  //*[text()="Mariana Nuñez"]/../../../../td[3]/div/div/label[1]/span[2]
+        Page Should Contain Element  //*[text()="Mariana Nuñez"]/../../../../td[3]/div/div/label[2]/span[2]
+    END
 
 Validate All Tabs Displayed
     Page Should Contain  Barron's
@@ -123,4 +137,3 @@ Click Breaking News Toggle Feature
 Validate Over Mouse On Notification Tooltip
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/thead/tr/th[3]/div/button/span
     Page Should Contain  Choose whether you want to receive alerts as soon as an article gets published or once a day as a digest.
-

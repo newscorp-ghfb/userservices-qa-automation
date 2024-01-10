@@ -83,5 +83,5 @@ Click author hyperlink
     Click Element  //*[@id="pen-pre-body-article-wrap"]/div[3]/div/div/span/a
 
 Validate author without byline
-    Page Should Contain Element  //span[text()="James Booth"]
+    Page Should Contain Element  //div/div/div[3]/div/div/span/a    #//*[text()="Sunita Adhikarla"]
 

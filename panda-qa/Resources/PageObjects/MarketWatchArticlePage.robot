@@ -55,7 +55,7 @@ Validate Following Button
     Element Text Should Be  dom:${JSFollowButtonMWPath}  Following  timeout=45s
 
 Click Follow Button
-    #Scroll Element Into View  //*[@id="maincontent"]/div[1]/div[1]/div[2]/div[2]/div/a/h4
+    Scroll Element Into View  //*[@id="maincontent"]/div[1]/div[1]/div[2]/div[2]/div/a/h4
     IF  ${Env} == "prod"
         Execute javascript  window.scrollTo(0,500)
     ELSE IF  ${Env} == "dev"
@@ -91,4 +91,7 @@ Click author hyperlink
     Click Element  //*[@id="maincontent"]/div[1]/div[1]/div[2]/div[2]/div/a/h4
 
 Validate author without byline
-    Page Should Contain Element  //div[@class="byline"]/div/div/span[text()="Catey Hill"]
+    Page Should Contain Element  //div[1]/div[1]/div[2]/div[2]/div/a/h4[contains(., 'Jonathan Burton')]
+
+
+

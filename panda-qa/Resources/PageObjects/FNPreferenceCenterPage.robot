@@ -31,8 +31,8 @@ Validate Following Toggle Feature
 Click Following Toggle Feature
     IF  ${Env} == "prod"
         Click Element  //*[text()="Paul Clarke"]/../../../../td[4]/div
-    ELSE IF  ${Env} == "dev"
-        Click Element  //*[text()="Sunita Adhikarla"]/../../../../td[4]/div  #//*[text()="Christopher Mims"]/../../../../td[4]/div
+    ELSE IF  ${Env} == "dev
+        Click Element  //*[text()="Sunita Adhikarla"]/../../../../td[4]/div
     END
 Validate Following Toggle Alert Pop up
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr/td[1]/div/div/a
@@ -50,7 +50,6 @@ Add Author By Hotlink
         Go To  https://www.s.dev.fnlondon.com/follow?alert=author&id=8680_FN&frequency=realtime
         Set Selenium Speed  0.5 seconds
         Click Button  //*[@id="root"]/div/div/div/div[3]/div/div/button
-
     END
 
 
@@ -61,8 +60,8 @@ Validate Author Name
         Page Should Contain  Sunita Adhikarla
     END
 Validate Following Frequency
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[1]/span[2]
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[2]/span[2]
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[4]/div/div/div  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[1]/span[2]
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[4]/div/div/div  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[2]/span[2]
 
 Validate All Tabs Displayed
     Page Should Contain  Barron's
@@ -94,8 +93,8 @@ Validate Followed Companies
     Page Should Contain  Companies
 
 Validate Company Frequency
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[2]/div/label[1]/span[2]
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[2]/div/label[2]/span[2]
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[4]/span
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[4]/span
 
 Validate Company Quote Link
     Page Should Contain Element  //a[text()="Amazon.com, Inc."]
@@ -119,7 +118,6 @@ Add Breaking News By Hotlink
         Go To  https://www.barrons.com/follow?alert=news_alert&id=NewsAlertEmailTechnology
         ELSE IF  ${Env} == "dev"
         Go To  https://www.s.dev.fnlondon.com/follow?alert=news_alert&id=NewsAlertEmailTechnology
-
      END
 
 Validate Followed Breaking News
@@ -136,4 +134,3 @@ Click Breaking News Toggle Feature
  Validate Over Mouse On Notification Tooltip
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/thead/tr/th[3]/div/button/span
     Page Should Contain  Choose whether you want to receive alerts as soon as an article gets published or once a day as a digest.
-

@@ -40,6 +40,7 @@ ${JSFollowSignInButton2Path}=  document.querySelector('ufc-signin-modal[isopen]'
     ...  .querySelector('ufc-button')  #6
     ...  .querySelector('button')  #7
 
+
 ${JSFollowSignInHeaderPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('ufc-signin-modal').shadowRoot  #2
     ...  .querySelector('div')  #3
@@ -71,7 +72,7 @@ Validate Sign In Modal
     Page Should Contain Element  dom:${JSFollowSignInHeaderPath}
 
 Click Sign In Button Modal
-    #Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}  20s
+    Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}  20s
     Set Selenium Speed  0.4 seconds
     IF  ${Env} == "prod"
        Click Element  dom:${JSFollowSignInButtonPath}
@@ -89,12 +90,16 @@ Click Preference Center Link
     Click Element  dom:${JSPreferenceCenterLinkFNPath}
 
 Validate author hyperlink
+    Page Should Contain Element  //span[@class='name']
+
+Click author hyperlink
+    Click Element  //span[@class='name']
+    
     IF  ${Env} == "prod"
        Page Should Contain Element  //span[@class="css-1wc2zh5" and text()="Justin Cash"]
     ELSE IF  ${Env} == "dev"
-       Page Should Contain Element  //a[@class="author-link" and text()="Sunita Adhikarla"]  #//span[@class="css-1wc2zh5" and text()="Justin Cash"]
-    END
-
+       Page Should Contain Element  //a[@class="author-link" and text()="Sunita Adhikarla"]  
+       END
 
 Click author hyperlink
     IF  ${Env} == "prod"
@@ -102,8 +107,4 @@ Click author hyperlink
     ELSE IF  ${Env} == "dev"
         Click Element  //a[@class="author-link"]
     END
-
-
-
-Validate author without byline
-    Page Should Contain Element  //div[@class="byline"]/div/div/span[text()="Sunita Adhikarla"]
+    

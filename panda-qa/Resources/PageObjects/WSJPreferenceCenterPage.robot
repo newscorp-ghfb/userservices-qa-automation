@@ -131,7 +131,7 @@ Validate All Tabs Displayed
 
 Validate Author On All Tab
     Click Element  //*[@id="root"]/div/div/div/div[3]/div/ul/li[7]
-  #  //*[@id="author-card"]/div/div[3]/div/ufc-follow-author-widget//ufc-follow-widget/ufc-follow-button
+    Page should contain element  //*[@id="author-card"]/div/div[3]/div/ufc-follow-author-widget//ufc-follow-widget/ufc-follow-button
     Page Should Contain  Joanna Stern
 
 Add Company By Hotlink
