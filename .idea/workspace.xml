@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9c88a806-bea8-4bc4-81c1-78a1b106200b" name="Changes" comment="updated code">
+      <change afterPath="$PROJECT_DIR$/results/log-20240105-145812.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/log-20240105-161819.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/output-20240104-154443.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/output-20240104-154523.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/output-20240104-154714.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/output-20240104-155419.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/output-20240104-155807.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/output-20240104-155909.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/output-20240104-160446.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/output-20240104-161103.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/output-20240105-145130.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/output-20240105-145622.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/output-20240105-145812.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/output-20240105-161819.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/report-20240105-145812.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/report-20240105-161819.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/selenium-screenshot-624.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/selenium-screenshot-625.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/selenium-screenshot-626.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/selenium-screenshot-642.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/selenium-screenshot-643.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/selenium-screenshot-644.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/selenium-screenshot-645.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/selenium-screenshot-646.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/selenium-screenshot-647.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/selenium-screenshot-648.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/selenium-screenshot-649.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/MansionGlobalPreferenceCenterPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/MansionGlobalPreferenceCenterPage.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/log-20231214-174120.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/log-20231215-200834.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/output-20231214-174120.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/output-20231215-200215.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/output-20231215-200434.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/output-20231215-200834.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/report-20231214-174120.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/report-20231215-200834.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-196.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-197.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-198.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-199.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-200.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-201.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-202.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-203.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-204.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-205.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-206.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-207.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-208.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-209.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-210.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-211.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-212.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-213.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-214.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-215.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-216.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-217.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-218.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-219.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-220.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-221.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-222.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-223.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-224.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-225.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-226.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-227.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-228.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-229.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-230.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-231.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-232.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-233.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-234.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-235.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-236.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-237.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-238.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-239.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-241.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-242.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-243.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-244.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-245.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-246.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-247.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-248.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-249.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-250.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-251.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-252.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-253.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-254.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-255.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-256.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-257.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-258.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-259.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-260.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-261.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-262.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-263.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-264.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-265.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-266.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-267.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-268.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-269.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-270.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-271.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-272.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-273.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-274.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-275.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-276.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-277.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-278.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-279.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2ahmqS3mKzHLhmB1bMZDBlWz0iI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Akhilesh-Latest-US2221"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9c88a806-bea8-4bc4-81c1-78a1b106200b" name="Changes" comment="commented one step" />
+      <created>1704779378303</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704779378303</updated>
+    </task>
+    <task id="LOCAL-00001" summary="commented one step">
+      <option name="closed" value="true" />
+      <created>1704779489311</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704779489311</updated>
+    </task>
+    <task id="LOCAL-00002" summary="updated code">
+      <option name="closed" value="true" />
+      <created>1704779822060</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1704779822060</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commented one step" />
+    <MESSAGE value="updated code" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated code" />
+  </component>
+</project>
