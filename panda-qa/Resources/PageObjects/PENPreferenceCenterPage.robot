@@ -25,9 +25,13 @@ Validate Followed Authors
     Page Should Contain  Authors
 
 Validate Following Toggle Feature
+    IF  ${Env} == "prod"
     Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[2]/td[1]/div/a
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[2]/td[1]/div/a
-
+    ELSE IF  ${Env} == "dev"
+    Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr/td[4]/div/div
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr/td[4]/div/div
+    END
 Click Following Toggle Feature
     IF  ${Env} == "prod"
         Click Element  //*[text()="Sebastian McCarthy"]/../../../../td[4]/div
@@ -52,11 +56,20 @@ Add Author By Hotlink
 
 
 Validate Author Name
+    IF  ${Env} == "prod"
     Page Should Contain  Mark Latham
+    ELSE IF  ${Env} == "dev"
+    Page Should Contain  Sunita Adhikarla
+    END
+
 
 Validate Following Frequency
+    IF  ${Env} == "prod"
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[4]/div/div  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[1]/span[2]
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[4]/div/div  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[2]/span[2]
+    ELSE IF  ${Env} == "dev"
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[4]/div/div
+    END
 
 Validate All Tabs Displayed
     Page Should Contain  Barron's
@@ -69,7 +82,12 @@ Validate All Tabs Displayed
 
 Validate Author On All Tab
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[7]
+    IF  ${Env} == "prod"
     Page Should Contain  Mark Latham
+    ELSE IF  ${Env} == "dev"
+    Page Should Contain  Sunita Adhikarla
+    END
+
 
 Add Company By Hotlink
     IF  ${Env} == "prod"
@@ -82,8 +100,15 @@ Validate Followed Companies
     Page Should Contain  Companies
 
 Validate Company Frequency
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[2]/div/label[1]/span[2]
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[2]/div/label[2]/span[2]
+    IF  ${Env} == "prod"
+       Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[2]/div/label[1]/span[2]
+       Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[2]/div/label[2]/span[2]
+     ELSE IF  ${Env} == "dev"
+       Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[4]/tbody/tr[4]/td[3]/div/div[2]/label[1]/span[2]
+       Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[4]/tbody/tr[4]/td[3]/div/div[2]/label[2]/span[2]
+    END
+
+
 
 Validate Company Quote Link
     Page Should Contain Element  //a[text()="Amazon.com, Inc."]
