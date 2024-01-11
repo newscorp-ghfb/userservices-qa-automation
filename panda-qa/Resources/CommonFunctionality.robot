@@ -3,7 +3,7 @@ Library  SeleniumLibrary
 Resource  ../Resources/DefinedKeywords.robot
 
 *** Variables ***
-${Browser}=  chrome  #headless, ff, chrome, edge, safari
+${Browser}=  firefox  #headless, ff, chrome, edge, safari
 
 ${Env}=  "dev"  #dev, prod
 
@@ -14,6 +14,7 @@ ${Password_prod}=  password1
 ${Email_dev}=  QABARRONSONLY  #priyanka.bhoomraogari@dowjones.com  #
 
 ${Password_dev}=  password1
+
 
 ${JSFollowButtonBarronsPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
     ...  .querySelector('ufc-follow-widget')  #2
@@ -78,6 +79,9 @@ Start WSJ Article
         Go To  https://www.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     ELSE IF  ${Env} == "dev"
         Open Browser  https://www.s.dev.wsj.com  ${Browser}
+        Go To  https://www.s.dev.wsj.com
+        #Click Element    //a[@href='https://www.s.dev.wsj.com/client/login?target=https%3A%2F%2Fwww.s.dev.wsj.com%2F']   #//*[@id="__next"]/div/div[2]/div[2]/div[2]/div/header[1]/div[1]/div/div[1]/a[2]
+        #Go To  https://dev.next.wsj.com/preference-center/alerts
         Go To  https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     END
     #Wait Until Element Is Visible  //*[text()="Dave Michaels"]

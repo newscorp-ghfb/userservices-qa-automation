@@ -191,10 +191,11 @@ Navigate New Preference Center page
         Go To  https://www.wsj.com/follow
     ELSE IF  ${Env} == "dev"
         Go To  https://dev.next.wsj.com/preference-center/alerts
+        #Set Request Header |
     END
 
 Click Menu on left corner
-    Click Button  //*[@id="__next"]/div[1]/header/div/button
+    Click Button  //*[@id="__next"]/div[1]/header/div/button  #//button[@aria-label="Open Navigation Menu"]
 
 Validate Menu
     Page Should Contain  Sections
