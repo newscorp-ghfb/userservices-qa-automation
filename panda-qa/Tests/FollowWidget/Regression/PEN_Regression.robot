@@ -7,6 +7,7 @@ Resource  ../../../Resources/PageObjects/PENArticlePage.robot
 Resource  ../../../Resources/PageObjects/PENAuthorsPage.robot
 Resource  ../../../Resources/PageObjects/PENPreferenceCenterPage.robot
 Resource  ../../../Resources/PageObjects/PENMailboxPage.robot
+Resource  ../../../Resources/PageObjects/PENCapabilitiesPage.robot
 
 Test Setup  CommonFunctionality.Start PEN Article
 Test Teardown  CommonFunctionality.Finish Testcase
@@ -104,3 +105,13 @@ Validate Postback on Preference Center
     PENMailboxPage.Unsubscribe the mails
     PENMailboxPage.Verify the mail is unsubscribed
     PENPreferenceCenterPage.Add Company By Hotlink
+
+#US-T113
+Validate Private Equity News Capabilities Dashboard for Author
+    [Documentation]  This test case validates the PEN Capabilities Dashboard for Author
+    [Tags]  Regression  Capabilities  Author
+    PENCapabilitiesPage.Navigate Capabilities Dashboard page
+    PENCapabilitiesPage.Click Login button
+    PENCapabilitiesPage.Capabilities Dashboard Sign In Process
+    PENCapabilitiesPage.Sign In Process
+    PENCapabilitiesPage.Click Author Tab

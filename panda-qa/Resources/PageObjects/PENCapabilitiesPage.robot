@@ -18,8 +18,28 @@ Navigate Capabilities Dashboard page
         Go To  https://int-int-capabilities-dashboard.vir-dev.onservo.com/app
     END
 
+Click Login button
+    IF  ${Env} == "prod"
+        Click Element    //*[@id="__next"]/div[1]/div/div
+    ELSE IF  ${Env} == "dev"
+        Click Element    //*[@id="__next"]/div[1]/div/div
+    END
+
+Capabilities Dashboard Sign In Process
+    Click Button    //input[@id='input28']
+    Input Text  //input[@id='input28']  priyanka.bhoomraogari@dowjones.com
+    Click Button    //input[@type='submit']
+    Sleep    15s
+
+Sign In Process
+    Wait Until Element Is Visible  //*[@type="password"]
+    Input Text  //*[@type="password"]  January2024
+    Click Button    //input[@type='submit']
+    Sleep  30s
+
 Click Author Tab
-    Click Button  //*[@href="/app/follow/author/tab/dashboard"]/*[text()="Author"]
+    Click Element  //*[@href="/app/follow/author/tab/dashboard"]/*[text()="Author"]
+    Sleep    10s
 
 Click Company Tab
     Click Button  //*[@href="/app/follow/company/tab/dashboard"]/*[text()="Company"]
