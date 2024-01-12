@@ -36,7 +36,7 @@ Validate the PEN Preference Center page
     PENPreferenceCenterPage.Validate Company Frequency
     PENPreferenceCenterPage.Validate Company Quote Link
     PENPreferenceCenterPage.Validate Company On All Tab
-    PENPreferenceCenterPage.Click Mansion Global tab
+    PENPreferenceCenterPage.Click PEN tab
     PENPreferenceCenterPage.Validate Company Toggle Feature
     PENPreferenceCenterPage.Click Company Toggle Feature
     PENPreferenceCenterPage.Validate Following Toggle Alert Pop up
