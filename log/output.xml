@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20240110 13:49:12.761" rpa="false" schemaversion="4">
-<suite id="s1" name="Barrons Regression" source="D:\Codes\Jenkins_2050\userservices-qa-automation\panda-qa\Tests\FollowWidget\Regression\Barrons_Regression.robot">
-<test id="s1-t1" name="Validate the multiple authors follow button from articles page" line="27">
-<kw name="Start Barrons Article" library="CommonFunctionality" type="SETUP">
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20240115 12:57:45.954" rpa="false" schemaversion="4">
+<suite id="s1" name="MansionGlobal Regression" source="D:\Codes\Jenkins_2050\userservices-qa-automation\panda-qa\Tests\FollowWidget\Regression\MansionGlobal_Regression.robot">
+<test id="s1-t1" name="Validate the Mansion Global weekly saved search notification" line="78">
+<kw name="Start Mansion Global Article" library="CommonFunctionality" type="SETUP">
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
-<arg>0.5 seconds</arg>
+<arg>1 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20240110 13:49:14.925" endtime="20240110 13:49:14.927"/>
+<status status="PASS" starttime="20240115 12:57:47.935" endtime="20240115 12:57:47.938"/>
 </kw>
 <kw name="Set Browser Options" library="CommonFunctionality">
 <var>${options}</var>
@@ -16,280 +16,159 @@
 <var>${options}</var>
 <arg>selenium.webdriver.FirefoxOptions()</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" starttime="20240110 13:49:14.933" endtime="20240110 13:49:14.934"/>
+<status status="NOT RUN" starttime="20240115 12:57:47.944" endtime="20240115 12:57:47.946"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--CreateProfile</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20240110 13:49:14.935" endtime="20240110 13:49:14.937"/>
+<status status="NOT RUN" starttime="20240115 12:57:47.948" endtime="20240115 12:57:47.949"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--start-maximized</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20240110 13:49:14.938" endtime="20240110 13:49:14.939"/>
+<status status="NOT RUN" starttime="20240115 12:57:47.950" endtime="20240115 12:57:47.951"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-dev-shm-usage</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20240110 13:49:14.940" endtime="20240110 13:49:14.941"/>
+<status status="NOT RUN" starttime="20240115 12:57:47.951" endtime="20240115 12:57:47.952"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--no-sandbox</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20240110 13:49:14.942" endtime="20240110 13:49:14.943"/>
+<status status="NOT RUN" starttime="20240115 12:57:47.954" endtime="20240115 12:57:47.954"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-gpu</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20240110 13:49:14.944" endtime="20240110 13:49:14.946"/>
+<status status="NOT RUN" starttime="20240115 12:57:47.956" endtime="20240115 12:57:47.957"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--headless</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20240110 13:49:14.947" endtime="20240110 13:49:14.948"/>
+<status status="NOT RUN" starttime="20240115 12:57:47.958" endtime="20240115 12:57:47.959"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--devtools.debugger.force-local</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20240110 13:49:14.949" endtime="20240110 13:49:14.950"/>
+<status status="NOT RUN" starttime="20240115 12:57:47.959" endtime="20240115 12:57:47.960"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--devtools.debugger.remote-enabled</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20240110 13:49:14.951" endtime="20240110 13:49:14.952"/>
+<status status="NOT RUN" starttime="20240115 12:57:47.961" endtime="20240115 12:57:47.963"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--devtools.chrome.enabled</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20240110 13:49:14.952" endtime="20240110 13:49:14.954"/>
+<status status="NOT RUN" starttime="20240115 12:57:47.964" endtime="20240115 12:57:47.965"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--devtools.debugger.prompt-connection</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20240110 13:49:14.955" endtime="20240110 13:49:14.956"/>
+<status status="NOT RUN" starttime="20240115 12:57:47.966" endtime="20240115 12:57:47.967"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--browser.dom.window.dump.enabled</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20240110 13:49:14.957" endtime="20240110 13:49:14.958"/>
+<status status="NOT RUN" starttime="20240115 12:57:47.968" endtime="20240115 12:57:47.969"/>
 </kw>
 <return>
 <value>${options}</value>
-<status status="NOT RUN" starttime="20240110 13:49:14.959" endtime="20240110 13:49:14.960"/>
+<status status="NOT RUN" starttime="20240115 12:57:47.969" endtime="20240115 12:57:47.970"/>
 </return>
-<status status="NOT RUN" starttime="20240110 13:49:14.932" endtime="20240110 13:49:14.960"/>
+<status status="NOT RUN" starttime="20240115 12:57:47.943" endtime="20240115 12:57:47.971"/>
 </branch>
 <branch type="ELSE IF" condition="&quot;${Browser}&quot; == &quot;chrome&quot;">
 <kw name="Evaluate" library="BuiltIn">
 <var>${options}</var>
 <arg>selenium.webdriver.ChromeOptions()</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20240110 13:49:14.966" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x00000254C82C8D40&gt;</msg>
-<status status="PASS" starttime="20240110 13:49:14.964" endtime="20240110 13:49:14.966"/>
+<msg timestamp="20240115 12:57:47.976" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000001631B234350&gt;</msg>
+<status status="PASS" starttime="20240115 12:57:47.974" endtime="20240115 12:57:47.986"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--start-maximized</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20240110 13:49:14.967" endtime="20240110 13:49:14.970"/>
+<status status="PASS" starttime="20240115 12:57:47.988" endtime="20240115 12:57:47.990"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-dev-shm-usage</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20240110 13:49:14.971" endtime="20240110 13:49:14.973"/>
+<status status="PASS" starttime="20240115 12:57:47.991" endtime="20240115 12:57:47.993"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--no-sandbox</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20240110 13:49:14.973" endtime="20240110 13:49:14.975"/>
-</kw>
-<kw name="Call Method" library="BuiltIn">
-<arg>${options}</arg>
-<arg>add_argument</arg>
-<arg>--headless</arg>
-<doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20240110 13:49:14.976" endtime="20240110 13:49:14.979"/>
+<status status="PASS" starttime="20240115 12:57:47.994" endtime="20240115 12:57:47.997"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-gpu</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20240110 13:49:14.980" endtime="20240110 13:49:14.981"/>
+<status status="PASS" starttime="20240115 12:57:47.997" endtime="20240115 12:57:47.999"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--ignore-certificate-errors</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20240110 13:49:14.982" endtime="20240110 13:49:14.984"/>
+<status status="PASS" starttime="20240115 12:57:48.000" endtime="20240115 12:57:48.002"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-extensions</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20240110 13:49:14.985" endtime="20240110 13:49:14.988"/>
+<status status="PASS" starttime="20240115 12:57:48.002" endtime="20240115 12:57:48.005"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--no-user-gesture-required</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20240110 13:49:14.989" endtime="20240110 13:49:14.990"/>
+<status status="PASS" starttime="20240115 12:57:48.006" endtime="20240115 12:57:48.008"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--no-first-run</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20240110 13:49:14.991" endtime="20240110 13:49:14.993"/>
+<status status="PASS" starttime="20240115 12:57:48.009" endtime="20240115 12:57:48.011"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--use-fake-ui-for-media-stream</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20240110 13:49:14.995" endtime="20240110 13:49:14.996"/>
+<status status="PASS" starttime="20240115 12:57:48.012" endtime="20240115 12:57:48.014"/>
 </kw>
-<kw name="Call Method" library="BuiltIn">
-<arg>${options}</arg>
-<arg>add_argument</arg>
-<arg>--use-fake-device-for-media-stream</arg>
-<doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20240110 13:49:14.997" endtime="20240110 13:49:14.999"/>
-</kw>
-<kw name="Call Method" library="BuiltIn">
-<arg>${options}</arg>
-<arg>add_argument</arg>
-<arg>--disable-sync</arg>
-<doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20240110 13:49:15.000" endtime="20240110 13:49:17.968"/>
-</kw>
-<kw name="Call Method" library="BuiltIn">
-<arg>${options}</arg>
-<arg>add_argument</arg>
-<arg>x-origin-verify=LA4hAmYaKsZ63xSF8h0B0AGrmwLY1emQ</arg>
-<doc>Calls the named method of the given object with the provided arguments.</doc>
-<msg timestamp="20240110 13:49:19.479" level="FAIL">Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument 'x-origin-verify'</msg>
-<status status="FAIL" starttime="20240110 13:49:17.969" endtime="20240110 13:49:19.485"/>
-</kw>
-<return>
-<value>${options}</value>
-<status status="NOT RUN" starttime="20240110 13:49:19.486" endtime="20240110 13:49:19.487"/>
-</return>
-<status status="FAIL" starttime="20240110 13:49:14.962" endtime="20240110 13:49:19.488"/>
-</branch>
-<status status="FAIL" starttime="20240110 13:49:14.932" endtime="20240110 13:49:19.489"/>
-</if>
-<status status="FAIL" starttime="20240110 13:49:14.930" endtime="20240110 13:49:19.490"/>
-</kw>
-<if>
-<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://www.barrons.com</arg>
-<arg>${Browser}</arg>
-<arg>options=${options}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="NOT RUN" starttime="20240110 13:49:19.493" endtime="20240110 13:49:19.495"/>
-</kw>
-<kw name="Go To" library="SeleniumLibrary">
-<arg>https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="NOT RUN" starttime="20240110 13:49:19.496" endtime="20240110 13:49:19.497"/>
-</kw>
-<status status="NOT RUN" starttime="20240110 13:49:19.491" endtime="20240110 13:49:19.498"/>
-</branch>
-<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://www.barrons.com</arg>
-<arg>${Browser}</arg>
-<arg>options=${options}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="NOT RUN" starttime="20240110 13:49:19.501" endtime="20240110 13:49:19.503"/>
-</kw>
-<kw name="Go To" library="SeleniumLibrary">
-<arg>https://www.barrons.com/articles/buy-under-armour-stock-pick-51650672000</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="NOT RUN" starttime="20240110 13:49:19.503" endtime="20240110 13:49:19.504"/>
-</kw>
-<status status="NOT RUN" starttime="20240110 13:49:19.500" endtime="20240110 13:49:19.505"/>
-</branch>
-<status status="NOT RUN" starttime="20240110 13:49:19.491" endtime="20240110 13:49:19.506"/>
-</if>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>dom:${JSFollowButtonBarronsPath}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="NOT RUN" starttime="20240110 13:49:19.506" endtime="20240110 13:49:19.507"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" starttime="20240110 13:49:19.508" endtime="20240110 13:49:19.509"/>
-</kw>
-<status status="FAIL" starttime="20240110 13:49:14.921" endtime="20240110 13:49:19.511"/>
-</kw>
-<kw name="Finish Testcase" library="CommonFunctionality" type="TEARDOWN">
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20240110 13:49:30.305" endtime="20240110 13:49:30.308"/>
-</kw>
-<status status="PASS" starttime="20240110 13:49:19.512" endtime="20240110 13:49:30.308"/>
-</kw>
-<doc>This test case validates the multiple authors follow button from articles page</doc>
-<tag>Article</tag>
-<tag>Barrons</tag>
-<tag>Follow</tag>
-<tag>MultipleAuthors</tag>
-<tag>Regression</tag>
-<status status="FAIL" starttime="20240110 13:49:14.909" endtime="20240110 13:49:30.309">Setup failed:
-Calling method 'add_argument' failed: TypeError: ArgOptions.add_argument() got an unexpected keyword argument 'x-origin-verify'</status>
-</test>
-<doc>Barrons Regression Tests</doc>
-<status status="FAIL" starttime="20240110 13:49:12.773" endtime="20240110 13:49:30.316"/>
-</suite>
-<statistics>
-<total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
-</total>
-<tag>
-<stat pass="0" fail="1" skip="0">Article</stat>
-<stat pass="0" fail="1" skip="0">Barrons</stat>
-<stat pass="0" fail="1" skip="0">Follow</stat>
-<stat pass="0" fail="1" skip="0">MultipleAuthors</stat>
-<stat pass="0" fail="1" skip="0">Regression</stat>
-</tag>
-<suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Barrons Regression">Barrons Regression</stat>
-</suite>
-</statistics>
-<errors>
-<msg timestamp="20240110 13:49:14.797" level="ERROR">Error in file 'D:\Codes\Jenkins_2050\userservices-qa-automation\panda-qa\Resources\PageObjects\BarronsCapabilitiesPage.robot' on line 219: Creating keyword 'I' failed: User keyword cannot be empty.</msg>
-</errors>
-</robot>

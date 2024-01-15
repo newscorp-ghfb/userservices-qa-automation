@@ -17,13 +17,21 @@ ${JSPreferenceCenterLinkPENPath}=  document.querySelector('ufc-snackbar').shadow
     ...  .querySelector('span')  #4
     ...  .querySelector('a')  #5
 
-${JSFollowSignInButtonPath}=  document.querySelector('ufc-portal')  #1
-    ...  .querySelector('ufc-signin-modal').shadowRoot  #2
-    ...  .querySelector('div')  #3
-    ...  .querySelector('div.modal')  #4
-    ...  .querySelector('div.footer')  #5
-    ...  .querySelector('ufc-button').shadowRoot  #6
-    ...  .querySelector('button.primary')  #7
+${JSFollowSignInButtonPath}=  document.querySelector('ufc-portal')
+  ...  .querySelector('ufc-signin-modal').shadowRoot
+ ...  .querySelector('div')
+ ...  .querySelector('focus-trap')
+ ...  .querySelector('div.footer')
+ ...  .querySelector('button')
+
+
+#document.querySelector('ufc-portal')  #1
+  #  ...  .querySelector('ufc-signin-modal').shadowRoot  #2
+   # ...  .querySelector('div')  #3
+    #...  .querySelector('div.modal')  #4
+  #  ...  .querySelector('div.footer')  #5
+  #  ...  .querySelector('ufc-button').shadowRoot  #6
+  #  ...  .querySelector('button.primary')  #7
 
 ${JSFollowSignInHeaderPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('ufc-signin-modal').shadowRoot  #2
@@ -75,5 +83,5 @@ Click author hyperlink
     Click Element  //*[@id="pen-pre-body-article-wrap"]/div[3]/div/div/span/a
 
 Validate author without byline
-    Page Should Contain Element  //span[text()="James Booth"]
+    Page Should Contain Element  //div/div/div[3]/div/div/span/a    #//*[text()="Sunita Adhikarla"]
 

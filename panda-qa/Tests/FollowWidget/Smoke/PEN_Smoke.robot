@@ -45,7 +45,6 @@ Validate the follow button from articles page
 Validate the follow button from authors page
     [Documentation]  This test case validates the follow button from authors page
     [Tags]  Smoke  Follow  Author
-
     PENArticlePage.Validate author hyperlink
     PENArticlePage.Click author hyperlink
     DefinedKeywords.Set Implicit Wait

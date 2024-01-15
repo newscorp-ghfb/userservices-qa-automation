@@ -8,7 +8,7 @@ Resource  ../../Resources/CommonFunctionality.robot
 *** Keywords ***
 
 Navigate CMS page
-    Go To  https://barrons.int.pubedit.dowjones.io/wp-admin/post-new.php
+    Go To   https://barrons.int.pubedit.dowjones.io/wp-admin/post-new.php
 
 Type Headline
     Click Button  //*[@title="Homepage"]

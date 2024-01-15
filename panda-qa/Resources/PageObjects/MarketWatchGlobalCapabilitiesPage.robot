@@ -2,6 +2,7 @@
 Library  SeleniumLibrary
 Resource  ../../Resources/CommonFunctionality.robot
 
+
 *** Variables ***
 ${JSFollowButtonBarronsPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
     ...  .querySelector('ufc-follow-widget')  #2
@@ -44,9 +45,9 @@ Validate Following Button
 Validate Authors Reflected On Dashboard
     ${Totalauthorsubs} = Get Value  //*[text()="Total subscriptions"]/../div[2]
     IF  "${Env}" == "prod"
-        Go To  https://www.barrons.com/follow?alert=author&id=8572_BARRONS&frequency=realtime
+        Go To  https://www.barrons.com/follow?alert=author&id=6151_BARRONS&frequency=realtime
     ELSE IF  "${Env}" == "dev"
-        Go To  https://www.s.dev.barrons.com/follow?alert=author&id=8572_BARRONS&frequency=realtime
+        Go To  https://www.s.dev.barrons.com/follow?alert=author&id=6151_BARRONS&frequency=realtime
     END
     Navigate Capabilities Dashboard page
     Click Author Tab
@@ -60,25 +61,25 @@ Validate Authors Reflected On Dashboard
     IF  "${Env}" == "prod"
         Go To  https://www.barrons.com/follow
     ELSE IF  "${Env}" == "dev"
-        Click Button  //*[@href="https://www.s.dev.barrons.com/authors/8572?mod=followUI"]/../../../../*/*[@role="switch"]
+        Click Button  //*[@href="https://www.s.dev.barrons.com/authors/6151?mod=followUI"]/../../../../*/*[@role="switch"]
+
     END
 
 
 Validate Authors On Search Tab
     Click Button  //*[text()='Search']
     Click Button  //*[@placeholder="Author name"]
-    Input Text   //*[@placeholder="Author name"]  John Smith
-    Click Button  //*[text()="John Smith"]
+    Input Text   //*[@placeholder="Author name"]  Andrew Bary
+    Click Button  //*[text()="Andrew Bary"]
     Element Text Should Be  //*[text()="About"]/../h2[2]  0 Followers
 
 Validate Follow Hotlink for Authors
     Click Author Tab
     Click Button  //*[text()='Follow Hotlinks']
     Click Button  //*[@placeholder="Author name"]
-    Input Text   //*[@placeholder="Author name"]  John Smith
+    Input Text   //*[@placeholder="Author name"]  Andrew Bary
     Wait Until Element is Visible  //button[text()="Copy"]
-    #Click Button  //*[text()='All records']
-    ##Validate author is show all records
+
 
 Validate Custom Topic On Dashboard
     Click Custom Topic Tab
@@ -198,7 +199,8 @@ Capabilities Dashboard Market Watch Menu
     Wait Until Element Is Visible  //option[text()="100"]
     Wait Until Element Is Visible  //option[text()="50"]
     IF  //tr[1]/td[5] >= 0
-        Log  MarketWatch Clicked value is not null
+        Log  Market
+        Watch Clicked value is not null
     ELSE
         Log  Error on MarketWatch Clicked value
     END

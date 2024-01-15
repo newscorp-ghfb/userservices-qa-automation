@@ -1,5 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
+Library    Dialogs
 Resource  ../../Resources/CommonFunctionality.robot
 
 *** Variables ***
@@ -158,7 +159,7 @@ Validate Industry On Search Tab
 
 Capabilities Dashboard Barrons Menu
     Click Button  //*[text()="Barrons"]/../../a
-    Wait Until Element Is Visible  //h1[text()="Barrons"]
+    Wait Until Element Is Visible  //h1[text()="Barron's"]
     Wait Until Element Is Visible  //*[text()="Alert type:"]
     Wait Until Element Is Visible  //option[text()="All"]
     Wait Until Element Is Visible  //option[text()="Digest"]
@@ -216,4 +217,3 @@ Capabilities Dashboard Barrons Menu
     ELSE
         Log  Error on Barrons Clicked value
     END
-I

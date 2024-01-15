@@ -18,7 +18,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 Validate the FN Preference Center page
 #This is my third PR
     [Documentation]  This test case validates the barrons preference center page
-    [Tags]  Regression  PreferenceCenter
+    [Tags]  Regression  PreferenceCenter  TagFNPF
 
     FNPreferenceCenterPage.Add Author By Hotlink
     DefinedKeywords.Sign In Process
@@ -48,7 +48,7 @@ Validate the FN Preference Center page
 #US-T25
 Validate Authors for FN Article page without byline
     [Documentation]  This test case validates authors without byline for FN article page
-    [Tags]  Regression  Author  Article
+    [Tags]  Regression  Author  Article   TagFNauthorwb
 
     CommonFunctionality.Start FN Article without byline
     FNArticlePage.Validate author without byline
@@ -82,3 +82,27 @@ Validate the FN real-time company notification
     FNMailboxPage.Select Inbox
     FNMailboxPage.Search Your FN real-time company notification
     FNMailboxPage.Validate FN real-time company notification
+
+#US-T358
+#US T357
+Validate Postback on Preference Center
+    [Documentation]  This test case validates the FN Postback on Preference Center
+    [Tags]  Regression  Postback
+    FNPreferenceCenterPage.Add Breaking News By Hotlink
+    DefinedKeywords.Sign In Process
+    FNPreferenceCenterPage.Validate Followed Breaking News
+    ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
+    Run Keyword If  ${val2} > 0  FNPreferenceCenterPage.Click Following Toggle Alert Pop up
+    FNPreferenceCenterPage.Validate Breaking News Toggle Feature
+    FNPreferenceCenterPage.Click Breaking News Toggle Feature  #--unsubscribe functionality
+    FNPreferenceCenterPage.Validate Following Toggle Alert Pop up
+    FNPreferenceCenterPage.Click Following Toggle Alert Pop up
+    FNPreferenceCenterPage.Validate Over Mouse On Notification Tooltip
+    FNMailboxPage.Navigate Mailbox page
+    FNMailboxPage.Login
+    FNMailboxPage.Select Inbox
+    FNMailboxPage.Search FN real-time company notification for Postback
+    FNMailboxPage.Validate FN real-time company notification for Postback
+    FNMailboxPage.Unsubscribe the mails
+    FNMailboxPage.Verify the mail is unsubscribed
+    FNPreferenceCenterPage.Add Company By Hotlink

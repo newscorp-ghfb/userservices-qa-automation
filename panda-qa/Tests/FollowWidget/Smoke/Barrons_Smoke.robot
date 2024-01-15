@@ -19,7 +19,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T2
 Validate the author follow button from articles page
     [Documentation]  This test case validates the author follow button from articles page
-    [Tags]  Smoke  Follow Article
+    [Tags]  Smoke  Follow  Article
 
     BarronsArticlePage.Validate Follow Button
     BarronsArticlePage.Click Follow Button
@@ -107,8 +107,9 @@ Validate the stock pick follow button from stock pick page
     BarronsArticlePage.Click Stock Pick Follow Button
     Set Selenium Speed  0.3 seconds
     BarronsArticlePage.Validate Sign In Modal
-    BarronsArticlePage.Click Sign In Button Modal
+    BarronsArticlePage.Click Sign In Button 2 Modal
     DefinedKeywords.Sign In Process
+    Set Selenium Speed  0.1 seconds
     BarronsArticlePage.Validate Stock Pick Following Button
     BarronsArticlePage.Click Stock Pick Following Button
     BarronsArticlePage.Click Stock Pick Undo Link

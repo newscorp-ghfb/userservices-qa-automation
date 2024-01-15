@@ -47,6 +47,7 @@ Validate Authors Reflected On Dashboard
         Go To  https://www.fnlondon.com/follow?alert=author&id=9004_FN&frequency=realtime
     ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.fnlondon.com/follow?alert=author&id=8680_FN&frequency=realtime
+
     END
     Navigate Capabilities Dashboard page
     Click Author Tab
@@ -77,8 +78,8 @@ Validate Follow Hotlink for Authors
     Click Button  //*[@placeholder="Author name"]
     Input Text   //*[@placeholder="Author name"]  John Smith
     Wait Until Element is Visible  //button[text()="Copy"]
-    #Click Button  //*[text()='All records']
-    ##Validate author is show all records
+    Click Button  //*[text()='All records']
+    Validate author is showing all records
 
 Validate Custom Topic On Dashboard
     Click Custom Topic Tab

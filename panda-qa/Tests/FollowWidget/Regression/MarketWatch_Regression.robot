@@ -104,9 +104,32 @@ Validate the MW real-time author notification
 #US-T146
 Validate the MW real-time company notification
     [Documentation]  This test case validates the MW real-time company notification
-    [Tags]  Regression  Notifications  Company
+    [Tags]  Regression  Notifications  Company  Tag1
     MarketWatchMailboxPage.Navigate Mailbox page
     MarketWatchMailboxPage.Login
     MarketWatchMailboxPage.Select Inbox
     MarketWatchMailboxPage.Search Your MW real-time company notification
     MarketWatchMailboxPage.Validate MW real-time company notification
+
+#US-T356
+Validate Postback on Preference Center
+    [Documentation]  This test case validates the MW Postback on Preference Center
+    [Tags]  Regression  Postback
+    MarketWatchPreferenceCenterPage.Add Breaking News By Hotlink
+    DefinedKeywords.Sign In Process
+    MarketWatchPreferenceCenterPage.Validate Followed Breaking News
+    ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
+    Run Keyword If  ${val2} > 0  MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
+    MarketWatchPreferenceCenterPage.Validate Breaking News Toggle Feature
+    MarketWatchPreferenceCenterPage.Click Breaking News Toggle Feature  #--unsubscribe functionality
+    MarketWatchPreferenceCenterPage.Validate Following Toggle Alert Pop up
+    MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
+    MarketWatchPreferenceCenterPage.Validate Over Mouse On Notification Tooltip
+    MarketWatchMailboxPage.Navigate Mailbox page
+    MarketWatchMailboxPage.Login
+    MarketWatchMailboxPage.Select Inbox
+    MarketWatchMailboxPage.Search Your MW real-time company notification for Postback
+    MarketWatchMailboxPage.Validate MW real-time company notification for Postback
+    MarketWatchMailboxPage.Unsubscribe the mails
+    MarketWatchMailboxPage.Verify the mail is unsubscribed
+    MarketWatchPreferenceCenterPage.Add Company By Hotlink

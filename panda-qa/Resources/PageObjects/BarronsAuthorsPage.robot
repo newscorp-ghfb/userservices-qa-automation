@@ -1,6 +1,7 @@
+
 *** Settings ***
 Library  SeleniumLibrary
-
+Resource  ../../Resources/CommonFunctionality.robot
 *** Variables ***
 
 *** Keywords ***
