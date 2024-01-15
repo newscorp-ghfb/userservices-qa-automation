@@ -13,7 +13,6 @@ Click author newsletters toggle
 
 Validate author newsletters subscription
     Wait Until Element is Visible  //*[text()="The 10-Point."]//../../div[2]/div/div[@aria-checked="true"]
-
 Click unsubscription confirmation button
     Click Button  UNSUBSCRIBE
 

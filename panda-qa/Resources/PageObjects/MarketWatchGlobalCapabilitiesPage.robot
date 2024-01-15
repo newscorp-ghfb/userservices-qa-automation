@@ -60,7 +60,7 @@ Validate Authors Reflected On Dashboard
     IF  ${Env} == "prod"
         Go To  https://www.barrons.com/follow
     ELSE IF  ${Env} == "dev"
-        Click Button  //*[@href="https://www.s.dev.barrons.com/authors/8572?mod=followUI"]/../../../../*/*[@role="switch"]
+        Click Button  //*[@href="https://www.s.dev.barrons.com/authors/6151?mod=followUI"]/../../../../*/*[@role="switch"]
     END
 
 
@@ -197,7 +197,8 @@ Capabilities Dashboard Market Watch Menu
     Wait Until Element Is Visible  //option[text()="100"]
     Wait Until Element Is Visible  //option[text()="50"]
     IF  //tr[1]/td[5] >= 0
-        Log  MarketWatch Clicked value is not null
+        Log  Market
+        Watch Clicked value is not null
     ELSE
         Log  Error on MarketWatch Clicked value
     END

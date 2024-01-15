@@ -27,7 +27,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T56
 Validate the multiple authors follow button from articles page
     [Documentation]  This test case validates the multiple authors follow button from articles page
-    [Tags]  Regression  Follow  MultipleAuthors  Article
+    [Tags]  Regression  Follow  MultipleAuthors  Article   BarronsMultipleauthors
 
     BarronsArticlePage.Validate Follow Button 2
     BarronsArticlePage.Click Follow Button 2
@@ -96,7 +96,7 @@ Validate Authors for Barrons Article page without byline
 #US-T217
 Validate the Watchlist widget from Watchlist page
     [Documentation]  This test case validates the watchlist widget from watchlist page
-    [Tags]  Regression  Watchlist
+    [Tags]  Regression  Watchlist      TagBarronsWW
 
     CommonFunctionality.Start Barrons for Watchlist page
     DefinedKeywords.Sign In Process
@@ -205,7 +205,7 @@ Validate the Barrons real-time author notification
 #US-T137
 Validate the Barrons real-time company notification
     [Documentation]  This test case validates the Barrons real-time company notification
-    [Tags]  Regression  Notifications  Company
+    [Tags]  Regression  Notifications  Company  TagBarronsCN
     BarronsMailboxPage.Navigate Mailbox page
     BarronsMailboxPage.Login
     BarronsMailboxPage.Select Inbox
@@ -215,7 +215,7 @@ Validate the Barrons real-time company notification
 #US-T139
 Validate the Barrons real-time stock picks notification
     [Documentation]  This test case validates the Barrons real-time stock picks notification
-    [Tags]  Regression  Notifications  CustomTopic
+    [Tags]  Regression  Notifications  CustomTopic   TagBarronsCT
     BarronsMailboxPage.Navigate Mailbox page
     BarronsMailboxPage.Login
     BarronsMailboxPage.Select Inbox

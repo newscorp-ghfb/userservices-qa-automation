@@ -26,8 +26,8 @@ ${JSFollowSignInButtonPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('div')  #3
     ...  .querySelector('div.modal')  #4
     ...  .querySelector('div.footer')  #5
-    ...  .querySelector('ufc-button').shadowRoot  #6
-    ...  .querySelector('button')  #7
+    ...  .querySelector('ufc-button')  #.shadowRoot  #6
+    #...  .querySelector('button')  #7
 
 ${JSFollowSignInHeaderPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('ufc-signin-modal').shadowRoot  #2
@@ -48,7 +48,8 @@ Reload Article Page
     Reload Page
 
 Validate Following Button
-    Set Focus To Element  //*[text()='Dave Michaels']
+    Set Focus To Element  //*[text()='John West']
+    Scroll Down
     Wait Until Element is Visible  dom:${JSFollowButtonWSJPath}
     Wait Until Element Contains  dom:${JSFollowButtonWSJPath}  Following  timeout=15
     Element Text Should Be  dom:${JSFollowButtonWSJPath}  Following  timeout=15
@@ -75,7 +76,7 @@ Validate Sign In Modal
     Page Should Contain Element  dom:${JSFollowSignInHeaderPath}
 
 Click Sign In Button Modal
-    #Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}  20s
+    Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}  20s
     Click Element  dom:${JSFollowSignInButtonPath}
 
 Click Undo Link
@@ -119,17 +120,17 @@ Click Energy Button
     Click Button  dom:${JSCustomFollowButtonWSJPath}
 
 Validate author hyperlink
-    Page Should Contain Element  //*[text()='Dave Michaels']
+    Page Should Contain Element  //*[text()='John West']
 
 Click author hyperlink
-    Click Element  //*[text()='Dave Michaels']
+    Click Element  //*[text()='John West']
 
 Scroll Down
     IF  ${Env} == "prod"
-        Set Focus To Element  //*[text()='Dave Michaels']
+        Set Focus To Element  //*[text()='John West']
     ELSE IF  ${Env} == "dev"
-        Set Focus To Element  //*[text()='Jennifer Levitz']
+        Set Focus To Element  //*[text()='Joanna Stern']
     END
 
 Validate author without byline
-    Page Should Contain Element  //span[text()="Holman W. Jenkins, Jr."]
+    Page Should Contain Element  //*[text()="Holman W. Jenkins, Jr."]

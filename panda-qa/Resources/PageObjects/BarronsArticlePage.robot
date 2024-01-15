@@ -1,6 +1,7 @@
 *** Settings ***
 Library  SeleniumLibrary
 Resource  ../../Resources/CommonFunctionality.robot
+Resource    BarronsQuotesPage.robot
 
 *** Variables ***
 ${JSFollowButtonBarronsPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
@@ -84,7 +85,7 @@ ${JSFollowSignInHeaderPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('div.body')  #4
     ...  .querySelector('p')  #5
 
-${JSFollowSignInHeader2Path}=  document.querySelectorAll('div')[186]  #1
+${JSFollowSignInHeader2Path}=  document.querySelectorAll('div')  #1
     ...  .querySelector('ufc-portal')  #2
     ...  .querySelector('ufc-signin-modal').shadowRoot  #3
     ...  .querySelector('div')  #4
@@ -106,6 +107,7 @@ Validate Stock Pick Follow Button
     Element Text Should Be  dom:${JSStockPickFollowButtonBarronsPath}  Follow  timeout=30
 
 Validate Following Button
+    Scroll Down
     Wait Until Element is Visible  dom:${JSFollowButtonBarronsPath}
     Wait Until Element Contains  dom:${JSFollowButtonBarronsPath}  Following  timeout=15
     Element Text Should Be  dom:${JSFollowButtonBarronsPath}  Following  timeout=15
@@ -194,7 +196,7 @@ Click author hyperlink
 
 Validate author without byline
     IF  ${Env} == "prod"
-    Page Should Contain Element  //div[@class="byline article__byline"]/div/span[text()="Brain Swint"]
+    Page Should Contain Element  //div[@class="byline article__byline"]/div/span[text()="Brian Swint"]
     ELSE IF  ${Env} == "dev"
-    Page Should Contain Element  //div[@class="standard__ArticleBylineWrapper-sc-14sjre0-1 kwytpC"]/div/div/a/span/span[text()="Teresa Rivas"]
+    Page Should Contain Element  //div[@class="standard__ArticleBylineWrapper-sc-14sjre0-2 czapmB"]/div/div/a/span/span[1]
     END
