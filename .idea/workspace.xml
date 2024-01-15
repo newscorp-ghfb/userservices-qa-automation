@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="added chrome code for jenkins">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/log.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/log/output.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
