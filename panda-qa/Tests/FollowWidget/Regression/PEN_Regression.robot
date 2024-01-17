@@ -115,3 +115,10 @@ Validate Private Equity News Capabilities Dashboard for Author
     PENCapabilitiesPage.Capabilities Dashboard Sign In Process
     PENCapabilitiesPage.Sign In Process
     PENCapabilitiesPage.Click Author Tab
+    PENCapabilitiesPage.Validate Author Page
+    PENCapabilitiesPage.Validate Author tab
+    PENCapabilitiesPage.Generate Author Hotlink
+    PENCapabilitiesPage.Validate Authors On Search Tab
+    PENCapabilitiesPage.Click on All records tab
+    PENCapabilitiesPage.Click on Author hyperlink from All records tab
+
