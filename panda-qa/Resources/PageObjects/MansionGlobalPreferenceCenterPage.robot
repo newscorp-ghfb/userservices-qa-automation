@@ -60,7 +60,7 @@ Click Following Toggle Feature
         Click Element  //*[text()="Mariana Nuñez"]/../../../../td[4]/div
     END
 Validate Following Toggle Alert Pop up
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[3]/div/span
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[3]/div/div/button
 
 Click Following Toggle Alert Pop up
     Click Button  //*[@id="root"]/div/div/div/div[3]/div/div/button

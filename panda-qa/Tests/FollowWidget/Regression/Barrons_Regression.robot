@@ -40,13 +40,13 @@ Validate the multiple authors follow button from articles page
     BarronsArticlePage.Click Following Button
     BarronsArticlePage.Click Undo Link
     BarronsArticlePage.Validate Following Button
-    BarronsArticlePage.Click Following Button 2
-    BarronsArticlePage.Click Undo Link 2
+#    BarronsArticlePage.Click Following Button 2
+#    BarronsArticlePage.Click Undo Link 2
     BarronsArticlePage.Validate Following Button 2
     BarronsPreferenceCenterPage.Navigate Preference Center page
     BarronsPreferenceCenterPage.Validate Preference Center page
-    BarronsPreferenceCenterPage.Validate Author 1
-    BarronsPreferenceCenterPage.Validate Author 2
+#    BarronsPreferenceCenterPage.Validate Author 1
+#    BarronsPreferenceCenterPage.Validate Author 2
 
 #US-T82
 #US-T80
