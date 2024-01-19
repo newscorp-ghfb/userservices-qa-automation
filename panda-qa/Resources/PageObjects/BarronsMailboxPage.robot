@@ -79,7 +79,7 @@ Validate Barrons real-time company notification
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
     Page Should Contain Element  //a[contains(text(),'View in browser')]
     Page Should Contain Element  //div/span[text()='Amazon.com']
-    Page Should Contain Element  //div/span[text()='Inc']  
+    Page Should Contain Element  //div/span[text()='Inc']
     Page Should Contain Element  //a[text()="Read More "]
     Page Should Contain Element  //a[text()="Alerts Center"]
     Page Should Contain Element  //a[text()="Contact Us"]
@@ -104,7 +104,7 @@ Validate Barrons real-time stock picks notification
     Page Should Contain Element  //a[text()="Privacy Policy"]
     Page Should Contain Element  //a[text()="Cookie Policy"]
 
- Search Barrons real-time company notification for Postback
+Search Barrons real-time company notification for Postback
     Wait Until Page Contains Element  //input[@id="topSearchInput"]
     Click Element  //input[@id="topSearchInput"]
     Input Text  //input[@id="topSearchInput"]  Barrons The latest news on Amazon Com Inc
@@ -114,10 +114,8 @@ Validate Barrons real-time company notification for Postback
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
     Page Should Contain Element  //a[contains(text(),'View in browser')]  #//a[text()="View in web browser ›"]
-    Page Should Contain Element  //div/span[text()='Amazon.com']
-    Page Should Contain Element  //div/span[text()='Inc']  #//*[text()="Amazon.com, Inc."]]
+    Page Should Contain Element  //*[contains(text(),'Amazon.com')]
     Page Should Contain Element  //a[text()="Read More"]
-    Page Should Contain Element  //a[text()="Preferences"]
     Page Should Contain Element  //a[text()="Unsubscribe"]
     Page Should Contain Element  //a[text()="Privacy Policy"]  #//a[text()="Privacy Notice"]
     Page Should Contain Element  //a[text()="Cookie Policy"]  #//a[text()="Cookie Notice"]

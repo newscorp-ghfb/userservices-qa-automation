@@ -47,14 +47,14 @@ ${JSStockPickPreferenceCenterLinkBarronsPath}=  document.querySelector('ufc-foll
     ...  .querySelector('span')  #6
     ...  .querySelector('a')  #7
 
-${JSFollowSignInButtonPath}=  document.querySelector('ufc-signin-modal[isopen]').shadowRoot  #1
+${JSFollowSignInButtonPath}=  document.querySelector('ufc-signin-modal').shadowRoot  #1
     ...  .querySelector('div')  #2
     ...  .querySelector('div.modal')  #3
     ...  .querySelector('div.footer')  #4
     ...  .querySelector('ufc-button').shadowRoot  #5
     ...  .querySelector('button')  #6
 
-${JSFollowSignInButton2Path}=  document.querySelector('ufc-signin-modal[isopen]').shadowRoot  #1
+${JSFollowSignInButton2Path}=  document.querySelector('ufc-signin-modal').shadowRoot  #1
     ...  .querySelector('div')  #2
     ...  .querySelector('div.modal')  #3
     ...  .querySelector('focus-trap')  #4
@@ -62,16 +62,23 @@ ${JSFollowSignInButton2Path}=  document.querySelector('ufc-signin-modal[isopen]'
     ...  .querySelector('ufc-button').shadowRoot  #6
     ...  .querySelector('button')  #7
 
-${JSFollowSignInButton3Path}=  document.querySelectorAll('div')[208]  #1
-    ...  .querySelector('ufc-portal')  #2
-    ...  .querySelector('ufc-signin-modal').shadowRoot  #3
-    ...  .querySelector('div.modal-wrapper')  #4
-    ...  .querySelector('div.modal')  #5
-    ...  .querySelector('div.footer')  #6
-    ...  .querySelector('ufc-button').shadowRoot  #7
-    ...  .querySelector('button')  #8
+${JSFollowSignInButton3Path}=  document.querySelector('ufc-signin-modal').shadowRoot  #1
+    ...  .querySelector('div')  #2
+    ...  .querySelector('div.modal')  #3
+    ...  .querySelector('focus-trap')  #4
+    ...  .querySelector('div.footer')  #5
+    ...  .querySelector('ufc-button').shadowRoot  #6
+    ...  .querySelector('button')  #7
+    #document.querySelectorAll('div')[208]  #1
+#    ...  .querySelector('ufc-portal')  #2
+#    ...  .querySelector('ufc-signin-modal').shadowRoot  #3
+#    ...  .querySelector('div.modal-wrapper')  #4
+#    ...  .querySelector('div.modal')  #5
+#    ...  .querySelector('div.footer')  #6
+#    ...  .querySelector('ufc-button').shadowRoot  #7
+#    ...  .querySelector('button')  #8
 
-${JSFollowSignInButton4Path}=  document.querySelector('ufc-signin-modal[isopen]').shadowRoot  #1
+${JSFollowSignInButton4Path}=  document.querySelector('ufc-signin-modal').shadowRoot  #1
     ...  .querySelector('div')  #2
     ...  .querySelector('div.modal')  #3
     ...  .querySelector('focus-trap')  #4
@@ -85,12 +92,11 @@ ${JSFollowSignInHeaderPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('div.body')  #4
     ...  .querySelector('p')  #5
 
-${JSFollowSignInHeader2Path}=  document.querySelectorAll('div')  #1
-    ...  .querySelector('ufc-portal')  #2
-    ...  .querySelector('ufc-signin-modal').shadowRoot  #3
-    ...  .querySelector('div')  #4
-    ...  .querySelector('div.body')  #5
-    ...  .querySelector('p')  #6
+${JSFollowSignInHeader2Path}=  document.querySelector('ufc-portal')  #1  #document.querySelectorALl('div')
+    ...  .querySelector('ufc-signin-modal').shadowRoot  #2
+    ...  .querySelector('div')  #3
+    ...  .querySelector('div.body')  #4
+    ...  .querySelector('p')  #5
 
 
 *** Keywords ***

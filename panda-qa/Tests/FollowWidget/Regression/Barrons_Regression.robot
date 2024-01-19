@@ -27,7 +27,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T56
 Validate the multiple authors follow button from articles page
     [Documentation]  This test case validates the multiple authors follow button from articles page
-    [Tags]  Regression  Follow  MultipleAuthors  Article   BarronsMultipleauthors
+    [Tags]  Regression  Follow  MultipleAuthors  Article   BarronsMultipleauthors   TagBarronsMA
 
     BarronsArticlePage.Validate Follow Button 2
     BarronsArticlePage.Click Follow Button 2
@@ -85,7 +85,7 @@ Validate the Barrons Preference Center page
 #US-T26
 Validate Authors for Barrons Article page without byline
     [Documentation]  This test case validates authors without byline for barrons article page
-    [Tags]  Regression  Author  Article
+    [Tags]  Regression  Author  Article      TagBarronsAWB
 
     CommonFunctionality.Start Barrons Article without byline
     BarronsArticlePage.Validate author without byline
@@ -123,7 +123,7 @@ Validate the Watchlist widget from Watchlist page
 #US-T250
 Validate the Watchlist widget from Quotes page
     [Documentation]  This test case validates the watchlist widget from quotes page
-    [Tags]  Regression  Watchlist  QuotesPage
+    [Tags]  Regression  Watchlist  QuotesPage     TagBQuotes
 
     CommonFunctionality.Start Barrons for Quotes page
     BarronsQuotesPage.Validate Watchlist for non-logged user
@@ -155,7 +155,7 @@ Validate the Watchlist widget from Quotes page
 #US-T130
 Validate the Watchlist widget from Market Data page
     [Documentation]  This test case validates the watchlist widget from market data page
-    [Tags]  Regression  Watchlist  MarketdataPage
+    [Tags]  Regression  Watchlist  MarketdataPage   TagBarronsMDP
 
     CommonFunctionality.Start Barrons for Market Data page
     BarronsMarketDataPage.Validate Watchlist for non-logged user
@@ -225,7 +225,7 @@ Validate the Barrons real-time stock picks notification
 #US T357
 Validate Postback on Preference Center
     [Documentation]  This test case validates the Barrons Postback on Preference Center
-    [Tags]  Regression  Postback
+    [Tags]  Regression  Postback                TagBarronsPostback
     BarronsPreferenceCenterPage.Add Breaking News By Hotlink
     DefinedKeywords.Sign In Process
     BarronsPreferenceCenterPage.Validate Followed Breaking News
