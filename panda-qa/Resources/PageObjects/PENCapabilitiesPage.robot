@@ -1,6 +1,7 @@
 *** Settings ***
 Library  SeleniumLibrary
 Resource  ../../Resources/CommonFunctionality.robot
+Resource    FNArticlePage.robot
 
 *** Variables ***
 ${JSFollowButtonBarronsPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
@@ -18,11 +19,146 @@ Navigate Capabilities Dashboard page
         Go To  https://int-int-capabilities-dashboard.vir-dev.onservo.com/app
     END
 
+Click Login button
+    IF  ${Env} == "prod"
+        Click Element    //*[@id="__next"]/div[1]/div/div
+    ELSE IF  ${Env} == "dev"
+        Click Element    //*[@id="__next"]/div[1]/div/div
+    END
+
+Capabilities Dashboard Sign In Process
+    Click Button    //input[@id='input28']
+    Input Text  //input[@id='input28']  priyanka.bhoomraogari@dowjones.com
+    Click Button    //input[@type='submit']
+    Sleep    15s
+
+Sign In Process
+    Wait Until Element Is Visible  //*[@type="password"]
+    Input Text  //*[@type="password"]  January2024
+    Click Button    //input[@type='submit']
+    Sleep  30s
+
 Click Author Tab
-    Click Button  //*[@href="/app/follow/author/tab/dashboard"]/*[text()="Author"]
+    Click Element  //*[@href="/app/follow/author/tab/dashboard"]/*[text()="Author"]
+    Sleep    10s
+
+Validate Author Page
+         Page Should Contain  Dashboard
+         Page Should Contain  Search
+         Page Should Contain  All records
+
+Validate Author tab
+    Scroll Down
+    Click Button    //*[@id="__next"]/div[3]/div/div/div[2]/div/section[2]/div[2]/button[1]
+        IF  ${Env} == "prod"
+            Page Should Contain  Andrew Bary
+        ELSE IF  ${Env} == "dev"
+          Page Should Contain  Carleton English
+      END
+    Page Should Contain Element    //*[@id="__next"]/div[3]/div/div/div[2]/div/section[2]/div[3]/div/table/tbody/tr[2]/td[2]
+    Click Button    //*[@id="__next"]/div[3]/div/div/div[2]/div/section[2]/div[2]/button[2]
+        IF  ${Env} == "prod"
+         Page Should Contain  Paul Clarke
+        ELSE IF  ${Env} == "dev"
+         Page Should Contain  Sunita Adhikarla
+     END
+    Click Button    //*[@id="__next"]/div[3]/div/div/div[2]/div/section[2]/div[2]/button[3]
+        IF  ${Env} == "prod"
+        Page Should Contain  Mansion Global Staff
+    ELSE IF  ${Env} == "dev"
+        Page Should Contain  Mariana Nuñez
+    END
+    Click Button    //*[@id="__next"]/div[3]/div/div/div[2]/div/section[2]/div[2]/button[4]
+     IF  ${Env} == "prod"
+        Page Should Contain  William Watts
+    ELSE IF  ${Env} == "dev"
+        Page Should Contain  Angela Moore
+    END
+    Click Button    //*[@id="__next"]/div[3]/div/div/div[2]/div/section[2]/div[2]/button[5]
+    IF  ${Env} == "prod"
+        Page Should Contain  Sebastian McCarthy
+    ELSE IF  ${Env} == "dev"
+        Page Should Contain  Sunita Adhikarla
+    END
+    Click Button    //*[@id="__next"]/div[3]/div/div/div[2]/div/section[2]/div[2]/button[6]
+    IF  ${Env} == "prod"
+        Page Should Contain  Joanna Stern
+    ELSE IF  ${Env} == "dev"
+        Page Should Contain  Joanna Stern
+    END
+
+Generate Author Hotlink
+    Click Button    //*[@id="__next"]/div[3]/div/div/div[2]/div/section[2]/div[2]/button[5]
+    Click Element  //*[@id="__next"]/div[3]/div/div/div[2]/div/section[2]/div[3]/div/table/tbody/tr[1]/td[1]/a
+    Page Should Contain Element  //*[text()='About']
+    Page Should Contain Element  //*[@id="__next"]/div[3]/div/div/div[2]/div/h2[2]
+    Page Should Contain Element  //*[text()='Generate Hotlink']
+    Click Element  //*[@id="__next"]/div[3]/div/div/div[2]/div/div[2]/button
+    Click Element    //*[@id="penews"]
+    Click Element    //*[@id="frequency_digest"]
+    Click Button    //*[@id="__next"]/div[3]/div/div/div[2]/div/div[2]/section/div/button
+    Click Button    //*[@id="__next"]/div[3]/div/div/div[1]/div/button
 
 Click Company Tab
-    Click Button  //*[@href="/app/follow/company/tab/dashboard"]/*[text()="Company"]
+    Click Element  //*[@href="/app/follow/company/tab/dashboard"]/*[text()="Company"]
+
+Validate Company Page
+         Page Should Contain  Dashboard
+         Page Should Contain  Search
+         Page Should Contain  All records
+
+Validate Company tab
+    Scroll Down
+    Click Button    //*[@id="__next"]/div[3]/div/div/div[2]/div/section[2]/div[2]/button[1]
+    IF  ${Env} == "prod"
+        Page Should Contain  Amazon.com, Inc.
+    ELSE IF  ${Env} == "dev"
+        Page Should Contain  Amazon Com Inc
+    END
+    Page Should Contain Element    //*[@id="__next"]/div[3]/div/div/div[2]/div/section[2]/div[3]/div/table/tbody/tr[2]/td[2]
+    Click Button    //*[@id="__next"]/div[3]/div/div/div[2]/div/section[2]/div[2]/button[2]
+    IF  ${Env} == "prod"
+        Page Should Contain  BlackRock Inc.
+    ELSE IF  ${Env} == "dev"
+        Page Should Contain  Blackrock Inc
+    END
+    Click Button    //*[@id="__next"]/div[3]/div/div/div[2]/div/section[2]/div[2]/button[3]
+    IF  ${Env} == "prod"
+        Page Should Contain  Amazon.com, Inc.
+    ELSE IF  ${Env} == "dev"
+        Page Should Contain  Amazon Com Inc
+    END
+    Click Button    //*[@id="__next"]/div[3]/div/div/div[2]/div/section[2]/div[2]/button[4]
+    IF  ${Env} == "prod"
+        Page Should Contain  Amazon.com, Inc.
+    ELSE IF  ${Env} == "dev"
+        Page Should Contain  Amazon Com Inc
+    END
+    Click Button    //*[@id="__next"]/div[3]/div/div/div[2]/div/section[2]/div[2]/button[5]
+    IF  ${Env} == "prod"
+        Page Should Contain  Apple Inc.
+    ELSE IF  ${Env} == "dev"
+        Page Should Contain  Blackrock Inc
+    END
+    IF  ${Env} == "dev"
+        Click Button    //*[@id="__next"]/div[3]/div/div/div[2]/div/section[2]/div[2]/button[6]
+        Page Should Contain  Amazon Com Inc
+    END
+
+Generate Company Hotlink
+    Click Button    //*[@id="__next"]/div[3]/div/div/div[2]/div/section[2]/div[2]/button[5]
+    Click Element  //*[@id="__next"]/div[3]/div/div/div[2]/div/section[2]/div[3]/div/table/tbody/tr[1]/td[1]/a
+    Page Should Contain Element  //*[text()='Primary Region:']
+    Page Should Contain Element  //*[text()='Code:']
+    Page Should Contain Element  //*[text()='Generate Hotlink']
+    Scroll Down
+    Click Element   //*[@id="__next"]/div[3]/div/div/div[2]/div/div[3]/button
+    Scroll Down
+    Click Element   //*[@id="frequency_digest"]
+    Scroll Down
+    Click Element   //*[@id="__next"]/div[3]/div/div/div[2]/div/div[3]/div/div[1]/label[5]/div  #//input[@id="penews"]
+    Click Button    //*[@id="__next"]/div[3]/div/div/div[2]/div/div[3]/section/div/button
+    Click Button    //*[@id="__next"]/div[3]/div/div/div[1]/div/button
 
 Click Custom Topic Tab
     Click Button  //*[@href="/app/follow/custom_topic/tab/dashboard"]/*[text()="Custom Topic"]
@@ -48,8 +184,7 @@ Validate Authors Reflected On Dashboard
     ELSE IF  ${Env} == "dev"
         Go To  https://www.s.dev.barrons.com/follow?alert=author&id=8572_BARRONS&frequency=realtime
     END
-    Navigate Capabilities Dashboard page
-    Click Author Tab
+
     ${Totalauthorsubs2} = Get Value  //*[text()="Total subscriptions"]/../div[2]
     ${Totalauthorsubs2} == ${Totalauthorsubs} + 1
     IF  ${Env} == "prod"
@@ -63,13 +198,20 @@ Validate Authors Reflected On Dashboard
         Click Button  //*[@href="https://www.s.dev.barrons.com/authors/8572?mod=followUI"]/../../../../*/*[@role="switch"]
     END
 
-
 Validate Authors On Search Tab
     Click Button  //*[text()='Search']
     Click Button  //*[@placeholder="Author name"]
-    Input Text   //*[@placeholder="Author name"]  John Smith
-    Click Button  //*[text()="John Smith"]
-    Element Text Should Be  //*[text()="About"]/../h2[2]  0 Followers
+    IF  ${Env} == "prod"
+        Input Text   //*[@placeholder="Author name"]  Mark Latham
+        Click Element  //*[text()="Mark Latham"]
+        Page Should Contain  Followers
+    ELSE IF  ${Env} == "dev"
+        Input Text   //*[@placeholder="Author name"]  John Smith
+        Click Element  //*[text()="John Smith"]
+        Element Text Should Be  //*[text()="About"]/../h2[2]  2 Followers
+    END
+    Click Element  //*[@id="__next"]/div[3]/div/div/div[1]/div/button
+
 
 Validate Follow Hotlink for Authors
     Click Author Tab
@@ -78,7 +220,25 @@ Validate Follow Hotlink for Authors
     Input Text   //*[@placeholder="Author name"]  John Smith
     Wait Until Element is Visible  //button[text()="Copy"]
     Click Button  //*[text()='All records']
-    Validate author is showing all records
+
+Click on All records tab
+    Click Element  //*[@id="__next"]/div[3]/div/div/div[1]/button[3]
+
+Click on Author hyperlink from All records tab
+    Sleep  10s
+    Click Element  //*[@id="__next"]/div[3]/div/div/div[2]/div/div/div/div[2]/table/tbody/tr[1]/td[1]/a
+    Sleep  10s
+    Page Should Contain Element  //*[text()='About']
+    Page Should Contain Element  //*[@id="__next"]/div[3]/div/div/div[2]/div/h2[2]
+    Page Should Contain Element  //*[text()='Generate Hotlink']
+
+Click on Company hyperlink from All records tab
+    Sleep  10s
+    Click Element  //*[@id="__next"]/div[3]/div/div/div[2]/div/div/div/div[2]/table/tbody/tr[1]/td[1]/a
+    Sleep  10s
+    Page Should Contain Element  //*[text()='Address:']
+    Page Should Contain Element  //*[text()='Code:']
+    Page Should Contain Element  //*[text()='Generate Hotlink']
 
 Validate Custom Topic On Dashboard
     Click Custom Topic Tab
@@ -91,8 +251,7 @@ Validate Company Reflected On Dashboard
     ELSE IF  ${Env} == "dev"
         Go To  https://www.s.dev.barrons.com/follow?alert=company&fcode=SGPM
     END
-    Navigate Capabilities Dashboard page
-    Click Author Tab
+
     ${Totalauthorsubs2} = Get Value  //*[text()="Total subscriptions"]/../div[2]
     ${Totalauthorsubs2} == ${Totalauthorsubs} + 1
     IF  ${Env} == "prod"
@@ -110,8 +269,13 @@ Validate Company On Search Tab
     Click Button  //*[text()='Search']
     Click Button  //*[@placeholder="Company name"]
     Input Text   //*[@placeholder="Company name"]  Compagnie de Saint-Gobain SA
-    Click Button  //*[text()="Compagnie de Saint-Gobain SA"]
-    Element Text Should Be  //*[text()="Aliases:"]/../../h2  0 Followers
+    IF  ${Env} == "prod"
+    Click Element  //*[text()="Compagnie de Saint-Gobain SA"]
+    ELSE IF  ${Env} == "dev"
+    Click Element   //*[text()="Compagnie de Saint Gobain SA"]
+    END
+    Element Text Should Be  //*[text()="Aliases:"]/../../h2  1 Followers
+    Click Element  //*[@id="__next"]/div[3]/div/div/div[1]/div/button
 
 Validate Industry Reflected On Dashboard
     ${Totalauthorsubs} = Get Value  //*[text()="Total subscriptions"]/../div[2]
@@ -120,8 +284,7 @@ Validate Industry Reflected On Dashboard
     ELSE IF  ${Env} == "dev"
         Go To  https://www.s.dev.barrons.com/follow?alert=industry&fcode=indcera
     END
-    Navigate Capabilities Dashboard page
-    Click Author Tab
+
     ${Totalauthorsubs2} = Get Value  //*[text()="Total subscriptions"]/../div[2]
     ${Totalauthorsubs2} == ${Totalauthorsubs} + 1
     IF  ${Env} == "prod"

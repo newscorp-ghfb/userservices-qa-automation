@@ -7,6 +7,7 @@ Resource  ../../../Resources/PageObjects/PENArticlePage.robot
 Resource  ../../../Resources/PageObjects/PENAuthorsPage.robot
 Resource  ../../../Resources/PageObjects/PENPreferenceCenterPage.robot
 Resource  ../../../Resources/PageObjects/PENMailboxPage.robot
+Resource  ../../../Resources/PageObjects/PENCapabilitiesPage.robot
 
 Test Setup  CommonFunctionality.Start PEN Article
 Test Teardown  CommonFunctionality.Finish Testcase
@@ -36,7 +37,7 @@ Validate the PEN Preference Center page
     PENPreferenceCenterPage.Validate Company Frequency
     PENPreferenceCenterPage.Validate Company Quote Link
     PENPreferenceCenterPage.Validate Company On All Tab
-    PENPreferenceCenterPage.Click Mansion Global tab
+    PENPreferenceCenterPage.Click PEN tab
     PENPreferenceCenterPage.Validate Company Toggle Feature
     PENPreferenceCenterPage.Click Company Toggle Feature
     PENPreferenceCenterPage.Validate Following Toggle Alert Pop up
@@ -104,3 +105,36 @@ Validate Postback on Preference Center
     PENMailboxPage.Unsubscribe the mails
     PENMailboxPage.Verify the mail is unsubscribed
     PENPreferenceCenterPage.Add Company By Hotlink
+
+#US-T113
+Validate Private Equity News Capabilities Dashboard for Author
+    [Documentation]  This test case validates the PEN Capabilities Dashboard for Author
+    [Tags]  Regression  Capabilities  Author
+    PENCapabilitiesPage.Navigate Capabilities Dashboard page
+    PENCapabilitiesPage.Click Login button
+    PENCapabilitiesPage.Capabilities Dashboard Sign In Process
+    PENCapabilitiesPage.Sign In Process
+    PENCapabilitiesPage.Click Author Tab
+    PENCapabilitiesPage.Validate Author Page
+    PENCapabilitiesPage.Validate Author tab
+    PENCapabilitiesPage.Generate Author Hotlink
+    PENCapabilitiesPage.Validate Authors On Search Tab
+    PENCapabilitiesPage.Click on All records tab
+    PENCapabilitiesPage.Click on Author hyperlink from All records tab
+
+ #US-T114
+Validate Private Equity News Capabilities Dashboard for Company
+    [Documentation]  This test case validates the PEN Capabilities Dashboard for Company
+    [Tags]  Regression  Capabilities  Company
+    PENCapabilitiesPage.Navigate Capabilities Dashboard page
+    PENCapabilitiesPage.Click Login button
+    PENCapabilitiesPage.Capabilities Dashboard Sign In Process
+    PENCapabilitiesPage.Sign In Process
+    PENCapabilitiesPage.Click Company Tab
+    PENCapabilitiesPage.Validate Company Page
+    PENCapabilitiesPage.Validate Company tab
+    PENCapabilitiesPage.Generate Company Hotlink
+    PENCapabilitiesPage.Validate Company On Search Tab
+    PENCapabilitiesPage.Click on All records tab
+    PENCapabilitiesPage.Click on Company hyperlink from All records tab
+

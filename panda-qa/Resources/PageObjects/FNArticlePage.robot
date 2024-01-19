@@ -94,14 +94,13 @@ Validate author hyperlink
 
 Click author hyperlink
     Click Element  //span[@class='name']
-    
-    IF  ${Env} == "prod"
+     IF  ${Env} == "prod"
        Page Should Contain Element  //span[@class="css-1wc2zh5" and text()="Justin Cash"]
     ELSE IF  ${Env} == "dev"
        Page Should Contain Element  //a[@class="author-link" and text()="Sunita Adhikarla"]  
        END
 
-Click author hyperlink
+Click author hyperlink new
     IF  ${Env} == "prod"
        Click Element  //span[@class='css-1wc2zh5']
     ELSE IF  ${Env} == "dev"

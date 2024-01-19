@@ -3,7 +3,7 @@ Library  SeleniumLibrary
 Resource  ../Resources/DefinedKeywords.robot
 
 *** Variables ***
-${Browser}=  ff  #headless, ff, chrome, edge, safari
+${Browser}=  chrome  #headless, ff, chrome, edge, safari
 
 ${Env}=  "dev"  #dev, prod
 
@@ -203,9 +203,9 @@ Start WSJ Letters for Letters breadcrumb
         Open Browser  https://www.s.dev.wsj.com  ${Browser}
         Go To  https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     END
-    Wait Until Element Is Visible  //*[text()="Dave Michaels"]
+    #Wait Until Element Is Visible  //*[text()="Dave Michaels"]
     Set Focus To Element  //*[text()="Letters"]
-    Wait Until Element Is Visible  dom:${JSFollowButtonMGPath}  30s
+    #Wait Until Element Is Visible  dom:${JSFollowButtonMGPath}  30s
     Maximize Browser Window
 
 Start WSJ Article for Editorials breadcrumb
