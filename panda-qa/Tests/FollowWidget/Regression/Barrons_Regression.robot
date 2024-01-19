@@ -185,7 +185,7 @@ Validate the Watchlist widget from Market Data page
 #US-T136
 Validate the Barrons digest notification
     [Documentation]  This test case validates the Barrons digest notification
-    [Tags]  Regression  Notifications
+    [Tags]  Regression  Notifications             TagBarronsDN
     BarronsMailboxPage.Navigate Mailbox page
     BarronsMailboxPage.Login
     BarronsMailboxPage.Select Inbox

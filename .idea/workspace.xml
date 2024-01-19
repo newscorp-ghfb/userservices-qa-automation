@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="added chrome code for jenkins">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_5_2024_11_48_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_5_2024_11_48_AM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/log.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/log/output.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/MansionGlobalMailboxPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/MansionGlobalMailboxPage.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/BarronsMailboxPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/BarronsMailboxPage.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/Barrons_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/Barrons_Regression.robot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,23 +58,33 @@
       </RecentBranches>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/BarronsArticlePage.robot" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/BarronsMailboxPage.robot" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/BarronsMarketDataPage.robot" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/BarronsPreferenceCenterPage.robot" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/Barrons_Regression.robot" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2ZRg3HuiRX2lnGXCAkpDSMXTS02" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Archana__MG__Regression__2432&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Codes/Jenkins_2050/userservices-qa-automation&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "Akhilesh-BarronsRegression",
+    "last_opened_file_path": "D:/Codes/Jenkins_2050/userservices-qa-automation"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Codes\Jenkins_2050\userservices-qa-automation\panda-qa\Tests\FollowWidget\Smoke" />
@@ -119,16 +129,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added chrome code for jenkins" />
     <option name="LAST_COMMIT_MESSAGE" value="added chrome code for jenkins" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="robot-line">
-          <url>file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/MansionGlobalMailboxPage.robot</url>
-          <line>81</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
