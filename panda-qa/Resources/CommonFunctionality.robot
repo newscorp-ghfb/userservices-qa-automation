@@ -55,7 +55,7 @@ Set Browser Options
             Call Method    ${options}    add_argument    --start-maximized
             Call Method    ${options}    add_argument    --disable-dev-shm-usage
             Call Method    ${options}    add_argument    --no-sandbox
-#            Call Method    ${options}    add_argument    --headless
+            Call Method    ${options}    add_argument    --headless
             Call Method    ${options}    add_argument    --disable-gpu
             Call Method    ${options}    add_argument    --ignore-certificate-errors
             Call Method    ${options}    add_argument    --disable-extensions
