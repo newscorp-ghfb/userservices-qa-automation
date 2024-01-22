@@ -10,6 +10,7 @@ Validate Authors Page
     IF  "${Env}" == "prod"
         Page Should Contain  Steve Goldstein
     ELSE IF  "${Env}" == "dev"
-        Page Should Contain  Angela Moore
+        Page Should Contain  Catey Hill
+#        Angela Moore
     END
 

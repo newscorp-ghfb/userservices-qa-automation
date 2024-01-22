@@ -27,7 +27,8 @@ ${JSFollowButtonMGPath}=  document.querySelector('ufc-follow-author-widget').sha
     ...  .querySelector('button')  #3
 
 ${JSFollowButtonMWPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
-    ...  .querySelector('ufc-follow-button').shadowRoot  #2
+    ...  .querySelector('ufc-follow-widget')  #2
+    ...  .querySelector('ufc-follow-button').shadowRoot  #3
     ...  .querySelector('button')  #3
 
 ${CookieManagerYesPath}=  //*[@id="notice"]/div[4]/div/div/button[2]
@@ -42,6 +43,7 @@ Set Browser Options
             Call Method    ${options}    add_argument    --no-sandbox
             Call Method    ${options}    add_argument    --disable-gpu
             Call Method    ${options}    add_argument    --headless
+
             Call Method    ${options}    add_argument    --devtools.debugger.force-local
             Call Method    ${options}    add_argument    --devtools.debugger.remote-enabled
             Call Method    ${options}    add_argument    --devtools.chrome.enabled
@@ -53,7 +55,7 @@ Set Browser Options
             Call Method    ${options}    add_argument    --start-maximized
             Call Method    ${options}    add_argument    --disable-dev-shm-usage
             Call Method    ${options}    add_argument    --no-sandbox
-            Call Method    ${options}    add_argument    --headless
+#            Call Method    ${options}    add_argument    --headless
             Call Method    ${options}    add_argument    --disable-gpu
             Call Method    ${options}    add_argument    --ignore-certificate-errors
             Call Method    ${options}    add_argument    --disable-extensions
@@ -134,10 +136,10 @@ Start Market Watch Article
     ELSE IF  "${Env}" == "dev"
         Open Browser  https://www.dev.marketwatch.com  ${Browser}  options=${options}
         Go To  https://www.dev.marketwatch.com/author/Catey-Hill
-        Wait Until Page Contains Element  //*[@id="cx-scrim-wrapper"]/button
-        Click Button  //*[@id="cx-scrim-wrapper"]/button
+#        Wait Until Page Contains Element  //*[@id="cx-scrim-wrapper"]/button
+#        Click Button  //*[@id="cx-scrim-wrapper"]/button
     END
-    Wait Until Page Contains Element  dom:${JSFollowButtonMWPath}
+#    Wait Until Page Contains Element  dom:${JSFollowButtonMWPath}
     Maximize Browser Window
 
 Start PEN Article
