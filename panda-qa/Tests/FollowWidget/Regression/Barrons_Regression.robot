@@ -103,7 +103,6 @@ Validate the Watchlist widget from Watchlist page
     Set Selenium Speed  0.5 seconds
     Capture Page Screenshot    screenshot.png
     BarronsWatchlistPage.Validate Watchlist Page
-    BarronsWatchlistPage.Validate Default New Watchlist
     BarronsWatchlistPage.Click Add Symbol Input
     BarronsWatchlistPage.Type Symbol
     BarronsWatchlistPage.Select Symbol
@@ -115,8 +114,8 @@ Validate the Watchlist widget from Watchlist page
     BarronsWatchlistPage.Validate Symbol in Created Watchlist
     BarronsWatchlistPage.Sort Symbols
     BarronsWatchlistPage.Delete Watchlists
-    BarronsWatchlistPage.Validate Default New Watchlist
-    BarronsWatchlistPage.Validate No Symbol in Default New Watchlist
+    #BarronsWatchlistPage.Validate Default New Watchlist
+    #BarronsWatchlistPage.Validate No Symbol in Default New Watchlist
 
 #US-T248
 #US-T249

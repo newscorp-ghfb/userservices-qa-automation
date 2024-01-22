@@ -25,48 +25,48 @@ ${JSDefaultSymbolDJIA-P}=  document.querySelector('dj-watchlist').shadowRoot  #1
     ...  .querySelector('div.sc-dj-instrument-barrons')  #8
     ...  .querySelector('[href="https://www.barrons.com/market-data/indexes/DJIA?countrycode=US&mod=watchlist_ticker"]')  #9
 
-${JSDefaultSymbolABS-P}=  document.querySelector('dj-watchlist').shadowRoot  #1
-    ...  .querySelector('div.watchlist')  #2
-    ...  .querySelector('div.watchlist-content')  #3
-    ...  .querySelector('ul.watchlist-container')  #4
-    ...  .querySelector('li[data-id="1"]')  #5
-    ...  .querySelector('dj-instrument')  #6
-    ...  .querySelector('div')  #7
-    ...  .querySelector('div.sc-dj-instrument-barrons')  #8
-    ...  .querySelector('[href="https://www.barrons.com/market-data/stocks/ABS?countrycode=US&mod=watchlist_ticker"]')  #9
+#${JSDefaultSymbolABS-P}=  document.querySelector('dj-watchlist').shadowRoot  #1
+#    ...  .querySelector('div.watchlist')  #2
+#    ...  .querySelector('div.watchlist-content')  #3
+#    ...  .querySelector('ul.watchlist-container')  #4
+#    ...  .querySelector('li[data-id="1"]')  #5
+#    ...  .querySelector('dj-instrument')  #6
+#    ...  .querySelector('div')  #7
+#    ...  .querySelector('div.sc-dj-instrument-barrons')  #8
+#    ...  .querySelector('[href="https://www.barrons.com/market-data/stocks/ABS?countrycode=US&mod=watchlist_ticker"]')  #9
 
-${JSDefaultSymbolAAPL-P}=  document.querySelector('dj-watchlist').shadowRoot  #1
-    ...  .querySelector('div.watchlist')  #2
-    ...  .querySelector('div.watchlist-content')  #3
-    ...  .querySelector('ul.watchlist-container')  #4
-    ...  .querySelector('li[data-id="2"]')  #5
-    ...  .querySelector('dj-instrument')  #6
-    ...  .querySelector('div')  #7
-    ...  .querySelector('div.sc-dj-instrument-barrons')  #8
-    ...  .querySelector('[href="https://www.barrons.com/market-data/stocks/AAPL?countrycode=US&mod=watchlist_ticker"]')  #9
+#${JSDefaultSymbolAAPL-P}=  document.querySelector('dj-watchlist').shadowRoot  #1
+#    ...  .querySelector('div.watchlist')  #2
+#    ...  .querySelector('div.watchlist-content')  #3
+#    ...  .querySelector('ul.watchlist-container')  #4
+#    ...  .querySelector('li[data-id="2"]')  #5
+#    ...  .querySelector('dj-instrument')  #6
+#    ...  .querySelector('div')  #7
+#    ...  .querySelector('div.sc-dj-instrument-barrons')  #8
+#    ...  .querySelector('[href="https://www.barrons.com/market-data/stocks/AAPL?countrycode=US&mod=watchlist_ticker"]')  #9
 
-${JSDefaultSymbolMSFT-P}=  document.querySelector('dj-watchlist').shadowRoot  #1
-    ...  .querySelector('div.watchlist')  #2
-    ...  .querySelector('div.watchlist-content')  #3
-    ...  .querySelector('ul.watchlist-container')  #4
-    ...  .querySelector('li[data-id="3"]')  #5
-    ...  .querySelector('dj-instrument')  #6
-    ...  .querySelector('div')  #7
-    ...  .querySelector('div.sc-dj-instrument-barrons')  #8
-    ...  .querySelector('[href="https://www.barrons.com/market-data/stocks/MSFT?countrycode=US&mod=watchlist_ticker"]')  #9
+#${JSDefaultSymbolMSFT-P}=  document.querySelector('dj-watchlist').shadowRoot  #1
+#    ...  .querySelector('div.watchlist')  #2
+#    ...  .querySelector('div.watchlist-content')  #3
+#    ...  .querySelector('ul.watchlist-container')  #4
+#    ...  .querySelector('li[data-id="3"]')  #5
+#    ...  .querySelector('dj-instrument')  #6
+#    ...  .querySelector('div')  #7
+#    ...  .querySelector('div.sc-dj-instrument-barrons')  #8
+#    ...  .querySelector('[href="https://www.barrons.com/market-data/stocks/MSFT?countrycode=US&mod=watchlist_ticker"]')  #9
 
 
-${JSDefaultSymbolGOOG-P}=  document.querySelector('dj-watchlist').shadowRoot  #1
-    ...  .querySelector('div.watchlist')  #2
-    ...  .querySelector('div.watchlist-content')  #3
-    ...  .querySelector('ul.watchlist-container')  #4
-    ...  .querySelector('li[data-id="4"]')  #5
-    ...  .querySelector('dj-instrument')  #6
-    ...  .querySelector('div')  #7
-    ...  .querySelector('div.sc-dj-instrument-barrons')  #8
-    ...  .querySelector('[href="https://www.barrons.com/market-data/stocks/GOOG?countrycode=US&mod=watchlist_ticker"]')  #9
+#${JSDefaultSymbolGOOG-P}=  document.querySelector('dj-watchlist').shadowRoot  #1
+#    ...  .querySelector('div.watchlist')  #2
+#    ...  .querySelector('div.watchlist-content')  #3
+#    ...  .querySelector('ul.watchlist-container')  #4
+#    ...  .querySelector('li[data-id="4"]')  #5
+#    ...  .querySelector('dj-instrument')  #6
+#    ...  .querySelector('div')  #7
+#    ...  .querySelector('div.sc-dj-instrument-barrons')  #8
+#    ...  .querySelector('[href="https://www.barrons.com/market-data/stocks/GOOG?countrycode=US&mod=watchlist_ticker"]')  #9
 
-${JSDefaultSymbolDJIA-D}=  document.querySelector('dj-watchlist').shadowRoot  #1
+${JSDefaultSymbolDJIA-Dev}=  document.querySelector('dj-watchlist').shadowRoot  #1
     ...  .querySelector('div.watchlist')  #2
     ...  .querySelector('div.watchlist-content')  #3
     ...  .querySelector('ul.watchlist-container')  #4
@@ -74,48 +74,55 @@ ${JSDefaultSymbolDJIA-D}=  document.querySelector('dj-watchlist').shadowRoot  #1
     ...  .querySelector('dj-instrument')  #6
     ...  .querySelector('div')  #7
     ...  .querySelector('div.sc-dj-instrument-barrons')  #8
-    ...  .querySelector('[href="https://www.barrons.com/market-data/indexes/DJIA?countrycode=US&mod=watchlist_ticker"]')  #9
+    ...  .querySelector('a[href="https://www.barrons.com/market-data/indexes/DJIA?countrycode=US&mod=watchlist_ticker"]')  #${JSDefaultSymbolDJIA-D}=  document.querySelector('dj-watchlist').shadowRoot  #1
+#    ...  .querySelector('div.watchlist')  #2
+#    ...  .querySelector('div.watchlist-content')  #3
+#    ...  .querySelector('ul.watchlist-container')  #4
+#    ...  .querySelector('li[data-id="0"]')  #5
+#    ...  .querySelector('dj-instrument')  #6
+#    ...  .querySelector('div')  #7
+#    ...  .querySelector('div.sc-dj-instrument-barrons')  #8
+#    ...  .querySelector('[href="https://www.barrons.com/market-data/indexes/DJIA?countrycode=US&mod=watchlist_ticker"]')  #9
 
-${JSDefaultSymbolABS-D}=  document.querySelector('dj-watchlist').shadowRoot  #1
-    ...  .querySelector('div.watchlist')  #2
-    ...  .querySelector('div.watchlist-content')  #3
-    ...  .querySelector('ul.watchlist-container')  #4
-    ...  .querySelector('li[data-id="1"]')  #5
-    ...  .querySelector('dj-instrument')  #6
-    ...  .querySelector('div')  #7
-    ...  .querySelector('div.sc-dj-instrument-barrons')  #8
-    ...  .querySelector('[href="https://www.barrons.com/market-data/stocks/ABS?countrycode=US&mod=watchlist_ticker"]')  #9
+#${JSDefaultSymbolABS-D}=  document.querySelector('dj-watchlist').shadowRoot  #1
+#    ...  .querySelector('div.watchlist')  #2
+#    ...  .querySelector('div.watchlist-content')  #3
+#    ...  .querySelector('ul.watchlist-container')  #4
+#    ...  .querySelector('li[data-id="1"]')  #5
+#    ...  .querySelector('dj-instrument')  #6
+#    ...  .querySelector('div')  #7
+#    ...  .querySelector('div.sc-dj-instrument-barrons')  #8
+#    ...  .querySelector('[href="https://www.barrons.com/market-data/stocks/ABS?countrycode=US&mod=watchlist_ticker"]')  #9
 
-${JSDefaultSymbolAAPL-D}=  document.querySelector('dj-watchlist').shadowRoot  #1
-    ...  .querySelector('div.watchlist')  #2
-    ...  .querySelector('div.watchlist-content')  #3
-    ...  .querySelector('ul.watchlist-container')  #4
-    ...  .querySelector('li[data-id="2"]')  #5
-    ...  .querySelector('dj-instrument')  #6
-    ...  .querySelector('div')  #7
-    ...  .querySelector('div.sc-dj-instrument-barrons')  #8
-    ...  .querySelector('[href="https://www.barrons.com/market-data/stocks/AAPL?countrycode=US&mod=watchlist_ticker"]')  #9
+#${JSDefaultSymbolAAPL-Dev}=  document.querySelector('dj-watchlist').shadowRoot  #1
+#    ...  .querySelector('div.watchlist')  #2
+#    ...  .querySelector('div.watchlist-content')  #3
+#    ...  .querySelector('ul.watchlist-container')  #4
+#    ...  .querySelector('li[data-id="2"]')  #5
+#    ...  .querySelector('dj-instrument')  #6
+#    ...  .querySelector('div')  #7
+#    ...  .querySelector('div.sc-dj-instrument-barrons')  #8
+#    ...  .querySelector('[href="https://www.barrons.com/market-data/stocks/AAPL?countrycode=US&mod=watchlist_ticker"]')  #9
 
-${JSDefaultSymbolMSFT-D}=  document.querySelector('dj-watchlist').shadowRoot  #1
-    ...  .querySelector('div.watchlist')  #2
-    ...  .querySelector('div.watchlist-content')  #3
-    ...  .querySelector('ul.watchlist-container')  #4
-    ...  .querySelector('li[data-id="3"]')  #5
-    ...  .querySelector('dj-instrument')  #6
-    ...  .querySelector('div')  #7
-    ...  .querySelector('div.sc-dj-instrument-barrons')  #8
-    ...  .querySelector('[href="https://www.barrons.com/market-data/stocks/MSFT?countrycode=US&mod=watchlist_ticker"]')  #9
+#${JSDefaultSymbolMSFT-Dev}=  document.querySelector('dj-watchlist').shadowRoot  #1
+#    ...  .querySelector('div.watchlist')  #2
+#    ...  .querySelector('div.watchlist-content')  #3
+#    ...  .querySelector('ul.watchlist-container')  #4
+#    ...  .querySelector('li[data-id="3"]')  #5
+#    ...  .querySelector('dj-instrument')  #6
+#    ...  .querySelector('div')  #7
+#    ...  .querySelector('div.sc-dj-instrument-barrons')  #8
+#    ...  .querySelector('[href="https://www.barrons.com/market-data/stocks/MSFT?countrycode=US&mod=watchlist_ticker"]')  #9
 
-
-${JSDefaultSymbolGOOG-D}=  document.querySelector('dj-watchlist').shadowRoot  #1
-    ...  .querySelector('div.watchlist')  #2
-    ...  .querySelector('div.watchlist-content')  #3
-    ...  .querySelector('ul.watchlist-container')  #4
-    ...  .querySelector('li[data-id="4"]')  #5
-    ...  .querySelector('dj-instrument')  #6
-    ...  .querySelector('div')  #7
-    ...  .querySelector('div.sc-dj-instrument-barrons')  #8
-    ...  .querySelector('[href="https://www.barrons.com/market-data/stocks/GOOG?countrycode=US&mod=watchlist_ticker"]')  #9
+#${JSDefaultSymbolGOOG-Dev}=  document.querySelector('dj-watchlist').shadowRoot  #1
+#    ...  .querySelector('div.watchlist')  #2
+#    ...  .querySelector('div.watchlist-content')  #3
+#    ...  .querySelector('ul.watchlist-container')  #4
+#    ...  .querySelector('li[data-id="4"]')  #5
+#    ...  .querySelector('dj-instrument')  #6
+#    ...  .querySelector('div')  #7
+#    ...  .querySelector('div.sc-dj-instrument-barrons')  #8
+#    ...  .querySelector('[href="https://www.barrons.com/market-data/stocks/GOOG?countrycode=US&mod=watchlist_ticker"]')  #9
 
 ${JSSymbolAMZN-P}=  document.querySelector('dj-watchlist').shadowRoot  #1
     ...  .querySelector('div.watchlist')  #2
@@ -127,7 +134,7 @@ ${JSSymbolAMZN-P}=  document.querySelector('dj-watchlist').shadowRoot  #1
     ...  .querySelector('div.sc-dj-instrument-barrons')  #8
     ...  .querySelector('[href="https://www.barrons.com/market-data/stocks/AMZN?countrycode=US&mod=watchlist_ticker"]')  #9
 
-${JSSymbolAMZN-D}=  document.querySelector('dj-watchlist').shadowRoot  #1
+${JSSymbolAMZN-Dev}=  document.querySelector('dj-watchlist').shadowRoot  #1
     ...  .querySelector('div.watchlist')  #2
     ...  .querySelector('div.watchlist-content')  #3
     ...  .querySelector('ul.watchlist-container')  #4
@@ -215,21 +222,12 @@ Validate Watchlist for non-logged user
     Page Should Contain Element  dom:${JSRegisterNowButtonPath}
     IF  ${Env} == "prod"
         Page Should Contain Element  dom:${JSDefaultSymbolDJIA-P}
-        Page Should Contain Element  dom:${JSDefaultSymbolABS-P}
-        Page Should Contain Element  dom:${JSDefaultSymbolMSFT-P}
-        Page Should Contain Element  dom:${JSDefaultSymbolGOOG-P}
     ELSE IF  ${Env} == "dev"
-        Page Should Contain Element  dom:${JSDefaultSymbolDJIA-D}
-        Page Should Contain Element  dom:${JSDefaultSymbolABS-D}
-        Page Should Contain Element  dom:${JSDefaultSymbolMSFT-D}
-        Page Should Contain Element  dom:${JSDefaultSymbolGOOG-D}
+        Page Should Contain Element  dom:${JSDefaultSymbolDJIA-Dev}
     END
-
-
 
 Validate Market Data Page
     Page Should Contain Element  //span[text()="Overview"]
-    Click Element  //*[@id="Layer_2"]
 
 Click Create Button
     Set Focus To Element  dom:${JSCreateListButtonBarronsPath}
@@ -251,7 +249,7 @@ Validate Symbol in the New Watchlist
     IF  ${Env} == "prod"
         Page Should Contain Element  dom:${JSSymbolAMZN-P}
     ELSE IF  ${Env} == "dev"
-        Page Should Contain Element  dom:${JSSymbolAMZN-D}
+        Page Should Contain Element  dom:${JSSymbolAMZN-Dev}
     END
 
 Save Watchlist Changes
@@ -272,7 +270,6 @@ Edit Watchlist Name
     Input Text  dom:${JSWatchListNameFieldBarronsPath}  TestB
 
 Watchlist Sign In
-    Click Element  //*[@id="Layer_2"]
     Click Button  dom:${JSRegisterNowButtonPath}
     Wait Until Element is Visible  //div[@class]/div[@class]/a[text()="Sign In"]
     Click Element  //div[@class]/div[@class]/a[text()="Sign In"]

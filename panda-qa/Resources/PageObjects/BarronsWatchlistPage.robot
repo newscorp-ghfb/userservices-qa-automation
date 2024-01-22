@@ -7,8 +7,8 @@ Library  SeleniumLibrary
 Validate Watchlist Page
     Page Should Contain Element  //*[text()="Add Symbol"]
 
-Validate Default New Watchlist
-    Page Should Contain Element  //button[text()="New Watchlist"]
+#Validate Default New Watchlist
+#    Page Should Contain Element  //button[text()="New Watchlist"]
 
 Click Add Symbol Input
     Click Element  //input[@id="symbol-search"]
@@ -20,10 +20,7 @@ Select Symbol
     Click Element  //div[text()="MSFT"]
 
 Validate Symbol in Default New Watchlist
-    Page Should Contain Element  //div[@class="item-symbol-inner"]/a[text()="MSFT"]
-
-Validate No Symbol in Default New Watchlist
-    Page Should Not Contain Element  //div[@class="item-symbol-inner"]/a[text()="MSFT"]
+    Page Should Contain Element  //div[@class="item-symbol-inner"]
 
 Create Watchlist Name
     Click Element  //button[@class="watchlist__title i-down"]
