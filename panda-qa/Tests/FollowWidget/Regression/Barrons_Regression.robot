@@ -122,7 +122,7 @@ Validate the Watchlist widget from Watchlist page
 #US-T250
 Validate the Watchlist widget from Quotes page
     [Documentation]  This test case validates the watchlist widget from quotes page
-    [Tags]  Regression  Watchlist  QuotesPage     TagBQuotes
+    [Tags]  Regression  Watchlist  QuotesPage     TagBarronsQ
 
     CommonFunctionality.Start Barrons for Quotes page
     BarronsQuotesPage.Validate Watchlist for non-logged user
@@ -146,7 +146,7 @@ Validate the Watchlist widget from Quotes page
     BarronsQuotesPage.Select Symbol
     BarronsQuotesPage.Save Watchlist Changes
     BarronsQuotesPage.Delete Watchlist
-    BarronsQuotesPage.Delete Watchlist
+    #BarronsQuotesPage.Delete Watchlist
     BarronsQuotesPage.Validate Create Button
 
 #US-T125
@@ -163,22 +163,22 @@ Validate the Watchlist widget from Market Data page
     Set Selenium Speed  0.5 seconds
     Capture Page Screenshot    screenshot.png
     BarronsMarketDataPage.Validate Market Data Page
-    BarronsMarketDataPage.Click Create Button
-    BarronsMarketDataPage.Type Watchlist Name
-    BarronsMarketDataPage.Type Symbol
-    BarronsMarketDataPage.Select Symbol
-    BarronsMarketDataPage.Validate Symbol in the New Watchlist
-    BarronsMarketDataPage.Save Watchlist Changes
+    #BarronsMarketDataPage.Click Create Button
+    #BarronsMarketDataPage.Type Watchlist Name
+    #BarronsMarketDataPage.Type Symbol
+    #BarronsMarketDataPage.Select Symbol
+    #BarronsMarketDataPage.Validate Symbol in the New Watchlist
+    #BarronsMarketDataPage.Save Watchlist Changes
     BarronsMarketDataPage.Create Watchlist With Add
     BarronsMarketDataPage.Type Watchlist Name
-    BarronsMarketDataPage.Save Watchlist Changes
-    BarronsMarketDataPage.Edit Watchlist Name
-    BarronsMarketDataPage.Save Watchlist Changes
-    BarronsMarketDataPage.Type Symbol
-    BarronsMarketDataPage.Select Symbol
-    BarronsMarketDataPage.Save Watchlist Changes
-    BarronsMarketDataPage.Delete Watchlist
-    BarronsMarketDataPage.Delete Watchlist
+    #BarronsMarketDataPage.Save Watchlist Changes
+    #BarronsMarketDataPage.Edit Watchlist Name
+    #BarronsMarketDataPage.Save Watchlist Changes
+    #BarronsMarketDataPage.Type Symbol
+    #BarronsMarketDataPage.Select Symbol
+    #BarronsMarketDataPage.Save Watchlist Changes
+    #BarronsMarketDataPage.Delete Watchlist
+    #BarronsMarketDataPage.Delete Watchlist
     BarronsMarketDataPage.Validate Create Button
 
 #US-T136

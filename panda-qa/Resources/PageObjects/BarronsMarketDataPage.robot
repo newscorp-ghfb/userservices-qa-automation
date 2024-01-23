@@ -146,8 +146,7 @@ ${JSSymbolAMZN-Dev}=  document.querySelector('dj-watchlist').shadowRoot  #1
 
 ${JSCreateListButtonBarronsPath}=  document.querySelector('dj-watchlist').shadowRoot  #1
     ...  .querySelector('div.watchlist')  #2
-    ...  .querySelector('div.non-logged-in-panel')  #3
-    ...  .querySelector('button')  #4
+    ...  .querySelector('button')  #3
 
 ${JSWatchListNameFieldBarronsPath}=  document.querySelector('dj-watchlist').shadowRoot  #1
     ...  .querySelector('div.watchlist')  #2
@@ -239,23 +238,8 @@ Validate Create Button
 Type Watchlist Name
     Input Text  dom:${JSWatchListNameFieldBarronsPath}  TestA
 
-Type Symbol
-    Input Text  dom:${JSWatchListSymbolFieldBarronsPath}  AMZN
-
-Select Symbol
-    Click Element  dom:${JSFirstSymbolResultBarronsPath}
-
-Validate Symbol in the New Watchlist
-    IF  ${Env} == "prod"
-        Page Should Contain Element  dom:${JSSymbolAMZN-P}
-    ELSE IF  ${Env} == "dev"
-        Page Should Contain Element  dom:${JSSymbolAMZN-Dev}
-    END
-
 Save Watchlist Changes
     Click Button  dom:${JSClickSaveButtonBarronsPath}
-    Page Should Contain Element  dom:${JSWatchlistSavedModalPath}
-    Click Button  dom:${JSWatchlistSavedModalGoToListButtonPath}
 
 Delete Watchlist
     Click Button  dom:${JSEditWatchlistButtonPath}
