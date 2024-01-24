@@ -123,7 +123,7 @@ Validate Breaking News Toggle Feature
 Click Breaking News Toggle Feature
     Click Element  //*[text()="Technology"]/../../..//*[@role="switch"]
 
- Validate Over Mouse On Notification Tooltip
+Validate Over Mouse On Notification Tooltip
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/thead/tr/th[3]/div/button/span
     Page Should Contain  Choose whether you want to receive alerts as soon as an article gets published or once a day as a digest.
 

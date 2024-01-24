@@ -50,25 +50,23 @@ ${JSStockPickPreferenceCenterLinkBarronsPath}=  document.querySelector('ufc-foll
 ${JSFollowSignInButtonPath}=  document.querySelector('ufc-signin-modal').shadowRoot  #1
     ...  .querySelector('div')  #2
     ...  .querySelector('div.modal')  #3
-    ...  .querySelector('div.footer')  #4
-    ...  .querySelector('ufc-button').shadowRoot  #5
+    ...  .querySelector('focus-trap')  #4
+    ...  .querySelector('ufc-button')  #5
     ...  .querySelector('button')  #6
 
 ${JSFollowSignInButton2Path}=  document.querySelector('ufc-signin-modal').shadowRoot  #1
     ...  .querySelector('div')  #2
     ...  .querySelector('div.modal')  #3
     ...  .querySelector('focus-trap')  #4
-    ...  .querySelector('div.footer')  #5
-    ...  .querySelector('ufc-button').shadowRoot  #6
-    ...  .querySelector('button')  #7
+    ...  .querySelector('ufc-button')  #5
+    ...  .querySelector('button')  #6
 
 ${JSFollowSignInButton3Path}=  document.querySelector('ufc-signin-modal').shadowRoot  #1
     ...  .querySelector('div')  #2
     ...  .querySelector('div.modal')  #3
     ...  .querySelector('focus-trap')  #4
-    ...  .querySelector('div.footer')  #5
-    ...  .querySelector('ufc-button').shadowRoot  #6
-    ...  .querySelector('button')  #7
+    ...  .querySelector('ufc-button')  #5
+    ...  .querySelector('button')  #6
     #document.querySelectorAll('div')[208]  #1
 #    ...  .querySelector('ufc-portal')  #2
 #    ...  .querySelector('ufc-signin-modal').shadowRoot  #3
@@ -82,9 +80,8 @@ ${JSFollowSignInButton4Path}=  document.querySelector('ufc-signin-modal').shadow
     ...  .querySelector('div')  #2
     ...  .querySelector('div.modal')  #3
     ...  .querySelector('focus-trap')  #4
-    ...  .querySelector('div.footer')  #5
-    ...  .querySelector('ufc-button')  #6
-    ...  .querySelector('button')  #7
+    ...  .querySelector('ufc-button')  #5
+    ...  .querySelector('button')  #6
 
 ${JSFollowSignInHeaderPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('ufc-signin-modal').shadowRoot  #2
@@ -145,11 +142,11 @@ Click Stock Pick Following Button
     Click Button  dom:${JSStockPickFollowButtonBarronsPath}
 
 Validate Sign In Modal
-    Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}
+    Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}    timeout=15
     Page Should Contain Element  dom:${JSFollowSignInHeaderPath}
 
 Validate Sign In 2 Modal
-    Wait Until Element is Visible  dom:${JSFollowSignInHeader2Path}
+    Wait Until Element is Visible  dom:${JSFollowSignInHeader2Path}     timeout=15
     Page Should Contain Element  dom:${JSFollowSignInHeader2Path}
 
 Click Sign In Button Modal

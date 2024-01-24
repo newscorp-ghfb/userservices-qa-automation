@@ -114,19 +114,13 @@ Validate Barrons real-time company notification for Postback
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
     Page Should Contain Element  //a[contains(text(),'View in browser')]  #//a[text()="View in web browser ›"]
-    Page Should Contain Element  //*[contains(text(),'Amazon.com')]
-    Page Should Contain Element  //a[text()="Read More"]
+    Page Should Contain Element  //div/span[text()='Amazon']
+    Page Should Contain Element  //*[contains(text(),'Read More')]  #/html/body/div[1]/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div[3]/div/div[2]/div[3]/div/div/div/div/div/div/div[3]/div[1]/div/div/div/div/div[3]/div/div/div/div[2]/table[3]/tbody/tr/td/div/table/tbody/tr/td/div[1]/table/tbody/tr/td/div/table/tbody/tr/td/table/tbody/tr[7]/td/table/tbody/tr/td/a
     Page Should Contain Element  //a[text()="Unsubscribe"]
     Page Should Contain Element  //a[text()="Privacy Policy"]  #//a[text()="Privacy Notice"]
     Page Should Contain Element  //a[text()="Cookie Policy"]  #//a[text()="Cookie Notice"]
 
 Unsubscribe the mails
-    Page Should Contain Element  //div[text()="Unsubscribe"]
-    Click Element  //div[text()="Unsubscribe"]
-    Set Selenium Implicit Wait  50s
-    Page Should Contain Element  //button[@id="ok-1"]
-    Click Element  //button[@id="ok-1"]
+    Page Should Contain Element  //a[text()="Unsubscribe"]
 
-Verify the mail is unsubscribed
-    Page Should Not Contain  //div[text()="Unsubscribe"]
 

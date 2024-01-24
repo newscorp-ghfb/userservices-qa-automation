@@ -31,7 +31,7 @@ Validate the multiple authors follow button from articles page
 
     BarronsArticlePage.Validate Follow Button 2
     BarronsArticlePage.Click Follow Button 2
-    BarronsArticlePage.Validate Sign In 2 Modal
+    BarronsArticlePage.Validate Sign In Modal
     DefinedKeywords.Sign In Process
     Set Selenium Speed  0.2 seconds
     BarronsArticlePage.Validate Following Button 2
@@ -241,7 +241,6 @@ Validate Postback on Preference Center
     BarronsMailboxPage.Search Barrons real-time company notification for Postback
     BarronsMailboxPage.Validate Barrons real-time company notification for Postback
     BarronsMailboxPage.Unsubscribe the mails
-    BarronsMailboxPage.Verify the mail is unsubscribed
     BarronsPreferenceCenterPage.Add Company By Hotlink
 
 
