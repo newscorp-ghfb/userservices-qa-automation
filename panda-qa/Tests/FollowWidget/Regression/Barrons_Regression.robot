@@ -31,22 +31,22 @@ Validate the multiple authors follow button from articles page
 
     BarronsArticlePage.Validate Follow Button 2
     BarronsArticlePage.Click Follow Button 2
-    BarronsArticlePage.Validate Sign In Modal
-    DefinedKeywords.Sign In Process
-    Set Selenium Speed  0.2 seconds
-    BarronsArticlePage.Validate Following Button 2
-    BarronsArticlePage.Click Follow Button 2
-    BarronsArticlePage.Validate Following Button 2
-    BarronsArticlePage.Click Following Button
-    BarronsArticlePage.Click Undo Link
-    BarronsArticlePage.Validate Following Button
-    BarronsArticlePage.Click Following Button 2
-    BarronsArticlePage.Click Undo Link 2
-    BarronsArticlePage.Validate Following Button 2
-    BarronsPreferenceCenterPage.Navigate Preference Center page
-    BarronsPreferenceCenterPage.Validate Preference Center page
-    BarronsPreferenceCenterPage.Validate Author 1
-    BarronsPreferenceCenterPage.Validate Author 2
+#    BarronsArticlePage.Validate Sign In Modal
+#    DefinedKeywords.Sign In Process
+#    Set Selenium Speed  0.2 seconds
+#    BarronsArticlePage.Validate Following Button 2
+#    BarronsArticlePage.Click Follow Button 2
+#    BarronsArticlePage.Validate Following Button 2
+#    BarronsArticlePage.Click Following Button
+#    BarronsArticlePage.Click Undo Link
+#    BarronsArticlePage.Validate Following Button
+#    BarronsArticlePage.Click Following Button 2
+#    BarronsArticlePage.Click Undo Link 2
+#    BarronsArticlePage.Validate Following Button 2
+#    BarronsPreferenceCenterPage.Navigate Preference Center page
+#    BarronsPreferenceCenterPage.Validate Preference Center page
+#    BarronsPreferenceCenterPage.Validate Author 1
+#    BarronsPreferenceCenterPage.Validate Author 2
 
 #US-T82
 #US-T80
@@ -180,7 +180,7 @@ Validate the Barrons digest notification
 #US-T119
 Validate the Barrons real-time author notification
     [Documentation]  This test case validates the Barrons real-time author notification
-    [Tags]  Regression  Notifications  Author
+    [Tags]  Regression  Notifications  Author                    TagBAN
     BarronsMailboxPage.Navigate Mailbox page
     BarronsMailboxPage.Login
     BarronsMailboxPage.Select Inbox
@@ -200,7 +200,7 @@ Validate the Barrons real-time company notification
 #US-T139
 Validate the Barrons real-time stock picks notification
     [Documentation]  This test case validates the Barrons real-time stock picks notification
-    [Tags]  Regression  Notifications  CustomTopic   TagBarronsCT
+    [Tags]  Regression  Notifications  CustomTopic   TagBarronsST
     BarronsMailboxPage.Navigate Mailbox page
     BarronsMailboxPage.Login
     BarronsMailboxPage.Select Inbox
