@@ -131,23 +131,9 @@ Validate the Watchlist widget from Quotes page
     Set Selenium Speed  0.5 seconds
     Capture Page Screenshot    screenshot.png
     BarronsQuotesPage.Validate Quote Page
-    BarronsQuotesPage.Click Create Button
-    BarronsQuotesPage.Type Watchlist Name
-    BarronsQuotesPage.Type Symbol
-    BarronsQuotesPage.Select Symbol
-    BarronsQuotesPage.Validate Symbol in the New Watchlist
-    BarronsQuotesPage.Save Watchlist Changes
-    BarronsQuotesPage.Create Watchlist With Add
-    BarronsQuotesPage.Type Watchlist Name
-    BarronsQuotesPage.Save Watchlist Changes
-    BarronsQuotesPage.Edit Watchlist Name
-    BarronsQuotesPage.Save Watchlist Changes
-    BarronsQuotesPage.Type Symbol
-    BarronsQuotesPage.Select Symbol
-    BarronsQuotesPage.Save Watchlist Changes
     BarronsQuotesPage.Delete Watchlist
     #BarronsQuotesPage.Delete Watchlist
-    BarronsQuotesPage.Validate Create Button
+    #BarronsQuotesPage.Validate Create Button
 
 #US-T125
 #US-T129

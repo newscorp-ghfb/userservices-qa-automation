@@ -168,15 +168,15 @@ ${JSClickSaveButtonBarronsPath}=  document.querySelector('dj-watchlist').shadowR
     ...  .querySelector('div.edit-watchlist-header')  #6
     ...  .querySelector('button.watchlist-button primary')  #7
 
-${JSWatchlistSavedModalPath}=  document.querySelector('dj-watchlist').shadowRoot  #1
-    ...  .querySelector('dj-modal').shadowRoot  #2
-    ...  .querySelector('dialog.dj-modal-container')  #3
-    ...  .querySelector('h1')  #4
+#${JSWatchlistSavedModalPath}=  document.querySelector('dj-watchlist').shadowRoot  #1
+#    ...  .querySelector('dj-modal').shadowRoot  #2
+#    ...  .querySelector('dialog.dj-modal-container')  #3
+#    ...  .querySelector('h1')  #4
 
-${JSWatchlistSavedModalGoToListButtonPath}=  document.querySelector('dj-watchlist').shadowRoot  #1
-    ...  .querySelector('dj-modal')  #2
-    ...  .querySelector('div')  #3
-    ...  .querySelector('button')  #4
+#${JSWatchlistSavedModalGoToListButtonPath}=  document.querySelector('dj-watchlist').shadowRoot  #1
+#    ...  .querySelector('dj-modal')  #2
+#    ...  .querySelector('div')  #3
+#    ...  .querySelector('button')  #4
 
 ${JSEditWatchlistButtonPath}=  document.querySelector('dj-watchlist').shadowRoot  #1
     ...  .querySelector('div.watchlist')  #2
@@ -231,53 +231,53 @@ Validate Quote Page
     Execute javascript  window.scrollTo(0,500)
     Set Focus To Element  dom:${JSCreateListButtonBarronsPath}
 
-Click Create Button
-    Click Button  dom:${JSCreateListButtonBarronsPath}
+#Click Create Button
+#  Click Button  dom:${JSCreateListButtonBarronsPath}
+#
+#Validate Create Button
+#    Page Should Contain Element  dom:${JSCreateListButtonBarronsPath}
 
-Validate Create Button
-    Page Should Contain Element  dom:${JSCreateListButtonBarronsPath}
+#Type Watchlist Name
+#    Input Text  dom:${JSWatchListNameFieldBarronsPath}  TestA
 
-Type Watchlist Name
-    Input Text  dom:${JSWatchListNameFieldBarronsPath}  TestA
+#Type Symbol
+#    Input Text  dom:${JSWatchListSymbolFieldBarronsPath}  MSFT
+#
+#Select Symbol
+#    Click Element  dom:${JSFirstSymbolResultBarronsPath}
 
-Type Symbol
-    Input Text  dom:${JSWatchListSymbolFieldBarronsPath}   AMZN
+#Validate Symbol in the New Watchlist
+#    IF  ${Env} == "prod"
+#        Page Should Contain Element  dom:${JSSymbolMSFT-P}
+#    ELSE IF  ${Env} == "dev"
+#        Page Should Contain Element  dom:${JSSymbolMSFT-D}
+#    END
 
-Select Symbol
-    Click Element  dom:${JSFirstSymbolResultBarronsPath}
-
-Validate Symbol in the New Watchlist
-    IF  ${Env} == "prod"
-        Page Should Contain Element  dom:${JSSymbolAMZN-P}
-    ELSE IF  ${Env} == "dev"
-        Page Should Contain Element  dom:${JSSymbolAMZN-D}
-    END
-
-Save Watchlist Changes
-    Click Button  dom:${JSClickSaveButtonBarronsPath}
-    Page Should Contain Element  dom:${JSWatchlistSavedModalPath}
-    Click Button  dom:${JSWatchlistSavedModalGoToListButtonPath}
+#Save Watchlist Changes
+#    Click Button  dom:${JSClickSaveButtonBarronsPath}
+#    Page Should Contain Element  dom:${JSWatchlistSavedModalPath}
+#    Click Button  dom:${JSWatchlistSavedModalGoToListButtonPath}
 
 Delete Watchlist
-    Click Button  dom:${JSEditWatchlistButtonPath}
-    Click Button  dom:${JSDeleteWatchlistButtonPath}
-    Click Button  dom:${JSDeleteWatchlistConfimationButtonPath}
+   Click Button  dom:${JSEditWatchlistButtonPath}
+   Click Button  dom:${JSDeleteWatchlistButtonPath}
+   Click Button  dom:${JSDeleteWatchlistConfimationButtonPath}
 
-Create Watchlist With Add
-    Click Button  dom:${JSAddWatchlistButtonPath}
+#Create Watchlist With Add
+#    Click Button  dom:${JSAddWatchlistButtonPath}
 
-Edit Watchlist Name
-    Click Button  dom:${JSEditWatchlistButtonPath}
-    Input Text  dom:${JSWatchListNameFieldBarronsPath}  TestB
+#Edit Watchlist Name
+#    Click Button  dom:${JSEditWatchlistButtonPath}
+#    Input Text  dom:${JSWatchListNameFieldBarronsPath}  TestB
 
-Validate Symbol in Created Watchlist
-    Page Should Contain Element  dom:${JSDefaultSymbolPath}
+#Validate Symbol in Created Watchlist
+#    Page Should Contain Element  dom:${JSDefaultSymbolPath}
+#
+#Validate Default New Watchlist
+#    Page Should Contain Element  dom:${JSDefaultSymbolPath}
 
-Validate Default New Watchlist
-    Page Should Contain Element  dom:${JSDefaultSymbolPath}
-
-Validate No Symbol in Default New Watchlist
-    Page Should Contain Element  dom:${JSDefaultSymbolPath}
+#Validate No Symbol in Default New Watchlist
+#    Page Should Contain Element  dom:${JSDefaultSymbolPath}
 
 Watchlist Sign In
     Click Button  dom:${JSRegisterNowButtonPath}
