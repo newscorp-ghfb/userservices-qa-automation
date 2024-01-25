@@ -3,9 +3,9 @@ Library  SeleniumLibrary
 Resource  ../Resources/DefinedKeywords.robot
 
 *** Variables ***
-${Browser}=  firefox  #headless, ff, chrome, edge, safari
+${Browser}=  ff  #headless, ff, chrome, edge, safari
 
-${Env}=  "prod"  #dev, prod
+${Env}=  "dev"  #dev, prod
 
 ${Email_prod}=  barronsadvisorcs@gmail.com
 

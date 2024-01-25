@@ -30,7 +30,6 @@ Sign In Process
     Set Selenium Implicit Wait  10s
     Wait Until Element Is Visible  //*[@id="password-login-password"]
     Input Text  //*[@id="password-login-password"]  ${Password}
-    Set Selenium Implicit Wait  10s
     Set Selenium Speed  1.0 seconds
     IF  ${Env} == "prod"
         Click Element  //*[@id="password-login"]/div/form/div[5]/button    #//*[@id="password-login"]/div/form/div/div[5]/div[1]/button
