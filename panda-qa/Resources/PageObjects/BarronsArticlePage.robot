@@ -198,5 +198,6 @@ Validate author without byline
     IF  "${Env}" == "prod"
     Page Should Contain Element  //div[@class="byline article__byline"]/div/span[text()="Brian Swint"]
     ELSE IF  "${Env}" == "dev"
-    Page Should Contain Element  //div[@class="standard__ArticleBylineWrapper-sc-14sjre0-2 czapmB"]/div/div/a/span/span[1]
+    Page Should Contain Element  //a[@data-testid='author-link']
+#    //div[@class="standard__ArticleBylineWrapper-sc-14sjre0-2 czapmB"]/div/div/a/span/span[1]
     END
