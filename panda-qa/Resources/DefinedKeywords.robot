@@ -66,8 +66,8 @@ Market Watch Sign In Process
     Wait Until Element Is Not Visible  //*[@id="password-login"]/div/form/div/div[5]/div[1]/button
 
 WSJ Sign In Process
-    Click Button  //input[@type='text']
-    Input Text  //input[@type='text']  priyanka.bhoomraogari@dowjones.com  #isaias.iniguez@dowjones.com
+    Click Button  //input[@type='email']
+    Input Text  //input[@type='email']  priyanka.bhoomraogari@dowjones.com  #isaias.iniguez@dowjones.com
     Set Selenium Implicit Wait  10s
     Click Button  //*[@id="form20"]/div[2]/input  #//*[@id="basic-login"]/div[1]/form/div[2]/div[6]/div[1]/button[2]
     Set Selenium Implicit Wait  10s

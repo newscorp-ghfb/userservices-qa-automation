@@ -52,7 +52,7 @@ Validate the multiple authors follow button from articles page
 #US-T229
 Validate the WSJ Preference Center page
     [Documentation]  This test case validates the WSJ preference center page
-    [Tags]  Regression  PreferenceCenter
+    [Tags]  Regression  PreferenceCenter  TagWPF
 
     WSJPreferenceCenterPage.Add Author By Hotlink
     DefinedKeywords.Sign In Process
@@ -93,7 +93,7 @@ Validate the WSJ Preference Center page
 #US-T30
 Validate Authors for WSJ Article page without byline
     [Documentation]  This test case validates authors without byline for WSJ article page
-    [Tags]  Regression  Article  Author
+    [Tags]  Regression  Article  Author    TagWAB
 
     CommonFunctionality.Start WSJ Article without byline
     WSJArticlePage.Validate author without byline

@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated Xpath and Element IDs for Barron's Quotes page">
+    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated Xpath for Barron's Mailbox page, Preference Center page and Barron's defined keywords for Sign-In Process">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/panda-qa/Resources/DefinedKeywords.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/DefinedKeywords.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/BarronsMailboxPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/BarronsMailboxPage.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/Barrons_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/Barrons_Regression.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/WSJ_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/WSJ_Regression.robot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706172975112</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Updated Xpath for Barron's Mailbox page, Preference Center page and Barron's defined keywords for Sign-In Process">
+      <option name="closed" value="true" />
+      <created>1706190470711</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1706190470711</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,6 +219,7 @@
     <MESSAGE value="Updated the relevant Xpath and Element IDs for Barron's Market Data page." />
     <MESSAGE value="Updated the SignInHeader Path for Barron's article page and Xpath for Barron's Postback functionality" />
     <MESSAGE value="Updated Xpath and Element IDs for Barron's Quotes page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Xpath and Element IDs for Barron's Quotes page" />
+    <MESSAGE value="Updated Xpath for Barron's Mailbox page, Preference Center page and Barron's defined keywords for Sign-In Process" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Xpath for Barron's Mailbox page, Preference Center page and Barron's defined keywords for Sign-In Process" />
   </component>
 </project>
