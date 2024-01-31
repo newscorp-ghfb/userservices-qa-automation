@@ -4,6 +4,7 @@ Resource  ../Resources/DefinedKeywords.robot
 
 *** Variables ***
 
+
 ${Browser}=  chrome  #headless, ff, chrome, edge, safari
 
 ${Env}=  dev  #dev, prod
