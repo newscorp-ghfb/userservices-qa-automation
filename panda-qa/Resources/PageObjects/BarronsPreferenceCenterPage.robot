@@ -2,6 +2,7 @@
 Library  SeleniumLibrary
 Resource  ../../Resources/CommonFunctionality.robot
 Resource    BarronsQuotesPage.robot
+Resource    BarronsPreferenceCenterPage.robot
 
 *** Variables ***
 
@@ -20,7 +21,7 @@ Navigate Article page
     IF  ${Env} == "prod"
         Go To  https://www.barrons.com/articles/twitter-stock-pick-ceo-51638548530
     ELSE IF  ${Env} == "dev"
-        Go To  https://www.s.dev.barrons.com/articles/twitter-stock-pick-ceo-51638548530
+        Go To  https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000
         Set Selenium Speed  0.4 seconds
     END
 Validate Followed Authors
@@ -93,7 +94,7 @@ Click Company Toggle Feature
     Click Element  //*[text()="Amazon.com, Inc."]/../../..//*[@role="switch"]
 
 Validate Company Frequency
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr/td[3]/div/div[2]/label[1]/span[1]
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr/td[3]/div/div[2]/label[1]/span
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr/td[3]/div/div[2]/label[2]/span[2]
 
 Validate Company Quote Link
@@ -122,7 +123,7 @@ Validate Breaking News Toggle Feature
 Click Breaking News Toggle Feature
     Click Element  //*[text()="Technology"]/../../..//*[@role="switch"]
 
- Validate Over Mouse On Notification Tooltip
+Validate Over Mouse On Notification Tooltip
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/thead/tr/th[3]/div/button/span
     Page Should Contain  Choose whether you want to receive alerts as soon as an article gets published or once a day as a digest.
 

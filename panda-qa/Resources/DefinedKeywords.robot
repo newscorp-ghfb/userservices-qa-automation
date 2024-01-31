@@ -30,7 +30,6 @@ Sign In Process
     Set Selenium Implicit Wait  10s
     Wait Until Element Is Visible  //*[@id="password-login-password"]
     Input Text  //*[@id="password-login-password"]  ${Password}
-    Set Selenium Implicit Wait  10s
     Set Selenium Speed  1.0 seconds
     IF  ${Env} == "prod"
         Click Element  //*[@id="password-login"]/div/form/div[5]/button    #//*[@id="password-login"]/div/form/div/div[5]/div[1]/button
@@ -68,7 +67,7 @@ Market Watch Sign In Process
 
 WSJ Sign In Process
     Click Button  //input[@type='text']
-    Input Text  //input[@type='text']  priyanka.bhoomraogari@dowjones.com  #isaias.iniguez@dowjones.com
+    Input Text  //input[@type='text']  priyanka.bhoomraogari@dowjones.com  #newsroomdev.test@dowjones.com    #isaias.iniguez@dowjones.com
     Set Selenium Implicit Wait  10s
     Click Button  //*[@id="form20"]/div[2]/input  #//*[@id="basic-login"]/div[1]/form/div[2]/div[6]/div[1]/button[2]
     Set Selenium Implicit Wait  10s
@@ -77,6 +76,11 @@ WSJ Sign In Process
     Set Selenium Implicit Wait  10s
     Click Button  //input[@type='submit']  #//*[@id="password-login"]/div/form/div/div[5]/div[1]/button
     Sleep  30s
+    #Click Element  //*[@id="form77"]/div[2]/div/div[3]/div[2]/div[2]
+    #Sleep  30s
+    #Input Text    //*[@id="input117"]    Input here
+    #Click Button  //input[@type='submit']
+    #Sleep  30s
     #Set Selenium Implicit Wait  0.01s
     #Wait Until Element Is Not Visible  //input[@type='submit']  #//*[@id="password-login"]/div/form/div/div[5]/div[1]/button
 

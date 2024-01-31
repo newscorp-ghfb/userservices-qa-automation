@@ -1,4 +1,5 @@
 *** Settings ***
+Library  SeleniumLibrary
 Documentation  WSJ Smoke Tests
 Force Tags  WSJ
 Resource  ../../../Resources/CommonFunctionality.robot
