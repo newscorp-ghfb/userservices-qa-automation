@@ -1,9 +1,9 @@
 *** Settings ***
 Library  SeleniumLibrary
 Resource  ../Resources/DefinedKeywords.robot
+Resource    PageObjects/WSJPreferenceCenterPage.robot
 
 *** Variables ***
-
 
 ${Browser}=  chrome  #headless, ff, chrome, edge, safari
 
@@ -14,7 +14,7 @@ ${Email_prod}=  barronsadvisorcs@gmail.com
 
 ${Password_prod}=  password1
 
-${Email_dev}=  QABARRONSONLY  #priyanka.bhoomraogari@dowjones.com  #
+${Email_dev}=  QABARRONSONLY
 
 ${Password_dev}=  password1
 
@@ -125,8 +125,10 @@ Start WSJ Article
     END
     #Wait Until Element Is Visible  //*[text()="Dave Michaels"]
     #Set Focus To Element  //*[text()="Dave Michaels"]
-    #Wait Until Element Is Visible  dom:${JSFollowButtonMGPath}  30s
+    #Wait Until Element Is Visible  dom:${JSSignInPath}  30s
     Maximize Browser Window
+    Sleep    20 seconds
+
 
 Start Market Watch Article
     Set Selenium Speed  1 seconds

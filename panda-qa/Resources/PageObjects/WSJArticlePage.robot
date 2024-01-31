@@ -36,6 +36,17 @@ ${JSFollowSignInHeaderPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('div.body')  #4
     ...  .querySelector('p')  #5
 
+${JSSignInButtonPath}=  document.querySelector('div')  #1
+ ...  .querySelector('div')  #2
+ ...  .querySelector('div')  #3
+ ...  .querySelector('div:nth-child(1)')  #4
+ ...  .querySelector('header')  #5
+ ...  .querySelector('div:nth-child(1)')  #6
+ ...  .querySelector('div')  #7
+ ...  .querySelector('div:nth-child(2)')  #8
+ ...  .querySelector('div')  #9
+ ...  .querySelector('a:nth-child(2)')  #10
+
 *** Keywords ***
 Validate Follow Button
     Wait Until Element is Visible  dom:${JSFollowButtonWSJPath}
