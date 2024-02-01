@@ -76,11 +76,12 @@ Add Company By Hotlink
 
 
 Validate Followed Companies
-    Page Should Contain  Companies
+    Page Should Contain Element  //html/body/div[1]/div/div/div/div[2]/div/div/div/table[3]/thead/tr/th[1]
 
 Validate Company Frequency
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[2]/div/label[1]/span[2]
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[2]/div/label[2]/span[2]
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[4]  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[2]/div/label[1]/span[2]
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[4]/span[1]  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[2]/div/label[2]/span[2][2]
+
 
 Validate Company Quote Link
     Page Should Contain Element   //*[text()="Amazon.com, Inc."]

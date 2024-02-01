@@ -18,7 +18,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T93
 Validate the Market Watch Preference Center page
     [Documentation]  This test case validates the Market Watch preference center page
-    [Tags]  Regression  PreferenceCenter
+    [Tags]  Regression  PreferenceCenter            TagMPF
 
     MarketWatchPreferenceCenterPage.Add Author By Hotlink
     DefinedKeywords.Sign In Process
@@ -31,6 +31,7 @@ Validate the Market Watch Preference Center page
     MarketWatchPreferenceCenterPage.Validate All Tabs Displayed
     MarketWatchPreferenceCenterPage.Validate Author On All Tab
     MarketWatchPreferenceCenterPage.Add Company By Hotlink
+    DefinedKeywords.Sign In Process
     MarketWatchPreferenceCenterPage.Validate Followed Companies
     ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
     Run Keyword If  ${val2} > 0  MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
