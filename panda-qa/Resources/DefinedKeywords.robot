@@ -22,11 +22,11 @@ Sign In Process
         ${Email}=  Set Variable  ${Email_dev}
         ${Password}=  Set Variable  ${Password_dev}
     END
-    Wait Until Element Is Visible  //input[@type='email']
+    Wait Until Element Is Visible  //input[@type='email']  #//input[@type='text']
     Click Button  //input[@type='email']
     Input Text  //input[@type='email']  ${Email}
     Set Selenium Implicit Wait  10s
-    Click Element  //span[text()="Continue"]
+    Click Element  //span[text()="Continue"]  #Click Element  //html/body/div[2]/div[2]/main/div[2]/div/div/div[2]/form/div[2]/input
     Set Selenium Implicit Wait  10s
     Wait Until Element Is Visible  //*[@id="password-login-password"]
     Input Text  //*[@id="password-login-password"]  ${Password}
