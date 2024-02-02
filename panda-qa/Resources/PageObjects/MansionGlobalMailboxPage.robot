@@ -29,7 +29,7 @@ Login
 
 
 Select Inbox
-    Set Selenium Speed  2.0 seconds
+    Set Selenium Speed  3 seconds
     Wait Until Page Contains Element  //input[@id="topSearchInput"]
     Click Element  //input[@id="topSearchInput"]
     Wait Until Page Contains Element  //span[@id="searchScopeButtonId-option"]
@@ -38,6 +38,7 @@ Select Inbox
     Click Element  //button[@id="searchScopeButtonId-list1"]
 
 Search Your Daily Digest from Mansion Global
+    Set Selenium Speed  3 seconds
     Wait Until Page Contains Element  //input[@id="topSearchInput"]
     Click Element  //input[@id="topSearchInput"]
     Input Text  //input[@id="topSearchInput"]  Your Daily Digest from Mansion Global
@@ -54,6 +55,7 @@ Validate Mansion Global Digest notification
     Page Should Contain Element  //a[text()="Cookie Notice"]
 
 Search Your Mansion Global real-time author notification
+    Set Selenium Speed  3 seconds
     Wait Until Page Contains Element  //input[@id="topSearchInput"]
     Click Element  //input[@id="topSearchInput"]
     Input Text  //input[@id="topSearchInput"]  The latest from Casey Farmer
@@ -70,6 +72,7 @@ Validate Mansion Global real-time author notification
     Page Should Contain Element  //a[text()="Cookie Policy"]
 
 Search Your Mansion Global weekly saved search notification
+    Set Selenium Speed  3 seconds
     Wait Until Page Contains Element  //input[@id="topSearchInput"]
     Click Element  //input[@id="topSearchInput"]
     Input Text  //input[@id="topSearchInput"]  Barrons The latest news on Amazon.com, Inc.
@@ -89,6 +92,7 @@ Validate Mansion Global weekly saved search notification
     Page Should Contain Element  //a[text()="Cookie Policy"]
 
 Search Mansion Global real-time author notification for Postback
+    Set Selenium Speed  3 seconds
     Wait Until Page Contains Element  //input[@id="topSearchInput"]
     Click Element  //input[@id="topSearchInput"]
     Input Text  //input[@id="topSearchInput"]  The latest from Casey Farmer

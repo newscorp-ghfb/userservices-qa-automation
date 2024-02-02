@@ -101,6 +101,8 @@ Validate All Tabs Displayed
 
 Validate Author On All Tab
     Reload Page
+    Set Selenium Speed  3 seconds
+    Wait Until Element Is Visible    //*[@id="root"]/div/div/div/div[2]/div/ul/li[7]
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[7]
 
 #    //*[@id="root"]/div/div/div/div[2]/div/ul/li[7]
@@ -124,6 +126,8 @@ Validate Company Quote Link
 
 Validate Company On All Tab
     Reload Page
+    Set Selenium Speed  3 seconds
+    Wait Until Element Is Visible    //*[@id="root"]/div/div/div/div[2]/div/ul/li[7]
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[7]
     Page Should Contain Element  //*[text()="Amazon.com, Inc."]/../*[text()="Mansion Global"]
 
