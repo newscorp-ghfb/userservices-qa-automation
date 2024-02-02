@@ -60,6 +60,7 @@ Click Following Toggle Feature
         Click Element  //*[text()="Mariana Nuñez"]/../../../../td[4]/div
     END
 Validate Following Toggle Alert Pop up
+
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[3]/div/div/button
 
 Click Following Toggle Alert Pop up
@@ -99,7 +100,10 @@ Validate All Tabs Displayed
     Page Should Contain  View All
 
 Validate Author On All Tab
+    Reload Page
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[7]
+
+#    //*[@id="root"]/div/div/div/div[2]/div/ul/li[7]
     Page Should Contain  Mariana Nuñez
 
 Add Company By Hotlink
@@ -119,6 +123,7 @@ Validate Company Quote Link
     Page Should Contain Element  //a[text()="Amazon.com, Inc."]
 
 Validate Company On All Tab
+    Reload Page
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[7]
     Page Should Contain Element  //*[text()="Amazon.com, Inc."]/../*[text()="Mansion Global"]
 

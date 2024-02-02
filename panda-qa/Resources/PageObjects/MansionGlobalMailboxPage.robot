@@ -24,8 +24,8 @@ Login
     Input Text  //*[@id="i0118"]  Testing.123
     Wait Until Element is Visible  //*[@id="idSIButton9"]
     Click Button  //*[@id="idSIButton9"]
-    Wait Until Element is Visible  //input[@id="idBtn_Back"]
-    Click Button  //input[@id="idBtn_Back"]
+    Wait Until Element is Visible  //*[@id='declineButton']
+    Click Button  //*[@id='declineButton']
 
 
 Select Inbox
