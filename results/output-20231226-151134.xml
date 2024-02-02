@@ -1,0 +1,1316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231226 15:11:34.300" rpa="false" schemaversion="4">
+<suite id="s1" name="Barrons Smoke" source="D:\Codes\Jenkins_2050\userservices-qa-automation\panda-qa\Tests\FollowWidget\Smoke\Barrons_Smoke.robot">
+<test id="s1-t1" name="Validate the author follow button from articles page" line="20">
+<kw name="Start Barrons Article" library="CommonFunctionality" type="SETUP">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20231226 15:11:34.723" endtime="20231226 15:11:34.723"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.barrons.com</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20231226 15:11:34.723" endtime="20231226 15:11:34.723"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20231226 15:11:34.724" endtime="20231226 15:11:34.724"/>
+</kw>
+<status status="NOT RUN" starttime="20231226 15:11:34.723" endtime="20231226 15:11:34.725"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.s.dev.barrons.com</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231226 15:11:34.725" level="INFO">Opening browser 'firefox' to base url 'https://www.s.dev.barrons.com'.</msg>
+<status status="PASS" starttime="20231226 15:11:34.725" endtime="20231226 15:12:00.090"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231226 15:12:00.090" level="INFO">Opening url 'https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000'</msg>
+<status status="PASS" starttime="20231226 15:12:00.090" endtime="20231226 15:12:04.248"/>
+</kw>
+<status status="PASS" starttime="20231226 15:11:34.725" endtime="20231226 15:12:04.248"/>
+</branch>
+<status status="PASS" starttime="20231226 15:11:34.723" endtime="20231226 15:12:04.248"/>
+</if>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>dom:${JSFollowButtonBarronsPath}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20231226 15:12:04.248" endtime="20231226 15:12:04.817"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231226 15:12:04.817" endtime="20231226 15:12:05.614"/>
+</kw>
+<status status="PASS" starttime="20231226 15:11:34.722" endtime="20231226 15:12:05.614"/>
+</kw>
+<kw name="Validate Follow Button" library="BarronsArticlePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>dom:${JSFollowButtonBarronsPath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231226 15:12:05.615" endtime="20231226 15:12:06.644"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>dom:${JSFollowButtonBarronsPath}</arg>
+<arg>Follow</arg>
+<arg>timeout=30</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20231226 15:12:06.645" level="INFO">Verifying element 'dom:document.querySelector('ufc-follow-author-widget').shadowRoot .querySelector('ufc-follow-widget') .querySelector('ufc-follow-button').shadowRoot .querySelector('button')' contains exact text 'Follow'.</msg>
+<status status="PASS" starttime="20231226 15:12:06.644" endtime="20231226 15:12:07.694"/>
+</kw>
+<status status="PASS" starttime="20231226 15:12:05.615" endtime="20231226 15:12:07.694"/>
+</kw>
+<kw name="Click Follow Button" library="BarronsArticlePage">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>dom:${JSFollowButtonBarronsPath}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231226 15:12:07.697" level="INFO">Clicking button 'dom:document.querySelector('ufc-follow-author-widget').shadowRoot .querySelector('ufc-follow-widget') .querySelector('ufc-follow-button').shadowRoot .querySelector('button')'.</msg>
+<status status="PASS" starttime="20231226 15:12:07.697" endtime="20231226 15:12:10.963"/>
+</kw>
+<status status="PASS" starttime="20231226 15:12:07.696" endtime="20231226 15:12:10.963"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.7 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20231226 15:12:10.964" endtime="20231226 15:12:10.964"/>
+</kw>
+<kw name="Click Sign In Button Modal" library="BarronsArticlePage">
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>dom:${JSFollowSignInButtonPath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231226 15:12:10.965" endtime="20231226 15:12:10.965"/>
+</kw>
+<status status="NOT RUN" starttime="20231226 15:12:10.965" endtime="20231226 15:12:10.965"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>dom:${JSFollowSignInButton4Path}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231226 15:12:10.966" level="INFO">Clicking element 'dom:document.querySelector('ufc-signin-modal[isopen]').shadowRoot .querySelector('div') .querySelector('div.modal') .querySelector('focus-trap') .querySelector('div.footer') .querySelector('ufc-button') .querySelector('button')'.</msg>
+<status status="PASS" starttime="20231226 15:12:10.965" endtime="20231226 15:12:13.878"/>
+</kw>
+<status status="PASS" starttime="20231226 15:12:10.965" endtime="20231226 15:12:13.878"/>
+</branch>
+<status status="PASS" starttime="20231226 15:12:10.965" endtime="20231226 15:12:13.878"/>
+</if>
+<status status="PASS" starttime="20231226 15:12:10.964" endtime="20231226 15:12:13.878"/>
+</kw>
+<kw name="Sign In Process" library="DefinedKeywords">
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Set Variable" library="BuiltIn">
+<var>${Email}</var>
+<arg>${Email_prod}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231226 15:12:13.879" endtime="20231226 15:12:13.879"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${Password}</var>
+<arg>${Password_prod}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231226 15:12:13.879" endtime="20231226 15:12:13.879"/>
+</kw>
+<status status="NOT RUN" starttime="20231226 15:12:13.879" endtime="20231226 15:12:13.879"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Set Variable" library="BuiltIn">
+<var>${Email}</var>
+<arg>${Email_dev}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20231226 15:12:13.880" level="INFO">${Email} = QABARRONSONLY</msg>
+<status status="PASS" starttime="20231226 15:12:13.879" endtime="20231226 15:12:13.880"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${Password}</var>
+<arg>${Password_dev}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20231226 15:12:13.880" level="INFO">${Password} = password1</msg>
+<status status="PASS" starttime="20231226 15:12:13.880" endtime="20231226 15:12:13.880"/>
+</kw>
+<status status="PASS" starttime="20231226 15:12:13.879" endtime="20231226 15:12:13.881"/>
+</branch>
+<status status="PASS" starttime="20231226 15:12:13.879" endtime="20231226 15:12:13.881"/>
+</if>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//input[@type='email']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231226 15:12:13.881" endtime="20231226 15:12:15.316"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//input[@type='email']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231226 15:12:15.316" level="INFO">Clicking button '//input[@type='email']'.</msg>
+<status status="PASS" starttime="20231226 15:12:15.316" endtime="20231226 15:12:20.470"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@type='email']</arg>
+<arg>${Email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231226 15:12:20.470" level="INFO">Typing text 'QABARRONSONLY' into text field '//input[@type='email']'.</msg>
+<status status="PASS" starttime="20231226 15:12:20.470" endtime="20231226 15:12:22.610"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20231226 15:12:22.610" endtime="20231226 15:12:23.314"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[text()="Continue"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231226 15:12:23.315" level="INFO">Clicking element '//span[text()="Continue"]'.</msg>
+<status status="PASS" starttime="20231226 15:12:23.314" endtime="20231226 15:12:24.941"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20231226 15:12:24.941" endtime="20231226 15:12:25.644"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="password-login-password"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231226 15:12:25.644" endtime="20231226 15:12:27.063"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="password-login-password"]</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231226 15:12:27.064" level="INFO">Typing text 'password1' into text field '//*[@id="password-login-password"]'.</msg>
+<status status="PASS" starttime="20231226 15:12:27.063" endtime="20231226 15:12:29.190"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20231226 15:12:29.190" endtime="20231226 15:12:29.895"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1.0 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20231226 15:12:29.895" endtime="20231226 15:12:29.895"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="password-login"]/div/form/div/div[5]/div[1]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231226 15:12:29.895" endtime="20231226 15:12:29.895"/>
+</kw>
+<status status="NOT RUN" starttime="20231226 15:12:29.895" endtime="20231226 15:12:29.896"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="password-login"]/div/form/div[5]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231226 15:12:29.896" level="INFO">Clicking element '//*[@id="password-login"]/div/form/div[5]/button'.</msg>
+<status status="PASS" starttime="20231226 15:12:29.896" endtime="20231226 15:12:34.455"/>
+</kw>
+<status status="PASS" starttime="20231226 15:12:29.896" endtime="20231226 15:12:34.455"/>
+</branch>
+<status status="PASS" starttime="20231226 15:12:29.895" endtime="20231226 15:12:34.455"/>
+</if>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>//*[@id="password-login"]/div/form/div/div[5]/div[1]/button</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20231226 15:12:34.455" endtime="20231226 15:12:45.522"/>
+</kw>
+<status status="PASS" starttime="20231226 15:12:13.878" endtime="20231226 15:12:45.522"/>
+</kw>
+<kw name="Validate Following Button" library="BarronsArticlePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>dom:${JSFollowButtonBarronsPath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231226 15:12:45.523" endtime="20231226 15:12:47.544"/>
+</kw>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>dom:${JSFollowButtonBarronsPath}</arg>
+<arg>Following</arg>
+<arg>timeout=15</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<msg timestamp="20231226 15:13:04.140" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-113.png"&gt;&lt;img src="selenium-screenshot-113.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231226 15:13:04.141" level="FAIL">Element 'dom:document.querySelector('ufc-follow-author-widget').shadowRoot .querySelector('ufc-follow-widget') .querySelector('ufc-follow-button').shadowRoot .querySelector('button')' did not get text 'Following' in 15 seconds.</msg>
+<status status="FAIL" starttime="20231226 15:12:47.544" endtime="20231226 15:13:04.143"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>dom:${JSFollowButtonBarronsPath}</arg>
+<arg>Following</arg>
+<arg>timeout=15</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="NOT RUN" starttime="20231226 15:13:04.144" endtime="20231226 15:13:04.144"/>
+</kw>
+<status status="FAIL" starttime="20231226 15:12:45.522" endtime="20231226 15:13:04.144"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" starttime="20231226 15:13:04.144" endtime="20231226 15:13:04.144"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" starttime="20231226 15:13:04.145" endtime="20231226 15:13:04.145"/>
+</kw>
+<status status="NOT RUN" starttime="20231226 15:13:04.145" endtime="20231226 15:13:04.145"/>
+</branch>
+<status status="NOT RUN" starttime="20231226 15:13:04.145" endtime="20231226 15:13:04.145"/>
+</if>
+<kw name="Click Following Button" library="BarronsArticlePage">
+<status status="NOT RUN" starttime="20231226 15:13:04.146" endtime="20231226 15:13:04.146"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" starttime="20231226 15:13:04.146" endtime="20231226 15:13:04.146"/>
+</kw>
+<kw name="Click Undo Link" library="BarronsArticlePage">
+<status status="NOT RUN" starttime="20231226 15:13:04.146" endtime="20231226 15:13:04.146"/>
+</kw>
+<kw name="Validate Following Button" library="BarronsArticlePage">
+<status status="NOT RUN" starttime="20231226 15:13:04.147" endtime="20231226 15:13:04.147"/>
+</kw>
+<kw name="Click Preference Center Link" library="BarronsArticlePage">
+<status status="NOT RUN" starttime="20231226 15:13:04.147" endtime="20231226 15:13:04.147"/>
+</kw>
+<kw name="Validate Preference Center page" library="BarronsPreferenceCenterPage">
+<status status="NOT RUN" starttime="20231226 15:13:04.147" endtime="20231226 15:13:04.148"/>
+</kw>
+<kw name="Finish Testcase" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231226 15:13:04.148" endtime="20231226 15:13:10.216"/>
+</kw>
+<status status="PASS" starttime="20231226 15:13:04.148" endtime="20231226 15:13:10.216"/>
+</kw>
+<doc>This test case validates the author follow button from articles page</doc>
+<tag>Barrons</tag>
+<tag>Follow Article</tag>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20231226 15:11:34.721" endtime="20231226 15:13:10.216">Element 'dom:document.querySelector('ufc-follow-author-widget').shadowRoot .querySelector('ufc-follow-widget') .querySelector('ufc-follow-button').shadowRoot .querySelector('button')' did not get text 'Following' in 15 seconds.</status>
+</test>
+<test id="s1-t2" name="Validate the follow button from authors page" line="46">
+<kw name="Start Barrons Article" library="CommonFunctionality" type="SETUP">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20231226 15:13:10.216" endtime="20231226 15:13:10.216"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.barrons.com</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20231226 15:13:10.216" endtime="20231226 15:13:10.216"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20231226 15:13:10.216" endtime="20231226 15:13:10.216"/>
+</kw>
+<status status="NOT RUN" starttime="20231226 15:13:10.216" endtime="20231226 15:13:10.216"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.s.dev.barrons.com</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231226 15:13:10.216" level="INFO">Opening browser 'firefox' to base url 'https://www.s.dev.barrons.com'.</msg>
+<status status="PASS" starttime="20231226 15:13:10.216" endtime="20231226 15:13:31.177"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231226 15:13:31.177" level="INFO">Opening url 'https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000'</msg>
+<status status="PASS" starttime="20231226 15:13:31.177" endtime="20231226 15:13:33.729"/>
+</kw>
+<status status="PASS" starttime="20231226 15:13:10.216" endtime="20231226 15:13:33.729"/>
+</branch>
+<status status="PASS" starttime="20231226 15:13:10.216" endtime="20231226 15:13:33.729"/>
+</if>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>dom:${JSFollowButtonBarronsPath}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20231226 15:13:33.729" endtime="20231226 15:13:34.246"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231226 15:13:34.246" endtime="20231226 15:13:35.013"/>
+</kw>
+<status status="PASS" starttime="20231226 15:13:10.216" endtime="20231226 15:13:35.013"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20231226 15:13:35.013" endtime="20231226 15:13:35.014"/>
+</kw>
+<kw name="Validate author hyperlink" library="BarronsArticlePage">
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//span[text()="Angela Palumbo"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20231226 15:13:35.015" endtime="20231226 15:13:35.015"/>
+</kw>
+<status status="NOT RUN" starttime="20231226 15:13:35.014" endtime="20231226 15:13:35.015"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//span[text()="Teresa Rivas"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20231226 15:13:35.524" level="INFO">Current page contains element '//span[text()="Teresa Rivas"]'.</msg>
+<status status="PASS" starttime="20231226 15:13:35.015" endtime="20231226 15:13:35.524"/>
+</kw>
+<status status="PASS" starttime="20231226 15:13:35.015" endtime="20231226 15:13:35.524"/>
+</branch>
+<status status="PASS" starttime="20231226 15:13:35.014" endtime="20231226 15:13:35.524"/>
+</if>
+<status status="PASS" starttime="20231226 15:13:35.014" endtime="20231226 15:13:35.524"/>
+</kw>
+<kw name="Click author hyperlink" library="BarronsArticlePage">
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[text()="Angela Palumbo"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231226 15:13:35.525" endtime="20231226 15:13:35.525"/>
+</kw>
+<status status="NOT RUN" starttime="20231226 15:13:35.525" endtime="20231226 15:13:35.525"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[text()="Teresa Rivas"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231226 15:13:35.526" level="INFO">Clicking element '//span[text()="Teresa Rivas"]'.</msg>
+<status status="PASS" starttime="20231226 15:13:35.525" endtime="20231226 15:13:36.942"/>
+</kw>
+<status status="PASS" starttime="20231226 15:13:35.525" endtime="20231226 15:13:36.942"/>
+</branch>
+<status status="PASS" starttime="20231226 15:13:35.525" endtime="20231226 15:13:36.942"/>
+</if>
+<status status="PASS" starttime="20231226 15:13:35.524" endtime="20231226 15:13:36.942"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Click author hyperlink" library="BarronsArticlePage">
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[text()="Angela Palumbo"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231226 15:13:37.103" endtime="20231226 15:13:37.103"/>
+</kw>
+<status status="NOT RUN" starttime="20231226 15:13:37.102" endtime="20231226 15:13:37.103"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[text()="Teresa Rivas"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231226 15:13:37.104" level="INFO">Clicking element '//span[text()="Teresa Rivas"]'.</msg>
+<status status="PASS" starttime="20231226 15:13:37.103" endtime="20231226 15:13:39.294"/>
+</kw>
+<status status="PASS" starttime="20231226 15:13:37.103" endtime="20231226 15:13:39.294"/>
+</branch>
+<status status="PASS" starttime="20231226 15:13:37.102" endtime="20231226 15:13:39.294"/>
+</if>
+<status status="PASS" starttime="20231226 15:13:37.101" endtime="20231226 15:13:39.294"/>
+</kw>
+<status status="PASS" starttime="20231226 15:13:37.100" endtime="20231226 15:13:39.294"/>
+</branch>
+<status status="PASS" starttime="20231226 15:13:37.100" endtime="20231226 15:13:39.294"/>
+</if>
+<kw name="Validate Authors Page" library="BarronsAuthorsPage">
+<if>
+<branch type="IF" condition="${Env} == &quot;prod&quot;">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Brian Swint</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" starttime="20231226 15:13:39.299" endtime="20231226 15:13:39.299"/>
+</kw>
+<msg timestamp="20231226 15:13:39.299" level="FAIL">Invalid IF condition: Evaluating expression 'dev == "prod"' failed: NameError: name 'dev' is not defined nor importable as module
+
+Variables in the original expression '${Env} == "prod"' were resolved before the expression was evaluated. Try using '$Env == "prod"' syntax to avoid that. See Evaluating Expressions appendix in Robot Framework User Guide for more details.</msg>
+<status status="FAIL" starttime="20231226 15:13:39.297" endtime="20231226 15:13:39.299"/>
+</branch>
+<branch type="ELSE IF" condition="${Env} == &quot;dev&quot;">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Teresa Rivas</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" starttime="20231226 15:13:39.299" endtime="20231226 15:13:39.299"/>
+</kw>
+<status status="NOT RUN" starttime="20231226 15:13:39.299" endtime="20231226 15:13:39.299"/>
+</branch>
+<status status="FAIL" starttime="20231226 15:13:39.297" endtime="20231226 15:13:39.299"/>
+</if>
+<status status="FAIL" starttime="20231226 15:13:39.296" endtime="20231226 15:13:39.299"/>
+</kw>
+<kw name="Validate Follow Button" library="BarronsArticlePage">
+<status status="NOT RUN" starttime="20231226 15:13:39.300" endtime="20231226 15:13:39.301"/>
+</kw>
+<kw name="Finish Testcase" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231226 15:13:39.301" endtime="20231226 15:13:45.006"/>
+</kw>
+<status status="PASS" starttime="20231226 15:13:39.301" endtime="20231226 15:13:45.006"/>
+</kw>
+<doc>This test case validates the follow button from authors page</doc>
+<tag>Author</tag>
+<tag>Barrons</tag>
+<tag>Follow</tag>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20231226 15:13:10.216" endtime="20231226 15:13:45.006">Invalid IF condition: Evaluating expression 'dev == "prod"' failed: NameError: name 'dev' is not defined nor importable as module
+
+Variables in the original expression '${Env} == "prod"' were resolved before the expression was evaluated. Try using '$Env == "prod"' syntax to avoid that. See Evaluating Expressions appendix in Robot Framework User Guide for more details.</status>
+</test>
+<test id="s1-t3" name="Validate the stock pick follow button from articles page" line="65">
+<kw name="Start Barrons Article" library="CommonFunctionality" type="SETUP">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20231226 15:13:45.006" endtime="20231226 15:13:45.006"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.barrons.com</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20231226 15:13:45.006" endtime="20231226 15:13:45.006"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20231226 15:13:45.006" endtime="20231226 15:13:45.006"/>
+</kw>
+<status status="NOT RUN" starttime="20231226 15:13:45.006" endtime="20231226 15:13:45.006"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.s.dev.barrons.com</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231226 15:13:45.006" level="INFO">Opening browser 'firefox' to base url 'https://www.s.dev.barrons.com'.</msg>
+<status status="PASS" starttime="20231226 15:13:45.006" endtime="20231226 15:14:07.576"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231226 15:14:07.576" level="INFO">Opening url 'https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000'</msg>
+<status status="PASS" starttime="20231226 15:14:07.576" endtime="20231226 15:14:10.030"/>
+</kw>
+<status status="PASS" starttime="20231226 15:13:45.006" endtime="20231226 15:14:10.030"/>
+</branch>
+<status status="PASS" starttime="20231226 15:13:45.006" endtime="20231226 15:14:10.030"/>
+</if>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>dom:${JSFollowButtonBarronsPath}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20231226 15:14:10.031" endtime="20231226 15:14:10.557"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231226 15:14:10.557" endtime="20231226 15:14:11.352"/>
+</kw>
+<status status="PASS" starttime="20231226 15:13:45.006" endtime="20231226 15:14:11.352"/>
+</kw>
+<kw name="Start Barrons Stock Picks for Stock Picks in article" library="CommonFunctionality">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20231226 15:14:11.353" endtime="20231226 15:14:11.354"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.barrons.com</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20231226 15:14:11.354" endtime="20231226 15:14:11.354"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.barrons.com/articles/buy-rockwell-automation-stock-pick-price-cc120733?mod=stock_picks_lp</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20231226 15:14:11.354" endtime="20231226 15:14:11.354"/>
+</kw>
+<status status="NOT RUN" starttime="20231226 15:14:11.354" endtime="20231226 15:14:11.354"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.s.dev.barrons.com</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231226 15:14:11.355" level="INFO">Opening browser 'firefox' to base url 'https://www.s.dev.barrons.com'.</msg>
+<status status="PASS" starttime="20231226 15:14:11.354" endtime="20231226 15:14:28.100"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.s.dev.barrons.com/articles/buy-rockwell-automation-stock-pick-price-cc120733?mod=stock_picks_lp</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231226 15:14:28.100" level="INFO">Opening url 'https://www.s.dev.barrons.com/articles/buy-rockwell-automation-stock-pick-price-cc120733?mod=stock_picks_lp'</msg>
+<status status="PASS" starttime="20231226 15:14:28.100" endtime="20231226 15:14:32.048"/>
+</kw>
+<status status="PASS" starttime="20231226 15:14:11.354" endtime="20231226 15:14:32.048"/>
+</branch>
+<status status="PASS" starttime="20231226 15:14:11.354" endtime="20231226 15:14:32.048"/>
+</if>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231226 15:14:32.048" endtime="20231226 15:14:32.825"/>
+</kw>
+<status status="PASS" starttime="20231226 15:14:11.353" endtime="20231226 15:14:32.825"/>
+</kw>
+<kw name="Validate Stock Pick Follow Button" library="BarronsArticlePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>dom:${JSStockPickFollowButtonBarronsPath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231226 15:14:32.914" endtime="20231226 15:14:33.955"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>dom:${JSStockPickFollowButtonBarronsPath}</arg>
+<arg>Follow</arg>
+<arg>timeout=30</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20231226 15:14:33.956" level="INFO">Verifying element 'dom:document.querySelector('ufc-follow-custom-topic-widget.hydrated').shadowRoot .querySelector('ufc-follow-widget') .querySelector('ufc-follow-button').shadowRoot .querySelector('button')' contains exact text 'Follow'.</msg>
+<status status="PASS" starttime="20231226 15:14:33.955" endtime="20231226 15:14:35.005"/>
+</kw>
+<status status="PASS" starttime="20231226 15:14:32.914" endtime="20231226 15:14:35.005"/>
+</kw>
+<kw name="Click Stock Pick Follow Button" library="BarronsArticlePage">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>dom:${JSStockPickFollowButtonBarronsPath}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231226 15:14:35.006" level="INFO">Clicking button 'dom:document.querySelector('ufc-follow-custom-topic-widget.hydrated').shadowRoot .querySelector('ufc-follow-widget') .querySelector('ufc-follow-button').shadowRoot .querySelector('button')'.</msg>
+<status status="PASS" starttime="20231226 15:14:35.006" endtime="20231226 15:14:37.873"/>
+</kw>
+<status status="PASS" starttime="20231226 15:14:35.005" endtime="20231226 15:14:37.873"/>
+</kw>
+<kw name="Validate Sign In Modal" library="BarronsArticlePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>dom:${JSFollowSignInHeaderPath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20231226 15:14:44.605" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-114.png"&gt;&lt;img src="selenium-screenshot-114.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231226 15:14:44.605" level="FAIL">Element 'dom:document.querySelector('ufc-portal') .querySelector('ufc-signin-modal').shadowRoot .querySelector('div') .querySelector('div.body') .querySelector('p')' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20231226 15:14:37.899" endtime="20231226 15:14:44.606"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>dom:${JSFollowSignInHeaderPath}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20231226 15:14:44.606" endtime="20231226 15:14:44.606"/>
+</kw>
+<status status="FAIL" starttime="20231226 15:14:37.899" endtime="20231226 15:14:44.606"/>
+</kw>
+<kw name="Click Sign In Button 2 Modal" library="BarronsArticlePage">
+<status status="NOT RUN" starttime="20231226 15:14:44.607" endtime="20231226 15:14:44.607"/>
+</kw>
+<kw name="Sign In Process" library="DefinedKeywords">
+<status status="NOT RUN" starttime="20231226 15:14:44.607" endtime="20231226 15:14:44.607"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" starttime="20231226 15:14:44.608" endtime="20231226 15:14:44.608"/>
+</kw>
+<kw name="Validate Stock Pick Following Button" library="BarronsArticlePage">
+<status status="NOT RUN" starttime="20231226 15:14:44.608" endtime="20231226 15:14:44.608"/>
+</kw>
+<kw name="Click Stock Pick Following Button" library="BarronsArticlePage">
+<status status="NOT RUN" starttime="20231226 15:14:44.608" endtime="20231226 15:14:44.609"/>
+</kw>
+<kw name="Finish Testcase" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231226 15:14:44.609" endtime="20231226 15:14:49.401"/>
+</kw>
+<status status="PASS" starttime="20231226 15:14:44.609" endtime="20231226 15:14:49.402"/>
+</kw>
+<doc>This test case validates the stock pick follow button from articles page</doc>
+<tag>Barrons</tag>
+<tag>CustomTopic</tag>
+<tag>Follow</tag>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20231226 15:13:45.006" endtime="20231226 15:14:49.402">Element 'dom:document.querySelector('ufc-portal') .querySelector('ufc-signin-modal').shadowRoot .querySelector('div') .querySelector('div.body') .querySelector('p')' not visible after 5 seconds.</status>
+</test>
+<test id="s1-t4" name="Validate the Barrons Preference Center page" line="83">
+<kw name="Start Barrons Article" library="CommonFunctionality" type="SETUP">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20231226 15:14:49.404" endtime="20231226 15:14:49.404"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.barrons.com</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20231226 15:14:49.405" endtime="20231226 15:14:49.405"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20231226 15:14:49.405" endtime="20231226 15:14:49.405"/>
+</kw>
+<status status="NOT RUN" starttime="20231226 15:14:49.404" endtime="20231226 15:14:49.405"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.s.dev.barrons.com</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231226 15:14:49.406" level="INFO">Opening browser 'firefox' to base url 'https://www.s.dev.barrons.com'.</msg>
+<status status="PASS" starttime="20231226 15:14:49.405" endtime="20231226 15:15:08.898"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231226 15:15:08.898" level="INFO">Opening url 'https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000'</msg>
+<status status="PASS" starttime="20231226 15:15:08.898" endtime="20231226 15:15:11.448"/>
+</kw>
+<status status="PASS" starttime="20231226 15:14:49.405" endtime="20231226 15:15:11.448"/>
+</branch>
+<status status="PASS" starttime="20231226 15:14:49.404" endtime="20231226 15:15:11.448"/>
+</if>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>dom:${JSFollowButtonBarronsPath}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20231226 15:15:11.448" endtime="20231226 15:15:11.982"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231226 15:15:11.982" endtime="20231226 15:15:12.753"/>
+</kw>
+<status status="PASS" starttime="20231226 15:14:49.404" endtime="20231226 15:15:12.753"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20231226 15:15:12.753" endtime="20231226 15:15:12.754"/>
+</kw>
+<kw name="Navigate Preference Center page" library="BarronsPreferenceCenterPage">
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.barrons.com/follow</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20231226 15:15:12.755" endtime="20231226 15:15:12.755"/>
+</kw>
+<status status="NOT RUN" starttime="20231226 15:15:12.754" endtime="20231226 15:15:12.755"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.s.dev.barrons.com/follow</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231226 15:15:12.755" level="INFO">Opening url 'https://www.s.dev.barrons.com/follow'</msg>
+<status status="PASS" starttime="20231226 15:15:12.755" endtime="20231226 15:15:14.227"/>
+</kw>
+<status status="PASS" starttime="20231226 15:15:12.755" endtime="20231226 15:15:14.227"/>
+</branch>
+<status status="PASS" starttime="20231226 15:15:12.754" endtime="20231226 15:15:14.227"/>
+</if>
+<status status="PASS" starttime="20231226 15:15:12.754" endtime="20231226 15:15:14.227"/>
+</kw>
+<kw name="Sign In Process" library="DefinedKeywords">
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Set Variable" library="BuiltIn">
+<var>${Email}</var>
+<arg>${Email_prod}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231226 15:15:14.228" endtime="20231226 15:15:14.228"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${Password}</var>
+<arg>${Password_prod}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231226 15:15:14.228" endtime="20231226 15:15:14.228"/>
+</kw>
+<status status="NOT RUN" starttime="20231226 15:15:14.228" endtime="20231226 15:15:14.228"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Set Variable" library="BuiltIn">
+<var>${Email}</var>
+<arg>${Email_dev}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20231226 15:15:14.229" level="INFO">${Email} = QABARRONSONLY</msg>
+<status status="PASS" starttime="20231226 15:15:14.229" endtime="20231226 15:15:14.229"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${Password}</var>
+<arg>${Password_dev}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20231226 15:15:14.229" level="INFO">${Password} = password1</msg>
+<status status="PASS" starttime="20231226 15:15:14.229" endtime="20231226 15:15:14.229"/>
+</kw>
+<status status="PASS" starttime="20231226 15:15:14.228" endtime="20231226 15:15:14.229"/>
+</branch>
+<status status="PASS" starttime="20231226 15:15:14.228" endtime="20231226 15:15:14.229"/>
+</if>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//input[@type='email']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231226 15:15:14.229" endtime="20231226 15:15:14.667"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//input[@type='email']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231226 15:15:14.668" level="INFO">Clicking button '//input[@type='email']'.</msg>
+<status status="PASS" starttime="20231226 15:15:14.667" endtime="20231226 15:15:16.313"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@type='email']</arg>
+<arg>${Email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231226 15:15:16.314" level="INFO">Typing text 'QABARRONSONLY' into text field '//input[@type='email']'.</msg>
+<status status="PASS" starttime="20231226 15:15:16.313" endtime="20231226 15:15:16.946"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20231226 15:15:16.946" endtime="20231226 15:15:17.354"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[text()="Continue"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231226 15:15:17.354" level="INFO">Clicking element '//span[text()="Continue"]'.</msg>
+<status status="PASS" starttime="20231226 15:15:17.354" endtime="20231226 15:15:17.985"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20231226 15:15:17.985" endtime="20231226 15:15:18.393"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="password-login-password"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231226 15:15:18.393" endtime="20231226 15:15:18.810"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="password-login-password"]</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231226 15:15:18.810" level="INFO">Typing text 'password1' into text field '//*[@id="password-login-password"]'.</msg>
+<status status="PASS" starttime="20231226 15:15:18.810" endtime="20231226 15:15:19.435"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20231226 15:15:19.435" endtime="20231226 15:15:19.843"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1.0 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20231226 15:15:19.843" endtime="20231226 15:15:19.843"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="password-login"]/div/form/div/div[5]/div[1]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231226 15:15:19.843" endtime="20231226 15:15:19.843"/>
+</kw>
+<status status="NOT RUN" starttime="20231226 15:15:19.843" endtime="20231226 15:15:19.844"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="password-login"]/div/form/div[5]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231226 15:15:19.844" level="INFO">Clicking element '//*[@id="password-login"]/div/form/div[5]/button'.</msg>
+<status status="PASS" starttime="20231226 15:15:19.844" endtime="20231226 15:15:25.934"/>
+</kw>
+<status status="PASS" starttime="20231226 15:15:19.844" endtime="20231226 15:15:25.934"/>
+</branch>
+<status status="PASS" starttime="20231226 15:15:19.843" endtime="20231226 15:15:25.934"/>
+</if>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>//*[@id="password-login"]/div/form/div/div[5]/div[1]/button</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20231226 15:15:25.934" endtime="20231226 15:15:36.963"/>
+</kw>
+<status status="PASS" starttime="20231226 15:15:14.227" endtime="20231226 15:15:36.963"/>
+</kw>
+<kw name="Validate Followed Authors" library="BarronsPreferenceCenterPage">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Authors</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20231226 15:15:38.978" level="INFO">Current page contains text 'Authors'.</msg>
+<status status="PASS" starttime="20231226 15:15:36.963" endtime="20231226 15:15:38.978"/>
+</kw>
+<status status="PASS" starttime="20231226 15:15:36.963" endtime="20231226 15:15:38.978"/>
+</kw>
+<kw name="Validate Following Toggle Feature" library="BarronsPreferenceCenterPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231226 15:15:38.978" endtime="20231226 15:15:41.000"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20231226 15:15:42.005" level="INFO">Current page contains element '//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div'.</msg>
+<status status="PASS" starttime="20231226 15:15:41.000" endtime="20231226 15:15:42.005"/>
+</kw>
+<status status="PASS" starttime="20231226 15:15:38.978" endtime="20231226 15:15:42.005"/>
+</kw>
+<kw name="Click Following Toggle Feature" library="BarronsPreferenceCenterPage">
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[text()="Angela Palumbo"]/../../../../td[4]/div</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231226 15:15:42.005" endtime="20231226 15:15:42.005"/>
+</kw>
+<status status="NOT RUN" starttime="20231226 15:15:42.005" endtime="20231226 15:15:42.005"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[text()="Teresa Rivas"]/../../../../td[4]/div</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231226 15:15:42.005" level="INFO">Clicking element '//*[text()="Teresa Rivas"]/../../../../td[4]/div'.</msg>
+<msg timestamp="20231226 15:15:54.076" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-115.png"&gt;&lt;img src="selenium-screenshot-115.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231226 15:15:54.076" level="FAIL">Element with locator '//*[text()="Teresa Rivas"]/../../../../td[4]/div' not found.</msg>
+<status status="FAIL" starttime="20231226 15:15:42.005" endtime="20231226 15:15:54.080"/>
+</kw>
+<status status="FAIL" starttime="20231226 15:15:42.005" endtime="20231226 15:15:54.080"/>
+</branch>
+<status status="FAIL" starttime="20231226 15:15:42.005" endtime="20231226 15:15:54.080"/>
+</if>
+<status status="FAIL" starttime="20231226 15:15:42.005" endtime="20231226 15:15:54.080"/>
+</kw>
+<kw name="Validate Following Toggle Alert Pop up" library="BarronsPreferenceCenterPage">
+<status status="NOT RUN" starttime="20231226 15:15:54.084" endtime="20231226 15:15:54.084"/>
+</kw>
+<kw name="Click Following Toggle Alert Pop up" library="BarronsPreferenceCenterPage">
+<status status="NOT RUN" starttime="20231226 15:15:54.084" endtime="20231226 15:15:54.084"/>
+</kw>
+<kw name="Navigate Article page" library="BarronsPreferenceCenterPage">
+<status status="NOT RUN" starttime="20231226 15:15:54.084" endtime="20231226 15:15:54.084"/>
+</kw>
+<kw name="Validate Follow Button" library="BarronsArticlePage">
+<status status="NOT RUN" starttime="20231226 15:15:54.084" endtime="20231226 15:15:54.084"/>
+</kw>
+<kw name="Finish Testcase" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231226 15:15:54.084" endtime="20231226 15:15:59.054"/>
+</kw>
+<status status="PASS" starttime="20231226 15:15:54.084" endtime="20231226 15:15:59.054"/>
+</kw>
+<doc>This test case validates the barrons preference center page</doc>
+<tag>Barrons</tag>
+<tag>PreferenceCenter</tag>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20231226 15:14:49.403" endtime="20231226 15:15:59.054">Element with locator '//*[text()="Teresa Rivas"]/../../../../td[4]/div' not found.</status>
+</test>
+<test id="s1-t5" name="Validate the stock pick follow button from stock pick page" line="101">
+<kw name="Start Barrons Article" library="CommonFunctionality" type="SETUP">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20231226 15:15:59.054" endtime="20231226 15:15:59.054"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.barrons.com</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20231226 15:15:59.054" endtime="20231226 15:15:59.054"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20231226 15:15:59.054" endtime="20231226 15:15:59.054"/>
+</kw>
+<status status="NOT RUN" starttime="20231226 15:15:59.054" endtime="20231226 15:15:59.054"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.s.dev.barrons.com</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231226 15:15:59.054" level="INFO">Opening browser 'firefox' to base url 'https://www.s.dev.barrons.com'.</msg>
+<status status="PASS" starttime="20231226 15:15:59.054" endtime="20231226 15:16:22.962"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231226 15:16:22.962" level="INFO">Opening url 'https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000'</msg>
+<status status="PASS" starttime="20231226 15:16:22.962" endtime="20231226 15:16:25.748"/>
+</kw>
+<status status="PASS" starttime="20231226 15:15:59.054" endtime="20231226 15:16:25.748"/>
+</branch>
+<status status="PASS" starttime="20231226 15:15:59.054" endtime="20231226 15:16:25.748"/>
+</if>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>dom:${JSFollowButtonBarronsPath}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20231226 15:16:25.748" endtime="20231226 15:16:26.267"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231226 15:16:26.267" endtime="20231226 15:16:27.038"/>
+</kw>
+<status status="PASS" starttime="20231226 15:15:59.054" endtime="20231226 15:16:27.038"/>
+</kw>
+<kw name="Start Barrons Stock Picks for Stock Picks breadcrumb" library="CommonFunctionality">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20231226 15:16:27.039" endtime="20231226 15:16:27.039"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.barrons.com</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20231226 15:16:27.039" endtime="20231226 15:16:27.039"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.barrons.com/market-data/stocks/stock-picks?mod=BOL_TOPNAV</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20231226 15:16:27.039" endtime="20231226 15:16:27.039"/>
+</kw>
+<status status="NOT RUN" starttime="20231226 15:16:27.039" endtime="20231226 15:16:27.040"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.s.dev.barrons.com</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231226 15:16:27.040" level="INFO">Opening browser 'firefox' to base url 'https://www.s.dev.barrons.com'.</msg>
+<status status="PASS" starttime="20231226 15:16:27.040" endtime="20231226 15:16:55.064"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.s.dev.barrons.com/market-data/stocks/stock-picks?mod=BOL_TOPNAV</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231226 15:16:55.064" level="INFO">Opening url 'https://www.s.dev.barrons.com/market-data/stocks/stock-picks?mod=BOL_TOPNAV'</msg>
+<status status="PASS" starttime="20231226 15:16:55.064" endtime="20231226 15:17:58.913"/>
+</kw>
+<status status="PASS" starttime="20231226 15:16:27.040" endtime="20231226 15:17:58.913"/>
+</branch>
+<status status="PASS" starttime="20231226 15:16:27.039" endtime="20231226 15:17:58.913"/>
+</if>
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<arg>//*[text()="Barron's Latest Stock Picks"]</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20231226 15:17:58.913" endtime="20231226 15:17:59.951"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231226 15:17:59.951" endtime="20231226 15:18:00.718"/>
+</kw>
+<status status="PASS" starttime="20231226 15:16:27.038" endtime="20231226 15:18:00.718"/>
+</kw>
+<kw name="Validate Stock Pick Follow Button" library="BarronsArticlePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>dom:${JSStockPickFollowButtonBarronsPath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231226 15:18:00.719" endtime="20231226 15:18:01.740"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>dom:${JSStockPickFollowButtonBarronsPath}</arg>
+<arg>Follow</arg>
+<arg>timeout=30</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20231226 15:18:01.741" level="INFO">Verifying element 'dom:document.querySelector('ufc-follow-custom-topic-widget.hydrated').shadowRoot .querySelector('ufc-follow-widget') .querySelector('ufc-follow-button').shadowRoot .querySelector('button')' contains exact text 'Follow'.</msg>
+<status status="PASS" starttime="20231226 15:18:01.740" endtime="20231226 15:18:02.769"/>
+</kw>
+<status status="PASS" starttime="20231226 15:18:00.718" endtime="20231226 15:18:02.769"/>
+</kw>
+<kw name="Click Stock Pick Follow Button" library="BarronsArticlePage">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>dom:${JSStockPickFollowButtonBarronsPath}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231226 15:18:02.770" level="INFO">Clicking button 'dom:document.querySelector('ufc-follow-custom-topic-widget.hydrated').shadowRoot .querySelector('ufc-follow-widget') .querySelector('ufc-follow-button').shadowRoot .querySelector('button')'.</msg>
+<status status="PASS" starttime="20231226 15:18:02.770" endtime="20231226 15:18:05.541"/>
+</kw>
+<status status="PASS" starttime="20231226 15:18:02.769" endtime="20231226 15:18:05.541"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.3 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20231226 15:18:05.541" endtime="20231226 15:18:05.541"/>
+</kw>
+<kw name="Validate Sign In Modal" library="BarronsArticlePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>dom:${JSFollowSignInHeaderPath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231226 15:18:05.541" endtime="20231226 15:18:06.163"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>dom:${JSFollowSignInHeaderPath}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20231226 15:18:06.468" level="INFO">Current page contains element 'dom:document.querySelector('ufc-portal') .querySelector('ufc-signin-modal').shadowRoot .querySelector('div') .querySelector('div.body') .querySelector('p')'.</msg>
+<status status="PASS" starttime="20231226 15:18:06.163" endtime="20231226 15:18:06.468"/>
+</kw>
+<status status="PASS" starttime="20231226 15:18:05.541" endtime="20231226 15:18:06.468"/>
+</kw>
+<kw name="Click Sign In Button Modal" library="BarronsArticlePage">
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>dom:${JSFollowSignInButtonPath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231226 15:18:06.468" endtime="20231226 15:18:06.468"/>
+</kw>
+<status status="NOT RUN" starttime="20231226 15:18:06.468" endtime="20231226 15:18:06.468"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>dom:${JSFollowSignInButton4Path}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231226 15:18:06.468" level="INFO">Clicking element 'dom:document.querySelector('ufc-signin-modal[isopen]').shadowRoot .querySelector('div') .querySelector('div.modal') .querySelector('focus-trap') .querySelector('div.footer') .querySelector('ufc-button') .querySelector('button')'.</msg>
+<status status="PASS" starttime="20231226 15:18:06.468" endtime="20231226 15:18:08.655"/>
+</kw>
+<status status="PASS" starttime="20231226 15:18:06.468" endtime="20231226 15:18:08.655"/>
+</branch>
+<status status="PASS" starttime="20231226 15:18:06.468" endtime="20231226 15:18:08.655"/>
+</if>
+<status status="PASS" starttime="20231226 15:18:06.468" endtime="20231226 15:18:08.655"/>
+</kw>
+<kw name="Sign In Process" library="DefinedKeywords">
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Set Variable" library="BuiltIn">
+<var>${Email}</var>
+<arg>${Email_prod}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231226 15:18:08.656" endtime="20231226 15:18:08.656"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${Password}</var>
+<arg>${Password_prod}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231226 15:18:08.656" endtime="20231226 15:18:08.656"/>
+</kw>
+<status status="NOT RUN" starttime="20231226 15:18:08.656" endtime="20231226 15:18:08.656"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Set Variable" library="BuiltIn">
+<var>${Email}</var>
+<arg>${Email_dev}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20231226 15:18:08.657" level="INFO">${Email} = QABARRONSONLY</msg>
+<status status="PASS" starttime="20231226 15:18:08.656" endtime="20231226 15:18:08.657"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${Password}</var>
+<arg>${Password_dev}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20231226 15:18:08.657" level="INFO">${Password} = password1</msg>
+<status status="PASS" starttime="20231226 15:18:08.657" endtime="20231226 15:18:08.657"/>
+</kw>
+<status status="PASS" starttime="20231226 15:18:08.656" endtime="20231226 15:18:08.657"/>
+</branch>
+<status status="PASS" starttime="20231226 15:18:08.656" endtime="20231226 15:18:08.657"/>
+</if>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//input[@type='email']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231226 15:18:08.657" endtime="20231226 15:18:09.287"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//input[@type='email']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231226 15:18:09.287" level="INFO">Clicking button '//input[@type='email']'.</msg>
+<status status="PASS" starttime="20231226 15:18:09.287" endtime="20231226 15:18:11.634"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@type='email']</arg>
+<arg>${Email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231226 15:18:11.634" level="INFO">Typing text 'QABARRONSONLY' into text field '//input[@type='email']'.</msg>
+<status status="PASS" starttime="20231226 15:18:11.634" endtime="20231226 15:18:12.569"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20231226 15:18:12.569" endtime="20231226 15:18:13.481"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[text()="Continue"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231226 15:18:13.482" level="INFO">Clicking element '//span[text()="Continue"]'.</msg>
+<status status="PASS" starttime="20231226 15:18:13.481" endtime="20231226 15:18:14.306"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20231226 15:18:14.306" endtime="20231226 15:18:15.217"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="password-login-password"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231226 15:18:15.217" endtime="20231226 15:18:15.834"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="password-login-password"]</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231226 15:18:15.834" level="INFO">Typing text 'password1' into text field '//*[@id="password-login-password"]'.</msg>
+<status status="PASS" starttime="20231226 15:18:15.834" endtime="20231226 15:18:16.770"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20231226 15:18:16.770" endtime="20231226 15:18:17.682"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1.0 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20231226 15:18:17.682" endtime="20231226 15:18:17.682"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="password-login"]/div/form/div/div[5]/div[1]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231226 15:18:17.682" endtime="20231226 15:18:17.683"/>
+</kw>
+<status status="NOT RUN" starttime="20231226 15:18:17.682" endtime="20231226 15:18:17.683"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="password-login"]/div/form/div[5]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231226 15:18:17.683" level="INFO">Clicking element '//*[@id="password-login"]/div/form/div[5]/button'.</msg>
+<status status="PASS" starttime="20231226 15:18:17.683" endtime="20231226 15:18:21.652"/>
+</kw>
+<status status="PASS" starttime="20231226 15:18:17.683" endtime="20231226 15:18:21.652"/>
+</branch>
+<status status="PASS" starttime="20231226 15:18:17.682" endtime="20231226 15:18:21.652"/>
+</if>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>//*[@id="password-login"]/div/form/div/div[5]/div[1]/button</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20231226 15:18:21.652" endtime="20231226 15:18:32.679"/>
+</kw>
+<status status="PASS" starttime="20231226 15:18:08.655" endtime="20231226 15:18:32.679"/>
+</kw>
+<kw name="Validate Stock Pick Following Button" library="BarronsArticlePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>dom:${JSStockPickFollowButtonBarronsPath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231226 15:18:32.679" endtime="20231226 15:18:34.705"/>
+</kw>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>dom:${JSStockPickFollowButtonBarronsPath}</arg>
+<arg>Following</arg>
+<arg>timeout=15</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" starttime="20231226 15:18:34.705" endtime="20231226 15:18:36.732"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>dom:${JSStockPickFollowButtonBarronsPath}</arg>
+<arg>Following</arg>
+<arg>timeout=15</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20231226 15:18:36.732" level="INFO">Verifying element 'dom:document.querySelector('ufc-follow-custom-topic-widget.hydrated').shadowRoot .querySelector('ufc-follow-widget') .querySelector('ufc-follow-button').shadowRoot .querySelector('button')' contains exact text 'Following'.</msg>
+<status status="PASS" starttime="20231226 15:18:36.732" endtime="20231226 15:18:38.745"/>
+</kw>
+<status status="PASS" starttime="20231226 15:18:32.679" endtime="20231226 15:18:38.745"/>
+</kw>
+<kw name="Click Stock Pick Following Button" library="BarronsArticlePage">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>dom:${JSStockPickFollowButtonBarronsPath}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231226 15:18:38.745" level="INFO">Clicking button 'dom:document.querySelector('ufc-follow-custom-topic-widget.hydrated').shadowRoot .querySelector('ufc-follow-widget') .querySelector('ufc-follow-button').shadowRoot .querySelector('button')'.</msg>
+<status status="PASS" starttime="20231226 15:18:38.745" endtime="20231226 15:18:44.016"/>
+</kw>
+<status status="PASS" starttime="20231226 15:18:38.745" endtime="20231226 15:18:44.016"/>
+</kw>
+<kw name="Click Stock Pick Undo Link" library="BarronsArticlePage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>dom:${JSStockPickUndoButtonBarronsPath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231226 15:18:44.016" endtime="20231226 15:18:47.249"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>dom:${JSStockPickUndoButtonBarronsPath}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231226 15:18:47.249" level="INFO">Clicking button 'dom:document.querySelector('ufc-follow-custom-topic-widget').shadowRoot .querySelector('ufc-follow-widget').shadowRoot .querySelector('ufc-snackbar').shadowRoot .querySelector('div') .querySelector('div') .querySelector('button')'.</msg>
+<msg timestamp="20231226 15:18:52.381" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-116.png"&gt;&lt;img src="selenium-screenshot-116.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231226 15:18:52.381" level="FAIL">ElementNotInteractableException: Message: Element &lt;button class="actionbtn hasAction"&gt; could not be scrolled into view
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:189:5
+ElementNotInteractableError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:349:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:166:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:135:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:204:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:84:31
+</msg>
+<status status="FAIL" starttime="20231226 15:18:47.249" endtime="20231226 15:18:52.385"/>
+</kw>
+<status status="FAIL" starttime="20231226 15:18:44.016" endtime="20231226 15:18:52.385"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" starttime="20231226 15:18:52.389" endtime="20231226 15:18:52.389"/>
+</kw>
+<kw name="Validate Stock Pick Following Button" library="BarronsArticlePage">
+<status status="NOT RUN" starttime="20231226 15:18:52.389" endtime="20231226 15:18:52.389"/>
+</kw>
+<kw name="Click Stock Pick Preference Center Link" library="BarronsArticlePage">
+<status status="NOT RUN" starttime="20231226 15:18:52.389" endtime="20231226 15:18:52.389"/>
+</kw>
+<kw name="Validate Preference Center page" library="BarronsPreferenceCenterPage">
+<status status="NOT RUN" starttime="20231226 15:18:52.389" endtime="20231226 15:18:52.389"/>
+</kw>
+<kw name="Finish Testcase" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231226 15:18:52.389" endtime="20231226 15:18:57.820"/>
+</kw>
+<status status="PASS" starttime="20231226 15:18:52.389" endtime="20231226 15:18:57.820"/>
+</kw>
+<doc>This test case validates the stock pick follow button from stock pick page</doc>
+<tag>Barrons</tag>
+<tag>CustomTopic</tag>
+<tag>Follow</tag>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20231226 15:15:59.054" endtime="20231226 15:18:57.820">ElementNotInteractableException: Message: Element &lt;button class="actionbtn hasAction"&gt; could not be scrolled into view
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:189:5
+ElementNotInteractableError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:349:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:166:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:135:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:204:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:84:31
+</status>
+</test>
+<doc>Barrons Smoke Tests</doc>
+<status status="FAIL" starttime="20231226 15:11:34.302" endtime="20231226 15:18:57.820"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="5" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Author</stat>
+<stat pass="0" fail="5" skip="0">Barrons</stat>
+<stat pass="0" fail="2" skip="0">CustomTopic</stat>
+<stat pass="0" fail="3" skip="0">Follow</stat>
+<stat pass="0" fail="1" skip="0">Follow Article</stat>
+<stat pass="0" fail="1" skip="0">PreferenceCenter</stat>
+<stat pass="0" fail="5" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="0" fail="5" skip="0" id="s1" name="Barrons Smoke">Barrons Smoke</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -21,9 +21,9 @@ Test Teardown  CommonFunctionality.Finish Testcase
 Validate the follow button from articles page
     [Documentation]  This test case validates the follow button from articles page
     [Tags]  Smoke  Follow  Article
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         DefinedKeywords.Market Watch Sign In Process
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
        DefinedKeywords.WSJ Sign In Process
         #DefinedKeywords.Sign In Process
     END
@@ -31,14 +31,19 @@ Validate the follow button from articles page
     WSJArticlePage.Click Follow Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
-    DefinedKeywords.Sign In Process   #added
+    IF  "${Env}" == "prod"
+        DefinedKeywords.Market Watch Sign In Process
+    ELSE IF  "${Env}" == "dev"
+        DefinedKeywords.Sign In Process
+    END
+
     Set Selenium Speed  0.2 seconds
     WSJArticlePage.Scroll Down
     WSJArticlePage.Validate Following Button
     WSJArticlePage.Scroll Down
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Set Selenium Speed  0.1 seconds
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Set Selenium Speed  0.35 seconds
     END
     WSJArticlePage.Click Following Button
@@ -74,9 +79,9 @@ Validate the WSJ Preference Center page
 
     Set Selenium Speed  0.2 seconds
     WSJPreferenceCenterPage.Navigate Preference Center page
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         DefinedKeywords.Market Watch Sign In Process
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         DefinedKeywords.Sign In Process
     END
     WSJPreferenceCenterPage.Validate Followed Authors

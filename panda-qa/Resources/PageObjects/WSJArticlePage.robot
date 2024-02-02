@@ -1,5 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
+Resource  ../../Resources/CommonFunctionality.robot
 
 *** Variables ***
 ${JSFollowButtonWSJPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
@@ -137,9 +138,9 @@ Click author hyperlink
     Click Element  //*[text()='John West']
 
 Scroll Down
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Set Focus To Element  //*[text()='John West']
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Set Focus To Element  //*[text()='Joanna Stern']
     END
 

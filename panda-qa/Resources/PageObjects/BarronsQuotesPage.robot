@@ -1,6 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
-
+Resource  ../../Resources/CommonFunctionality.robot
 *** Variables ***
 ${JSFollowSignInButtonPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('ufc-signin-modal').shadowRoot  #2
@@ -212,12 +212,12 @@ ${JSDeleteWatchlistConfimationButtonPath}=  document.querySelector('dj-watchlist
 Validate Watchlist for non-logged user
     Wait Until Element is Visible  dom:${JSRegisterNowButtonPath}
     Page Should Contain Element  dom:${JSRegisterNowButtonPath}
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Page Should Contain Element  dom:${JSDefaultSymbolDJIA-P}
         Page Should Contain Element  dom:${JSDefaultSymbolABS-P}
         Page Should Contain Element  dom:${JSDefaultSymbolMSFT-P}
         Page Should Contain Element  dom:${JSDefaultSymbolGOOG-P}
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Page Should Contain Element  dom:${JSDefaultSymbolDJIA-D}
         Page Should Contain Element  dom:${JSDefaultSymbolABS-D}
         Page Should Contain Element  dom:${JSDefaultSymbolMSFT-D}
@@ -253,10 +253,7 @@ Validate Quote Page
 #        Page Should Contain Element  dom:${JSSymbolMSFT-D}
 #    END
 
-#Save Watchlist Changes
-#    Click Button  dom:${JSClickSaveButtonBarronsPath}
-#    Page Should Contain Element  dom:${JSWatchlistSavedModalPath}
-#    Click Button  dom:${JSWatchlistSavedModalGoToListButtonPath}
+
 
 Delete Watchlist
    Click Button  dom:${JSEditWatchlistButtonPath}

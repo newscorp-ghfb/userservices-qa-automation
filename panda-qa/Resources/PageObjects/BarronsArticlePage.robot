@@ -150,16 +150,16 @@ Validate Sign In 2 Modal
     Page Should Contain Element  dom:${JSFollowSignInHeader2Path}
 
 Click Sign In Button Modal
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Click Element  dom:${JSFollowSignInButtonPath}
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Click Element  dom:${JSFollowSignInButton4Path}
     END
 
 Click Sign In Button 2 Modal
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Click Element  dom:${JSFollowSignInButton2Path}
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Click Element  dom:${JSFollowSignInButton4Path}
     END
 
@@ -184,22 +184,23 @@ Click Stock Pick Preference Center Link
     Click Element  dom:${JSStockPickPreferenceCenterLinkBarronsPath}
 
 Validate author hyperlink
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Page Should Contain Element  //span[text()="Brian Swint"]
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Page Should Contain Element  //span[text()="Teresa Rivas"]
     END
 
 Click author hyperlink
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Click Element  //span[text()="Brian Swint"]
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Click Element  //span[text()="Teresa Rivas"]
     END
 
 Validate author without byline
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
     Page Should Contain Element  //div[@class="byline article__byline"]/div/span[text()="Brian Swint"]
-    ELSE IF  ${Env} == "dev"
-    Page Should Contain Element  //div[@class="standard__ArticleBylineWrapper-sc-14sjre0-2 czapmB"]/div/div/a/span/span[1]
+    ELSE IF  "${Env}" == "dev"
+    Page Should Contain Element  //a[@data-testid='author-link']
+#    //div[@class="standard__ArticleBylineWrapper-sc-14sjre0-2 czapmB"]/div/div/a/span/span[1]
     END

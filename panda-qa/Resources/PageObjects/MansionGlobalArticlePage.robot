@@ -64,9 +64,9 @@ Validate Sign In Modal
 
 Click Sign In Button Modal
     Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Click Button  dom:${JSFollowSignInButtonPath}
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Click Element  dom:${JSFollowSignInButton2Path}
     END
 
