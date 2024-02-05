@@ -30,8 +30,8 @@ Login
 
 Select Inbox
     Set Selenium Speed  3 seconds
-    Wait Until Page Contains Element  //*[@placeholder="Type here to search"]
-    Click Element  //*[@placeholder="Type here to search"]
+#    Wait Until Page Contains Element  //*[@placeholder="Type here to search"]
+#    Click Element  //*[@placeholder="Type here to search"]
     Wait Until Page Contains Element  //input[@id="topSearchInput"]
     Click Element  //input[@id="topSearchInput"]
     Wait Until Page Contains Element  //span[@id="searchScopeButtonId-option"]

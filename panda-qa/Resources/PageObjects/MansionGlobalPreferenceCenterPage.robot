@@ -60,11 +60,11 @@ Click Following Toggle Feature
         Click Element  //*[text()="Mariana Nuñez"]/../../../../td[4]/div
     END
 Validate Following Toggle Alert Pop up
-
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[3]/div/div/button
+    Page Should Contain Element    //button[text()='OK']
+#    Page Should Contain Element  //*[@id="root"]/div/div/div/div[3]/div/div/button
 
 Click Following Toggle Alert Pop up
-    Click Button  //*[@id="root"]/div/div/div/div[3]/div/div/button
+    Click Button  //button[text()='OK']
 
 Validate Author Updates From Preference Center Reflected In Articles
     Click Button  //*[@id="root"]/div/div/div/div[2]/div[2]/div/div/button
