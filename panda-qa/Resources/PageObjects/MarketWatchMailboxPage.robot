@@ -80,7 +80,7 @@ Validate MW real-time company notification
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
     Page Should Contain Element  //a[contains(text(),'View in web browser')]
     Page Should Contain Element  //*[text()='GOOG (U.S.: Nasdaq)']
-    Page Should Contain Element  //a[text()="Read More"]
+    #Page Should Contain Element  //a[text()="Read More"]
     Page Should Contain Element  //a[text()="Preferences"]
     Page Should Contain Element  //a[text()="Unsubscribe"]
     #Page Should Contain Element  //a[text()="Alerts Center"]

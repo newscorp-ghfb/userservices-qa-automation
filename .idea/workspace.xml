@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated relevant Xpath for Marketwatch real-time company notification">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/BarronsMailboxPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/BarronsMailboxPage.robot" afterDir="false" />
+    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated relevant Xpath for Marketwatch Read More option on real-time company notification page">
       <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/MarketWatchMailboxPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/MarketWatchMailboxPage.robot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -242,7 +239,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707145039200</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Updated relevant Xpath for Marketwatch real-time company notification">
+      <option name="closed" value="true" />
+      <created>1707148074409</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1707148074409</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Updated relevant Xpath for Marketwatch Read More option on real-time company notification page">
+      <option name="closed" value="true" />
+      <created>1707148202835</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1707148202835</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -284,6 +297,7 @@
     <MESSAGE value="Updated Xpath for Follow Toggle feature button on MarketWatch Preference Center page" />
     <MESSAGE value="Updated relevant Xpath for Marketwatch author's notification" />
     <MESSAGE value="Updated relevant Xpath for Marketwatch real-time company notification" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated relevant Xpath for Marketwatch real-time company notification" />
+    <MESSAGE value="Updated relevant Xpath for Marketwatch Read More option on real-time company notification page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated relevant Xpath for Marketwatch Read More option on real-time company notification page" />
   </component>
 </project>
