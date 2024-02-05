@@ -35,14 +35,14 @@ ${JSPreferenceCenterLinkMarketWatchPath}=  document.querySelector('ufc-snackbar'
 *** Keywords ***
 Validate Follow Button
     IF  ${Env} == "prod"
-        Execute javascript  window.scrollTo(0,500)
-    #ELSE IF  ${Env} == "dev"
-        # Execute javascript  window.scrollTo(0,500)
+       Execute javascript  window.scrollTo(0,500)
+    ELSE IF  ${Env} == "dev"
+         Execute javascript  window.scrollTo(0,500)
     END
 
     Wait Until Element is Visible  dom:${JSFollowButtonMWPath}
     Select Frame  //*[@id="LOCSTORAGE"]
-    #Element Should Contain  //*[@id="maincontent"]/div[1]/div[1]/div[2]/div/div/div/header/h1/ufc-follow-author-widget//ufc-follow-widget/ufc-follow-button//button    Follow
+    Element Should Contain  //*[@id="maincontent"]/div[1]/div[1]/div[2]/div/div/div/header/h1/ufc-follow-author-widget//ufc-follow-widget/ufc-follow-button//button    Follow
     
     #Select Frame  //*[@id="maincontent"]/div[1]/div[1]/div[2]/div/div/div/header/h1/ufc-follow-author-widget//ufc-follow-widget/ufc-follow-button//button
     #//*[@id="maincontent"]/div[1]/div[1]/div[2]/div/div/div/header/h1/ufc-follow-author-widget//ufc-follow-widget/ufc-follow-button//button
