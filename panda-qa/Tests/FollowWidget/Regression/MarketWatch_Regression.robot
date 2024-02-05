@@ -49,7 +49,7 @@ Validate the Market Watch Preference Center page
 #US-T28
 Validate Authors for MarketWatch Article page without byline
     [Documentation]  This test case validates authors without byline for Market Watch article page
-    [Tags]  Regression  Author  Article
+    [Tags]  Regression  Author  Article           TagMWAB
 
     CommonFunctionality.Start Market Watch Article without byline
     MarketWatchArticlePage.Validate author without byline
@@ -85,7 +85,7 @@ Validate the Watchlist widget from Watchlist page
 #US-T149
 Validate the MW digest notification
     [Documentation]  This test case validates the MW digest notification
-    [Tags]  Regression  Notifications
+    [Tags]  Regression  Notifications      Tag MWD
     MarketWatchMailboxPage.Navigate Mailbox page
     MarketWatchMailboxPage.Login
     MarketWatchMailboxPage.Select Inbox
@@ -95,7 +95,7 @@ Validate the MW digest notification
 #US-T122
 Validate the MW real-time author notification
     [Documentation]  This test case validates the MW real-time author notification
-    [Tags]  Regression  Notifications  Author
+    [Tags]  Regression  Notifications  Author             TagMAN
     MarketWatchMailboxPage.Navigate Mailbox page
     MarketWatchMailboxPage.Login
     MarketWatchMailboxPage.Select Inbox
@@ -105,7 +105,7 @@ Validate the MW real-time author notification
 #US-T146
 Validate the MW real-time company notification
     [Documentation]  This test case validates the MW real-time company notification
-    [Tags]  Regression  Notifications  Company  Tag1
+    [Tags]  Regression  Notifications  Company   TagMCN
     MarketWatchMailboxPage.Navigate Mailbox page
     MarketWatchMailboxPage.Login
     MarketWatchMailboxPage.Select Inbox

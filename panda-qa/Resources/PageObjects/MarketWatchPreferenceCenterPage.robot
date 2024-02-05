@@ -24,9 +24,9 @@ Validate Followed Authors
     Page Should Contain  Authors
 
 Validate Following Toggle Feature
-    Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div
+    #Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div   timeout=20s
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table/tbody/tr/td[3]/div
-# Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[2]/div/div/div/table/tbody/tr/td[3]/div  timeout=45s
+    Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[2]/div/div/div/table/tbody/tr/td[3]/div  timeout=45s
 
 Click Following Toggle Feature
     IF  ${Env} == "prod"
@@ -34,12 +34,12 @@ Click Following Toggle Feature
     ELSE IF  ${Env} == "dev"
         Click Element  //*[text()="Angela Moore"]/../../../../td[4]/div
     END
+
 Validate Following Toggle Alert Pop up
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[1]/div/div/a
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table/thead/tr/th/div/button  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[1]/div/div/a
 
 Click Following Toggle Alert Pop up
-    Click Button  //*[@id="root"]/div/div/div/div[3]/div/div/button  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[1]/div/div/a
-
+    Click Button  //*[@id="root"]/div/div/div/div[2]/div/div/div/table/thead/tr/th/div/button  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[1]/div/div/a  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table/thead/tr/th/div/button
 
 Validate Author Updates From Preference Center Reflected In Articles
     Click Button  //*[@id="root"]/div/div/div/div[2]/div[2]/div/div/button
