@@ -101,8 +101,8 @@ Validate MW real-time company notification for Postback
     Page Should Contain Element  //a[text()="Read More "]
     Page Should Contain Element  //a[text()="Preferences"]
     Page Should Contain Element  //a[text()="Unsubscribe"]
-    #Page Should Contain Element  //a[text()="Privacy Policy"]  #//a[text()="Privacy Notice"]
-    #Page Should Contain Element  //a[text()="Cookie Policy"]  #//a[text()="Cookie Notice"]
+    Page Should Contain Element  //a[text()="Privacy Policy"]  #//a[text()="Privacy Notice"]
+    Page Should Contain Element  //a[text()="Cookie Policy"]  #//a[text()="Cookie Notice"]
 
 Unsubscribe the mails
     Page Should Contain Element  //div[text()="Unsubscribe"]
