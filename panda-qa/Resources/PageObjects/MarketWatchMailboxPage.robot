@@ -97,7 +97,7 @@ Validate MW real-time company notification for Postback
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
     Page Should Contain Element   //a[text()="Is this email difficult to read? View in browser"]  #//a[text()="View in web browser ›"]
-    Page Should Contain Element  //div/span[text()="Amazon"]  #//*[text()="GOOGLE (U.S.: Nasdaq)"]
+    Page Should Contain Element  //div/span[text()='Amazon.com']  #//*[text()="GOOGLE (U.S.: Nasdaq)"]
     Page Should Contain Element  //a[text()="Read More "]
     Page Should Contain Element  //a[text()="Preferences"]
     Page Should Contain Element  //a[text()="Unsubscribe"]

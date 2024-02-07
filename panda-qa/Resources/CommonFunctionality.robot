@@ -358,7 +358,7 @@ Start MarketWatch for Watchlist page
     IF  ${Env} == "prod"
         Go To  https://www.marketwatch.com/watchlist?mod=top_nav
     ELSE IF  ${Env} == "dev"
-        Go To  https://www.s.dev.marketwatch.com/watchlist
+        Go To  https://www.dev.marketwatch.com
     END
     Maximize Browser Window
 

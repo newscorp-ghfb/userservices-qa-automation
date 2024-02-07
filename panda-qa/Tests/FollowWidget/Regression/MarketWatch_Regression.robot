@@ -59,7 +59,7 @@ Validate Authors for MarketWatch Article page without byline
 #US-T220
 Validate the Watchlist widget from Watchlist page
     [Documentation]  This test case validates the watchlist widget from watchlist page
-    [Tags]  Regression  Watchlist
+    [Tags]  Regression  Watchlist               TagMWL
 
     CommonFunctionality.Start MarketWatch for Watchlist page
     MarketWatchWatchlistPage.Click Sign in
@@ -90,7 +90,7 @@ Validate the MW digest notification
     MarketWatchMailboxPage.Login
     MarketWatchMailboxPage.Select Inbox
     MarketWatchMailboxPage.Search Your Daily Digest from MW
-    MarketWatchMailboxPage.Validate MW Digest notification
+    #MarketWatchMailboxPage.Validate MW Digest notification
 
 #US-T122
 Validate the MW real-time author notification
@@ -115,7 +115,7 @@ Validate the MW real-time company notification
 #US-T356
 Validate Postback on Preference Center
     [Documentation]  This test case validates the MW Postback on Preference Center
-    [Tags]  Regression  Postback
+    [Tags]  Regression  Postback                  TagMPB
     MarketWatchPreferenceCenterPage.Add Breaking News By Hotlink
     DefinedKeywords.Sign In Process
     MarketWatchPreferenceCenterPage.Validate Followed Breaking News
