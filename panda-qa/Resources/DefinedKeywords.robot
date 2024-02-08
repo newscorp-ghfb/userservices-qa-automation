@@ -22,11 +22,11 @@ Sign In Process
         ${Email}=  Set Variable  ${Email_dev}
         ${Password}=  Set Variable  ${Password_dev}
     END
-    Wait Until Element Is Visible  //input[@type='email']  #//input[@type='text']
+    Wait Until Element Is Visible  //input[@type='email']
     Click Button  //input[@type='email']
     Input Text  //input[@type='email']  ${Email}
     Set Selenium Implicit Wait  10s
-    Click Element  //span[text()="Continue"]  #Click Element  //html/body/div[2]/div[2]/main/div[2]/div/div/div[2]/form/div[2]/input
+    Click Element  //span[text()="Continue"]
     Set Selenium Implicit Wait  10s
     Wait Until Element Is Visible  //*[@id="password-login-password"]
     Input Text  //*[@id="password-login-password"]  ${Password}
@@ -69,29 +69,15 @@ WSJ Sign In Process
     Click Button  //input[@type='text']
     Input Text  //input[@type='text']  priyanka.bhoomraogari@dowjones.com  #isaias.iniguez@dowjones.com
     Set Selenium Implicit Wait  10s
-    Click Button  //*[@id="basic-login"]/div[1]/form/div[2]/div[6]/div[1]/button[2]  #//*[@id="form20"]/div[2]/input
+    Click Button  //*[@id="form20"]/div[2]/input  #//*[@id="basic-login"]/div[1]/form/div[2]/div[6]/div[1]/button[2]
     Set Selenium Implicit Wait  10s
     Wait Until Element Is Visible  //input[@type='password']  #//*[@id="password-login-password"]
     Input Text  //input[@type='password']  January2024  #//*[@id="password-login-password"]  #Cuceis19841234!
     Set Selenium Implicit Wait  10s
     Click Button  //input[@type='submit']  #//*[@id="password-login"]/div/form/div/div[5]/div[1]/button
     Sleep  30s
-    Set Selenium Implicit Wait  0.01s
-    Wait Until Element Is Not Visible  //input[@type='submit']  #//*[@id="password-login"]/div/form/div/div[5]/div[1]/button
-
-New WSJ Sign In Process
-    Click Button  //input[@type='text']
-    Input Text  //input[@type='text']  newsroomdev.test.6@dowjones.com  #priyanka.bhoomraogari@dowjones.com  #isaias.iniguez@dowjones.com
-    Set Selenium Implicit Wait  10s
-    Click Button  //*[@id="basic-login"]/div[1]/form/div[2]/div[6]/div[1]/button[2]  #//*[@id="form20"]/div[2]/input
-    Set Selenium Implicit Wait  10s
-    Wait Until Element Is Visible  //input[@type='password']  #//*[@id="password-login-password"]
-    Input Text  //input[@type='password']  68L91AbU?98&T-Ryk7h|c}Q:uX  #January2024  #//*[@id="password-login-password"]  #Cuceis19841234!
-    Set Selenium Implicit Wait  10s
-    Click Button  //input[@type='submit']  #//*[@id="password-login"]/div/form/div/div[5]/div[1]/button
-    Sleep  30s
-    Set Selenium Implicit Wait  0.01s
-    Wait Until Element Is Not Visible  //input[@type='submit']  #//*[@id="password-login"]/div/form/div/div[5]/div[1]/button
+    #Set Selenium Implicit Wait  0.01s
+    #Wait Until Element Is Not Visible  //input[@type='submit']  #//*[@id="password-login"]/div/form/div/div[5]/div[1]/button
 
 Accept Cookies
     Click Button  //*[@id="notice"]/div[4]/div/div[2]/button[2]
