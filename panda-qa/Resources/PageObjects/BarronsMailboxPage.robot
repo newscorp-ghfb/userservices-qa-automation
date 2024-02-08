@@ -79,7 +79,7 @@ Validate Barrons real-time company notification
     Page Should Contain Element  //a[contains(text(),'View in browser')]
     Page Should Contain Element  //div/span[text()='Amazon.com']
     Page Should Contain Element  //div/span[text()='Inc']
-    Page Should Contain Element  //a[text()="Read More "]
+    Page Should Contain Element  //a[text()="Read More"]
     Page Should Contain Element  //a[text()="Alerts Center"]
     Page Should Contain Element  //a[text()="Contact Us"]
     Page Should Contain Element  //a[text()="Unsubscribe"]

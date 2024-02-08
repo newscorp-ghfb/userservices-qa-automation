@@ -1,7 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
 Resource  ../Resources/DefinedKeywords.robot
-Resource    PageObjects/WSJPreferenceCenterPage.robot
 
 *** Variables ***
 
@@ -9,12 +8,11 @@ ${Browser}=  chrome  #headless, ff, chrome, edge, safari
 
 ${Env}=  dev  #dev, prod
 
-
 ${Email_prod}=  barronsadvisorcs@gmail.com
 
 ${Password_prod}=  password1
 
-${Email_dev}=  QABARRONSONLY
+${Email_dev}=  QABARRONSONLY  #priyanka.bhoomraogari@dowjones.com  #
 
 ${Password_dev}=  password1
 
@@ -123,12 +121,7 @@ Start WSJ Article
         Open Browser  https://www.s.dev.wsj.com  ${Browser}  options=${options}
         Go To  https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     END
-    #Wait Until Element Is Visible  //*[text()="Dave Michaels"]
-    #Set Focus To Element  //*[text()="Dave Michaels"]
-    #Wait Until Element Is Visible  dom:${JSSignInPath}  30s
     Maximize Browser Window
-    Sleep    20 seconds
-
 
 Start Market Watch Article
     Set Selenium Speed  1 seconds
@@ -139,8 +132,10 @@ Start Market Watch Article
     ELSE IF  "${Env}" == "dev"
         Open Browser  https://www.dev.marketwatch.com  ${Browser}  options=${options}
         Go To  https://www.dev.marketwatch.com/author/Catey-Hill
+
 #        Wait Until Page Contains Element  //*[@id="cx-scrim-wrapper"]/button
 #        Click Button  //*[@id="cx-scrim-wrapper"]/button
+
     END
 #    Wait Until Page Contains Element  dom:${JSFollowButtonMWPath}
     Maximize Browser Window
@@ -420,8 +415,10 @@ Start MarketWatch for Watchlist page
     Set Selenium Speed  0.5 seconds
     IF  "${Env}" == "prod"
         Go To  https://www.marketwatch.com/watchlist?mod=top_nav
+
     ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.marketwatch.com/watchlist
+
     END
     Maximize Browser Window
 

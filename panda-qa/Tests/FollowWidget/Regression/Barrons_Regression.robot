@@ -151,14 +151,14 @@ Validate the Watchlist widget from Market Data page
     Set Selenium Speed  0.5 seconds
     Capture Page Screenshot    screenshot.png
     BarronsMarketDataPage.Validate Market Data Page
-    #BarronsMarketDataPage.Click Create Button
-    #BarronsMarketDataPage.Type Watchlist Name
+    BarronsMarketDataPage.Click Create Button
+    BarronsMarketDataPage.Type Watchlist Name
     #BarronsMarketDataPage.Type Symbol
     #BarronsMarketDataPage.Select Symbol
     #BarronsMarketDataPage.Validate Symbol in the New Watchlist
     #BarronsMarketDataPage.Save Watchlist Changes
-    BarronsMarketDataPage.Create Watchlist With Add
-    BarronsMarketDataPage.Type Watchlist Name
+    #BarronsMarketDataPage.Create Watchlist With Add
+    #arronsMarketDataPage.Type Watchlist Name
     #BarronsMarketDataPage.Save Watchlist Changes
     #BarronsMarketDataPage.Edit Watchlist Name
     #BarronsMarketDataPage.Save Watchlist Changes

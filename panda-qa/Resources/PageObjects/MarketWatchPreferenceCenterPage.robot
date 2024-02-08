@@ -15,19 +15,21 @@ Navigate Preference Center page
     ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.marketwatch.com/follow
     END
+
 Navigate Article page
     IF  "${Env}" == "prod"
         Go To  https://www.marketwatch.com/story/is-the-u-s-stock-market-closed-on-juneteenth-what-investors-need-to-know-11655230158
     ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.marketwatch.com/story/lisa-bb-test-11645706835
     END
+
 Validate Followed Authors
     Page Should Contain  Authors
 
 Validate Following Toggle Feature
-    Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div
+    #Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div   timeout=20s
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table/tbody/tr/td[3]/div
-# Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[2]/div/div/div/table/tbody/tr/td[3]/div  timeout=45s
+    Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[2]/div/div/div/table/tbody/tr/td[3]/div  timeout=45s
 
 Click Following Toggle Feature
     IF  "${Env}" == "prod"
@@ -35,12 +37,12 @@ Click Following Toggle Feature
     ELSE IF  "${Env}" == "dev"
         Click Element  //*[text()="Angela Moore"]/../../../../td[4]/div
     END
+
 Validate Following Toggle Alert Pop up
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[1]/div/div/a
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table/thead/tr/th/div/button  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[1]/div/div/a
 
 Click Following Toggle Alert Pop up
-    Click Button  //*[@id="root"]/div/div/div/div[3]/div/div/button  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[1]/div/div/a
-
+    Click Button  //*[@id="root"]/div/div/div/div[2]/div/div/div/table/thead/tr/th/div/button  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[1]/div/div/a  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table/thead/tr/th/div/button
 
 Validate Author Updates From Preference Center Reflected In Articles
     Click Button  //*[@id="root"]/div/div/div/div[2]/div[2]/div/div/button
@@ -77,11 +79,12 @@ Add Company By Hotlink
 
 
 Validate Followed Companies
-    Page Should Contain  Companies
+    Page Should Contain Element  //html/body/div[1]/div/div/div/div[2]/div/div/div/table[3]/thead/tr/th[1]
 
 Validate Company Frequency
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[2]/div/label[1]/span[2]
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[2]/div/label[2]/span[2]
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[4]  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[2]/div/label[1]/span[2]
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[4]/span[1]  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[2]/div/label[2]/span[2][2]
+
 
 Validate Company Quote Link
     Page Should Contain Element   //*[text()="Amazon.com, Inc."]
