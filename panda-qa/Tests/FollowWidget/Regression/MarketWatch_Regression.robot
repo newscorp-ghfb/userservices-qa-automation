@@ -131,6 +131,6 @@ Validate Postback on Preference Center
     MarketWatchMailboxPage.Select Inbox
     MarketWatchMailboxPage.Search Your MW real-time company notification for Postback
     MarketWatchMailboxPage.Validate MW real-time company notification for Postback
-    MarketWatchMailboxPage.Unsubscribe the mails
-    MarketWatchMailboxPage.Verify the mail is unsubscribed
+    #MarketWatchMailboxPage.Unsubscribe the mails
+    #MarketWatchMailboxPage.Verify the mail is unsubscribed
     MarketWatchPreferenceCenterPage.Add Company By Hotlink

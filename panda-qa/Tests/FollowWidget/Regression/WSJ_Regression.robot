@@ -536,7 +536,7 @@ Validate the WSJ real-time author notification
 #US-T154
 Validate the WSJ real-time company notification
     [Documentation]  This test case validates the WSJ real-time company notification
-    [Tags]  Regression  Notifications  Company
+    [Tags]  Regression  Notifications  Company           TagWCN
     WSJMailboxPage.Navigate Mailbox page
     WSJMailboxPage.Login
     WSJMailboxPage.Select Inbox
