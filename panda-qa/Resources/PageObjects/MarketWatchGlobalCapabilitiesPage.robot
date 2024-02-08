@@ -2,6 +2,7 @@
 Library  SeleniumLibrary
 Resource  ../../Resources/CommonFunctionality.robot
 
+
 *** Variables ***
 ${JSFollowButtonBarronsPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
     ...  .querySelector('ufc-follow-widget')  #2
@@ -12,9 +13,9 @@ ${JSFollowButtonBarronsPath}=  document.querySelector('ufc-follow-author-widget'
 *** Keywords ***
 
 Navigate Capabilities Dashboard page
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://int-prod-capabilities-dashboard.vir.onservo.com/app
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://int-int-capabilities-dashboard.vir-dev.onservo.com/app
     END
 
@@ -43,24 +44,25 @@ Validate Following Button
 
 Validate Authors Reflected On Dashboard
     ${Totalauthorsubs} = Get Value  //*[text()="Total subscriptions"]/../div[2]
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.barrons.com/follow?alert=author&id=6151_BARRONS&frequency=realtime
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.barrons.com/follow?alert=author&id=6151_BARRONS&frequency=realtime
     END
     Navigate Capabilities Dashboard page
     Click Author Tab
     ${Totalauthorsubs2} = Get Value  //*[text()="Total subscriptions"]/../div[2]
     ${Totalauthorsubs2} == ${Totalauthorsubs} + 1
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.barrons.com/follow
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.barrons.com/follow
     END
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.barrons.com/follow
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Click Button  //*[@href="https://www.s.dev.barrons.com/authors/6151?mod=followUI"]/../../../../*/*[@role="switch"]
+
     END
 
 
@@ -85,23 +87,23 @@ Validate Custom Topic On Dashboard
 
 Validate Company Reflected On Dashboard
     ${Totalauthorsubs} = Get Value  //*[text()="Total subscriptions"]/../div[2]
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.barrons.com/follow?alert=company&fcode=SGPM
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.barrons.com/follow?alert=company&fcode=SGPM
     END
     Navigate Capabilities Dashboard page
     Click Author Tab
     ${Totalauthorsubs2} = Get Value  //*[text()="Total subscriptions"]/../div[2]
     ${Totalauthorsubs2} == ${Totalauthorsubs} + 1
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.barrons.com/follow
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.barrons.com/follow
     END
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.barrons.com/follow
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Click Button  //*[@href="https://www.s.dev.barrons.com/market-data/stocks/eQSGO"]/../../../*/*[@role="switch"]
     END
 
@@ -114,23 +116,23 @@ Validate Company On Search Tab
 
 Validate Industry Reflected On Dashboard
     ${Totalauthorsubs} = Get Value  //*[text()="Total subscriptions"]/../div[2]
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.barrons.com/follow?alert=industry&fcode=indcera
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.barrons.com/follow?alert=industry&fcode=indcera
     END
     Navigate Capabilities Dashboard page
     Click Author Tab
     ${Totalauthorsubs2} = Get Value  //*[text()="Total subscriptions"]/../div[2]
     ${Totalauthorsubs2} == ${Totalauthorsubs} + 1
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.barrons.com/follow
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.barrons.com/follow
     END
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.barrons.com/follow
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Click Button  //*[text()="Industrial Ceramics"]/../../*/*[@role="switch"]
     END
 

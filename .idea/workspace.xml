@@ -6,7 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated relevant Xpath and Element ID for WSJ Sign In Process and WSJ mailbox page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" afterDir="false" />
+
+
+      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/DefinedKeywords.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/DefinedKeywords.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/BarronsMailboxPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/BarronsMailboxPage.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/Barrons_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/Barrons_Regression.robot" afterDir="false" />
+
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Akhilesh-Regression-Testing-Latest" />
+        <entry key="$PROJECT_DIR$" value="Akhilesh-BarronsRegression" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,6 +36,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="Merge_develop_To_main" />
+                    <option name="lastUsedInstant" value="1706218557" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="Archana_MG_Regression_2432" />
                     <option name="lastUsedInstant" value="1704484150" />
@@ -80,13 +90,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "Akhilesh-Regression-Testing",
-    "last_opened_file_path": "D:/Codes/Jenkins_2050/userservices-qa-automation"
+
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+
+    &quot;git-widget-placeholder&quot;: &quot;Akhilesh-BarronsRegression&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Codes/Jenkins_2050/userservices-qa-automation&quot;
+
+
   }
 }]]></component>
   <component name="ReadonlyStatusHandler">
@@ -96,6 +110,72 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Codes\Jenkins_2050\userservices-qa-automation\panda-qa\Tests\FollowWidget\Smoke" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="userservices-qa-automation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="userservices-qa-automation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Docutils task">
+      <module name="userservices-qa-automation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Sphinx task">
+      <module name="userservices-qa-automation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -326,12 +406,32 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added chrome code for jenkins" />
+
+    <option name="LAST_COMMIT_MESSAGE" value="added chrome code for jenkins" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="robot-line">
+          <url>file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/MarketWatchPreferenceCenterPage.robot</url>
+          <line>36</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="robot-line">
+          <url>file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/MansionGlobalPreferenceCenterPage.robot</url>
+          <line>59</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+
     <MESSAGE value="Updated the Xpath value for View in Web Browser optionBarron's daily digest notification." />
     <MESSAGE value="Updated the Xpath value for Company Follow feature on Barron's Preference Center page." />
     <MESSAGE value="Updated the relevant Element IDs and Xpath for the validation of Barron's watchlist widget and Barron's Market data page." />
     <MESSAGE value="Updated the relevant Xpath and Element IDs for Barron's Market Data page." />
     <MESSAGE value="Updated the SignInHeader Path for Barron's article page and Xpath for Barron's Postback functionality" />
     <MESSAGE value="Updated Xpath and Element IDs for Barron's Quotes page" />
+
     <MESSAGE value="Updated Xpath for Barron's Mailbox page, Preference Center page and Barron's defined keywords for Sign-In Process" />
     <MESSAGE value="Updated Sign Process Xpath value for input of email for WSJ Sign In Process" />
     <MESSAGE value="Updated Sign Process Xpath value under defined keywords for input of email for WSJ Sign In Process" />
@@ -346,5 +446,6 @@
     <MESSAGE value="Updated relevant Xpath and Element ID for Marketwatch real-time company notification for Postback" />
     <MESSAGE value="Updated relevant Xpath and Element ID for WSJ Sign In Process and WSJ mailbox page" />
     <option name="LAST_COMMIT_MESSAGE" value="Updated relevant Xpath and Element ID for WSJ Sign In Process and WSJ mailbox page" />
+
   </component>
 </project>

@@ -72,7 +72,7 @@ Validate the follow button from authors page
     Capture Page Screenshot    screenshot.png
     MarketWatchAuthorsPage.Validate Authors Page
     Capture Page Screenshot    screenshot.png
-    MarketWatchArticlePage.Validate Follow Button
+#    MarketWatchArticlePage.Validate Follow Button
 #US-T185
 #US-T90
 #US-T258

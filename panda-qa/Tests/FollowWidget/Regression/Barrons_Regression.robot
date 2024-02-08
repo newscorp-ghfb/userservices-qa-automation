@@ -31,20 +31,22 @@ Validate the multiple authors follow button from articles page
 
     BarronsArticlePage.Validate Follow Button 2
     BarronsArticlePage.Click Follow Button 2
-#    BarronsArticlePage.Validate Sign In Modal
-#    DefinedKeywords.Sign In Process
-#    Set Selenium Speed  0.2 seconds
-#    BarronsArticlePage.Validate Following Button 2
-#    BarronsArticlePage.Click Follow Button 2
-#    BarronsArticlePage.Validate Following Button 2
-#    BarronsArticlePage.Click Following Button
-#    BarronsArticlePage.Click Undo Link
-#    BarronsArticlePage.Validate Following Button
+
+    BarronsArticlePage.Validate Sign In 2 Modal
+    DefinedKeywords.Sign In Process
+    Set Selenium Speed  0.2 seconds
+    BarronsArticlePage.Validate Following Button 2
+    BarronsArticlePage.Click Follow Button 2
+    BarronsArticlePage.Validate Following Button 2
+    BarronsArticlePage.Click Following Button
+    BarronsArticlePage.Click Undo Link
+    BarronsArticlePage.Validate Following Button
 #    BarronsArticlePage.Click Following Button 2
 #    BarronsArticlePage.Click Undo Link 2
-#    BarronsArticlePage.Validate Following Button 2
-#    BarronsPreferenceCenterPage.Navigate Preference Center page
-#    BarronsPreferenceCenterPage.Validate Preference Center page
+    BarronsArticlePage.Validate Following Button 2
+    BarronsPreferenceCenterPage.Navigate Preference Center page
+    BarronsPreferenceCenterPage.Validate Preference Center page
+
 #    BarronsPreferenceCenterPage.Validate Author 1
 #    BarronsPreferenceCenterPage.Validate Author 2
 
@@ -78,8 +80,8 @@ Validate the Barrons Preference Center page
     BarronsPreferenceCenterPage.Click Company Toggle Feature
     BarronsPreferenceCenterPage.Validate Following Toggle Alert Pop up
     BarronsPreferenceCenterPage.Click Following Toggle Alert Pop up
-    #BarronsPreferenceCenterPage.Navigate Article page
-    #BarronsArticlePage.Scroll stories
+    BarronsPreferenceCenterPage.Click Barrons tab
+    BarronsPreferenceCenterPage.Validate Company Quote Link Not exists
 
 
 #US-T26
