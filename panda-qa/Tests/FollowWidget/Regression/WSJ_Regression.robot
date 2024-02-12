@@ -23,7 +23,7 @@ Test Setup  CommonFunctionality.Start WSJ Article
 #US-T75
 Validate the multiple authors follow button from articles page
     [Documentation]  This test case validates the multiple authors follow button from articles page
-    [Tags]  Regression  Author  Follow  Article
+    [Tags]  Regression  Author  Follow  Article        TagWMA
 
     WSJArticlePage.Validate Follow Button
     WSJArticlePage.Click Follow Button
@@ -402,7 +402,7 @@ Validate the follow button for Elections breadcrumb from Elections page
 #US-T133
 #US-T134
 Validate the WSJ Preference Center page for Elections breadcrumb
-    [Documentation]  This test case validates the barrons preference center page
+    [Documentation]  This test case validates the WSJ preference center page
     [Tags]  Regression  PreferenceCenter  Breadcrumb
 
     Set Selenium Speed  0.2 seconds
@@ -459,7 +459,7 @@ Validate the follow button for Elections breadcrumb from articles page
 #US-T223
 Validate the Watchlist widget from Watchlist page
     [Documentation]  This test case validates the watchlist widget from watchlist page
-    [Tags]  Regression  Watchlist
+    [Tags]  Regression  Watchlist                      TagWWL
 
     CommonFunctionality.Start WSJ for Watchlist page
     DefinedKeywords.Sign In Process
@@ -487,7 +487,7 @@ Validate the Watchlist widget from Watchlist page
 #US-T271
 Validate the alert button for Board Pack Exclusive from articles page
     [Documentation]  This test case validates the alert button for Board Pack Exclusive from articles pag
-    [Tags]  Regression Alerts  CustomTopic  Article
+    [Tags]  Regression Alerts  CustomTopic  Article            TagWCT
     CommonFunctionality.Start WSJ Article for Board Pack Exclusive
     #WSJArticlePage.Validate Custom Following Button
     WSJArticlePage.Click Board Pack Exclusive Button
@@ -516,7 +516,7 @@ Validate the alert button for Board Pack Exclusive from articles page
 #US-T153
 Validate the WSJ digest notification
     [Documentation]  This test case validates the WSJ digest notification
-    [Tags]  Regression  Notifications
+    [Tags]  Regression  Notifications         TagWDD
     WSJMailboxPage.Navigate Mailbox page
     WSJMailboxPage.Login
     WSJMailboxPage.Select Inbox
@@ -526,7 +526,7 @@ Validate the WSJ digest notification
 #US-T124
 Validate the WSJ real-time author notification
     [Documentation]  This test case validates the WSJ real-time author notification
-    [Tags]  Regression  Notifications  Author
+    [Tags]  Regression  Notifications  Author        TagWAN
     WSJMailboxPage.Navigate Mailbox page
     WSJMailboxPage.Login
     WSJMailboxPage.Select Inbox
@@ -806,7 +806,7 @@ Validate the alert button for Energy
 #US-T361
 Validate Postback on Preference Center
     [Documentation]  This test case validates the WSJ Postback on Preference Center
-    [Tags]  Regression  Postback
+    [Tags]  Regression  Postback                      TagWPB
     WSJPreferenceCenterPage.Add Breaking News By Hotlink
     DefinedKeywords.Sign In Process
     WSJPreferenceCenterPage.Validate Followed Breaking News
