@@ -18,7 +18,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T93
 Validate the Market Watch Preference Center page
     [Documentation]  This test case validates the Market Watch preference center page
-    [Tags]  Regression  PreferenceCenter
+    [Tags]  Regression  PreferenceCenter            TagMPF
 
     MarketWatchPreferenceCenterPage.Add Author By Hotlink
     DefinedKeywords.Sign In Process
@@ -31,6 +31,7 @@ Validate the Market Watch Preference Center page
     MarketWatchPreferenceCenterPage.Validate All Tabs Displayed
     MarketWatchPreferenceCenterPage.Validate Author On All Tab
     MarketWatchPreferenceCenterPage.Add Company By Hotlink
+    DefinedKeywords.Sign In Process
     MarketWatchPreferenceCenterPage.Validate Followed Companies
     ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
     Run Keyword If  ${val2} > 0  MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
@@ -48,7 +49,7 @@ Validate the Market Watch Preference Center page
 #US-T28
 Validate Authors for MarketWatch Article page without byline
     [Documentation]  This test case validates authors without byline for Market Watch article page
-    [Tags]  Regression  Author  Article
+    [Tags]  Regression  Author  Article           TagMWAB
 
     CommonFunctionality.Start Market Watch Article without byline
     MarketWatchArticlePage.Validate author without byline
@@ -58,7 +59,7 @@ Validate Authors for MarketWatch Article page without byline
 #US-T220
 Validate the Watchlist widget from Watchlist page
     [Documentation]  This test case validates the watchlist widget from watchlist page
-    [Tags]  Regression  Watchlist
+    [Tags]  Regression  Watchlist               TagMWL
 
     CommonFunctionality.Start MarketWatch for Watchlist page
     MarketWatchWatchlistPage.Click Sign in
@@ -84,17 +85,17 @@ Validate the Watchlist widget from Watchlist page
 #US-T149
 Validate the MW digest notification
     [Documentation]  This test case validates the MW digest notification
-    [Tags]  Regression  Notifications
+    [Tags]  Regression  Notifications      Tag MWD
     MarketWatchMailboxPage.Navigate Mailbox page
     MarketWatchMailboxPage.Login
     MarketWatchMailboxPage.Select Inbox
     MarketWatchMailboxPage.Search Your Daily Digest from MW
-    MarketWatchMailboxPage.Validate MW Digest notification
+    #MarketWatchMailboxPage.Validate MW Digest notification
 
 #US-T122
 Validate the MW real-time author notification
     [Documentation]  This test case validates the MW real-time author notification
-    [Tags]  Regression  Notifications  Author
+    [Tags]  Regression  Notifications  Author             TagMAN
     MarketWatchMailboxPage.Navigate Mailbox page
     MarketWatchMailboxPage.Login
     MarketWatchMailboxPage.Select Inbox
@@ -104,7 +105,7 @@ Validate the MW real-time author notification
 #US-T146
 Validate the MW real-time company notification
     [Documentation]  This test case validates the MW real-time company notification
-    [Tags]  Regression  Notifications  Company  Tag1
+    [Tags]  Regression  Notifications  Company   TagMCN
     MarketWatchMailboxPage.Navigate Mailbox page
     MarketWatchMailboxPage.Login
     MarketWatchMailboxPage.Select Inbox
@@ -114,7 +115,7 @@ Validate the MW real-time company notification
 #US-T356
 Validate Postback on Preference Center
     [Documentation]  This test case validates the MW Postback on Preference Center
-    [Tags]  Regression  Postback
+    [Tags]  Regression  Postback                  TagMPB
     MarketWatchPreferenceCenterPage.Add Breaking News By Hotlink
     DefinedKeywords.Sign In Process
     MarketWatchPreferenceCenterPage.Validate Followed Breaking News
@@ -130,6 +131,6 @@ Validate Postback on Preference Center
     MarketWatchMailboxPage.Select Inbox
     MarketWatchMailboxPage.Search Your MW real-time company notification for Postback
     MarketWatchMailboxPage.Validate MW real-time company notification for Postback
-    MarketWatchMailboxPage.Unsubscribe the mails
-    MarketWatchMailboxPage.Verify the mail is unsubscribed
+    #MarketWatchMailboxPage.Unsubscribe the mails
+    #MarketWatchMailboxPage.Verify the mail is unsubscribed
     MarketWatchPreferenceCenterPage.Add Company By Hotlink

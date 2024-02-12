@@ -47,6 +47,7 @@ Validate Follow Button
     Wait Until Element is Visible  dom:${JSFollowButtonMWPath}
 #    Select Frame  //*[@id="LOCSTORAGE"]
     #Element Should Contain  //*[@id="maincontent"]/div[1]/div[1]/div[2]/div/div/div/header/h1/ufc-follow-author-widget//ufc-follow-widget/ufc-follow-button//button    Follow
+
     
     #Select Frame  //*[@id="maincontent"]/div[1]/div[1]/div[2]/div/div/div/header/h1/ufc-follow-author-widget//ufc-follow-widget/ufc-follow-button//button
     #//*[@id="maincontent"]/div[1]/div[1]/div[2]/div/div/div/header/h1/ufc-follow-author-widget//ufc-follow-widget/ufc-follow-button//button
@@ -96,7 +97,7 @@ Click author hyperlink
     Click Element  //span[@class='link']/span[text()='Catey Hill']/..
 
 Validate author without byline
-    Page Should Contain Element  //div[1]/div[1]/div[2]/div[2]/div/a/h4[contains(., 'Jonathan Burton')]
+    Page Should Contain Element  //div[1]/div[1]/div[1]/div/header/h1[contains(., 'Catey Hill')]
 
 
 

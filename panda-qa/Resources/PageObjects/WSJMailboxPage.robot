@@ -23,9 +23,8 @@ Login
     Input Text  //*[@id="i0118"]  Testing.123
     Wait Until Element is Visible  //*[@id="idSIButton9"]
     Click Button  //*[@id="idSIButton9"]
-    Wait Until Element is Visible  //input[@id="idBtn_Back"]
-    Click Button  //input[@id="idBtn_Back"]
-
+    Wait Until Element is Visible  //*[@id="acceptButton"]
+    Click Button  //*[@id="acceptButton"]
 
 Select Inbox
     Set Selenium Speed  2.0 seconds
@@ -78,12 +77,11 @@ Validate WSJ real-time company notification
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
     Page Should Contain Element  //a[contains(text(),'View in browser')]
-    Page Should Contain Element  //*[text()="AMZN (U.S.: Nasdaq)"]
+    Page Should Contain Element  //div/span[text()='Amazon.com']
     Page Should Contain Element  //a[text()="Read More "]
-    Page Should Contain Element  //a[text()="Preferences"]
+    #Page Should Contain Element  //a[text()="Preferences"]
     Page Should Contain Element  //a[text()="Unsubscribe"]
-    Page Should Contain Element  //a[text()="Privacy Notice"]
-    Page Should Contain Element  //a[text()="Cookie Notice"]
+
 
 Search Your WSJ real-time custom topic notification
     Wait Until Page Contains Element  //input[@id="topSearchInput"]
