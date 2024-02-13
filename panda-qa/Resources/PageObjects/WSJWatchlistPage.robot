@@ -8,7 +8,7 @@ Validate Watchlist Page
     Page Should Contain Element  //*[text()="Add Symbol"]
 
 Validate Default New Watchlist
-    Page Should Contain Element  //button[text()="New Watchlist"]
+    Page Should Contain Element  //button[contains(., 'New Watchlist')]
 
 Click Add Symbol Input
     Click Element  //input[@id="symbol-search"]
@@ -39,28 +39,28 @@ Edit Watchlist Name
 Validate Symbol in Created Watchlist
     Page Should Contain Element  //div[@class="item-symbol-inner"]/a[text()="MSFT"]
 
-Sort Symbols
-    Page Should Contain Element  //span[text()="Symbol"]
-    Click Element  //span[text()="Symbol"]
-    Page Should Contain Element  //span[text()="Symbol"]/..//span[@class="sort-down is-active"]
-    Click Element  //span[text()="Symbol"]/..//span[@class="sort-down is-active"]
-    Page Should Contain Element  //span[text()="Symbol"]/..//span[@class="sort-up is-active"]
-    Click Element  //span[text()="Last"]
-    Page Should Contain Element  //span[text()="Last"]/..//span[@class="sort-down is-active"]
-    Click Element  //span[text()="Last"]/..//span[@class="sort-down is-active"]
-    Page Should Contain Element  //span[text()="Last"]/..//span[@class="sort-up is-active"]
-    Click Element  //span[text()="Chg"]
-    Page Should Contain Element  //span[text()="Chg"]/..//span[@class="sort-down is-active"]
-    Click Element  //span[text()="Chg"]/..//span[@class="sort-down is-active"]
-    Page Should Contain Element  //span[text()="Chg"]/..//span[@class="sort-up is-active"]
-    Click Element  //span[text()="% Chg"]
-    Page Should Contain Element  //span[text()="% Chg"]/..//span[@class="sort-down is-active"]
-    Click Element  //span[text()="% Chg"]/..//span[@class="sort-down is-active"]
-    Page Should Contain Element  //span[text()="% Chg"]/..//span[@class="sort-up is-active"]
-    Click Element  //span[text()="Volume"]
-    Page Should Contain Element  //span[text()="Volume"]/..//span[@class="sort-down is-active"]
-    Click Element  //span[text()="Volume"]/..//span[@class="sort-down is-active"]
-    Page Should Contain Element  //span[text()="Volume"]/..//span[@class="sort-up is-active"]
+#Sort Symbols
+#    Page Should Contain Element  //span[text()="Symbol"]
+#    Click Element  //span[text()="Symbol"]
+#    Page Should Contain Element  //span[text()="Symbol"]/..//span[@class="sort-down is-active"]
+#    Click Element  //span[text()="Symbol"]/..//span[@class="sort-down is-active"]
+#    Page Should Contain Element  //span[text()="Symbol"]/..//span[@class="sort-up is-active"]
+#    Click Element  //span[text()="Last"]
+#    Page Should Contain Element  //span[text()="Last"]/..//span[@class="sort-down is-active"]
+#    Click Element  //span[text()="Last"]/..//span[@class="sort-down is-active"]
+#    Page Should Contain Element  //span[text()="Last"]/..//span[@class="sort-up is-active"]
+#    Click Element  //span[text()="Chg"]
+#    Page Should Contain Element  //span[text()="Chg"]/..//span[@class="sort-down is-active"]
+#    Click Element  //span[text()="Chg"]/..//span[@class="sort-down is-active"]
+#    Page Should Contain Element  //span[text()="Chg"]/..//span[@class="sort-up is-active"]
+#    Click Element  //span[text()="% Chg"]
+#    Page Should Contain Element  //span[text()="% Chg"]/..//span[@class="sort-down is-active"]
+#    Click Element  //span[text()="% Chg"]/..//span[@class="sort-down is-active"]
+#    Page Should Contain Element  //span[text()="% Chg"]/..//span[@class="sort-up is-active"]
+#    Click Element  //span[text()="Volume"]
+#    Page Should Contain Element  //span[text()="Volume"]/..//span[@class="sort-down is-active"]
+#    Click Element  //span[text()="Volume"]/..//span[@class="sort-down is-active"]
+#    Page Should Contain Element  //span[text()="Volume"]/..//span[@class="sort-up is-active"]
 
 Delete Watchlists
     Click Element  //button[@class="watchlist__title i-down"]

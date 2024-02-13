@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated relevantlink for MarketWatch watchlist page under .DEV environment.">
+    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated relevant XPath for WSJ real-time author and daily-digest notification.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJMailboxPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJMailboxPage.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/DefinedKeywords.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/DefinedKeywords.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJWatchlistPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJWatchlistPage.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/WSJ_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/WSJ_Regression.robot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -307,7 +308,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707406284216</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Updated relevant XPath for WSJ real-time author and daily-digest notification.">
+      <option name="closed" value="true" />
+      <created>1707745781796</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1707745781796</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -355,6 +364,7 @@
     <MESSAGE value="Updated relevant Xpath and Element ID for Marketwatch real-time company notification for Postback" />
     <MESSAGE value="Updated relevant Xpath and Element ID for WSJ Sign In Process and WSJ mailbox page" />
     <MESSAGE value="Updated relevantlink for MarketWatch watchlist page under .DEV environment." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated relevantlink for MarketWatch watchlist page under .DEV environment." />
+    <MESSAGE value="Updated relevant XPath for WSJ real-time author and daily-digest notification." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated relevant XPath for WSJ real-time author and daily-digest notification." />
   </component>
 </project>

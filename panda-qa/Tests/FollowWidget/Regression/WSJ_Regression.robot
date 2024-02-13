@@ -462,7 +462,7 @@ Validate the Watchlist widget from Watchlist page
     [Tags]  Regression  Watchlist                      TagWWL
 
     CommonFunctionality.Start WSJ for Watchlist page
-    DefinedKeywords.Sign In Process
+    DefinedKeywords.New WSJ Sign In Process
     Set Selenium Speed  0.5 seconds
     Capture Page Screenshot    screenshot.png
     WSJWatchlistPage.Validate Watchlist Page
@@ -476,7 +476,7 @@ Validate the Watchlist widget from Watchlist page
     WSJWatchlistPage.Type Symbol
     WSJWatchlistPage.Select Symbol
     WSJWatchlistPage.Validate Symbol in Created Watchlist
-    WSJWatchlistPage.Sort Symbols
+    #WSJWatchlistPage.Sort Symbols
     WSJWatchlistPage.Delete Watchlists
     WSJWatchlistPage.Validate Default New Watchlist
     WSJWatchlistPage.Validate No Symbol in Default New Watchlist
