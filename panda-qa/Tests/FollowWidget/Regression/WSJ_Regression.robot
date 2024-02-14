@@ -52,10 +52,10 @@ Validate the multiple authors follow button from articles page
 #US-T229
 Validate the WSJ Preference Center page
     [Documentation]  This test case validates the WSJ preference center page
-    [Tags]  Regression  PreferenceCenter  TagWPF
+    [Tags]  Regression  PreferenceCenter    TagWPF
 
     WSJPreferenceCenterPage.Add Author By Hotlink
-    DefinedKeywords.Sign In Process
+    DefinedKeywords.New WSJ Sign In Process
     WSJPreferenceCenterPage.Validate Followed Authors
     ${val}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
     Run Keyword If  ${val} > 0  WSJPreferenceCenterPage.Click Following Toggle Alert Pop up
@@ -104,46 +104,41 @@ Validate Authors for WSJ Article page without byline
 #US-T181
 Validate the follow button for Letters breadcrumb from articles page
     [Documentation]  This test case validates the follow button from articles page
-    [Tags]  Regression  Follow  Breadcrumb  Article
+    [Tags]  Regression  Follow  Breadcrumb  Article      TagWLB
     CommonFunctionality.Start WSJ Article for Letters breadcrumb
-    #WSJArticlePage.Validate Custom Following Button
-    WSJArticlePage.Click Custom Follow Button
-    WSJArticlePage.Validate Sign In Modal
-    WSJArticlePage.Click Sign In Button Modal
-    IF  ${Env} == "prod"
-        DefinedKeywords.Market Watch Sign In Process
-    ELSE IF  ${Env} == "dev"
-        DefinedKeywords.Sign In Process
-    END
-    Set Selenium Speed  0.2 seconds
-    WSJArticlePage.Validate Custom Following Button
-    IF  ${Env} == "prod"
-        Set Selenium Speed  0.2 seconds
-    ELSE IF  ${Env} == "dev"
-        Set Selenium Speed  0.35 seconds
-    END
-    WSJArticlePage.Click Custom Following Button
-    WSJArticlePage.Click Undo Link
-    WSJArticlePage.Validate Custom Following Button
-    WSJArticlePage.Click Custom Following Button
-    WSJArticlePage.Validate Custom Follow Button
-    WSJArticlePage.Click Custom Follow Button
-    WSJArticlePage.Click Preference Center link
-    WSJPreferenceCenterPage.Validate Preference Center page
+#    DefinedKeywords.New WSJ Sign In Process
+#    WSJArticlePage.Validate Custom Following Button
+#    WSJArticlePage.Click Custom Follow Button
+#    END
+#    Set Selenium Speed  0.2 seconds
+#    WSJArticlePage.Validate Custom Following Button
+#    IF  ${Env} == "prod"
+#        Set Selenium Speed  0.2 seconds
+#    ELSE IF  ${Env} == "dev"
+#        Set Selenium Speed  0.35 seconds
+#    END
+#    WSJArticlePage.Click Custom Following Button
+#    WSJArticlePage.Click Undo Link
+#    WSJArticlePage.Validate Custom Following Button
+#    WSJArticlePage.Click Custom Following Button
+#    WSJArticlePage.Validate Custom Follow Button
+#    WSJArticlePage.Click Custom Follow Button
+#    WSJArticlePage.Click Preference Center link
+#    WSJPreferenceCenterPage.Validate Preference Center page
 #US-T183
 #US-T182
 #US-T180
 #US-T181
 Validate the WSJ Preference Center page for Letters breadcrumb
     [Documentation]  This test case validates the barrons preference center page
-    [Tags]  Regression  PreferenceCenter  Breadcrumb
+    [Tags]  Regression  PreferenceCenter  Breadcrumb       TagWPL
 
     Set Selenium Speed  0.2 seconds
     WSJPreferenceCenterPage.Navigate Preference Center page
     IF  ${Env} == "prod"
-        DefinedKeywords.Market Watch Sign In Process
+        DefinedKeywords.New WSJ Sign In Process
     ELSE IF  ${Env} == "dev"
-        DefinedKeywords.Sign In Process
+        DefinedKeywords.New WSJ Sign In Process
     END
     WSJPreferenceCenterPage.Validate Followed Custom Topics
     WSJPreferenceCenterPage.Validate Custom Topics Following Toggle Feature
@@ -427,16 +422,16 @@ Validate the WSJ Preference Center page for Elections breadcrumb
 #US-T230
 Validate the follow button for Elections breadcrumb from articles page
     [Documentation]  This test case validates the follow button from articles page
-    [Tags]  Regression  Follow  Breadcrumb  Article
+    [Tags]  Regression  Follow  Breadcrumb  Article           TagWEB
     CommonFunctionality.Start WSJ Article for Elections breadcrumb
-    #WSJArticlePage.Validate Custom Following Button
+    WSJArticlePage.Validate Custom Following Button
     WSJArticlePage.Click Custom Follow Button
-    #WSJArticlePage.Validate Sign In Modal
+    WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
     IF  ${Env} == "prod"
-        DefinedKeywords.Market Watch Sign In Process
+        DefinedKeywords.New WSJ Sign In Process
     ELSE IF  ${Env} == "dev"
-        DefinedKeywords.Sign In Process
+        DefinedKeywords.New WSJ Sign In Process
     END
     Set Selenium Speed  0.2 seconds
     WSJArticlePage.Validate Custom Following Button

@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated relevant XPath for WSJ real-time author and daily-digest notification.">
+    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated New WSJ Sign In Process for the validation of WSJ watchlist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/panda-qa/Resources/DefinedKeywords.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/DefinedKeywords.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJWatchlistPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJWatchlistPage.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJPreferenceCenterPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJPreferenceCenterPage.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/WSJ_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/WSJ_Regression.robot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,6 +69,7 @@
     <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/BarronsQuotesPage.robot" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/BarronsWatchlistPage.robot" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/MarketWatchPreferenceCenterPage.robot" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJPreferenceCenterPage.robot" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/Barrons_Regression.robot" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/WSJ_Regression.robot" root0="SKIP_INSPECTION" />
   </component>
@@ -316,7 +318,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707745781796</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Updated New WSJ Sign In Process for the validation of WSJ watchlist">
+      <option name="closed" value="true" />
+      <created>1707833525233</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1707833525234</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -365,6 +375,7 @@
     <MESSAGE value="Updated relevant Xpath and Element ID for WSJ Sign In Process and WSJ mailbox page" />
     <MESSAGE value="Updated relevantlink for MarketWatch watchlist page under .DEV environment." />
     <MESSAGE value="Updated relevant XPath for WSJ real-time author and daily-digest notification." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated relevant XPath for WSJ real-time author and daily-digest notification." />
+    <MESSAGE value="Updated New WSJ Sign In Process for the validation of WSJ watchlist" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated New WSJ Sign In Process for the validation of WSJ watchlist" />
   </component>
 </project>

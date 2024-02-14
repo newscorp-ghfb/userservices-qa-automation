@@ -181,14 +181,11 @@ Start WSJ Article for Letters breadcrumb
     Set Selenium Speed  0.5 seconds
     IF  ${Env} == "prod"
         Open Browser  https://www.wsj.com  ${Browser}
-        Go To  https://www.wsj.com/articles/mary-eberstadt-furman-university-wsj-scott-yenor-campus-protest-speech-869ce29b
+        Go To  https://www.wsj.com/articles/let-desantis-fight-trump-before-putin-bakhmut-offensive-cease-fire-settlement-kremlin-weapons-b127514a?cx_testId=3&cx_testVariant=cx_171&cx_artPos=1&mod=WTRN#cxrecs_s
     ELSE IF  ${Env} == "dev"
         Open Browser  https://www.s.dev.wsj.com  ${Browser}
         Go To  https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     END
-    #Wait Until Element Is Visible  //*[text()="Dave Michaels"]
-    Set Focus To Element  //*[text()="Letters"]
-    #Wait Until Element Is Visible  dom:${JSFollowButtonMGPath}  30s
     Maximize Browser Window
 
 Start WSJ Letters for Letters breadcrumb
@@ -338,6 +335,15 @@ Start WSJ for Watchlist page
         Go To  https://www.wsj.com/watchlist
     ELSE IF  ${Env} == "dev"
         Go To  https://www.s.dev.wsj.com/watchlist
+    END
+    Maximize Browser Window
+
+Start WSJ for Preference Center page
+    Set Selenium Speed  0.5 seconds
+    IF  ${Env} == "prod"
+        Go To  https://www.wsj.com/follow
+    ELSE IF  ${Env} == "dev"
+        Go To  https://www.s.dev.wsj.com/follow
     END
     Maximize Browser Window
 
