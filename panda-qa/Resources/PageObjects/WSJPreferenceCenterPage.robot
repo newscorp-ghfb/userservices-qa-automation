@@ -97,10 +97,10 @@ Validate Following Toggle Alert Pop up
     Page Should Contain Element  //*[@id="root"]/div[1]/div/div/div/div/div/div/table[1]/tbody/tr/td[4]/div/div  #//*[@id="root"/div/div/div/div[3]/div/span
 
 Click Following Toggle Alert Pop up
-    Click Button  /html/body/div[1]/div/div/div/div[2]/div/div/div/table[2]/thead/tr/th[3]/div/button
+    Click Button  //*[@id="root"]/div[1]/div/div/div/div/div/div/table[1]/tbody/tr/td[4]/div/div
 
 Validate Author Updates From Preference Center Reflected In Articles
-    Click Button  //*[@id="root"]/div/div/div/div[2]/div[2]/div/div/button
+    Click Button  //*[@id="root"]/div/div/div/div[2]/div/div
 
 Add Author By Hotlink
     IF  ${Env} == "prod"
