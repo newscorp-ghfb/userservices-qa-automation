@@ -66,7 +66,7 @@ Validate the FN digest notification
 #US-T120
 Validate the FN real-time author notification
     [Documentation]  This test case validates the FN real-time author notification
-    [Tags]  Regression  Author  Notifications
+    [Tags]  Regression  Author  Notifications    TagFAN
     FNMailboxPage.Navigate Mailbox page
     FNMailboxPage.Login
     FNMailboxPage.Select Inbox
@@ -76,7 +76,7 @@ Validate the FN real-time author notification
 #US-T140
 Validate the FN real-time company notification
     [Documentation]  This test case validates the FN real-time company notification
-    [Tags]  Regression  Company  Notifications
+    [Tags]  Regression  Company  Notifications     TagFCN
     FNMailboxPage.Navigate Mailbox page
     FNMailboxPage.Login
     FNMailboxPage.Select Inbox
