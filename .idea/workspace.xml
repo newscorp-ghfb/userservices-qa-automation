@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated Xpath and element ID for FN article page and FN mailbox page.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/FNMailboxPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/FNMailboxPage.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/FN_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/FN_Regression.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/PENCapabilitiesPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/PENCapabilitiesPage.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/PEN_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/PEN_Regression.robot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,6 +77,7 @@
 }</component>
   <component name="ProjectId" id="2ZRg3HuiRX2lnGXCAkpDSMXTS02" />
   <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">

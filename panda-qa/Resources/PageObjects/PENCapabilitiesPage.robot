@@ -2,6 +2,7 @@
 Library  SeleniumLibrary
 Resource  ../../Resources/CommonFunctionality.robot
 Resource    FNArticlePage.robot
+Resource    PENCapabilitiesPage.robot
 
 *** Variables ***
 ${JSFollowButtonBarronsPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
@@ -13,28 +14,28 @@ ${JSFollowButtonBarronsPath}=  document.querySelector('ufc-follow-author-widget'
 *** Keywords ***
 
 Navigate Capabilities Dashboard page
-    IF  ${Env} == "prod"
+#    IF  ${Env} == "prod"
         Go To  https://int-prod-capabilities-dashboard.vir.onservo.com/app
-    ELSE IF  ${Env} == "dev"
-        Go To  https://int-int-capabilities-dashboard.vir-dev.onservo.com/app
-    END
+#    ELSE IF  ${Env} == "dev"
+#        Go To  https://int-int-capabilities-dashboard.vir-dev.onservo.com/app
+#    END
 
 Click Login button
     IF  ${Env} == "prod"
         Click Element    //*[@id="__next"]/div[1]/div/div
-    ELSE IF  ${Env} == "dev"
-        Click Element    //*[@id="__next"]/div[1]/div/div
+#   ELSE IF  ${Env} == "dev"
+#        Click Element    //*[@id="__next"]/div[1]/div/div
     END
 
 Capabilities Dashboard Sign In Process
-    Click Button    //input[@id='input28']
-    Input Text  //input[@id='input28']  priyanka.bhoomraogari@dowjones.com
+    Click Button  //*[text()="Login"]
+    Input Text  //input[@id='input28']  akhilesh.khanduri@dowjones.com  #priyanka.bhoomraogari@dowjones.com
     Click Button    //input[@type='submit']
     Sleep    15s
 
 Sign In Process
     Wait Until Element Is Visible  //*[@type="password"]
-    Input Text  //*[@type="password"]  January2024
+    Input Text  //*[@type="password"]  AKpolarised@25  #January2024
     Click Button    //input[@type='submit']
     Sleep  30s
 
