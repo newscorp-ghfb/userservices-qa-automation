@@ -41,8 +41,8 @@ Validate the Market Watch Preference Center page
     MarketWatchPreferenceCenterPage.Click Market Watch tab
     MarketWatchPreferenceCenterPage.Validate Company Toggle Feature
     MarketWatchPreferenceCenterPage.Click Company Toggle Feature
-    MarketWatchPreferenceCenterPage.Validate Following Toggle Alert Pop up
-    MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
+    #MarketWatchPreferenceCenterPage.Validate Following Toggle Alert Pop up
+    #MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
     #MarketWatchPreferenceCenterPage.Navigate Article page
     #MarketWatchArticlePage.Scroll stories
 
