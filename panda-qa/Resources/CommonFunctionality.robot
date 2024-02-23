@@ -415,10 +415,15 @@ Start MarketWatch for Watchlist page
     Set Selenium Speed  0.5 seconds
     IF  "${Env}" == "prod"
         Go To  https://www.marketwatch.com/watchlist?mod=top_nav
-
     ELSE IF  "${Env}" == "dev"
-        Go To  https://www.dev.marketwatch.com/watchlist  #https://www.s.dev.marketwatch.com/watchlist
+        Go To  https://www.dev.marketwatch.com/watchlist  #https://www.stg.marketwatch.com/welcome-watchlist   #https://www.s.dev.marketwatch.com/watchlist
+    END
+    Maximize Browser Window
 
+Start MarketWatch for latest Watchlist page
+    Set Selenium Speed  0.5 seconds
+    IF  "${Env}" == "prod"
+        Go To  https://www.marketwatch.com/watchlist?mod=top_nav
     END
     Maximize Browser Window
 

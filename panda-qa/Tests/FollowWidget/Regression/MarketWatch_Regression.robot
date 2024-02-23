@@ -64,7 +64,7 @@ Validate the Watchlist widget from Watchlist page
     CommonFunctionality.Start MarketWatch for Watchlist page
     MarketWatchWatchlistPage.Click Sign in
     DefinedKeywords.Sign In Process
-    CommonFunctionality.Start MarketWatch for Watchlist page
+    CommonFunctionality.Start MarketWatch for latest Watchlist page
     Set Selenium Speed  0.5 seconds
     Capture Page Screenshot    screenshot.png
     MarketWatchWatchlistPage.Validate Watchlist Page
