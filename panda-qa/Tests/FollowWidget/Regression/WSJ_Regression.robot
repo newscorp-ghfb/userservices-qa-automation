@@ -110,16 +110,16 @@ Validate the follow button for Letters breadcrumb from articles page
     WSJArticlePage.Click Custom Follow Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         DefinedKeywords.Market Watch Sign In Process
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         DefinedKeywords.Sign In Process
     END
     Set Selenium Speed  0.2 seconds
     WSJArticlePage.Validate Custom Following Button
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         Set Selenium Speed  0.2 seconds
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         Set Selenium Speed  0.35 seconds
     END
     WSJArticlePage.Click Custom Following Button
@@ -140,9 +140,9 @@ Validate the WSJ Preference Center page for Letters breadcrumb
 
     Set Selenium Speed  0.2 seconds
     WSJPreferenceCenterPage.Navigate Preference Center page
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         DefinedKeywords.Market Watch Sign In Process
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         DefinedKeywords.Sign In Process
     END
     WSJPreferenceCenterPage.Validate Followed Custom Topics
@@ -166,16 +166,16 @@ Validate the follow button for Editorials breadcrumb from articles page
     WSJArticlePage.Click Custom Follow Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         DefinedKeywords.Market Watch Sign In Process
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         DefinedKeywords.Sign In Process
     END
     Set Selenium Speed  0.2 seconds
     WSJArticlePage.Validate Custom Following Button
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         Set Selenium Speed  0.2 seconds
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         Set Selenium Speed  0.35 seconds
     END
     WSJArticlePage.Click Custom Following Button
@@ -196,9 +196,9 @@ Validate the WSJ Preference Center page for Editorials breadcrumb
 
     Set Selenium Speed  0.2 seconds
     WSJPreferenceCenterPage.Navigate Preference Center page
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         DefinedKeywords.Market Watch Sign In Process
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         DefinedKeywords.Sign In Process
     END
     WSJPreferenceCenterPage.Validate Followed Custom Topics
@@ -222,16 +222,16 @@ Validate the follow button for Commentary breadcrumb from articles page
     WSJArticlePage.Click Custom Follow Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         DefinedKeywords.Market Watch Sign In Process
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         DefinedKeywords.Sign In Process
     END
     Set Selenium Speed  0.2 seconds
     WSJArticlePage.Validate Custom Following Button
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         Set Selenium Speed  0.2 seconds
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         Set Selenium Speed  0.35 seconds
     END
     WSJArticlePage.Click Custom Following Button
@@ -252,9 +252,9 @@ Validate the WSJ Preference Center page for Commentary breadcrumb
 
     Set Selenium Speed  0.2 seconds
     WSJPreferenceCenterPage.Navigate Preference Center page
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         DefinedKeywords.Market Watch Sign In Process
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         DefinedKeywords.Sign In Process
     END
     WSJPreferenceCenterPage.Validate Followed Custom Topics
@@ -277,16 +277,16 @@ Validate the follow button for Commentary breadcrumb from Commentary page
     WSJArticlePage.Click Custom Follow Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         DefinedKeywords.Market Watch Sign In Process
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         DefinedKeywords.Sign In Process
     END
     Set Selenium Speed  0.2 seconds
     WSJArticlePage.Validate Custom Following Button
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         Set Selenium Speed  0.25 seconds
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         Set Selenium Speed  0.35 seconds
     END
     WSJArticlePage.Click Custom Following Button
@@ -310,16 +310,16 @@ Validate the follow button for Editorials breadcrumb from Editorials page
     WSJArticlePage.Click Custom Follow Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         DefinedKeywords.Market Watch Sign In Process
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         DefinedKeywords.Sign In Process
     END
     Set Selenium Speed  0.2 seconds
     WSJArticlePage.Validate Custom Following Button
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         Set Selenium Speed  0.25 seconds
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         Set Selenium Speed  0.35 seconds
     END
     WSJArticlePage.Click Custom Following Button
@@ -342,16 +342,16 @@ Validate the follow button for Letters breadcrumb from Letters page
     WSJArticlePage.Click Custom Follow Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         DefinedKeywords.Market Watch Sign In Process
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         DefinedKeywords.Sign In Process
     END
     Set Selenium Speed  0.2 seconds
     WSJArticlePage.Validate Custom Following Button
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         Set Selenium Speed  0.05 seconds
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         Set Selenium Speed  0.35 seconds
     END
     WSJArticlePage.Click Custom Following Button
@@ -376,16 +376,16 @@ Validate the follow button for Elections breadcrumb from Elections page
     WSJArticlePage.Click Custom Follow Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         DefinedKeywords.Market Watch Sign In Process
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         DefinedKeywords.Sign In Process
     END
     Set Selenium Speed  0.2 seconds
     WSJArticlePage.Validate Custom Following Button
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         Set Selenium Speed  0.25 seconds
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         Set Selenium Speed  0.35 seconds
     END
     WSJArticlePage.Click Custom Following Button
@@ -407,9 +407,9 @@ Validate the WSJ Preference Center page for Elections breadcrumb
 
     Set Selenium Speed  0.2 seconds
     WSJPreferenceCenterPage.Navigate Preference Center page
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         DefinedKeywords.Market Watch Sign In Process
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         DefinedKeywords.Sign In Process
     END
     WSJPreferenceCenterPage.Validate Followed Custom Topics
@@ -433,16 +433,16 @@ Validate the follow button for Elections breadcrumb from articles page
     WSJArticlePage.Click Custom Follow Button
     #WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         DefinedKeywords.Market Watch Sign In Process
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         DefinedKeywords.Sign In Process
     END
     Set Selenium Speed  0.2 seconds
     WSJArticlePage.Validate Custom Following Button
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         Set Selenium Speed  0.2 seconds
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         Set Selenium Speed  0.35 seconds
     END
     WSJArticlePage.Click Custom Following Button
@@ -493,15 +493,15 @@ Validate the alert button for Board Pack Exclusive from articles page
     WSJArticlePage.Click Board Pack Exclusive Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         DefinedKeywords.Market Watch Sign In Process
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         DefinedKeywords.Sign In Process
     END
     Set Selenium Speed  0.2 seconds
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         Set Selenium Speed  0.2 seconds
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         Set Selenium Speed  0.35 seconds
     END
     WSJArticlePage.Click Board Pack Exclusive Button
@@ -597,15 +597,15 @@ Validate the alert button for Education
     WSJArticlePage.Click Education Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         DefinedKeywords.Market Watch Sign In Process
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         DefinedKeywords.Sign In Process
     END
     Set Selenium Speed  0.2 seconds
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         Set Selenium Speed  0.2 seconds
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         Set Selenium Speed  0.35 seconds
     END
     WSJArticlePage.Click Education Button
@@ -628,15 +628,15 @@ Validate the alert button for heard on the steet
     WSJArticlePage.Click heard on the street Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         DefinedKeywords.Market Watch Sign In Process
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         DefinedKeywords.Sign In Process
     END
     Set Selenium Speed  0.2 seconds
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         Set Selenium Speed  0.2 seconds
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         Set Selenium Speed  0.35 seconds
     END
     WSJArticlePage.Click heard on the street Button
@@ -659,15 +659,15 @@ Validate the alert button for On Wine
     WSJArticlePage.Click On Wine Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         DefinedKeywords.Market Watch Sign In Process
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         DefinedKeywords.Sign In Process
     END
     Set Selenium Speed  0.2 seconds
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         Set Selenium Speed  0.2 seconds
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         Set Selenium Speed  0.35 seconds
     END
     WSJArticlePage.Click On Wine Button
@@ -690,15 +690,15 @@ Validate the alert button for Personal Finance
     WSJArticlePage.Click Personal Finance Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         DefinedKeywords.Market Watch Sign In Process
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         DefinedKeywords.Sign In Process
     END
     Set Selenium Speed  0.2 seconds
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         Set Selenium Speed  0.2 seconds
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         Set Selenium Speed  0.35 seconds
     END
     WSJArticlePage.Click Personal Finance Button
@@ -721,15 +721,15 @@ Validate the alert button for Personal Technology
     WSJArticlePage.Click Personal Technology Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         DefinedKeywords.Market Watch Sign In Process
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         DefinedKeywords.Sign In Process
     END
     Set Selenium Speed  0.2 seconds
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         Set Selenium Speed  0.2 seconds
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         Set Selenium Speed  0.35 seconds
     END
     WSJArticlePage.Click Personal Technology Button
@@ -752,15 +752,15 @@ Validate the alert button for Puzzles
     WSJArticlePage.Click Puzzles Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         DefinedKeywords.Market Watch Sign In Process
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         DefinedKeywords.Sign In Process
     END
     Set Selenium Speed  0.2 seconds
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         Set Selenium Speed  0.2 seconds
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         Set Selenium Speed  0.35 seconds
     END
     WSJArticlePage.Click Puzzles Button
@@ -783,15 +783,15 @@ Validate the alert button for Energy
     WSJArticlePage.Click Energy Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         DefinedKeywords.Market Watch Sign In Process
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         DefinedKeywords.Sign In Process
     END
     Set Selenium Speed  0.2 seconds
-    IF  "${Env}" == "prod"
+    IF  ${Env} == "prod"
         Set Selenium Speed  0.2 seconds
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  ${Env} == "dev"
         Set Selenium Speed  0.35 seconds
     END
     WSJArticlePage.Click Energy Button

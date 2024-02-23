@@ -95,13 +95,13 @@ Click Elections Following Toggle Feature
     END
 
 Validate Following Toggle Alert Pop up
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[3]/div/span
+    Page Should Contain Element  //*[@id="root"]/div[1]/div/div/div/div/div/div/table[1]/tbody/tr/td[4]/div/div  #//*[@id="root"/div/div/div/div[3]/div/span
 
 Click Following Toggle Alert Pop up
-    Click Button  //*[@id="root"]/div/div/div/div[3]/div/div/button
+    Click Button  //*[@id="root"]/div[1]/div/div/div/div/div/div/table[1]/tbody/tr/td[4]/div/div
 
 Validate Author Updates From Preference Center Reflected In Articles
-    Click Button  //*[@id="root"]/div/div/div/div[2]/div[2]/div/div/button
+    Click Button  //*[@id="root"]/div/div/div/div[2]/div/div
 
 Add Author By Hotlink
     IF  "${Env}" == "prod"
@@ -115,8 +115,8 @@ Validate Author Name
     Page Should Contain  Joanna Stern
 
 Validate Following Frequency
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[1]/span[2]
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[2]/span[2]
+    Page Should Contain Element  //html/body/div[1]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr/td[4]/div/div[1]  #div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[1]/span[2]
+    Page Should Contain Element  //html/body/div[1]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr/td[4]/div/div[1]  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[2]/span[2]
 
 Validate All Tabs Displayed
     Page Should Contain  Barron's

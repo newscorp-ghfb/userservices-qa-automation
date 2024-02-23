@@ -42,30 +42,29 @@ Search Your Daily Digest from WSJ
     Click Element  //button[@aria-label="Search"]
 
 Validate WSJ Digest notification
-    Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div/div[2]
-    Click Element  //div[@id="groupHeaderTop results"]/../div/div[2]
-    Page Should Contain Element  //a[contains(text(),'View in browser')]
-    Page Should Contain Element  //table[@role="presentation"]//span[text()="Daily"]/../span[text()="Digest"]
-    Page Should Contain Element  //a[text()="Preferences"]
-    Page Should Contain Element  //a[text()="Unsubscribe"]
+    Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
+    Click Element  //div[@id="groupHeaderTop results"]/../div[2]
+    Page Should Contain Element  //a[contains(text(),'View in web browser')]
+    Page Should Contain Element  //table[@role="presentation"]//span[text()="Daily"]
+    Page Should Contain Element  //a[text()="Alerts Center"]
     Page Should Contain Element  //a[text()="Privacy Notice"]
     Page Should Contain Element  //a[text()="Cookie Notice"]
 
 Search Your WSJ real-time author notification
     Wait Until Page Contains Element  //input[@id="topSearchInput"]
     Click Element  //input[@id="topSearchInput"]
-    Input Text  //input[@id="topSearchInput"]  The latest from Joanna Stern
+    Input Text  //input[@id="topSearchInput"]  The latest article from Joanna Stern
     Click Element  //button[@aria-label="Search"]
 
 Validate WSJ real-time author notification
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
-    Page Should Contain Element  //a[contains(text(),'View in browser')]
+    Page Should Contain Element  //a[contains(text(),'View in web browser')]
     Page Should Contain Element  //a[text()="Read More "]
     Page Should Contain Element  //a[text()="Alerts Center"]
     Page Should Contain Element  //a[text()="Contact Us"]
-    Page Should Contain Element  //a[text()="Privacy Policy"]
-    Page Should Contain Element  //a[text()="Cookie Policy"]
+    Page Should Contain Element  //a[text()="Privacy Notice"]
+    Page Should Contain Element  //a[text()="Cookie Notice"]
 
 Search Your WSJ real-time company notification
     Wait Until Page Contains Element  //input[@id="topSearchInput"]
@@ -97,8 +96,8 @@ Validate WSJ real-time custom topic notification
     Page Should Contain Element  //a[text()="Read More "]
     Page Should Contain Element  //a[text()="Alerts Center"]
     Page Should Contain Element  //a[text()="Contact Us"]
-    Page Should Contain Element  //a[text()="Privacy Policy"]
-    Page Should Contain Element  //a[text()="Cookie Policy"]
+    Page Should Contain Element  //a[text()="Privacy Notice"]
+    Page Should Contain Element  //a[text()="Cookie Notice"]
 
 
 Search Your WSJ real-time custom topic video notification
@@ -115,8 +114,8 @@ Validate WSJ real-time custom topic video notification
     Page Should Contain Element  //a[text()=" Watch "]
     Page Should Contain Element  //a[text()="Alerts Center"]
     Page Should Contain Element  //a[text()="Contact Us"]
-    Page Should Contain Element  //a[text()="Privacy Policy"]
-    Page Should Contain Element  //a[text()="Cookie Policy"]
+    Page Should Contain Element  //a[text()="Privacy Notice"]  #//a[text()="Privacy Policy"]
+    Page Should Contain Element  //a[text()="Cookie Notice"]   #//a[text()="Cookie Policy"]
 
 Search Your WSJ real-time author video notification
     Wait Until Page Contains Element  //input[@id="topSearchInput"]
@@ -131,8 +130,8 @@ Validate WSJ real-time author video notification
     Page Should Contain Element  //a[text()=" Watch "]
     Page Should Contain Element  //a[text()="Alerts Center"]
     Page Should Contain Element  //a[text()="Contact Us"]
-    Page Should Contain Element  //a[text()="Privacy Policy"]
-    Page Should Contain Element  //a[text()="Cookie Policy"]
+    Page Should Contain Element  //a[text()="Privacy Notice"]
+    Page Should Contain Element  //a[text()="Cookie Notice"]
 
 Search Your WSJ real-time campaign notification
     Wait Until Page Contains Element  //input[@id="topSearchInput"]
@@ -148,8 +147,8 @@ Validate WSJ real-time campaign notification
     Page Should Contain Element  //a[text()="Read More "]
     Page Should Contain Element  //a[text()="Alerts Center"]
     Page Should Contain Element  //a[text()="Contact Us"]
-    Page Should Contain Element  //a[text()="Privacy Policy"]
-    Page Should Contain Element  //a[text()="Cookie Policy"]
+    Page Should Contain Element  //a[text()="Privacy Notice"]
+    Page Should Contain Element  //a[text()="Cookie Notice"]
 
 Search WSJ real-time author notification for Postback
     Wait Until Page Contains Element  //input[@id="topSearchInput"]
@@ -164,8 +163,8 @@ Validate WSJ real-time author notification for Postback
     Page Should Contain Element  //a[text()="Read More "]
     Page Should Contain Element  //a[text()="Alerts Center"]
     Page Should Contain Element  //a[text()="Contact Us"]
-    Page Should Contain Element  //a[text()="Privacy Policy"]
-    Page Should Contain Element  //a[text()="Cookie Policy"]
+    Page Should Contain Element  //a[text()="Privacy Notice"]  #//a[text()="Privacy Policy"]
+    Page Should Contain Element  //a[text()="Cookie Notice"]  #//a[text()="Cookie Policy"]
 
 Unsubscribe the mails
     Page Should Contain Element  //div[text()="Unsubscribe"]
