@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated the Marketwatch watchlist widget page URl under .DEV environment and fixed the xpath for Overview option on Barron's Market Data Page.">
+    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated the latest password for WSJ New Sign in Process, Marketwatch, mansion global and PE News Sign-In process under defined keywords.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/panda-qa/Resources/DefinedKeywords.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/DefinedKeywords.robot" afterDir="false" />
     </list>
@@ -341,7 +341,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708097384646</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Updated the latest password for WSJ New Sign in Process, Marketwatch, mansion global and PE News Sign-In process under defined keywords.">
+      <option name="closed" value="true" />
+      <created>1708701019556</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1708701019556</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -368,7 +376,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated the Xpath value for View in Web Browser optionBarron's daily digest notification." />
     <MESSAGE value="Updated the Xpath value for Company Follow feature on Barron's Preference Center page." />
     <MESSAGE value="Updated the relevant Element IDs and Xpath for the validation of Barron's watchlist widget and Barron's Market data page." />
     <MESSAGE value="Updated the relevant Xpath and Element IDs for Barron's Market Data page." />
@@ -393,6 +400,7 @@
     <MESSAGE value="Updated New WSJ Sign In Process and Xpath for Letters Breadcrumb on WSJ article page and WSJ Preference Center page for Letters breadcrumb" />
     <MESSAGE value="Updated Xpath and element ID for FN article page and FN mailbox page." />
     <MESSAGE value="Updated the Marketwatch watchlist widget page URl under .DEV environment and fixed the xpath for Overview option on Barron's Market Data Page." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the Marketwatch watchlist widget page URl under .DEV environment and fixed the xpath for Overview option on Barron's Market Data Page." />
+    <MESSAGE value="Updated the latest password for WSJ New Sign in Process, Marketwatch, mansion global and PE News Sign-In process under defined keywords." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the latest password for WSJ New Sign in Process, Marketwatch, mansion global and PE News Sign-In process under defined keywords." />
   </component>
 </project>

@@ -24,12 +24,12 @@ Sign In Process
     END
     Wait Until Element Is Visible  //input[@type='email']
     Click Button  //input[@type='email']
-    Input Text  //input[@type='email']  ${Email}
+    Input Text  //input[@type='email']   akhilesh.khanduri@dowjones.com
     Set Selenium Implicit Wait  10s
     Click Element  //span[text()="Continue"]
     Set Selenium Implicit Wait  10s
     Wait Until Element Is Visible  //*[@id="password-login-password"]
-    Input Text  //*[@id="password-login-password"]  ${Password}
+    Input Text  //*[@id="password-login-password"]   AKpolarzx@2594
     Set Selenium Speed  1.0 seconds
     IF  "${Env}" == "prod"
         Click Element  //*[@id="password-login"]/div/form/div[5]/button    #//*[@id="password-login"]/div/form/div/div[5]/div[1]/button
