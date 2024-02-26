@@ -3,9 +3,10 @@ Library  SeleniumLibrary
 Resource  ../Resources/DefinedKeywords.robot
 
 *** Variables ***
-${Browser}=  ff  #headless, ff, chrome, edge, safari
 
-${Env}=  "dev"  #dev, prod
+${Browser}=  chrome  #headless, ff, chrome, edge, safari
+
+${Env}=  dev  #dev, prod
 
 ${Email_prod}=  barronsadvisorcs@gmail.com
 
@@ -25,20 +26,56 @@ ${JSFollowButtonMGPath}=  document.querySelector('ufc-follow-author-widget').sha
     ...  .querySelector('button')  #3
 
 ${JSFollowButtonMWPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
-    ...  .querySelector('ufc-follow-button').shadowRoot  #2
+    ...  .querySelector('ufc-follow-widget')  #2
+    ...  .querySelector('ufc-follow-button').shadowRoot  #3
     ...  .querySelector('button')  #3
 
 ${CookieManagerYesPath}=  //*[@id="notice"]/div[4]/div/div/button[2]
 
 *** Keywords ***
+Set Browser Options
+        IF  "${Browser}" == "firefox"
+             ${options} =    Evaluate    selenium.webdriver.FirefoxOptions()
+            Call Method    ${options}    add_argument    --CreateProfile
+            Call Method    ${options}    add_argument    --start-maximized
+            Call Method    ${options}    add_argument    --disable-dev-shm-usage
+            Call Method    ${options}    add_argument    --no-sandbox
+            Call Method    ${options}    add_argument    --disable-gpu
+            Call Method    ${options}    add_argument    --headless
+
+            Call Method    ${options}    add_argument    --devtools.debugger.force-local
+            Call Method    ${options}    add_argument    --devtools.debugger.remote-enabled
+            Call Method    ${options}    add_argument    --devtools.chrome.enabled
+            Call Method    ${options}    add_argument    --devtools.debugger.prompt-connection
+            Call Method    ${options}    add_argument    --browser.dom.window.dump.enabled
+            RETURN    ${options}
+        ELSE IF  "${Browser}" == "chrome"
+            ${options} =    Evaluate    selenium.webdriver.ChromeOptions()
+            Call Method    ${options}    add_argument    --start-maximized
+            Call Method    ${options}    add_argument    --disable-dev-shm-usage
+            Call Method    ${options}    add_argument    --no-sandbox
+            Call Method    ${options}    add_argument    --headless
+            Call Method    ${options}    add_argument    --disable-gpu
+            Call Method    ${options}    add_argument    --ignore-certificate-errors
+            Call Method    ${options}    add_argument    --disable-extensions
+            Call Method    ${options}    add_argument    --no-user-gesture-required
+            Call Method    ${options}    add_argument    --no-first-run
+            Call Method    ${options}    add_argument    --use-fake-ui-for-media-stream
+            Call Method    ${options}    add_argument    --use-fake-device-for-media-stream
+            Call Method    ${options}    add_argument    --disable-sync
+            RETURN    ${options}
+        END
+
 Start Barrons Article
     Set Selenium Speed  0.5 seconds
-    IF  ${Env} == "prod"
-        Open Browser  https://www.barrons.com  ${Browser}
+    ${options} =  Set Browser Options
+    IF  "${Env}" == "prod"
+        Open Browser  https://www.barrons.com  ${Browser}  options=${options}
         Go To  https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634
-    ELSE IF  ${Env} == "dev"
-        Open Browser  https://www.s.dev.barrons.com  ${Browser}
-        Go To  https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000
+    ELSE IF  "${Env}" == "dev"
+        SeleniumLibrary.Open Browser  https://www.s.dev.barrons.com  ${Browser}  options=${options}
+#       Open Browser  https://www.s.dev.barrons.com  ${Browser}
+        Go To  https://www.barrons.com/articles/buy-under-armour-stock-pick-51650672000
     END
     Wait Until Page Contains Element  dom:${JSFollowButtonBarronsPath}
     Maximize Browser Window
