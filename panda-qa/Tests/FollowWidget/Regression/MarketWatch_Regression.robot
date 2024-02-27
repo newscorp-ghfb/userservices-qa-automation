@@ -11,6 +11,18 @@ Resource  ../../../Resources/PageObjects/MarketWatchMailboxPage.robot
 
 Test Setup  CommonFunctionality.Start Market Watch Article
 Test Teardown  CommonFunctionality.Finish Testcase
+Documentation  Market Watch Regression Tests
+Force Tags  MarketWatch
+Resource  ../../../Resources/CommonFunctionality.robot
+Resource  ../../../Resources/DefinedKeywords.robot
+Resource  ../../../Resources/PageObjects/MarketWatchArticlePage.robot
+Resource  ../../../Resources/PageObjects/MarketWatchWatchlistPage.robot
+Resource  ../../../Resources/PageObjects/MarketWatchAuthorsPage.robot
+Resource  ../../../Resources/PageObjects/MarketWatchPreferenceCenterPage.robot
+Resource  ../../../Resources/PageObjects/MarketWatchMailboxPage.robot
+
+Test Setup  CommonFunctionality.Start Market Watch Article
+Test Teardown  CommonFunctionality.Finish Testcase
 *** Variables ***
 
 *** Test Cases ***

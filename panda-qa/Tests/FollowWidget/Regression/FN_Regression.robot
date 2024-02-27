@@ -10,6 +10,17 @@ Resource  ../../../Resources/PageObjects/FNMailboxPage.robot
 
 Test Setup  CommonFunctionality.Start FN Article
 Test Teardown  CommonFunctionality.Finish Testcase
+Documentation  FN Regression Tests
+Force Tags  FinancialNews
+Resource  ../../../Resources/CommonFunctionality.robot
+Resource  ../../../Resources/DefinedKeywords.robot
+Resource  ../../../Resources/PageObjects/FNArticlePage.robot
+Resource  ../../../Resources/PageObjects/FNAuthorsPage.robot
+Resource  ../../../Resources/PageObjects/FNPreferenceCenterPage.robot
+Resource  ../../../Resources/PageObjects/FNMailboxPage.robot
+
+Test Setup  CommonFunctionality.Start FN Article
+Test Teardown  CommonFunctionality.Finish Testcase
 *** Variables ***
 
 *** Test Cases ***

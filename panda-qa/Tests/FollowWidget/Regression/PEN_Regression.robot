@@ -11,6 +11,18 @@ Resource  ../../../Resources/PageObjects/PENCapabilitiesPage.robot
 
 Test Setup  CommonFunctionality.Start PEN Article
 Test Teardown  CommonFunctionality.Finish Testcase
+Documentation  PEN Regression Tests
+Force Tags  PENews
+Resource  ../../../Resources/CommonFunctionality.robot
+Resource  ../../../Resources/DefinedKeywords.robot
+Resource  ../../../Resources/PageObjects/PENArticlePage.robot
+Resource  ../../../Resources/PageObjects/PENAuthorsPage.robot
+Resource  ../../../Resources/PageObjects/PENPreferenceCenterPage.robot
+Resource  ../../../Resources/PageObjects/PENMailboxPage.robot
+Resource  ../../../Resources/PageObjects/PENCapabilitiesPage.robot
+
+Test Setup  CommonFunctionality.Start PEN Article
+Test Teardown  CommonFunctionality.Finish Testcase
 *** Variables ***
 
 *** Test Cases ***
