@@ -579,7 +579,7 @@ Validate the WSJ real-time author video notification
 #US-T312
 Validate the WSJ real-time campaign notification
     [Documentation]  This test case validates the WSJ real-time campaign notification
-    [Tags]  Regression  Notifications
+    [Tags]  Regression  Notifications             Tag WRCN
     WSJMailboxPage.Navigate Mailbox page
     WSJMailboxPage.Login
     WSJMailboxPage.Select Inbox
@@ -621,7 +621,7 @@ Validate the alert button for Education
 #US-T324
 #US-T325
 #US-T326
-Validate the alert button for heard on the steet
+Validate the alert button for heard on the street
     [Documentation]  This test case validates the alert button for heard on the street
     [Tags]  Regression  Alerts
     CommonFunctionality.Start WSJ Article for heard on the street
@@ -654,7 +654,7 @@ Validate the alert button for heard on the steet
 #US-T330
 Validate the alert button for On Wine
     [Documentation]  This test case validates the alert button for On Wine
-    [Tags]  Regression  Alerts
+    [Tags]  Regression  Alerts                 TagWOW
     CommonFunctionality.Start WSJ Article for On Wine
     WSJArticlePage.Click On Wine Button
     WSJArticlePage.Validate Sign In Modal
@@ -806,7 +806,7 @@ Validate the alert button for Energy
 #US-T361
 Validate Postback on Preference Center
     [Documentation]  This test case validates the WSJ Postback on Preference Center
-    [Tags]  Regression  Postback
+    [Tags]  Regression  Postback            TagWPBC
     WSJPreferenceCenterPage.Add Breaking News By Hotlink
     DefinedKeywords.Sign In Process
     WSJPreferenceCenterPage.Validate Followed Breaking News
