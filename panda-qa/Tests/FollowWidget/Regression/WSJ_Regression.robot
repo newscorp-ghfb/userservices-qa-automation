@@ -748,7 +748,7 @@ Validate the alert button for Personal Technology
 #US-T342
 Validate the alert button for Puzzles
     [Documentation]  This test case validates the alert button for Puzzles
-    [Tags]  Regression  Alerts
+    [Tags]  Regression  Alerts               TagWPZ
     CommonFunctionality.Start WSJ Article for Puzzles
     WSJArticlePage.Click Puzzles Button
     WSJArticlePage.Validate Sign In Modal

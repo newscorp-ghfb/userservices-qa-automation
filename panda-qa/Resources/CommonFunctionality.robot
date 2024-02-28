@@ -6,13 +6,13 @@ Resource  ../Resources/DefinedKeywords.robot
 
 ${Browser}=  ff  #headless, ff, chrome, edge, safari
 
-${Env}=  dev  #dev, prod
+${Env} =  "dev"  #dev, prod
 
 ${Email_prod}=  barronsadvisorcs@gmail.com
 
 ${Password_prod}=  password1
 
-${Email_dev}==  QABARRONSONLY  #priyanka.bhoomraogari@dowjones.com  #
+${Email_dev}=  QABARRONSONLY  #priyanka.bhoomraogari@dowjones.com  #
 
 ${Password_dev}=  password1
 
@@ -483,12 +483,12 @@ Start WSJ Article for Personal Technology
     Maximize Browser Window
 
 Start WSJ Article for Puzzles
-    Set Selenium Speed  0.5 seconds
+    Set Selenium Speed  1 seconds
     IF  ${Env} == "prod"
-        Open Browser  https://www.wsj.com  ${Browser}
+        Open Browser  https://www.wsj.com
         Go To  https://www.wsj.com/news/puzzle?mod=breadcrumb
     ELSE IF  ${Env} == "dev"
-        Open Browser  https://www.s.dev.wsj.com  ${Browser}
+        Open Browser  https://www.s.dev.wsj.com
         Go To  https://www.s.dev.wsj.com/news/puzzle?mod=breadcrumb
     END
     Maximize Browser Window
