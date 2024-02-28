@@ -12,7 +12,7 @@ ${Email_prod}=  barronsadvisorcs@gmail.com
 
 ${Password_prod}=  password1
 
-${Email_dev}=  QABARRONSONLY  #priyanka.bhoomraogari@dowjones.com  #
+${Email_dev}==  QABARRONSONLY  #priyanka.bhoomraogari@dowjones.com  #
 
 ${Password_dev}=  password1
 
@@ -441,10 +441,10 @@ Start WSJ Article for Education
 Start WSJ Article for heard on the street
     Set Selenium Speed  0.5 seconds
     IF  ${Env} == "prod"
-        Open Browser  https://www.wsj.com  ${Browser}
+#        Open Browser  https://www.wsj.com  ${Browser}
         Go To  https://www.wsj.com/news/types/heard-on-the-street?mod=breadcrumb
     ELSE IF  ${Env} == "dev"
-        Open Browser  https://www.s.dev.wsj.com  ${Browser}
+#        Open Browser  https://www.s.dev.wsj.com  ${Browser}
         Go To  https://www.s.dev.wsj.com/news/types/heard-on-the-street?mod=breadcrumb
     END
     Maximize Browser Window

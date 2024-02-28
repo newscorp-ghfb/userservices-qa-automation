@@ -13,7 +13,7 @@ Resource  ../../../Resources/PageObjects/WSJMailboxPage.robot
 Resource  ../../../Resources/PageObjects/WSJPreferenceCenterPage.robot
 
 Test Setup  CommonFunctionality.Start WSJ Article
-#Test Teardown  CommonFunctionality.Finish Testcase
+Test Teardown  CommonFunctionality.Finish Testcase
 *** Variables ***
 
 *** Test Cases ***
@@ -459,7 +459,7 @@ Validate the follow button for Elections breadcrumb from articles page
 #US-T223
 Validate the Watchlist widget from Watchlist page
     [Documentation]  This test case validates the watchlist widget from watchlist page
-    [Tags]  Regression  Watchlist
+    [Tags]  Regression  Watchlist   TagWWP
 
     CommonFunctionality.Start WSJ for Watchlist page
     DefinedKeywords.Sign In Process
@@ -592,13 +592,13 @@ Validate the WSJ real-time campaign notification
 #US-T322
 Validate the alert button for Education
     [Documentation]  This test case validates the alert button for Education
-    [Tags]  Regression  Alerts
+    [Tags]  Regression  Alerts    TagWOE
     CommonFunctionality.Start WSJ Article for Education
     WSJArticlePage.Click Education Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
     IF  ${Env} == "prod"
-        DefinedKeywords.Market Watch Sign In Process
+        DefinedKeywords.Sign In Process
     ELSE IF  ${Env} == "dev"
         DefinedKeywords.Sign In Process
     END
@@ -623,15 +623,16 @@ Validate the alert button for Education
 #US-T326
 Validate the alert button for heard on the street
     [Documentation]  This test case validates the alert button for heard on the street
-    [Tags]  Regression  Alerts
+    [Tags]  Regression  Alerts             TagWHS
     CommonFunctionality.Start WSJ Article for heard on the street
+    DefinedKeywords.WSJ Sign In Process
     WSJArticlePage.Click heard on the street Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
     IF  ${Env} == "prod"
-        DefinedKeywords.Market Watch Sign In Process
+        DefinedKeywords.WSJ Sign In Process
     ELSE IF  ${Env} == "dev"
-        DefinedKeywords.Sign In Process
+        DefinedKeywords.WSJ Sign In Process
     END
     Set Selenium Speed  0.2 seconds
     IF  ${Env} == "prod"

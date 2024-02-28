@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated the Tags for testing WSJ regression test cases">
+    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated all the Force Tags and relevant keywords for MarketWatch, Mansion Global and PE News as perthe develop branch">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/FN_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/FN_Regression.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/MarketWatch_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/MarketWatch_Regression.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/PEN_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/PEN_Regression.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/WSJ_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/WSJ_Regression.robot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -437,7 +442,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709042625222</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Updated all the Force Tags and relevant keywords for MarketWatch, Mansion Global and PE News as perthe develop branch">
+      <option name="closed" value="true" />
+      <created>1709046664057</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1709046664057</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -464,7 +477,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated the relevant Xpath and Element IDs for Barron's Market Data page." />
     <MESSAGE value="Updated the SignInHeader Path for Barron's article page and Xpath for Barron's Postback functionality" />
     <MESSAGE value="Updated Xpath and Element IDs for Barron's Quotes page" />
     <MESSAGE value="Updated Xpath for Barron's Mailbox page, Preference Center page and Barron's defined keywords for Sign-In Process" />
@@ -489,6 +501,7 @@
     <MESSAGE value="Updated the latest password for WSJ New Sign in Process, Marketwatch, mansion global and PE News Sign-In process under defined keywords." />
     <MESSAGE value="Updated the CommonFunctionality browser options as per the latest requirements under develop." />
     <MESSAGE value="Updated the Tags for testing WSJ regression test cases" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the Tags for testing WSJ regression test cases" />
+    <MESSAGE value="Updated all the Force Tags and relevant keywords for MarketWatch, Mansion Global and PE News as perthe develop branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated all the Force Tags and relevant keywords for MarketWatch, Mansion Global and PE News as perthe develop branch" />
   </component>
 </project>
