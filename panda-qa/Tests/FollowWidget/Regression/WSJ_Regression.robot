@@ -750,13 +750,13 @@ Validate the alert button for Puzzles
     [Documentation]  This test case validates the alert button for Puzzles
     [Tags]  Regression  Alerts               TagWPZ
     CommonFunctionality.Start WSJ Article for Puzzles
+    IF  ${Env} == "prod"
+        DefinedKeywords.New WSJ Sign In Process
+    ELSE IF  ${Env} == "dev"
+        DefinedKeywords.New WSJ Sign In Process
     WSJArticlePage.Click Puzzles Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
-    IF  ${Env} == "prod"
-        DefinedKeywords.Market Watch Sign In Process
-    ELSE IF  ${Env} == "dev"
-        DefinedKeywords.Sign In Process
     END
     Set Selenium Speed  0.2 seconds
     IF  ${Env} == "prod"
