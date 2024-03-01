@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated the Common Functionality browsers and set environment as &quot;dev&quot; for .DEV environment">
+    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated the New WSJ Sign In Process for WSJ Puzzles page validation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/WSJ_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/WSJ_Regression.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -462,7 +462,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709131977193</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Updated the New WSJ Sign In Process for WSJ Puzzles page validation">
+      <option name="closed" value="true" />
+      <created>1709211734229</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1709211734229</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -489,7 +497,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated Xpath for Barron's Mailbox page, Preference Center page and Barron's defined keywords for Sign-In Process" />
     <MESSAGE value="Updated Sign Process Xpath value for input of email for WSJ Sign In Process" />
     <MESSAGE value="Updated Sign Process Xpath value under defined keywords for input of email for WSJ Sign In Process" />
     <MESSAGE value="Updated Xpath for Watchlist Create button on Barron's Marketdata page and Sign In Process" />
@@ -514,6 +521,7 @@
     <MESSAGE value="Updated all the Force Tags and relevant keywords for MarketWatch, Mansion Global and PE News as perthe develop branch" />
     <MESSAGE value="Updated all the Force Tags and relevant keywords for MarketWatch, WSJ, Mansion Global and PE News as perthe develop branch" />
     <MESSAGE value="Updated the Common Functionality browsers and set environment as &quot;dev&quot; for .DEV environment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the Common Functionality browsers and set environment as &quot;dev&quot; for .DEV environment" />
+    <MESSAGE value="Updated the New WSJ Sign In Process for WSJ Puzzles page validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the New WSJ Sign In Process for WSJ Puzzles page validation" />
   </component>
 </project>
