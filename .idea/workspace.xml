@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated the New WSJ Sign In Process for WSJ Puzzles page validation">
+    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated the Browser options and environment for PEN Capabilities page">
+      <change afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJSailthru.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/Sailthru_Regression.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/DefinedKeywords.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/DefinedKeywords.robot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -470,7 +473,23 @@
       <option name="project" value="LOCAL" />
       <updated>1709211734229</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Updated the Browser options for all brands as per the develop branch and method for mouse tooltip notification on FN Preference Center page.">
+      <option name="closed" value="true" />
+      <created>1709306990860</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1709306990860</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Updated the Browser options and environment for PEN Capabilities page">
+      <option name="closed" value="true" />
+      <created>1709564335245</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1709564335245</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -497,8 +516,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated Sign Process Xpath value for input of email for WSJ Sign In Process" />
-    <MESSAGE value="Updated Sign Process Xpath value under defined keywords for input of email for WSJ Sign In Process" />
     <MESSAGE value="Updated Xpath for Watchlist Create button on Barron's Marketdata page and Sign In Process" />
     <MESSAGE value="Updated Xpath for Companies on MarketWatch Preference Center page" />
     <MESSAGE value="Updated Xpath for Follow Toggle feature button on MarketWatch Preference Center page" />
@@ -522,6 +539,8 @@
     <MESSAGE value="Updated all the Force Tags and relevant keywords for MarketWatch, WSJ, Mansion Global and PE News as perthe develop branch" />
     <MESSAGE value="Updated the Common Functionality browsers and set environment as &quot;dev&quot; for .DEV environment" />
     <MESSAGE value="Updated the New WSJ Sign In Process for WSJ Puzzles page validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the New WSJ Sign In Process for WSJ Puzzles page validation" />
+    <MESSAGE value="Updated the Browser options for all brands as per the develop branch and method for mouse tooltip notification on FN Preference Center page." />
+    <MESSAGE value="Updated the Browser options and environment for PEN Capabilities page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the Browser options and environment for PEN Capabilities page" />
   </component>
 </project>
