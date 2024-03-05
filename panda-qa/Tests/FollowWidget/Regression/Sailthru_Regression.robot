@@ -14,7 +14,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T305
 Validate the Sailthru page for ST author
     [Documentation]  This test case validates the WSJ follow dashboard for ST author
-    [Tags]  Regression  PreferenceCenter  WSA
+    [Tags]  Regression  PreferenceCenter  TagWSA
 
     CommonFunctionality.Start Sailthru Page
     DefinedKeywords.Sailthru User Sign In Process
