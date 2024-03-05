@@ -114,11 +114,11 @@ Start Sailthru Page
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.sailthru.com  ${Browser}  options=${options}
-        Go To  https://login.sailthru.com/u/login/identifier?state=hKFo2SBzVlExaTIyc3FUbGQtT2l2NE0zbkhSMVlxN083OWNJc6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDdqQmpDZ3duMEp2SE11aDduU1JLSzJ3WTRqT1E2RGFGo2NpZNkgeEtmRXhYazVyeGZTN01pbzJkcFRadzI1eHp5UHF4bjM
+        Open Browser  https://my.sailthru.com/  ${Browser}  options=${options}  #https://www.sailthru.com/u/login/identifier?state=hKFo2SBzVlExaTIyc3FUbGQtT2l2NE0zbkhSMVlxN083OWNJc6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDdqQmpDZ3duMEp2SE11aDduU1JLSzJ3WTRqT1E2RGFGo2NpZNkgeEtmRXhYazVyeGZTN01pbzJkcFRadzI1eHp5UHF4bjM  #https://www.sailthru.com/?doing_wp_cron=1709648423.2007079124450683593750  ${Browser}  options=${options}
+        Go To   https://my.sailthru.com/  #https://login.sailthru.com/u/login/identifier?state=hKFo2SBzVlExaTIyc3FUbGQtT2l2NE0zbkhSMVlxN083OWNJc6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDdqQmpDZ3duMEp2SE11aDduU1JLSzJ3WTRqT1E2RGFGo2NpZNkgeEtmRXhYazVyeGZTN01pbzJkcFRadzI1eHp5UHF4bjM
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.sailthru.com  ${Browser}  options=${options}
-        Go To  https://login.sailthru.com/u/login/identifier?state=hKFo2SBzVlExaTIyc3FUbGQtT2l2NE0zbkhSMVlxN083OWNJc6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDdqQmpDZ3duMEp2SE11aDduU1JLSzJ3WTRqT1E2RGFGo2NpZNkgeEtmRXhYazVyeGZTN01pbzJkcFRadzI1eHp5UHF4bjM
+        Open Browser  https://my.sailthru.com/  ${Browser}  options=${options}  #https://login.sailthru.com/u/login/identifier?state=hKFo2SBzVlExaTIyc3FUbGQtT2l2NE0zbkhSMVlxN083OWNJc6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDdqQmpDZ3duMEp2SE11aDduU1JLSzJ3WTRqT1E2RGFGo2NpZNkgeEtmRXhYazVyeGZTN01pbzJkcFRadzI1eHp5UHF4bjM  ${Browser}  options=${options}
+        Go To  https://my.sailthru.com/  #https://login.sailthru.com/u/login/identifier?state=hKFo2SBzVlExaTIyc3FUbGQtT2l2NE0zbkhSMVlxN083OWNJc6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDdqQmpDZ3duMEp2SE11aDduU1JLSzJ3WTRqT1E2RGFGo2NpZNkgeEtmRXhYazVyeGZTN01pbzJkcFRadzI1eHp5UHF4bjM
     END
     Maximize Browser Window
 

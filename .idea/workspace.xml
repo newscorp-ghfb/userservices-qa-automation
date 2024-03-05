@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated and added the test case for ST authors validation using Sailthru">
+    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated the browser for CommonFunctionality Page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJSailthru.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJSailthru.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/DefinedKeywords.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/DefinedKeywords.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/Sailthru_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/Sailthru_Regression.robot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -495,7 +496,23 @@
       <option name="project" value="LOCAL" />
       <updated>1709564976343</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Updated the regression test case for ST authors validation using Sailthru">
+      <option name="closed" value="true" />
+      <created>1709647398089</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1709647398089</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Updated the browser for CommonFunctionality Page">
+      <option name="closed" value="true" />
+      <created>1709647645356</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1709647645356</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -522,8 +539,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated Xpath for Companies on MarketWatch Preference Center page" />
-    <MESSAGE value="Updated Xpath for Follow Toggle feature button on MarketWatch Preference Center page" />
     <MESSAGE value="Updated relevant Xpath for Marketwatch author's notification" />
     <MESSAGE value="Updated relevant Xpath for Marketwatch real-time company notification" />
     <MESSAGE value="Updated relevant Xpath for Marketwatch Read More option on real-time company notification page" />
@@ -547,6 +562,8 @@
     <MESSAGE value="Updated the Browser options for all brands as per the develop branch and method for mouse tooltip notification on FN Preference Center page." />
     <MESSAGE value="Updated the Browser options and environment for PEN Capabilities page" />
     <MESSAGE value="Updated and added the test case for ST authors validation using Sailthru" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated and added the test case for ST authors validation using Sailthru" />
+    <MESSAGE value="Updated the regression test case for ST authors validation using Sailthru" />
+    <MESSAGE value="Updated the browser for CommonFunctionality Page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the browser for CommonFunctionality Page" />
   </component>
 </project>
