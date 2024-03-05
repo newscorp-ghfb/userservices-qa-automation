@@ -44,5 +44,10 @@ Click Sailthru UsersSearchField Path
       Wait Until Element is Visible  dom:${JSSailthruUsersSearchPath}
       Click Button  dom:${JSSailthruUsersSearchPath}
 
+Click UsersCutomFields Path
+      Wait Until Element is Visible  dom:${JSCustomFieldsPath}
+      Click Button  dom:${JSCustomFieldsPath}
 
+Click EditAuthorArray Button
+      Click Button  dom:${JSEditAuthorArrayPath}
 
