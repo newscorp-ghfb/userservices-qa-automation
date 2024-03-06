@@ -20,8 +20,8 @@ Validate the Sailthru page for ST author
     DefinedKeywords.Sailthru User Sign In Process
     Set Selenium Speed  0.5 seconds
     Capture Page Screenshot    screenshot.png
-#    WSJSailthru.Validate SailthruLogIn Button
-#    WSJSailthru.Click SailthruLogIn Button
+#    WSJSailthruAuthors.Validate SailthruLogIn Button
+#    WSJSailthruAuthors.Click SailthruLogIn Button
     WSJSailthruAuthors.Validate SailthruSignIn Button
     WSJSailthruAuthors.Click SailthruSignIn Button
     WSJSailthruAuthors.Click SailthruUsers Button
