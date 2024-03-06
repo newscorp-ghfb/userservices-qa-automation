@@ -14,7 +14,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T305
 Validate the Sailthru page for ST author
     [Documentation]  This test case validates the WSJ follow dashboard for ST author
-    [Tags]  Regression  PreferenceCenter  TagWSA
+    [Tags]  Regression PreferenceCenterAuthor  TagWSA
 
     CommonFunctionality.Start Sailthru Page
     DefinedKeywords.Sailthru User Sign In Process
@@ -31,4 +31,62 @@ Validate the Sailthru page for ST author
     WSJSailthruAuthors.Click EditAuthorsArray Button
     WSJSailthruAuthors.Click EditAuthorArrayListSave Button
 
+#US-T308
+Validate the Sailthru page for ST company
+    [Documentation]  This test case validates the WSJ follow dashboard for ST company
+    [Tags]  Regression PreferenceCenterCompany  TagWSC
 
+    CommonFunctionality.Start Sailthru Page
+    DefinedKeywords.Sailthru User Sign In Process
+    Set Selenium Speed  0.5 seconds
+    Capture Page Screenshot    screenshot.png
+#    WSJSailthruCompanies.Validate SailthruLogIn Button
+#    WSJSailthruCompanies.Click SailthruLogIn Button
+    WSJSailthruCompanies.Validate SailthruSignIn Button
+    WSJSailthruCompanies.Click SailthruSignIn Button
+    WSJSailthruCompanies.Click SailthruUsers Button
+    WSJSailthruCompanies.Click Sailthru UsersLookup Button
+    WSJSailthruCompanies.Click Sailthru UsersSearchField Path
+    WSJSailthruCompanies.Click UsersCutomFields Path
+    WSJSailthruCompanies.Click EditCompanyArray Button
+    WSJSailthruCompanies.Click EditCompanyArrayListSave Button
+
+#US-T318
+Validate the Sailthru page for ST campaign
+    [Documentation]  This test case validates the WSJ follow dashboard for ST campaign
+    [Tags]  Regression PreferenceCenter  TagWSTC
+
+    CommonFunctionality.Start Sailthru Page
+    DefinedKeywords.Sailthru User Sign In Process
+    Set Selenium Speed  0.5 seconds
+    Capture Page Screenshot    screenshot.png
+#    WSJSailthruCampaigns.Validate SailthruLogIn Button
+#    WSJSailthruCampaigns.Click SailthruLogIn Button
+    WSJSailthruCampaigns.Validate SailthruSignIn Button
+    WSJSailthruCampaigns.Click SailthruSignIn Button
+    WSJSailthruCampaigns.Click SailthruUsers Button
+    WSJSailthruCampaigns.Click Sailthru UsersLookup Button
+    WSJSailthruCampaigns.Click Sailthru UsersSearchField Path
+    WSJSailthruCampaigns.Click UsersCutomFields Path
+    WSJSailthruCampaigns.Click EditCampaignArray Button
+    WSJSailthruCampaigns.Click EditCampaignArrayListSave Button
+
+#US-T310
+Validate the Sailthru page for ST custom topics
+    [Documentation]  This test case validates the WSJ follow dashboard for ST custom topics
+    [Tags]  Regression PreferenceCenter  TagWSCT
+
+    CommonFunctionality.Start Sailthru Page
+    DefinedKeywords.Sailthru User Sign In Process
+    Set Selenium Speed  0.5 seconds
+    Capture Page Screenshot    screenshot.png
+#    WSJSailthruCustomTopics.Validate SailthruLogIn Button
+#    WSJSailthruCustomTopics.Click SailthruLogIn Button
+    WSJSailthruCustomTopics.Validate SailthruSignIn Button
+    WSJSailthruCustomTopics.Click SailthruSignIn Button
+    WSJSailthruCustomTopics.Click SailthruUsers Button
+    WSJSailthruCustomTopics.Click Sailthru UsersLookup Button
+    WSJSailthruCustomTopics.Click Sailthru UsersSearchField Path
+    WSJSailthruCustomTopics.Click UsersCutomFields Path
+    WSJSailthruCustomTopics.Click EditCampaignArray Button
+    WSJSailthruCustomTopics.Click EditCampaignArrayListSave Button
