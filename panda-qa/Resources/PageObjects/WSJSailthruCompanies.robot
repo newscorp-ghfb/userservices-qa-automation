@@ -15,7 +15,11 @@ ${JSSailthruUsersSearchPath}=  document.querySelector("#userprofile > div.mw6.ce
 
 ${JSCustomFieldsPath}=  document.querySelector("#userprofile > div.legacy-components-Tabs-src---Tabs-tabs--2m_wY > div.legacy-components-Tabs-src---Tabs-tabs-navigation-container--21xrU > ul > li:nth-child(4)")
 
-${JSEditAuthorArrayPath}=  document.querySelector("#userprofile > div.legacy-components-Tabs-src---Tabs-tabs--2m_wY > div.legacy-components-Tabs-src---Tabs-tab-content--GUDSN > div.legacy-components-Tabs-src---Tabs-tab-panel-active--2qyFC > table > tbody > tr:nth-child(1) > td:nth-child(3) > div > table > tbody > tr > td > div.hover-overlay.pr2.absolute.top-0.right-0.bottom-0.h-100.f4.flex.items-center.invisible.stui-bg-gray-i > div:nth-child(2) > i")
+#itCompanyArrayPath}=  document.querySelector("#userprofile > div.legacy-components-Tabs-src---Tabs-tabs--2m_wY > div.legacy-components-Tabs-src---Tabs-tab-content--GUDSN > div.legacy-components-Tabs-src---Tabs-tab-panel-active--2qyFC > table > tbody > tr:nth-child(2) > td:nth-child(2)")
+
+${JSEditCompanyArrayButton}=  //html/body/div[3]/div/div[2]/section/div[3]/div[2]/div[4]/table/tbody/tr[2]/td[3]/div/table/tbody/tr/td/div[2]/div[2]/i
+
+${JSEditCompanyArrayListSaveButton}=  //*[@id="modalApplyButton"]
 
 *** Keywords ***
 Validate SailthruLogIn Button
@@ -48,6 +52,9 @@ Click UsersCutomFields Path
       Wait Until Element is Visible  dom:${JSCustomFieldsPath}
       Click Button  dom:${JSCustomFieldsPath}
 
-Click EditAuthorArray Button
-      Click Button  dom:${JSEditAuthorArrayPath}
+Click EditCompanyArray Button
+      Click Button  dom:${JSEditCompanyArrayButton}
+
+Click EditCompanyArrayListSave Button
+      Click Button  dom:${JSEditCompanyArrayListSaveButton}
 
