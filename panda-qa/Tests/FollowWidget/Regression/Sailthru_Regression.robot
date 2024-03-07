@@ -3,7 +3,10 @@ Documentation  Sailthru Regression Tests
 Force Tags  Sailthru
 Resource  ../../../Resources/CommonFunctionality.robot
 Resource  ../../../Resources/DefinedKeywords.robot
-Resource  ../../../Resources/PageObjects/WSJSailthru.robot
+Resource  ../../../Resources/PageObjects/WSJSailthruAuthors.robot
+Resource  ../../../Resources/PageObjects/WSJSailthruCompanies.robot
+Resource  ../../../Resources/PageObjects/WSJSailthruCampaigns.robot
+Resource  ../../../Resources/PageObjects/WSJSailthruCustomTopics.robot
 
 
 Test Setup  CommonFunctionality.Start Sailthru Page
@@ -30,6 +33,7 @@ Validate the Sailthru page for ST author
     WSJSailthruAuthors.Click UsersCutomFields Path
     WSJSailthruAuthors.Click EditAuthorsArray Button
     WSJSailthruAuthors.Click EditAuthorArrayListSave Button
+    WSJSailthruAuthors.Navigate to WSJ Preference Center page
 
 #US-T308
 Validate the Sailthru page for ST company
@@ -50,6 +54,7 @@ Validate the Sailthru page for ST company
     WSJSailthruCompanies.Click UsersCutomFields Path
     WSJSailthruCompanies.Click EditCompanyArray Button
     WSJSailthruCompanies.Click EditCompanyArrayListSave Button
+    WSJSailthruCompanies.Navigate to WSJ Preference Center Page
 
 #US-T318
 Validate the Sailthru page for ST campaign
@@ -70,6 +75,7 @@ Validate the Sailthru page for ST campaign
     WSJSailthruCampaigns.Click UsersCutomFields Path
     WSJSailthruCampaigns.Click EditCampaignArray Button
     WSJSailthruCampaigns.Click EditCampaignArrayListSave Button
+    WSJSailthruCampaigns.Navigate to WSJ Preference Center Page
 
 #US-T310
 Validate the Sailthru page for ST custom topics
@@ -90,3 +96,4 @@ Validate the Sailthru page for ST custom topics
     WSJSailthruCustomTopics.Click UsersCutomFields Path
     WSJSailthruCustomTopics.Click EditCampaignArray Button
     WSJSailthruCustomTopics.Click EditCampaignArrayListSave Button
+    WSJSailthruCustomTopics.Navigate to WSJ Preference Center Page
