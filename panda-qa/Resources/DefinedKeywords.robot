@@ -95,12 +95,12 @@ New WSJ Sign In Process
 
 Sailthru User Sign In Process
     Click Button  //input[@type='text']
-    Input Text  //input[@type='text']  newsroomdev.test@dowjones.com  #akhilesh.khanduri@dowjones.com
+    Input Text  //input[@type='text']  newsroomdev.test.6@dowjones.com  #akhilesh.khanduri@dowjones.com
     Set Selenium Implicit Wait  10s
     Click Button  //html/body/div/main/section/div/div/div/div/div/form/div[2]/button  #//*[@id="form20"]/div[2]/input  #//*[@id="basic-login"]/div[1]/form/div[2]/div[6]/div[1]/button[2]
     Set Selenium Implicit Wait  10s
     Click Button  //input[@type='text']
-    Input Text  //input[@type='text']  newsroomdev.test@dowjones.com
+    Input Text  //input[@type='text']  newsroomdev.test.6@dowjones.com
     Set Selenium Implicit Wait  10s
     Click Button  //*[@id="form20"]/div[2]/input  #//*[@id="basic-login"]/div[1]/form/div[2]/div[6]/div[1]/button[2]
     Set Selenium Implicit Wait  10s
@@ -109,15 +109,24 @@ Sailthru User Sign In Process
     Set Selenium Implicit Wait  10s
     Click Button  //input[@type='submit']
 
-
-    #Wait Until Element is visible  //span[text()='Users']
-#    Wait Until Element Is Visible  //input[@type='password']  #//*[@id="password-login-password"]
-#    Input Text  //input[@type='password']  AKpolarzx@2594  #//*[@id="password-login-password"]  #Cuceis19841234!
-#    Set Selenium Implicit Wait  10s
-#    Click Button  //input[@type='submit']  #//*[@id="password-login"]/div/form/div/div[5]/div[1]/button
-#    Sleep  30s
-#    Set Selenium Implicit Wait  0.01s
-#    Wait Until Element Is Not Visible  //input[@type='submit']
+Sailthru Sign In Process
+    Click Button  //input[@type='text']
+    Input Text  //input[@type='text']  akhilesh.khanduri@dowjones.com
+    Set Selenium Implicit Wait  10s
+    Click Button  //html/body/div/main/section/div/div/div/div/div/form/div[2]/button  #//*[@id="form20"]/div[2]/input  #//*[@id="basic-login"]/div[1]/form/div[2]/div[6]/div[1]/button[2]
+    Set Selenium Implicit Wait  10s
+    Click Button  //input[@type='text']
+    Input Text  //input[@type='text']  akhilesh.khanduri@dowjones.com
+    Set Selenium Implicit Wait  10s
+    Click Button  //*[@id="form20"]/div[2]/input  #//*[@id="basic-login"]/div[1]/form/div[2]/div[6]/div[1]/button[2]
+    Set Selenium Implicit Wait  10s
+    Wait Until Element Is Visible  //input[@type='password']  #//*[@id="password-login-password"]
+    Input Text  //input[@type='password']  AKpolarzx@2594  #//*[@id="password-login-password"]  #Cuceis19841234!
+    Set Selenium Implicit Wait  10s
+    Click Button  //input[@type='submit']
+    Sleep  30s
+    Set Selenium Implicit Wait  0.01s
+    Wait Until Element Is Not Visible  //input[@type='submit']
 
 Test User Sign In Process
     Click Button  //input[@type='text']

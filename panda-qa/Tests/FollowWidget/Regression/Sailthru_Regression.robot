@@ -20,13 +20,13 @@ Validate the Sailthru page for ST author
     [Tags]  Regression PreferenceCenterAuthor  TagWSA
 
     CommonFunctionality.Start Sailthru Page
-    DefinedKeywords.Sailthru User Sign In Process
+    DefinedKeywords.Sailthru Sign In Process
     Set Selenium Speed  0.5 seconds
     Capture Page Screenshot    screenshot.png
 #    WSJSailthruAuthors.Validate SailthruLogIn Button
 #    WSJSailthruAuthors.Click SailthruLogIn Button
-    WSJSailthruAuthors.Validate SailthruSignIn Button
-    WSJSailthruAuthors.Click SailthruSignIn Button
+#    WSJSailthruAuthors.Validate SailthruSignIn Button
+#    WSJSailthruAuthors.Click SailthruSignIn Button
     WSJSailthruAuthors.Click SailthruUsers Button
     WSJSailthruAuthors.Click Sailthru UsersLookup Button
     WSJSailthruAuthors.Click Sailthru UsersSearchField Path

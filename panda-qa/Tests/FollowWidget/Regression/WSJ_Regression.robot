@@ -23,7 +23,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T75
 Validate the multiple authors follow button from articles page
     [Documentation]  This test case validates the multiple authors follow button from articles page
-    [Tags]  Regression  Author  Follow  Article
+    [Tags]  Regression  Author  Follow  Article       TagWSMA
 
     WSJArticlePage.Validate Follow Button
     WSJArticlePage.Click Follow Button
