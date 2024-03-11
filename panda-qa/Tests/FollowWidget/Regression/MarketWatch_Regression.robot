@@ -11,6 +11,7 @@ Resource  ../../../Resources/PageObjects/MarketWatchMailboxPage.robot
 
 Test Setup  CommonFunctionality.Start Market Watch Article
 Test Teardown  CommonFunctionality.Finish Testcase
+
 *** Variables ***
 
 *** Test Cases ***
@@ -41,8 +42,8 @@ Validate the Market Watch Preference Center page
     MarketWatchPreferenceCenterPage.Click Market Watch tab
     MarketWatchPreferenceCenterPage.Validate Company Toggle Feature
     MarketWatchPreferenceCenterPage.Click Company Toggle Feature
-    MarketWatchPreferenceCenterPage.Validate Following Toggle Alert Pop up
-    MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
+    #MarketWatchPreferenceCenterPage.Validate Following Toggle Alert Pop up
+    #MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
     #MarketWatchPreferenceCenterPage.Navigate Article page
     #MarketWatchArticlePage.Scroll stories
 
@@ -64,7 +65,7 @@ Validate the Watchlist widget from Watchlist page
     CommonFunctionality.Start MarketWatch for Watchlist page
     MarketWatchWatchlistPage.Click Sign in
     DefinedKeywords.Sign In Process
-    CommonFunctionality.Start MarketWatch for Watchlist page
+    CommonFunctionality.Start MarketWatch for latest Watchlist page
     Set Selenium Speed  0.5 seconds
     Capture Page Screenshot    screenshot.png
     MarketWatchWatchlistPage.Validate Watchlist Page

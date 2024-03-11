@@ -13,7 +13,7 @@ Resource  ../../../Resources/PageObjects/WSJMailboxPage.robot
 Resource  ../../../Resources/PageObjects/WSJPreferenceCenterPage.robot
 
 Test Setup  CommonFunctionality.Start WSJ Article
-#Test Teardown  CommonFunctionality.Finish Testcase
+Test Teardown  CommonFunctionality.Finish Testcase
 *** Variables ***
 
 *** Test Cases ***
@@ -23,7 +23,7 @@ Test Setup  CommonFunctionality.Start WSJ Article
 #US-T75
 Validate the multiple authors follow button from articles page
     [Documentation]  This test case validates the multiple authors follow button from articles page
-    [Tags]  Regression  Author  Follow  Article
+    [Tags]  Regression  Author  Follow  Article       TagWSMA
 
     WSJArticlePage.Validate Follow Button
     WSJArticlePage.Click Follow Button
@@ -312,12 +312,12 @@ Validate the follow button for Editorials breadcrumb from Editorials page
     WSJArticlePage.Click Sign In Button Modal
     IF  "${Env}" == "prod"
         DefinedKeywords.Market Watch Sign In Process
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  "${Env}"== "dev"
         DefinedKeywords.Sign In Process
     END
     Set Selenium Speed  0.2 seconds
     WSJArticlePage.Validate Custom Following Button
-    IF  "${Env}" == "prod"
+    IF  "${Env}"} == "prod"
         Set Selenium Speed  0.25 seconds
     ELSE IF  "${Env}" == "dev"
         Set Selenium Speed  0.35 seconds
@@ -459,7 +459,7 @@ Validate the follow button for Elections breadcrumb from articles page
 #US-T223
 Validate the Watchlist widget from Watchlist page
     [Documentation]  This test case validates the watchlist widget from watchlist page
-    [Tags]  Regression  Watchlist
+    [Tags]  Regression  Watchlist   TagWWP
 
     CommonFunctionality.Start WSJ for Watchlist page
     DefinedKeywords.Sign In Process
@@ -495,7 +495,7 @@ Validate the alert button for Board Pack Exclusive from articles page
     WSJArticlePage.Click Sign In Button Modal
     IF  "${Env}" == "prod"
         DefinedKeywords.Market Watch Sign In Process
-    ELSE IF  "${Env}" == "dev"
+    ELSE IF  "${Env}"} == "dev"
         DefinedKeywords.Sign In Process
     END
     Set Selenium Speed  0.2 seconds
@@ -579,7 +579,7 @@ Validate the WSJ real-time author video notification
 #US-T312
 Validate the WSJ real-time campaign notification
     [Documentation]  This test case validates the WSJ real-time campaign notification
-    [Tags]  Regression  Notifications
+    [Tags]  Regression  Notifications             Tag WRCN
     WSJMailboxPage.Navigate Mailbox page
     WSJMailboxPage.Login
     WSJMailboxPage.Select Inbox
@@ -592,13 +592,13 @@ Validate the WSJ real-time campaign notification
 #US-T322
 Validate the alert button for Education
     [Documentation]  This test case validates the alert button for Education
-    [Tags]  Regression  Alerts
+    [Tags]  Regression  Alerts    TagWOE
     CommonFunctionality.Start WSJ Article for Education
     WSJArticlePage.Click Education Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
     IF  "${Env}" == "prod"
-        DefinedKeywords.Market Watch Sign In Process
+        DefinedKeywords.Sign In Process
     ELSE IF  "${Env}" == "dev"
         DefinedKeywords.Sign In Process
     END
@@ -621,17 +621,18 @@ Validate the alert button for Education
 #US-T324
 #US-T325
 #US-T326
-Validate the alert button for heard on the steet
+Validate the alert button for heard on the street
     [Documentation]  This test case validates the alert button for heard on the street
-    [Tags]  Regression  Alerts
+    [Tags]  Regression  Alerts             TagWHS
     CommonFunctionality.Start WSJ Article for heard on the street
+    DefinedKeywords.WSJ Sign In Process
     WSJArticlePage.Click heard on the street Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
     IF  "${Env}" == "prod"
-        DefinedKeywords.Market Watch Sign In Process
+        DefinedKeywords.WSJ Sign In Process
     ELSE IF  "${Env}" == "dev"
-        DefinedKeywords.Sign In Process
+        DefinedKeywords.WSJ Sign In Process
     END
     Set Selenium Speed  0.2 seconds
     IF  "${Env}" == "prod"
@@ -654,7 +655,7 @@ Validate the alert button for heard on the steet
 #US-T330
 Validate the alert button for On Wine
     [Documentation]  This test case validates the alert button for On Wine
-    [Tags]  Regression  Alerts
+    [Tags]  Regression  Alerts                 TagWOW
     CommonFunctionality.Start WSJ Article for On Wine
     WSJArticlePage.Click On Wine Button
     WSJArticlePage.Validate Sign In Modal
@@ -747,15 +748,15 @@ Validate the alert button for Personal Technology
 #US-T342
 Validate the alert button for Puzzles
     [Documentation]  This test case validates the alert button for Puzzles
-    [Tags]  Regression  Alerts
+    [Tags]  Regression  Alerts               TagWPZ
     CommonFunctionality.Start WSJ Article for Puzzles
+    IF  "${Env}" == "prod"
+        DefinedKeywords.New WSJ Sign In Process
+    ELSE IF  "${Env}" == "dev"
+        DefinedKeywords.New WSJ Sign In Process
     WSJArticlePage.Click Puzzles Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
-    IF  "${Env}" == "prod"
-        DefinedKeywords.Market Watch Sign In Process
-    ELSE IF  "${Env}" == "dev"
-        DefinedKeywords.Sign In Process
     END
     Set Selenium Speed  0.2 seconds
     IF  "${Env}" == "prod"
@@ -806,7 +807,7 @@ Validate the alert button for Energy
 #US-T361
 Validate Postback on Preference Center
     [Documentation]  This test case validates the WSJ Postback on Preference Center
-    [Tags]  Regression  Postback
+    [Tags]  Regression  Postback            TagWPBC
     WSJPreferenceCenterPage.Add Breaking News By Hotlink
     DefinedKeywords.Sign In Process
     WSJPreferenceCenterPage.Validate Followed Breaking News

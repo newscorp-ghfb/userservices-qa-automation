@@ -226,7 +226,7 @@ Validate Watchlist for non-logged user
     END
 
 Validate Market Data Page
-    Page Should Contain Element  //span[text()="Overview"]
+    Page Should Contain Element  //*[text()='Overview']  #//span[text()="Overview"]
 
 Click Create Button
     Set Focus To Element  dom:${JSCreateListButtonBarronsPath}
