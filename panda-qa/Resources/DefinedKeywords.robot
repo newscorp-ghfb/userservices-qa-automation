@@ -387,3 +387,44 @@ Capabilities Dashboard Main Menu
     ELSE
         Log  Error on Executive Edition Clicked value
     END
+
+    Sign In Process
+    IF  "${Env}" == "prod"
+        ${Email}=  Set Variable  ${Email_prod}
+        ${Password}=  Set Variable  ${Password_prod}
+    ELSE IF  "${Env}" == "dev"
+        ${Email}=  Set Variable  ${Email_dev}
+        ${Password}=  Set Variable  ${Password_dev}
+    END
+    Wait Until Element Is Visible  //input[@type='email']
+    Click Button  //input[@type='email']
+    Input Text  //input[@type='email']  ${Email}
+    Set Selenium Implicit Wait  10s
+    Click Element  //span[text()="Continue"]
+    Set Selenium Implicit Wait  10s
+    Wait Until Element Is Visible  //*[@id="password-login-password"]
+    Input Text  //*[@id="password-login-password"]  ${Password}
+    Set Selenium Speed  1.0 seconds
+    IF  "${Env}" == "prod"
+        Click Element  //*[@id="password-login"]/div/form/div[5]/button    #//*[@id="password-login"]/div/form/div/div[5]/div[1]/button
+    ELSE IF  "${Env}" == "dev"
+        Click Element  //*[@id="password-login"]/div/form/div[5]/button
+    END
+    Wait Until Element Is Not Visible  //*[@id="password-login"]/div/form/div/div[5]/div[1]/button
+
+Sign In Process for Preference Center
+
+    Wait Until Element Is Visible  //input[@id='username']
+    Click Button  //input[@id='username']
+    Input Text  //input[@id='username']  archana.saini@dowjones.com
+    Set Selenium Speed  1.0 seconds
+    Click Element  //span[text()='Continue']/..
+    Set Selenium Speed  1.0 seconds
+    Wait Until Element Is Visible  //*[@id="password-login-password"]
+    Input Text  //*[@id="password-login-password"]  Lactomania@123
+    Set Selenium Speed  1.0 seconds
+    Click Element  (//span[@title='Sign In'])[2]/..
+
+    Wait Until Element Is Visible  //li[text()='View All']
+
+

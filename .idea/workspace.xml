@@ -4,9 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+
+    <list default="true" id="fb16a8de-af3a-454c-b11e-ec06bcdd6a2c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/APIAutomationPage.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/API_Automation.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/log/output.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/DefinedKeywords.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/DefinedKeywords.robot" afterDir="false" />
+
     <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated the Sailthru Regression test cases for the users lookup in order to get the subscribed ST authors, ST companies, ST campaigns and ST custom topics.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/WSJ_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/WSJ_Regression.robot" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,15 +26,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="Akhilesh-Latest-BarronsRegression" />
       </map>
     </option>
+
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
+
     <option name="recentBranches">
       <RecentBranches>
         <option name="branchesForRepo">
@@ -83,11 +98,25 @@
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
+
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2dYr2oRDolwhmWsgRrkPBjLtT4T" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "API__Automation"
+  }
+}]]></component>
+
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -170,103 +199,40 @@
       <method v="2" />
     </configuration>
   </component>
+
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="" />
-      <created>1702390104711</created>
+      <changelist id="fb16a8de-af3a-454c-b11e-ec06bcdd6a2c" name="Changes" comment="" />
+      <created>1710195653122</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1702390104711</updated>
+      <updated>1710195653122</updated>
     </task>
-    <task id="LOCAL-00001" summary="added chrome code for jenkins">
-      <option name="closed" value="true" />
-      <created>1702390959960</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1702390959960</updated>
-    </task>
-    <task id="LOCAL-00002" summary="added chrome code for jenkins">
-      <option name="closed" value="true" />
-      <created>1702391443231</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1702391443231</updated>
-    </task>
-    <task id="LOCAL-00003" summary="added chrome code for jenkins">
-      <option name="closed" value="true" />
-      <created>1702391464319</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1702391464319</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Updated the Xpath value for View in Web Browser optionBarron's daily digest notification.">
-      <option name="closed" value="true" />
-      <created>1705672133780</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1705672133780</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Updated the Xpath value for Company Follow feature on Barron's Preference Center page.">
-      <option name="closed" value="true" />
-      <created>1705676112555</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1705676112555</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Updated the relevant Element IDs and Xpath for the validation of Barron's watchlist widget and Barron's Market data page.">
-      <option name="closed" value="true" />
-      <created>1705938171119</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1705938171119</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Updated the relevant Xpath and Element IDs for Barron's Market Data page.">
-      <option name="closed" value="true" />
-      <created>1706024703201</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1706024703201</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Updated the SignInHeader Path for Barron's article page and Xpath for Barron's Postback functionality">
-      <option name="closed" value="true" />
-      <created>1706109957840</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1706109957840</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Updated Xpath and Element IDs for Barron's Quotes page">
-      <option name="closed" value="true" />
-      <created>1706172975112</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1706172975112</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Updated Xpath for Barron's Mailbox page, Preference Center page and Barron's defined keywords for Sign-In Process">
-      <option name="closed" value="true" />
-      <created>1706190470711</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1706190470711</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Updated Sign Process Xpath value for input of email for WSJ Sign In Process">
-      <option name="closed" value="true" />
-      <created>1706612968446</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1706612968446</updated>
-    </task>
+
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="robot-line">
+          <url>file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/APIAutomationPage.robot</url>
+          <line>97</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="robot-line">
+          <url>file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/APIAutomationPage.robot</url>
+          <line>102</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="robot-line">
+          <url>file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/APIAutomationPage.robot</url>
+          <line>76</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+
     <task id="LOCAL-00012" summary="Updated Sign Process Xpath value under defined keywords for input of email for WSJ Sign In Process">
       <option name="closed" value="true" />
       <created>1706613488771</created>
@@ -616,5 +582,6 @@
     <MESSAGE value="Updated the Sailthru Regression test cases for navigating to WSJ Preference Center page for comparing ST authors, ST company, ST campaigns and ST custom topics." />
     <MESSAGE value="Updated the Sailthru Regression test cases for the users lookup in order to get the subscribed ST authors, ST companies, ST campaigns and ST custom topics." />
     <option name="LAST_COMMIT_MESSAGE" value="Updated the Sailthru Regression test cases for the users lookup in order to get the subscribed ST authors, ST companies, ST campaigns and ST custom topics." />
+
   </component>
 </project>
