@@ -11,6 +11,7 @@ Resource  ../../../Resources/PageObjects/PENCapabilitiesPage.robot
 
 Test Setup  CommonFunctionality.Start PEN Article
 Test Teardown  CommonFunctionality.Finish Testcase
+
 *** Variables ***
 
 *** Test Cases ***
@@ -48,7 +49,7 @@ Validate the PEN Preference Center page
 #US-T29
 Validate Authors for PEN Article page without byline
     [Documentation]  This test case validates authors without byline for PEN article page
-    [Tags]  Regression  Article  Author
+    [Tags]  Regression  Article  Author         TagPAWB
 
     CommonFunctionality.Start PEN Article without byline
     PENArticlePage.Validate author without byline
@@ -56,7 +57,7 @@ Validate Authors for PEN Article page without byline
 #US-T123
 Validate the PEN digest notification
     [Documentation]  This test case validates the PEN digest notification
-    [Tags]  Regression  Notifications
+    [Tags]  Regression  Notifications        TagPDN
     PENMailboxPage.Navigate Mailbox page
     PENMailboxPage.Login
     PENMailboxPage.Select Inbox
@@ -66,7 +67,7 @@ Validate the PEN digest notification
 #US-T150
 Validate the PEN real-time author notification
     [Documentation]  This test case validates the PEN real-time author notification
-    [Tags]  Regression  Notifications  Author
+    [Tags]  Regression  Notifications  Author         TagPAN
     PENMailboxPage.Navigate Mailbox page
     PENMailboxPage.Login
     PENMailboxPage.Select Inbox
@@ -76,7 +77,7 @@ Validate the PEN real-time author notification
 #US-T152
 Validate the PEN real-time company notification
     [Documentation]  This test case validates the PEN real-time company notification
-    [Tags]  Regression  Company  Notifications
+    [Tags]  Regression  Company  Notifications        TagPCN
     PENMailboxPage.Navigate Mailbox page
     PENMailboxPage.Login
     PENMailboxPage.Select Inbox
@@ -86,7 +87,7 @@ Validate the PEN real-time company notification
 #US-T3600
 Validate Postback on Preference Center
     [Documentation]  This test case validates the PEN Postback on Preference Center
-    [Tags]  Regression  Postback
+    [Tags]  Regression  Postback           TagPBP
     PENPreferenceCenterPage.Add Breaking News By Hotlink
     DefinedKeywords.Sign In Process
     PENPreferenceCenterPage.Validate Followed Breaking News
@@ -109,7 +110,7 @@ Validate Postback on Preference Center
 #US-T113
 Validate Private Equity News Capabilities Dashboard for Author
     [Documentation]  This test case validates the PEN Capabilities Dashboard for Author
-    [Tags]  Regression  Capabilities  Author
+    [Tags]  Regression  Capabilities  Author       TagPAC
     PENCapabilitiesPage.Navigate Capabilities Dashboard page
     PENCapabilitiesPage.Click Login button
     PENCapabilitiesPage.Capabilities Dashboard Sign In Process
@@ -125,7 +126,7 @@ Validate Private Equity News Capabilities Dashboard for Author
  #US-T114
 Validate Private Equity News Capabilities Dashboard for Company
     [Documentation]  This test case validates the PEN Capabilities Dashboard for Company
-    [Tags]  Regression  Capabilities  Company
+    [Tags]  Regression  Capabilities  Company       TagPCC
     PENCapabilitiesPage.Navigate Capabilities Dashboard page
     PENCapabilitiesPage.Click Login button
     PENCapabilitiesPage.Capabilities Dashboard Sign In Process

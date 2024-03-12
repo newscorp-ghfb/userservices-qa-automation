@@ -4,7 +4,9 @@ Resource  ../Resources/DefinedKeywords.robot
 
 *** Variables ***
 
+
 ${Browser}=  firefox  #headless, ff, chrome, edge, safari
+
 
 ${Env}=  dev  #dev, prod
 
@@ -110,6 +112,17 @@ Start FN Article
     Wait Until Page Contains Element  dom:${JSFollowButtonBarronsPath}
     Maximize Browser Window
 
+Start Sailthru Page
+    Set Selenium Speed  0.5 seconds
+    ${options} =  Set Browser Options
+    IF  "${Env}" == "prod"
+        Open Browser  https://my.sailthru.com/  ${Browser}  options=${options}  #https://www.sailthru.com/u/login/identifier?state=hKFo2SBzVlExaTIyc3FUbGQtT2l2NE0zbkhSMVlxN083OWNJc6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDdqQmpDZ3duMEp2SE11aDduU1JLSzJ3WTRqT1E2RGFGo2NpZNkgeEtmRXhYazVyeGZTN01pbzJkcFRadzI1eHp5UHF4bjM  #https://www.sailthru.com/?doing_wp_cron=1709648423.2007079124450683593750  ${Browser}  options=${options}
+        Go To   https://my.sailthru.com/  #https://login.sailthru.com/u/login/identifier?state=hKFo2SBzVlExaTIyc3FUbGQtT2l2NE0zbkhSMVlxN083OWNJc6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDdqQmpDZ3duMEp2SE11aDduU1JLSzJ3WTRqT1E2RGFGo2NpZNkgeEtmRXhYazVyeGZTN01pbzJkcFRadzI1eHp5UHF4bjM
+    ELSE IF  "${Env}" == "dev"
+        Open Browser  https://my.sailthru.com/  ${Browser}  options=${options}  #https://login.sailthru.com/u/login/identifier?state=hKFo2SBzVlExaTIyc3FUbGQtT2l2NE0zbkhSMVlxN083OWNJc6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDdqQmpDZ3duMEp2SE11aDduU1JLSzJ3WTRqT1E2RGFGo2NpZNkgeEtmRXhYazVyeGZTN01pbzJkcFRadzI1eHp5UHF4bjM  ${Browser}  options=${options}
+        Go To  https://my.sailthru.com/  #https://login.sailthru.com/u/login/identifier?state=hKFo2SBzVlExaTIyc3FUbGQtT2l2NE0zbkhSMVlxN083OWNJc6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDdqQmpDZ3duMEp2SE11aDduU1JLSzJ3WTRqT1E2RGFGo2NpZNkgeEtmRXhYazVyeGZTN01pbzJkcFRadzI1eHp5UHF4bjM
+    END
+    Maximize Browser Window
 
 Start WSJ Article
     Set Selenium Speed  0.5 seconds
@@ -238,7 +251,7 @@ Start WSJ Article for Letters breadcrumb
         Open Browser  https://www.s.dev.wsj.com  ${Browser}  options=${options}
         Go To  https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     END
-    #Wait Until Element Is Visible  //*[text()="Dave Michaels"]
+    Wait Until Element Is Visible  //span[text()="Dave Michaels"]
     Set Focus To Element  //*[text()="Letters"]
     #Wait Until Element Is Visible  dom:${JSFollowButtonMGPath}  30s
     Maximize Browser Window
@@ -253,7 +266,7 @@ Start WSJ Letters for Letters breadcrumb
         Open Browser  https://www.s.dev.wsj.com  ${Browser}  options=${options}
         Go To  https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     END
-    #Wait Until Element Is Visible  //*[text()="Dave Michaels"]
+    #Wait Until Element Is Visible  //span[text()="Dave Michaels"]
     Set Focus To Element  //*[text()="Letters"]
     #Wait Until Element Is Visible  dom:${JSFollowButtonMGPath}  30s
     Maximize Browser Window
@@ -283,7 +296,7 @@ Start WSJ Editorials for Editorials breadcrumb
         Open Browser  https://www.s.dev.wsj.com  ${Browser}  options=${options}
         Go To  https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     END
-    #Wait Until Element Is Visible  //*[text()="Dave Michaels"]
+    #Wait Until Element Is Visible  //span[text()="Dave Michaels"]
     Set Focus To Element  //*[text()="Review & Outlook (U.S.)"]
     #Wait Until Element Is Visible  dom:${JSFollowButtonMGPath}  30s
     Maximize Browser Window
@@ -298,7 +311,7 @@ Start WSJ Article for Commentary breadcrumb
         Open Browser  https://www.s.dev.wsj.com  ${Browser}  options=${options}
         Go To  https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     END
-    #Wait Until Element Is Visible  //*[text()="Dave Michaels"]
+    #Wait Until Element Is Visible  //span[text()="Dave Michaels"]
     Set Focus To Element  //*[text()="Commentary"]
     #Wait Until Element Is Visible  dom:${JSFollowButtonMGPath}  30s
     Maximize Browser Window
@@ -313,7 +326,7 @@ Start WSJ Commentary for Commentary breadcrumb
         Open Browser  https://www.s.dev.wsj.com  ${Browser}  options=${options}
         Go To  https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     END
-    #Wait Until Element Is Visible  //*[text()="Dave Michaels"]
+    #Wait Until Element Is Visible  //span[text()="Dave Michaels"]
     Set Focus To Element  //*[text()="Commentary (U.S.)"]
     #Wait Until Element Is Visible  dom:${JSFollowButtonMGPath}  30s
     Maximize Browser Window
@@ -328,7 +341,7 @@ Start WSJ Article for Elections breadcrumb
         Open Browser  https://www.s.dev.wsj.com  ${Browser}  options=${options}
         Go To  https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     END
-    #Wait Until Element Is Visible  //*[text()="Dave Michaels"]
+    #Wait Until Element Is Visible  //span[text()="Dave Michaels"]
     Set Focus To Element  //*[text()="Election 2024"]
     #Wait Until Element Is Visible  dom:${JSFollowButtonMGPath}  30s
     Maximize Browser Window
@@ -343,7 +356,7 @@ Start WSJ Elections for Elections breadcrumb
         Open Browser  https://www.s.dev.wsj.com  ${Browser}  options=${options}
         Go To  https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     END
-    #Wait Until Element Is Visible  //*[text()="Dave Michaels"]
+    #Wait Until Element Is Visible  //span[text()="Dave Michaels"]
     Set Focus To Element  //*[text()="Election 2024"]
     #Wait Until Element Is Visible  dom:${JSFollowButtonMGPath}  30s
     Maximize Browser Window
@@ -358,7 +371,7 @@ Start Barrons Stock Picks for Stock Picks breadcrumb
         Open Browser  https://www.s.dev.barrons.com  ${Browser}  options=${options}
         Go To  https://www.s.dev.barrons.com/market-data/stocks/stock-picks?mod=BOL_TOPNAV
     END
-    #Wait Until Element Is Visible  //*[text()="Dave Michaels"]
+    #Wait Until Element Is Visible  //span[text()="Dave Michaels"]
     Set Focus To Element  //*[text()="Barron's Latest Stock Picks"]
     #Wait Until Element Is Visible  dom:${JSFollowButtonMGPath}  30s
     Maximize Browser Window

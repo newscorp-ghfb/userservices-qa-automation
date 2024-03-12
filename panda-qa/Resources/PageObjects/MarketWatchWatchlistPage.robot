@@ -9,7 +9,7 @@ Validate Watchlist Page
     Page Should Contain Element  //*[text()="Add Symbol"]
 
 Click Sign in
-    Click Element  //a[text()="Sign in"]
+    Click Element  /html/body/main/div/div/section/div[1]/div[3]/div/a  #//a[text()="Sign in"]
 
 Validate Default New Watchlist
     Page Should Contain Element  //button[text()="New Watchlist"]
