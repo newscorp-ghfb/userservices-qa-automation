@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20240222 20:01:35.347" rpa="false" schemaversion="4">
+<suite id="s1" name="Panda-Qa-Develop" source="D:\Users\khanduria\PycharmProjects\panda-qa-develop">
+<suite id="s1-s1" name="Panda-Qa" source="D:\Users\khanduria\PycharmProjects\panda-qa-develop\panda-qa">
+<suite id="s1-s1-s1" name="Tests" source="D:\Users\khanduria\PycharmProjects\panda-qa-develop\panda-qa\Tests">
+<suite id="s1-s1-s1-s1" name="FollowWidget" source="D:\Users\khanduria\PycharmProjects\panda-qa-develop\panda-qa\Tests\FollowWidget">
+<suite id="s1-s1-s1-s1-s1" name="Regression" source="D:\Users\khanduria\PycharmProjects\panda-qa-develop\panda-qa\Tests\FollowWidget\Regression">
+<suite id="s1-s1-s1-s1-s1-s1" name="MarketWatch Regression" source="D:\Users\khanduria\PycharmProjects\panda-qa-develop\panda-qa\Tests\FollowWidget\Regression\MarketWatch_Regression.robot">
+<test id="s1-s1-s1-s1-s1-s1-t1" name="Validate the Watchlist widget from Watchlist page" line="60">
+<kw name="Start Market Watch Article" library="CommonFunctionality" type="SETUP">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240222 20:01:35.844" endtime="20240222 20:01:35.844"/>
+</kw>
+<kw name="Set Browser Options" library="CommonFunctionality">
+<var>${options}</var>
+<if>
+<branch type="IF" condition="&quot;${Browser}&quot; == &quot;firefox&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${options}</var>
+<arg>selenium.webdriver.FirefoxOptions()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20240222 20:01:35.845" endtime="20240222 20:01:35.845"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--CreateProfile</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240222 20:01:35.845" endtime="20240222 20:01:35.845"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--start-maximized</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240222 20:01:35.845" endtime="20240222 20:01:35.845"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240222 20:01:35.845" endtime="20240222 20:01:35.845"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240222 20:01:35.845" endtime="20240222 20:01:35.845"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240222 20:01:35.845" endtime="20240222 20:01:35.845"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--headless</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240222 20:01:35.846" endtime="20240222 20:01:35.846"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.debugger.force-local</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240222 20:01:35.846" endtime="20240222 20:01:35.846"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.debugger.remote-enabled</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240222 20:01:35.846" endtime="20240222 20:01:35.846"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.chrome.enabled</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240222 20:01:35.846" endtime="20240222 20:01:35.846"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.debugger.prompt-connection</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240222 20:01:35.846" endtime="20240222 20:01:35.846"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--browser.dom.window.dump.enabled</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240222 20:01:35.846" endtime="20240222 20:01:35.846"/>
+</kw>
+<return>
+<value>${options}</value>
+<status status="NOT RUN" starttime="20240222 20:01:35.846" endtime="20240222 20:01:35.846"/>
+</return>
+<status status="NOT RUN" starttime="20240222 20:01:35.845" endtime="20240222 20:01:35.846"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Browser}&quot; == &quot;chrome&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${options}</var>
+<arg>selenium.webdriver.ChromeOptions()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20240222 20:01:35.846" endtime="20240222 20:01:35.846"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--start-maximized</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240222 20:01:35.847" endtime="20240222 20:01:35.847"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240222 20:01:35.847" endtime="20240222 20:01:35.847"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240222 20:01:35.847" endtime="20240222 20:01:35.847"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--headless</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240222 20:01:35.847" endtime="20240222 20:01:35.847"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240222 20:01:35.847" endtime="20240222 20:01:35.847"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--ignore-certificate-errors</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240222 20:01:35.847" endtime="20240222 20:01:35.847"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-extensions</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240222 20:01:35.847" endtime="20240222 20:01:35.847"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-user-gesture-required</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240222 20:01:35.847" endtime="20240222 20:01:35.847"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-first-run</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240222 20:01:35.847" endtime="20240222 20:01:35.847"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--use-fake-ui-for-media-stream</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240222 20:01:35.849" endtime="20240222 20:01:35.849"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--use-fake-device-for-media-stream</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240222 20:01:35.849" endtime="20240222 20:01:35.849"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-sync</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240222 20:01:35.849" endtime="20240222 20:01:35.849"/>
+</kw>
+<return>
+<value>${options}</value>
+<status status="NOT RUN" starttime="20240222 20:01:35.849" endtime="20240222 20:01:35.849"/>
+</return>
+<status status="NOT RUN" starttime="20240222 20:01:35.846" endtime="20240222 20:01:35.849"/>
+</branch>
+<status status="PASS" starttime="20240222 20:01:35.845" endtime="20240222 20:01:35.849"/>
+</if>
+<msg timestamp="20240222 20:01:35.849" level="INFO">${options} = None</msg>
+<status status="PASS" starttime="20240222 20:01:35.844" endtime="20240222 20:01:35.849"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.marketwatch.com</arg>
+<arg>${Browser}</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20240222 20:01:35.849" endtime="20240222 20:01:35.849"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.marketwatch.com/story/is-the-u-s-stock-market-closed-on-juneteenth-what-investors-need-to-know-11655230158</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20240222 20:01:35.849" endtime="20240222 20:01:35.849"/>
+</kw>
+<status status="NOT RUN" starttime="20240222 20:01:35.849" endtime="20240222 20:01:35.849"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.dev.marketwatch.com</arg>
+<arg>${Browser}</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240222 20:01:35.850" level="INFO">Opening browser 'ff' to base url 'https://www.dev.marketwatch.com'.</msg>
+<status status="PASS" starttime="20240222 20:01:35.850" endtime="20240222 20:01:46.474"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.dev.marketwatch.com/author/Catey-Hill</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20240222 20:01:46.474" level="INFO">Opening url 'https://www.dev.marketwatch.com/author/Catey-Hill'</msg>
+<status status="PASS" starttime="20240222 20:01:46.474" endtime="20240222 20:02:06.417"/>
+</kw>
+<status status="PASS" starttime="20240222 20:01:35.849" endtime="20240222 20:02:06.417"/>
+</branch>
+<status status="PASS" starttime="20240222 20:01:35.849" endtime="20240222 20:02:06.417"/>
+</if>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240222 20:02:06.418" endtime="20240222 20:02:07.422"/>
+</kw>
+<status status="PASS" starttime="20240222 20:01:35.844" endtime="20240222 20:02:07.422"/>
+</kw>
+<kw name="Start MarketWatch for Watchlist page" library="CommonFunctionality">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240222 20:02:07.422" endtime="20240222 20:02:07.423"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.marketwatch.com/watchlist?mod=top_nav</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20240222 20:02:07.424" endtime="20240222 20:02:07.424"/>
+</kw>
+<status status="NOT RUN" starttime="20240222 20:02:07.424" endtime="20240222 20:02:07.424"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.dev.marketwatch.com/watchlist</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20240222 20:02:07.424" level="INFO">Opening url 'https://www.dev.marketwatch.com/watchlist'</msg>
+<status status="PASS" starttime="20240222 20:02:07.424" endtime="20240222 20:02:11.660"/>
+</kw>
+<status status="PASS" starttime="20240222 20:02:07.424" endtime="20240222 20:02:11.660"/>
+</branch>
+<status status="PASS" starttime="20240222 20:02:07.424" endtime="20240222 20:02:11.660"/>
+</if>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240222 20:02:11.660" endtime="20240222 20:02:12.166"/>
+</kw>
+<status status="PASS" starttime="20240222 20:02:07.422" endtime="20240222 20:02:12.166"/>
+</kw>
+<kw name="Click Sign in" library="MarketWatchWatchlistPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[text()="Sign in"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240222 20:02:12.182" level="INFO">Clicking element '//a[text()="Sign in"]'.</msg>
+<msg timestamp="20240222 20:02:13.573" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-445.png"&gt;&lt;img src="selenium-screenshot-445.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240222 20:02:13.574" level="FAIL">ElementClickInterceptedException: Message: Element &lt;a class="link" href="https://www.s.dev.marketwatch.com/client/login?target="&gt; is not clickable at point (359,478) because another element &lt;span class="trending__change points ignore-color"&gt; obscures it
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:191:5
+ElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:335:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:176:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:135:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:204:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:84:31
+</msg>
+<status status="FAIL" starttime="20240222 20:02:12.182" endtime="20240222 20:02:13.579"/>
+</kw>
+<status status="FAIL" starttime="20240222 20:02:12.181" endtime="20240222 20:02:13.579"/>
+</kw>
+<kw name="Sign In Process" library="DefinedKeywords">
+<status status="NOT RUN" starttime="20240222 20:02:13.580" endtime="20240222 20:02:13.580"/>
+</kw>
+<kw name="Start MarketWatch for Watchlist page" library="CommonFunctionality">
+<status status="NOT RUN" starttime="20240222 20:02:13.580" endtime="20240222 20:02:13.580"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" starttime="20240222 20:02:13.581" endtime="20240222 20:02:13.581"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>screenshot.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" starttime="20240222 20:02:13.582" endtime="20240222 20:02:13.582"/>
+</kw>
+<kw name="Validate Watchlist Page" library="MarketWatchWatchlistPage">
+<status status="NOT RUN" starttime="20240222 20:02:13.582" endtime="20240222 20:02:13.582"/>
+</kw>
+<kw name="Validate Default New Watchlist" library="MarketWatchWatchlistPage">
+<status status="NOT RUN" starttime="20240222 20:02:13.582" endtime="20240222 20:02:13.582"/>
+</kw>
+<kw name="Click Add Symbol Input" library="MarketWatchWatchlistPage">
+<status status="NOT RUN" starttime="20240222 20:02:13.583" endtime="20240222 20:02:13.583"/>
+</kw>
+<kw name="Type Symbol" library="MarketWatchWatchlistPage">
+<status status="NOT RUN" starttime="20240222 20:02:13.583" endtime="20240222 20:02:13.583"/>
+</kw>
+<kw name="Select Symbol" library="MarketWatchWatchlistPage">
+<status status="NOT RUN" starttime="20240222 20:02:13.584" endtime="20240222 20:02:13.584"/>
+</kw>
+<kw name="Validate Symbol in Default New Watchlist" library="MarketWatchWatchlistPage">
+<status status="NOT RUN" starttime="20240222 20:02:13.584" endtime="20240222 20:02:13.584"/>
+</kw>
+<kw name="Create Watchlist Name" library="MarketWatchWatchlistPage">
+<status status="NOT RUN" starttime="20240222 20:02:13.584" endtime="20240222 20:02:13.584"/>
+</kw>
+<kw name="Edit Watchlist Name" library="MarketWatchWatchlistPage">
+<status status="NOT RUN" starttime="20240222 20:02:13.584" endtime="20240222 20:02:13.584"/>
+</kw>
+<kw name="Type Symbol" library="MarketWatchWatchlistPage">
+<status status="NOT RUN" starttime="20240222 20:02:13.584" endtime="20240222 20:02:13.584"/>
+</kw>
+<kw name="Select Symbol" library="MarketWatchWatchlistPage">
+<status status="NOT RUN" starttime="20240222 20:02:13.585" endtime="20240222 20:02:13.585"/>
+</kw>
+<kw name="Validate Symbol in Created Watchlist" library="MarketWatchWatchlistPage">
+<status status="NOT RUN" starttime="20240222 20:02:13.585" endtime="20240222 20:02:13.585"/>
+</kw>
+<kw name="Delete Watchlists" library="MarketWatchWatchlistPage">
+<status status="NOT RUN" starttime="20240222 20:02:13.586" endtime="20240222 20:02:13.586"/>
+</kw>
+<kw name="Validate Default New Watchlist" library="MarketWatchWatchlistPage">
+<status status="NOT RUN" starttime="20240222 20:02:13.586" endtime="20240222 20:02:13.586"/>
+</kw>
+<kw name="Validate No Symbol in Default New Watchlist" library="MarketWatchWatchlistPage">
+<status status="NOT RUN" starttime="20240222 20:02:13.586" endtime="20240222 20:02:13.586"/>
+</kw>
+<kw name="Finish Testcase" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240222 20:02:13.587" endtime="20240222 20:02:17.757"/>
+</kw>
+<status status="PASS" starttime="20240222 20:02:13.587" endtime="20240222 20:02:17.758"/>
+</kw>
+<doc>This test case validates the watchlist widget from watchlist page</doc>
+<tag>MarketWatch</tag>
+<tag>Regression</tag>
+<tag>TagMWL</tag>
+<tag>Watchlist</tag>
+<status status="FAIL" starttime="20240222 20:01:35.842" endtime="20240222 20:02:17.758">ElementClickInterceptedException: Message: Element &lt;a class="link" href="https://www.s.dev.marketwatch.com/client/login?target="&gt; is not clickable at point (359,478) because another element &lt;span class="trending__change points ignore-color"&gt; obscures it
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:191:5
+ElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:335:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:176:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:135:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:204:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:84:31
+</status>
+</test>
+<doc>Market Watch Regression Tests</doc>
+<status status="FAIL" starttime="20240222 20:01:35.414" endtime="20240222 20:02:17.760"/>
+</suite>
+<status status="FAIL" starttime="20240222 20:01:35.410" endtime="20240222 20:02:17.763"/>
+</suite>
+<status status="FAIL" starttime="20240222 20:01:35.407" endtime="20240222 20:02:17.765"/>
+</suite>
+<status status="FAIL" starttime="20240222 20:01:35.403" endtime="20240222 20:02:17.766"/>
+</suite>
+<status status="FAIL" starttime="20240222 20:01:35.399" endtime="20240222 20:02:17.767"/>
+</suite>
+<status status="FAIL" starttime="20240222 20:01:35.350" endtime="20240222 20:02:17.769"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">MarketWatch</stat>
+<stat pass="0" fail="1" skip="0">Regression</stat>
+<stat pass="0" fail="1" skip="0">TagMWL</stat>
+<stat pass="0" fail="1" skip="0">Watchlist</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Panda-Qa-Develop">Panda-Qa-Develop</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Panda-Qa">Panda-Qa-Develop.Panda-Qa</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Tests">Panda-Qa-Develop.Panda-Qa.Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1" name="FollowWidget">Panda-Qa-Develop.Panda-Qa.Tests.FollowWidget</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1-s1" name="Regression">Panda-Qa-Develop.Panda-Qa.Tests.FollowWidget.Regression</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1-s1-s1" name="MarketWatch Regression">Panda-Qa-Develop.Panda-Qa.Tests.FollowWidget.Regression.MarketWatch Regression</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

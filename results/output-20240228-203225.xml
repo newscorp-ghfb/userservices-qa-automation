@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20240228 20:32:26.545" rpa="false" schemaversion="4">
+<suite id="s1" name="Panda-Qa-Develop" source="D:\Users\khanduria\PycharmProjects\panda-qa-develop">
+<suite id="s1-s1" name="Panda-Qa" source="D:\Users\khanduria\PycharmProjects\panda-qa-develop\panda-qa">
+<suite id="s1-s1-s1" name="Tests" source="D:\Users\khanduria\PycharmProjects\panda-qa-develop\panda-qa\Tests">
+<suite id="s1-s1-s1-s1" name="FollowWidget" source="D:\Users\khanduria\PycharmProjects\panda-qa-develop\panda-qa\Tests\FollowWidget">
+<suite id="s1-s1-s1-s1-s1" name="Regression" source="D:\Users\khanduria\PycharmProjects\panda-qa-develop\panda-qa\Tests\FollowWidget\Regression">
+<suite id="s1-s1-s1-s1-s1-s1" name="WSJ Regression" source="D:\Users\khanduria\PycharmProjects\panda-qa-develop\panda-qa\Tests\FollowWidget\Regression\WSJ_Regression.robot">
+<test id="s1-s1-s1-s1-s1-s1-t1" name="Validate the alert button for Puzzles" line="749">
+<kw name="Start WSJ Article" library="CommonFunctionality" type="SETUP">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240228 20:32:27.037" endtime="20240228 20:32:27.037"/>
+</kw>
+<if>
+<branch type="IF" condition="${Env} == &quot;prod&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.wsj.com</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20240228 20:32:27.037" endtime="20240228 20:32:27.037"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&amp;cx_testVariant=cx_5&amp;cx_artPos=6&amp;mod=WTRN#cxrecs_s</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20240228 20:32:27.037" endtime="20240228 20:32:27.037"/>
+</kw>
+<status status="NOT RUN" starttime="20240228 20:32:27.037" endtime="20240228 20:32:27.037"/>
+</branch>
+<branch type="ELSE IF" condition="${Env} == &quot;dev&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.s.dev.wsj.com</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240228 20:32:27.038" level="INFO">Opening browser 'ff' to base url 'https://www.s.dev.wsj.com'.</msg>
+<status status="PASS" starttime="20240228 20:32:27.038" endtime="20240228 20:32:48.911"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&amp;cx_testVariant=cx_5&amp;cx_artPos=6&amp;mod=WTRN#cxrecs_s</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20240228 20:32:48.911" level="INFO">Opening url 'https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&amp;cx_testVariant=cx_5&amp;cx_artPos=6&amp;mod=WTRN#cxrecs_s'</msg>
+<status status="PASS" starttime="20240228 20:32:48.911" endtime="20240228 20:32:51.961"/>
+</kw>
+<status status="PASS" starttime="20240228 20:32:27.037" endtime="20240228 20:32:51.961"/>
+</branch>
+<status status="PASS" starttime="20240228 20:32:27.037" endtime="20240228 20:32:51.961"/>
+</if>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240228 20:32:51.962" endtime="20240228 20:32:52.465"/>
+</kw>
+<status status="PASS" starttime="20240228 20:32:27.036" endtime="20240228 20:32:52.465"/>
+</kw>
+<kw name="Start WSJ Article for Puzzles" library="CommonFunctionality">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240228 20:32:52.466" endtime="20240228 20:32:52.466"/>
+</kw>
+<if>
+<branch type="IF" condition="${Env} == &quot;prod&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.wsj.com</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20240228 20:32:52.467" endtime="20240228 20:32:52.467"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.wsj.com/news/puzzle?mod=breadcrumb</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20240228 20:32:52.467" endtime="20240228 20:32:52.467"/>
+</kw>
+<status status="NOT RUN" starttime="20240228 20:32:52.467" endtime="20240228 20:32:52.467"/>
+</branch>
+<branch type="ELSE IF" condition="${Env} == &quot;dev&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.s.dev.wsj.com</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240228 20:32:52.468" level="INFO">Opening browser 'firefox' to base url 'https://www.s.dev.wsj.com'.</msg>
+<status status="PASS" starttime="20240228 20:32:52.467" endtime="20240228 20:33:15.726"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.s.dev.wsj.com/news/puzzle?mod=breadcrumb</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20240228 20:33:15.726" level="INFO">Opening url 'https://www.s.dev.wsj.com/news/puzzle?mod=breadcrumb'</msg>
+<status status="PASS" starttime="20240228 20:33:15.726" endtime="20240228 20:33:18.072"/>
+</kw>
+<status status="PASS" starttime="20240228 20:32:52.467" endtime="20240228 20:33:18.072"/>
+</branch>
+<status status="PASS" starttime="20240228 20:32:52.467" endtime="20240228 20:33:18.072"/>
+</if>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240228 20:33:18.072" endtime="20240228 20:33:19.076"/>
+</kw>
+<status status="PASS" starttime="20240228 20:32:52.466" endtime="20240228 20:33:19.076"/>
+</kw>
+<kw name="Click Puzzles Button" library="WSJArticlePage">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>dom:${JSCustomFollowButtonWSJPath}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240228 20:33:19.077" level="INFO">Clicking button 'dom:document.querySelector('ufc-follow-custom-topic-widget').shadowRoot .querySelector('ufc-follow-button').shadowRoot .querySelector('button')'.</msg>
+<msg timestamp="20240228 20:33:20.275" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-471.png"&gt;&lt;img src="selenium-screenshot-471.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240228 20:33:20.276" level="FAIL">JavascriptException: Message: TypeError: document.querySelector(...) is null
+Stacktrace:
+@https://newscorp.okta.com/app/newscorp_wsjdevdj_1/exk10wzuh6l6PP2hw0x8/sso/saml?SAMLRequest=nVNNj9owFPwrke8kdmD5sIAVBVVF2rYR0D3sBRn7UQKOnfo5JNtfXxEIQtUuB67vPc2MZ8bD5yrTwREcptaMCAspeR4PUWQ655PC78wC%2FhSAPqgybZDXixEpnOFWYIrciAyQe8mXk%2B8vPA4pz531VlpNgvlsRNbdHgNJN1uxUXSg5KDfG7B%2BG57iXkfQmLEt6%2FRjNWiT4LUREYeUBHPEAuYGvTB%2BRGIad1o0bsX9FXvitM1ZN2SMvpEgudB9SY1Kze%2F72jbnI%2BTfVquklfxcrkgwA%2FSpEb6m3nmfI48iAyVK6%2FLQHrwIpc0ikefX6brEvYKj2q9ZBNWB0fJvsevqbpLEu5JW%2FQjRRierSDBBBHfCnlqDRQZuCe6YSvi1eDmz8SgqyzJUcAxL3NdUjYj%2F53K7xtTDWhR%2BV8NHUmi9EfJAzpHx2jR3k9V9O0QjjoxvpFyf%2FNHThtENUVOUHyKD%2BSyxOpXvjxRlorUtpw6EhxHxrgASfLUuE%2F5zABayepKq1rY%2B5ZCJVE%2BUcoBIokbapb6g6jJPrfFQPVTmqc1y4VI8tQQqIX3j%2BS3wVAvEBWwfSeDumeTyBA3IE4FYWqdOvQfpQa2cMJhb5y%2FRfKRnfN59Ysd1e%2Fvhx%2F8A&amp;RelayState=https%3A%2F%2Fwww.dev.wsj.com%2Fnews%2Fpuzzle%3Fmod%3Dbreadcrumb:2:23
+@https://newscorp.okta.com/app/newscorp_wsjdevdj_1/exk10wzuh6l6PP2hw0x8/sso/saml?SAMLRequest=nVNNj9owFPwrke8kdmD5sIAVBVVF2rYR0D3sBRn7UQKOnfo5JNtfXxEIQtUuB67vPc2MZ8bD5yrTwREcptaMCAspeR4PUWQ655PC78wC%2FhSAPqgybZDXixEpnOFWYIrciAyQe8mXk%2B8vPA4pz531VlpNgvlsRNbdHgNJN1uxUXSg5KDfG7B%2BG57iXkfQmLEt6%2FRjNWiT4LUREYeUBHPEAuYGvTB%2BRGIad1o0bsX9FXvitM1ZN2SMvpEgudB9SY1Kze%2F72jbnI%2BTfVquklfxcrkgwA%2FSpEb6m3nmfI48iAyVK6%2FLQHrwIpc0ikefX6brEvYKj2q9ZBNWB0fJvsevqbpLEu5JW%2FQjRRierSDBBBHfCnlqDRQZuCe6YSvi1eDmz8SgqyzJUcAxL3NdUjYj%2F53K7xtTDWhR%2BV8NHUmi9EfJAzpHx2jR3k9V9O0QjjoxvpFyf%2FNHThtENUVOUHyKD%2BSyxOpXvjxRlorUtpw6EhxHxrgASfLUuE%2F5zABayepKq1rY%2B5ZCJVE%2BUcoBIokbapb6g6jJPrfFQPVTmqc1y4VI8tQQqIX3j%2BS3wVAvEBWwfSeDumeTyBA3IE4FYWqdOvQfpQa2cMJhb5y%2FRfKRnfN59Ysd1e%2Fvhx%2F8A&amp;RelayState=https%3A%2F%2Fwww.dev.wsj.com%2Fnews%2Fpuzzle%3Fmod%3Dbreadcrumb:3:8
+</msg>
+<status status="FAIL" starttime="20240228 20:33:19.077" endtime="20240228 20:33:20.282"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>dom:${JSCustomFollowButtonWSJPath}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240228 20:33:20.282" endtime="20240228 20:33:20.283"/>
+</kw>
+<status status="FAIL" starttime="20240228 20:33:19.076" endtime="20240228 20:33:20.283"/>
+</kw>
+<kw name="Validate Sign In Modal" library="WSJArticlePage">
+<status status="NOT RUN" starttime="20240228 20:33:20.284" endtime="20240228 20:33:20.284"/>
+</kw>
+<kw name="Click Sign In Button Modal" library="WSJArticlePage">
+<status status="NOT RUN" starttime="20240228 20:33:20.284" endtime="20240228 20:33:20.284"/>
+</kw>
+<if>
+<branch type="IF" condition="${Env} == &quot;prod&quot;">
+<kw name="New WSJ Sign In Process" library="DefinedKeywords">
+<status status="NOT RUN" starttime="20240228 20:33:20.284" endtime="20240228 20:33:20.284"/>
+</kw>
+<status status="NOT RUN" starttime="20240228 20:33:20.284" endtime="20240228 20:33:20.284"/>
+</branch>
+<branch type="ELSE IF" condition="${Env} == &quot;dev&quot;">
+<kw name="New WSJ Sign In Process" library="DefinedKeywords">
+<status status="NOT RUN" starttime="20240228 20:33:20.285" endtime="20240228 20:33:20.285"/>
+</kw>
+<status status="NOT RUN" starttime="20240228 20:33:20.284" endtime="20240228 20:33:20.285"/>
+</branch>
+<status status="NOT RUN" starttime="20240228 20:33:20.284" endtime="20240228 20:33:20.285"/>
+</if>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" starttime="20240228 20:33:20.285" endtime="20240228 20:33:20.285"/>
+</kw>
+<if>
+<branch type="IF" condition="${Env} == &quot;prod&quot;">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" starttime="20240228 20:33:20.285" endtime="20240228 20:33:20.285"/>
+</kw>
+<status status="NOT RUN" starttime="20240228 20:33:20.285" endtime="20240228 20:33:20.285"/>
+</branch>
+<branch type="ELSE IF" condition="${Env} == &quot;dev&quot;">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.35 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" starttime="20240228 20:33:20.285" endtime="20240228 20:33:20.285"/>
+</kw>
+<status status="NOT RUN" starttime="20240228 20:33:20.285" endtime="20240228 20:33:20.285"/>
+</branch>
+<status status="NOT RUN" starttime="20240228 20:33:20.285" endtime="20240228 20:33:20.285"/>
+</if>
+<kw name="Click Puzzles Button" library="WSJArticlePage">
+<status status="NOT RUN" starttime="20240228 20:33:20.286" endtime="20240228 20:33:20.286"/>
+</kw>
+<kw name="Click Undo Link" library="WSJArticlePage">
+<status status="NOT RUN" starttime="20240228 20:33:20.287" endtime="20240228 20:33:20.287"/>
+</kw>
+<kw name="Validate Custom Following Button" library="WSJArticlePage">
+<status status="NOT RUN" starttime="20240228 20:33:20.287" endtime="20240228 20:33:20.287"/>
+</kw>
+<kw name="Click Custom Following Button" library="WSJArticlePage">
+<status status="NOT RUN" starttime="20240228 20:33:20.287" endtime="20240228 20:33:20.287"/>
+</kw>
+<kw name="Validate Custom Follow Button" library="WSJArticlePage">
+<status status="NOT RUN" starttime="20240228 20:33:20.288" endtime="20240228 20:33:20.288"/>
+</kw>
+<kw name="Click Custom Follow Button" library="WSJArticlePage">
+<status status="NOT RUN" starttime="20240228 20:33:20.288" endtime="20240228 20:33:20.288"/>
+</kw>
+<kw name="Click Preference Center Link" library="WSJArticlePage">
+<status status="NOT RUN" starttime="20240228 20:33:20.288" endtime="20240228 20:33:20.288"/>
+</kw>
+<kw name="Validate Preference Center page" library="WSJPreferenceCenterPage">
+<status status="NOT RUN" starttime="20240228 20:33:20.288" endtime="20240228 20:33:20.288"/>
+</kw>
+<kw name="Finish Testcase" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240228 20:33:20.290" endtime="20240228 20:33:24.806"/>
+</kw>
+<status status="PASS" starttime="20240228 20:33:20.289" endtime="20240228 20:33:24.806"/>
+</kw>
+<doc>This test case validates the alert button for Puzzles</doc>
+<tag>Alerts</tag>
+<tag>Regression</tag>
+<tag>TagWPZ</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20240228 20:32:27.035" endtime="20240228 20:33:24.806">JavascriptException: Message: TypeError: document.querySelector(...) is null
+Stacktrace:
+@https://newscorp.okta.com/app/newscorp_wsjdevdj_1/exk10wzuh6l6PP2hw0x8/sso/saml?SAMLRequest=nVNNj9owFPwrke8kdmD5sIAVBVVF2rYR0D3sBRn7UQKOnfo5JNtfXxEIQtUuB67vPc2MZ8bD5yrTwREcptaMCAspeR4PUWQ655PC78wC%2FhSAPqgybZDXixEpnOFWYIrciAyQe8mXk%2B8vPA4pz531VlpNgvlsRNbdHgNJN1uxUXSg5KDfG7B%2BG57iXkfQmLEt6%2FRjNWiT4LUREYeUBHPEAuYGvTB%2BRGIad1o0bsX9FXvitM1ZN2SMvpEgudB9SY1Kze%2F72jbnI%2BTfVquklfxcrkgwA%2FSpEb6m3nmfI48iAyVK6%2FLQHrwIpc0ikefX6brEvYKj2q9ZBNWB0fJvsevqbpLEu5JW%2FQjRRierSDBBBHfCnlqDRQZuCe6YSvi1eDmz8SgqyzJUcAxL3NdUjYj%2F53K7xtTDWhR%2BV8NHUmi9EfJAzpHx2jR3k9V9O0QjjoxvpFyf%2FNHThtENUVOUHyKD%2BSyxOpXvjxRlorUtpw6EhxHxrgASfLUuE%2F5zABayepKq1rY%2B5ZCJVE%2BUcoBIokbapb6g6jJPrfFQPVTmqc1y4VI8tQQqIX3j%2BS3wVAvEBWwfSeDumeTyBA3IE4FYWqdOvQfpQa2cMJhb5y%2FRfKRnfN59Ysd1e%2Fvhx%2F8A&amp;RelayState=https%3A%2F%2Fwww.dev.wsj.com%2Fnews%2Fpuzzle%3Fmod%3Dbreadcrumb:2:23
+@https://newscorp.okta.com/app/newscorp_wsjdevdj_1/exk10wzuh6l6PP2hw0x8/sso/saml?SAMLRequest=nVNNj9owFPwrke8kdmD5sIAVBVVF2rYR0D3sBRn7UQKOnfo5JNtfXxEIQtUuB67vPc2MZ8bD5yrTwREcptaMCAspeR4PUWQ655PC78wC%2FhSAPqgybZDXixEpnOFWYIrciAyQe8mXk%2B8vPA4pz531VlpNgvlsRNbdHgNJN1uxUXSg5KDfG7B%2BG57iXkfQmLEt6%2FRjNWiT4LUREYeUBHPEAuYGvTB%2BRGIad1o0bsX9FXvitM1ZN2SMvpEgudB9SY1Kze%2F72jbnI%2BTfVquklfxcrkgwA%2FSpEb6m3nmfI48iAyVK6%2FLQHrwIpc0ikefX6brEvYKj2q9ZBNWB0fJvsevqbpLEu5JW%2FQjRRierSDBBBHfCnlqDRQZuCe6YSvi1eDmz8SgqyzJUcAxL3NdUjYj%2F53K7xtTDWhR%2BV8NHUmi9EfJAzpHx2jR3k9V9O0QjjoxvpFyf%2FNHThtENUVOUHyKD%2BSyxOpXvjxRlorUtpw6EhxHxrgASfLUuE%2F5zABayepKq1rY%2B5ZCJVE%2BUcoBIokbapb6g6jJPrfFQPVTmqc1y4VI8tQQqIX3j%2BS3wVAvEBWwfSeDumeTyBA3IE4FYWqdOvQfpQa2cMJhb5y%2FRfKRnfN59Ysd1e%2Fvhx%2F8A&amp;RelayState=https%3A%2F%2Fwww.dev.wsj.com%2Fnews%2Fpuzzle%3Fmod%3Dbreadcrumb:3:8
+</status>
+</test>
+<doc>WSJ Regression Tests</doc>
+<status status="FAIL" starttime="20240228 20:32:26.594" endtime="20240228 20:33:24.810"/>
+</suite>
+<status status="FAIL" starttime="20240228 20:32:26.591" endtime="20240228 20:33:24.812"/>
+</suite>
+<status status="FAIL" starttime="20240228 20:32:26.587" endtime="20240228 20:33:24.813"/>
+</suite>
+<status status="FAIL" starttime="20240228 20:32:26.584" endtime="20240228 20:33:24.815"/>
+</suite>
+<status status="FAIL" starttime="20240228 20:32:26.579" endtime="20240228 20:33:24.817"/>
+</suite>
+<status status="FAIL" starttime="20240228 20:32:26.548" endtime="20240228 20:33:24.818"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Alerts</stat>
+<stat pass="0" fail="1" skip="0">Regression</stat>
+<stat pass="0" fail="1" skip="0">TagWPZ</stat>
+<stat pass="0" fail="1" skip="0">WSJ</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Panda-Qa-Develop">Panda-Qa-Develop</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Panda-Qa">Panda-Qa-Develop.Panda-Qa</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Tests">Panda-Qa-Develop.Panda-Qa.Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1" name="FollowWidget">Panda-Qa-Develop.Panda-Qa.Tests.FollowWidget</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1-s1" name="Regression">Panda-Qa-Develop.Panda-Qa.Tests.FollowWidget.Regression</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1-s1-s1" name="WSJ Regression">Panda-Qa-Develop.Panda-Qa.Tests.FollowWidget.Regression.WSJ Regression</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
