@@ -12,7 +12,7 @@ Click Sign in
     Click Element  /html/body/main/div/div/section/div[1]/div[3]/div/a  #//a[text()="Sign in"]
 
 Validate Default New Watchlist
-    Page Should Contain Element  //button[text()="test create sdl"]
+    Page Should Contain Element  //button[text()="test01"]
 
 Click Add Symbol Input
     Click Element  //input[@id="symbol-search"]

@@ -66,7 +66,7 @@ Market Watch Sign In Process
     Wait Until Element Is Not Visible  //*[@id="password-login"]/div/form/div/div[5]/div[1]/button
 
 MarketWatch Test User Sign In Process
-    Click Button  //*[text="Dismiss"]
+    Click Button  //*[text()="Dismiss"]
     Wait Until Element is visible  //html/body/section/nav/header/div[4]/label
     Click Element   //html/body/section/nav/header/div[4]/label
     Wait Until Element is visible  //html/body/section/nav/header/div[4]/ul/li[2]/a
