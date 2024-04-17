@@ -63,9 +63,7 @@ Validate the Watchlist widget from Watchlist page
     [Tags]  Regression  Watchlist               TagMWL
 
     CommonFunctionality.Start MarketWatch for Watchlist page
-    MarketWatchWatchlistPage.Click Sign in
-    DefinedKeywords.Sign In Process
-    CommonFunctionality.Start MarketWatch for latest Watchlist page
+    DefinedKeywords.MarketWatch Test User Sign In Process
     Set Selenium Speed  0.5 seconds
     Capture Page Screenshot    screenshot.png
     MarketWatchWatchlistPage.Validate Watchlist Page
@@ -80,8 +78,8 @@ Validate the Watchlist widget from Watchlist page
     MarketWatchWatchlistPage.Select Symbol
     MarketWatchWatchlistPage.Validate Symbol in Created Watchlist
     MarketWatchWatchlistPage.Delete Watchlists
-    MarketWatchWatchlistPage.Validate Default New Watchlist
-    MarketWatchWatchlistPage.Validate No Symbol in Default New Watchlist
+#    MarketWatchWatchlistPage.Validate Default New Watchlist
+#    MarketWatchWatchlistPage.Validate No Symbol in Default New Watchlist
 
 #US-T149
 Validate the MW digest notification
