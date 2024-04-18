@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20240130 11:41:31.691" rpa="false" schemaversion="4">
-<suite id="s1" name="WSJ Regression" source="D:\Codes\Jenkins_2050\userservices-qa-automation\panda-qa\Tests\FollowWidget\Regression\WSJ_Regression.robot">
-<test id="s1-t1" name="Validate the multiple authors follow button from articles page" line="24">
-<kw name="Start WSJ Article" library="CommonFunctionality" type="SETUP">
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20240311 17:13:52.818" rpa="false" schemaversion="4">
+<suite id="s1" name="API Automation" source="D:\Codes\Jenkins_2050\userservices-qa-automation\panda-qa\Tests\FollowWidget\Regression\API_Automation.robot">
+<test id="s1-t1" name="Validate delete subscription API" line="29">
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
-<arg>0.5 seconds</arg>
+<arg>0.2 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20240130 11:41:32.436" endtime="20240130 11:41:32.436"/>
+<status status="PASS" starttime="20240311 17:13:53.875" endtime="20240311 17:13:53.875"/>
 </kw>
+<kw name="Start Preference Center" library="CommonFunctionality">
 <kw name="Set Browser Options" library="CommonFunctionality">
 <var>${options}</var>
 <if>
@@ -16,352 +16,1045 @@
 <var>${options}</var>
 <arg>selenium.webdriver.FirefoxOptions()</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" starttime="20240130 11:41:32.438" endtime="20240130 11:41:32.438"/>
+<msg timestamp="20240311 17:13:53.877" level="INFO">${options} = &lt;selenium.webdriver.firefox.options.Options object at 0x0000029E8ED54EC0&gt;</msg>
+<status status="PASS" starttime="20240311 17:13:53.877" endtime="20240311 17:13:53.880"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--CreateProfile</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20240130 11:41:32.438" endtime="20240130 11:41:32.438"/>
+<status status="PASS" starttime="20240311 17:13:53.880" endtime="20240311 17:13:53.881"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--start-maximized</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20240130 11:41:32.439" endtime="20240130 11:41:32.439"/>
+<status status="PASS" starttime="20240311 17:13:53.881" endtime="20240311 17:13:53.881"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-dev-shm-usage</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20240130 11:41:32.439" endtime="20240130 11:41:32.440"/>
+<status status="PASS" starttime="20240311 17:13:53.882" endtime="20240311 17:13:53.882"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--no-sandbox</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20240130 11:41:32.440" endtime="20240130 11:41:32.440"/>
+<status status="PASS" starttime="20240311 17:13:53.882" endtime="20240311 17:13:53.882"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-gpu</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20240130 11:41:32.440" endtime="20240130 11:41:32.441"/>
-</kw>
-<kw name="Call Method" library="BuiltIn">
-<arg>${options}</arg>
-<arg>add_argument</arg>
-<arg>--headless</arg>
-<doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20240130 11:41:32.441" endtime="20240130 11:41:32.441"/>
+<status status="PASS" starttime="20240311 17:13:53.883" endtime="20240311 17:13:53.883"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--devtools.debugger.force-local</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20240130 11:41:32.442" endtime="20240130 11:41:32.442"/>
+<status status="PASS" starttime="20240311 17:13:53.883" endtime="20240311 17:13:53.883"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--devtools.debugger.remote-enabled</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20240130 11:41:32.442" endtime="20240130 11:41:32.442"/>
+<status status="PASS" starttime="20240311 17:13:53.884" endtime="20240311 17:13:53.884"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--devtools.chrome.enabled</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20240130 11:41:32.443" endtime="20240130 11:41:32.443"/>
+<status status="PASS" starttime="20240311 17:13:53.884" endtime="20240311 17:13:53.884"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--devtools.debugger.prompt-connection</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20240130 11:41:32.443" endtime="20240130 11:41:32.443"/>
+<status status="PASS" starttime="20240311 17:13:53.885" endtime="20240311 17:13:53.885"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--browser.dom.window.dump.enabled</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20240130 11:41:32.443" endtime="20240130 11:41:32.444"/>
+<status status="PASS" starttime="20240311 17:13:53.886" endtime="20240311 17:13:53.886"/>
 </kw>
 <return>
 <value>${options}</value>
-<status status="NOT RUN" starttime="20240130 11:41:32.444" endtime="20240130 11:41:32.444"/>
+<status status="PASS" starttime="20240311 17:13:53.886" endtime="20240311 17:13:53.886"/>
 </return>
-<status status="NOT RUN" starttime="20240130 11:41:32.437" endtime="20240130 11:41:32.444"/>
+<status status="PASS" starttime="20240311 17:13:53.877" endtime="20240311 17:13:53.886"/>
 </branch>
 <branch type="ELSE IF" condition="&quot;${Browser}&quot; == &quot;chrome&quot;">
 <kw name="Evaluate" library="BuiltIn">
 <var>${options}</var>
 <arg>selenium.webdriver.ChromeOptions()</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20240130 11:41:32.445" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x00000267E376F770&gt;</msg>
-<status status="PASS" starttime="20240130 11:41:32.445" endtime="20240130 11:41:32.448"/>
+<status status="NOT RUN" starttime="20240311 17:13:53.886" endtime="20240311 17:13:53.886"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--start-maximized</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20240130 11:41:32.448" endtime="20240130 11:41:32.449"/>
+<status status="NOT RUN" starttime="20240311 17:13:53.886" endtime="20240311 17:13:53.887"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-dev-shm-usage</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20240130 11:41:32.449" endtime="20240130 11:41:32.449"/>
+<status status="NOT RUN" starttime="20240311 17:13:53.887" endtime="20240311 17:13:53.887"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--no-sandbox</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20240130 11:41:32.450" endtime="20240130 11:41:32.450"/>
+<status status="NOT RUN" starttime="20240311 17:13:53.887" endtime="20240311 17:13:53.887"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--headless</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240311 17:13:53.887" endtime="20240311 17:13:53.889"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-gpu</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20240130 11:41:32.450" endtime="20240130 11:41:32.451"/>
+<status status="NOT RUN" starttime="20240311 17:13:53.889" endtime="20240311 17:13:53.889"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--ignore-certificate-errors</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20240130 11:41:32.451" endtime="20240130 11:41:32.451"/>
+<status status="NOT RUN" starttime="20240311 17:13:53.889" endtime="20240311 17:13:53.889"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-extensions</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20240130 11:41:32.452" endtime="20240130 11:41:32.452"/>
+<status status="NOT RUN" starttime="20240311 17:13:53.890" endtime="20240311 17:13:53.890"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--no-user-gesture-required</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20240130 11:41:32.452" endtime="20240130 11:41:32.452"/>
+<status status="NOT RUN" starttime="20240311 17:13:53.890" endtime="20240311 17:13:53.890"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--no-first-run</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20240130 11:41:32.452" endtime="20240130 11:41:32.453"/>
+<status status="NOT RUN" starttime="20240311 17:13:53.890" endtime="20240311 17:13:53.891"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--use-fake-ui-for-media-stream</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20240130 11:41:32.453" endtime="20240130 11:41:32.453"/>
+<status status="NOT RUN" starttime="20240311 17:13:53.891" endtime="20240311 17:13:53.891"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--use-fake-device-for-media-stream</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20240130 11:41:32.453" endtime="20240130 11:41:32.455"/>
+<status status="NOT RUN" starttime="20240311 17:13:53.891" endtime="20240311 17:13:53.891"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-sync</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20240130 11:41:32.455" endtime="20240130 11:41:32.456"/>
+<status status="NOT RUN" starttime="20240311 17:13:53.891" endtime="20240311 17:13:53.892"/>
 </kw>
 <return>
 <value>${options}</value>
-<status status="PASS" starttime="20240130 11:41:32.456" endtime="20240130 11:41:32.456"/>
+<status status="NOT RUN" starttime="20240311 17:13:53.892" endtime="20240311 17:13:53.892"/>
 </return>
-<status status="PASS" starttime="20240130 11:41:32.444" endtime="20240130 11:41:32.456"/>
+<status status="NOT RUN" starttime="20240311 17:13:53.886" endtime="20240311 17:13:53.892"/>
 </branch>
-<status status="PASS" starttime="20240130 11:41:32.437" endtime="20240130 11:41:32.456"/>
+<status status="PASS" starttime="20240311 17:13:53.876" endtime="20240311 17:13:53.892"/>
 </if>
-<msg timestamp="20240130 11:41:32.457" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x00000267E376F770&gt;</msg>
-<status status="PASS" starttime="20240130 11:41:32.437" endtime="20240130 11:41:32.457"/>
+<msg timestamp="20240311 17:13:53.892" level="INFO">${options} = &lt;selenium.webdriver.firefox.options.Options object at 0x0000029E8ED54EC0&gt;</msg>
+<status status="PASS" starttime="20240311 17:13:53.876" endtime="20240311 17:13:53.893"/>
 </kw>
 <if>
 <branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://www.wsj.com</arg>
+<arg>https://www.barrons.com/follow</arg>
 <arg>${Browser}</arg>
 <arg>options=${options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="NOT RUN" starttime="20240130 11:41:32.457" endtime="20240130 11:41:32.458"/>
+<status status="NOT RUN" starttime="20240311 17:13:53.893" endtime="20240311 17:13:53.893"/>
 </kw>
-<kw name="Go To" library="SeleniumLibrary">
-<arg>https://www.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&amp;cx_testVariant=cx_5&amp;cx_artPos=6&amp;mod=WTRN#cxrecs_s</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="NOT RUN" starttime="20240130 11:41:32.458" endtime="20240130 11:41:32.459"/>
-</kw>
-<status status="NOT RUN" starttime="20240130 11:41:32.457" endtime="20240130 11:41:32.459"/>
+<status status="NOT RUN" starttime="20240311 17:13:53.893" endtime="20240311 17:13:53.894"/>
 </branch>
 <branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://www.s.dev.wsj.com</arg>
+<arg>https://www.s.dev.barrons.com/follow</arg>
 <arg>${Browser}</arg>
 <arg>options=${options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20240130 11:41:32.460" level="INFO">Opening browser 'chrome' to base url 'https://www.s.dev.wsj.com'.</msg>
-<status status="PASS" starttime="20240130 11:41:32.459" endtime="20240130 11:41:46.459"/>
+<msg timestamp="20240311 17:13:53.895" level="INFO">Opening browser 'firefox' to base url 'https://www.s.dev.barrons.com/follow'.</msg>
+<msg timestamp="20240311 17:13:55.122" level="WARN">The geckodriver version (0.33.0) detected in PATH at D:\Codes\webdrivers\geckodriver.exe might not be compatible with the detected firefox version (123.0.0.8809); currently, geckodriver 0.34.0 is recommended for firefox 123.*, so it is advised to delete the driver in PATH and retry</msg>
+<status status="PASS" starttime="20240311 17:13:53.894" endtime="20240311 17:14:04.102"/>
 </kw>
-<kw name="Go To" library="SeleniumLibrary">
-<arg>https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&amp;cx_testVariant=cx_5&amp;cx_artPos=6&amp;mod=WTRN#cxrecs_s</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20240130 11:41:46.460" level="INFO">Opening url 'https://www.s.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&amp;cx_testVariant=cx_5&amp;cx_artPos=6&amp;mod=WTRN#cxrecs_s'</msg>
-<msg timestamp="20240130 11:43:11.163" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: chrome=120.0.6099.225)
-Stacktrace:
-	GetHandleVerifier [0x00007FF6E89B4D02+56194]
-	(No symbol) [0x00007FF6E89204B2]
-	(No symbol) [0x00007FF6E87C76AA]
-	(No symbol) [0x00007FF6E87AFD6A]
-	(No symbol) [0x00007FF6E87AFC20]
-	(No symbol) [0x00007FF6E87C99A1]
-	(No symbol) [0x00007FF6E8852047]
-	(No symbol) [0x00007FF6E8835C23]
-	(No symbol) [0x00007FF6E8804A45]
-	(No symbol) [0x00007FF6E8805AD4]
-	GetHandleVerifier [0x00007FF6E8D2D5BB+3695675]
-	GetHandleVerifier [0x00007FF6E8D86197+4059159]
-	GetHandleVerifier [0x00007FF6E8D7DF63+4025827]
-	GetHandleVerifier [0x00007FF6E8A4F029+687785]
-	(No symbol) [0x00007FF6E892B508]
-	(No symbol) [0x00007FF6E8927564]
-	(No symbol) [0x00007FF6E89276E9]
-	(No symbol) [0x00007FF6E8918094]
-	BaseThreadInitThunk [0x00007FFE5DBF7344+20]
-	RtlUserThreadStart [0x00007FFE5E3A26B1+33]
-</msg>
-<msg timestamp="20240130 11:43:11.164" level="FAIL">WebDriverException: Message: disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: chrome=120.0.6099.225)
-Stacktrace:
-	GetHandleVerifier [0x00007FF6E89B4D02+56194]
-	(No symbol) [0x00007FF6E89204B2]
-	(No symbol) [0x00007FF6E87C76AA]
-	(No symbol) [0x00007FF6E87AFD6A]
-	(No symbol) [0x00007FF6E87D40AD]
-	(No symbol) [0x00007FF6E885297F]
-	(No symbol) [0x00007FF6E8835C23]
-	(No symbol) [0x00007FF6E8804A45]
-	(No symbol) [0x00007FF6E8805AD4]
-	GetHandleVerifier [0x00007FF6E8D2D5BB+3695675]
-	GetHandleVerifier [0x00007FF6E8D86197+4059159]
-	GetHandleVerifier [0x00007FF6E8D7DF63+4025827]
-	GetHandleVerifier [0x00007FF6E8A4F029+687785]
-	(No symbol) [0x00007FF6E892B508]
-	(No symbol) [0x00007FF6E8927564]
-	(No symbol) [0x00007FF6E89276E9]
-	(No symbol) [0x00007FF6E8918094]
-	BaseThreadInitThunk [0x00007FFE5DBF7344+20]
-	RtlUserThreadStart [0x00007FFE5E3A26B1+33]
-</msg>
-<status status="FAIL" starttime="20240130 11:41:46.459" endtime="20240130 11:43:11.169"/>
-</kw>
-<status status="FAIL" starttime="20240130 11:41:32.459" endtime="20240130 11:43:11.170"/>
+<status status="PASS" starttime="20240311 17:13:53.894" endtime="20240311 17:14:04.102"/>
 </branch>
-<status status="FAIL" starttime="20240130 11:41:32.457" endtime="20240130 11:43:11.171"/>
+<status status="PASS" starttime="20240311 17:13:53.893" endtime="20240311 17:14:04.103"/>
 </if>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" starttime="20240130 11:43:11.171" endtime="20240130 11:43:11.171"/>
+<status status="PASS" starttime="20240311 17:14:04.103" endtime="20240311 17:14:04.727"/>
 </kw>
-<status status="FAIL" starttime="20240130 11:41:32.435" endtime="20240130 11:43:11.171"/>
+<status status="PASS" starttime="20240311 17:13:53.876" endtime="20240311 17:14:04.727"/>
 </kw>
-<doc>This test case validates the multiple authors follow button from articles page</doc>
-<tag>Article</tag>
-<tag>Author</tag>
-<tag>Follow</tag>
+<kw name="Sign In Process for Preference Center" library="DefinedKeywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//input[@id='username']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240311 17:14:04.728" endtime="20240311 17:14:05.167"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//input[@id='username']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240311 17:14:05.168" level="INFO">Clicking button '//input[@id='username']'.</msg>
+<status status="PASS" starttime="20240311 17:14:05.167" endtime="20240311 17:14:06.022"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='username']</arg>
+<arg>archana.saini@dowjones.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240311 17:14:06.023" level="INFO">Typing text 'archana.saini@dowjones.com' into text field '//input[@id='username']'.</msg>
+<status status="PASS" starttime="20240311 17:14:06.022" endtime="20240311 17:14:06.714"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1.0 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240311 17:14:06.714" endtime="20240311 17:14:06.714"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[text()='Continue']/..</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240311 17:14:06.716" level="INFO">Clicking element '//span[text()='Continue']/..'.</msg>
+<status status="PASS" starttime="20240311 17:14:06.715" endtime="20240311 17:14:08.944"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1.0 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240311 17:14:08.945" endtime="20240311 17:14:08.945"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="password-login-password"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240311 17:14:08.946" endtime="20240311 17:14:10.988"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="password-login-password"]</arg>
+<arg>Lactomania@123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240311 17:14:10.989" level="INFO">Typing text 'Lactomania@123' into text field '//*[@id="password-login-password"]'.</msg>
+<status status="PASS" starttime="20240311 17:14:10.988" endtime="20240311 17:14:14.045"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1.0 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240311 17:14:14.045" endtime="20240311 17:14:14.045"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>(//span[@title='Sign In'])[2]/..</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240311 17:14:14.046" level="INFO">Clicking element '(//span[@title='Sign In'])[2]/..'.</msg>
+<status status="PASS" starttime="20240311 17:14:14.045" endtime="20240311 17:14:22.052"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//li[text()='View All']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240311 17:14:22.052" endtime="20240311 17:14:24.109"/>
+</kw>
+<status status="PASS" starttime="20240311 17:14:04.727" endtime="20240311 17:14:24.109"/>
+</kw>
+<kw name="EXECUTE GET API Call" library="APIAutomationPage">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240311 17:14:24.110" endtime="20240311 17:14:24.110"/>
+</kw>
+<kw name="Create Session" library="RequestsLibrary">
+<arg>MySession</arg>
+<arg>${BASE_URL}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20240311 17:14:24.111" level="INFO">Creating Session using : alias=MySession, url=https://int-int-panda-api.vir-dev.onservo.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20240311 17:14:24.110" endtime="20240311 17:14:24.112"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${headers}</var>
+<arg>${HEADER_CONTENT_TYPE}</arg>
+<arg>${HEADER_COOKIE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20240311 17:14:24.113" level="INFO">${headers} = {'Cookie': 'ca_id=eJw1j0tPAjEUhf9L18zQ6busJAENiXGB0Y0x5E57K8V5EKYwGuN_twNxeb_7nZOcH_IRL9jtOmiRLMjy5PbQAZmRAG1svv_5M8QuZootxCbfcPPKYeJ3vh8PfYdD6fo2S-dz9NmppQ7CSlNIV-tCBMQCPJdFoEwEp0EI0NlOJ3Cf14BU4BWltZ...</msg>
+<status status="PASS" starttime="20240311 17:14:24.113" endtime="20240311 17:14:24.113"/>
+</kw>
+<kw name="Get Request" library="RequestsLibrary">
+<var>${response}</var>
+<arg>MySession</arg>
+<arg>/subscription</arg>
+<arg>headers=${headers}</arg>
+<doc>*DEPRECATED* Please use `GET On Session` instead.</doc>
+<msg timestamp="20240311 17:14:24.114" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg timestamp="20240311 17:14:24.326" level="INFO">GET Request : url=https://int-int-panda-api.vir-dev.onservo.com/subscription 
+ path_url=/subscription 
+ headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'ca_id=eJw1j0tPAjEUhf9L18zQ6busJAENiXGB0Y0x5E57K8V5EKYwGuN_twNxeb_7nZOcH_IRL9jtOmiRLMjy5PbQAZmRAG1svv_5M8QuZootxCbfcPPKYeJ3vh8PfYdD6fo2S-dz9NmppQ7CSlNIV-tCBMQCPJdFoEwEp0EI0NlOJ3Cf14BU4BWltZMSlXXoHNWOC42SS840Y8CUVl5gYGAsp0rVJiBX3tb5V9tcduobHMjijdxv1-vt-qHYPK02r5vVy_KRvM8InNN-l-I0qdLUSsWNtTMSId2AEdaoKs_8Ok6gosxUVxCH3Er2KR2HxXw-jmPp8VKOw2GaPHdNxC6R3z-l22OE.2fw_c58Fig_fekt6dJBG__Lf3UrmC5nPEHOQmvKp3JpIr9piHPiVmyw6fa6uddDE7U5W7uKt3w8LsM8SnCN1nMitMw4kMWmreUr6tEhJuAff85UGv-UUcdx62zRO55xCKW_mXpLzCaLFeUYh05SXtnReY1Fbo9aOIqugOh4avCh2TUd-BGUtOAoFgd79Tl86eBo9g02OJ_cabMIKeAH_mfiZNsDUnlBXTHQXNrkRagGe6ad7iwkn-t7gL4cIHJa3oqfS6sybEAWF0ZFEsNrT9eha5hL-M2Lj534c8BvTVk7QwgyBYj_3s39cO9anFLCq1yrdUepjx5RAHXqD_2lBl5opsgv4cw9wrvg7uhaKYQ7CLUfhnP9uWEkp0jKqFjpR8kWJN32dlh_K4-MuHngpTiQt7nwZW4Kyj9ERb9ZZxCae7trLzXgctt9rtZ23W4VxvnNlmKF1OCZsmDfyW8RPoyMC4j1nZZM6CPuPKZIDeXEK3AbW6ulQNy4HLyK-nQRUSRdRWNSJnrLDhYhM4pTJEDL6iPdHrpxpDp3nBhK2xb93F0yuvIGdkz7FevlFuQvUtK2eoDhR83XIQRQaoAdloXuJEb8De757hIghwuVb1EEK9FJLGVMd65768J1oc6-TPPRcI-yn0yye65PwRD1NbWq0lMh0MwYlvPUEC7dLEps'} 
+ body=None 
+ </msg>
+<msg timestamp="20240311 17:14:24.326" level="INFO">GET Response : url=https://int-int-panda-api.vir-dev.onservo.com/subscription 
+ status=200, reason=OK 
+ headers={'Date': 'Tue, 12 Mar 2024 00:14:24 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Content-Security-Policy': "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests", 'Cross-Origin-Opener-Policy': 'same-origin', 'Cross-Origin-Resource-Policy': 'same-origin', 'Origin-Agent-Cluster': '?1', 'Referrer-Policy': 'no-referrer', 'Strict-Transport-Security': 'max-age=15552000; includeSubDomains', 'X-Content-Type-Options': 'nosniff', 'X-DNS-Prefetch-Control': 'off', 'X-Download-Options': 'noopen', 'X-Frame-Options': 'SAMEORIGIN', 'X-Permitted-Cross-Domain-Policies': 'none', 'X-XSS-Protection': '0', 'Surrogate-Control': 'no-store', 'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'ETag': 'W/"142f-Jk7s50ofGICgiyJfY6mM+wvXn+I"', 'Content-Encoding': 'gzip'} 
+ body={"items":[{"type":"UserSubscription","timezone":"UTC-08:00","deliveryPreferences":[{"method":"email","type":"realtime"}],"criteria":{"type":"Criteria","criteriaId":"6190123cd4fa54f5fff30c9ae8d1977d87c653fb","engine":"Allesseh","product":"mansionglobal","alertType":"author","term":{"operator":"equal_to","field":"AuthorId","value":"8686_MG","terms":null},"createDate":"2024-02-05T20:32:06.479Z","lastModifiedDate":"2024-02-21T16:37:59.601Z"},"createDate":"2024-02-05T20:32:06.479Z","lastModifiedDate":"2024-02-21T16:37:59.601Z"},{"type":"UserSubscription","timezone":"UTC-08:00","deliveryPreferences":[{"method":"email","type":"realtime"}],"criteria":{"type":"Criteria","criteriaId":"8c5c5b04713fdf798e7523c5a9c7b62f916da150","engine":"Allesseh","product":"fnews","alertType":"author","term":{"operator":"equal_to","field":"AuthorId","value":"9004_FN","terms":null},"createDate":"2024-01-24T21:59:44.669Z","lastModifiedDate":"2024-02-21T16:37:59.601Z"},"createDate":"2024-01-24T21:59:44.669Z","lastModifiedDate":"2024-02-21T16:37:59.601Z"},{"type":"UserSubscription","timezone":"UTC-08:00","deliveryPreferences":[{"method":"email","type":"digest"}],"criteria":{"type":"Criteria","criteriaId":"b58b81e4b5cefb437cc134305545893fcd1bd91a","engine":"Allesseh","product":"marketwatch","alertType":"company","term":{"operator":"equal_to","field":"Fcode","value":"APPL","terms":null},"createDate":"2024-01-24T22:04:28.921Z","lastModifiedDate":"2024-02-21T16:37:59.602Z"},"createDate":"2024-01-24T22:04:28.921Z","lastModifiedDate":"2024-02-21T16:37:59.602Z"},{"type":"UserSubscription","timezone":"UTC-08:00","deliveryPreferences":[{"method":"email","type":"digest"}],"criteria":{"type":"Criteria","criteriaId":"b8856c62f082264f8b9ce540422b07b5e0d9d09f","engine":"Allesseh","product":"mansionglobal","alertType":"company","term":{"operator":"equal_to","field":"Fcode","value":"WLMRT","terms":null},"createDate":"2024-01-24T22:04:12.581Z","lastModifiedDate":"2024-02-21T16:37:59.602Z"},"createDate":"2024-01-24T22:04:12.581Z","lastModifiedDate":"2024-02-21T16:37:59.602Z"},{"type":"UserSubscription","timezone":"UTC-08:00","deliveryPreferences":[{"method":"email","type":"realtime"}],"criteria":{"type":"Criteria","criteriaId":"bb4f17e16d24deb648344d3ad53fa4bf10467723","engine":"Allesseh","product":"penews","alertType":"custom_topic","term":{"operator":"equal_to","field":"SavedQuery","value":"WsjUkraine2022","terms":null},"createDate":"2024-01-24T22:02:20.968Z","lastModifiedDate":"2024-02-21T16:37:59.602Z"},"createDate":"2024-01-24T22:02:20.968Z","lastModifiedDate":"2024-02-21T16:37:59.602Z"},{"type":"UserSubscription","timezone":"UTC-08:00","deliveryPreferences":[{"method":"email","type":"realtime"}],"criteria":{"type":"Criteria","criteriaId":"c0059eebf803b7d090236b319caf6c707dd6c987","engine":"Allesseh","product":"fnews","alertType":"custom_topic","term":{"operator":"equal_to","field":"SavedQuery","value":"WsjUkraine2022","terms":null},"createDate":"2024-01-24T22:01:58.889Z","lastModifiedDate":"2024-02-21T16:37:59.602Z"},"createDate":"2024-01-24T22:01:58.889Z","lastModifiedDate":"2024-02-21T16:37:59.602Z"},{"type":"UserSubscription","timezone":"UTC-08:00","deliveryPreferences":[{"method":"email","type":"digest"}],"criteria":{"type":"Criteria","criteriaId":"e351f11f11366972812d32b825a608c9e59429b3","engine":"Allesseh","product":"marketwatch","alertType":"author","term":{"operator":"equal_to","field":"AuthorId","value":"18_MW","terms":null},"createDate":"2024-01-30T19:27:01.915Z","lastModifiedDate":"2024-02-21T16:37:59.602Z"},"createDate":"2024-01-30T19:27:01.915Z","lastModifiedDate":"2024-02-21T16:37:59.602Z"},{"type":"UserSubscription","timezone":"UTC-08:00","deliveryPreferences":[{"method":"email","type":"realtime"}],"criteria":{"type":"Criteria","criteriaId":"e3962f693546bcc31cc24ccd1b2c5f47843de24c","engine":"Allesseh","product":"mansionglobal","alertType":"company","term":{"operator":"equal_to","field":"Fcode","value":"BLAMAN","terms":null},"createDate":"2024-01-24T22:03:45.876Z","lastModifiedDate":"2024-02-21T16:37:59.602Z"},"createDate":"2024-01-24T22:03:45.876Z","lastModifiedDate":"2024-02-21T16:37:59.602Z"},{"type":"UserSubscription","timezone":"UTC-08:00","deliveryPreferences":[{"method":"email","type":"realtime"}],"criteria":{"type":"Criteria","criteriaId":"f7eb8bb8df5a87dc26d4eac544c31b985bb25852","engine":"Allesseh","product":"fnews","alertType":"company","term":{"operator":"equal_to","field":"Fcode","value":"AMZCOM","terms":null},"createDate":"2024-01-24T21:57:36.731Z","lastModifiedDate":"2024-02-21T16:37:59.602Z"},"createDate":"2024-01-24T21:57:36.731Z","lastModifiedDate":"2024-02-21T16:37:59.602Z"},{"type":"UserSubscription","timezone":"UTC-08:00","deliveryPreferences":[{"method":"email","type":"realtime"}],"criteria":{"type":"Criteria","criteriaId":"fb88ace06c4534ffe8a729b16f8ac307f1c22f10","engine":"Allesseh","product":"penews","alertType":"author","term":{"operator":"equal_to","field":"AuthorId","value":"8681_PEN","terms":null},"createDate":"2024-01-24T22:02:16.143Z","lastModifiedDate":"2024-02-21T16:37:59.602Z"},"createDate":"2024-01-24T22:02:16.143Z","lastModifiedDate":"2024-02-21T16:37:59.602Z"}]} 
+ </msg>
+<msg timestamp="20240311 17:14:24.327" level="INFO">D:\Users\sainiarchana\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py:1100: InsecureRequestWarning: Unverified HTTPS request is being made to host 'int-int-panda-api.vir-dev.onservo.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg timestamp="20240311 17:14:24.327" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20240311 17:14:24.113" endtime="20240311 17:14:24.328"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${response.status_code}</arg>
+<arg>200</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<msg timestamp="20240311 17:14:24.329" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<status status="PASS" starttime="20240311 17:14:24.328" endtime="20240311 17:14:24.329"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${json_response}</var>
+<arg>${response.json()}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240311 17:14:24.331" level="INFO">${json_response} = {'items': [{'type': 'UserSubscription', 'timezone': 'UTC-08:00', 'deliveryPreferences': [{'method': 'email', 'type': 'realtime'}], 'criteria': {'type': 'Criteria', 'criteriaId': '6190123cd4fa54f5fff30...</msg>
+<status status="PASS" starttime="20240311 17:14:24.329" endtime="20240311 17:14:24.331"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${RESPONSE_JSON}</arg>
+<arg>${json_response}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20240311 17:14:24.331" level="INFO">${RESPONSE_JSON} = {'items': [{'type': 'UserSubscription', 'timezone': 'UTC-08:00', 'deliveryPreferences': [{'method': 'email', 'type': 'realtime'}], 'criteria': {'type': 'Criteria', 'criteriaId': '6190123cd4fa54f5fff30...</msg>
+<status status="PASS" starttime="20240311 17:14:24.331" endtime="20240311 17:14:24.332"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${CRITERIA_ID}</arg>
+<arg>${json_response['items'][0]['criteria']['criteriaId']}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20240311 17:14:24.333" level="INFO">${CRITERIA_ID} = 6190123cd4fa54f5fff30c9ae8d1977d87c653fb</msg>
+<status status="PASS" starttime="20240311 17:14:24.332" endtime="20240311 17:14:24.333"/>
+</kw>
+<status status="PASS" starttime="20240311 17:14:24.109" endtime="20240311 17:14:24.333"/>
+</kw>
+<kw name="Get first item details from API" library="APIAutomationPage">
+<kw name="Set Variable" library="BuiltIn">
+<var>${json_response}</var>
+<arg>${RESPONSE_JSON}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240311 17:14:24.333" level="INFO">${json_response} = {'items': [{'type': 'UserSubscription', 'timezone': 'UTC-08:00', 'deliveryPreferences': [{'method': 'email', 'type': 'realtime'}], 'criteria': {'type': 'Criteria', 'criteriaId': '6190123cd4fa54f5fff30...</msg>
+<status status="PASS" starttime="20240311 17:14:24.333" endtime="20240311 17:14:24.334"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>alert type: ${json_response['items'][0]['criteria']['alertType']}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240311 17:14:24.335" level="INFO">alert type: author</msg>
+<status status="PASS" starttime="20240311 17:14:24.334" endtime="20240311 17:14:24.335"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>product: ${json_response['items'][0]['criteria']['product']}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240311 17:14:24.336" level="INFO">product: mansionglobal</msg>
+<status status="PASS" starttime="20240311 17:14:24.335" endtime="20240311 17:14:24.336"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${ALERT_TYPE}</arg>
+<arg>${json_response['items'][0]['criteria']['alertType']}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20240311 17:14:24.337" level="INFO">${ALERT_TYPE} = author</msg>
+<status status="PASS" starttime="20240311 17:14:24.336" endtime="20240311 17:14:24.337"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${PRODUCT}</arg>
+<arg>${json_response['items'][0]['criteria']['product']}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20240311 17:14:24.338" level="INFO">${PRODUCT} = mansionglobal</msg>
+<status status="PASS" starttime="20240311 17:14:24.338" endtime="20240311 17:14:24.339"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240311 17:14:24.339" endtime="20240311 17:14:24.339"/>
+</kw>
+<status status="PASS" starttime="20240311 17:14:24.333" endtime="20240311 17:14:24.339"/>
+</kw>
+<kw name="EXECUTE DELETE API Call" library="APIAutomationPage">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240311 17:14:24.340" endtime="20240311 17:14:24.341"/>
+</kw>
+<kw name="Create Session" library="RequestsLibrary">
+<arg>MySession</arg>
+<arg>${BASE_URL}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20240311 17:14:24.341" level="INFO">Creating Session using : alias=MySession, url=https://int-int-panda-api.vir-dev.onservo.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20240311 17:14:24.341" endtime="20240311 17:14:24.342"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${headers}</var>
+<arg>${HEADER_CONTENT_TYPE}</arg>
+<arg>${HEADER_COOKIE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20240311 17:14:24.343" level="INFO">${headers} = {'Cookie': 'ca_id=eJw1j0tPAjEUhf9L18zQ6busJAENiXGB0Y0x5E57K8V5EKYwGuN_twNxeb_7nZOcH_IRL9jtOmiRLMjy5PbQAZmRAG1svv_5M8QuZootxCbfcPPKYeJ3vh8PfYdD6fo2S-dz9NmppQ7CSlNIV-tCBMQCPJdFoEwEp0EI0NlOJ3Cf14BU4BWltZ...</msg>
+<status status="PASS" starttime="20240311 17:14:24.342" endtime="20240311 17:14:24.343"/>
+</kw>
+<kw name="Delete Request" library="RequestsLibrary">
+<var>${response}</var>
+<arg>MySession</arg>
+<arg>/subscription/${CRITERIA_ID}</arg>
+<arg>headers=${headers}</arg>
+<doc>*DEPRECATED* Please use `DELETE On Session` instead.</doc>
+<msg timestamp="20240311 17:14:24.343" level="WARN">Keyword 'RequestsLibrary.Delete Request' is deprecated. Please use `DELETE On Session` instead.</msg>
+<msg timestamp="20240311 17:14:25.776" level="INFO">DELETE Request : url=https://int-int-panda-api.vir-dev.onservo.com/subscription/6190123cd4fa54f5fff30c9ae8d1977d87c653fb 
+ path_url=/subscription/6190123cd4fa54f5fff30c9ae8d1977d87c653fb 
+ headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'ca_id=eJw1j0tPAjEUhf9L18zQ6busJAENiXGB0Y0x5E57K8V5EKYwGuN_twNxeb_7nZOcH_IRL9jtOmiRLMjy5PbQAZmRAG1svv_5M8QuZootxCbfcPPKYeJ3vh8PfYdD6fo2S-dz9NmppQ7CSlNIV-tCBMQCPJdFoEwEp0EI0NlOJ3Cf14BU4BWltZMSlXXoHNWOC42SS840Y8CUVl5gYGAsp0rVJiBX3tb5V9tcduobHMjijdxv1-vt-qHYPK02r5vVy_KRvM8InNN-l-I0qdLUSsWNtTMSId2AEdaoKs_8Ok6gosxUVxCH3Er2KR2HxXw-jmPp8VKOw2GaPHdNxC6R3z-l22OE.2fw_c58Fig_fekt6dJBG__Lf3UrmC5nPEHOQmvKp3JpIr9piHPiVmyw6fa6uddDE7U5W7uKt3w8LsM8SnCN1nMitMw4kMWmreUr6tEhJuAff85UGv-UUcdx62zRO55xCKW_mXpLzCaLFeUYh05SXtnReY1Fbo9aOIqugOh4avCh2TUd-BGUtOAoFgd79Tl86eBo9g02OJ_cabMIKeAH_mfiZNsDUnlBXTHQXNrkRagGe6ad7iwkn-t7gL4cIHJa3oqfS6sybEAWF0ZFEsNrT9eha5hL-M2Lj534c8BvTVk7QwgyBYj_3s39cO9anFLCq1yrdUepjx5RAHXqD_2lBl5opsgv4cw9wrvg7uhaKYQ7CLUfhnP9uWEkp0jKqFjpR8kWJN32dlh_K4-MuHngpTiQt7nwZW4Kyj9ERb9ZZxCae7trLzXgctt9rtZ23W4VxvnNlmKF1OCZsmDfyW8RPoyMC4j1nZZM6CPuPKZIDeXEK3AbW6ulQNy4HLyK-nQRUSRdRWNSJnrLDhYhM4pTJEDL6iPdHrpxpDp3nBhK2xb93F0yuvIGdkz7FevlFuQvUtK2eoDhR83XIQRQaoAdloXuJEb8De757hIghwuVb1EEK9FJLGVMd65768J1oc6-TPPRcI-yn0yye65PwRD1NbWq0lMh0MwYlvPUEC7dLEps', 'Content-Length': '0'} 
+ body=None 
+ </msg>
+<msg timestamp="20240311 17:14:25.777" level="INFO">DELETE Response : url=https://int-int-panda-api.vir-dev.onservo.com/subscription/6190123cd4fa54f5fff30c9ae8d1977d87c653fb 
+ status=200, reason=OK 
+ headers={'Date': 'Tue, 12 Mar 2024 00:14:25 GMT', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Origin', 'Access-Control-Allow-Credentials': 'true', 'Content-Security-Policy': "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests", 'Cross-Origin-Opener-Policy': 'same-origin', 'Cross-Origin-Resource-Policy': 'same-origin', 'Origin-Agent-Cluster': '?1', 'Referrer-Policy': 'no-referrer', 'Strict-Transport-Security': 'max-age=15552000; includeSubDomains', 'X-Content-Type-Options': 'nosniff', 'X-DNS-Prefetch-Control': 'off', 'X-Download-Options': 'noopen', 'X-Frame-Options': 'SAMEORIGIN', 'X-Permitted-Cross-Domain-Policies': 'none', 'X-XSS-Protection': '0', 'Surrogate-Control': 'no-store', 'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate', 'Pragma': 'no-cache', 'Expires': '0'} 
+ body=None 
+ </msg>
+<msg timestamp="20240311 17:14:25.777" level="INFO">D:\Users\sainiarchana\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py:1100: InsecureRequestWarning: Unverified HTTPS request is being made to host 'int-int-panda-api.vir-dev.onservo.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg timestamp="20240311 17:14:25.777" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20240311 17:14:24.343" endtime="20240311 17:14:25.777"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${response.status_code}</arg>
+<arg>200</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<msg timestamp="20240311 17:14:25.778" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<status status="PASS" starttime="20240311 17:14:25.778" endtime="20240311 17:14:25.779"/>
+</kw>
+<status status="PASS" starttime="20240311 17:14:24.340" endtime="20240311 17:14:25.779"/>
+</kw>
+<kw name="Validate All Subscriptions from Preference Center" library="APIAutomationPage">
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" starttime="20240311 17:14:25.779" endtime="20240311 17:14:28.368"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//li[text()='View All']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240311 17:14:28.368" endtime="20240311 17:14:28.848"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//li[text()='View All']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240311 17:14:28.849" level="INFO">Clicking element '//li[text()='View All']'.</msg>
+<status status="PASS" starttime="20240311 17:14:28.848" endtime="20240311 17:14:29.878"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240311 17:14:29.879" endtime="20240311 17:14:29.880"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${count}</var>
+<arg>//th[text()='Authors']/../../../tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20240311 17:14:30.156" level="INFO">${count} = 3</msg>
+<status status="PASS" starttime="20240311 17:14:29.880" endtime="20240311 17:14:30.157"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${ALL_AUTHORS}</arg>
+<arg>${count}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20240311 17:14:30.159" level="INFO">${ALL_AUTHORS} = 3</msg>
+<status status="PASS" starttime="20240311 17:14:30.158" endtime="20240311 17:14:30.159"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${count}</var>
+<arg>//th[text()='Custom Topics']/../../../tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20240311 17:14:30.375" level="INFO">${count} = 2</msg>
+<status status="PASS" starttime="20240311 17:14:30.159" endtime="20240311 17:14:30.375"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${ALL_TOPICS}</arg>
+<arg>${count}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20240311 17:14:30.376" level="INFO">${ALL_TOPICS} = 2</msg>
+<status status="PASS" starttime="20240311 17:14:30.375" endtime="20240311 17:14:30.376"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${count}</var>
+<arg>//th[text()='Companies']/../../../tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20240311 17:14:30.586" level="INFO">${count} = 4</msg>
+<status status="PASS" starttime="20240311 17:14:30.376" endtime="20240311 17:14:30.586"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${ALL_COMPANIES}</arg>
+<arg>${count}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20240311 17:14:30.589" level="INFO">${ALL_COMPANIES} = 4</msg>
+<status status="PASS" starttime="20240311 17:14:30.588" endtime="20240311 17:14:30.589"/>
+</kw>
+<status status="PASS" starttime="20240311 17:14:25.779" endtime="20240311 17:14:30.589"/>
+</kw>
+<kw name="Validate API data with Pref Center Data" library="APIAutomationPage">
+<arg>delete</arg>
+<kw name="Set Variable" library="BuiltIn">
+<var>${json_response}</var>
+<arg>${RESPONSE_JSON}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240311 17:14:30.591" level="INFO">${json_response} = {'items': [{'type': 'UserSubscription', 'timezone': 'UTC-08:00', 'deliveryPreferences': [{'method': 'email', 'type': 'realtime'}], 'criteria': {'type': 'Criteria', 'criteriaId': '6190123cd4fa54f5fff30...</msg>
+<status status="PASS" starttime="20240311 17:14:30.591" endtime="20240311 17:14:30.591"/>
+</kw>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${authors}</var>
+<arg>${API_AUTHORS}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20240311 17:14:30.592" level="INFO">${authors} = 0</msg>
+<status status="PASS" starttime="20240311 17:14:30.591" endtime="20240311 17:14:30.592"/>
+</kw>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${topics}</var>
+<arg>${API_TOPICS}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20240311 17:14:30.593" level="INFO">${topics} = 0</msg>
+<status status="PASS" starttime="20240311 17:14:30.593" endtime="20240311 17:14:30.593"/>
+</kw>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${companies}</var>
+<arg>${API_COMPANIES}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20240311 17:14:30.594" level="INFO">${companies} = 0</msg>
+<status status="PASS" starttime="20240311 17:14:30.593" endtime="20240311 17:14:30.594"/>
+</kw>
+<kw name="Get From Dictionary" library="Collections">
+<var>${items}</var>
+<arg>${json_response}</arg>
+<arg>items</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<msg timestamp="20240311 17:14:30.595" level="INFO">${items} = [{'type': 'UserSubscription', 'timezone': 'UTC-08:00', 'deliveryPreferences': [{'method': 'email', 'type': 'realtime'}], 'criteria': {'type': 'Criteria', 'criteriaId': '6190123cd4fa54f5fff30c9ae8d1977...</msg>
+<status status="PASS" starttime="20240311 17:14:30.594" endtime="20240311 17:14:30.595"/>
+</kw>
+<for flavor="IN">
+<var>${item}</var>
+<value>@{items}</value>
+<iter>
+<var name="${item}">{'type': 'UserSubscription', 'timezone': 'UTC-08:00', 'deliveryPreferences': [{'method': 'email', 'type': 'realtime'}], 'criteria': {'type': 'Criteria', 'criteriaId': '6190123cd4fa54f5fff30c9ae8d1977d...</var>
+<if>
+<branch type="IF" condition="&quot;${item['criteria']['alertType']}&quot; == &quot;company&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${companies}</var>
+<arg>${companies} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20240311 17:14:30.598" endtime="20240311 17:14:30.598"/>
+</kw>
+<status status="NOT RUN" starttime="20240311 17:14:30.597" endtime="20240311 17:14:30.598"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${item['criteria']['alertType']}&quot; == &quot;custom_topic&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${topics}</var>
+<arg>${topics} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20240311 17:14:30.599" endtime="20240311 17:14:30.599"/>
+</kw>
+<status status="NOT RUN" starttime="20240311 17:14:30.598" endtime="20240311 17:14:30.599"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${item['criteria']['alertType']}&quot; == &quot;author&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${authors}</var>
+<arg>${authors} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20240311 17:14:30.611" level="INFO">${authors} = 1</msg>
+<status status="PASS" starttime="20240311 17:14:30.601" endtime="20240311 17:14:30.611"/>
+</kw>
+<status status="PASS" starttime="20240311 17:14:30.600" endtime="20240311 17:14:30.611"/>
+</branch>
+<status status="PASS" starttime="20240311 17:14:30.597" endtime="20240311 17:14:30.613"/>
+</if>
+<status status="PASS" starttime="20240311 17:14:30.596" endtime="20240311 17:14:30.613"/>
+</iter>
+<iter>
+<var name="${item}">{'type': 'UserSubscription', 'timezone': 'UTC-08:00', 'deliveryPreferences': [{'method': 'email', 'type': 'realtime'}], 'criteria': {'type': 'Criteria', 'criteriaId': '8c5c5b04713fdf798e7523c5a9c7b62f...</var>
+<if>
+<branch type="IF" condition="&quot;${item['criteria']['alertType']}&quot; == &quot;company&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${companies}</var>
+<arg>${companies} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20240311 17:14:30.617" endtime="20240311 17:14:30.630"/>
+</kw>
+<status status="NOT RUN" starttime="20240311 17:14:30.613" endtime="20240311 17:14:30.632"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${item['criteria']['alertType']}&quot; == &quot;custom_topic&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${topics}</var>
+<arg>${topics} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20240311 17:14:30.633" endtime="20240311 17:14:30.634"/>
+</kw>
+<status status="NOT RUN" starttime="20240311 17:14:30.632" endtime="20240311 17:14:30.634"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${item['criteria']['alertType']}&quot; == &quot;author&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${authors}</var>
+<arg>${authors} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20240311 17:14:30.645" level="INFO">${authors} = 2</msg>
+<status status="PASS" starttime="20240311 17:14:30.644" endtime="20240311 17:14:30.645"/>
+</kw>
+<status status="PASS" starttime="20240311 17:14:30.634" endtime="20240311 17:14:30.646"/>
+</branch>
+<status status="PASS" starttime="20240311 17:14:30.613" endtime="20240311 17:14:30.646"/>
+</if>
+<status status="PASS" starttime="20240311 17:14:30.613" endtime="20240311 17:14:30.646"/>
+</iter>
+<iter>
+<var name="${item}">{'type': 'UserSubscription', 'timezone': 'UTC-08:00', 'deliveryPreferences': [{'method': 'email', 'type': 'digest'}], 'criteria': {'type': 'Criteria', 'criteriaId': 'b58b81e4b5cefb437cc134305545893fcd...</var>
+<if>
+<branch type="IF" condition="&quot;${item['criteria']['alertType']}&quot; == &quot;company&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${companies}</var>
+<arg>${companies} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20240311 17:14:30.656" level="INFO">${companies} = 1</msg>
+<status status="PASS" starttime="20240311 17:14:30.654" endtime="20240311 17:14:30.656"/>
+</kw>
+<status status="PASS" starttime="20240311 17:14:30.646" endtime="20240311 17:14:30.656"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${item['criteria']['alertType']}&quot; == &quot;custom_topic&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${topics}</var>
+<arg>${topics} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20240311 17:14:30.657" endtime="20240311 17:14:30.657"/>
+</kw>
+<status status="NOT RUN" starttime="20240311 17:14:30.656" endtime="20240311 17:14:30.657"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${item['criteria']['alertType']}&quot; == &quot;author&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${authors}</var>
+<arg>${authors} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20240311 17:14:30.657" endtime="20240311 17:14:30.657"/>
+</kw>
+<status status="NOT RUN" starttime="20240311 17:14:30.657" endtime="20240311 17:14:30.657"/>
+</branch>
+<status status="PASS" starttime="20240311 17:14:30.646" endtime="20240311 17:14:30.658"/>
+</if>
+<status status="PASS" starttime="20240311 17:14:30.646" endtime="20240311 17:14:30.658"/>
+</iter>
+<iter>
+<var name="${item}">{'type': 'UserSubscription', 'timezone': 'UTC-08:00', 'deliveryPreferences': [{'method': 'email', 'type': 'digest'}], 'criteria': {'type': 'Criteria', 'criteriaId': 'b8856c62f082264f8b9ce540422b07b5e0...</var>
+<if>
+<branch type="IF" condition="&quot;${item['criteria']['alertType']}&quot; == &quot;company&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${companies}</var>
+<arg>${companies} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20240311 17:14:30.666" level="INFO">${companies} = 2</msg>
+<status status="PASS" starttime="20240311 17:14:30.665" endtime="20240311 17:14:30.666"/>
+</kw>
+<status status="PASS" starttime="20240311 17:14:30.664" endtime="20240311 17:14:30.666"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${item['criteria']['alertType']}&quot; == &quot;custom_topic&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${topics}</var>
+<arg>${topics} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20240311 17:14:30.666" endtime="20240311 17:14:30.678"/>
+</kw>
+<status status="NOT RUN" starttime="20240311 17:14:30.666" endtime="20240311 17:14:30.678"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${item['criteria']['alertType']}&quot; == &quot;author&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${authors}</var>
+<arg>${authors} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20240311 17:14:30.679" endtime="20240311 17:14:30.679"/>
+</kw>
+<status status="NOT RUN" starttime="20240311 17:14:30.678" endtime="20240311 17:14:30.679"/>
+</branch>
+<status status="PASS" starttime="20240311 17:14:30.664" endtime="20240311 17:14:30.679"/>
+</if>
+<status status="PASS" starttime="20240311 17:14:30.658" endtime="20240311 17:14:30.679"/>
+</iter>
+<iter>
+<var name="${item}">{'type': 'UserSubscription', 'timezone': 'UTC-08:00', 'deliveryPreferences': [{'method': 'email', 'type': 'realtime'}], 'criteria': {'type': 'Criteria', 'criteriaId': 'bb4f17e16d24deb648344d3ad53fa4bf...</var>
+<if>
+<branch type="IF" condition="&quot;${item['criteria']['alertType']}&quot; == &quot;company&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${companies}</var>
+<arg>${companies} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20240311 17:14:30.681" endtime="20240311 17:14:30.681"/>
+</kw>
+<status status="NOT RUN" starttime="20240311 17:14:30.680" endtime="20240311 17:14:30.681"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${item['criteria']['alertType']}&quot; == &quot;custom_topic&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${topics}</var>
+<arg>${topics} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20240311 17:14:30.683" level="INFO">${topics} = 1</msg>
+<status status="PASS" starttime="20240311 17:14:30.682" endtime="20240311 17:14:30.683"/>
+</kw>
+<status status="PASS" starttime="20240311 17:14:30.681" endtime="20240311 17:14:30.683"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${item['criteria']['alertType']}&quot; == &quot;author&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${authors}</var>
+<arg>${authors} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20240311 17:14:30.685" endtime="20240311 17:14:30.685"/>
+</kw>
+<status status="NOT RUN" starttime="20240311 17:14:30.683" endtime="20240311 17:14:30.685"/>
+</branch>
+<status status="PASS" starttime="20240311 17:14:30.680" endtime="20240311 17:14:30.685"/>
+</if>
+<status status="PASS" starttime="20240311 17:14:30.679" endtime="20240311 17:14:30.686"/>
+</iter>
+<iter>
+<var name="${item}">{'type': 'UserSubscription', 'timezone': 'UTC-08:00', 'deliveryPreferences': [{'method': 'email', 'type': 'realtime'}], 'criteria': {'type': 'Criteria', 'criteriaId': 'c0059eebf803b7d090236b319caf6c70...</var>
+<if>
+<branch type="IF" condition="&quot;${item['criteria']['alertType']}&quot; == &quot;company&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${companies}</var>
+<arg>${companies} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20240311 17:14:30.697" endtime="20240311 17:14:30.698"/>
+</kw>
+<status status="NOT RUN" starttime="20240311 17:14:30.696" endtime="20240311 17:14:30.698"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${item['criteria']['alertType']}&quot; == &quot;custom_topic&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${topics}</var>
+<arg>${topics} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20240311 17:14:30.700" level="INFO">${topics} = 2</msg>
+<status status="PASS" starttime="20240311 17:14:30.699" endtime="20240311 17:14:30.700"/>
+</kw>
+<status status="PASS" starttime="20240311 17:14:30.698" endtime="20240311 17:14:30.700"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${item['criteria']['alertType']}&quot; == &quot;author&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${authors}</var>
+<arg>${authors} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20240311 17:14:30.701" endtime="20240311 17:14:30.701"/>
+</kw>
+<status status="NOT RUN" starttime="20240311 17:14:30.700" endtime="20240311 17:14:30.701"/>
+</branch>
+<status status="PASS" starttime="20240311 17:14:30.696" endtime="20240311 17:14:30.701"/>
+</if>
+<status status="PASS" starttime="20240311 17:14:30.695" endtime="20240311 17:14:30.701"/>
+</iter>
+<iter>
+<var name="${item}">{'type': 'UserSubscription', 'timezone': 'UTC-08:00', 'deliveryPreferences': [{'method': 'email', 'type': 'digest'}], 'criteria': {'type': 'Criteria', 'criteriaId': 'e351f11f11366972812d32b825a608c9e5...</var>
+<if>
+<branch type="IF" condition="&quot;${item['criteria']['alertType']}&quot; == &quot;company&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${companies}</var>
+<arg>${companies} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20240311 17:14:30.702" endtime="20240311 17:14:30.704"/>
+</kw>
+<status status="NOT RUN" starttime="20240311 17:14:30.702" endtime="20240311 17:14:30.704"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${item['criteria']['alertType']}&quot; == &quot;custom_topic&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${topics}</var>
+<arg>${topics} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20240311 17:14:30.705" endtime="20240311 17:14:30.705"/>
+</kw>
+<status status="NOT RUN" starttime="20240311 17:14:30.704" endtime="20240311 17:14:30.705"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${item['criteria']['alertType']}&quot; == &quot;author&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${authors}</var>
+<arg>${authors} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20240311 17:14:30.707" level="INFO">${authors} = 3</msg>
+<status status="PASS" starttime="20240311 17:14:30.706" endtime="20240311 17:14:30.707"/>
+</kw>
+<status status="PASS" starttime="20240311 17:14:30.705" endtime="20240311 17:14:30.707"/>
+</branch>
+<status status="PASS" starttime="20240311 17:14:30.702" endtime="20240311 17:14:30.707"/>
+</if>
+<status status="PASS" starttime="20240311 17:14:30.701" endtime="20240311 17:14:30.707"/>
+</iter>
+<iter>
+<var name="${item}">{'type': 'UserSubscription', 'timezone': 'UTC-08:00', 'deliveryPreferences': [{'method': 'email', 'type': 'realtime'}], 'criteria': {'type': 'Criteria', 'criteriaId': 'e3962f693546bcc31cc24ccd1b2c5f47...</var>
+<if>
+<branch type="IF" condition="&quot;${item['criteria']['alertType']}&quot; == &quot;company&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${companies}</var>
+<arg>${companies} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20240311 17:14:30.709" level="INFO">${companies} = 3</msg>
+<status status="PASS" starttime="20240311 17:14:30.708" endtime="20240311 17:14:30.709"/>
+</kw>
+<status status="PASS" starttime="20240311 17:14:30.708" endtime="20240311 17:14:30.709"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${item['criteria']['alertType']}&quot; == &quot;custom_topic&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${topics}</var>
+<arg>${topics} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20240311 17:14:30.709" endtime="20240311 17:14:30.709"/>
+</kw>
+<status status="NOT RUN" starttime="20240311 17:14:30.709" endtime="20240311 17:14:30.709"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${item['criteria']['alertType']}&quot; == &quot;author&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${authors}</var>
+<arg>${authors} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20240311 17:14:30.710" endtime="20240311 17:14:30.710"/>
+</kw>
+<status status="NOT RUN" starttime="20240311 17:14:30.709" endtime="20240311 17:14:30.710"/>
+</branch>
+<status status="PASS" starttime="20240311 17:14:30.707" endtime="20240311 17:14:30.710"/>
+</if>
+<status status="PASS" starttime="20240311 17:14:30.707" endtime="20240311 17:14:30.710"/>
+</iter>
+<iter>
+<var name="${item}">{'type': 'UserSubscription', 'timezone': 'UTC-08:00', 'deliveryPreferences': [{'method': 'email', 'type': 'realtime'}], 'criteria': {'type': 'Criteria', 'criteriaId': 'f7eb8bb8df5a87dc26d4eac544c31b98...</var>
+<if>
+<branch type="IF" condition="&quot;${item['criteria']['alertType']}&quot; == &quot;company&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${companies}</var>
+<arg>${companies} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20240311 17:14:30.713" level="INFO">${companies} = 4</msg>
+<status status="PASS" starttime="20240311 17:14:30.712" endtime="20240311 17:14:30.713"/>
+</kw>
+<status status="PASS" starttime="20240311 17:14:30.711" endtime="20240311 17:14:30.713"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${item['criteria']['alertType']}&quot; == &quot;custom_topic&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${topics}</var>
+<arg>${topics} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20240311 17:14:30.713" endtime="20240311 17:14:30.713"/>
+</kw>
+<status status="NOT RUN" starttime="20240311 17:14:30.713" endtime="20240311 17:14:30.713"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${item['criteria']['alertType']}&quot; == &quot;author&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${authors}</var>
+<arg>${authors} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20240311 17:14:30.714" endtime="20240311 17:14:30.714"/>
+</kw>
+<status status="NOT RUN" starttime="20240311 17:14:30.714" endtime="20240311 17:14:30.714"/>
+</branch>
+<status status="PASS" starttime="20240311 17:14:30.711" endtime="20240311 17:14:30.714"/>
+</if>
+<status status="PASS" starttime="20240311 17:14:30.710" endtime="20240311 17:14:30.714"/>
+</iter>
+<iter>
+<var name="${item}">{'type': 'UserSubscription', 'timezone': 'UTC-08:00', 'deliveryPreferences': [{'method': 'email', 'type': 'realtime'}], 'criteria': {'type': 'Criteria', 'criteriaId': 'fb88ace06c4534ffe8a729b16f8ac307...</var>
+<if>
+<branch type="IF" condition="&quot;${item['criteria']['alertType']}&quot; == &quot;company&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${companies}</var>
+<arg>${companies} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20240311 17:14:30.715" endtime="20240311 17:14:30.715"/>
+</kw>
+<status status="NOT RUN" starttime="20240311 17:14:30.715" endtime="20240311 17:14:30.716"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${item['criteria']['alertType']}&quot; == &quot;custom_topic&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${topics}</var>
+<arg>${topics} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20240311 17:14:30.717" endtime="20240311 17:14:30.717"/>
+</kw>
+<status status="NOT RUN" starttime="20240311 17:14:30.716" endtime="20240311 17:14:30.717"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${item['criteria']['alertType']}&quot; == &quot;author&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${authors}</var>
+<arg>${authors} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20240311 17:14:30.718" level="INFO">${authors} = 4</msg>
+<status status="PASS" starttime="20240311 17:14:30.718" endtime="20240311 17:14:30.718"/>
+</kw>
+<status status="PASS" starttime="20240311 17:14:30.717" endtime="20240311 17:14:30.718"/>
+</branch>
+<status status="PASS" starttime="20240311 17:14:30.715" endtime="20240311 17:14:30.718"/>
+</if>
+<status status="PASS" starttime="20240311 17:14:30.714" endtime="20240311 17:14:30.718"/>
+</iter>
+<status status="PASS" starttime="20240311 17:14:30.595" endtime="20240311 17:14:30.719"/>
+</for>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${API_AUTHORS}</arg>
+<arg>${authors}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20240311 17:14:30.719" level="INFO">${API_AUTHORS} = 4</msg>
+<status status="PASS" starttime="20240311 17:14:30.719" endtime="20240311 17:14:30.719"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${API_TOPICS}</arg>
+<arg>${topics}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20240311 17:14:30.721" level="INFO">${API_TOPICS} = 2</msg>
+<status status="PASS" starttime="20240311 17:14:30.720" endtime="20240311 17:14:30.721"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${API_COMPANIES}</arg>
+<arg>${companies}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20240311 17:14:30.722" level="INFO">${API_COMPANIES} = 4</msg>
+<status status="PASS" starttime="20240311 17:14:30.721" endtime="20240311 17:14:30.722"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${value}&quot; == &quot;get&quot;">
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${API_AUTHORS}</arg>
+<arg>${ALL_AUTHORS}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="NOT RUN" starttime="20240311 17:14:30.723" endtime="20240311 17:14:30.723"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${API_COMPANIES}</arg>
+<arg>${ALL_COMPANIES}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="NOT RUN" starttime="20240311 17:14:30.723" endtime="20240311 17:14:30.723"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${API_TOPICS}</arg>
+<arg>${ALL_TOPICS}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="NOT RUN" starttime="20240311 17:14:30.723" endtime="20240311 17:14:30.724"/>
+</kw>
+<status status="NOT RUN" starttime="20240311 17:14:30.722" endtime="20240311 17:14:30.724"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${value}&quot; == &quot;delete&quot;">
+<if>
+<branch type="IF" condition="&quot;${ALERT_TYPE}&quot; == &quot;author&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${authors}</var>
+<arg>${API_AUTHORS} - 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20240311 17:14:30.725" level="INFO">${authors} = 3</msg>
+<status status="PASS" starttime="20240311 17:14:30.725" endtime="20240311 17:14:30.725"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${ALL_AUTHORS}</arg>
+<arg>${authors}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" starttime="20240311 17:14:30.725" endtime="20240311 17:14:30.726"/>
+</kw>
+<status status="PASS" starttime="20240311 17:14:30.724" endtime="20240311 17:14:30.726"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${ALERT_TYPE}&quot; == &quot;custom_topic&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${topics}</var>
+<arg>${API_TOPICS} - 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20240311 17:14:30.727" endtime="20240311 17:14:30.727"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${ALL_TOPICS}</arg>
+<arg>${topics}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="NOT RUN" starttime="20240311 17:14:30.727" endtime="20240311 17:14:30.727"/>
+</kw>
+<status status="NOT RUN" starttime="20240311 17:14:30.727" endtime="20240311 17:14:30.728"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${ALERT_TYPE}&quot; == &quot;company&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${companies}</var>
+<arg>${API_COMPANIES} - 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20240311 17:14:30.728" endtime="20240311 17:14:30.729"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${ALL_COMPANIES}</arg>
+<arg>${companies}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="NOT RUN" starttime="20240311 17:14:30.729" endtime="20240311 17:14:30.729"/>
+</kw>
+<status status="NOT RUN" starttime="20240311 17:14:30.728" endtime="20240311 17:14:30.729"/>
+</branch>
+<status status="PASS" starttime="20240311 17:14:30.724" endtime="20240311 17:14:30.730"/>
+</if>
+<status status="PASS" starttime="20240311 17:14:30.724" endtime="20240311 17:14:30.730"/>
+</branch>
+<status status="PASS" starttime="20240311 17:14:30.722" endtime="20240311 17:14:30.730"/>
+</if>
+<status status="PASS" starttime="20240311 17:14:30.590" endtime="20240311 17:14:30.730"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240311 17:14:30.732" endtime="20240311 17:14:30.732"/>
+</kw>
+<kw name="Finish Testcase" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240311 17:14:30.734" endtime="20240311 17:14:35.472"/>
+</kw>
+<status status="PASS" starttime="20240311 17:14:30.733" endtime="20240311 17:14:35.472"/>
+</kw>
+<doc>This test case validates theget subscription API Call</doc>
+<tag>API</tag>
 <tag>Regression</tag>
-<tag>WSJ</tag>
-<status status="FAIL" starttime="20240130 11:41:32.434" endtime="20240130 11:43:11.172">Setup failed:
-WebDriverException: Message: disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: chrome=120.0.6099.225)
-Stacktrace:
-	GetHandleVerifier [0x00007FF6E89B4D02+56194]
-	(No symbol) [0x00007FF6E89204B2]
-	(No symbol) [0x00007FF6E87C76AA]
-	(No symbol) [0x00007FF6E87AFD6A]
-	(No symbol) [0x00007FF6E87D40AD]
-	(No symbol) [0x00007FF6E885297F]
-	(No symbol) [0x00007FF6E8835C23]
-	(No symbol) [0x00007FF6E8804A45]
-	(No symbol) [0x00007FF6E8805AD4]
-	GetHandleVerifier [0x00007FF6E8D2D5BB+3695675]
-	GetHandleVerifier [0x00007FF6E8D86197+4059159]
-	GetHandleVerifier [0x00007FF6E8D7DF63+4025827]
-	GetHandleVerifier [0x00007FF6E8A4F029+687785]
-	(No symbol) [0x00007FF6E892B508]
-	(No symbol) [0x00007FF6E8927564]
-	(No symbol) [0x00007FF6E89276E9]
-	(No symbol) [0x00007FF6E8918094]
-	BaseThreadInitThunk [0x00007FFE5DBF7344+20]
-	RtlUserThreadStart [0x00007FFE5E3A26B1+33]
-</status>
+<status status="PASS" starttime="20240311 17:13:53.874" endtime="20240311 17:14:35.472"/>
 </test>
-<doc>WSJ Regression Tests</doc>
-<status status="FAIL" starttime="20240130 11:41:31.696" endtime="20240130 11:43:11.173"/>
+<doc>PANDA API Regression Tests</doc>
+<status status="PASS" starttime="20240311 17:13:52.824" endtime="20240311 17:14:35.474"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">Article</stat>
-<stat pass="0" fail="1" skip="0">Author</stat>
-<stat pass="0" fail="1" skip="0">Follow</stat>
-<stat pass="0" fail="1" skip="0">Regression</stat>
-<stat pass="0" fail="1" skip="0">WSJ</stat>
+<stat pass="1" fail="0" skip="0">API</stat>
+<stat pass="1" fail="0" skip="0">Regression</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="WSJ Regression">WSJ Regression</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="API Automation">API Automation</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20240130 11:43:11.163" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: chrome=120.0.6099.225)
-Stacktrace:
-	GetHandleVerifier [0x00007FF6E89B4D02+56194]
-	(No symbol) [0x00007FF6E89204B2]
-	(No symbol) [0x00007FF6E87C76AA]
-	(No symbol) [0x00007FF6E87AFD6A]
-	(No symbol) [0x00007FF6E87AFC20]
-	(No symbol) [0x00007FF6E87C99A1]
-	(No symbol) [0x00007FF6E8852047]
-	(No symbol) [0x00007FF6E8835C23]
-	(No symbol) [0x00007FF6E8804A45]
-	(No symbol) [0x00007FF6E8805AD4]
-	GetHandleVerifier [0x00007FF6E8D2D5BB+3695675]
-	GetHandleVerifier [0x00007FF6E8D86197+4059159]
-	GetHandleVerifier [0x00007FF6E8D7DF63+4025827]
-	GetHandleVerifier [0x00007FF6E8A4F029+687785]
-	(No symbol) [0x00007FF6E892B508]
-	(No symbol) [0x00007FF6E8927564]
-	(No symbol) [0x00007FF6E89276E9]
-	(No symbol) [0x00007FF6E8918094]
-	BaseThreadInitThunk [0x00007FFE5DBF7344+20]
-	RtlUserThreadStart [0x00007FFE5E3A26B1+33]
-</msg>
+<msg timestamp="20240311 17:13:55.122" level="WARN">The geckodriver version (0.33.0) detected in PATH at D:\Codes\webdrivers\geckodriver.exe might not be compatible with the detected firefox version (123.0.0.8809); currently, geckodriver 0.34.0 is recommended for firefox 123.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20240311 17:14:24.114" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg timestamp="20240311 17:14:24.343" level="WARN">Keyword 'RequestsLibrary.Delete Request' is deprecated. Please use `DELETE On Session` instead.</msg>
 </errors>
 </robot>

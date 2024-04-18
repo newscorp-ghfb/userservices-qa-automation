@@ -4,7 +4,9 @@ Resource  ../Resources/DefinedKeywords.robot
 
 *** Variables ***
 
-${Browser}=  ff  #headless, ff, chrome, edge, safari
+
+${Browser}=  firefox  #headless, ff, chrome, edge, safari
+
 
 ${Env}=  dev  #dev, prod
 
@@ -561,3 +563,13 @@ Start CMS page for Barrons
         Go To  https://newspress.int.dowjones.io/barrons/wp-admin/post-new.php  #https://www.s.dev.barrons.com/watchlist
     END
     Maximize Browser Window
+
+Start Preference Center
+    ${options} =  Set Browser Options
+    IF  "${Env}" == "prod"
+        Open Browser  https://www.barrons.com/follow  ${Browser}  options=${options}
+    ELSE IF  "${Env}" == "dev"
+        Open Browser  https://www.s.dev.barrons.com/follow  ${Browser}  options=${options}
+    END
+    Maximize Browser Window
+

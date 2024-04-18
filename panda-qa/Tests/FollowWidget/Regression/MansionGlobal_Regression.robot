@@ -41,6 +41,7 @@ Validate the Mansion GLobal Preference Center page
     MansionGLobalPreferenceCenterPage.Click Mansion Global tab
     MansionGLobalPreferenceCenterPage.Validate Company Toggle Feature
     MansionGLobalPreferenceCenterPage.Click Company Toggle Feature
+    Set Selenium Speed  1 seconds
     MansionGLobalPreferenceCenterPage.Validate Following Toggle Alert Pop up
     MansionGLobalPreferenceCenterPage.Click Following Toggle Alert Pop up
     #MansionGLobalPreferenceCenterPage.Navigate Article page
