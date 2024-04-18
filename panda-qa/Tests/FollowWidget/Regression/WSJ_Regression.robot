@@ -130,6 +130,7 @@ Validate the follow button for Letters breadcrumb from articles page
     WSJArticlePage.Click Custom Follow Button
     WSJArticlePage.Click Preference Center link
     WSJPreferenceCenterPage.Validate Preference Center page
+
 #US-T183
 #US-T182
 #US-T180

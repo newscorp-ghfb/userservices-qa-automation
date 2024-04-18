@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated the Xpath and sign in process for the validation of MarketWatch watchlist widget">
+    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated the Xpath for the validation of default new MarketWatch watchlist">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/DefinedKeywords.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/DefinedKeywords.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/MarketWatchWatchlistPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/MarketWatchWatchlistPage.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/WSJ_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/WSJ_Regression.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/results/screenshot.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +42,7 @@
         <entry key="$PROJECT_DIR$/python-selenium-browserstack" value="sdk" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/python-selenium-browserstack" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitToolBoxStore">
@@ -116,16 +116,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "Akhilesh-Regression-Testing-Latest",
-    "last_opened_file_path": "D:/Codes/Jenkins_2050/userservices-qa-automation",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ToolWindowServices.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Akhilesh-Regression-Testing-Latest&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Codes/Jenkins_2050/userservices-qa-automation&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="ReadonlyStatusHandler">
     <option name="SHOW_DIALOG" value="false" />
   </component>
@@ -234,14 +235,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1702390104711</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Updated the Xpath value for Company Follow feature on Barron's Preference Center page.">
-      <option name="closed" value="true" />
-      <created>1705676112555</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1705676112555</updated>
     </task>
     <task id="LOCAL-00006" summary="Updated the relevant Element IDs and Xpath for the validation of Barron's watchlist widget and Barron's Market data page.">
       <option name="closed" value="true" />
@@ -627,7 +620,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713364244583</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Updated the Xpath for the validation of default new MarketWatch watchlist">
+      <option name="closed" value="true" />
+      <created>1713365610205</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1713365610205</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -654,7 +655,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated relevantlink for MarketWatch watchlist page under .DEV environment." />
     <MESSAGE value="Updated relevant XPath for WSJ real-time author and daily-digest notification." />
     <MESSAGE value="Updated New WSJ Sign In Process for the validation of WSJ watchlist" />
     <MESSAGE value="Updated New WSJ Sign In Process and Xpath for Letters Breadcrumb on WSJ article page and WSJ Preference Center page for Letters breadcrumb" />
@@ -679,6 +679,7 @@
     <MESSAGE value="Updated the Sailthru Regression test cases for navigating to WSJ Preference Center page for comparing ST authors, ST company, ST campaigns and ST custom topics." />
     <MESSAGE value="Updated the Sailthru Regression test cases for the users lookup in order to get the subscribed ST authors, ST companies, ST campaigns and ST custom topics." />
     <MESSAGE value="Updated the Xpath and sign in process for the validation of MarketWatch watchlist widget" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the Xpath and sign in process for the validation of MarketWatch watchlist widget" />
+    <MESSAGE value="Updated the Xpath for the validation of default new MarketWatch watchlist" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the Xpath for the validation of default new MarketWatch watchlist" />
   </component>
 </project>
