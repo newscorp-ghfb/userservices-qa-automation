@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated the web elements under WSJ regression file">
+    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated xpath for FN article without byline">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/FNArticlePage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/FNArticlePage.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/FN_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/FN_Regression.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJArticlePage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJArticlePage.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/WSJ_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/WSJ_Regression.robot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -566,7 +565,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709911173340</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Updated xpath for FN article without byline">
+      <option name="closed" value="true" />
+      <created>1713524682788</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1713524682788</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -593,7 +600,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated relevantlink for MarketWatch watchlist page under .DEV environment." />
     <MESSAGE value="Updated relevant XPath for WSJ real-time author and daily-digest notification." />
     <MESSAGE value="Updated New WSJ Sign In Process for the validation of WSJ watchlist" />
     <MESSAGE value="Updated New WSJ Sign In Process and Xpath for Letters Breadcrumb on WSJ article page and WSJ Preference Center page for Letters breadcrumb" />
@@ -618,6 +624,7 @@
     <MESSAGE value="Updated the Sailthru Regression test cases for navigating to WSJ Preference Center page for comparing ST authors, ST company, ST campaigns and ST custom topics." />
     <MESSAGE value="Updated the Sailthru Regression test cases for the users lookup in order to get the subscribed ST authors, ST companies, ST campaigns and ST custom topics." />
     <MESSAGE value="Updated the web elements under WSJ regression file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the web elements under WSJ regression file" />
+    <MESSAGE value="Updated xpath for FN article without byline" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated xpath for FN article without byline" />
   </component>
 </project>

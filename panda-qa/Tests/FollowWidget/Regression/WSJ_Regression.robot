@@ -98,6 +98,7 @@ Validate Authors for WSJ Article page without byline
     [Tags]  Regression  Article  Author    TagWAB
 
     CommonFunctionality.Start WSJ Article without byline
+    DefinedKeywords.New WSJ Sign In Process
     WSJArticlePage.Validate author without byline
 
 #US-T183
