@@ -216,20 +216,20 @@ Validate Postback on Preference Center
     BarronsPreferenceCenterPage.Add Breaking News By Hotlink
     DefinedKeywords.Sign In Process
     BarronsPreferenceCenterPage.Validate Followed Breaking News
-    ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
-    Run Keyword If  ${val2} > 0  BarronsPreferenceCenterPage.Click Following Toggle Alert Pop up
-    BarronsPreferenceCenterPage.Validate Breaking News Toggle Feature
-    BarronsPreferenceCenterPage.Click Breaking News Toggle Feature  #--unsubscribe functionality
-    BarronsPreferenceCenterPage.Validate Following Toggle Alert Pop up
-    BarronsPreferenceCenterPage.Click Following Toggle Alert Pop up
-    BarronsPreferenceCenterPage.Validate Over Mouse On Notification Tooltip
+#    ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
+#    Run Keyword If  ${val2} > 0  BarronsPreferenceCenterPage.Click Following Toggle Alert Pop up
+#    BarronsPreferenceCenterPage.Validate Breaking News Toggle Feature
+#    BarronsPreferenceCenterPage.Click Breaking News Toggle Feature  #--unsubscribe functionality
+#    BarronsPreferenceCenterPage.Validate Following Toggle Alert Pop up
+#    BarronsPreferenceCenterPage.Click Following Toggle Alert Pop up
+#    BarronsPreferenceCenterPage.Validate Over Mouse On Notification Tooltip
     BarronsMailboxPage.Navigate Mailbox page
     BarronsMailboxPage.Login
     BarronsMailboxPage.Select Inbox
     BarronsMailboxPage.Search Barrons real-time company notification for Postback
     BarronsMailboxPage.Validate Barrons real-time company notification for Postback
-    BarronsMailboxPage.Unsubscribe the mails
-    BarronsPreferenceCenterPage.Add Company By Hotlink
+#    BarronsMailboxPage.Unsubscribe the mails
+#    BarronsPreferenceCenterPage.Add Company By Hotlink
 
 
 

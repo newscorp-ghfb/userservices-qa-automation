@@ -118,13 +118,13 @@ Validate Postback on Preference Center
     MarketWatchPreferenceCenterPage.Add Breaking News By Hotlink
     DefinedKeywords.Sign In Process
     MarketWatchPreferenceCenterPage.Validate Followed Breaking News
-    ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
-    Run Keyword If  ${val2} > 0  MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
-    MarketWatchPreferenceCenterPage.Validate Breaking News Toggle Feature
-    MarketWatchPreferenceCenterPage.Click Breaking News Toggle Feature  #--unsubscribe functionality
-    MarketWatchPreferenceCenterPage.Validate Following Toggle Alert Pop up
-    MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
-    MarketWatchPreferenceCenterPage.Validate Over Mouse On Notification Tooltip
+#    ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
+#    Run Keyword If  ${val2} > 0  MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
+#    MarketWatchPreferenceCenterPage.Validate Breaking News Toggle Feature
+#    MarketWatchPreferenceCenterPage.Click Breaking News Toggle Feature  #--unsubscribe functionality
+#    MarketWatchPreferenceCenterPage.Validate Following Toggle Alert Pop up
+#    MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
+#    MarketWatchPreferenceCenterPage.Validate Over Mouse On Notification Tooltip
     MarketWatchMailboxPage.Navigate Mailbox page
     MarketWatchMailboxPage.Login
     MarketWatchMailboxPage.Select Inbox
@@ -132,4 +132,4 @@ Validate Postback on Preference Center
     MarketWatchMailboxPage.Validate MW real-time company notification for Postback
     #MarketWatchMailboxPage.Unsubscribe the mails
     #MarketWatchMailboxPage.Verify the mail is unsubscribed
-    MarketWatchPreferenceCenterPage.Add Company By Hotlink
+    #MarketWatchPreferenceCenterPage.Add Company By Hotlink

@@ -11,39 +11,39 @@ Validate Preference Center page
 
 Navigate Preference Center page
     IF  "${Env}" == "prod"
-        Go To  https://www.wsj.com/follow
+        Go To  https://www.wsj.com/preference-center/alerts
     ELSE IF  "${Env}" == "dev"
-        Go To  https://www.s.dev.wsj.com/follow
+        Go To  https://www.dev.wsj.com/preference-center/alerts
     END
 Navigate Article page
     IF  "${Env}" == "prod"
         Go To  https://www.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     ELSE IF  "${Env}" == "dev"
-        Go To  https://www.s.dev.wsj.com/articles/mass-vaccination-sites-for-covid-19-are-back-11641646804
+        Go To  https://www.dev.wsj.com/articles/mass-vaccination-sites-for-covid-19-are-back-11641646804
     END
 Navigate Letters Article page
     IF  "${Env}" == "prod"
         Go To  https://www.wsj.com/articles/mary-eberstadt-furman-university-wsj-scott-yenor-campus-protest-speech-869ce29b
     ELSE IF  "${Env}" == "dev"
-        Go To  https://www.s.dev.wsj.com/articles/mass-vaccination-sites-for-covid-19-are-back-11641646804
+        Go To  https://www.dev.wsj.com/articles/mass-vaccination-sites-for-covid-19-are-back-11641646804
     END
 Navigate Editorials Article page
     IF  "${Env}" == "prod"
         Go To  https://www.wsj.com/articles/chicago-mayor-wisconsin-supreme-court-election-paul-vallas-brandon-johnson-janet-protasiewicz-dan-kelly-3673d166
     ELSE IF  "${Env}" == "dev"
-        Go To  https://www.s.dev.wsj.com/articles/mass-vaccination-sites-for-covid-19-are-back-11641646804
+        Go To  https://www.dev.wsj.com/articles/mass-vaccination-sites-for-covid-19-are-back-11641646804
     END
 Navigate Commentary Article page
     IF  "${Env}" == "prod"
         Go To  https://www.wsj.com/articles/medicare-drug-price-controls-will-make-america-sicker-research-innovation-negotiations-private-insurers-b503b4ba
     ELSE IF  "${Env}" == "dev"
-        Go To  https://www.s.dev.wsj.com/articles/mass-vaccination-sites-for-covid-19-are-back-11641646804
+        Go To  https://www.dev.wsj.com/articles/mass-vaccination-sites-for-covid-19-are-back-11641646804
     END
 Navigate Elections Article page
     IF  "${Env}" == "prod"
         Go To  https://www.wsj.com/articles/kyrsten-sinema-joe-manchin-fail-to-attract-small-donors-for-potential-re-election-campaigns-d77506e7
     ELSE IF  "${Env}" == "dev"
-        Go To  https://www.s.dev.wsj.com/articles/mass-vaccination-sites-for-covid-19-are-back-11641646804
+        Go To  https://www.dev.wsj.com/articles/mass-vaccination-sites-for-covid-19-are-back-11641646804
     END
 Validate Followed Authors
     Page Should Contain  Authors
@@ -108,7 +108,7 @@ Add Author By Hotlink
         Go To  https://www.wsj.com/follow?alert=author&id=7872
         Go To  https://www.wsj.com/follow?alert=author&id=8736
     ELSE IF  "${Env}" == "dev"
-        Go To  https://www.s.dev.wsj.com/follow?alert=author&id=7872
+        Go To  https://www.dev.wsj.com/follow?alert=author&id=7872
     END
 
 Validate Author Name
@@ -136,7 +136,7 @@ Add Company By Hotlink
     IF  "${Env}" == "prod"
         Go To  https://www.wsj.com/follow?alert=company&fcode=AMZCOM
     ELSE IF  "${Env}" == "dev"
-        Go To  https://www.s.dev.wsj.com/follow?alert=company&fcode=AMZCOM
+        Go To  https://www.dev.wsj.com/follow?alert=company&fcode=AMZCOM
     END
 
 Validate Followed Companies

@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated xpath for FN article without byline">
+    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated author's Xpath for WSj article without byline">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJArticlePage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJArticlePage.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/DefinedKeywords.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/DefinedKeywords.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/BarronsMailboxPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/BarronsMailboxPage.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJPreferenceCenterPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJPreferenceCenterPage.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/Barrons_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/Barrons_Regression.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/MansionGlobal_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/MansionGlobal_Regression.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/MarketWatch_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/MarketWatch_Regression.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/WSJ_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/WSJ_Regression.robot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -180,14 +185,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1702390104711</updated>
-    </task>
-    <task id="LOCAL-00001" summary="added chrome code for jenkins">
-      <option name="closed" value="true" />
-      <created>1702390959960</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1702390959960</updated>
     </task>
     <task id="LOCAL-00002" summary="added chrome code for jenkins">
       <option name="closed" value="true" />
@@ -573,7 +570,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713524682788</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Updated author's Xpath for WSj article without byline">
+      <option name="closed" value="true" />
+      <created>1713525478752</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1713525478752</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -600,7 +605,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated relevant XPath for WSJ real-time author and daily-digest notification." />
     <MESSAGE value="Updated New WSJ Sign In Process for the validation of WSJ watchlist" />
     <MESSAGE value="Updated New WSJ Sign In Process and Xpath for Letters Breadcrumb on WSJ article page and WSJ Preference Center page for Letters breadcrumb" />
     <MESSAGE value="Updated Xpath and element ID for FN article page and FN mailbox page." />
@@ -625,6 +629,7 @@
     <MESSAGE value="Updated the Sailthru Regression test cases for the users lookup in order to get the subscribed ST authors, ST companies, ST campaigns and ST custom topics." />
     <MESSAGE value="Updated the web elements under WSJ regression file" />
     <MESSAGE value="Updated xpath for FN article without byline" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated xpath for FN article without byline" />
+    <MESSAGE value="Updated author's Xpath for WSj article without byline" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated author's Xpath for WSj article without byline" />
   </component>
 </project>

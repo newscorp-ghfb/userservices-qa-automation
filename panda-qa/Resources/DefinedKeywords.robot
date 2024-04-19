@@ -38,6 +38,31 @@ Sign In Process
     END
     Wait Until Element Is Not Visible  //*[@id="password-login"]/div/form/div/div[5]/div[1]/button
 
+WSJ Postback Sign In Process
+    IF  "${Env}" == "prod"
+        ${Email}=  Set Variable  ${Email_prod}
+        ${Password}=  Set Variable  ${Password_prod}
+    ELSE IF  "${Env}" == "dev"
+        ${Email}=  Set Variable  ${Email_dev}
+        ${Password}=  Set Variable  ${Password_dev}
+    END
+    Wait Until Element is Visible  //html/body/div[11]/ufc-portal/ufc-signin-modal//div/div[2]/focus-trap/div[2]/ufc-button/button
+    Click Element  //html/body/div[11]/ufc-portal/ufc-signin-modal//div/div[2]/focus-trap/div[2]/ufc-button/button
+    Wait Until Element Is Visible  //input[@type='email']
+    Click Button  //input[@type='email']
+    Input Text  //input[@type='email']   qapandaautomation@hotmail.com
+    Set Selenium Implicit Wait  10s
+    Click Element  //span[text()="Continue"]
+    Set Selenium Implicit Wait  10s
+    Wait Until Element Is Visible  //*[@id="password-login-password"]
+    Input Text  //*[@id="password-login-password"]   Testing.123
+    Set Selenium Speed  1.0 seconds
+    IF  "${Env}" == "prod"
+        Click Element  //*[@id="password-login"]/div/form/div[5]/button    #//*[@id="password-login"]/div/form/div/div[5]/div[1]/button
+    ELSE IF  "${Env}" == "dev"
+        Click Element  //*[@id="password-login"]/div/form/div[5]/button
+    END
+    Wait Until Element Is Not Visible  //*[@id="password-login"]/div/form/div/div[5]/div[1]/button
 
 Mansion Global Sign In Process
     Click Button  //input[@type='email']

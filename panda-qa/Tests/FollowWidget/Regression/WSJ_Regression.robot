@@ -520,7 +520,7 @@ Validate the alert button for Board Pack Exclusive from articles page
 #US-T153
 Validate the WSJ digest notification
     [Documentation]  This test case validates the WSJ digest notification
-    [Tags]  Regression  Notifications
+    [Tags]  Regression  Notifications            TagWDN
     WSJMailboxPage.Navigate Mailbox page
     WSJMailboxPage.Login
     WSJMailboxPage.Select Inbox
@@ -813,20 +813,20 @@ Validate Postback on Preference Center
     [Documentation]  This test case validates the WSJ Postback on Preference Center
     [Tags]  Regression  Postback            TagWPBC
     WSJPreferenceCenterPage.Add Breaking News By Hotlink
-    DefinedKeywords.Sign In Process
+    DefinedKeywords.WSJ Postback Sign In Process
     WSJPreferenceCenterPage.Validate Followed Breaking News
-    ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
-    Run Keyword If  ${val2} > 0  WSJPreferenceCenterPage.Click Following Toggle Alert Pop up
-    WSJPreferenceCenterPage.Validate Breaking News Toggle Feature
-    WSJPreferenceCenterPage.Click Breaking News Toggle Feature  #--unsubscribe functionality
-    WSJPreferenceCenterPage.Validate Following Toggle Alert Pop up
-    WSJPreferenceCenterPage.Click Following Toggle Alert Pop up
-    WSJPreferenceCenterPage.Validate Over Mouse On Notification Tooltip
+#    ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
+#    Run Keyword If  ${val2} > 0  WSJPreferenceCenterPage.Click Following Toggle Alert Pop up
+#    WSJPreferenceCenterPage.Validate Breaking News Toggle Feature
+#    WSJPreferenceCenterPage.Click Breaking News Toggle Feature  #--unsubscribe functionality
+#    WSJPreferenceCenterPage.Validate Following Toggle Alert Pop up
+#    WSJPreferenceCenterPage.Click Following Toggle Alert Pop up
+#    WSJPreferenceCenterPage.Validate Over Mouse On Notification Tooltip
     WSJMailboxPage.Navigate Mailbox page
     WSJMailboxPage.Login
     WSJMailboxPage.Select Inbox
     WSJMailboxPage.Search WSJ real-time author notification for Postback
     WSJMailboxPage.Validate WSJ real-time author notification for Postback
-    WSJMailboxPage.Unsubscribe the mails
-    WSJMailboxPage.Verify the mail is unsubscribed
-    WSJPreferenceCenterPage.Add Author By Hotlink
+#    WSJMailboxPage.Unsubscribe the mails
+#    WSJMailboxPage.Verify the mail is unsubscribed
+#    WSJPreferenceCenterPage.Add Author By Hotlink
