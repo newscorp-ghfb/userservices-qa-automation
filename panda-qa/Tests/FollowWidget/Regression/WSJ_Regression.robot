@@ -374,16 +374,17 @@ Validate the follow button for Letters breadcrumb from Letters page
 #US-T134
 Validate the follow button for Elections breadcrumb from Elections page
     [Documentation]  This test case validates the follow button from Elections page
-    [Tags]  Regression  Follow  Breadcrumb
+    [Tags]  Regression  Follow  Breadcrumb       TagWSEB
     CommonFunctionality.Start WSJ Elections for Elections breadcrumb
     #WSJArticlePage.Validate Custom Following Button
+    DefinedKeywords.New WSJ Sign In Process
     WSJArticlePage.Click Custom Follow Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
     IF  "${Env}" == "prod"
-        DefinedKeywords.Market Watch Sign In Process
+        DefinedKeywords.New WSJ Sign In Process
     ELSE IF  "${Env}" == "dev"
-        DefinedKeywords.Sign In Process
+        DefinedKeywords.New WSJ Sign In Process
     END
     Set Selenium Speed  0.2 seconds
     WSJArticlePage.Validate Custom Following Button

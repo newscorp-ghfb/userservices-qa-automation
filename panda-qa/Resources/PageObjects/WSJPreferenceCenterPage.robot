@@ -175,7 +175,7 @@ Click Breaking News Toggle Feature
     Click Element  //*[text()="Technology"]/../../..//*[@role="switch"]
 
 Add Breaking News By Hotlink
-    Go To  https://s.dev.wsj.com/follow?alert=news_alert&id=NewsAlertEmailTechnology
+    Go To  https://www.dev.wsj.com/follow?alert=news_alert&id=NewsAlertEmailTechnology
 
 Validate Followed Breaking News
     Page Should Contain  NEWS ALERTS
