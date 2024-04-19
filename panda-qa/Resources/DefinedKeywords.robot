@@ -421,7 +421,7 @@ Sign In Process for Preference Center
     Click Element  //span[text()='Continue']/..
     Set Selenium Speed  1.0 seconds
     Wait Until Element Is Visible  //*[@id="password-login-password"]
-    Input Text  //*[@id="password-login-password"]  Lactomania@123
+    Input Text  //*[@id="password-login-password"]  Dowjones@2024
     Set Selenium Speed  1.0 seconds
     Click Element  (//span[@title='Sign In'])[2]/..
 
