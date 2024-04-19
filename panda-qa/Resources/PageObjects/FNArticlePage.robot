@@ -92,6 +92,13 @@ Click Preference Center Link
 Validate author hyperlink
     Page Should Contain Element  //span[@class='name']
 
+Validate author without byline
+    IF  "${Env}" == "prod"
+    Page Should Contain Element  //*[@id="__next"]/layout/div[4]/div[1]/div[1]/div/div/div[2]/p
+    ELSE IF  "${Env}" == "dev"
+    Page Should Contain Element  //*[@id="fn-article-wrap"]/div[2]/p[5]/strong/em/a
+    END
+
 Click author hyperlink
     Click Element  //span[@class='name']
      IF  "${Env}" == "prod"

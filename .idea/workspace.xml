@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated the Sailthru Regression test cases for the users lookup in order to get the subscribed ST authors, ST companies, ST campaigns and ST custom topics.">
+    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated the web elements under WSJ regression file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/WSJ_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/WSJ_Regression.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/FNArticlePage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/FNArticlePage.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/FN_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/FN_Regression.robot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +22,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
@@ -590,7 +593,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated relevant Xpath and Element ID for WSJ Sign In Process and WSJ mailbox page" />
     <MESSAGE value="Updated relevantlink for MarketWatch watchlist page under .DEV environment." />
     <MESSAGE value="Updated relevant XPath for WSJ real-time author and daily-digest notification." />
     <MESSAGE value="Updated New WSJ Sign In Process for the validation of WSJ watchlist" />
@@ -615,6 +617,7 @@
     <MESSAGE value="Updated the Sailthru Regression test cases for ST authors, ST company, ST campaigns and ST custom topics." />
     <MESSAGE value="Updated the Sailthru Regression test cases for navigating to WSJ Preference Center page for comparing ST authors, ST company, ST campaigns and ST custom topics." />
     <MESSAGE value="Updated the Sailthru Regression test cases for the users lookup in order to get the subscribed ST authors, ST companies, ST campaigns and ST custom topics." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the Sailthru Regression test cases for the users lookup in order to get the subscribed ST authors, ST companies, ST campaigns and ST custom topics." />
+    <MESSAGE value="Updated the web elements under WSJ regression file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the web elements under WSJ regression file" />
   </component>
 </project>

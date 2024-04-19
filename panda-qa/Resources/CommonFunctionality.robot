@@ -5,7 +5,7 @@ Resource  ../Resources/DefinedKeywords.robot
 *** Variables ***
 
 
-${Browser}=  firefox  #headless, ff, chrome, edge, safari
+${Browser}=  ff  #headless, ff, chrome, edge, safari
 
 
 ${Env}=  dev  #dev, prod
@@ -189,7 +189,7 @@ Start FN Article without byline
         Execute javascript  window.scrollTo(0,500)
     ELSE IF  "${Env}" == "dev"
         Open Browser  https://www.s.dev.fnlondon.com  ${Browser}  options=${options}
-        Go To  https://www.s.dev.fnlondon.com/articles/buy-under-armour-stock-pick-51650672000
+        Go To  https://www.s.dev.fnlondon.com/articles/testing-article-timestamp-20231102
     END
     Maximize Browser Window
 
