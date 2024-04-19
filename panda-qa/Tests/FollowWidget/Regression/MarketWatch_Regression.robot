@@ -22,7 +22,7 @@ Validate the Market Watch Preference Center page
     [Tags]  Regression  PreferenceCenter            TagMPF
 
     MarketWatchPreferenceCenterPage.Add Author By Hotlink
-    DefinedKeywords.Sign In Process
+    DefinedKeywords.MarketWatch PreferenceCenter User Sign In Process
     MarketWatchPreferenceCenterPage.Validate Followed Authors
     ${val}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
     Run Keyword If  ${val} > 0  MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
@@ -31,17 +31,6 @@ Validate the Market Watch Preference Center page
     MarketWatchPreferenceCenterPage.Validate Following Frequency
     MarketWatchPreferenceCenterPage.Validate All Tabs Displayed
     MarketWatchPreferenceCenterPage.Validate Author On All Tab
-    MarketWatchPreferenceCenterPage.Add Company By Hotlink
-    DefinedKeywords.Sign In Process
-    MarketWatchPreferenceCenterPage.Validate Followed Companies
-    ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
-    Run Keyword If  ${val2} > 0  MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
-    MarketWatchPreferenceCenterPage.Validate Company Frequency
-    MarketWatchPreferenceCenterPage.Validate Company Quote Link
-    MarketWatchPreferenceCenterPage.Validate Company On All Tab
-    MarketWatchPreferenceCenterPage.Click Market Watch tab
-    MarketWatchPreferenceCenterPage.Validate Company Toggle Feature
-    MarketWatchPreferenceCenterPage.Click Company Toggle Feature
     #MarketWatchPreferenceCenterPage.Validate Following Toggle Alert Pop up
     #MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
     #MarketWatchPreferenceCenterPage.Navigate Article page

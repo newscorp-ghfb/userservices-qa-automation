@@ -172,6 +172,19 @@ Sailthru Sign In Process
     Set Selenium Implicit Wait  0.01s
     Wait Until Element Is Not Visible  //input[@type='submit']
 
+MarketWatch PreferenceCenter User Sign In Process
+    Click Button  //input[@type='email']
+    Input Text  //input[@type='email']  QABARRONSONLY  #isaias.iniguez@dowjones.com
+    Set Selenium Implicit Wait  10s
+    Click Button  //span[text()='Continue']/..
+    Set Selenium Implicit Wait  10s
+    Wait Until Element Is Visible  //*[@id="password-login-password"]
+    Input Text  //*[@id="password-login-password"]  password1  #January2024  #Cuceis19841234!
+    Set Selenium Implicit Wait  10s
+    Click Button  //section[@id='password-login']/div/form/div[5]/button
+    Wait Until Element Is Not Visible  //*[@id="password-login"]/div/form/div/div[5]/div[1]/button
+
+
 Test User Sign In Process
     Click Button  //input[@type='text']
     Input Text  //input[@type='text']  QABARRONSONLY

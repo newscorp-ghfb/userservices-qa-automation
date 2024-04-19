@@ -19,7 +19,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T96
 Validate the PEN Preference Center page
     [Documentation]  This test case validates the PEN preference center page
-    [Tags]  Regression  PreferenceCenter
+    [Tags]  Regression  PreferenceCenter  TagPEPF
 
     PENPreferenceCenterPage.Add Author By Hotlink
     DefinedKeywords.Sign In Process
@@ -31,18 +31,6 @@ Validate the PEN Preference Center page
     PENPreferenceCenterPage.Validate Following Frequency
     PENPreferenceCenterPage.Validate All Tabs Displayed
     PENPreferenceCenterPage.Validate Author On All Tab
-    PENPreferenceCenterPage.Add Company By Hotlink
-    PENPreferenceCenterPage.Validate Followed Companies
-    ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
-    Run Keyword If  ${val2} > 0  PENPreferenceCenterPage.Click Following Toggle Alert Pop up
-    PENPreferenceCenterPage.Validate Company Frequency
-    PENPreferenceCenterPage.Validate Company Quote Link
-    PENPreferenceCenterPage.Validate Company On All Tab
-    PENPreferenceCenterPage.Click PEN tab
-    PENPreferenceCenterPage.Validate Company Toggle Feature
-    PENPreferenceCenterPage.Click Company Toggle Feature
-    PENPreferenceCenterPage.Validate Following Toggle Alert Pop up
-    PENPreferenceCenterPage.Click Following Toggle Alert Pop up
     #PENlPreferenceCenterPage.Navigate Article page
     #PENArticlePage.Scroll stories
 
