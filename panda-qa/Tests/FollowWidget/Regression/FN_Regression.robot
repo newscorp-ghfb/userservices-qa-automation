@@ -8,6 +8,9 @@ Resource  ../../../Resources/PageObjects/FNAuthorsPage.robot
 Resource  ../../../Resources/PageObjects/FNPreferenceCenterPage.robot
 Resource  ../../../Resources/PageObjects/FNMailboxPage.robot
 
+Test Setup  CommonFunctionality.Start FN Article
+Test Teardown  CommonFunctionality.Finish Testcase
+
 
 *** Variables ***
 

@@ -45,12 +45,12 @@ Search Your Daily Digest from FN
 Validate FN Digest notification
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
-    Page Should Contain Element  //a[contains(text(),'View in browser')]
+    Page Should Contain Element  //a[contains(text(),'View in web browser')]
     Page Should Contain Element  //table[@role="presentation"]//span[text()="Daily"]/../span[text()="Digest"]
 #    Page Should Contain Element  //a[text()="Preferences"]
 #    Page Should Contain Element  //a[text()="Unsubscribe"]
-    Page Should Contain Element  //a[text()="Privacy Policy"]
-    Page Should Contain Element  //a[text()="Cookie Policy"]
+    Page Should Contain Element  //a[text()="Privacy Notice"]
+    Page Should Contain Element  //a[text()="Cookie Notice"]
 
 Search Your FN real-time author notification
     Wait Until Page Contains Element  //input[@id="topSearchInput"]
