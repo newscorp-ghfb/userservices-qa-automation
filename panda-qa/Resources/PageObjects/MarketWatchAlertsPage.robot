@@ -2,7 +2,7 @@
 Library  SeleniumLibrary
 
 *** Variables ***
-
+${JSDeleteButtonMWPath}=  document.querySelector("#delete-alert-modal").shadowRoot.querySelector("ufc-modal > div > ufc-button:nth-child(1) > button")
 
 *** Keywords ***
 Validate Volume and Price Alerts page
@@ -20,6 +20,9 @@ Click Save Alert Button
 Click on Back Button
      Click Element  //*[text()="Back"]
 
+Click on Delete Button
+      Click Element  //*[text()="Delete"]
+
 Validate Volume and Price Alerts page
     Page Should Contain Element  //*[text()="Edit"]
 
@@ -35,4 +38,4 @@ Click Delete Alert Button
     Click Element  //html/body/div[2]/div[2]/div/div/div/table/tbody/tr[1]/td[5]/button/p
 
 Click Delete Alert Confirmation Button
-   Click Element  //*[@id="delete-alert-modal"]
+   Click Button  dom:${JSDeleteButtonMWPath}
