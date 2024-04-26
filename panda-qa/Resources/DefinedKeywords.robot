@@ -109,6 +109,19 @@ MarketWatch Test User Sign In Process
     Wait Until Element is visible  //html/body/section/nav/header/ul/li[2]/a
     Click Element  //html/body/section/nav/header/ul/li[2]/a
 
+MarketWatch Alerts User Sign In Process
+    Wait Until Element is Visible  //html/body/div[2]/div[2]/div/div/div/div/a
+    Click Element  //html/body/div[2]/div[2]/div/div/div/div/a
+    Click Button  //input[@type='email']
+    Input Text  //input[@type='email']  QABARRONSONLY  #isaias.iniguez@dowjones.com
+    Set Selenium Implicit Wait  10s
+    Click Button  //span[text()='Continue']/..
+    Set Selenium Implicit Wait  10s
+    Wait Until Element Is Visible  //*[@id="password-login-password"]
+    Input Text  //*[@id="password-login-password"]  password1  #January2024  #Cuceis19841234!
+    Set Selenium Implicit Wait  10s
+    Click Button  //section[@id='password-login']/div/form/div[5]/button
+
 WSJ Sign In Process
     Click Button  //input[@type='text']
     Input Text  //input[@type='text']  qapandautomation@hotmail.com  #priyanka.bhoomraogari@dowjones.com  #isaias.iniguez@dowjones.com

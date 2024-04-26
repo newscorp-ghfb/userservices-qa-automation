@@ -433,6 +433,15 @@ Start MarketWatch for Watchlist page
     END
     Maximize Browser Window
 
+Start MarketWatch for Price and Volume Alerts page
+    Set Selenium Speed  0.5 seconds
+    IF  "${Env}" == "prod"
+        Go To  https://www.marketwatch.com/alerts
+    ELSE IF  "${Env}" == "dev"
+        Go To  https://www.stg.marketwatch.com/alerts
+    END
+    Maximize Browser Window
+
 Start Barrons for Quotes page
     Set Selenium Speed  0.5 seconds
     IF  "${Env}" == "prod"

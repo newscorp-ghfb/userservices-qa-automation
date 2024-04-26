@@ -70,6 +70,18 @@ Validate the Watchlist widget from Watchlist page
 #    MarketWatchWatchlistPage.Validate Default New Watchlist
 #    MarketWatchWatchlistPage.Validate No Symbol in Default New Watchlist
 
+#US-T276
+Validate MarketWatch price and volume on the alerts page
+    [Documentation]  This test case validates the MarketWatch price and volume on the alerts page
+    [Tags]  Regression  MarketWatch Price and Volume Alerts               TagMPVA
+
+    CommonFunctionality.Start MarketWatch for Price and Volume Alerts page
+    DefinedKeywords.MarketWatch Alerts User Sign In Process
+    Set Selenium Speed  0.5 seconds
+    Capture Page Screenshot    screenshot.png
+
+
+
 #US-T149
 Validate the MW digest notification
     [Documentation]  This test case validates the MW digest notification

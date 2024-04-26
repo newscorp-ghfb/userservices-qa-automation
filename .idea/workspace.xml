@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated the Xpath for &quot;View in Browser&quot; option in alerts notification emails">
+    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated the test setup and test teardown steps for FN_regression test class.">
+      <change afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/MarketWatchAlertsPage.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/FNMailboxPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/FNMailboxPage.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/FN_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/FN_Regression.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/DefinedKeywords.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/DefinedKeywords.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/MarketWatch_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/MarketWatch_Regression.robot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +78,7 @@
     <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJSailthruCustomTopics.robot" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/Barrons_Regression.robot" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/FN_Regression.robot" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/MarketWatch_Regression.robot" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/Sailthru_Regression.robot" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/WSJ_Regression.robot" root0="SKIP_INSPECTION" />
   </component>
@@ -181,14 +184,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1702390104711</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Updated the relevant Element IDs and Xpath for the validation of Barron's watchlist widget and Barron's Market data page.">
-      <option name="closed" value="true" />
-      <created>1705938171119</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1705938171119</updated>
     </task>
     <task id="LOCAL-00007" summary="Updated the relevant Xpath and Element IDs for Barron's Market Data page.">
       <option name="closed" value="true" />
@@ -574,7 +569,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713791335377</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Updated the test setup and test teardown steps for FN_regression test class.">
+      <option name="closed" value="true" />
+      <created>1714054108610</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1714054108611</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -601,7 +604,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated the latest password for WSJ New Sign in Process, Marketwatch, mansion global and PE News Sign-In process under defined keywords." />
     <MESSAGE value="Updated the CommonFunctionality browser options as per the latest requirements under develop." />
     <MESSAGE value="Updated the Tags for testing WSJ regression test cases" />
     <MESSAGE value="Updated all the Force Tags and relevant keywords for MarketWatch, Mansion Global and PE News as perthe develop branch" />
@@ -626,6 +628,7 @@
     <MESSAGE value="Updated the Sign In process for Marketwatch and PE News preference center page" />
     <MESSAGE value="Updated the WSJ Sign In Process for all WSJ test cases and URL for WSJ Preference center page." />
     <MESSAGE value="Updated the Xpath for &quot;View in Browser&quot; option in alerts notification emails" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the Xpath for &quot;View in Browser&quot; option in alerts notification emails" />
+    <MESSAGE value="Updated the test setup and test teardown steps for FN_regression test class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the test setup and test teardown steps for FN_regression test class." />
   </component>
 </project>
