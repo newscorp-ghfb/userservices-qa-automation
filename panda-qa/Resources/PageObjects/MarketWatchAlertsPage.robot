@@ -5,8 +5,8 @@ Library  SeleniumLibrary
 ${JSDeleteButtonMWPath}=  document.querySelector("#delete-alert-modal").shadowRoot.querySelector("ufc-modal > div > ufc-button:nth-child(1) > button")
 
 *** Keywords ***
-Validate Volume and Price Alerts page
-    Page Should Contain Element  //*[text()="Edit"]
+Validate Price and Volume Alert
+    Page Should Contain Element  //*[text()='Alerts']
 
 Click Edit option on Alerts page
     Click Element    //*[text()="Edit"]
@@ -23,8 +23,8 @@ Click on Back Button
 Click on Delete Button
       Click Element  //*[text()="Delete"]
 
-Validate Volume and Price Alerts page
-    Page Should Contain Element  //*[text()="Edit"]
+Validate Price and Volume Alert
+    Page Should Contain Element  //*[text()='Alerts']
 
 Click Enter Volume threshold value
     Click Element  //html/body/div[2]/div[2]/div/div/div/ufc-edit-alert-modal/ufc-modal/form/ufc-alert-form/div[2]/div[1]/ufc-input/div/div/input

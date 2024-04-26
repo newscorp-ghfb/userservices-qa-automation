@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated the test case for editing and deleting the Marketwatch price and volume alerts">
+    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated the xpath for delete button to delete the Marketwatch price and volume alerts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/MarketWatchAlertsPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/MarketWatchAlertsPage.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/MarketWatch_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/MarketWatch_Regression.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/results/screenshot.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,14 +183,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1702390104711</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Updated the SignInHeader Path for Barron's article page and Xpath for Barron's Postback functionality">
-      <option name="closed" value="true" />
-      <created>1706109957840</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1706109957840</updated>
     </task>
     <task id="LOCAL-00009" summary="Updated Xpath and Element IDs for Barron's Quotes page">
       <option name="closed" value="true" />
@@ -574,7 +568,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714138255304</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Updated the xpath for delete button to delete the Marketwatch price and volume alerts">
+      <option name="closed" value="true" />
+      <created>1714139780239</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1714139780239</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -601,7 +603,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated the Tags for testing WSJ regression test cases" />
     <MESSAGE value="Updated all the Force Tags and relevant keywords for MarketWatch, Mansion Global and PE News as perthe develop branch" />
     <MESSAGE value="Updated all the Force Tags and relevant keywords for MarketWatch, WSJ, Mansion Global and PE News as perthe develop branch" />
     <MESSAGE value="Updated the Common Functionality browsers and set environment as &quot;dev&quot; for .DEV environment" />
@@ -626,6 +627,7 @@
     <MESSAGE value="Updated the Xpath for &quot;View in Browser&quot; option in alerts notification emails" />
     <MESSAGE value="Updated the test setup and test teardown steps for FN_regression test class." />
     <MESSAGE value="Updated the test case for editing and deleting the Marketwatch price and volume alerts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the test case for editing and deleting the Marketwatch price and volume alerts" />
+    <MESSAGE value="Updated the xpath for delete button to delete the Marketwatch price and volume alerts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the xpath for delete button to delete the Marketwatch price and volume alerts" />
   </component>
 </project>

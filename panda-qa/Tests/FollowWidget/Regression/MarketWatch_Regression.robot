@@ -8,6 +8,7 @@ Resource  ../../../Resources/PageObjects/MarketWatchWatchlistPage.robot
 Resource  ../../../Resources/PageObjects/MarketWatchAuthorsPage.robot
 Resource  ../../../Resources/PageObjects/MarketWatchPreferenceCenterPage.robot
 Resource  ../../../Resources/PageObjects/MarketWatchMailboxPage.robot
+Resource  ../../../Resources/PageObjects/MarketWatchAlertsPage.robot
 
 Test Setup  CommonFunctionality.Start Market Watch Article
 Test Teardown  CommonFunctionality.Finish Testcase
@@ -79,6 +80,17 @@ Validate MarketWatch price and volume on the alerts page
     DefinedKeywords.MarketWatch Alerts User Sign In Process
     Set Selenium Speed  0.5 seconds
     Capture Page Screenshot    screenshot.png
+    MarketWatchAlertsPage.Validate Price and Volume Alert
+    MarketWatchAlertsPage.Click Edit option on Alerts page
+    MarketWatchAlertsPage.Click Enter Volume threshold value
+    MarketWatchAlertsPage.Click Save Alert Button
+    MarketWatchAlertsPage.Click on Back Button
+    MarketWatchAlertsPage.Click on Delete Button
+    MarketWatchAlertsPage.Validate Price and Volume Alert
+    MarketWatchAlertsPage.Click Enter Volume threshold value
+    MarketWatchAlertsPage.Click Save Alert Button
+    MarketWatchAlertsPage.Click Delete Alert Button
+    MarketWatchAlertsPage.Click Delete Alert Confirmation Button
 
 
 
