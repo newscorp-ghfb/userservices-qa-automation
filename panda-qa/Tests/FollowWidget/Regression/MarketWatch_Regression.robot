@@ -80,19 +80,36 @@ Validate MarketWatch price and volume on the alerts page
     DefinedKeywords.MarketWatch Alerts User Sign In Process
     Set Selenium Speed  0.5 seconds
     Capture Page Screenshot    screenshot.png
-    MarketWatchAlertsPage.Validate Price and Volume Alert
+    MarketWatchAlertsPage.Validate Price and Volume Alert page
     MarketWatchAlertsPage.Click Edit option on Alerts page
     MarketWatchAlertsPage.Click Enter Volume threshold value
     MarketWatchAlertsPage.Click Save Alert Button
     MarketWatchAlertsPage.Click on Back Button
     MarketWatchAlertsPage.Click on Delete Button
-    MarketWatchAlertsPage.Validate Price and Volume Alert
+    MarketWatchAlertsPage.Validate Price and Volume Alerts
     MarketWatchAlertsPage.Click Enter Volume threshold value
-    MarketWatchAlertsPage.Click Save Alert Button
+    MarketWatchAlertsPage.Click Save Button
     MarketWatchAlertsPage.Click Delete Alert Button
     MarketWatchAlertsPage.Click Delete Alert Confirmation Button
 
-
+#US-T278
+Validate MarketWatch price and volume alert in Quote page
+    [Documentation]  This test case validates the MarketWatch price and volume alerts on the Quote page
+    [Tags]  Regression  MarketWatch Price and Volume alert in Quote page            TagMPVQ
+    CommonFunctionality.Start MarketWatch for Price and Volume Alerts page
+    DefinedKeywords.MarketWatch Alerts User Sign In Process
+    Set Selenium Speed  0.5 seconds
+    Capture Page Screenshot    screenshot.png
+    MarketWatchAlertsPage.Validate Price and Volume Alert page
+    MarketWatchAlertsPage.Click Edit option on Alerts page
+    MarketWatchAlertsPage.Click Enter Volume threshold value
+    MarketWatchAlertsPage.Click Save Alert Button
+    MarketWatchAlertsPage.Click on Back Button
+    MarketWatchAlertsPage.Click on GoldMan Sachs Investing stock on Quotes page
+    MarketWatchAlertsPage.Click on Historical Quotes for GoldMan Sachs Investing stock
+    MarketWatchAlertsPage.Click On Search Quote option
+    MarketWatchAlertsPage.Click on Apple Investing stock on Quotes page
+    MarketWatchAlertsPage.Click on Historical Quotes for Apple Investing stock
 
 #US-T149
 Validate the MW digest notification
