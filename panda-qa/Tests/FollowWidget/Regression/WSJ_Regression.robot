@@ -408,7 +408,7 @@ Validate the follow button for Elections breadcrumb from Elections page
 #US-T134
 Validate the WSJ Preference Center page for Elections breadcrumb
     [Documentation]  This test case validates the barrons preference center page
-    [Tags]  Regression  PreferenceCenter  Breadcrumb
+    [Tags]  Regression  PreferenceCenter  Breadcrumb   TagWPFB
 
     Set Selenium Speed  0.2 seconds
     WSJPreferenceCenterPage.Navigate Preference Center page
@@ -432,7 +432,7 @@ Validate the WSJ Preference Center page for Elections breadcrumb
 #US-T230
 Validate the follow button for Elections breadcrumb from articles page
     [Documentation]  This test case validates the follow button from articles page
-    [Tags]  Regression  Follow  Breadcrumb  Article
+    [Tags]  Regression  Follow  Breadcrumb  Article  TagWECB
     CommonFunctionality.Start WSJ Article for Elections breadcrumb
     #WSJArticlePage.Validate Custom Following Button
     WSJArticlePage.Click Custom Follow Button
@@ -467,7 +467,7 @@ Validate the Watchlist widget from Watchlist page
     [Tags]  Regression  Watchlist   TagWWP
 
     CommonFunctionality.Start WSJ for Watchlist page
-    DefinedKeywords.Sign In Process
+    DefinedKeywords.New WSJ Test User Sign In Process
     Set Selenium Speed  0.5 seconds
     Capture Page Screenshot    screenshot.png
     WSJWatchlistPage.Validate Watchlist Page
@@ -666,9 +666,9 @@ Validate the alert button for On Wine
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
     IF  "${Env}" == "prod"
-        DefinedKeywords.Market Watch Sign In Process
+        DefinedKeywords.New WSJ Test User Sign In Process
     ELSE IF  "${Env}" == "dev"
-        DefinedKeywords.Sign In Process
+        DefinedKeywords.New WSJ Test User Sign In Process
     END
     Set Selenium Speed  0.2 seconds
     IF  "${Env}" == "prod"
@@ -691,15 +691,15 @@ Validate the alert button for On Wine
 #US-T334
 Validate the alert button for Personal Finance
     [Documentation]  This test case validates the alert button for Personal Finance
-    [Tags]  Regression  Alerts
+    [Tags]  Regression  Alerts   Tag PFAB
     CommonFunctionality.Start WSJ Article for Personal Finance
     WSJArticlePage.Click Personal Finance Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
     IF  "${Env}" == "prod"
-        DefinedKeywords.Market Watch Sign In Process
+        DefinedKeywords.New WSJ Test User Sign In Process
     ELSE IF  "${Env}" == "dev"
-        DefinedKeywords.Sign In Process
+        DefinedKeywords.New WSJ Test User Sign In Process
     END
     Set Selenium Speed  0.2 seconds
     IF  "${Env}" == "prod"
