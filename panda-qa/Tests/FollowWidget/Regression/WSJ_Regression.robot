@@ -468,6 +468,7 @@ Validate the Watchlist widget from Watchlist page
 
     CommonFunctionality.Start WSJ for Watchlist page
     DefinedKeywords.New WSJ Test User Sign In Process
+    DefinedKeywords.WSJ Watchlist Sign In Process
     Set Selenium Speed  0.5 seconds
     Capture Page Screenshot    screenshot.png
     WSJWatchlistPage.Validate Watchlist Page

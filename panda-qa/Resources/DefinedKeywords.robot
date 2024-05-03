@@ -160,10 +160,6 @@ New WSJ Test User Sign In Process
     Input Text  //input[@type='password']  VTdnnCgCnny100g61  #AKpolarzx@2594  #//*[@id="password-login-password"]  #Cuceis19841234!
     Set Selenium Implicit Wait  10s
     Click Button  //input[@type='submit']
-#    Wait Until Element is Visible  //html/body/div[2]/div[2]/main/div[2]/div/div/div[3]/div/a[2]
-#    Click Element  //html/body/div[2]/div[2]/main/div[2]/div/div/div[3]/div/a[2]
-#    Wait Until Element is Visible  //html/body/div[2]/div[2]/main/div[2]/div/div/div[2]/form/div[2]/div/div[2]/div[2]/div[2]/a
-#    Click Element   //html/body/div[2]/div[2]/main/div[2]/div/div/div[2]/form/div[2]/div/div[2]/div[2]/div[2]/a
     Wait Until Element Is Visible  //*[@id="input86"]   #//*[@id="password-login-password"]
     Input Text  //*[@id="input86"]  QA integration testing
     Set Selenium Implicit Wait  10s
@@ -173,6 +169,18 @@ New WSJ Test User Sign In Process
 #    Set Selenium Implicit Wait  0.01s
 #    Wait Until Element Is Not Visible  //input[@type='submit']
 
+WSJ Watchlist Sign In Process
+    Click Button  //input[@type='email']
+    Input Text  //input[@type='email']  QABARRONSONLY  #akhilesh.khanduri@dowjones.com
+    Set Selenium Implicit Wait  10s
+    Click Button  //input[@type='submit']  #//html/body/div[2]/div[2]/main/div[2]/div/div/div[2]/form/div[2]/input  #//*[@id="form20"]/div[2]/input  #//*[@id="basic-login"]/div[1]/form/div[2]/div[6]/div[1]/button[2]
+    Set Selenium Implicit Wait  10s
+    Click Button  //span[text()='Continue']/..
+    Set Selenium Implicit Wait  10s
+    Wait Until Element Is Visible  //*[@id="password-login-password"]
+    Input Text  //*[@id="password-login-password"]  password1
+    Set Selenium Implicit Wait  10s
+    Click Button  //input[@type='submit']
 
 Sailthru User Sign In Process
     Click Button  //input[@type='text']

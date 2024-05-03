@@ -415,6 +415,7 @@ Start WSJ for Watchlist page
     END
     Maximize Browser Window
 
+#Workaround URL:   https://sso.int.accounts.dowjones.com/login-page?client_id=iSKWPA8krOgQVA2np1HMPezSjhjrzKMb&redirect_uri=https%3A%2F%2Fwww.s.dev.wsj.com%2Fclient%2Fauth&response_type=code&scope=openid%20idp_id%20roles%20tags%20email%20given_name%20family_name%20uuid%20djid%20djUsername%20djStatus%20trackid%20prts%20updated_at%20created_at%20offline_access&ui_locales=en-us-x-wsj-223-2&nonce=ff161ed1-b55e-41e6-9631-a018c5364c5f&state=ru1pA5eFV4BuK_P8.VUC4sjj7ltYd7Fctl72oCdFCmXBmIXmZh6dQPIhu3V9bghDO4bd7W81z4eJ4v_lI&resource=http%253A%252F%252Fwww.dev.wsj.com%252Fwatchlist&protocol=oauth2&client=iSKWPA8krOgQVA2np1HMPezSjhjrzKMb#!/signin-password
 Start WSJ for Newsletters page
     Set Selenium Speed  0.5 seconds
     IF  "${Env}" == "prod"

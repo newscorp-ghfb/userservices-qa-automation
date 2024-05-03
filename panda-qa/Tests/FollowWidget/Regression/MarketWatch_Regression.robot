@@ -112,6 +112,18 @@ Validate MarketWatch price and volume alert in Quote page
 #    MarketWatchAlertsPage.Click on Apple Investing stock on Quotes page
 #    MarketWatchAlertsPage.Click on Historical Quotes for Apple Investing stock
 
+#US-T298
+Validate MarketWatch price and volume alert deletion on Quote page
+    [Documentation]  This test case validates the MarketWatch price and volume alerts on the Quote page
+    [Tags]  Regression  MarketWatch Price and Volume alert in Quote page            TagMPVD
+    CommonFunctionality.Start MarketWatch for Price and Volume Alerts page
+    DefinedKeywords.MarketWatch Alerts User Sign In Process
+    Set Selenium Speed  0.5 seconds
+    Capture Page Screenshot    screenshot.png
+    MarketWatchAlertsPage.Validate Price and Volume Alert page
+    MarketWatchAlertsPage.Click on Delete Button
+    MarketWatchAlertsPage.Click Delete Alert Confirmation Button
+
 #US-T149
 Validate the MW digest notification
     [Documentation]  This test case validates the MW digest notification

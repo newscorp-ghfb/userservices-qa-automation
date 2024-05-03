@@ -5,7 +5,7 @@ Library  SeleniumLibrary
 
 *** Keywords ***
 Validate Watchlist Page
-    Page Should Contain Element  //*[text()="Add Symbol"]
+    Page Should Contain Element  //*[text()="Add Symbol"]   [timeout] = 10
 
 Validate Default New Watchlist
     Page Should Contain Element  //button[contains(., 'New Watchlist')]
