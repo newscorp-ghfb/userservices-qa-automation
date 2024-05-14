@@ -72,7 +72,7 @@ Validate the Watchlist widget from Watchlist page
 #    MarketWatchWatchlistPage.Validate No Symbol in Default New Watchlist
 
 #US-T276
-Validate MarketWatch price and volume on the alerts page
+Validate the MarketWatch price and volume on the alerts page
     [Documentation]  This test case validates the MarketWatch price and volume on the alerts page
     [Tags]  Regression  MarketWatch Price and Volume Alerts               TagMPVA
 
@@ -94,7 +94,7 @@ Validate MarketWatch price and volume on the alerts page
 #    MarketWatchAlertsPage.Click Delete Alert Confirmation Button
 
 #US-T278
-Validate MarketWatch price and volume alert in Quote page
+Validate the MarketWatch price and volume alert in Quote page
     [Documentation]  This test case validates the MarketWatch price and volume alerts on the Quote page
     [Tags]  Regression  MarketWatch Price and Volume alert in Quote page            TagMPVQ
     CommonFunctionality.Start MarketWatch for Price and Volume Alerts page
@@ -113,7 +113,7 @@ Validate MarketWatch price and volume alert in Quote page
 #    MarketWatchAlertsPage.Click on Historical Quotes for Apple Investing stock
 
 #US-T298
-Validate MarketWatch price and volume alert deletion on Quote page
+Validate the MarketWatch price and volume alert deletion on Quote page
     [Documentation]  This test case validates the MarketWatch price and volume alerts on the Quote page
     [Tags]  Regression  MarketWatch Price and Volume alert in Quote page            TagMPVD
     CommonFunctionality.Start MarketWatch for Price and Volume Alerts page
