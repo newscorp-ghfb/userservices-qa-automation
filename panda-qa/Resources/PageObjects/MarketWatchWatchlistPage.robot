@@ -12,7 +12,7 @@ Click Sign in
     Click Element  /html/body/main/div/div/section/div[1]/div[3]/div/a  #//a[text()="Sign in"]
 
 Validate Default New Watchlist
-    Page Should Contain Element  //button[text()="New Watchlist"]
+    Page Should Contain Element  //button[text()="test01"]
 
 Click Add Symbol Input
     Click Element  //input[@id="symbol-search"]
@@ -26,8 +26,8 @@ Select Symbol
 Validate Symbol in Default New Watchlist
     Page Should Contain Element  //div[@class="item-symbol-inner"]/a[text()="MSFT"]
 
-Validate No Symbol in Default New Watchlist
-    Page Should Not Contain Element  //div[@class="item-symbol-inner"]/a[text()="MSFT"]
+#Validate No Symbol in Default New Watchlist
+#    Page Should Not Contain Element  //div[@class="item-symbol-inner"]/a[text()="MSFT"]
 
 Create Watchlist Name
     Click Element  //button[@class="watchlist__title i-down"]

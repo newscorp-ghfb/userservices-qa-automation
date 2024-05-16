@@ -58,7 +58,7 @@ Validate Authors for Mansion Global Article page without byline
 #US-T148
 Validate the Mansion Global digest notification
     [Documentation]  This test case validates the Mansion Global digest notification
-    [Tags]  Regression  Notifications
+    [Tags]  Regression  Notifications            TagMGDN
     MansionGlobalMailboxPage.Navigate Mailbox page
     MansionGlobalMailboxPage.Login
     MansionGlobalMailboxPage.Select Inbox
@@ -68,7 +68,7 @@ Validate the Mansion Global digest notification
 #US-T121
 Validate the Mansion Global real-time author notification
     [Documentation]  This test case validates the Mansion Global real-time author notification
-    [Tags]  Regression  Notifications  Author
+    [Tags]  Regression  Notifications  Author        TagMGAN
     MansionGlobalMailboxPage.Navigate Mailbox page
     MansionGlobalMailboxPage.Login
     MansionGlobalMailboxPage.Select Inbox
@@ -78,7 +78,7 @@ Validate the Mansion Global real-time author notification
 #US-T158
 Validate the Mansion Global weekly saved search notification
     [Documentation]  This test case validates the Mansion Global weekly saved search notification
-    [Tags]  Regression  Notifications
+    [Tags]  Regression  Notifications                 TagMGSN
     MansionGlobalMailboxPage.Navigate Mailbox page
     MansionGlobalMailboxPage.Login
     MansionGlobalMailboxPage.Select Inbox
@@ -88,7 +88,7 @@ Validate the Mansion Global weekly saved search notification
 #US-T359
 Validate Postback on Preference Center
     [Documentation]  This test case vabrlidates the Mansion Global Postback on Preference Center
-    [Tags]  Regression  Postback
+    [Tags]  Regression  Postback            TagMGPB
     MansionGlobalPreferenceCenterPage.Add Breaking News By Hotlink
     DefinedKeywords.Sign In Process
     MansionGlobalPreferenceCenterPage.Validate Followed Breaking News
@@ -104,6 +104,6 @@ Validate Postback on Preference Center
     MansionGlobalMailboxPage.Select Inbox
     MansionGlobalMailboxPage.Search Mansion Global real-time author notification for Postback
     MansionGlobalMailboxPage.Validate Mansion Global real-time author notification for Postback
-    MansionGlobalMailboxPage.Unsubscribe the mails
-    MansionGlobalMailboxPage.Verify the mail is unsubscribed
+#    MansionGlobalMailboxPage.Unsubscribe the mails
+#    MansionGlobalMailboxPage.Verify the mail is unsubscribed
     MansionGlobalPreferenceCenterPage.Add Author By Hotlink

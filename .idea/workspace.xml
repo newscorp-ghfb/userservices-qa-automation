@@ -4,21 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-
-    <list default="true" id="fb16a8de-af3a-454c-b11e-ec06bcdd6a2c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/APIAutomationPage.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/API_Automation.robot" afterDir="false" />
+    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated the xpath for Price and Volume alerts to overview historical quotes and updating the new WSJ Sign In Process for test user">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/log.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/log/output.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/panda-qa/Resources/DefinedKeywords.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/DefinedKeywords.robot" afterDir="false" />
-
-    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated the Sailthru Regression test cases for the users lookup in order to get the subscribed ST authors, ST companies, ST campaigns and ST custom topics.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJWatchlistPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJWatchlistPage.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/MarketWatch_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/MarketWatch_Regression.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/WSJ_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/WSJ_Regression.robot" afterDir="false" />
-
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,18 +18,16 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="Akhilesh-Latest-BarronsRegression" />
       </map>
     </option>
-
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
-
     <option name="recentBranches">
       <RecentBranches>
         <option name="branchesForRepo">
@@ -80,7 +70,10 @@
     <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/BarronsPreferenceCenterPage.robot" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/BarronsQuotesPage.robot" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/BarronsWatchlistPage.robot" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/FNMailboxPage.robot" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/MarketWatchAlertsPage.robot" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/MarketWatchPreferenceCenterPage.robot" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJArticlePage.robot" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJPreferenceCenterPage.robot" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJSailthruAuthors.robot" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJSailthruCampaigns.robot" root0="SKIP_INSPECTION" />
@@ -88,6 +81,7 @@
     <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJSailthruCustomTopics.robot" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/Barrons_Regression.robot" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/FN_Regression.robot" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/MarketWatch_Regression.robot" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/Sailthru_Regression.robot" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/WSJ_Regression.robot" root0="SKIP_INSPECTION" />
   </component>
@@ -98,25 +92,11 @@
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
-
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
-  <component name="ProjectId" id="2dYr2oRDolwhmWsgRrkPBjLtT4T" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "API__Automation"
-  }
-}]]></component>
-
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -199,40 +179,15 @@
       <method v="2" />
     </configuration>
   </component>
-
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fb16a8de-af3a-454c-b11e-ec06bcdd6a2c" name="Changes" comment="" />
-      <created>1710195653122</created>
+      <changelist id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="" />
+      <created>1702390104711</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1710195653122</updated>
+      <updated>1702390104711</updated>
     </task>
-
-    <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="robot-line">
-          <url>file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/APIAutomationPage.robot</url>
-          <line>97</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="robot-line">
-          <url>file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/APIAutomationPage.robot</url>
-          <line>102</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="robot-line">
-          <url>file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/APIAutomationPage.robot</url>
-          <line>76</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-
     <task id="LOCAL-00012" summary="Updated Sign Process Xpath value under defined keywords for input of email for WSJ Sign In Process">
       <option name="closed" value="true" />
       <created>1706613488771</created>
@@ -529,7 +484,103 @@
       <option name="project" value="LOCAL" />
       <updated>1709911173340</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Updated xpath for FN article without byline">
+      <option name="closed" value="true" />
+      <created>1713524682788</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1713524682788</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Updated author's Xpath for WSj article without byline">
+      <option name="closed" value="true" />
+      <created>1713525478752</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1713525478752</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Updated Xpath for Barrons mailbox page, Mansion Global postback functionality, Marketwatch postback functionality and WSJ postback functionality">
+      <option name="closed" value="true" />
+      <created>1713530199148</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1713530199148</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Updated the Sign In process for Marketwatch and PE News preference center page">
+      <option name="closed" value="true" />
+      <created>1713532649342</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1713532649342</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Updated the WSJ Sign In Process for all WSJ test cases and URL for WSJ Preference center page.">
+      <option name="closed" value="true" />
+      <created>1713536005912</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1713536005912</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Updated the Xpath for &quot;View in Browser&quot; option in alerts notification emails">
+      <option name="closed" value="true" />
+      <created>1713791335376</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1713791335377</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Updated the test setup and test teardown steps for FN_regression test class.">
+      <option name="closed" value="true" />
+      <created>1714054108610</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1714054108611</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Updated the test case for editing and deleting the Marketwatch price and volume alerts">
+      <option name="closed" value="true" />
+      <created>1714138255304</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1714138255304</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Updated the xpath for delete button to delete the Marketwatch price and volume alerts">
+      <option name="closed" value="true" />
+      <created>1714139780239</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1714139780239</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Updated the xpath for Price and Volume alerts page">
+      <option name="closed" value="true" />
+      <created>1714141495867</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1714141495867</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Updated the xpath for Price and Volume alerts to overview historical quotes and change values on Quote page">
+      <option name="closed" value="true" />
+      <created>1714397569302</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1714397569302</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Updated the xpath for Price and Volume alerts to overview historical quotes and updating the new WSJ Sign In Process for test user">
+      <option name="closed" value="true" />
+      <created>1714660339825</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1714660339825</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -556,19 +607,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated relevant Xpath and Element ID for WSJ Sign In Process and WSJ mailbox page" />
-    <MESSAGE value="Updated relevantlink for MarketWatch watchlist page under .DEV environment." />
-    <MESSAGE value="Updated relevant XPath for WSJ real-time author and daily-digest notification." />
-    <MESSAGE value="Updated New WSJ Sign In Process for the validation of WSJ watchlist" />
-    <MESSAGE value="Updated New WSJ Sign In Process and Xpath for Letters Breadcrumb on WSJ article page and WSJ Preference Center page for Letters breadcrumb" />
-    <MESSAGE value="Updated Xpath and element ID for FN article page and FN mailbox page." />
-    <MESSAGE value="Updated the Marketwatch watchlist widget page URl under .DEV environment and fixed the xpath for Overview option on Barron's Market Data Page." />
-    <MESSAGE value="Updated the latest password for WSJ New Sign in Process, Marketwatch, mansion global and PE News Sign-In process under defined keywords." />
-    <MESSAGE value="Updated the CommonFunctionality browser options as per the latest requirements under develop." />
-    <MESSAGE value="Updated the Tags for testing WSJ regression test cases" />
-    <MESSAGE value="Updated all the Force Tags and relevant keywords for MarketWatch, Mansion Global and PE News as perthe develop branch" />
-    <MESSAGE value="Updated all the Force Tags and relevant keywords for MarketWatch, WSJ, Mansion Global and PE News as perthe develop branch" />
-    <MESSAGE value="Updated the Common Functionality browsers and set environment as &quot;dev&quot; for .DEV environment" />
     <MESSAGE value="Updated the New WSJ Sign In Process for WSJ Puzzles page validation" />
     <MESSAGE value="Updated the Browser options for all brands as per the develop branch and method for mouse tooltip notification on FN Preference Center page." />
     <MESSAGE value="Updated the Browser options and environment for PEN Capabilities page" />
@@ -581,7 +619,19 @@
     <MESSAGE value="Updated the Sailthru Regression test cases for ST authors, ST company, ST campaigns and ST custom topics." />
     <MESSAGE value="Updated the Sailthru Regression test cases for navigating to WSJ Preference Center page for comparing ST authors, ST company, ST campaigns and ST custom topics." />
     <MESSAGE value="Updated the Sailthru Regression test cases for the users lookup in order to get the subscribed ST authors, ST companies, ST campaigns and ST custom topics." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the Sailthru Regression test cases for the users lookup in order to get the subscribed ST authors, ST companies, ST campaigns and ST custom topics." />
-
+    <MESSAGE value="Updated the web elements under WSJ regression file" />
+    <MESSAGE value="Updated xpath for FN article without byline" />
+    <MESSAGE value="Updated author's Xpath for WSj article without byline" />
+    <MESSAGE value="Updated Xpath for Barrons mailbox page, Mansion Global postback functionality, Marketwatch postback functionality and WSJ postback functionality" />
+    <MESSAGE value="Updated the Sign In process for Marketwatch and PE News preference center page" />
+    <MESSAGE value="Updated the WSJ Sign In Process for all WSJ test cases and URL for WSJ Preference center page." />
+    <MESSAGE value="Updated the Xpath for &quot;View in Browser&quot; option in alerts notification emails" />
+    <MESSAGE value="Updated the test setup and test teardown steps for FN_regression test class." />
+    <MESSAGE value="Updated the test case for editing and deleting the Marketwatch price and volume alerts" />
+    <MESSAGE value="Updated the xpath for delete button to delete the Marketwatch price and volume alerts" />
+    <MESSAGE value="Updated the xpath for Price and Volume alerts page" />
+    <MESSAGE value="Updated the xpath for Price and Volume alerts to overview historical quotes and change values on Quote page" />
+    <MESSAGE value="Updated the xpath for Price and Volume alerts to overview historical quotes and updating the new WSJ Sign In Process for test user" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the xpath for Price and Volume alerts to overview historical quotes and updating the new WSJ Sign In Process for test user" />
   </component>
 </project>

@@ -8,6 +8,9 @@ Resource  ../../../Resources/PageObjects/FNAuthorsPage.robot
 Resource  ../../../Resources/PageObjects/FNPreferenceCenterPage.robot
 Resource  ../../../Resources/PageObjects/FNMailboxPage.robot
 
+Test Setup  CommonFunctionality.Start FN Article
+Test Teardown  CommonFunctionality.Finish Testcase
+
 
 *** Variables ***
 
@@ -47,7 +50,7 @@ Validate the FN Preference Center page
 #US-T25
 Validate Authors for FN Article page without byline
     [Documentation]  This test case validates authors without byline for FN article page
-    [Tags]  Regression  Author  Article   TagFNauthorwb
+    [Tags]  Regression  Author  Article   TagFNAWB
 
     CommonFunctionality.Start FN Article without byline
     FNArticlePage.Validate author without byline

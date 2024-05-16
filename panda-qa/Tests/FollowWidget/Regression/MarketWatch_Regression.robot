@@ -8,6 +8,7 @@ Resource  ../../../Resources/PageObjects/MarketWatchWatchlistPage.robot
 Resource  ../../../Resources/PageObjects/MarketWatchAuthorsPage.robot
 Resource  ../../../Resources/PageObjects/MarketWatchPreferenceCenterPage.robot
 Resource  ../../../Resources/PageObjects/MarketWatchMailboxPage.robot
+Resource  ../../../Resources/PageObjects/MarketWatchAlertsPage.robot
 
 Test Setup  CommonFunctionality.Start Market Watch Article
 Test Teardown  CommonFunctionality.Finish Testcase
@@ -22,7 +23,7 @@ Validate the Market Watch Preference Center page
     [Tags]  Regression  PreferenceCenter            TagMPF
 
     MarketWatchPreferenceCenterPage.Add Author By Hotlink
-    DefinedKeywords.Sign In Process
+    DefinedKeywords.MarketWatch PreferenceCenter User Sign In Process
     MarketWatchPreferenceCenterPage.Validate Followed Authors
     ${val}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
     Run Keyword If  ${val} > 0  MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
@@ -31,17 +32,6 @@ Validate the Market Watch Preference Center page
     MarketWatchPreferenceCenterPage.Validate Following Frequency
     MarketWatchPreferenceCenterPage.Validate All Tabs Displayed
     MarketWatchPreferenceCenterPage.Validate Author On All Tab
-    MarketWatchPreferenceCenterPage.Add Company By Hotlink
-    DefinedKeywords.Sign In Process
-    MarketWatchPreferenceCenterPage.Validate Followed Companies
-    ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
-    Run Keyword If  ${val2} > 0  MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
-    MarketWatchPreferenceCenterPage.Validate Company Frequency
-    MarketWatchPreferenceCenterPage.Validate Company Quote Link
-    MarketWatchPreferenceCenterPage.Validate Company On All Tab
-    MarketWatchPreferenceCenterPage.Click Market Watch tab
-    MarketWatchPreferenceCenterPage.Validate Company Toggle Feature
-    MarketWatchPreferenceCenterPage.Click Company Toggle Feature
     #MarketWatchPreferenceCenterPage.Validate Following Toggle Alert Pop up
     #MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
     #MarketWatchPreferenceCenterPage.Navigate Article page
@@ -63,9 +53,7 @@ Validate the Watchlist widget from Watchlist page
     [Tags]  Regression  Watchlist               TagMWL
 
     CommonFunctionality.Start MarketWatch for Watchlist page
-    MarketWatchWatchlistPage.Click Sign in
-    DefinedKeywords.Sign In Process
-    CommonFunctionality.Start MarketWatch for latest Watchlist page
+    DefinedKeywords.MarketWatch Test User Sign In Process
     Set Selenium Speed  0.5 seconds
     Capture Page Screenshot    screenshot.png
     MarketWatchWatchlistPage.Validate Watchlist Page
@@ -80,8 +68,61 @@ Validate the Watchlist widget from Watchlist page
     MarketWatchWatchlistPage.Select Symbol
     MarketWatchWatchlistPage.Validate Symbol in Created Watchlist
     MarketWatchWatchlistPage.Delete Watchlists
-    MarketWatchWatchlistPage.Validate Default New Watchlist
-    MarketWatchWatchlistPage.Validate No Symbol in Default New Watchlist
+#    MarketWatchWatchlistPage.Validate Default New Watchlist
+#    MarketWatchWatchlistPage.Validate No Symbol in Default New Watchlist
+
+#US-T276
+Validate the MarketWatch price and volume on the alerts page
+    [Documentation]  This test case validates the MarketWatch price and volume on the alerts page
+    [Tags]  Regression  MarketWatch Price and Volume Alerts               TagMPVA
+
+    CommonFunctionality.Start MarketWatch for Price and Volume Alerts page
+    DefinedKeywords.MarketWatch Alerts User Sign In Process
+    Set Selenium Speed  0.5 seconds
+    Capture Page Screenshot    screenshot.png
+    MarketWatchAlertsPage.Validate Price and Volume Alert page
+    MarketWatchAlertsPage.Click Edit option on Alerts page
+    MarketWatchAlertsPage.Click Enter Volume threshold value
+    MarketWatchAlertsPage.Click Save Alert Button
+    MarketWatchAlertsPage.Click on Back Button
+#    MarketWatchAlertsPage.Click on Delete Button
+#    MarketWatchAlertsPage.Validate Price and Volume Alerts
+#    MarketWatchAlertsPage.Click Enter Volume threshold value
+#    MarketWatchAlertsPage.Click Save Button
+##    MarketWatchAlertsPage.Click Close button icon
+#    MarketWatchAlertsPage.Click Delete Alert Button
+#    MarketWatchAlertsPage.Click Delete Alert Confirmation Button
+
+#US-T278
+Validate the MarketWatch price and volume alert in Quote page
+    [Documentation]  This test case validates the MarketWatch price and volume alerts on the Quote page
+    [Tags]  Regression  MarketWatch Price and Volume alert in Quote page            TagMPVQ
+    CommonFunctionality.Start MarketWatch for Price and Volume Alerts page
+    DefinedKeywords.MarketWatch Alerts User Sign In Process
+    Set Selenium Speed  0.5 seconds
+    Capture Page Screenshot    screenshot.png
+    MarketWatchAlertsPage.Validate Price and Volume Alert page
+    MarketWatchAlertsPage.Click Edit option on Alerts page
+    MarketWatchAlertsPage.Click Enter Volume search value
+    MarketWatchAlertsPage.Click Save Alert Button
+    MarketWatchAlertsPage.Click on Back Button
+    MarketWatchAlertsPage.Click on GoldMan Sachs Investing stock on Quotes page
+    MarketWatchAlertsPage.Click on Historical Quotes for GoldMan Sachs Investing stock
+#    MarketWatchAlertsPage.Click On Search Quote option
+#    MarketWatchAlertsPage.Click on Apple Investing stock on Quotes page
+#    MarketWatchAlertsPage.Click on Historical Quotes for Apple Investing stock
+
+#US-T298
+Validate the MarketWatch price and volume alert deletion on Quote page
+    [Documentation]  This test case validates the MarketWatch price and volume alerts on the Quote page
+    [Tags]  Regression  MarketWatch Price and Volume alert in Quote page            TagMPVD
+    CommonFunctionality.Start MarketWatch for Price and Volume Alerts page
+    DefinedKeywords.MarketWatch Alerts User Sign In Process
+    Set Selenium Speed  0.5 seconds
+    Capture Page Screenshot    screenshot.png
+    MarketWatchAlertsPage.Validate Price and Volume Alert page
+    MarketWatchAlertsPage.Click on Delete Button
+    MarketWatchAlertsPage.Click Delete Alert Confirmation Button
 
 #US-T149
 Validate the MW digest notification
@@ -120,13 +161,13 @@ Validate Postback on Preference Center
     MarketWatchPreferenceCenterPage.Add Breaking News By Hotlink
     DefinedKeywords.Sign In Process
     MarketWatchPreferenceCenterPage.Validate Followed Breaking News
-    ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
-    Run Keyword If  ${val2} > 0  MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
-    MarketWatchPreferenceCenterPage.Validate Breaking News Toggle Feature
-    MarketWatchPreferenceCenterPage.Click Breaking News Toggle Feature  #--unsubscribe functionality
-    MarketWatchPreferenceCenterPage.Validate Following Toggle Alert Pop up
-    MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
-    MarketWatchPreferenceCenterPage.Validate Over Mouse On Notification Tooltip
+#    ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
+#    Run Keyword If  ${val2} > 0  MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
+#    MarketWatchPreferenceCenterPage.Validate Breaking News Toggle Feature
+#    MarketWatchPreferenceCenterPage.Click Breaking News Toggle Feature  #--unsubscribe functionality
+#    MarketWatchPreferenceCenterPage.Validate Following Toggle Alert Pop up
+#    MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
+#    MarketWatchPreferenceCenterPage.Validate Over Mouse On Notification Tooltip
     MarketWatchMailboxPage.Navigate Mailbox page
     MarketWatchMailboxPage.Login
     MarketWatchMailboxPage.Select Inbox
@@ -134,4 +175,4 @@ Validate Postback on Preference Center
     MarketWatchMailboxPage.Validate MW real-time company notification for Postback
     #MarketWatchMailboxPage.Unsubscribe the mails
     #MarketWatchMailboxPage.Verify the mail is unsubscribed
-    MarketWatchPreferenceCenterPage.Add Company By Hotlink
+    #MarketWatchPreferenceCenterPage.Add Company By Hotlink

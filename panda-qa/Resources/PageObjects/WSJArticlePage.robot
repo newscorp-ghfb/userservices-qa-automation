@@ -145,4 +145,4 @@ Scroll Down
     END
 
 Validate author without byline
-    Page Should Contain Element  //*[text()="Holman W. Jenkins, Jr."]
+    Page Should Contain Element   //*[text()="Dave Michaels"]
