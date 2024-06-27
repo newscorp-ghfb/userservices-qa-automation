@@ -220,9 +220,6 @@ Validate the follow button for Editorials breadcrumb from articles page
 #    WSJArticlePage.Click Custom Following Button
 #    WSJArticlePage.Click Undo Link
 #    WSJArticlePage.Validate Custom Following Button
-#    WSJArticlePage.Click Custom Following Button
-#    WSJArticlePage.Validate Custom Follow Button
-#    WSJArticlePage.Click Custom Follow Button
 
 #US-T179
 #US-T178
@@ -231,14 +228,18 @@ Validate the follow button for Editorials breadcrumb from articles page
 Validate the follow button for Commentary breadcrumb from articles page
     [Documentation]  This test case validates the follow button from articles page
     [Tags]  Regression  Follow  Breadcrumb  Article    TagWSBC
+    CommonFunctionality.CookieTestWSJ
+    Set Selenium Speed  100.5 seconds
     CommonFunctionality.Start WSJ Article for Commentary breadcrumb
-                IF  "${Env}" == "prod"
-        DefinedKeywords.New WSJ Sign In Process
-    ELSE IF  "${Env}" == "dev"
-        DefinedKeywords.New WSJ Sign In Process
-         END
-         Set Selenium Implicit Wait  50s
-    DefinedKeywords.WSJ Breadcrumbs Sign In Process
+#                IF  "${Env}" == "prod"
+#        DefinedKeywords.New WSJ Sign In Process
+#    ELSE IF  "${Env}" == "dev"
+#        DefinedKeywords.New WSJ Sign In Process
+#         END
+#         Set Selenium Implicit Wait  50s
+#    DefinedKeywords.WSJ Breadcrumbs Sign In Process
+    DefinedKeywords.WSJ New Breadcrumbs Sign In Process
+    Set Selenium Speed  15 seconds
 #    WSJArticlePage.Validate Custom Following Button
 #    WSJArticlePage.Click Custom Following Button
 #    WSJArticlePage.Click Undo Link
@@ -251,6 +252,7 @@ Validate the WSJ Preference Center page for Commentary breadcrumb
     [Documentation]  This test case validates the barrons preference center page
     [Tags]  Regression  PreferenceCenter  Breadcrumb    TagWCPC
 
+    CommonFunctionality.CookieTestWSJ
     Set Selenium Speed  0.2 seconds
     WSJPreferenceCenterPage.Navigate Preference Center page
                 IF  "${Env}" == "prod"
@@ -271,6 +273,7 @@ Validate the WSJ Preference Center page for Commentary breadcrumb
 #    WSJPreferenceCenterPage.Navigate Commentary Article page
 #    Set Selenium Speed  0.4 seconds
 #    WSJArticlePage.Validate Custom Follow Button
+
 #US-T164
 #US-T165
 #US-T166
@@ -278,6 +281,9 @@ Validate the WSJ Preference Center page for Commentary breadcrumb
 Validate the follow button for Commentary breadcrumb from Commentary page
     [Documentation]  This test case validates the follow button from articles page
     [Tags]  Regression  Follow  Breadcrumb  Commentarypage   TagWCAP
+
+    CommonFunctionality.CookieTestWSJ
+    Set Selenium Speed  100.5 seconds
     CommonFunctionality.Start WSJ Commentary for Commentary breadcrumb
                         IF  "${Env}" == "prod"
         DefinedKeywords.New WSJ Sign In Process
