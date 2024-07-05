@@ -93,7 +93,7 @@ Start Mansion Global Article
         Go To  https://www.mansionglobal.com/articles/are-there-tax-breaks-on-agricultural-land-in-pennsylvania-01648119848
     ELSE IF  "${Env}" == "dev"
         SeleniumLibrary.Open Browser  https://www.s.dev.mansionglobal.com  ${Browser}  options=${options}
-#       Open Browser  https://www.s.dev.mansionglobal.com  ${Browser}
+        Open Browser  https://www.s.dev.mansionglobal.com  ${Browser} options=${options}
         Go To  https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212
     END
     Wait Until Page Contains Element  dom:${JSFollowButtonMGPath}
@@ -147,12 +147,7 @@ Start Market Watch Article
     ELSE IF  "${Env}" == "dev"
         Open Browser  https://www.dev.marketwatch.com  ${Browser}  options=${options}
         Go To  https://www.dev.marketwatch.com/author/Catey-Hill
-
-#        Wait Until Page Contains Element  //*[@id="cx-scrim-wrapper"]/button
-#        Click Button  //*[@id="cx-scrim-wrapper"]/button
-
     END
-#    Wait Until Page Contains Element  dom:${JSFollowButtonMWPath}
     Maximize Browser Window
 
 Start PEN Article
@@ -247,10 +242,10 @@ Start WSJ Article for Letters breadcrumb
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-#        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
         Go To  https://www.wsj.com/articles/mary-eberstadt-furman-university-wsj-scott-yenor-campus-protest-speech-869ce29b
     ELSE IF  "${Env}" == "dev"
-#        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
        Go To  https://www.dev.wsj.com/articles/test-oil-demand-will-fall-by-a-fifth-in-april-opec-forecasts-11587072843  #https://www.dev.wsj.com/articles/test-headline-on-wrongful-6697d68c  #https://www.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     END
     Maximize Browser Window
@@ -296,10 +291,10 @@ Start WSJ Article for Editorials breadcrumb
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-#        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
         Go To  https://www.wsj.com/articles/chicago-mayor-wisconsin-supreme-court-election-paul-vallas-brandon-johnson-janet-protasiewicz-dan-kelly-3673d166
     ELSE IF  "${Env}" == "dev"
-#        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
         Go To  https://www.dev.wsj.com/economy/global/dollars-rise-spells-trouble-for-global-economies-38d3d986?mod=world_lead_pos1  #https://www.dev.wsj.com/articles/test-headline-on-wrongful-6697d68c  #https://www.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     END
 
@@ -349,10 +344,10 @@ Start WSJ Article for Elections breadcrumb
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-#        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
         Go To  https://www.wsj.com/articles/mike-pompeo-says-he-wont-run-for-president-in-2024-5406e61c
     ELSE IF  "${Env}" == "dev"
-#        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
         Go To  https://www.dev.wsj.com/articles/test-headline-on-wrongful-6697d68c  #https://www.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     END
 #    #Wait Until Element Is Visible  //span[text()="Dave Michaels"]
@@ -364,10 +359,10 @@ Start WSJ Elections for Elections breadcrumb
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-#        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
         Go To  https://www.wsj.com/news/types/election-2024?mod=breadcrumb
     ELSE IF  "${Env}" == "dev"
-#        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
         Go To  https://www.dev.wsj.com/articles/test-headline-on-wrongful-6697d68c  #https://www.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     END
 #    #Wait Until Element Is Visible  //span[text()="Dave Michaels"]
@@ -400,8 +395,6 @@ Start Barrons Stock Screener Page for Featured Preset Screener
         Open Browser  https://www.s.dev.barrons.com  ${Browser}  options=${options}
         Go To  https://www.s.dev.barrons.com/market-data/barrons-stock-screener?mod=stock_screener_internal
     END
-
-
 
 Start Barrons Stock Picks for Stock Picks in article
     Set Selenium Speed  0.5 seconds
@@ -597,11 +590,12 @@ Start WSJ Article for Personal Technology
 
 Start WSJ Article for Puzzles
     Set Selenium Speed  0.5 seconds
+    ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-#        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
         Go To  https://www.wsj.com/news/puzzle?mod=breadcrumb
     ELSE IF  "${Env}" == "dev"
-#        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
         Go To  https://www.dev.wsj.com/news/puzzle?mod=breadcrumb
     END
     Maximize Browser Window
@@ -610,10 +604,10 @@ Start WSJ Article for Energy
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-#        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
         Go To  https://www.wsj.com/business/energy-oil?mod=nav_top_subsection
     ELSE IF  "${Env}" == "dev"
-#        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
         Go To  https://www.dev.wsj.com/business/energy-oil?mod=nav_top_subsection
     END
     Maximize Browser Window
