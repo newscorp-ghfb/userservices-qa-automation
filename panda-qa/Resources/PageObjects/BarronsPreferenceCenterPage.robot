@@ -17,6 +17,7 @@ Navigate Preference Center page
     ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.barrons.com/follow
     END
+
 Navigate Article page
     IF  ${Env} == "prod"
         Go To  https://www.barrons.com/articles/twitter-stock-pick-ceo-51638548530
@@ -24,6 +25,7 @@ Navigate Article page
         Go To  https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000
         Set Selenium Speed  0.4 seconds
     END
+
 Validate Followed Authors
     Page Should Contain  Authors
 

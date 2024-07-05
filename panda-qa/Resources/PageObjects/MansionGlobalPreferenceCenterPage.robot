@@ -59,11 +59,12 @@ Click Following Toggle Feature
     ELSE IF  "${Env}" == "dev"
         Click Element  //*[text()="Mariana Nuñez"]/../../../../td[4]/div
     END
+
 Validate Following Toggle Alert Pop up
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[3]/div/div/button
 
 Click Following Toggle Alert Pop up
-    Click Button  //*[@id="root"]/div/div/div/div[3]/div/div/button
+    Click Button  //*[@id="root"]/div/div/div/div[3]/div/div/button  #//*[@id="root"]/div/div/div/div[3]/div/div/button
 
 Validate Author Updates From Preference Center Reflected In Articles
     Click Button  //*[@id="root"]/div/div/div/div[2]/div[2]/div/div/button

@@ -16,27 +16,30 @@ Navigate Preference Center page
     ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.fnlondon.com/follow
     END
+
 Navigate Article page
     IF  "${Env}" == "prod"
         Go To  https://www.fnlondon.com/articles/complaints-commissioner-fca-transparency-20220615
     ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.fnlondon.com/articles/testpanda-test-wsj-digest-2-20211020
     END
+
 Validate Followed Authors
     Page Should Contain  Authors
 
 Validate Following Toggle Feature
-    Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div
+    Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr/td[4]/div/div
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr/td[4]/div/div  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div
 
 Click Following Toggle Feature
     IF  "${Env}" == "prod"
         Click Element  //*[text()="Paul Clarke"]/../../../../td[4]/div
-    ELSE IF  "${Env}" == "dev
+    ELSE IF  "${Env}" == "dev"
         Click Element  //*[text()="Sunita Adhikarla"]/../../../../td[4]/div
     END
+
 Validate Following Toggle Alert Pop up
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr/td[1]/div/div/a
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[3]/div/div/button
 
 Click Following Toggle Alert Pop up
     Click Button  //*[@id="root"]/div/div/div/div[3]/div/div/button
@@ -50,9 +53,7 @@ Add Author By Hotlink
     ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.fnlondon.com/follow?alert=author&id=8680_FN&frequency=realtime
         Set Selenium Speed  0.5 seconds
-        Click Button  //*[@id="root"]/div/div/div/div[3]/div/div/button
     END
-
 
 Validate Author Name
     IF  "${Env}" == "prod"
@@ -60,6 +61,7 @@ Validate Author Name
     ELSE IF  "${Env}" == "dev"
         Page Should Contain  Sunita Adhikarla
     END
+
 Validate Following Frequency
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[4]/div/div/div  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[1]/span[2]
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[4]/div/div/div  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[2]/span[2]

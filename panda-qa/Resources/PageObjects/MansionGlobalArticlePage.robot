@@ -7,11 +7,7 @@ ${JSFollowButtonGMPath}=  document.querySelector('ufc-follow-author-widget').sha
     ...  .querySelector('ufc-follow-button').shadowRoot  #2
     ...  .querySelector('button')  #3
 
-${JSUndoButtonGlobalMansionPath}=  document.querySelector('ufc-snackbar').shadowRoot  #1
-    ...  .querySelector('div')  #2
-    ...  .querySelector('div')  #3
-    ...  .querySelector('button')  #4
-
+${JSUndoButtonGlobalMansionPath}=  document.querySelector("#mg-article > ufc-snackbar").shadowRoot.querySelector("div > div > button")
 
 ${JSFollowSignInButtonPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('ufc-signin-modal').shadowRoot  #2
@@ -36,15 +32,10 @@ ${JSFollowSignInHeaderPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('div.body')  #4
     ...  .querySelector('p')  #5
 
-${JSPreferenceCenterLinkGlobalMansionPath}=  document.querySelector('ufc-snackbar').shadowRoot  #1
-    ...  .querySelector('div')  #2
-    ...  .querySelector('div')  #3
-    ...  .querySelector('span')  #4
-    ...  .querySelector('a')  #5
+${JSPreferenceCenterLinkGlobalMansionPath}=  document.querySelector("#mg-article > ufc-snackbar").shadowRoot.querySelector("div > div > span > a")
 
 *** Keywords ***
 Validate Follow Button
-
     Wait Until Element is Visible  dom:${JSFollowButtonGMPath}
     Element Text Should Be  dom:${JSFollowButtonGMPath}  Follow  timeout=60s
 

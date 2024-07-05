@@ -1,11 +1,12 @@
 *** Settings ***
 Documentation  Barrons Smoke Tests
-Force Tags  Barrons
+Force Tags  BarronsSmoke  TagBarrons
 Resource  ../../../Resources/CommonFunctionality.robot
 Resource  ../../../Resources/DefinedKeywords.robot
 Resource  ../../../Resources/PageObjects/BarronsArticlePage.robot
 Resource  ../../../Resources/PageObjects/BarronsAuthorsPage.robot
 Resource  ../../../Resources/PageObjects/BarronsPreferenceCenterPage.robot
+
 
 Test Setup  CommonFunctionality.Start Barrons Article
 Test Teardown  CommonFunctionality.Finish Testcase
@@ -57,7 +58,6 @@ Validate the follow button from authors page
     BarronsAuthorsPage.Validate Authors Page
     BarronsArticlePage.Validate Follow Button
 
-
 #US-T54
 #US-T53
 #US-T52
@@ -75,14 +75,13 @@ Validate the stock pick follow button from articles page
     BarronsArticlePage.Validate Stock Pick Following Button
     BarronsArticlePage.Click Stock Pick Following Button
 
-
 #US-T188
 #US-T79
 #US-T253
 #US-T254
 Validate the Barrons Preference Center page
     [Documentation]  This test case validates the barrons preference center page
-    [Tags]  Smoke  PreferenceCenter
+    [Tags]  Smoke  PreferenceCenter              TagBarronsPF
     Set Selenium Speed  0.2 seconds
     BarronsPreferenceCenterPage.Navigate Preference Center page
     DefinedKeywords.Sign In Process
@@ -91,8 +90,6 @@ Validate the Barrons Preference Center page
     BarronsPreferenceCenterPage.Click Following Toggle Feature
     BarronsPreferenceCenterPage.Validate Following Toggle Alert Pop up
     BarronsPreferenceCenterPage.Click Following Toggle Alert Pop up
-    BarronsPreferenceCenterPage.Navigate Article page
-    BarronsArticlePage.Validate Follow Button
 
 #US-T126
 #US-T127
@@ -107,13 +104,10 @@ Validate the stock pick follow button from stock pick page
     BarronsArticlePage.Click Stock Pick Follow Button
     Set Selenium Speed  0.3 seconds
     BarronsArticlePage.Validate Sign In Modal
-    BarronsArticlePage.Click Sign In Button 2 Modal
+    BarronsArticlePage.Click Sign In Button Modal
     DefinedKeywords.Sign In Process
     Set Selenium Speed  0.1 seconds
-    BarronsArticlePage.Validate Stock Pick Following Button
-    BarronsArticlePage.Click Stock Pick Following Button
+    BarronsArticlePage.Validate Stock Pick UnFollowing Button
+    BarronsArticlePage.Click Stock Pick UnFollowing Button
     BarronsArticlePage.Click Stock Pick Undo Link
     Set Selenium Speed  0.2 seconds
-    BarronsArticlePage.Validate Stock Pick Following Button
-    BarronsArticlePage.Click Stock Pick Preference Center link
-    BarronsPreferenceCenterPage.Validate Preference Center page

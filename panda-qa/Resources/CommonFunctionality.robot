@@ -84,16 +84,14 @@ Start Barrons Article
     Wait Until Page Contains Element  dom:${JSFollowButtonBarronsPath}
     Maximize Browser Window
 
-
 Start Mansion Global Article
-    Set Selenium Speed  1 seconds
+    Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.mansionglobal.com  ${Browser}  options=${options}
+        Open Browser  https://www.mansionglobal.com  ${Browser}
         Go To  https://www.mansionglobal.com/articles/are-there-tax-breaks-on-agricultural-land-in-pennsylvania-01648119848
     ELSE IF  "${Env}" == "dev"
-        SeleniumLibrary.Open Browser  https://www.s.dev.mansionglobal.com  ${Browser}  options=${options}
-        Open Browser  https://www.s.dev.mansionglobal.com  ${Browser} options=${options}
+        Open Browser  https://www.s.dev.mansionglobal.com  ${Browser}
         Go To  https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212
     END
     Wait Until Page Contains Element  dom:${JSFollowButtonMGPath}
@@ -191,13 +189,13 @@ Start FN Article without byline
     Maximize Browser Window
 
 Start Mansion Global Article without byline
-    Set Selenium Speed  1 seconds
+    Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.mansionglobal.com  ${Browser}  options=${options}
+        Open Browser  https://www.mansionglobal.com  ${Browser}
         Go To  https://www.mansionglobal.com/articles/what-property-tax-changes-are-in-store-for-luxury-home-owners-in-edmonton-canada-e0d92933
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.s.dev.mansionglobal.com  ${Browser}  options=${options}
+        Open Browser  https://www.s.dev.mansionglobal.com  ${Browser}
         Go To  https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212
     END
     Maximize Browser Window
