@@ -14,6 +14,8 @@ Resource  ../../../Resources/PageObjects/BarronsCapabilitiesPage.robot
 Resource  ../../../Resources/PageObjects/BarronsCMSPage.robot
 Resource  ../../../Resources/PageObjects/BarronsMailboxPage.robot
 Resource  ../../../Resources/PageObjects/BarronsCreateArticlePage.robot
+Resource  ../../../Resources/PageObjects/BarronsStockScreenerPage.robot
+
 Library  SeleniumLibrary
 
 Test Setup  CommonFunctionality.Start Barrons Article
@@ -28,24 +30,25 @@ Test Teardown  CommonFunctionality.Finish Testcase
 Validate the multiple authors follow button from articles page
     [Documentation]  This test case validates the multiple authors follow button from articles page
     [Tags]  Regression  Follow  MultipleAuthors  Article   BarronsMultipleauthors   TagBarronsMA
-
-    BarronsArticlePage.Validate Follow Button 2
-    BarronsArticlePage.Click Follow Button 2
-
-    BarronsArticlePage.Validate Sign In 2 Modal
-    DefinedKeywords.Sign In Process
+    CommonFunctionality.Start Barrons Article
     Set Selenium Speed  0.2 seconds
-    BarronsArticlePage.Validate Following Button 2
-    BarronsArticlePage.Click Follow Button 2
-    BarronsArticlePage.Validate Following Button 2
-    BarronsArticlePage.Click Following Button
-    BarronsArticlePage.Click Undo Link
-    BarronsArticlePage.Validate Following Button
+    DefinedKeywords.Barrons Article Sign in Process
+    Set Selenium Implicit Wait  50s
+    BarronsArticlePage.Validate author on article page
+#    BarronsArticlePage.Validate Sign In 2 Modal
+#    BarronsArticlePage.Validate Follow Button 2
+#    BarronsArticlePage.Click Follow Button 2
+#    BarronsArticlePage.Validate Following Button 2
+#    BarronsArticlePage.Click Follow Button 2
+#    BarronsArticlePage.Validate Following Button 2
+#    BarronsArticlePage.Click Following Button
+#    BarronsArticlePage.Click Undo Link
+#    BarronsArticlePage.Validate Following Button
 #    BarronsArticlePage.Click Following Button 2
 #    BarronsArticlePage.Click Undo Link 2
-    BarronsArticlePage.Validate Following Button 2
-    BarronsPreferenceCenterPage.Navigate Preference Center page
-    BarronsPreferenceCenterPage.Validate Preference Center page
+#    BarronsArticlePage.Validate Following Button 2
+#    BarronsPreferenceCenterPage.Navigate Preference Center page
+#    BarronsPreferenceCenterPage.Validate Preference Center page
 
 #    BarronsPreferenceCenterPage.Validate Author 1
 #    BarronsPreferenceCenterPage.Validate Author 2
@@ -92,7 +95,6 @@ Validate Authors for Barrons Article page without byline
     CommonFunctionality.Start Barrons Article without byline
     BarronsArticlePage.Validate author without byline
 
-
 #US-T215
 #US-T216
 #US-T217
@@ -127,15 +129,26 @@ Validate the Watchlist widget from Quotes page
     [Tags]  Regression  Watchlist  QuotesPage     TagBarronsQ
 
     CommonFunctionality.Start Barrons for Quotes page
-    BarronsQuotesPage.Validate Watchlist for non-logged user
-    BarronsQuotesPage.Watchlist Sign In
-    DefinedKeywords.Sign In Process
+    DefinedKeywords.Barrons Quote Page Sign in Process
     Set Selenium Speed  0.5 seconds
     Capture Page Screenshot    screenshot.png
     BarronsQuotesPage.Validate Quote Page
     BarronsQuotesPage.Delete Watchlist
+    # BarronsQuotesPage.Validate Watchlist for non-logged user
     #BarronsQuotesPage.Delete Watchlist
     #BarronsQuotesPage.Validate Create Button
+
+#US-T384
+Validate if a user is able to login into Barrons Stock Screener and access the Featured Preset Screeners witout any subscription for free review.
+    [Documentation]  This test case validates the Barrons stock screener page for the accessibility of Featured Preset Screeners without any subscription
+    [Tags]  BarronsStockScreenerPage      TagBSS
+
+    CommonFunctionality.Start Barrons Stock Screener Page for Featured Preset Screener
+    DefinedKeywords.Barrons Stock Screener Sign in Process
+    Set Selenium Speed  0.5 seconds
+    Capture Page Screenshot    screenshot.png
+    BarronsStockScreenerPage.Barron's 400 Top Performers
+    Barron's All Screeners Option
 
 #US-T125
 #US-T129

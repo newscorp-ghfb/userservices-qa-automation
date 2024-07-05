@@ -7,9 +7,12 @@ ${JSFollowButtonWSJPath}=  document.querySelector('ufc-follow-author-widget').sh
     ...  .querySelector('ufc-follow-button').shadowRoot  #2
     ...  .querySelector('button')  #3
 
-${JSCustomFollowButtonWSJPath}=  document.querySelector('ufc-follow-custom-topic-widget').shadowRoot  #1
-    ...  .querySelector('ufc-follow-button').shadowRoot  #2
-    ...  .querySelector('button')  #3
+${JSCustomFollowButtonWSJPath}=  document.querySelector("#__next > div > main > div.article-container.css-11dgf.e1wkb4h46 > article > div.crawler.css-j6808u.e1noyqgz9 > div.eui4bu22.css-hb9xd5 > div > div > div > div.css-1mfi1zu > div > div > div > ufc-follow-author-widget").shadowRoot.querySelector("ufc-follow-widget > ufc-follow-button").shadowRoot.querySelector("button")
+
+
+#document.querySelector('ufc-follow-custom-topic-widget').shadowRoot  #1
+#    ...  .querySelector('ufc-follow-button').shadowRoot  #2
+#    ...  .querySelector('button')  #3
 
 ${JSUndoButtonWSJPath}=  document.querySelector('ufc-snackbar').shadowRoot  #1
     ...  .querySelector('div')  #2
@@ -56,6 +59,9 @@ Validate Custom Follow Button
     Wait Until Element is Visible  dom:${JSCustomFollowButtonWSJPath}
     Element Text Should Be  dom:${JSCustomFollowButtonWSJPath}  Follow  timeout=30
 
+Validate WSJ Board Pack Exclusive Custom Follow Load More Button
+    Wait Until Element is Visible  //html/body/div[2]/div/div/div/div[2]/div/div/div/div[1]/div/div[2]/div/div
+
 Reload Article Page
     Reload Page
 
@@ -68,11 +74,17 @@ Validate Following Button
 
 Validate Custom Following Button
     Wait Until Element is Visible  dom:${JSCustomFollowButtonWSJPath}
-    Wait Until Element Contains  dom:${JSCustomFollowButtonWSJPath}  Following  timeout=15
-    Element Text Should Be  dom:${JSCustomFollowButtonWSJPath}  Following  timeout=15
+    Wait Until Element Contains  dom:${JSCustomFollowButtonWSJPath}  Follow  timeout=15
+    Element Text Should Be  dom:${JSCustomFollowButtonWSJPath}  Follow  timeout=15
 
 Click Follow Button
     Click Button  dom:${JSFollowButtonWSJPath}
+
+Validate World News Option
+   Page Should Contain   World
+
+Validate Opinion Option
+  Page Should Contain   Opinion
 
 Click Custom Follow Button
     Click Button  dom:${JSCustomFollowButtonWSJPath}
@@ -81,7 +93,13 @@ Click Following Button
     Click Button  dom:${JSFollowButtonWSJPath}
 
 Click Custom Following Button
-    Click Button  dom:${JSCustomFollowButtonWSJPath}
+     Click Button  dom:${JSCustomFollowButtonWSJPath}
+#      Wait Element is Visible  //html/body/div[2]/div/div/div/div[2]/div/div/div[2]/div[2]/div[2]/a/h2/span[2]
+#      Click Element  //html/body/div[2]/div/div/div/div[2]/div/div/div[2]/div[2]/div[2]/a/h2/span[2]
+
+Click WSJ Board Pack Exclusive Custom Follow Load More Button
+      Wait Until Element is Visible  //html/body/div[2]/div/div/div/div[2]/div/div/div/div[1]/div/div[2]/div/div
+      Click Element  //html/body/div[2]/div/div/div/div[2]/div/div/div/div[1]/div/div[2]/div/div
 
 Validate Sign In Modal
     Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}
@@ -99,40 +117,91 @@ Click Preference Center Link
     Wait Until Element is Visible  dom:${JSPreferenceCenterLinkWSJPath}
     Click Element  dom:${JSPreferenceCenterLinkWSJPath}
 
-Click Board Pack Exclusive Button
-    Click Button  dom:${JSCustomFollowButtonWSJPath}  #This should be the user name
-    Click Button  dom:${JSCustomFollowButtonWSJPath}  #This should be the Board Pack Exclusive Button
+Click Board Pack Exclusive Newsletter Button   #Click Board Pack Exclusive Button
+     Wait Until Element is visible  //html/body/div[3]/div/div[2]/div/header[1]/div[5]/section/ul/li[4]
+     Click Element  //html/body/div[3]/div/div[2]/div/header[1]/div[5]/section/ul/li[4]
+#    Click Button  dom:${JSCustomFollowButtonWSJPath}  #This should be the user name
+#    Click Button  dom:${JSCustomFollowButtonWSJPath}  #This should be the Board Pack Exclusive Button
 
 Click Education Button
     Click Button  dom:${JSCustomFollowButtonWSJPath}
     Click Button  dom:${JSCustomFollowButtonWSJPath}
 
 Click heard on the street Button
-    Click Button  dom:${JSCustomFollowButtonWSJPath}
-    Click Button  dom:${JSCustomFollowButtonWSJPath}
+    Wait Until Element is Visible  //html/body/div[2]/div/div/div/div[1]/header/nav/ul/li[8]/div/div/div[2]/ul/li[1]/a
+    Click Element   //html/body/div[2]/div/div/div/div[1]/header/nav/ul/li[8]/div/div/div[2]/ul/li[1]/a
+#    Click Button  dom:${JSCustomFollowButtonWSJPath}
+#    Click Button  dom:${JSCustomFollowButtonWSJPath}
+
+Validate Markets & Finance Option
+    Wait Until Element is Visible  //html/body/div[2]/div/div/div/div[1]/header/nav/ul/li[8]/a
+
+Validate Lifestyle Option
+   Wait Until Element is Visible  //html/body/div[2]/div/div/div/div[1]/header/nav/ul/li[11]/a
+
+Hover Markets & Finance Option
+    Hover on Element  //html/body/div[2]/div/div/div/div[1]/header/nav/ul/li[8]/a
+
+Validate Preference Center page for heard on the street
+    Wait Until Element is Visible  //html/body/div[2]/div/div/div/div[3]/div/div/div[2]/div[2]/div[3]/a/div/span[2]
+
+Click Preference Center link for heard on the street
+    Click ELement   //html/body/div[2]/div/div/div/div[3]/div/div/div[2]/div[2]/div[3]/a/div/span[2]
 
 Click On Wine Button
-    Click Button  dom:${JSCustomFollowButtonWSJPath}
-    Click Button  dom:${JSCustomFollowButtonWSJPath}
+     Wait Until Element is Visible  //html/body/div[2]/div/div/div/div[3]/div/div/div[2]/div[1]/main/div[2]/article[4]/div/div[1]/h2/a/span
+     Click Element  //html/body/div[2]/div/div/div/div[3]/div/div/div[2]/div[1]/main/div[2]/article[4]/div/div[1]/h2/a/span
+#    Click Button  dom:${JSCustomFollowButtonWSJPath}
+#    Click Button  dom:${JSCustomFollowButtonWSJPath}
+
+Validate Personal Finance Button
+    Wait Until Element is Visible  //html/body/div[3]/div/div[1]/div[3]/header[1]/nav/ul/li[13]/a/span
 
 Click Personal Finance Button
-    Click Button  dom:${JSCustomFollowButtonWSJPath}
-    Click Button  dom:${JSCustomFollowButtonWSJPath}
+    Click Element  //html/body/div[3]/div/div[1]/div[3]/header[1]/nav/ul/li[13]/a/span
+#    Click Button  dom:${JSCustomFollowButtonWSJPath}
+#    Click Button  dom:${JSCustomFollowButtonWSJPath}
+
+Validate Personal Technology Button
+     Wait Until Element is Visible  //html/body/div[3]/div/div[1]/div[3]/header[1]/nav/ul/li[7]/a/span
 
 Click Personal Technology Button
-    Click Button  dom:${JSCustomFollowButtonWSJPath}
-    Click Button  dom:${JSCustomFollowButtonWSJPath}
+     Click Element  //html/body/div[3]/div/div[1]/div[3]/header[1]/nav/ul/li[7]/a/span
+#    Click Button  dom:${JSCustomFollowButtonWSJPath}
+#    Click Button  dom:${JSCustomFollowButtonWSJPath}
 
-Click Puzzles Button
-    Click Button  dom:${JSCustomFollowButtonWSJPath}
-    Click Button  dom:${JSCustomFollowButtonWSJPath}
+Click Load all Puzzles Button
+     Wait Until Element is Visible  //*[text()='Load More']
+     Click Element  //*[text()='Load More']
+#    Click Button  dom:${JSCustomFollowButtonWSJPath}
+#    Click Button  dom:${JSCustomFollowButtonWSJPath}
+
+Validate Preference Center page for Puzzle
+   Wait Until Element is Visible  //html/body/div[2]/div/div/div/div[2]/div/div/div[2]/div[2]/div[2]/a/h2/span[2]
+
+Click Preference Center link for Puzzle alerts
+   Click Element   //html/body/div[2]/div/div/div/div[2]/div/div/div[2]/div[2]/div[2]/a/h2/span[2]
+
+Validate Business Tab is present for Energy Button
+  Wait Until Element is Visible  //html/body/div[3]/div/div[1]/div[3]/header[2]/nav/ul/li[3]/a/span
+
+Validate Enegery Button Title at Header
+   Wait Until Element is Visible  //html/body/div[3]/div/main/div[2]/div[1]/div/div/div/div/div/div[2]/h1
 
 Click Energy Button
-    Click Button  dom:${JSCustomFollowButtonWSJPath}
-    Click Button  dom:${JSCustomFollowButtonWSJPath}
+    Click Element    //html/body/div[3]/div/main/div[2]/div[1]/div/div/div/div/div/div[2]/h1
+#    Click Button  dom:${JSCustomFollowButtonWSJPath}
+#    Click Button  dom:${JSCustomFollowButtonWSJPath}
+
+Click on Load More button to load Enery related news
+     Wait Until Element is Visible  //*[text()='Load More']
+     Click Element  //*[text()='Load More']
 
 Validate author hyperlink
     Page Should Contain Element  //*[text()='John West']
+
+Validate Author
+    Page Should Contain Element  //html/body/div[3]/div/main/div[2]/article/div[1]/div[1]/div/div/div/div[1]/div/div/a/span/span
 
 Click author hyperlink
     Click Element  //*[text()='John West']

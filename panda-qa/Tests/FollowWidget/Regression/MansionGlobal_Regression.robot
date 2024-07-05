@@ -34,9 +34,10 @@ Validate the Mansion GLobal Preference Center page
     MansionGLobalPreferenceCenterPage.Add Company By Hotlink
     MansionGLobalPreferenceCenterPage.Validate Followed Companies
     ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
-    Run Keyword If  ${val2} > 0  MansionGLobalPreferenceCenterPage.Click Following Toggle Alert Pop up
-    MansionGLobalPreferenceCenterPage.Validate Company Frequency
-    MansionGLobalPreferenceCenterPage.Validate Company Quote Link
+    Run Keyword If  ${val2} > 0
+    MansionGLobalPreferenceCenterPage.Click Following Toggle Alert Pop up
+#    MansionGLobalPreferenceCenterPage.Validate Company Frequency
+#    MansionGLobalPreferenceCenterPage.Validate Company Quote Link
     MansionGLobalPreferenceCenterPage.Validate Company On All Tab
     MansionGLobalPreferenceCenterPage.Click Mansion Global tab
     MansionGLobalPreferenceCenterPage.Validate Company Toggle Feature

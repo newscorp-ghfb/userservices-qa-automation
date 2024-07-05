@@ -8,7 +8,7 @@ Validate Watchlist Page
     Page Should Contain Element  //*[text()="Add Symbol"]   [timeout] = 10
 
 Validate Default New Watchlist
-    Page Should Contain Element  //button[contains(., 'New Watchlist')]
+    Page Should Contain Element  //html/body/div[5]/section/div/div/div[3]/div[4]/div[1]/div[1]/button
 
 Click Add Symbol Input
     Click Element  //input[@id="symbol-search"]

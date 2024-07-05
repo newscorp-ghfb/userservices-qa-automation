@@ -14,12 +14,10 @@ ${JSFollowButtonBarrons2Path}=  document.querySelector('ufc-follow-author-widget
     ...  .querySelector('ufc-follow-button').shadowRoot  #3
     ...  .querySelector('button')  #4
 
-
 ${JSStockPickFollowButtonBarronsPath}=  document.querySelector('ufc-follow-custom-topic-widget.hydrated').shadowRoot  #1
     ...  .querySelector('ufc-follow-widget')  #2
     ...  .querySelector('ufc-follow-button').shadowRoot  #3
     ...  .querySelector('button')  #4
-
 
 ${JSStockPickUndoButtonBarronsPath}=  document.querySelector('ufc-follow-custom-topic-widget').shadowRoot  #1
     ...  .querySelector('ufc-follow-widget').shadowRoot  #2
@@ -120,6 +118,8 @@ Validate Following Button 2
     Wait Until Element Contains  dom:${JSFollowButtonBarrons2Path}  Following  timeout=15
     Element Text Should Be  dom:${JSFollowButtonBarrons2Path}  Following  timeout=15
 
+Validate author on article page
+   Page Should Contain  Teresa Rivas
 
 Validate Stock Pick Following Button
     Wait Until Element is Visible  dom:${JSStockPickFollowButtonBarronsPath}

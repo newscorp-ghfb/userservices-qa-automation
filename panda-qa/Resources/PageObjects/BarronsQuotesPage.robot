@@ -277,7 +277,7 @@ Delete Watchlist
 #    Page Should Contain Element  dom:${JSDefaultSymbolPath}
 
 Watchlist Sign In
-    Click Button  dom:${JSRegisterNowButtonPath}
+#    Click Button  dom:${JSRegisterNowButtonPath}
     Wait Until Element is Visible  //div[@class]/div[@class]/a[text()="Sign In"]
     Click Element  //div[@class]/div[@class]/a[text()="Sign In"]
 
