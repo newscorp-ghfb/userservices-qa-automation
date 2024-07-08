@@ -31,7 +31,8 @@ Validate the follow button from articles page
     MansionGlobalArticlePage.Click Sign In Button Modal
     DefinedKeywords.Sign In Process
     Set Selenium Speed  0.5 seconds
-    Set Selenium Implicit Wait  10
+    Set Selenium Implicit Wait  40
+    Execute javascript  window.scrollTo(0,500)
     MansionGlobalArticlePage.Validate Following Button
     MansionGlobalArticlePage.Click Following Button
 
@@ -44,8 +45,9 @@ Validate the Mansion Global Preference Center page
     MansionGlobalPreferenceCenterPage.Validate Followed Authors
     MansionGlobalPreferenceCenterPage.Validate Following Toggle Feature
     MansionGlobalPreferenceCenterPage.Click Following Toggle Feature
+    Execute javascript  window.scrollTo(0,500)
     MansionGlobalPreferenceCenterPage.Validate Following Toggle Alert Pop up
     MansionGlobalPreferenceCenterPage.Click Following Toggle Alert Pop up
     MansionGlobalPreferenceCenterPage.Validate Following Toggle Feature
     MansionGlobalPreferenceCenterPage.Click Following Toggle Feature
-    Execute javascript  window.scrollTo(0,500)
+#    Execute javascript  window.scrollTo(0,500)
