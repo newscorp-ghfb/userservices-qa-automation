@@ -78,22 +78,20 @@ Start Barrons Article
        Open Browser  https://www.barrons.com  ${Browser}  options=${options}
         Go To  https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634
     ELSE IF  "${Env}" == "dev"
-       Open Browser  https://www.s.dev.barrons.com  ${Browser}
+       Open Browser  https://www.s.dev.barrons.com  ${Browser}  options=${options}
         Go To  https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000
     END
     Wait Until Page Contains Element  dom:${JSFollowButtonBarronsPath}
     Maximize Browser Window
 
-
 Start Mansion Global Article
-    Set Selenium Speed  1 seconds
+    Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.mansionglobal.com  ${Browser}  options=${options}
         Go To  https://www.mansionglobal.com/articles/are-there-tax-breaks-on-agricultural-land-in-pennsylvania-01648119848
     ELSE IF  "${Env}" == "dev"
-        SeleniumLibrary.Open Browser  https://www.s.dev.mansionglobal.com  ${Browser}  options=${options}
-        Open Browser  https://www.s.dev.mansionglobal.com  ${Browser} options=${options}
+        Open Browser  https://www.s.dev.mansionglobal.com  ${Browser}  options=${options}
         Go To  https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212
     END
     Wait Until Page Contains Element  dom:${JSFollowButtonMGPath}
@@ -191,16 +189,24 @@ Start FN Article without byline
     Maximize Browser Window
 
 Start Mansion Global Article without byline
-    Set Selenium Speed  1 seconds
+    Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.mansionglobal.com  ${Browser}  options=${options}
+        Open Browser  https://www.mansionglobal.com  ${Browser} options=${options}
         Go To  https://www.mansionglobal.com/articles/what-property-tax-changes-are-in-store-for-luxury-home-owners-in-edmonton-canada-e0d92933
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.s.dev.mansionglobal.com  ${Browser}  options=${options}
+        Open Browser  https://www.s.dev.mansionglobal.com  ${Browser} options=${options}
         Go To  https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212
     END
     Maximize Browser Window
+
+
+
+
+
+
+
+
 
 Start Market Watch Article without byline
     Set Selenium Speed  1 seconds

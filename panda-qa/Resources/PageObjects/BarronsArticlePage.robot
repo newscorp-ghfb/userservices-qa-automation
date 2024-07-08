@@ -14,10 +14,11 @@ ${JSFollowButtonBarrons2Path}=  document.querySelector('ufc-follow-author-widget
     ...  .querySelector('ufc-follow-button').shadowRoot  #3
     ...  .querySelector('button')  #4
 
-${JSStockPickFollowButtonBarronsPath}=  document.querySelector('ufc-follow-custom-topic-widget.hydrated').shadowRoot  #1
-    ...  .querySelector('ufc-follow-widget')  #2
-    ...  .querySelector('ufc-follow-button').shadowRoot  #3
-    ...  .querySelector('button')  #4
+${JSStockPickFollowButtonBarronsPath}=  document.querySelector("#__next > div > div > div.LayoutBodyMd__Content-sc-r6cp4n-1.gJUsSi > div.LatestStockPicksSection__Wrapper-sc-1acsdpp-0.jiCazf > div.ModuleTitle__ModuleWrapper-sc-u4x5g6-0.PVJsy > h2 > div > ufc-follow-custom-topic-widget").shadowRoot.querySelector("ufc-follow-widget > ufc-follow-button").shadowRoot.querySelector("button")
+#document.querySelector('ufc-follow-custom-topic-widget.hydrated').shadowRoot  #1
+#    ...  .querySelector('ufc-follow-widget')  #2
+#    ...  .querySelector('ufc-follow-button').shadowRoot  #3
+#    ...  .querySelector('button')  #4
 
 ${JSStockPickUndoButtonBarronsPath}=  document.querySelector('ufc-follow-custom-topic-widget').shadowRoot  #1
     ...  .querySelector('ufc-follow-widget').shadowRoot  #2
@@ -26,10 +27,11 @@ ${JSStockPickUndoButtonBarronsPath}=  document.querySelector('ufc-follow-custom-
     ...  .querySelector('div')  #5
     ...  .querySelector('button')  #6
 
-${JSUndoButtonBarronsPath}=  document.querySelector('ufc-snackbar').shadowRoot  #1
-    ...  .querySelector('div')  #2
-    ...  .querySelector('div')  #3
-    ...  .querySelector('button')  #4
+${JSUndoButtonBarronsPath}=  document.querySelector("#__next > div > div > div.LayoutBodyMd__Content-sc-r6cp4n-1.gJUsSi > div.LatestStockPicksSection__Wrapper-sc-1acsdpp-0.jiCazf > div.ModuleTitle__ModuleWrapper-sc-u4x5g6-0.PVJsy > h2 > div > ufc-follow-custom-topic-widget").shadowRoot.querySelector("ufc-follow-widget").shadowRoot.querySelector("ufc-snackbar").shadowRoot.querySelector("div > div > button")
+#document.querySelector('ufc-snackbar').shadowRoot  #1
+#    ...  .querySelector('div')  #2
+#    ...  .querySelector('div')  #3
+#    ...  .querySelector('button')  #4
 
 ${JSPreferenceCenterLinkBarronsPath}=  document.querySelector('ufc-snackbar').shadowRoot  #1
     ...  .querySelector('div')  #2
@@ -45,19 +47,21 @@ ${JSStockPickPreferenceCenterLinkBarronsPath}=  document.querySelector('ufc-foll
     ...  .querySelector('span')  #6
     ...  .querySelector('a')  #7
 
-${JSFollowSignInButtonPath}=  document.querySelector('ufc-signin-modal').shadowRoot  #1
-    ...  .querySelector('div')  #2
-    ...  .querySelector('div.modal')  #3
-    ...  .querySelector('focus-trap')  #4
-    ...  .querySelector('ufc-button')  #5
-    ...  .querySelector('button')  #6
+${JSFollowSignInButtonPath}=  document.querySelector("body > div:nth-child(19) > ufc-portal > ufc-signin-modal").shadowRoot.querySelector("div > div.modal > focus-trap > div.footer > ufc-button > button")
+#document.querySelector('ufc-signin-modal').shadowRoot  #1
+#    ...  .querySelector('div')  #2
+#    ...  .querySelector('div.modal')  #3
+#    ...  .querySelector('focus-trap')  #4
+#    ...  .querySelector('ufc-button')  #5
+#    ...  .querySelector('button')  #6
 
-${JSFollowSignInButton2Path}=  document.querySelector('ufc-signin-modal').shadowRoot  #1
-    ...  .querySelector('div')  #2
-    ...  .querySelector('div.modal')  #3
-    ...  .querySelector('focus-trap')  #4
-    ...  .querySelector('ufc-button')  #5
-    ...  .querySelector('button')  #6
+${JSFollowSignInButton2Path}=  document.querySelector("body > div:nth-child(19) > ufc-portal > ufc-signin-modal").shadowRoot.querySelector("div > div.modal > focus-trap > div.footer > ufc-button > button")
+#document.querySelector('ufc-signin-modal').shadowRoot  #1
+#    ...  .querySelector('div')  #2
+#    ...  .querySelector('div.modal')  #3
+#    ...  .querySelector('focus-trap')  #4
+#    ...  .querySelector('ufc-button')  #5
+#    ...  .querySelector('button')  #6
 
 ${JSFollowSignInButton3Path}=  document.querySelector('ufc-signin-modal').shadowRoot  #1
     ...  .querySelector('div')  #2
@@ -107,6 +111,10 @@ Validate Stock Pick Follow Button
     Wait Until Element is Visible  dom:${JSStockPickFollowButtonBarronsPath}
     Element Text Should Be  dom:${JSStockPickFollowButtonBarronsPath}  Follow  timeout=30
 
+Validate Stock Pick UnFollow Button
+    Wait Until Element is Visible  dom:${JSStockPickFollowButtonBarronsPath}
+    Element Text Should Be  dom:${JSStockPickFollowButtonBarronsPath}  Follow  timeout=30
+
 Validate Following Button
     Scroll Down
     Wait Until Element is Visible  dom:${JSFollowButtonBarronsPath}
@@ -139,6 +147,9 @@ Click Following Button
     Click Button  dom:${JSFollowButtonBarronsPath}
 
 Click Stock Pick Following Button
+    Click Button  dom:${JSStockPickFollowButtonBarronsPath}
+
+Click Stock Pick UnFollowing Button
     Click Button  dom:${JSStockPickFollowButtonBarronsPath}
 
 Validate Sign In Modal

@@ -4,7 +4,6 @@ Library  SeleniumLibrary
 Library    Process
 Resource  ../Resources/CommonFunctionality.robot
 
-
 *** Variables ***
 ${Email} =  Set Variable  ${EMPTY}
 ${Password} =  Set Variable  ${EMPTY}
@@ -22,18 +21,39 @@ Sign In Process
         ${Email}=  Set Variable  ${Email_dev}
         ${Password}=  Set Variable  ${Password_dev}
     END
-   Wait Until Element Is Visible  //*[@id=":r5:-form-item"]
-   Click Element   //*[@id=":r5:-form-item"]
-   Input Text  //*[@id=":r5:-form-item"]  akhilesh.khanduri@dowjones.com  #//*[@id=":r5:-form-item"]  QABARRONSONLY  #akhilesh.khanduri@dowjones.com
+   Wait Until Element Is Visible  //*[@id="emailOrUsername"]
+   Click Element   //*[@id="emailOrUsername"]
+   Input Text  //*[@id="emailOrUsername"]  akhilesh.khanduri@dowjones.com  #//*[@id=":r5:-form-item"]  QABARRONSONLY  #akhilesh.khanduri@dowjones.com
    Set Selenium Implicit Wait  10s
    Click Button  //html/body/div/section/div/div[2]/form/button[1]
    Set Selenium Implicit Wait  10s
-   Wait Until Element Is Visible  //*[@id=":r8:-form-item"]
-   Input Text  //*[@id=":r8:-form-item"]  AKpolarszxi2594
+   Wait Until Element Is Visible  //*[@id="password"]
+   Input Text  //*[@id="password"]  AKpolarszxi2594
    Set Selenium Implicit Wait  10
    Wait Until Element is Visible  //html/body/div/section/div/div[2]/form/button
    Click Element  //html/body/div/section/div/div[2]/form/button  #//html/body/main/div[2]/section[16]/div/form/div[5]/button
    Set Selenium Implicit Wait  60
+
+FN Sign In Process
+    IF  "${Env}" == "prod"
+        ${Email}=  Set Variable  ${Email_prod}
+        ${Password}=  Set Variable  ${Password_prod}
+    ELSE IF  "${Env}" == "dev"
+        ${Email}=  Set Variable  ${Email_dev}
+        ${Password}=  Set Variable  ${Password_dev}
+    END
+   Wait Until Element Is Visible  //*[@id="emailOrUsername"]
+   Click Element   //*[@id="emailOrUsername"]
+   Input Text  //*[@id="emailOrUsername"]  QABARRONSONLY  #//*[@id=":r5:-form-item"]  QABARRONSONLY  #akhilesh.khanduri@dowjones.com
+   Set Selenium Implicit Wait  10s
+   Click Button  //html/body/div/section/div/div[2]/form/button[1]
+   Set Selenium Implicit Wait  10s
+   Wait Until Element Is Visible  //*[@id="password"]
+   Input Text  //*[@id="password"]  password1
+   Set Selenium Implicit Wait  10
+   Wait Until Element is Visible  //html/body/div/section/div/div[2]/form/button
+   Click Element  //html/body/div/section/div/div[2]/form/button  #//html/body/main/div[2]/section[16]/div/form/div[5]/button
+   Set Selenium Implicit Wait  10
 
 Barrons Quote Page Sign in Process
    Wait Until Element is Visible  //html/body/div[3]/div/div/header/div/div[1]/div[3]/div/a
@@ -51,16 +71,17 @@ Barrons Quote Page Sign in Process
    Click Element  //html/body/div/section/div/div[2]/form/button  #//html/body/main/div[2]/section[16]/div/form/div[5]/button
 
 Barrons Stock Screener Sign in Process
-   Wait Until Element is Visible  //html/body/div[3]/div/div/header/div/div[1]/div[3]/div/a
-   Click Element  //html/body/div[3]/div/div/header/div/div[1]/div[3]/div/a
+   Wait Until Element is Visible  //html/body/div[3]/div/header/div/div[1]/div[3]/div/a
+   Set Selenium Implicit Wait  2s
+   Click Element  //html/body/div[3]/div/header/div/div[1]/div[3]/div/a
    Wait Until Element Is Visible  //*[@id="emailOrUsername"]
    Click Element   //*[@id="emailOrUsername"]
-   Input Text  //*[@id="emailOrUsername"]  akhilesh.khanduri@dowjones.com  #//*[@id=":r5:-form-item"]  QABARRONSONLY  #akhilesh.khanduri@dowjones.com
+   Input Text  //*[@id="emailOrUsername"]  QABARRONSONLY  #//*[@id=":r5:-form-item"]  QABARRONSONLY  #akhilesh.khanduri@dowjones.com
    Set Selenium Implicit Wait  10s
    Click Button  //html/body/div/section/div/div[2]/form/button[1]
    Set Selenium Implicit Wait  10s
    Wait Until Element Is Visible  //*[@id="password"]
-   Input Text  //*[@id="password"]  AKpolarszxi2594
+   Input Text  //*[@id="password"]  password1
    Set Selenium Implicit Wait  10
    Wait Until Element is Visible  //html/body/div/section/div/div[2]/form/button
    Click Element  //html/body/div/section/div/div[2]/form/button  #//html/body/main/div[2]/section[16]/div/form/div[5]/button
@@ -108,13 +129,13 @@ Mansion Global Sign In Process
 Barrons Article Sign in Process
    Wait Until Element is Visible  //html/body/div[3]/main/div[1]/div[2]/div/article/div[2]/div[3]/div/div/div/p/a
    Click Element  //html/body/div[3]/main/div[1]/div[2]/div/article/div[2]/div[3]/div/div/div/p/a
-   Click Button   //*[@id=":r5:-form-item"]
-   Input Text  //*[@id=":r5:-form-item"]  akhilesh.khanduri@dowjones.com  #//*[@id=":r5:-form-item"]  QABARRONSONLY  #akhilesh.khanduri@dowjones.com
+   Click Button
+   Input Text  //*[@id="emailOrUsername"]  akhilesh.khanduri@dowjones.com  #//*[@id=":r5:-form-item"]  QABARRONSONLY  #akhilesh.khanduri@dowjones.com
    Set Selenium Implicit Wait  10s
    Click Button  //html/body/div/section/div/div[2]/form/button[1]
    Set Selenium Implicit Wait  10s
-   Wait Until Element Is Visible  //*[@id=":r8:-form-item"]
-   Input Text  //*[@id=":r8:-form-item"]  AKpolarszxi2594
+   Wait Until Element Is Visible  //*[@id="password"]
+   Input Text  //*[@id="password"]  AKpolarszxi2594
    Set Selenium Implicit Wait  10
    Wait Until Element is Visible  //html/body/div/section/div/div[2]/form/button
    Click Element  //html/body/div/section/div/div[2]/form/button  #//html/body/main/div[2]/section[16]/div/form/div[5]/button
