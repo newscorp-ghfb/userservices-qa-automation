@@ -35,20 +35,20 @@ Click Following Toggle Feature
     IF  "${Env}" == "prod"
         Click Element  //*[text()="Steve Goldstein"]/../../../../td[4]/div
     ELSE IF  "${Env}" == "dev"
-        Click Element  //*[text()="Angela Moore"]/../../../../td[4]/div
+        Click Element  //*[text()="William Davis"]/../../../../td[4]/div
     END
 
 Validate Following Toggle Alert Pop up
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table/thead/tr/th/div/button  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[1]/div/div/a
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[3]/div/div/button  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[1]/div/div/a
 
 Click Following Toggle Alert Pop up
-    Click Button  //*[@id="root"]/div/div/div/div[2]/div/div/div/table/thead/tr/th/div/button  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[1]/div/div/a  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table/thead/tr/th/div/button
+    Click Button  //*[@id="root"]/div/div/div/div[3]/div/div/button  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[1]/div/div/a  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table/thead/tr/th/div/button
 
 Validate Author Updates From Preference Center Reflected In Articles
     Click Button  //*[@id="root"]/div/div/div/div[2]/div[2]/div/div/button
 
 Add Author By Hotlink
-    Go To  https://www.marketwatch.com/follow?alert=author&id=15_MW
+    Go To  https://www.s.dev.marketwatch.com/follow?alert=author&id=15_MW
 
 Validate Author Name
     Page Should Contain  Steve Goldstein
@@ -68,7 +68,7 @@ Validate All Tabs Displayed
 
 Validate Author On All Tab
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[7]
-    Page Should Contain  Angela Moore
+    Page Should Contain  William Davis
 
 Add Company By Hotlink
     IF  "${Env}" == "prod"

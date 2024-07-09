@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation  Mansion Global Smoke Tests
-Force Tags  MansionGlobalSmoke    TagMansionGlobal
+Force Tags  MansionGlobal    TagMansionGlobal
 
 
 Resource  ../../../Resources/CommonFunctionality.robot

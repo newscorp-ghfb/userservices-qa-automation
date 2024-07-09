@@ -32,14 +32,18 @@ Validate Following Toggle Feature
     Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr/td[4]/div/div
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr/td[4]/div/div
     END
+
 Click Following Toggle Feature
     IF  "${Env}" == "prod"
         Click Element  //*[text()="Sebastian McCarthy"]/../../../../td[4]/div
     ELSE IF  "${Env}" == "dev"
         Click Element  //*[text()="Sunita Adhikarla"]/../../../../td[4]/div
+        Page Should Contain Element  //*[@id="root"]/div/div/div/div[3]/div/div/button
+        Click Button  //*[@id="root"]/div/div/div/div[3]/div/div/button
     END
+
 Validate Following Toggle Alert Pop up
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[3]/div/span
+    Page Should Contain Element  //*[@id="root"]/div/div/div/div[3]/div/div/button
 
 Click Following Toggle Alert Pop up
     Click Button  //*[@id="root"]/div/div/div/div[3]/div/div/button

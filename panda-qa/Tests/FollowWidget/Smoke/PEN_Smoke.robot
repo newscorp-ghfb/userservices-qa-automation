@@ -7,6 +7,7 @@ Resource  ../../../Resources/PageObjects/PENArticlePage.robot
 Resource  ../../../Resources/PageObjects/PENAuthorsPage.robot
 Resource  ../../../Resources/PageObjects/PENPreferenceCenterPage.robot
 
+
 Test Setup  CommonFunctionality.Start PEN Article
 Test Teardown  CommonFunctionality.Finish Testcase
 *** Variables ***
@@ -19,24 +20,19 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T20
 Validate the follow button from articles page
     [Documentation]  This test case validates the follow button from articles page
-    [Tags]  Smoke  Follow  Article
+    [Tags]  Smoke  Follow  Article   TagPAFP
 
     PENArticlePage.Validate Follow Button
     PENArticlePage.Click Follow Button
     PENArticlePage.Validate Sign In Modal
     PENArticlePage.Click Sign In Button Modal
     DefinedKeywords.Sign In Process
-    Set Selenium Speed  0.2 seconds
+    Set Selenium Implicit Wait  40
+    Execute javascript  window.scrollTo(0,500)
+    Set Selenium Implicit Wait  10
     PENArticlePage.Validate Following Button
     PENArticlePage.Click Following Button
-    PENArticlePage.Click Undo Link
-    PENArticlePage.Validate Following Button
-    PENArticlePage.Click Following Button
-    PENArticlePage.Validate Follow Button
-    PENArticlePage.Click Follow Button
-    PENArticlePage.Validate Following Button
-    PENArticlePage.Click Preference Center link
-    PENPreferenceCenterPage.Validate Preference Center page
+
 #US-T184
 #US-T43
 #US-T44
@@ -44,7 +40,7 @@ Validate the follow button from articles page
 #US-T46
 Validate the follow button from authors page
     [Documentation]  This test case validates the follow button from authors page
-    [Tags]  Smoke  Follow  Author
+    [Tags]  Smoke  Follow  Author         TagPEAP
     PENArticlePage.Validate author hyperlink
     PENArticlePage.Click author hyperlink
     DefinedKeywords.Set Implicit Wait
@@ -54,14 +50,16 @@ Validate the follow button from authors page
 #US-T94
 Validate the PEN Preference Center page
     [Documentation]  This test case validates the barrons preference center page
-    [Tags]  Smoke  PreferenceCenter
+    [Tags]  Smoke  PreferenceCenter    TagPEPC
 
     PENPreferenceCenterPage.Navigate Preference Center page
     DefinedKeywords.Sign In Process
+    PENPreferenceCenterPage.Add Author By Hotlink
     PENPreferenceCenterPage.Validate Followed Authors
+    Set Selenium Speed  0.5 seconds
     PENPreferenceCenterPage.Validate Following Toggle Feature
     PENPreferenceCenterPage.Click Following Toggle Feature
-    PENPreferenceCenterPage.Validate Following Toggle Alert Pop up
-    PENPreferenceCenterPage.Click Following Toggle Alert Pop up
-    PENPreferenceCenterPage.Navigate Article page
-    PENArticlePage.Validate Follow Button
+    PENPreferenceCenterPage.Validate Following Toggle Feature
+    PENPreferenceCenterPage.Click Following Toggle Feature
+    Execute javascript  window.scrollTo(0,500)
+

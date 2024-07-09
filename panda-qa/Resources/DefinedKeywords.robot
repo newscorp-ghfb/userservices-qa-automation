@@ -142,16 +142,16 @@ Barrons Article Sign in Process
    Set Selenium Implicit Wait  60
 
 Market Watch Sign In Process
-    Click Button  //input[@type='email']
-    Input Text  //input[@type='email']  akhilesh.khanduri@dowjones.com  #isaias.iniguez@dowjones.com
-    Set Selenium Implicit Wait  10s
-    Click Button  //span[text()='Continue']/..
-    Set Selenium Implicit Wait  10s
-    Wait Until Element Is Visible  //*[@id="password-login-password"]
-    Input Text  //*[@id="password-login-password"]  AKpolarzx@2594  #January2024  #Cuceis19841234!
-    Set Selenium Implicit Wait  10s
-    Click Button  //section[@id='password-login']/div/form/div[5]/button
-    Wait Until Element Is Not Visible  //*[@id="password-login"]/div/form/div/div[5]/div[1]/button
+   Click Element   //*[@id="emailOrUsername"]
+   Input Text  //*[@id="emailOrUsername"]  akhilesh.khanduri@dowjones.com  #//*[@id=":r5:-form-item"]  QABARRONSONLY  #akhilesh.khanduri@dowjones.com
+   Set Selenium Implicit Wait  10s
+   Click Button  //html/body/div/section/div/div[2]/form/button[1]
+   Set Selenium Implicit Wait  10s
+   Wait Until Element Is Visible  //*[@id="password"]
+   Input Text  //*[@id="password"]  AKpolarszxi2594
+   Set Selenium Implicit Wait  10
+   Wait Until Element is Visible  //html/body/div/section/div/div[2]/form/button
+   Click Element  //html/body/div/section/div/div[2]/form/button
 
 MarketWatch Test User Sign In Process
     Click Button  //*[text()="Dismiss"]
