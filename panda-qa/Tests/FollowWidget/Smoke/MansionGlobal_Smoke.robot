@@ -50,4 +50,3 @@ Validate the Mansion Global Preference Center page
     MansionGlobalPreferenceCenterPage.Click Following Toggle Alert Pop up
     MansionGlobalPreferenceCenterPage.Validate Following Toggle Feature
     MansionGlobalPreferenceCenterPage.Click Following Toggle Feature
-#    Execute javascript  window.scrollTo(0,500)
