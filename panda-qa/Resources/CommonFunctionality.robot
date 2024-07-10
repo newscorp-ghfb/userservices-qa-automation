@@ -109,7 +109,7 @@ Start FN Article
         Execute javascript  window.scrollTo(0,500)
     END
     Execute javascript  window.scrollTo(0,500)
-    Wait Until Page Contains Element  dom:${JSFollowButtonBarronsPath}
+    Wait Until Element Is Visible  //ufc-follow-author-widget[@author-id='8680_FN']
     Maximize Browser Window
 
 Start Sailthru Page

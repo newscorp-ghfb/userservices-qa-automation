@@ -19,34 +19,33 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T100
 Validate the Mansion GLobal Preference Center page
     [Documentation]  This test case validates the Mansion GLobal preference center page
-    [Tags]  Regression  PrefrenceCenter   TagMGPF
+    [Tags]  Regression  PrefrenceCenter   TagMGPC
 
     MansionGLobalPreferenceCenterPage.Add Author By Hotlink
     DefinedKeywords.Sign In Process
     MansionGLobalPreferenceCenterPage.Validate Followed Authors
     ${val}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
     Run Keyword If  ${val} > 0  MansionGLobalPreferenceCenterPage.Click Following Toggle Alert Pop up
-    MansionGLobalPreferenceCenterPage.Validate Author Name
-    MansionGLobalPreferenceCenterPage.Validate Following Toggle Feature
-    MansionGLobalPreferenceCenterPage.Validate Following Frequency
-    MansionGLobalPreferenceCenterPage.Validate All Tabs Displayed
-    MansionGLobalPreferenceCenterPage.Validate Author On All Tab
-    MansionGLobalPreferenceCenterPage.Add Company By Hotlink
-    MansionGLobalPreferenceCenterPage.Validate Followed Companies
+    MansionGlobalPreferenceCenterPage.Validate Author Name
+    MansionGlobalPreferenceCenterPage.Validate Following Toggle Feature
+    MansionGlobalPreferenceCenterPage.Validate Following Frequency
+    MansionGlobalPreferenceCenterPage.Validate All Tabs Displayed
+    MansionGlobalPreferenceCenterPage.Validate Author On All Tab
+    MansionGlobalPreferenceCenterPage.Add Company By Hotlink
+    MansionGlobalPreferenceCenterPage.Validate Followed Companies
     ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
     Run Keyword If  ${val2} > 0
-    MansionGLobalPreferenceCenterPage.Click Following Toggle Alert Pop up
+    MansionGlobalPreferenceCenterPage.Click Following Toggle Alert Pop up
 #    MansionGLobalPreferenceCenterPage.Validate Company Frequency
 #    MansionGLobalPreferenceCenterPage.Validate Company Quote Link
     MansionGLobalPreferenceCenterPage.Validate Company On All Tab
     MansionGLobalPreferenceCenterPage.Click Mansion Global tab
     MansionGLobalPreferenceCenterPage.Validate Company Toggle Feature
     MansionGLobalPreferenceCenterPage.Click Company Toggle Feature
-    Set Selenium Speed  1 seconds
+    Set Selenium Speed  0.1 seconds
     MansionGLobalPreferenceCenterPage.Validate Following Toggle Alert Pop up
     MansionGLobalPreferenceCenterPage.Click Following Toggle Alert Pop up
-    #MansionGLobalPreferenceCenterPage.Navigate Article page
-    #MansionGLobalArticlePage.Scroll stories
+    END
 
 #US-T27
 Validate Authors for Mansion Global Article page without byline
