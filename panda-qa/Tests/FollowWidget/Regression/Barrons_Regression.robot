@@ -139,16 +139,45 @@ Validate the Watchlist widget from Quotes page
     #BarronsQuotesPage.Validate Create Button
 
 #US-T384
-Validate if a user is able to login into Barrons Stock Screener and access the Featured Preset Screeners witout any subscription for free review.
-    [Documentation]  This test case validates the Barrons stock screener page for the accessibility of Featured Preset Screeners without any subscription
-    [Tags]  BarronsStockScreenerPage      TagBSS
+Verify if a user is able to login into Barrons Stock Screener and access the Featured Preset Screeners without any subscription for free review.
+    [Documentation]  This test case validates that a user is able to login into Barrons Stock Screener and access the Featured Preset Screeners without any subscription for free review.
+    [Tags]  Barrons StockScreener Page      TagBSFP
 
     CommonFunctionality.Start Barrons Stock Screener Page for Featured Preset Screener
+    Set Selenium Speed  0.25 seconds
     DefinedKeywords.Barrons Stock Screener Sign in Process
-    Set Selenium Speed  0.5 seconds
+    Set Selenium Speed  0.50 seconds
     Capture Page Screenshot    screenshot.png
     BarronsStockScreenerPage.Barron's 400 Top Performers
-    Barron's All Screeners Option
+    BarronsStockScreenerPage.Barron's All Screeners Option
+
+#US-T385
+Verify if a user is able to navigate to Barrons Stock Screener and subscribe in order to edit the list of featured preset screens.
+    [Documentation]  This test case validates that a user is able to subscribe and login into Barrons Stock Screener in order to edit the list of featured preset screens.
+    [Tags]  Barrons StockScreener Page      TagBSFPS
+
+    CommonFunctionality.Start Barrons Stock Screener Page for Featured Preset Screener
+    Set Selenium Speed  0.2 seconds
+    DefinedKeywords.Barrons Stock Screener Sign in Process
+    Set Selenium Implicit Wait  35 seconds
+    BarronsStockScreenerPage.Barron's Stock Test02 Screen Button
+    Set Selenium Speed  15 seconds
+    BarronsStockScreenerPage.Click on Edit Screen Name Option
+#    BarronsStockScreenerPage.Barron's Stocks Market Capitalization Index Value
+    BarronsStockScreenerPage.Click on Show Results Button
+    BarronsStockScreenerPage.Click on Save Screen Option
+#    BarronsStockScreenerPage.Barron's Exchange Option
+#    Set Selenium Speed  10 seconds
+#    BarronsStockScreenerPage.Barron's Index option
+#    BarronsStockScreenerPage.Barron's Sector & Industry Option
+#    BarronsStockScreenerPage.Barron's Stock Screener Sector&Industry Dropdown Menu Option
+#    BarronsStockScreenerPage.Barron's Sector & Industry as Farming Option
+#    BarronsStockScreenerPage.Barron's Market Capitalization Option
+#    BarronsStockScreenerPage.Barron's Annual Dividend Yield Option
+#    BarronsStockScreenerPage.Select Annual Divident Yield Minimum Value
+#    BarronsStockScreenerPage.Select Annual Dividend Yield Maximum Value
+#    BarronsStockScreenerPage.Click on Show Results Button
+#    BarronsStockScreenerPage.Click on All Screener Option
 
 #US-T125
 #US-T129

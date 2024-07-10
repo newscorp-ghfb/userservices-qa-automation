@@ -50,7 +50,6 @@ Validate Following Toggle Alert Pop up
 
 Click Following Toggle Alert Pop up
     Click Button  //button[text()='OK']
-    Reload Page
 #    //*[@id="root"]/div/div/div/div[3]/div/div/button
 
 Validate Author Updates From Preference Center Reflected In Articles

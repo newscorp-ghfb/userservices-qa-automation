@@ -4,17 +4,17 @@ Resource  ../../Resources/CommonFunctionality.robot
 Resource    BarronsQuotesPage.robot
 
 *** Variables ***
-${JSFollowButtonBarronsPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
-    ...  .querySelector('ufc-follow-widget')  #2
-    ...  .querySelector('ufc-follow-button').shadowRoot  #3
-    ...  .querySelector('button')  #4
+${JSFollowButtonBarronsPath}=  document.querySelector("#buy-under-armour-stock-pick-51650672000 > div.standard__ArticleHeadWrapper-sc-14sjre0-15.fINJmG > div.standard__ArticleBylineWrapper-sc-14sjre0-3.AwpVE > div > div > div > ufc-follow-author-widget").shadowRoot.querySelector("ufc-follow-widget > ufc-follow-button").shadowRoot.querySelector("button")
+
+${JSStockPickCTFollowButtonBarronsPath}=  document.querySelector("#__next > div > div > div.LayoutBodyMd__Content-sc-r6cp4n-1.gJUsSi > div.LatestStockPicksSection__Wrapper-sc-1acsdpp-0.jiCazf > div.ModuleTitle__ModuleWrapper-sc-u4x5g6-0.PVJsy > h2 > div > ufc-follow-custom-topic-widget").shadowRoot.querySelector("ufc-follow-widget > ufc-follow-button").shadowRoot.querySelector("button")
 
 ${JSFollowButtonBarrons2Path}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
     ...  .querySelector('ufc-follow-widget')  #2
     ...  .querySelector('ufc-follow-button').shadowRoot  #3
     ...  .querySelector('button')  #4
 
-${JSStockPickFollowButtonBarronsPath}=  document.querySelector("#__next > div > div > div.LayoutBodyMd__Content-sc-r6cp4n-1.gJUsSi > div.LatestStockPicksSection__Wrapper-sc-1acsdpp-0.jiCazf > div.ModuleTitle__ModuleWrapper-sc-u4x5g6-0.PVJsy > h2 > div > ufc-follow-custom-topic-widget").shadowRoot.querySelector("ufc-follow-widget > ufc-follow-button").shadowRoot.querySelector("button")
+${JSStockPickFollowButtonBarronsPath}=  document.querySelector("#buy-rockwell-automation-stock-pick-price-cc120733 > div.standard__ArticleHeadWrapper-sc-14sjre0-15.fINJmG > div.standard__ArticleBylineWrapper-sc-14sjre0-3.AwpVE > div > div > div > ufc-follow-author-widget").shadowRoot.querySelector("ufc-follow-widget > ufc-follow-button").shadowRoot.querySelector("button")
+
 #document.querySelector('ufc-follow-custom-topic-widget.hydrated').shadowRoot  #1
 #    ...  .querySelector('ufc-follow-widget')  #2
 #    ...  .querySelector('ufc-follow-button').shadowRoot  #3
@@ -115,6 +115,10 @@ Validate Stock Pick UnFollow Button
     Wait Until Element is Visible  dom:${JSStockPickFollowButtonBarronsPath}
     Element Text Should Be  dom:${JSStockPickFollowButtonBarronsPath}  Follow  timeout=30
 
+Validate Custom Topic Stock Pick UnFollow Button
+    Wait Until Element is Visible  dom:${JSStockPickCTFollowButtonBarronsPath}
+    Element Text Should Be  dom:${JSStockPickCTFollowButtonBarronsPath}  Following  timeout=30
+
 Validate Following Button
     Scroll Down
     Wait Until Element is Visible  dom:${JSFollowButtonBarronsPath}
@@ -128,6 +132,11 @@ Validate Following Button 2
 
 Validate author on article page
    Page Should Contain  Teresa Rivas
+
+Validate Custom Topic Stock Pick Follow Button
+    Wait Until Element is Visible  dom:${JSStockPickCTFollowButtonBarronsPath}
+    Wait Until Element Contains  dom:${JSStockPickCTFollowButtonBarronsPath}  Follow  timeout=15
+    Element Text Should Be  dom:${JSStockPickCTFollowButtonBarronsPath}  Follow  timeout=15
 
 Validate Stock Pick Following Button
     Wait Until Element is Visible  dom:${JSStockPickFollowButtonBarronsPath}
@@ -143,6 +152,9 @@ Click Follow Button 2
 Click Stock Pick Follow Button
     Click Button  dom:${JSStockPickFollowButtonBarronsPath}
 
+Click Custom Topic Stock Pick Follow Button
+    Click Button  dom:${JSStockPickCTFollowButtonBarronsPath}
+
 Click Following Button
     Click Button  dom:${JSFollowButtonBarronsPath}
 
@@ -151,6 +163,9 @@ Click Stock Pick Following Button
 
 Click Stock Pick UnFollowing Button
     Click Button  dom:${JSStockPickFollowButtonBarronsPath}
+
+Click Custom Topic Stock Pick UnFollow Button
+    Click Button  dom:${JSStockPickCTFollowButtonBarronsPath}
 
 Validate Sign In Modal
     Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}    timeout=15

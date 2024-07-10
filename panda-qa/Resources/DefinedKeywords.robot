@@ -127,9 +127,9 @@ Mansion Global Sign In Process
     Wait Until Element Is Not Visible  //*[@id="password-login"]/div/form/div/div[5]/div[1]/button
 
 Barrons Article Sign in Process
-   Wait Until Element is Visible  //html/body/div[3]/main/div[1]/div[2]/div/article/div[2]/div[3]/div/div/div/p/a
-   Click Element  //html/body/div[3]/main/div[1]/div[2]/div/article/div[2]/div[3]/div/div/div/p/a
-   Click Button
+   Wait Until Element is Visible  //html/body/div[3]/header/div/div[1]/div[3]/div/a
+   Click Element  //html/body/div[3]/header/div/div[1]/div[3]/div/a
+   Wait Until Element is Visible  //*[@id="emailOrUsername"]
    Input Text  //*[@id="emailOrUsername"]  akhilesh.khanduri@dowjones.com  #//*[@id=":r5:-form-item"]  QABARRONSONLY  #akhilesh.khanduri@dowjones.com
    Set Selenium Implicit Wait  10s
    Click Button  //html/body/div/section/div/div[2]/form/button[1]
@@ -139,7 +139,20 @@ Barrons Article Sign in Process
    Set Selenium Implicit Wait  10
    Wait Until Element is Visible  //html/body/div/section/div/div[2]/form/button
    Click Element  //html/body/div/section/div/div[2]/form/button  #//html/body/main/div[2]/section[16]/div/form/div[5]/button
-   Set Selenium Implicit Wait  60
+
+Barrons Stock Pick Sign In Process
+   Wait Until Element is Visible  //html/body/div[3]/div/div/header/div/div[1]/div[3]/div/a
+   Click Element  //html/body/div[3]/div/div/header/div/div[1]/div[3]/div/a
+   Wait Until Element is Visible  //*[@id="emailOrUsername"]
+   Input Text  //*[@id="emailOrUsername"]  akhilesh.khanduri@dowjones.com  #//*[@id=":r5:-form-item"]  QABARRONSONLY  #akhilesh.khanduri@dowjones.com
+   Set Selenium Implicit Wait  10s
+   Click Button  //html/body/div/section/div/div[2]/form/button[1]
+   Set Selenium Implicit Wait  10s
+   Wait Until Element Is Visible  //*[@id="password"]
+   Input Text  //*[@id="password"]  AKpolarszxi2594
+   Set Selenium Implicit Wait  10
+   Wait Until Element is Visible  //html/body/div/section/div/div[2]/form/button
+   Click Element  //html/body/div/section/div/div[2]/form/button
 
 Market Watch Sign In Process
    Click Element   //*[@id="emailOrUsername"]

@@ -386,9 +386,7 @@ Start Barrons Stock Picks for Stock Picks breadcrumb
         Open Browser  https://www.s.dev.barrons.com  ${Browser}  options=${options}
         Go To  https://www.s.dev.barrons.com/market-data/stocks/stock-picks?mod=BOL_TOPNAV
     END
-    #Wait Until Element Is Visible  //span[text()="Dave Michaels"]
     Set Focus To Element  //*[text()="Barron's Latest Stock Picks"]
-    #Wait Until Element Is Visible  dom:${JSFollowButtonMGPath}  30s
     Maximize Browser Window
 
 Start Barrons Stock Screener Page for Featured Preset Screener
