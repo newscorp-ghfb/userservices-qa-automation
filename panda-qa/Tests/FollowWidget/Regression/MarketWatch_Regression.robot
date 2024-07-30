@@ -20,7 +20,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T93
 Validate the Market Watch Preference Center page
     [Documentation]  This test case validates the Market Watch preference center page
-    [Tags]  Regression  PreferenceCenter            TagMPF
+    [Tags]  Regression  PreferenceCenter  Follow1
 
     MarketWatchPreferenceCenterPage.Add Author By Hotlink
     DefinedKeywords.MarketWatch PreferenceCenter User Sign In Process
@@ -40,7 +40,7 @@ Validate the Market Watch Preference Center page
 #US-T28
 Validate Authors for MarketWatch Article page without byline
     [Documentation]  This test case validates authors without byline for Market Watch article page
-    [Tags]  Regression  Author  Article           TagMWAB
+    [Tags]  Regression  Author  Article  Follow1
 
     CommonFunctionality.Start Market Watch Article without byline
     MarketWatchArticlePage.Validate author without byline
@@ -50,7 +50,7 @@ Validate Authors for MarketWatch Article page without byline
 #US-T220
 Validate the Watchlist widget from Watchlist page
     [Documentation]  This test case validates the watchlist widget from watchlist page
-    [Tags]  Regression  Watchlist               TagMWL
+    [Tags]  Regression  Watchlist   Follow1
 
     CommonFunctionality.Start MarketWatch for Watchlist page
     DefinedKeywords.MarketWatch Test User Sign In Process
@@ -74,7 +74,7 @@ Validate the Watchlist widget from Watchlist page
 #US-T276
 Validate the MarketWatch price and volume on the alerts page
     [Documentation]  This test case validates the MarketWatch price and volume on the alerts page
-    [Tags]  Regression  MarketWatch Price and Volume Alerts               TagMPVA
+    [Tags]  Regression  MarketWatch Price and Volume Alerts   Follow1
 
     CommonFunctionality.Start MarketWatch for Price and Volume Alerts page
     DefinedKeywords.MarketWatch Alerts User Sign In Process
@@ -96,7 +96,7 @@ Validate the MarketWatch price and volume on the alerts page
 #US-T278
 Validate the MarketWatch price and volume alert in Quote page
     [Documentation]  This test case validates the MarketWatch price and volume alerts on the Quote page
-    [Tags]  Regression  MarketWatch Price and Volume alert in Quote page            TagMPVQ
+    [Tags]  Regression  MarketWatch Price and Volume alert in Quote page    Follow1
     CommonFunctionality.Start MarketWatch for Price and Volume Alerts page
     DefinedKeywords.MarketWatch Alerts User Sign In Process
     Set Selenium Speed  0.5 seconds
@@ -115,7 +115,7 @@ Validate the MarketWatch price and volume alert in Quote page
 #US-T298
 Validate the MarketWatch price and volume alert deletion on Quote page
     [Documentation]  This test case validates the MarketWatch price and volume alerts on the Quote page
-    [Tags]  Regression  MarketWatch Price and Volume alert in Quote page            TagMPVD
+    [Tags]  Regression  MarketWatch Price and Volume alert in Quote page   Follow1
     CommonFunctionality.Start MarketWatch for Price and Volume Alerts page
     DefinedKeywords.MarketWatch Alerts User Sign In Process
     Set Selenium Speed  0.5 seconds
@@ -127,7 +127,7 @@ Validate the MarketWatch price and volume alert deletion on Quote page
 #US-T149
 Validate the MW digest notification
     [Documentation]  This test case validates the MW digest notification
-    [Tags]  Regression  Notifications      Tag MWD
+    [Tags]  Regression  Notifications     Follow1
     MarketWatchMailboxPage.Navigate Mailbox page
     MarketWatchMailboxPage.Login
     MarketWatchMailboxPage.Select Inbox
@@ -137,7 +137,7 @@ Validate the MW digest notification
 #US-T122
 Validate the MW real-time author notification
     [Documentation]  This test case validates the MW real-time author notification
-    [Tags]  Regression  Notifications  Author             TagMAN
+    [Tags]  Regression  Notifications  Author  Follow1
     MarketWatchMailboxPage.Navigate Mailbox page
     MarketWatchMailboxPage.Login
     MarketWatchMailboxPage.Select Inbox
@@ -147,7 +147,7 @@ Validate the MW real-time author notification
 #US-T146
 Validate the MW real-time company notification
     [Documentation]  This test case validates the MW real-time company notification
-    [Tags]  Regression  Notifications  Company   TagMCN
+    [Tags]  Regression  Notifications  Company   Follow1
     MarketWatchMailboxPage.Navigate Mailbox page
     MarketWatchMailboxPage.Login
     MarketWatchMailboxPage.Select Inbox
@@ -157,7 +157,7 @@ Validate the MW real-time company notification
 #US-T356
 Validate Postback on Preference Center
     [Documentation]  This test case validates the MW Postback on Preference Center
-    [Tags]  Regression  Postback                  TagMPB
+    [Tags]  Regression  Postback   Follow1
     MarketWatchPreferenceCenterPage.Add Breaking News By Hotlink
     DefinedKeywords.Sign In Process
     MarketWatchPreferenceCenterPage.Validate Followed Breaking News

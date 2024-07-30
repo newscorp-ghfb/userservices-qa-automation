@@ -7,8 +7,7 @@ ${JSFollowButtonWSJPath}=  document.querySelector('ufc-follow-author-widget').sh
     ...  .querySelector('ufc-follow-button').shadowRoot  #2
     ...  .querySelector('button')  #3
 
-${JSCustomFollowButtonWSJPath}=  document.querySelector("#__next > div > main > div.article-container.css-11dgf.e1wkb4h46 > article > div.crawler.css-j6808u.e1noyqgz9 > div.eui4bu22.css-hb9xd5 > div > div > div > div.css-1mfi1zu > div > div > div > ufc-follow-author-widget").shadowRoot.querySelector("ufc-follow-widget > ufc-follow-button").shadowRoot.querySelector("button")
-
+${JSCustomFollowButtonWSJPath}=  document.querySelector("#__next > div > main > div.article-container.css-5u49c7.e1ja801i8 > article > div.crawler.css-j6808u.etunnkc10 > div.enimwd21.css-hb9xd5 > div > div > div > div.css-1mfi1zu > div > div > div > ufc-follow-author-widget").shadowRoot.querySelector("ufc-follow-widget > ufc-follow-button").shadowRoot.querySelector("button")
 
 #document.querySelector('ufc-follow-custom-topic-widget').shadowRoot  #1
 #    ...  .querySelector('ufc-follow-button').shadowRoot  #2

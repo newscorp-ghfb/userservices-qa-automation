@@ -100,21 +100,21 @@ Validate Company Frequency
     Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[4]/span
 
 Validate Company Quote Link
-    Page Should Contain Element  //a[text()="Amazon.com, Inc."]
+    Page Should Contain Element  //a[text()="Amazon.com Inc."]
 
 Validate Company On All Tab
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[7]
-    Page Should Contain Element  //*[text()="Amazon.com, Inc."]/../*[text()="Financial News"]
+    Page Should Contain Element  //*[text()="Amazon.com Inc."]
 
 Click FN tab
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[2]
 
 Validate Company Toggle Feature
-    Wait Until Element is Visible  //*[text()="Amazon.com, Inc."]/../../..//*[@role="switch"]
-    Page Should Contain Element  //*[text()="Amazon.com, Inc."]/../../..//*[@role="switch"]
+    Wait Until Element is Visible  //*[text()="Amazon.com Inc."]/../../..//*[@role="switch"]
+    Page Should Contain Element  //*[text()="Amazon.com Inc."]/../../..//*[@role="switch"]
 
 Click Company Toggle Feature
-    Click Element  //*[text()="Amazon.com, Inc."]/../../..//*[@role="switch"]
+    Click Element  //*[text()="Amazon.com Inc."]/../../..//*[@role="switch"]
 
 Add Breaking News By Hotlink
      IF  "${Env}" == "prod"
@@ -123,8 +123,7 @@ Add Breaking News By Hotlink
         Go To  https://www.s.dev.fnlondon.com/follow?alert=news_alert&id=NewsAlertEmailTechnology
      END
 
-Validate Followed Breaking News
-    Scroll Down
+Validate FN Followed Breaking News
     Page Should Contain  News Alerts
 
 Validate Breaking News Toggle Feature

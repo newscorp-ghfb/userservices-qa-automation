@@ -17,7 +17,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T305
 Validate the Sailthru page for ST author
     [Documentation]  This test case validates the WSJ follow dashboard for ST author
-    [Tags]  Regression PreferenceCenterAuthor  TagWSA
+    [Tags]  Regression PreferenceCenterAuthor  Follow1
 
     CommonFunctionality.Start Sailthru Page
     DefinedKeywords.Sailthru Sign In Process
@@ -38,7 +38,7 @@ Validate the Sailthru page for ST author
 #US-T308
 Validate the Sailthru page for ST company
     [Documentation]  This test case validates the WSJ follow dashboard for ST company
-    [Tags]  Regression PreferenceCenterCompany  TagWSC
+    [Tags]  Regression PreferenceCenterCompany  Follow1
 
     CommonFunctionality.Start Sailthru Page
     DefinedKeywords.Sailthru User Sign In Process
@@ -59,7 +59,7 @@ Validate the Sailthru page for ST company
 #US-T318
 Validate the Sailthru page for ST campaign
     [Documentation]  This test case validates the WSJ follow dashboard for ST campaign
-    [Tags]  Regression PreferenceCenter  TagWSTC
+    [Tags]  Regression PreferenceCenter  Follow1
 
     CommonFunctionality.Start Sailthru Page
     DefinedKeywords.Sailthru User Sign In Process
@@ -80,7 +80,7 @@ Validate the Sailthru page for ST campaign
 #US-T310
 Validate the Sailthru page for ST custom topics
     [Documentation]  This test case validates the WSJ follow dashboard for ST custom topics
-    [Tags]  Regression PreferenceCenter  TagWSCT
+    [Tags]  Regression PreferenceCenter  Follow1
 
     CommonFunctionality.Start Sailthru Page
     DefinedKeywords.Sailthru User Sign In Process
