@@ -23,7 +23,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T75
 Validate the multiple authors follow button from articles page
     [Documentation]  This test case validates the multiple authors follow button from articles page
-    [Tags]  Regression  Author  Follow  Article       TagWSMA
+    [Tags]  Regression  Author  Follow  Article       Follow1
 
     DefinedKeywords.Sign In Process
     Set Selenium Speed  0.2 seconds
@@ -54,7 +54,7 @@ Validate the multiple authors follow button from articles page
 #US-T229
 Validate the WSJ Preference Center page
     [Documentation]  This test case validates the WSJ preference center page
-    [Tags]  Regression  PreferenceCenter  TagWPF
+    [Tags]  Regression  PreferenceCenter  Follow1
 
     CommonFunctionality.Start WSJ Preference Center Page
                     IF  "${Env}" == "prod"
@@ -102,7 +102,7 @@ Validate the WSJ Preference Center page
 #US-T30
 Validate Authors for WSJ Article page without byline
     [Documentation]  This test case validates authors without byline for WSJ article page
-    [Tags]  Regression  Article  Author    TagWAB
+    [Tags]  Regression  Article  Author    Follow1
 
     CommonFunctionality.Start WSJ Article without byline
                 IF  "${Env}" == "prod"
@@ -119,7 +119,7 @@ Validate Authors for WSJ Article page without byline
 #US-T181
 Validate the follow button for Letters breadcrumb from articles page
     [Documentation]  This test case validates the follow button from articles page
-    [Tags]  Regression  Follow  Breadcrumb  Article    TagWBL
+    [Tags]  Regression  Follow  Breadcrumb  Article    Follow1
 
     CommonFunctionality.CookieTestWSJ
     Set Selenium Speed  100.5 seconds
@@ -165,7 +165,7 @@ Validate the follow button for Letters breadcrumb from articles page
 #US-T181
 Validate the WSJ Preference Center page for Letters breadcrumb
     [Documentation]  This test case validates the WSJ preference center page
-    [Tags]  Regression  PreferenceCenter  Breadcrumb  TagWLPC
+    [Tags]  Regression  PreferenceCenter  Breadcrumb  Follow1
 
     Set Selenium Speed  0.2 seconds
     WSJPreferenceCenterPage.Navigate Preference Center page
@@ -189,7 +189,7 @@ Validate the WSJ Preference Center page for Letters breadcrumb
 #US-T173
 Validate the follow button for Editorials breadcrumb from articles page
     [Documentation]  This test case validates the follow button from articles page
-    [Tags]  Regression  Breadcrumb  Follow  Article    TagWEBA
+    [Tags]  Regression  Breadcrumb  Follow  Article    Follow1
     CommonFunctionality.CookieTestWSJ
     Set Selenium Speed  100.5 seconds
     CommonFunctionality.Start WSJ Article for Editorials breadcrumb
@@ -227,7 +227,7 @@ Validate the follow button for Editorials breadcrumb from articles page
 #US-T177
 Validate the follow button for Commentary breadcrumb from articles page
     [Documentation]  This test case validates the follow button from articles page
-    [Tags]  Regression  Follow  Breadcrumb  Article    TagWSBC
+    [Tags]  Regression  Follow  Breadcrumb  Article    Follow1
     CommonFunctionality.CookieTestWSJ
     Set Selenium Speed  100.5 seconds
     CommonFunctionality.Start WSJ Article for Commentary breadcrumb
@@ -250,7 +250,7 @@ Validate the follow button for Commentary breadcrumb from articles page
 #US-T177
 Validate the WSJ Preference Center page for Commentary breadcrumb
     [Documentation]  This test case validates the barrons preference center page
-    [Tags]  Regression  PreferenceCenter  Breadcrumb    TagWCPC
+    [Tags]  Regression  PreferenceCenter  Breadcrumb    Follow1
 
     CommonFunctionality.CookieTestWSJ
     Set Selenium Speed  0.2 seconds
@@ -280,7 +280,7 @@ Validate the WSJ Preference Center page for Commentary breadcrumb
 #US-T167
 Validate the follow button for Commentary breadcrumb from Commentary page
     [Documentation]  This test case validates the follow button from articles page
-    [Tags]  Regression  Follow  Breadcrumb  Commentarypage   TagWCAP
+    [Tags]  Regression  Follow  Breadcrumb  Commentarypage   Follow1
 
     CommonFunctionality.CookieTestWSJ
     Set Selenium Speed  100.5 seconds
@@ -308,7 +308,7 @@ Validate the follow button for Commentary breadcrumb from Commentary page
 #US-T163
 Validate the follow button for Editorials breadcrumb from Editorials page
     [Documentation]  This test case validates the follow button from Editorials page
-    [Tags]  Regression  Follow  Breadcrumb           TagWEBE
+    [Tags]  Regression  Follow  Breadcrumb           Follow1
     CommonFunctionality.Start WSJ Editorials for Editorials breadcrumb
                     IF  "${Env}" == "prod"
         DefinedKeywords.New WSJ Sign In Process
@@ -347,7 +347,7 @@ Validate the follow button for Editorials breadcrumb from Editorials page
 #US-T171
 Validate the follow button for Letters breadcrumb from Letters page
     [Documentation]  This test case validates the follow button from Letters page
-    [Tags]  Regression  Follow  Breadcrumb
+    [Tags]  Regression  Follow  Breadcrumb      Follow1
     CommonFunctionality.Start WSJ Letters for Letters breadcrumb
     #WSJArticlePage.Validate Custom Following Button
     WSJArticlePage.Click Custom Follow Button
@@ -380,7 +380,7 @@ Validate the follow button for Letters breadcrumb from Letters page
 #US-T134
 Validate the follow button for Elections breadcrumb from Elections page
     [Documentation]  This test case validates the follow button from Elections page
-    [Tags]  Regression  Follow  Breadcrumb    TagWSBE
+    [Tags]  Regression  Follow  Breadcrumb    Follow1
     CommonFunctionality.Start WSJ Elections for Elections breadcrumb
                     IF  "${Env}" == "prod"
         DefinedKeywords.New WSJ Sign In Process
@@ -419,7 +419,7 @@ Validate the follow button for Elections breadcrumb from Elections page
 #US-T134
 Validate the WSJ Preference Center page for Elections breadcrumb
     [Documentation]  This test case validates the barrons preference center page
-    [Tags]  Regression  PreferenceCenter  Breadcrumb
+    [Tags]  Regression  PreferenceCenter  Breadcrumb        Follow1
 
     Set Selenium Speed  0.2 seconds
     WSJPreferenceCenterPage.Navigate Preference Center page
@@ -443,7 +443,7 @@ Validate the WSJ Preference Center page for Elections breadcrumb
 #US-T230
 Validate the follow button for Elections breadcrumb from articles page
     [Documentation]  This test case validates the follow button from articles page
-    [Tags]  Regression  Follow  Breadcrumb  Article
+    [Tags]  Regression  Follow  Breadcrumb  Article   Follow1
     CommonFunctionality.Start WSJ Article for Elections breadcrumb
     #WSJArticlePage.Validate Custom Following Button
     WSJArticlePage.Click Custom Follow Button
@@ -475,7 +475,7 @@ Validate the follow button for Elections breadcrumb from articles page
 #US-T223
 Validate the Watchlist widget from Watchlist page
     [Documentation]  This test case validates the watchlist widget from watchlist page
-    [Tags]  Regression  Watchlist   TagWWP
+    [Tags]  Regression  Watchlist   Follow1
 
     CommonFunctionality.Start WSJ for Watchlist page
     DefinedKeywords.Sign In Process
@@ -503,7 +503,7 @@ Validate the Watchlist widget from Watchlist page
 #US-T271
 Validate the alert button for Board Pack Exclusive from articles page
     [Documentation]  This test case validates the alert button for Board Pack Exclusive from articles pag
-    [Tags]  Regression Alerts  CustomTopic  Article   TagWBPE
+    [Tags]  Regression Alerts  CustomTopic  Article   Follow1
     CommonFunctionality.Start WSJ Article for Board Pack Exclusive
     #WSJArticlePage.Validate Custom Following Button
     WSJArticlePage.Click Board Pack Exclusive Button
@@ -532,7 +532,7 @@ Validate the alert button for Board Pack Exclusive from articles page
 #US-T153
 Validate the WSJ digest notification
     [Documentation]  This test case validates the WSJ digest notification
-    [Tags]  Regression  Notifications     Tag WDND
+    [Tags]  Regression  Notifications     Follow1
     WSJMailboxPage.Navigate Mailbox page
     WSJMailboxPage.Login
     WSJMailboxPage.Select Inbox
@@ -542,7 +542,7 @@ Validate the WSJ digest notification
 #US-T406
 Validate WSJ Legacy company Amazon to be added to New Preference Center
     [Documentation]  This test case validates the WSJ legacy company as Amazon to be added to the Preference Center
-    [Tags]  Regression  Notifications     Tag WLCP
+    [Tags]  Regression  Notifications     Follow1
    CommonFunctionality.Start WSJ Preference Center Page
                    IF  "${Env}" == "prod"
         DefinedKeywords.New WSJ Sign In Process
@@ -561,7 +561,7 @@ Validate WSJ Legacy company Amazon to be added to New Preference Center
 #US-T406
 Validate WSJ Legacy company Tesla to be added to New Preference Center
     [Documentation]  This test case validates the WSJ legacy company as Tesla to be added to the Preference Center
-    [Tags]  Regression  Notifications     Tag WLTP
+    [Tags]  Regression  Notifications    Follow1
    CommonFunctionality.Start WSJ Preference Center Page
                    IF  "${Env}" == "prod"
         DefinedKeywords.New WSJ Sign In Process
@@ -579,7 +579,7 @@ Validate WSJ Legacy company Tesla to be added to New Preference Center
 #US-T406
 Validate WSJ Legacy company Goldman Sachs to be added to New Preference Center
          [Documentation]  This test case validates the WSJ legacy company as Goldman Sachs to be added to the Preference Center
-    [Tags]  Regression  Notifications     Tag WLGP
+    [Tags]  Regression  Notifications    Follow1
    CommonFunctionality.Start WSJ Preference Center Page
                    IF  "${Env}" == "prod"
         DefinedKeywords.New WSJ Sign In Process
@@ -597,7 +597,7 @@ Validate WSJ Legacy company Goldman Sachs to be added to New Preference Center
 #US-T406
 Validate WSJ Legacy company Facebook to be added to New Preference Center
          [Documentation]  This test case validates the WSJ legacy company as Facebook to be added to the Preference Center
-    [Tags]  Regression  Notifications     Tag WLFBP
+    [Tags]  Regression  Notifications     Follow1
    CommonFunctionality.Start WSJ Preference Center Page
                    IF  "${Env}" == "prod"
         DefinedKeywords.New WSJ Sign In Process
@@ -615,7 +615,7 @@ Validate WSJ Legacy company Facebook to be added to New Preference Center
 #US-T124
 Validate the WSJ real-time author notification
     [Documentation]  This test case validates the WSJ real-time author notification
-    [Tags]  Regression  Notifications  Author
+    [Tags]  Regression  Notifications  Author      Follow1
     WSJMailboxPage.Navigate Mailbox page
     WSJMailboxPage.Login
     WSJMailboxPage.Select Inbox
@@ -625,7 +625,7 @@ Validate the WSJ real-time author notification
 #US-T154
 Validate the WSJ real-time company notification
     [Documentation]  This test case validates the WSJ real-time company notification
-    [Tags]  Regression  Notifications  Company           TagWCN
+    [Tags]  Regression  Notifications  Company           Follow1
     WSJMailboxPage.Navigate Mailbox page
     WSJMailboxPage.Login
     WSJMailboxPage.Select Inbox
@@ -635,7 +635,7 @@ Validate the WSJ real-time company notification
 #US-T143
 Validate the WSJ real-time custom topic notification
     [Documentation]  This test case validates the WSJ real-time custom topic notification
-    [Tags]  Regression  Notifications  CustomTopic   TagWCTN
+    [Tags]  Regression  Notifications  CustomTopic   Follow1
     WSJMailboxPage.Navigate Mailbox page
     WSJMailboxPage.Login
     WSJMailboxPage.Select Inbox
@@ -646,7 +646,7 @@ Validate the WSJ real-time custom topic notification
 #US-T252
 Validate the WSJ real-time custom topic video notification
     [Documentation]  This test case validates the WSJ real-time custom topic video notification
-    [Tags]  Regression  Notifications  CustomTopic
+    [Tags]  Regression  Notifications  CustomTopic   Follow1
     WSJMailboxPage.Navigate Mailbox page
     WSJMailboxPage.Login
     WSJMailboxPage.Select Inbox
@@ -657,7 +657,7 @@ Validate the WSJ real-time custom topic video notification
 #US-T251
 Validate the WSJ real-time author video notification
     [Documentation]  This test case validates the WSJ real-time author video notification
-    [Tags]  Regression  Notifications  Author
+    [Tags]  Regression  Notifications  Author    Follow1
     WSJMailboxPage.Navigate Mailbox page
     WSJMailboxPage.Login
     WSJMailboxPage.Select Inbox
@@ -668,7 +668,7 @@ Validate the WSJ real-time author video notification
 #US-T312
 Validate the WSJ real-time campaign notification
     [Documentation]  This test case validates the WSJ real-time campaign notification
-    [Tags]  Regression  Notifications             Tag WRCN
+    [Tags]  Regression  Notifications             Follow1
     WSJMailboxPage.Navigate Mailbox page
     WSJMailboxPage.Login
     WSJMailboxPage.Select Inbox
@@ -681,7 +681,7 @@ Validate the WSJ real-time campaign notification
 #US-T322
 Validate the alert button for Education
     [Documentation]  This test case validates the alert button for Education
-    [Tags]  Regression  Alerts    TagWOE
+    [Tags]  Regression  Alerts    Follow1
     CommonFunctionality.Start WSJ Article for Education
     WSJArticlePage.Click Education Button
     WSJArticlePage.Validate Sign In Modal
@@ -712,7 +712,7 @@ Validate the alert button for Education
 #US-T326
 Validate the alert button for heard on the street
     [Documentation]  This test case validates the alert button for heard on the street
-    [Tags]  Regression  Alerts             TagWHS
+    [Tags]  Regression  Alerts             Follow1
     CommonFunctionality.Start WSJ Article for heard on the street page
         IF  "${Env}" == "prod"
         DefinedKeywords.New WSJ Sign In Process
@@ -755,7 +755,7 @@ Validate the alert button for heard on the street
 #US-T330
 Validate the alert button for On Wine
     [Documentation]  This test case validates the alert button for On Wine
-    [Tags]  Regression  Alerts                 TagWOW
+    [Tags]  Regression  Alerts                 Follow1
     CommonFunctionality.Start WSJ Article for On Wine Page
             IF  "${Env}" == "prod"
         DefinedKeywords.New WSJ Sign In Process
@@ -796,7 +796,7 @@ Validate the alert button for On Wine
 #US-T334
 Validate the alert button for Personal Finance
     [Documentation]  This test case validates the alert button for Personal Finance
-    [Tags]  Regression  Alerts    TagWPFAP
+    [Tags]  Regression  Alerts    Follow1
     CommonFunctionality.Start WSJ Article for Personal Finance
         IF  "${Env}" == "prod"
         DefinedKeywords.New WSJ Sign In Process
@@ -836,7 +836,7 @@ Validate the alert button for Personal Finance
 #US-T338
 Validate the alert button for Personal Technology
     [Documentation]  This test case validates the alert button for Personal Technology
-    [Tags]  Regression  Alerts            TagWPTA
+    [Tags]  Regression  Alerts            Follow1
     CommonFunctionality.Start WSJ Article for Personal Technology
             IF  "${Env}" == "prod"
         DefinedKeywords.New WSJ Sign In Process
@@ -863,7 +863,7 @@ Validate the alert button for Personal Technology
 #US-T342
 Validate the alert button for Puzzles
     [Documentation]  This test case validates the alert button for Puzzles
-    [Tags]  Regression  Alerts               TagWPZ
+    [Tags]  Regression  Alerts               Follow1
     CommonFunctionality.Start WSJ Article for Puzzles
     IF  "${Env}" == "prod"
         DefinedKeywords.New WSJ Sign In Process
@@ -898,7 +898,7 @@ Validate the alert button for Puzzles
 #US-T346
 Validate the alert button for Energy
     [Documentation]  This test case validates the alert button for Energy
-    [Tags]  Regression  Alerts    TagWPEA
+    [Tags]  Regression  Alerts    Follow1
     CommonFunctionality.Start WSJ Article for Energy
             IF  "${Env}" == "prod"
         DefinedKeywords.New WSJ Sign In Process
@@ -921,7 +921,7 @@ Validate the alert button for Energy
 #US-T361
 Validate Postback on Preference Center
     [Documentation]  This test case validates the WSJ Postback on Preference Center
-    [Tags]  Regression  Postback            TagWPBC
+    [Tags]  Regression  Postback            Follow1
     WSJPreferenceCenterPage.Add Breaking News By Hotlink
     DefinedKeywords.Sign In Process
     WSJPreferenceCenterPage.Validate Followed Breaking News

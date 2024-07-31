@@ -28,7 +28,6 @@ Login
 
 
 Select Inbox
-    Set Selenium Speed  2.0 seconds
     Wait Until Page Contains Element  //input[@id="topSearchInput"]
     Click Element  //input[@id="topSearchInput"]
     Wait Until Page Contains Element  //span[@id="searchScopeButtonId-option"]

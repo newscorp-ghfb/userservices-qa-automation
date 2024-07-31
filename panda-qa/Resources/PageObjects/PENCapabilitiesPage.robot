@@ -1,7 +1,7 @@
 *** Settings ***
 Library  SeleniumLibrary
 Resource  ../../Resources/CommonFunctionality.robot
-Resource    FNArticlePage.robot
+Resource    PENCapabilitiesPage.robot
 
 *** Variables ***
 ${JSFollowButtonBarronsPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
@@ -28,13 +28,13 @@ Click Login button
 
 Capabilities Dashboard Sign In Process
     Click Button    //input[@id='input28']
-    Input Text  //input[@id='input28']  priyanka.bhoomraogari@dowjones.com
+    Input Text  //input[@id='input28']  akhilesh.khanduri@dowjones.com
     Click Button    //input[@type='submit']
     Sleep    15s
 
 Sign In Process
     Wait Until Element Is Visible  //*[@type="password"]
-    Input Text  //*[@type="password"]  January2024
+    Input Text  //*[@type="password"]  AKpolarszxi2594
     Click Button    //input[@type='submit']
     Sleep  30s
 

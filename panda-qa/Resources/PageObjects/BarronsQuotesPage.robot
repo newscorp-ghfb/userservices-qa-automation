@@ -137,9 +137,7 @@ ${JSSymbolAMZN-D}=  document.querySelector('dj-watchlist').shadowRoot  #1
     ...  .querySelector('div.sc-dj-instrument-barrons')  #8
     ...  .querySelector('[href="https://www.barrons.com/market-data/stocks/AMZN?countrycode=US&mod=watchlist_ticker"]')  #9
 
-${JSCreateListButtonBarronsPath}=  document.querySelector('dj-watchlist').shadowRoot  #1
-    ...  .querySelector('div.watchlist')  #2
-    ...  .querySelector('button')  #3
+${JSAddToListButtonBarronsPath}=  document.querySelector("#__next > div > div > div.LayoutBodyMd__Content-sc-19vky37-1.hjkvMv > div.TickerStrapline__Wrapper-sc-hr42ly-0.hwwYeb > div.TickerStrapline__MobileTools-sc-hr42ly-5.kmyiVu > div.TickerStrapline__MobileToolsButtonContainer-sc-hr42ly-6.dMtaVg > div > button > div.AddToWatchlist__AddQuotesSimpleLabel-sc-tu8ksx-0.ebcXig")
 
 ${JSWatchListNameFieldBarronsPath}=  document.querySelector('dj-watchlist').shadowRoot  #1
     ...  .querySelector('div.watchlist')  #2
@@ -227,9 +225,10 @@ Validate Watchlist for non-logged user
 
 
 Validate Quote Page
-    Page Should Contain Element  //h1[text()="Dow Jones Industrial Average"]
-    Execute javascript  window.scrollTo(0,500)
-    Set Focus To Element  dom:${JSCreateListButtonBarronsPath}
+    Page Should Contain Element  //html/body/div[3]/div/div/div[4]/div[1]/div[1]/h1
+#    Execute javascript  window.scrollTo(0,500)
+    Set Focus To Element  dom:${JSAddToListButtonBarronsPath}
+    Click Element  dom:${JSAddToListButtonBarronsPath}
 
 #Click Create Button
 #  Click Button  dom:${JSCreateListButtonBarronsPath}

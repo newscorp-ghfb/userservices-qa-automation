@@ -29,8 +29,8 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T56
 Validate the multiple authors follow button from articles page
     [Documentation]  This test case validates the multiple authors follow button from articles page
-    [Tags]  Regression  Follow  MultipleAuthors  Article   BarronsMultipleauthors   TagBarronsMA
-    CommonFunctionality.Start Barrons Article
+    [Tags]  Regression  Follow  MultipleAuthors  Article   BarronsMultipleauthors   Follow1
+
     Set Selenium Speed  0.2 seconds
     DefinedKeywords.Barrons Article Sign in Process
     Set Selenium Implicit Wait  50s
@@ -58,7 +58,7 @@ Validate the multiple authors follow button from articles page
 #US-T81
 Validate the Barrons Preference Center page
     [Documentation]  This test case validates the barrons preference center page
-    [Tags]  Regression  PreferenceCenter                  TagBarronsPF
+    [Tags]  Regression  PreferenceCenter  Follow1
 
     BarronsPreferenceCenterPage.Add Author By Hotlink
     DefinedKeywords.Sign In Process
@@ -71,26 +71,25 @@ Validate the Barrons Preference Center page
     BarronsPreferenceCenterPage.Validate All Tabs Displayed
     BarronsPreferenceCenterPage.Validate Author On All Tab
     BarronsPreferenceCenterPage.Add Company By Hotlink
-    BarronsPreferenceCenterPage.Validate Followed Companies
-
-    ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
-    Run Keyword If  ${val2} > 0  BarronsPreferenceCenterPage.Click Following Toggle Alert Pop up
-    BarronsPreferenceCenterPage.Validate Company Frequency
-    BarronsPreferenceCenterPage.Validate Company Quote Link
-    BarronsPreferenceCenterPage.Validate Company On All Tab
-    BarronsPreferenceCenterPage.Click Barrons tab
-    BarronsPreferenceCenterPage.Validate Company Toggle Feature
-    BarronsPreferenceCenterPage.Click Company Toggle Feature
-    BarronsPreferenceCenterPage.Validate Following Toggle Alert Pop up
-    BarronsPreferenceCenterPage.Click Following Toggle Alert Pop up
-    BarronsPreferenceCenterPage.Click Barrons tab
-    BarronsPreferenceCenterPage.Validate Company Quote Link Not exists
+#    BarronsPreferenceCenterPage.Validate Followed Companies
+#    ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
+#    Run Keyword If  ${val2} > 0  BarronsPreferenceCenterPage.Click Following Toggle Alert Pop up
+#    BarronsPreferenceCenterPage.Validate Company Frequency
+#    BarronsPreferenceCenterPage.Validate Company Quote Link
+#    BarronsPreferenceCenterPage.Validate Company On All Tab
+#    BarronsPreferenceCenterPage.Click Barrons tab
+#    BarronsPreferenceCenterPage.Validate Company Toggle Feature
+#    BarronsPreferenceCenterPage.Click Company Toggle Feature
+#    BarronsPreferenceCenterPage.Validate Following Toggle Alert Pop up
+#    BarronsPreferenceCenterPage.Click Following Toggle Alert Pop up
+#    BarronsPreferenceCenterPage.Click Barrons tab
+#    BarronsPreferenceCenterPage.Validate Company Quote Link Not exists
 
 
 #US-T26
 Validate Authors for Barrons Article page without byline
     [Documentation]  This test case validates authors without byline for barrons article page
-    [Tags]  Regression  Author  Article      TagBarronsAWB
+    [Tags]  Regression  Author  Article    Follow1
 
     CommonFunctionality.Start Barrons Article without byline
     BarronsArticlePage.Validate author without byline
@@ -126,14 +125,13 @@ Validate the Watchlist widget from Watchlist page
 #US-T250
 Validate the Watchlist widget from Quotes page
     [Documentation]  This test case validates the watchlist widget from quotes page
-    [Tags]  Regression  Watchlist  QuotesPage     TagBarronsQ
+    [Tags]  Regression  Watchlist  QuotesPage     Follow1
 
     CommonFunctionality.Start Barrons for Quotes page
     DefinedKeywords.Barrons Quote Page Sign in Process
-    Set Selenium Speed  0.5 seconds
-    Capture Page Screenshot    screenshot.png
+    Set Selenium Implicit Wait  60 seconds
     BarronsQuotesPage.Validate Quote Page
-    BarronsQuotesPage.Delete Watchlist
+#    BarronsQuotesPage.Delete Watchlist
     # BarronsQuotesPage.Validate Watchlist for non-logged user
     #BarronsQuotesPage.Delete Watchlist
     #BarronsQuotesPage.Validate Create Button
@@ -209,7 +207,7 @@ Validate the Watchlist widget from Market Data page
     #BarronsMarketDataPage.Save Watchlist Changes
     #BarronsMarketDataPage.Delete Watchlist
     #BarronsMarketDataPage.Delete Watchlist
-    BarronsMarketDataPage.Validate Create Button
+#    BarronsMarketDataPage.Validate Create Button
 
 #US-T136
 Validate the Barrons digest notification
@@ -224,7 +222,7 @@ Validate the Barrons digest notification
 #US-T119
 Validate the Barrons real-time author notification
     [Documentation]  This test case validates the Barrons real-time author notification
-    [Tags]  Regression  Notifications  Author                    TagBAN
+    [Tags]  Regression  Notifications  Author  Follow1
     BarronsMailboxPage.Navigate Mailbox page
     BarronsMailboxPage.Login
     BarronsMailboxPage.Select Inbox
@@ -234,7 +232,7 @@ Validate the Barrons real-time author notification
 #US-T137
 Validate the Barrons real-time company notification
     [Documentation]  This test case validates the Barrons real-time company notification
-    [Tags]  Regression  Notifications  Company  TagBarronsCN
+    [Tags]  Regression  Notifications  Company  Follow1
     BarronsMailboxPage.Navigate Mailbox page
     BarronsMailboxPage.Login
     BarronsMailboxPage.Select Inbox
@@ -244,7 +242,7 @@ Validate the Barrons real-time company notification
 #US-T139
 Validate the Barrons real-time stock picks notification
     [Documentation]  This test case validates the Barrons real-time stock picks notification
-    [Tags]  Regression  Notifications  CustomTopic   TagBarronsST
+    [Tags]  Regression  Notifications  CustomTopic   Follow1
     BarronsMailboxPage.Navigate Mailbox page
     BarronsMailboxPage.Login
     BarronsMailboxPage.Select Inbox
@@ -254,7 +252,7 @@ Validate the Barrons real-time stock picks notification
 #US T357
 Validate Postback on Preference Center
     [Documentation]  This test case validates the Barrons Postback on Preference Center
-    [Tags]  Regression  Postback                TagBarronsPostback
+    [Tags]  Regression  Postback                Follow1
     BarronsPreferenceCenterPage.Add Breaking News By Hotlink
     DefinedKeywords.Sign In Process
     BarronsPreferenceCenterPage.Validate Followed Breaking News

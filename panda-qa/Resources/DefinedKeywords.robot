@@ -213,8 +213,8 @@ WSJ Sign In Process
     Wait Until Element Is Not Visible  //input[@type='submit']  #//*[@id="password-login"]/div/form/div/div[5]/div[1]/button
 
 New WSJ Sign In Process
-    Click Button  //input[@type='text']
-    Input Text  //input[@type='text']  newsroomdev.test.6@dowjones.com  #newsroomdev.test@dowjones.com  #akhilesh.khanduri@dowjones.com
+    Click Button  //*[@id="emailOrUsername"]
+    Input Text  //*[@id="emailOrUsername"]  newsroomdev.test.6@dowjones.com  #newsroomdev.test@dowjones.com  #akhilesh.khanduri@dowjones.com
     Set Selenium Implicit Wait  10s
     Click Button  //input[@type='submit']  #//*[@id="basic-login"]/div[1]/form/div[2]/div[6]/div[1]/button[2]
     Set Selenium Implicit Wait  10s
