@@ -98,7 +98,7 @@ Validate Postback on Preference Center
 #US-T113
 Validate Private Equity News Capabilities Dashboard for Author
     [Documentation]  This test case validates the PEN Capabilities Dashboard for Author
-    [Tags]  Regression  Capabilities  Author       TagPECB
+    [Tags]  Regression  Capabilities  Author      Follow1
     PENCapabilitiesPage.Navigate Capabilities Dashboard page
     PENCapabilitiesPage.Click Login button
     PENCapabilitiesPage.Capabilities Dashboard Sign In Process

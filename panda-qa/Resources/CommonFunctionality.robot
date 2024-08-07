@@ -3,6 +3,10 @@ Library  SeleniumLibrary
 Resource  ../Resources/DefinedKeywords.robot
 
 *** Variables ***
+${BROWSERSTACK_USERNAME}=   newsroomdevtest_xCBmjv
+${BROWSERSTACK_ACCESS_KEY}=  s3c1cGNU2UpLq5iJzNzx
+${BROWSERSTACK_URL}=   https://automate.browserstack.com/dashboard/v2/builds/3263aa6a845e0b5e2d6e245b9107760e32c3105f?projectIds=2299596${BROWSERSTACK_USERNAME}:${BROWSERSTACK_ACCESS_KEY}@hub-cloud.browserstack.com/wd/hub
+
 ${CookieValue1}=  x-dev-access-clientid
 ${ExpectedCookieValue1}=    quality-engineering
 
@@ -78,7 +82,8 @@ Start Barrons Article
        Open Browser  https://www.barrons.com  ${Browser}  options=${options}
         Go To  https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634
     ELSE IF  "${Env}" == "dev"
-       Open Browser  https://www.s.dev.barrons.com  ${Browser}  options=${options}
+       Open Browser  https://www.barrons.com  ${Browser}  options=${options}
+
         Go To  https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000
     END
     Wait Until Page Contains Element  dom:${JSFollowButtonBarronsPath}
@@ -116,7 +121,7 @@ Start Sailthru Page
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://my.sailthru.com/  ${Browser}  options=${options}  #https://www.sailthru.com/u/login/identifier?state=hKFo2SBzVlExaTIyc3FUbGQtT2l2NE0zbkhSMVlxN083OWNJc6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDdqQmpDZ3duMEp2SE11aDduU1JLSzJ3WTRqT1E2RGFGo2NpZNkgeEtmRXhYazVyeGZTN01pbzJkcFRadzI1eHp5UHF4bjM  #https://www.sailthru.com/?doing_wp_cron=1709648423.2007079124450683593750  ${Browser}  options=${options}
+        Open Browser  https://my.sailthru.com/  ${Browser}  options=${options}   #https://www.sailthru.com/u/login/identifier?state=hKFo2SBzVlExaTIyc3FUbGQtT2l2NE0zbkhSMVlxN083OWNJc6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDdqQmpDZ3duMEp2SE11aDduU1JLSzJ3WTRqT1E2RGFGo2NpZNkgeEtmRXhYazVyeGZTN01pbzJkcFRadzI1eHp5UHF4bjM  #https://www.sailthru.com/?doing_wp_cron=1709648423.2007079124450683593750  ${Browser}  options=${options}
         Go To   https://my.sailthru.com/  #https://login.sailthru.com/u/login/identifier?state=hKFo2SBzVlExaTIyc3FUbGQtT2l2NE0zbkhSMVlxN083OWNJc6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDdqQmpDZ3duMEp2SE11aDduU1JLSzJ3WTRqT1E2RGFGo2NpZNkgeEtmRXhYazVyeGZTN01pbzJkcFRadzI1eHp5UHF4bjM
     ELSE IF  "${Env}" == "dev"
         Open Browser  https://my.sailthru.com/  ${Browser}  options=${options}  #https://login.sailthru.com/u/login/identifier?state=hKFo2SBzVlExaTIyc3FUbGQtT2l2NE0zbkhSMVlxN083OWNJc6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDdqQmpDZ3duMEp2SE11aDduU1JLSzJ3WTRqT1E2RGFGo2NpZNkgeEtmRXhYazVyeGZTN01pbzJkcFRadzI1eHp5UHF4bjM  ${Browser}  options=${options}
@@ -137,7 +142,7 @@ Start WSJ Article
     Maximize Browser Window
 
 Start Market Watch Article
-    Set Selenium Speed  1 seconds
+    Set Selenium Speed  0.1 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.marketwatch.com  ${Browser}  options=${options}
@@ -200,14 +205,6 @@ Start Mansion Global Article without byline
     END
     Maximize Browser Window
 
-
-
-
-
-
-
-
-
 Start Market Watch Article without byline
     Set Selenium Speed  1 seconds
     ${options} =  Set Browser Options
@@ -240,6 +237,7 @@ Start WSJ Article without byline
         Go To  https://www.wsj.com/articles/let-desantis-fight-trump-before-putin-bakhmut-offensive-cease-fire-settlement-kremlin-weapons-b127514a?cx_testId=3&cx_testVariant=cx_171&cx_artPos=1&mod=WTRN#cxrecs_s
     ELSE IF  "${Env}" == "dev"
         Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
+
         Go To  https://www.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     END
     Maximize Browser Window

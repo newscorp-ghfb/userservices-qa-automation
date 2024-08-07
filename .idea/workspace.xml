@@ -4,20 +4,108 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated the test cases for MarketWatch Price and Volume alerts on the alerts and Quote page.">
-      <change afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/BarronsStockScreenerPage.robot" afterDir="false" />
+    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated the browser version, desired capabilities and Xpath for the web elements in order to fix all the entire test cases under the Regression test suite.">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/userservices-qa-automation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/userservices-qa-automation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/02f0acf8-2acc-42b8-a984-bb28a554a894-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/0347cf7d-f4a1-48f6-bdb5-a5975cc9ed44-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/03feffaa-c8e4-4f5b-9933-90b97296600e-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/062d6efe-a31d-421d-b93e-425bec9cefc0-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/0e50f850-d90e-4d58-aa15-c79a3e1846a8-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/19af9d8c-858d-420f-868a-b4df737e9a88-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/220e8c92-bde0-4cbe-b927-463684cf1723-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/22674ac1-3fe0-4307-a77d-7d4e142e127f-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/249315db-2059-4c74-89f6-e1e2e40d9cd8-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/269aed4d-08c7-4be1-9b0d-f7c54ad61269-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/2867b127-39dc-454b-bce0-b82345e35f9c-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/2966bd1d-4141-4a45-aa99-b43d5618a2e0-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/2f8d1c74-a3f4-4961-829a-4eb08dd25f8b-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/2fa06746-b6b1-446b-ae35-ae6eeb15ba86-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/3b8360b3-5415-446b-abb1-75dc55bc2c94-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/3b8d857a-aeba-4470-a431-641ae04eef0c-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/45650582-ebe3-49fb-85fa-b53d598c5908-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/45a29eb7-19ca-4cef-a445-93a70074aa65-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/4907449c-549c-44f0-a3ea-f78e800ac35d-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/4ae39afa-7d18-46f5-a72e-676924e2b8e9-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/4bca2bb7-adf5-46f8-aae4-f8c777473692-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/4d294a31-40d4-4116-9c71-db4e7c676821-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/4d4fb7ff-3308-4660-b024-f158aa29f744-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/68fe1788-1e9f-46de-aaf3-e14e67fa19e0-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/6a130505-5d0e-46c5-b164-19f5c816bbb7-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/6dfb5f50-9834-4ce7-8012-d5a150d01538-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/70505757-8d09-4779-bfea-7f91efc24455-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/73922789-ce0d-48be-891d-3fd1e733fc23-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/7496c59e-7d15-45e8-8e2b-2cf97f6c9743-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/75f1dbac-75c5-40bc-8187-a8ec357e4627-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/7e4e0a99-7cb0-411b-9739-4bbf890132cd-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/88f827ab-1f6a-4983-bd36-8d23b408c32d-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/89070e49-3401-44e7-8fc3-0b22be608103-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/8ba6abe6-2984-4524-86c1-7a65c4b55e0b-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/8f50810f-b0bd-4ffb-bd74-ba6ac65f1ac0-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/91a8a9d5-dee7-4af4-a032-6ba4d737f4de-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/920ddb64-8ff6-4208-ac65-8b56ebc6e1df-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/953de1e8-21c5-4864-b51e-e504d03e91d0-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/957d0d75-e046-44e6-b6d5-5c2821ac2625-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/981408bd-eda8-4de3-a221-e56c140c3d5e-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/98383456-8a06-4656-b08e-e67d19f45c62-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/99214622-158c-4d40-ac69-c2aae5b69ecc-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/a0c5c619-3c64-41c4-bb09-59f17740bc86-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/a126326c-4795-4653-8538-a747781d2252-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/a225ebfc-8b18-48b5-9e1e-6d964a930c10-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/a3150ae2-8359-4c8a-825e-8c38ede50e53-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/a4e9bcef-bc66-4099-893a-439626f073c9-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/a5846c07-4dbe-40e9-8cc3-2a841705a9c6-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/a5c7c94f-88ca-42b4-9b51-7dfeefd17d95-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/aa1d5370-0f7d-4f8c-ab00-1f633569255b-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/af0f2877-bfcd-4696-9cda-51cf654e1139-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/bd3c44ec-01aa-401f-9777-400d6f89df1b-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/bdd34faa-e4eb-444f-a78d-722c41f9618f-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/bfb5fa23-34e2-4036-8faa-a7027e940bf5-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/c95ac5ad-c93d-4fd9-9ce0-5e80d45d6008-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/cd63ba52-1ee5-48f2-b77c-ffaffcae5313-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/cd847678-14b4-4079-955a-1f142e3f1f17-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/cecd853b-42ee-44c1-aa22-c5778b1755d9-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/cf969fd1-9065-4707-8020-11fa71ad7269-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/d9101ab8-c07b-4507-acc9-07521dfb8f10-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/da003e76-a606-4c25-9399-8a5248f163a2-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/da4522a9-d144-4eb1-8a05-86ae31248b9e-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/dd352b5e-def6-4bf6-bb83-478f6e9efe85-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/ddc6fed2-421c-421a-bd2c-8e6eb29c78e3-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/df71c7c4-e88f-4994-9634-d340277c6bc1-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/e7500a7d-8fe1-4784-b2b1-c25be67bb6b9-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/e77bc3a7-ccbd-456a-8294-7109ff536351-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/e8296672-d618-41e5-a209-81f2a0375867-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/e838bf1e-ef2a-442f-85b7-daeebd2540f8-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/e954f925-3b6d-49c7-a37d-4780c16bcd9c-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/eaee963b-e680-4f04-9306-b06f47384462-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/edc0737c-585b-4dbe-b993-a3009294d300-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/ef020bd3-5b5e-4cee-b2be-9a67a5c8fc13-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/f0d51c7a-9fb8-4829-ac5e-420a45d6e256-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/f42dce1b-0061-489b-b123-e64c36a7c2e2-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/f58ef527-b12f-416d-a522-3b956734099e-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/f6ca57d9-4c16-4833-86d4-6feafee882d7-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/fa424e10-a4fb-4290-8f24-0539f18dd3fc-attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/allure/fd710144-04af-4b7e-a2a5-82eefbff90f3-attachment.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/panda-qa/Resources/DefinedKeywords.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/DefinedKeywords.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/BarronsArticlePage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/BarronsArticlePage.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/BarronsQuotesPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/BarronsQuotesPage.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJArticlePage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJArticlePage.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJPreferenceCenterPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJPreferenceCenterPage.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJWatchlistPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJWatchlistPage.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/API_Automation.robot" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/Barrons_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/Barrons_Regression.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/FN_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/FN_Regression.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/MansionGlobal_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/MansionGlobal_Regression.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/MarketWatch_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/MarketWatch_Regression.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/PEN_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/PEN_Regression.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/WSJ_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/WSJ_Regression.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Smoke/WSJ_Smoke.robot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/results/screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/results/screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-screenshot-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-screenshot-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-screenshot-3.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +116,7 @@
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="Akhilesh-Latest-BarronsRegression" />
+        <entry key="$PROJECT_DIR$/python-selenium-browserstack" value="5a2688e59f1dc4af5c36ade5c50f4d088c958ff0" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -91,6 +180,13 @@
     <setting file="file://$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/MarketWatch_Regression.robot" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/Sailthru_Regression.robot" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/WSJ_Regression.robot" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Smoke/WSJ_Smoke.robot" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -111,7 +207,8 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;Akhilesh-Regression-Testing-Latest&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Codes/Jenkins_2050/userservices-qa-automation&quot;
+    &quot;last_opened_file_path&quot;: &quot;D:/Codes/Jenkins_2050/userservices-qa-automation&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;
   }
 }</component>
   <component name="ReadonlyStatusHandler">
@@ -120,6 +217,12 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Codes\Jenkins_2050\userservices-qa-automation\panda-qa\Tests\FollowWidget\Smoke" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\khanduria\PycharmProjects\panda-qa-develop\panda-qa" />
+      <recent name="D:\Users\khanduria\PycharmProjects\panda-qa-develop\panda-qa\Resources" />
+      <recent name="D:\Users\khanduria\PycharmProjects\panda-qa-develop\panda-qa\results\Tests\FollowWidget\Smoke\pabot_results" />
+      <recent name="D:\Users\khanduria\PycharmProjects\panda-qa-develop\panda-qa\results" />
     </key>
   </component>
   <component name="RunManager">
@@ -136,6 +239,27 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="" />
       <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test-script" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="userservices-qa-automation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/panda-qa" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/panda-qa/test-script.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -186,6 +310,11 @@
       <option name="docutils_open_in_browser" value="false" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.test-script" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -195,70 +324,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1702390104711</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Updated Xpath for Companies on MarketWatch Preference Center page">
-      <option name="closed" value="true" />
-      <created>1706801662055</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1706801662055</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Updated Xpath for Follow Toggle feature button on MarketWatch Preference Center page">
-      <option name="closed" value="true" />
-      <created>1707143551375</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1707143551375</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Updated relevant Xpath for Marketwatch author's notification">
-      <option name="closed" value="true" />
-      <created>1707144769748</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1707144769748</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Updated relevant Xpath for Marketwatch real-time company notification">
-      <option name="closed" value="true" />
-      <created>1707145039200</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1707145039200</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Updated relevant Xpath for Marketwatch real-time company notification">
-      <option name="closed" value="true" />
-      <created>1707148074409</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1707148074409</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Updated relevant Xpath for Marketwatch Read More option on real-time company notification page">
-      <option name="closed" value="true" />
-      <created>1707148202835</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1707148202835</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Updated relevant Xpath and Element ID for Marketwatch real-time company notification page">
-      <option name="closed" value="true" />
-      <created>1707148587286</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1707148587286</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Updated relevant Xpath and Element ID for Marketwatch author without byline and Postback functionality">
-      <option name="closed" value="true" />
-      <created>1707232345117</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1707232345118</updated>
     </task>
     <task id="LOCAL-00022" summary="Updated relevant Xpath and Element ID for Marketwatch author without byline and Postback functionality">
       <option name="closed" value="true" />
@@ -588,7 +653,71 @@
       <option name="project" value="LOCAL" />
       <updated>1715694063526</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Updated the test cases for Barrons Stock Screener, WSJ Editorials Breadcrumbs articles, WSJ Commentary articles and Barrons Quotes pages.">
+      <option name="closed" value="true" />
+      <created>1717167200131</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1717167200132</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Updated the test cases for WSJ OKTA Authentication bypass by adding CommonFunctionality.CookieTestWSJ file">
+      <option name="closed" value="true" />
+      <created>1719494485184</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1719494485184</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Updated the test cases for WSJ OKTA Authentication bypass and Barron's Stock Screener by adding cookies as well as set the Browser options under the CommonFunctionality.robot file.">
+      <option name="closed" value="true" />
+      <created>1720181491993</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1720181491994</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Updated and fixed the test cases for brands as Barrons,FN London and Mansion Global under the Smoke test suite for their execution on Jenkins">
+      <option name="closed" value="true" />
+      <created>1720191900341</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1720191900341</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Updated the browser options and fixed the test cases for brands as FN London and Mansion Global under the Smoke test suite for their execution on Jenkins">
+      <option name="closed" value="true" />
+      <created>1720447148714</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1720447148715</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Updated the Xpath and fixed the test cases for brands as MarketWatch and PE News under the Smoke test suite for their execution on Jenkins.">
+      <option name="closed" value="true" />
+      <created>1720540255872</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1720540255872</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Updated the relevant Xpath and fixed the test cases for Barron's under the Smoke test suite for their execution on Jenkins">
+      <option name="closed" value="true" />
+      <created>1720621384982</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1720621384982</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Updated the browser version, desired capabilities and Xpath for the web elements in order to fix all the entire test cases under the Regression test suite.">
+      <option name="closed" value="true" />
+      <created>1722351439489</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1722351439489</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -615,14 +744,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated the Browser options and environment for PEN Capabilities page" />
-    <MESSAGE value="Updated and added the test case for ST authors validation using Sailthru" />
-    <MESSAGE value="Updated the regression test case for ST authors validation using Sailthru" />
-    <MESSAGE value="Updated the browser for CommonFunctionality Page" />
-    <MESSAGE value="Updated the Sailthru Sign In Process on CommonFunctionality Page" />
-    <MESSAGE value="Updated the Sailthru Sign In Process and created test cases for STCustomTopics, STCampaign and STCompanies." />
-    <MESSAGE value="Updated the Sailthru Regression test case" />
-    <MESSAGE value="Updated the Sailthru Regression test cases for ST authors, ST company, ST campaigns and ST custom topics." />
     <MESSAGE value="Updated the Sailthru Regression test cases for navigating to WSJ Preference Center page for comparing ST authors, ST company, ST campaigns and ST custom topics." />
     <MESSAGE value="Updated the Sailthru Regression test cases for the users lookup in order to get the subscribed ST authors, ST companies, ST campaigns and ST custom topics." />
     <MESSAGE value="Updated the web elements under WSJ regression file" />
@@ -640,6 +761,14 @@
     <MESSAGE value="Updated the xpath for Price and Volume alerts to overview historical quotes and updating the new WSJ Sign In Process for test user" />
     <MESSAGE value="Updated the xpath for Price and Volume alerts to overview historical quotes and updating the new WSJ Test user Sign In Process for Watchlist" />
     <MESSAGE value="Updated the test cases for MarketWatch Price and Volume alerts on the alerts and Quote page." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the test cases for MarketWatch Price and Volume alerts on the alerts and Quote page." />
+    <MESSAGE value="Updated the test cases for Barrons Stock Screener, WSJ Editorials Breadcrumbs articles, WSJ Commentary articles and Barrons Quotes pages." />
+    <MESSAGE value="Updated the test cases for WSJ OKTA Authentication bypass by adding CommonFunctionality.CookieTestWSJ file" />
+    <MESSAGE value="Updated the test cases for WSJ OKTA Authentication bypass and Barron's Stock Screener by adding cookies as well as set the Browser options under the CommonFunctionality.robot file." />
+    <MESSAGE value="Updated and fixed the test cases for brands as Barrons,FN London and Mansion Global under the Smoke test suite for their execution on Jenkins" />
+    <MESSAGE value="Updated the browser options and fixed the test cases for brands as FN London and Mansion Global under the Smoke test suite for their execution on Jenkins" />
+    <MESSAGE value="Updated the Xpath and fixed the test cases for brands as MarketWatch and PE News under the Smoke test suite for their execution on Jenkins." />
+    <MESSAGE value="Updated the relevant Xpath and fixed the test cases for Barron's under the Smoke test suite for their execution on Jenkins" />
+    <MESSAGE value="Updated the browser version, desired capabilities and Xpath for the web elements in order to fix all the entire test cases under the Regression test suite." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the browser version, desired capabilities and Xpath for the web elements in order to fix all the entire test cases under the Regression test suite." />
   </component>
 </project>
