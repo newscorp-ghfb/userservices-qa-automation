@@ -83,7 +83,6 @@ Start Barrons Article
         Go To  https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634
     ELSE IF  "${Env}" == "dev"
        Open Browser  https://www.barrons.com  ${Browser}  options=${options}
-
         Go To  https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000
     END
     Wait Until Page Contains Element  dom:${JSFollowButtonBarronsPath}

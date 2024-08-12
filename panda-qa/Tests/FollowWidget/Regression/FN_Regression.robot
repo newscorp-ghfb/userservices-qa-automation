@@ -18,7 +18,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T85
 #US-T86
 Validate the FN Preference Center page
-#This is my third PR
+
     [Documentation]  This test case validates the FN London News preference center page
     [Tags]  Regression  PreferenceCenter  Follow1
 

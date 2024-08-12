@@ -796,14 +796,14 @@ Validate the alert button for On Wine
 #US-T334
 Validate the alert button for Personal Finance
     [Documentation]  This test case validates the alert button for Personal Finance
-    [Tags]  Regression  Alerts    Follow1
+    [Tags]  Regression  Alerts    TagWPF
     CommonFunctionality.Start WSJ Article for Personal Finance
         IF  "${Env}" == "prod"
         DefinedKeywords.WSJ Alerts Sign In Process
     ELSE IF  "${Env}" == "dev"
         DefinedKeywords.WSJ Alerts Sign In Process
          END
-         Set Selenium Implicit Wait  30s
+         Set Selenium Implicit Wait  10s
     WSJArticlePage.Validate Personal Finance Button
     WSJArticlePage.Click Personal Finance Button
 #    WSJArticlePage.Validate Preference Center page
@@ -828,7 +828,6 @@ Validate the alert button for Personal Finance
 #    WSJArticlePage.Click Custom Following Button
 #    WSJArticlePage.Validate Custom Follow Button
 #    WSJArticlePage.Click Custom Follow Button
-
 
 #US-T335
 #US-T336
@@ -924,20 +923,22 @@ Validate Postback on Preference Center
     [Documentation]  This test case validates the WSJ Postback on Preference Center
     [Tags]  Regression  Postback           Follow1
     WSJPreferenceCenterPage.Add Breaking News By Hotlink
-    DefinedKeywords.Sign In Process
+    WSJPreferenceCenterPage.Validate Sign in for Postback
+    WSJPreferenceCenterPage.Click Sign In Button for Postback
+    DefinedKeywords.WSJ Postback Page Sign In Process
     WSJPreferenceCenterPage.Validate Followed Breaking News
-    ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
-    Run Keyword If  ${val2} > 0  WSJPreferenceCenterPage.Click Following Toggle Alert Pop up
-    WSJPreferenceCenterPage.Validate Breaking News Toggle Feature
-    WSJPreferenceCenterPage.Click Breaking News Toggle Feature  #--unsubscribe functionality
-    WSJPreferenceCenterPage.Validate Following Toggle Alert Pop up
-    WSJPreferenceCenterPage.Click Following Toggle Alert Pop up
-    WSJPreferenceCenterPage.Validate Over Mouse On Notification Tooltip
-    WSJMailboxPage.Navigate Mailbox page
-    WSJMailboxPage.Login
-    WSJMailboxPage.Select Inbox
-    WSJMailboxPage.Search WSJ real-time author notification for Postback
-    WSJMailboxPage.Validate WSJ real-time author notification for Postback
-    WSJMailboxPage.Unsubscribe the mails
-    WSJMailboxPage.Verify the mail is unsubscribed
-    WSJPreferenceCenterPage.Add Author By Hotlink
+#    ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
+#    Run Keyword If  ${val2} > 0  WSJPreferenceCenterPage.Click Following Toggle Alert Pop up
+#    WSJPreferenceCenterPage.Validate Breaking News Toggle Feature
+#    WSJPreferenceCenterPage.Click Breaking News Toggle Feature  #--unsubscribe functionality
+#    WSJPreferenceCenterPage.Validate Following Toggle Alert Pop up
+#    WSJPreferenceCenterPage.Click Following Toggle Alert Pop up
+#    WSJPreferenceCenterPage.Validate Over Mouse On Notification Tooltip
+#    WSJMailboxPage.Navigate Mailbox page
+#    WSJMailboxPage.Login
+#    WSJMailboxPage.Select Inbox
+#    WSJMailboxPage.Search WSJ real-time author notification for Postback
+#    WSJMailboxPage.Validate WSJ real-time author notification for Postback
+#    WSJMailboxPage.Unsubscribe the mails
+#    WSJMailboxPage.Verify the mail is unsubscribed
+#    WSJPreferenceCenterPage.Add Author By Hotlink

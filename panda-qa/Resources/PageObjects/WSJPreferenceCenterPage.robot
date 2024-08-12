@@ -4,7 +4,7 @@ Resource  ../../Resources/CommonFunctionality.robot
 
 *** Variables ***
 ${JSSignInButtonWSJPath}=  document.querySelector("body > div:nth-child(37) > ufc-portal > ufc-signin-modal").shadowRoot.querySelector("div > div.modal > focus-trap > div.footer > ufc-button > button")
-
+#${JSWSJPostbackSigninPath}=  document.querySelector("body > div:nth-child(36) > ufc-portal > ufc-signin-modal").shadowRoot.querySelector("div > div.modal > focus-trap > div.footer > ufc-button > button")
 ${JSFollowAuthorButtonWSJPath}=  document.querySelector("#__next > div > main > div.article-container.css-11dgf.e1wkb4h46 > article > div.crawler.css-j6808u.e1noyqgz9 > div.eui4bu22.css-hb9xd5 > div > div > div > div.css-1mfi1zu > div > div > div > ufc-follow-author-widget").shadowRoot.querySelector("ufc-follow-widget > ufc-follow-button").shadowRoot.querySelector("button")
 *** Keywords ***
 
@@ -221,10 +221,16 @@ Add Legacy Company By Hotlink
     END
 
 Add Breaking News By Hotlink
-    Go To  https://www.dev.wsj.com/follow?alert=news_alert&id=NewsAlertEmailTechnology
+    Go To  https://www.dev.wsj.com/preference-center/alerts?alert=news_alert&id=NewsAlertEmailTechnology  #https://www.dev.wsj.com/follow?alert=news_alert&id=NewsAlertEmailTechnology
 
 Validate Followed Breaking News
     Page Should Contain  NEWS ALERTS
+
+Validate Sign in for Postback
+    Page Should Contain Element  //*[text()='Sign In']
+
+Click Sign In Button for Postback
+  Click Element  //*[text()='Sign In']
 
 Validate Over Mouse On Notification Tooltip
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/thead/tr/th[3]/div/button/span

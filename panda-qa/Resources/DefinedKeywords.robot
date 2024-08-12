@@ -34,6 +34,20 @@ Sign In Process
    Click Element  //html/body/div/section/div/div[2]/form/button  #//html/body/main/div[2]/section[16]/div/form/div[5]/button
    Set Selenium Implicit Wait  60
 
+WSJ Postback Page Sign In Process
+   Wait Until Element Is Visible  //*[@id="emailOrUsername"]
+   Click Element   //*[@id="emailOrUsername"]
+   Input Text  //*[@id="emailOrUsername"]  akhilesh.khanduri@dowjones.com  #//*[@id=":r5:-form-item"]  QABARRONSONLY  #akhilesh.khanduri@dowjones.com
+   Set Selenium Implicit Wait  10s
+   Click Button  //html/body/div/section/div/div[2]/form/button[1]
+   Set Selenium Implicit Wait  10s
+   Wait Until Element Is Visible  //*[@id="password"]
+   Input Text  //*[@id="password"]  AKpolarszxi2594
+   Set Selenium Implicit Wait  10
+   Wait Until Element is Visible  //html/body/div/section/div/div[2]/form/button
+   Click Element  //html/body/div/section/div/div[2]/form/button  #//html/body/main/div[2]/section[16]/div/form/div[5]/button
+   Set Selenium Implicit Wait  60
+
 FN Sign In Process
     IF  "${Env}" == "prod"
         ${Email}=  Set Variable  ${Email_prod}
@@ -235,6 +249,23 @@ New WSJ Sign In Process
 #    Set Selenium Implicit Wait  10s
 #    Click Button  //input[@type='submit']
 
+PE News Capabilities Dashoard Sign In Process
+    Click Button  //input[@type='text']
+    Input Text  //input[@type='text']  newsroomdev.test@dowjones.com  #newsroomdev.test@dowjones.com  #akhilesh.khanduri@dowjones.com
+    Set Selenium Implicit Wait  10s
+    Click Button  //input[@type='submit']  #//*[@id="basic-login"]/div[1]/form/div[2]/div[6]/div[1]/button[2]
+    Set Selenium Implicit Wait  10s
+    Wait Until Element Is Visible  //input[@type='password']  #//*[@id="password-login-password"]
+    Input Text  //input[@type='password']   B9oB6pTg4LO8obgDjsy6Gjj9vUE2fe
+        #VTdnnCgCnny100g62    #AKpolarzx@2594  #68L91AbU?98&T-Ryk7h|c}Q:uX   #//*[@id="password-login-password"]  #Cuceis19841234!
+    Set Selenium Implicit Wait  10s
+    Click Button  //input[@type='submit']  #//*[@id="password-login"]/div/form/div/div[5]/div[1]/button
+    Set Selenium Implicit Wait  30s
+    Wait Until Element Is Visible  //*[@id="input55"]   #//*[@id="password-login-password"]
+    Input Text  //*[@id="input55"]  QA integration testing
+    Set Selenium Implicit Wait  10s
+    Click Button  //input[@type='submit']
+
 New WSJ Test User Sign In Process
     Click Button  //input[@type='text']
     Input Text  //input[@type='text']  newsroomdev.test.6@dowjones.com  #akhilesh.khanduri@dowjones.com
@@ -320,7 +351,6 @@ WSJ Alerts Sign In Process
    Wait Until Element is Visible  //html/body/div/section/div/div[2]/form/button
    Click Element  //html/body/div/section/div/div[2]/form/button  #//html/body/main/div[2]/section[16]/div/form/div[5]/button
    Set Selenium Implicit Wait  60
-
 
 WSJ Watchlist Sign In Process
     Click Button  //*[@id="password-login-username"]

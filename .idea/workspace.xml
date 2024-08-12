@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated the browser version, desired capabilities and Xpath for the web elements in order to fix all the entire test cases under the Regression test suite.">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/userservices-qa-automation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/userservices-qa-automation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated the browser version, desired capabilities and Xpath for the web elements in order to fix and execute all the entire test cases under the Regression test suite on Browserstack.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/allure/02f0acf8-2acc-42b8-a984-bb28a554a894-result.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/output/allure/0347cf7d-f4a1-48f6-bdb5-a5975cc9ed44-attachment.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/output/allure/03feffaa-c8e4-4f5b-9933-90b97296600e-attachment.html" beforeDir="false" />
@@ -92,12 +87,11 @@
       <change beforePath="$PROJECT_DIR$/output/allure/fd710144-04af-4b7e-a2a5-82eefbff90f3-attachment.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/panda-qa/Resources/DefinedKeywords.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/DefinedKeywords.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJArticlePage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJArticlePage.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/PENCapabilitiesPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/PENCapabilitiesPage.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJPreferenceCenterPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJPreferenceCenterPage.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/API_Automation.robot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/Barrons_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/Barrons_Regression.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/FN_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/FN_Regression.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/MansionGlobal_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/MansionGlobal_Regression.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/MarketWatch_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/MarketWatch_Regression.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/PEN_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/PEN_Regression.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/WSJ_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/WSJ_Regression.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Smoke/WSJ_Smoke.robot" beforeDir="false" />
@@ -324,14 +318,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1702390104711</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Updated relevant Xpath and Element ID for Marketwatch author without byline and Postback functionality">
-      <option name="closed" value="true" />
-      <created>1707397168746</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1707397168746</updated>
     </task>
     <task id="LOCAL-00023" summary="Updated relevant Xpath and Element ID for Marketwatch real-time company notification for Postback">
       <option name="closed" value="true" />
@@ -717,7 +703,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722351439489</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Updated the browser version, desired capabilities and Xpath for the web elements in order to fix and execute all the entire test cases under the Regression test suite on Browserstack.">
+      <option name="closed" value="true" />
+      <created>1723040378483</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1723040378483</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -744,7 +738,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated the Sailthru Regression test cases for navigating to WSJ Preference Center page for comparing ST authors, ST company, ST campaigns and ST custom topics." />
     <MESSAGE value="Updated the Sailthru Regression test cases for the users lookup in order to get the subscribed ST authors, ST companies, ST campaigns and ST custom topics." />
     <MESSAGE value="Updated the web elements under WSJ regression file" />
     <MESSAGE value="Updated xpath for FN article without byline" />
@@ -769,6 +762,7 @@
     <MESSAGE value="Updated the Xpath and fixed the test cases for brands as MarketWatch and PE News under the Smoke test suite for their execution on Jenkins." />
     <MESSAGE value="Updated the relevant Xpath and fixed the test cases for Barron's under the Smoke test suite for their execution on Jenkins" />
     <MESSAGE value="Updated the browser version, desired capabilities and Xpath for the web elements in order to fix all the entire test cases under the Regression test suite." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the browser version, desired capabilities and Xpath for the web elements in order to fix all the entire test cases under the Regression test suite." />
+    <MESSAGE value="Updated the browser version, desired capabilities and Xpath for the web elements in order to fix and execute all the entire test cases under the Regression test suite on Browserstack." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the browser version, desired capabilities and Xpath for the web elements in order to fix and execute all the entire test cases under the Regression test suite on Browserstack." />
   </component>
 </project>
