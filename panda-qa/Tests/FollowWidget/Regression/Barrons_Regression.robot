@@ -99,7 +99,7 @@ Validate Authors for Barrons Article page without byline
 #US-T217
 Validate the Watchlist widget from Watchlist page
     [Documentation]  This test case validates the watchlist widget from watchlist page
-    [Tags]  Regression  Watchlist      TagBarronsWW
+    [Tags]  Regression  Watchlist      Follow1
 
     CommonFunctionality.Start Barrons for Watchlist page
     DefinedKeywords.Sign In Process
@@ -139,7 +139,7 @@ Validate the Watchlist widget from Quotes page
 #US-T384
 Verify if a user is able to login into Barrons Stock Screener and access the Featured Preset Screeners without any subscription for free review.
     [Documentation]  This test case validates that a user is able to login into Barrons Stock Screener and access the Featured Preset Screeners without any subscription for free review.
-    [Tags]  Barrons StockScreener Page      TagBSFP
+    [Tags]  Barrons StockScreener Page      Follow1
 
     CommonFunctionality.Start Barrons Stock Screener Page for Featured Preset Screener
     Set Selenium Speed  0.25 seconds
@@ -152,7 +152,7 @@ Verify if a user is able to login into Barrons Stock Screener and access the Fea
 #US-T385
 Verify if a user is able to navigate to Barrons Stock Screener and subscribe in order to edit the list of featured preset screens.
     [Documentation]  This test case validates that a user is able to subscribe and login into Barrons Stock Screener in order to edit the list of featured preset screens.
-    [Tags]  Barrons StockScreener Page      TagBSFPS
+    [Tags]  Barrons StockScreener Page      Follow1
 
     CommonFunctionality.Start Barrons Stock Screener Page for Featured Preset Screener
     Set Selenium Speed  0.2 seconds
@@ -182,7 +182,7 @@ Verify if a user is able to navigate to Barrons Stock Screener and subscribe in 
 #US-T130
 Validate the Watchlist widget from Market Data page
     [Documentation]  This test case validates the watchlist widget from market data page
-    [Tags]  Regression  Watchlist  MarketdataPage   TagBarronsMDP
+    [Tags]  Regression  Watchlist  MarketdataPage   Follow1
 
     CommonFunctionality.Start Barrons for Market Data page
     BarronsMarketDataPage.Validate Watchlist for non-logged user
@@ -212,7 +212,7 @@ Validate the Watchlist widget from Market Data page
 #US-T136
 Validate the Barrons digest notification
     [Documentation]  This test case validates the Barrons digest notification
-    [Tags]  Regression  Notifications             TagBarronsDN
+    [Tags]  Regression  Notifications             Follow1
     BarronsMailboxPage.Navigate Mailbox page
     BarronsMailboxPage.Login
     BarronsMailboxPage.Select Inbox

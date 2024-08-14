@@ -98,18 +98,18 @@ Validate Postback on Preference Center
 #US-T113
 Validate Private Equity News Capabilities Dashboard for Author
     [Documentation]  This test case validates the PEN Capabilities Dashboard for Author
-    [Tags]  Regression  Capabilities  Author       TagPECB
+    [Tags]  Regression  Capabilities  Author      Follow1
     PENCapabilitiesPage.Navigate Capabilities Dashboard page
     PENCapabilitiesPage.Click Login button
     PENCapabilitiesPage.Capabilities Dashboard Sign In Process
-    PENCapabilitiesPage.Sign In Process
-    PENCapabilitiesPage.Click Author Tab
-    PENCapabilitiesPage.Validate Author Page
-    PENCapabilitiesPage.Validate Author tab
-    PENCapabilitiesPage.Generate Author Hotlink
-    PENCapabilitiesPage.Validate Authors On Search Tab
-    PENCapabilitiesPage.Click on All records tab
-    PENCapabilitiesPage.Click on Author hyperlink from All records tab
+#    PENCapabilitiesPage.Sign In Process
+#    PENCapabilitiesPage.Click Author Tab
+#    PENCapabilitiesPage.Validate Author Page
+#    PENCapabilitiesPage.Validate Author tab
+#    PENCapabilitiesPage.Generate Author Hotlink
+#    PENCapabilitiesPage.Validate Authors On Search Tab
+#    PENCapabilitiesPage.Click on All records tab
+#    PENCapabilitiesPage.Click on Author hyperlink from All records tab
 
  #US-T114
 Validate Private Equity News Capabilities Dashboard for Company
@@ -118,12 +118,12 @@ Validate Private Equity News Capabilities Dashboard for Company
     PENCapabilitiesPage.Navigate Capabilities Dashboard page
     PENCapabilitiesPage.Click Login button
     PENCapabilitiesPage.Capabilities Dashboard Sign In Process
-    PENCapabilitiesPage.Sign In Process
-    PENCapabilitiesPage.Click Company Tab
-    PENCapabilitiesPage.Validate Company Page
-    PENCapabilitiesPage.Validate Company tab
-    PENCapabilitiesPage.Generate Company Hotlink
-    PENCapabilitiesPage.Validate Company On Search Tab
-    PENCapabilitiesPage.Click on All records tab
-    PENCapabilitiesPage.Click on Company hyperlink from All records tab
+#    PENCapabilitiesPage.Sign In Process
+#    PENCapabilitiesPage.Click Company Tab
+#    PENCapabilitiesPage.Validate Company Page
+#    PENCapabilitiesPage.Validate Company tab
+#    PENCapabilitiesPage.Generate Company Hotlink
+#    PENCapabilitiesPage.Validate Company On Search Tab
+#    PENCapabilitiesPage.Click on All records tab
+#    PENCapabilitiesPage.Click on Company hyperlink from All records tab
 

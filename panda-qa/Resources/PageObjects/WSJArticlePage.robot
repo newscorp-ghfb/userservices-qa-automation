@@ -176,10 +176,10 @@ Click Load all Puzzles Button
 #    Click Button  dom:${JSCustomFollowButtonWSJPath}
 
 Validate Preference Center page for Puzzle
-   Wait Until Element is Visible  //html/body/div[2]/div/div/div/div[2]/div/div/div[2]/div[2]/div[2]/a/h2/span[2]
+   Wait Until Element is Visible  //html/body/div[2]/div/div/div/div[2]/div/div/div[2]/div[2]/div[2]/a/h2/span[2]  #//html/body/div[2]/div/div/div/div[2]/div/div/div[2]/div[2]/div[2]/a/h2/span[2]
 
 Click Preference Center link for Puzzle alerts
-   Click Element   //html/body/div[2]/div/div/div/div[2]/div/div/div[2]/div[2]/div[2]/a/h2/span[2]
+   Click Element  //html/body/div[2]/div/div/div/div[2]/div/div/div[2]/div[2]/div[2]/a/h2/span[2]
 
 Validate Business Tab is present for Energy Button
   Wait Until Element is Visible  //html/body/div[3]/div/div[1]/div[3]/header[2]/nav/ul/li[3]/a/span
@@ -193,8 +193,8 @@ Click Energy Button
 #    Click Button  dom:${JSCustomFollowButtonWSJPath}
 
 Click on Load More button to load Enery related news
-     Wait Until Element is Visible  //*[text()='Load More']
-     Click Element  //*[text()='Load More']
+     Wait Until Element is Visible  //html/body/div[3]/div/main/div[2]/div[4]/div[2]/div/div[2]/div[17]/div/button  #//*[text()='Load More']
+     Click Element  //html/body/div[3]/div/main/div[2]/div[4]/div[2]/div/div[2]/div[17]/div/button  #//*[text()='Load More']
 
 Validate author hyperlink
     Page Should Contain Element  //*[text()='John West']

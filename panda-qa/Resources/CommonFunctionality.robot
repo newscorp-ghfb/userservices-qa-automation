@@ -3,6 +3,10 @@ Library  SeleniumLibrary
 Resource  ../Resources/DefinedKeywords.robot
 
 *** Variables ***
+${BROWSERSTACK_USERNAME}=   newsroomdevtest_xCBmjv
+${BROWSERSTACK_ACCESS_KEY}=  s3c1cGNU2UpLq5iJzNzx
+${BROWSERSTACK_URL}=   https://automate.browserstack.com/dashboard/v2/builds/3263aa6a845e0b5e2d6e245b9107760e32c3105f?projectIds=2299596${BROWSERSTACK_USERNAME}:${BROWSERSTACK_ACCESS_KEY}@hub-cloud.browserstack.com/wd/hub
+
 ${CookieValue1}=  x-dev-access-clientid
 ${ExpectedCookieValue1}=    quality-engineering
 
@@ -75,10 +79,10 @@ Start Barrons Article
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-       Open Browser  https://www.barrons.com  ${Browser}  options=${options}
+       Open Browser  https://www.barrons.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634
     ELSE IF  "${Env}" == "dev"
-       Open Browser  https://www.s.dev.barrons.com  ${Browser}  options=${options}
+       Open Browser  https://www.barrons.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000
     END
     Wait Until Page Contains Element  dom:${JSFollowButtonBarronsPath}
@@ -88,10 +92,10 @@ Start Mansion Global Article
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.mansionglobal.com  ${Browser}  options=${options}
+        Open Browser  https://www.mansionglobal.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.mansionglobal.com/articles/are-there-tax-breaks-on-agricultural-land-in-pennsylvania-01648119848
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.s.dev.mansionglobal.com  ${Browser}  options=${options}
+        Open Browser  https://www.s.dev.mansionglobal.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212
     END
     Wait Until Page Contains Element  dom:${JSFollowButtonMGPath}
@@ -101,10 +105,10 @@ Start FN Article
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.fnlondon.com  ${Browser}  options=${options}
+        Open Browser  https://www.fnlondon.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.fnlondon.com/articles/complaints-commissioner-fca-transparency-20220615
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.s.dev.fnlondon.com  ${Browser}  options=${options}
+        Open Browser  https://www.s.dev.fnlondon.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.s.dev.fnlondon.com/articles/testing-article-timestamp-20231102
         Execute javascript  window.scrollTo(0,500)
     END
@@ -116,10 +120,10 @@ Start Sailthru Page
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://my.sailthru.com/  ${Browser}  options=${options}  #https://www.sailthru.com/u/login/identifier?state=hKFo2SBzVlExaTIyc3FUbGQtT2l2NE0zbkhSMVlxN083OWNJc6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDdqQmpDZ3duMEp2SE11aDduU1JLSzJ3WTRqT1E2RGFGo2NpZNkgeEtmRXhYazVyeGZTN01pbzJkcFRadzI1eHp5UHF4bjM  #https://www.sailthru.com/?doing_wp_cron=1709648423.2007079124450683593750  ${Browser}  options=${options}
+        Open Browser  https://my.sailthru.com/  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}   #https://www.sailthru.com/u/login/identifier?state=hKFo2SBzVlExaTIyc3FUbGQtT2l2NE0zbkhSMVlxN083OWNJc6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDdqQmpDZ3duMEp2SE11aDduU1JLSzJ3WTRqT1E2RGFGo2NpZNkgeEtmRXhYazVyeGZTN01pbzJkcFRadzI1eHp5UHF4bjM  #https://www.sailthru.com/?doing_wp_cron=1709648423.2007079124450683593750  ${Browser}  options=${options}
         Go To   https://my.sailthru.com/  #https://login.sailthru.com/u/login/identifier?state=hKFo2SBzVlExaTIyc3FUbGQtT2l2NE0zbkhSMVlxN083OWNJc6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDdqQmpDZ3duMEp2SE11aDduU1JLSzJ3WTRqT1E2RGFGo2NpZNkgeEtmRXhYazVyeGZTN01pbzJkcFRadzI1eHp5UHF4bjM
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://my.sailthru.com/  ${Browser}  options=${options}  #https://login.sailthru.com/u/login/identifier?state=hKFo2SBzVlExaTIyc3FUbGQtT2l2NE0zbkhSMVlxN083OWNJc6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDdqQmpDZ3duMEp2SE11aDduU1JLSzJ3WTRqT1E2RGFGo2NpZNkgeEtmRXhYazVyeGZTN01pbzJkcFRadzI1eHp5UHF4bjM  ${Browser}  options=${options}
+        Open Browser  https://my.sailthru.com/  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}  #https://login.sailthru.com/u/login/identifier?state=hKFo2SBzVlExaTIyc3FUbGQtT2l2NE0zbkhSMVlxN083OWNJc6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDdqQmpDZ3duMEp2SE11aDduU1JLSzJ3WTRqT1E2RGFGo2NpZNkgeEtmRXhYazVyeGZTN01pbzJkcFRadzI1eHp5UHF4bjM  ${Browser}  options=${options}
         Go To  https://my.sailthru.com/  #https://login.sailthru.com/u/login/identifier?state=hKFo2SBzVlExaTIyc3FUbGQtT2l2NE0zbkhSMVlxN083OWNJc6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDdqQmpDZ3duMEp2SE11aDduU1JLSzJ3WTRqT1E2RGFGo2NpZNkgeEtmRXhYazVyeGZTN01pbzJkcFRadzI1eHp5UHF4bjM
     END
     Maximize Browser Window
@@ -128,22 +132,22 @@ Start WSJ Article
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     END
     Maximize Browser Window
 
 Start Market Watch Article
-    Set Selenium Speed  1 seconds
+    Set Selenium Speed  0.1 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.marketwatch.com  ${Browser}  options=${options}
+        Open Browser  https://www.marketwatch.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.marketwatch.com/story/is-the-u-s-stock-market-closed-on-juneteenth-what-investors-need-to-know-11655230158
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.dev.marketwatch.com  ${Browser}  options=${options}
+        Open Browser  https://www.dev.marketwatch.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.dev.marketwatch.com/author/Catey-Hill
     END
     Maximize Browser Window
@@ -152,10 +156,10 @@ Start PEN Article
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.penews.com  ${Browser}  options=${options}
+        Open Browser  https://www.penews.com  ${Browser}  options=${options} remote_url=${BROWSERSTACK_URL}
         Go To  https://www.penews.com/articles/lp-survey-warns-brace-for-some-high-profile-fundraising-failures-20220622
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.s.dev.penews.com  ${Browser}  options=${options}
+        Open Browser  https://www.s.dev.penews.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.s.dev.penews.com/articles/test-3testing-wsj-full-bleed-3k-words-20220215
     END
     Wait Until Element Is Visible  dom:${JSFollowButtonMGPath}
@@ -166,11 +170,11 @@ Start Barrons Article without byline
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.barrons.com  ${Browser}  options=${options}
+        Open Browser  https://www.barrons.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.barrons.com/articles/how-to-handle-an-uncertain-market-buy-weakness-sell-strength-f145c306
         Execute javascript  window.scrollTo(0,500)
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.s.dev.barrons.com  ${Browser}  options=${options}
+        Open Browser  https://www.s.dev.barrons.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000
     END
     Maximize Browser Window
@@ -179,11 +183,11 @@ Start FN Article without byline
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.fnlondon.com  ${Browser}  options=${options}
+        Open Browser  https://www.fnlondon.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.fnlondon.com/articles/meet-the-twenty-most-influential-in-investment-banking-20230326?cx_testId=174&cx_testVariant=cx_3&cx_artPos=0#cxrecs_s
         Execute javascript  window.scrollTo(0,500)
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.s.dev.fnlondon.com  ${Browser}  options=${options}
+        Open Browser  https://www.s.dev.fnlondon.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.s.dev.fnlondon.com/articles/testing-article-timestamp-20231102
     END
     Maximize Browser Window
@@ -192,30 +196,22 @@ Start Mansion Global Article without byline
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.mansionglobal.com  ${Browser}  options=${options}
+        Open Browser  https://www.mansionglobal.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.mansionglobal.com/articles/what-property-tax-changes-are-in-store-for-luxury-home-owners-in-edmonton-canada-e0d92933
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.s.dev.mansionglobal.com  ${Browser}  options=${options}
+        Open Browser  https://www.s.dev.mansionglobal.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212
     END
     Maximize Browser Window
-
-
-
-
-
-
-
-
 
 Start Market Watch Article without byline
     Set Selenium Speed  1 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.marketwatch.com  ${Browser}  options=${options}
+        Open Browser  https://www.marketwatch.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.marketwatch.com/story/is-the-u-s-stock-market-closed-on-juneteenth-what-investors-need-to-know-11655230158
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.dev.marketwatch.com  ${Browser}  options=${options}
+        Open Browser  https://www.dev.marketwatch.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.dev.marketwatch.com/author/Catey-Hill
     END
     Maximize Browser Window
@@ -224,10 +220,10 @@ Start PEN Article without byline
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.penews.com  ${Browser}  options=${options}
+        Open Browser  https://www.penews.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.penews.com/articles/dickson-minto-merger-driven-by-americanisation-of-private-equity-law-20221214
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.s.dev.penews.com  ${Browser}  options=${options}
+        Open Browser  https://www.s.dev.penews.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.s.dev.penews.com/articles/test-3testing-wsj-full-bleed-3k-words-20220215
     END
     Maximize Browser Window
@@ -236,10 +232,11 @@ Start WSJ Article without byline
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.wsj.com/articles/let-desantis-fight-trump-before-putin-bakhmut-offensive-cease-fire-settlement-kremlin-weapons-b127514a?cx_testId=3&cx_testVariant=cx_171&cx_artPos=1&mod=WTRN#cxrecs_s
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
+
         Go To  https://www.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     END
     Maximize Browser Window
@@ -248,10 +245,10 @@ Start WSJ Article for Letters breadcrumb
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.wsj.com/articles/mary-eberstadt-furman-university-wsj-scott-yenor-campus-protest-speech-869ce29b
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
        Go To  https://www.dev.wsj.com/articles/test-oil-demand-will-fall-by-a-fifth-in-april-opec-forecasts-11587072843  #https://www.dev.wsj.com/articles/test-headline-on-wrongful-6697d68c  #https://www.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     END
     Maximize Browser Window
@@ -283,10 +280,10 @@ Start WSJ Letters for Letters breadcrumb
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.dev.wsj.com/articles/test-oil-demand-will-fall-by-a-fifth-in-april-opec-forecasts-11587072843  #https://www.wsj.com/news/types/letters?mod=nav_top_subsection
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.dev.wsj.com/articles/test-oil-demand-will-fall-by-a-fifth-in-april-opec-forecasts-11587072843  #https://www.dev.wsj.com/articles/test-headline-on-wrongful-6697d68c  #https://www.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     END
 #    Wait Until Element Is Visible  //span[text()="Dave Michaels"]
@@ -297,10 +294,10 @@ Start WSJ Article for Editorials breadcrumb
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.wsj.com/articles/chicago-mayor-wisconsin-supreme-court-election-paul-vallas-brandon-johnson-janet-protasiewicz-dan-kelly-3673d166
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.dev.wsj.com/economy/global/dollars-rise-spells-trouble-for-global-economies-38d3d986?mod=world_lead_pos1  #https://www.dev.wsj.com/articles/test-headline-on-wrongful-6697d68c  #https://www.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     END
 
@@ -308,10 +305,10 @@ Start WSJ Editorials for Editorials breadcrumb
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.wsj.com/news/types/review-outlook-u-s?mod=nav_top_subsection
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     END
 #    Wait Until Element Is Visible  //span[text()="Dave Michaels"]
@@ -323,10 +320,10 @@ Start WSJ Article for Commentary breadcrumb
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.wsj.com  ${Browser}  options=${options} remote_url=${BROWSERSTACK_URL}
         Go To  https://www.wsj.com/articles/medicare-drug-price-controls-will-make-america-sicker-research-innovation-negotiations-private-insurers-b503b4ba
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.dev.wsj.com/articles/test-oil-demand-will-fall-by-a-fifth-in-april-opec-forecasts-11587072843  #https://www.dev.wsj.com/articles/test-headline-on-wrongful-6697d68c  #https://www.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s #https://www.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     END
     Maximize Browser Window
@@ -335,10 +332,10 @@ Start WSJ Commentary for Commentary breadcrumb
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.wsj.com/news/types/commentary-u-s?mod=nav_top_subsection
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     END
     #Wait Until Element Is Visible  //span[text()="Dave Michaels"]
@@ -350,10 +347,10 @@ Start WSJ Article for Elections breadcrumb
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.wsj.com/articles/mike-pompeo-says-he-wont-run-for-president-in-2024-5406e61c
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.dev.wsj.com/articles/test-headline-on-wrongful-6697d68c  #https://www.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     END
 #    #Wait Until Element Is Visible  //span[text()="Dave Michaels"]
@@ -365,10 +362,10 @@ Start WSJ Elections for Elections breadcrumb
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.wsj.com/news/types/election-2024?mod=breadcrumb
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.dev.wsj.com/articles/test-headline-on-wrongful-6697d68c  #https://www.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     END
 #    #Wait Until Element Is Visible  //span[text()="Dave Michaels"]
@@ -380,10 +377,10 @@ Start Barrons Stock Picks for Stock Picks breadcrumb
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.barrons.com  ${Browser}  options=${options}
+        Open Browser  https://www.barrons.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.barrons.com/market-data/stocks/stock-picks?mod=BOL_TOPNAV
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.s.dev.barrons.com  ${Browser}  options=${options}
+        Open Browser  https://www.s.dev.barrons.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.s.dev.barrons.com/market-data/stocks/stock-picks?mod=BOL_TOPNAV
     END
     Set Focus To Element  //*[text()="Barron's Latest Stock Picks"]
@@ -393,10 +390,10 @@ Start Barrons Stock Screener Page for Featured Preset Screener
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.barrons.com  ${Browser}  options=${options}
+        Open Browser  https://www.barrons.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.barrons.com/market-data/barrons-stock-screener?mod=stock_screener_internal
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.s.dev.barrons.com  ${Browser}  options=${options}
+        Open Browser  https://www.s.dev.barrons.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.s.dev.barrons.com/market-data/barrons-stock-screener?mod=stock_screener_internal
     END
 
@@ -404,10 +401,10 @@ Start Barrons Stock Picks for Stock Picks in article
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.barrons.com  ${Browser}  options=${options}
+        Open Browser  https://www.barrons.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.barrons.com/articles/buy-rockwell-automation-stock-pick-price-cc120733?mod=stock_picks_lp
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.s.dev.barrons.com  ${Browser}  options=${options}
+        Open Browser  https://www.s.dev.barrons.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.s.dev.barrons.com/articles/buy-rockwell-automation-stock-pick-price-cc120733?mod=stock_picks_lp
     END
     Maximize Browser Window
@@ -491,10 +488,10 @@ Start WSJ Article for Board Pack Exclusive
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.wsj.com/articles/what-the-board-needs-to-know-acec160b?mod=panda_wsj_custom_topic_alert
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.dev.wsj.com/articles/what-the-board-needs-to-know-acec160b?mod=panda_wsj_custom_topic_alert
     END
     Maximize Browser Window
@@ -503,10 +500,10 @@ Start WSJ Article for Education
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.wsj.com/us-news/education?mod=nav_top_subsection
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.dev.wsj.com/us-news/education?mod=nav_top_subsection
     END
     Maximize Browser Window
@@ -515,10 +512,10 @@ Start WSJ Article for heard on the street
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.wsj.com/news/types/heard-on-the-street?mod=breadcrumb
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.dev.wsj.com/news/types/heard-on-the-street?mod=breadcrumb
     END
     Maximize Browser Window
@@ -527,10 +524,10 @@ Start WSJ Article for heard on the street page
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.dev.wsj.com/news/heard-on-the-street?mod=nav_top_subsection
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.dev.wsj.com/news/heard-on-the-street?mod=nav_top_subsection
     END
     Maximize Browser Window
@@ -539,10 +536,10 @@ Start WSJ Article for On Wine
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.wsj.com/news/types/on-wine-lettie-teague?mod=bigtop-breadcrumb
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.dev.wsj.com/news/types/on-wine-lettie-teague?mod=bigtop-breadcrumb
     END
     Maximize Browser Window
@@ -551,10 +548,10 @@ Start WSJ Article for On Wine Page
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.dev.wsj.com/news/author/lettie-teague?mod=nav_top_subsection
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.dev.wsj.com/news/author/lettie-teague?mod=nav_top_subsection
     END
     Maximize Browser Window
@@ -562,9 +559,9 @@ Start WSJ Article for On Wine Page
 Start WSJ Preference Center Page
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.wsj.com/preference-center/alerts  ${Browser}  options=${options}
+        Open Browser  https://www.wsj.com/preference-center/alerts  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.dev.wsj.com/preference-center/alerts  ${Browser}  options=${options}
+        Open Browser  https://www.dev.wsj.com/preference-center/alerts  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
     END
     Maximize Browser Window
 
@@ -572,10 +569,10 @@ Start WSJ Article for Personal Finance
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.wsj.com/personal-finance?mod=breadcrumb
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.dev.wsj.com/personal-finance?mod=breadcrumb
     END
     Maximize Browser Window
@@ -584,10 +581,10 @@ Start WSJ Article for Personal Technology
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.wsj.com/tech/personal-tech?mod=breadcrumb
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.dev.wsj.com/tech/personal-tech?mod=breadcrumb
     END
     Maximize Browser Window
@@ -596,10 +593,10 @@ Start WSJ Article for Puzzles
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.wsj.com/news/puzzle?mod=breadcrumb
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.dev.wsj.com/news/puzzle?mod=breadcrumb
     END
     Maximize Browser Window
@@ -608,10 +605,10 @@ Start WSJ Article for Energy
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.wsj.com/business/energy-oil?mod=nav_top_subsection
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
+        Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
         Go To  https://www.dev.wsj.com/business/energy-oil?mod=nav_top_subsection
     END
     Maximize Browser Window
@@ -635,9 +632,9 @@ Start CMS page for Barrons
 Start Preference Center
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.barrons.com/follow  ${Browser}  options=${options}
+        Open Browser  https://www.barrons.com/follow  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.s.dev.barrons.com/follow  ${Browser}  options=${options}
+        Open Browser  https://www.s.dev.barrons.com/follow  ${Browser}  options=${options}  remote_url=${BROWSERSTACK_URL}
     END
     Maximize Browser Window
 
