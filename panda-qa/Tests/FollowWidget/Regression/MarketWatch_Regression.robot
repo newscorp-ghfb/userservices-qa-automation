@@ -50,7 +50,7 @@ Validate Authors for MarketWatch Article page without byline
 #US-T220
 Validate the Watchlist widget from Watchlist page
     [Documentation]  This test case validates the watchlist widget from watchlist page
-    [Tags]  Regression  Watchlist   Follow1
+    [Tags]  Regression  Watchlist   TagMWP
 
     CommonFunctionality.Start MarketWatch for Watchlist page
     DefinedKeywords.MarketWatch Test User Sign In Process
@@ -68,8 +68,7 @@ Validate the Watchlist widget from Watchlist page
     MarketWatchWatchlistPage.Select Symbol
     MarketWatchWatchlistPage.Validate Symbol in Created Watchlist
     MarketWatchWatchlistPage.Delete Watchlists
-#    MarketWatchWatchlistPage.Validate Default New Watchlist
-#    MarketWatchWatchlistPage.Validate No Symbol in Default New Watchlist
+
 
 #US-T276
 Validate the MarketWatch price and volume on the alerts page

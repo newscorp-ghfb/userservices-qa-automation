@@ -719,7 +719,7 @@ Validate the alert button for heard on the street
     ELSE IF  "${Env}" == "dev"
         DefinedKeywords.New WSJ Sign In Process
          END
-         Set Selenium Implicit Wait  30s
+         Set Selenium Implicit Wait  10s
      WSJArticlePage.Validate Markets & Finance Option
      WSJArticlePage.Validate Preference Center page for heard on the street
      WSJArticlePage.Click Preference Center link for heard on the street
@@ -796,12 +796,12 @@ Validate the alert button for On Wine
 #US-T334
 Validate the alert button for Personal Finance
     [Documentation]  This test case validates the alert button for Personal Finance
-    [Tags]  Regression  Alerts    TagWPF
+    [Tags]  Regression  Alerts    Follow1
     CommonFunctionality.Start WSJ Article for Personal Finance
         IF  "${Env}" == "prod"
-        DefinedKeywords.WSJ Alerts Sign In Process
+        DefinedKeywords.New WSJ Test User Sign In Process
     ELSE IF  "${Env}" == "dev"
-        DefinedKeywords.WSJ Alerts Sign In Process
+        DefinedKeywords.New WSJ Test User Sign In Process
          END
          Set Selenium Implicit Wait  10s
     WSJArticlePage.Validate Personal Finance Button
@@ -838,9 +838,9 @@ Validate the alert button for Personal Technology
     [Tags]  Regression  Alerts            Follow1
     CommonFunctionality.Start WSJ Article for Personal Technology
             IF  "${Env}" == "prod"
-        DefinedKeywords.WSJ Alerts Sign In Process
+        DefinedKeywords.New WSJ Sign In Process
     ELSE IF  "${Env}" == "dev"
-        DefinedKeywords.WSJ Alerts Sign In Process
+        DefinedKeywords.New WSJ Sign In Process
          END
          Set Selenium Implicit Wait  30s
     WSJArticlePage.Validate Personal Technology Button
@@ -869,7 +869,6 @@ Validate the alert button for Puzzles
     ELSE IF  "${Env}" == "dev"
         DefinedKeywords.New WSJ Sign In Process
          END
-         Set Selenium Implicit Wait  30s
      WSJArticlePage.Click Load all Puzzles Button
      WSJArticlePage.Validate Preference Center page for Puzzle
      WSJArticlePage.Click Preference Center link for Puzzle alerts
@@ -900,9 +899,9 @@ Validate the alert button for Energy
     [Tags]  Regression  Alerts    Follow1
     CommonFunctionality.Start WSJ Article for Energy
             IF  "${Env}" == "prod"
-        DefinedKeywords.WSJ Alerts Sign In Process
+        DefinedKeywords.New WSJ Sign In Process
     ELSE IF  "${Env}" == "dev"
-        DefinedKeywords.WSJ Alerts Sign In Process
+        DefinedKeywords.New WSJ Sign In Process
          END
          Set Selenium Implicit Wait  40s
     WSJArticlePage.Validate Enegery Button Title at Header
@@ -927,18 +926,18 @@ Validate Postback on Preference Center
     WSJPreferenceCenterPage.Click Sign In Button for Postback
     DefinedKeywords.WSJ Postback Page Sign In Process
     WSJPreferenceCenterPage.Validate Followed Breaking News
-#    ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
-#    Run Keyword If  ${val2} > 0  WSJPreferenceCenterPage.Click Following Toggle Alert Pop up
-#    WSJPreferenceCenterPage.Validate Breaking News Toggle Feature
-#    WSJPreferenceCenterPage.Click Breaking News Toggle Feature  #--unsubscribe functionality
-#    WSJPreferenceCenterPage.Validate Following Toggle Alert Pop up
-#    WSJPreferenceCenterPage.Click Following Toggle Alert Pop up
-#    WSJPreferenceCenterPage.Validate Over Mouse On Notification Tooltip
-#    WSJMailboxPage.Navigate Mailbox page
-#    WSJMailboxPage.Login
-#    WSJMailboxPage.Select Inbox
-#    WSJMailboxPage.Search WSJ real-time author notification for Postback
-#    WSJMailboxPage.Validate WSJ real-time author notification for Postback
-#    WSJMailboxPage.Unsubscribe the mails
-#    WSJMailboxPage.Verify the mail is unsubscribed
-#    WSJPreferenceCenterPage.Add Author By Hotlink
+    ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
+    Run Keyword If  ${val2} > 0  WSJPreferenceCenterPage.Click Following Toggle Alert Pop up
+    WSJPreferenceCenterPage.Validate Breaking News Toggle Feature
+    WSJPreferenceCenterPage.Click Breaking News Toggle Feature  #--unsubscribe functionality
+    WSJPreferenceCenterPage.Validate Following Toggle Alert Pop up
+    WSJPreferenceCenterPage.Click Following Toggle Alert Pop up
+    WSJPreferenceCenterPage.Validate Over Mouse On Notification Tooltip
+    WSJMailboxPage.Navigate Mailbox page
+    WSJMailboxPage.Login
+    WSJMailboxPage.Select Inbox
+    WSJMailboxPage.Search WSJ real-time author notification for Postback
+    WSJMailboxPage.Validate WSJ real-time author notification for Postback
+    WSJMailboxPage.Unsubscribe the mails
+    WSJMailboxPage.Verify the mail is unsubscribed
+    WSJPreferenceCenterPage.Add Author By Hotlink
