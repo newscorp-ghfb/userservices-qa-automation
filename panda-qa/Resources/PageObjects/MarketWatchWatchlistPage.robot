@@ -31,13 +31,10 @@ Validate Symbol in Default New Watchlist
 
 Create Watchlist Name
     Click Element  //button[@class="watchlist__title i-down"]
-#    Click Element  //button[text()="Create Watchlist"]
-#    Click Element  //button[text()="Add"]
-#    Page Should Contain Element  //*[text()="Watchlist Name"]
 
 Edit Watchlist Name
     Click Element  //html/body/div[4]/section/div[2]/div/div[3]/section/div[1]/div[1]/div/ul/li[1]/div/button[2]
-    Input Text  //*[@value="Watchlist Name"]  Test
+    Input Text  //html/body/div[4]/section/div[2]/div/div[3]/section/div[1]/div[1]/div/ul/li[1]/div/input  Test
     Click Element  //button[text()="Save"]
 
 Validate Symbol in Created Watchlist

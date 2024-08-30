@@ -114,7 +114,7 @@ Validate Private Equity News Capabilities Dashboard for Author
  #US-T114
 Validate Private Equity News Capabilities Dashboard for Company
     [Documentation]  This test case validates the PEN Capabilities Dashboard for Company
-    [Tags]  Regression  Capabilities  Company       Follow1
+    [Tags]  Regression  Capabilities  Company       TagPECB
     PENCapabilitiesPage.Navigate Capabilities Dashboard page
     PENCapabilitiesPage.Click Login button
     PENCapabilitiesPage.Capabilities Dashboard Sign In Process

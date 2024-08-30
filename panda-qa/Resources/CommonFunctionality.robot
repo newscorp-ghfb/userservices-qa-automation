@@ -15,7 +15,7 @@ ${ExpectedCookieValue2}=   5Nnx9DUR7NQg8XPwvztud7o0OivfiKth
 
 ${Browser}=  ff  #headless, ff, chrome, edge, safari
 
-${Env}=  dev  #dev, prod
+${Env}=  dev  #dev, prod, stg
 
 ${Email_prod}=  barronsadvisorcs@gmail.com
 
