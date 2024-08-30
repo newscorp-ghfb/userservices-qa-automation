@@ -31,27 +31,10 @@ Validate the multiple authors follow button from articles page
     [Documentation]  This test case validates the multiple authors follow button from articles page
     [Tags]  Regression  Follow  MultipleAuthors  Article   BarronsMultipleauthors   Follow1
 
-    Set Selenium Speed  0.2 seconds
+    Set Selenium Speed  0.5 seconds
     DefinedKeywords.Barrons Article Sign in Process
     Set Selenium Implicit Wait  50s
     BarronsArticlePage.Validate author on article page
-#    BarronsArticlePage.Validate Sign In 2 Modal
-#    BarronsArticlePage.Validate Follow Button 2
-#    BarronsArticlePage.Click Follow Button 2
-#    BarronsArticlePage.Validate Following Button 2
-#    BarronsArticlePage.Click Follow Button 2
-#    BarronsArticlePage.Validate Following Button 2
-#    BarronsArticlePage.Click Following Button
-#    BarronsArticlePage.Click Undo Link
-#    BarronsArticlePage.Validate Following Button
-#    BarronsArticlePage.Click Following Button 2
-#    BarronsArticlePage.Click Undo Link 2
-#    BarronsArticlePage.Validate Following Button 2
-#    BarronsPreferenceCenterPage.Navigate Preference Center page
-#    BarronsPreferenceCenterPage.Validate Preference Center page
-
-#    BarronsPreferenceCenterPage.Validate Author 1
-#    BarronsPreferenceCenterPage.Validate Author 2
 
 #US-T82
 #US-T80

@@ -100,7 +100,7 @@ Validate Postback on Preference Center
     MansionGlobalPreferenceCenterPage.Click Following Toggle Alert Pop up
     MansionGlobalPreferenceCenterPage.Validate Over Mouse On Notification Tooltip
     MansionGlobalMailboxPage.Navigate Mailbox page
-    Set Selenium Implicit Wait  6.0
+    Set Selenium Implicit Wait  6.0 seconds
     MansionGlobalMailboxPage.Login
     MansionGlobalMailboxPage.Select Inbox
     MansionGlobalMailboxPage.Search Mansion Global real-time author notification for Postback
