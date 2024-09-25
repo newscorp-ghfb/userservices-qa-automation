@@ -119,7 +119,7 @@ Validate the MW digest notification
 #US-T415
 Validate the MarketWatch Newsletter
   [Documentation]  This test case validates the MarketWatch price and volume alerts on the Quote page
-  [Tags]  Regression  TagMWN
+  [Tags]  Regression  TagMWN1
      CommonFunctionality.Start Market Watch Newsletter
      DefinedKeywords.Market Watch Sign In Process
      Set Selenium Implicit Wait  20

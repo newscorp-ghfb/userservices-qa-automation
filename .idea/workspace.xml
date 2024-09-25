@@ -351,14 +351,6 @@
       <option name="presentableId" value="Default" />
       <updated>1702390104711</updated>
     </task>
-    <task id="LOCAL-00027" summary="Updated New WSJ Sign In Process for the validation of WSJ watchlist">
-      <option name="closed" value="true" />
-      <created>1707833525233</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1707833525234</updated>
-    </task>
     <task id="LOCAL-00028" summary="Updated New WSJ Sign In Process and Xpath for Letters Breadcrumb on WSJ article page and WSJ Preference Center page for Letters breadcrumb">
       <option name="closed" value="true" />
       <created>1707923333162</created>
@@ -743,7 +735,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727290515276</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="TEST PUSH">
+      <option name="closed" value="true" />
+      <created>1727294557169</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1727294557170</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
