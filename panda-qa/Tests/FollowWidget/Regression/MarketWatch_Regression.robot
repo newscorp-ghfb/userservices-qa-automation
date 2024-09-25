@@ -1,26 +1,9 @@
-*** Settings ***
-Documentation  Market Watch Regression Tests
-Force Tags  MarketWatch
-Resource  ../../../Resources/CommonFunctionality.robot
-Resource  ../../../Resources/DefinedKeywords.robot
-Resource  ../../../Resources/PageObjects/MarketWatchArticlePage.robot
-Resource  ../../../Resources/PageObjects/MarketWatchWatchlistPage.robot
-Resource  ../../../Resources/PageObjects/MarketWatchAuthorsPage.robot
-Resource  ../../../Resources/PageObjects/MarketWatchPreferenceCenterPage.robot
-Resource  ../../../Resources/PageObjects/MarketWatchMailboxPage.robot
-Resource  ../../../Resources/PageObjects/MarketWatchAlertsPage.robot
-
-Test Setup  CommonFunctionality.Start Market Watch Article
-Test Teardown  CommonFunctionality.Finish Testcase
-
-*** Variables ***
-
 *** Test Cases ***
 #US-T92
 #US-T93
 Validate the Market Watch Preference Center page
     [Documentation]  This test case validates the Market Watch preference center page
-    [Tags]  Regression  PreferenceCenter  Follow1
+    [Tags]  Regression  PreferenceCenter  Follow11
 
     MarketWatchPreferenceCenterPage.Add Author By Hotlink
     DefinedKeywords.MarketWatch PreferenceCenter User Sign In Process
@@ -35,12 +18,12 @@ Validate the Market Watch Preference Center page
     #MarketWatchPreferenceCenterPage.Validate Following Toggle Alert Pop up
     #MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
     #MarketWatchPreferenceCenterPage.Navigate Article page
-    #MarketWatchArticlePage.Scroll stories
+    #MarketWatchArticlePage.Scroll storie
 
 #US-T28
 Validate Authors for MarketWatch Article page without byline
     [Documentation]  This test case validates authors without byline for Market Watch article page
-    [Tags]  Regression  Author  Article  Follow1
+    [Tags]  Regression  Author  Article
 
     CommonFunctionality.Start Market Watch Article without byline
     MarketWatchArticlePage.Validate author without byline
