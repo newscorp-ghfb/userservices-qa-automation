@@ -157,7 +157,7 @@ Validate the Watchlist widget from Quotes page
 #US-T384
 Verify if a user is able to login into Barrons Stock Screener and access the Featured Preset Screeners without any subscription for free review.
     [Documentation]  This test case validates that a user is able to login into Barrons Stock Screener and access the Featured Preset Screeners without any subscription for free review.
-    [Tags]  Barrons StockScreener Page      Follow1
+    [Tags]  Depreciated
 
     CommonFunctionality.Start Barrons Stock Screener Page for Featured Preset Screener
     Set Selenium Speed  0.25 seconds
@@ -170,7 +170,7 @@ Verify if a user is able to login into Barrons Stock Screener and access the Fea
 #US-T385
 Verify if a user is able to navigate to Barrons Stock Screener and subscribe in order to edit the list of featured preset screens.
     [Documentation]  This test case validates that a user is able to subscribe and login into Barrons Stock Screener in order to edit the list of featured preset screens.
-    [Tags]  Barrons StockScreener Page      Follow1
+    [Tags]  Depreciated
 
     CommonFunctionality.Start Barrons Stock Screener Page for Featured Preset Screener
     Set Selenium Speed  0.2 seconds
