@@ -708,6 +708,20 @@ Capabilities Dashboard Main Menu
     END
     Wait Until Element Is Not Visible  //*[@id="password-login"]/div/form/div/div[5]/div[1]/button
 
+Barrons Newsletter Sign in Process
+   Wait Until Element is Visible  //*[@id='__next']/div/div/header/div/div[1]/div[3]/div/a
+   Click Element  //*[@id='__next']/div/div/header/div/div[1]/div[3]/div/a
+   Wait Until Element is Visible  //*[@id="emailOrUsername"]
+   Input Text  //*[@id="emailOrUsername"]  QABARRONSONLY  #//*[@id=":r5:-form-item"]  QABARRONSONLY  #akhilesh.khanduri@dowjones.com
+   Set Selenium Implicit Wait  10s
+   Click Button  //html/body/div/section/div/div[2]/form/button[1]
+   Set Selenium Implicit Wait  10s
+   Wait Until Element Is Visible  //*[@id="password"]
+   Input Text  //*[@id="password"]  password1
+   Set Selenium Implicit Wait  10
+   Wait Until Element is Visible  //html/body/div/section/div/div[2]/form/button
+   Click Element  //html/body/div/section/div/div[2]/form/button  #//html/body/main/div[2]/section[16]/div/form/div[5]/button
+
 Sign In Process for Preference Center
 
     Wait Until Element Is Visible  //input[@id='username']

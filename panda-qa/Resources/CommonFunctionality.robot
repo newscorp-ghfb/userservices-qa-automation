@@ -152,6 +152,19 @@ Start Market Watch Article
     END
     Maximize Browser Window
 
+Start Market Watch Newsletter
+  Set Selenium Speed  0.5 seconds
+    ${options} =  Set Browser Options
+    #IF  "${Env}" == "prod"
+        Open Browser  https://www.marketwatch.com  ${Browser}  options=${options}
+        Go To  https://www.marketwatch.com/follow
+    #ELSE IF  "${Env}" == "dev"
+        #Open Browser  https://www.dev.marketwatch.com  ${Browser}  options=${options}
+       # Go To  https://www.stg.marketwatch.com/picks/i-am-not-rich-by-any-means-im-63-and-on-a-limited-budget-but-in-great-need-of-a-financial-adviser-is-there-help-for-me-214a114c?mod=mw_latestnews
+    #END
+    Maximize Browser Window
+
+
 Start PEN Article
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options

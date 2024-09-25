@@ -116,6 +116,20 @@ Validate the MW digest notification
     MarketWatchMailboxPage.Search Your Daily Digest from MW
     #MarketWatchMailboxPage.Validate MW Digest notification
 
+#US-T415
+Validate the MarketWatch Newsletter
+  [Documentation]  This test case validates the MarketWatch price and volume alerts on the Quote page
+  [Tags]  Regression  TagMWN
+     CommonFunctionality.Start Market Watch Newsletter
+     DefinedKeywords.Market Watch Sign In Process
+     Set Selenium Implicit Wait  20
+     MarketWatchAlertsPage.Validate Newsletters option on MW Preference Center
+     MarketWatchAlertsPage.Click Newsletters option on MW Preference Center
+     Execute javascript  window.scrollTo(0,500)
+     Set Selenium Implicit Wait  10
+     MarketWatchAlertsPage.Validation of subscription to Mutual Funds Weekly newsletters
+     MarketWatchAlertsPage.Validation of Unsubscripton of Mutual Funds Weekly newsletters
+
 #US-T122
 Validate the MW real-time author notification
     [Documentation]  This test case validates the MW real-time author notification

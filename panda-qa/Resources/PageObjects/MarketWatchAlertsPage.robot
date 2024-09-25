@@ -8,6 +8,20 @@ ${JSCloseButtonMWPath}=  document.querySelector("#edit-alert-modal > ufc-modal")
 Validate Price and Volume Alert page
     Page Should Contain Element  //*[text()='Alerts']
 
+Validate Newsletters option on MW Preference Center
+    Wait Until Element is Visible  //*[@id='root']/div/div/div/div[1]/aside/nav/div[2]/ul/li[3]/a  #//html/body/div[2]/div/div/div/div[1]/aside/nav/div[2]/ul/li/[3]/a
+
+Click Newsletters option on MW Preference Center
+    Click Element  //*[@id='root']/div/div/div/div[1]/aside/nav/div[2]/ul/li[3]/a  #//html/body/div[2]/div/div/div/div[1]/aside/nav/div[2]/ul/li/[3]/a
+
+Validation of subscription to Mutual Funds Weekly newsletters
+
+  Wait Until Element is Visible  //*[@id="newsletter-card-container-704"]/div/div[2]/div/div/div[1]  #//html/body/div[2]/div/div/div/div[2]/div[1]/ufc-follow-newsletter-widget[3]
+  Click Element  //*[@id="newsletter-card-container-704"]/div/div[2]/div/div/div[1]  #//html/body/div[2]/div/div/div/div[2]/div[1]/ufc-follow-newsletter-widget[3]  #//html/body/div[2]/div/div/div/div[2]/div[1]/ufc-follow-newsletter-widget[3]
+
+Validation of Unsubscripton of Mutual Funds Weekly newsletters
+  Wait Until Element is Visible  //*[@id='newsletter-card-container-704']/div/div[2]/div/div[2]/button[1]  #//*[@id="newsletter-card-container-704"]/div/div[2]/div/div/div[1]
+  Click Element  //*[@id='newsletter-card-container-704']/div/div[2]/div/div[2]/button[1]
 Click Edit option on Alerts page
     Click Element    //*[text()="Edit"]
 
