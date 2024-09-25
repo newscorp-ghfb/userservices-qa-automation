@@ -10,9 +10,9 @@ accessKey: s3c1cGNU2UpLq5iJzNzx
 # ======================
 # The following capabilities are used to set up reporting on BrowserStack:
 # Set 'projectName' to the name of your project. Example, Marketing Website
-projectName: BrowserStack Samples 
+projectName: UserServices_Automation
 # Set `buildName` as the name of the job / testsuite being run
-buildName: browserstack build 
+buildName: UserServices_Automation_Build
 # `buildIdentifier` is a unique id to differentiate every execution that gets appended to
 # buildName. Choose your buildIdentifier format from the available expressions:
 # ${BUILD_NUMBER} (Default): Generates an incremental counter with every execution
@@ -37,9 +37,9 @@ platforms:
     osVersion: 10
     browserName: Chrome
     browserVersion: latest
-    buildName: userservices-demo
-    buildIdentifier: ${BUILD_NUMBER15}
-    projectName: Userservices
+    buildName: UserServices_Automation_Build
+#    buildIdentifier: ${BUILD_NUMBER15}
+    projectName: UserServices_Automation
     testObservability: true
     networkLogs: true
     consoleLogs: info
