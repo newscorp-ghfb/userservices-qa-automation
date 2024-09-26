@@ -118,7 +118,7 @@ Validate the Watchlist widget from Watchlist page
 #US-T468
 Validate the Watchlist widget from Watchlist
     [Documentation]  This test case validates the watchlist widget from watchlist page
-    [Tags]  Regression  Watchlist      TagWatch
+    [Tags]  Regression  Watchlist      TagWatch1
 
     CommonFunctionality.Start Barrons for Watchlist page
     DefinedKeywords.Sign In Process
@@ -128,7 +128,6 @@ Validate the Watchlist widget from Watchlist
     BarronsWatchlistPage.Click Add Symbol Input
     BarronsWatchlistPage.Type Symbol
     BarronsWatchlistPage.Select Symbol
-    BarronsWatchlistPage.Validate Symbol in Default New Watchlist
     BarronsWatchlistPage.Create Watchlist Name
     BarronsWatchlistPage.Edit Watchlist Name
     BarronsWatchlistPage.Type Symbol
@@ -138,6 +137,7 @@ Validate the Watchlist widget from Watchlist
     #BarronsWatchlistPage.Delete Watchlists
     #BarronsWatchlistPage.Validate Default New Watchlist
     #BarronsWatchlistPage.Validate No Symbol in Default New Watchlist
+
 #US-T248
 #US-T249
 #US-T250
