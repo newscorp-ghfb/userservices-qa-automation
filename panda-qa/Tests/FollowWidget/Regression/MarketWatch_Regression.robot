@@ -1,3 +1,21 @@
+*** Settings ***
+Documentation  Market Watch Regression Tests
+Force Tags  MarketWatch
+Resource  ../../../Resources/CommonFunctionality.robot
+Resource  ../../../Resources/DefinedKeywords.robot
+Resource  ../../../Resources/PageObjects/MarketWatchArticlePage.robot
+Resource  ../../../Resources/PageObjects/MarketWatchWatchlistPage.robot
+Resource  ../../../Resources/PageObjects/MarketWatchAuthorsPage.robot
+Resource  ../../../Resources/PageObjects/MarketWatchPreferenceCenterPage.robot
+Resource  ../../../Resources/PageObjects/MarketWatchMailboxPage.robot
+Resource  ../../../Resources/PageObjects/MarketWatchAlertsPage.robot
+
+Test Setup  CommonFunctionality.Start Market Watch Article
+#Test Setup  CommonFunctionality.Start Market Watch Newsletter
+Test Teardown  CommonFunctionality.Finish Testcase
+
+*** Variables ***
+
 *** Test Cases ***
 #US-T92
 #US-T93
@@ -119,7 +137,7 @@ Validate the MW digest notification
 #US-T415
 Validate the MarketWatch Newsletter
   [Documentation]  This test case validates the MarketWatch price and volume alerts on the Quote page
-  [Tags]  Regression  TagMWN1
+  [Tags]  Regression  TagMWN
      CommonFunctionality.Start Market Watch Newsletter
      DefinedKeywords.Market Watch Sign In Process
      Set Selenium Implicit Wait  20
@@ -133,7 +151,7 @@ Validate the MarketWatch Newsletter
 #US-T122
 Validate the MW real-time author notification
     [Documentation]  This test case validates the MW real-time author notification
-    [Tags]  Regression  Notifications  Author  Follow1
+    [Tags]  Regression  Notifications  Author  Follow11
     MarketWatchMailboxPage.Navigate Mailbox page
     MarketWatchMailboxPage.Login
     MarketWatchMailboxPage.Select Inbox

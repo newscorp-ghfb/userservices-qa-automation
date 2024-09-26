@@ -1,0 +1,67 @@
+1727349718400	geckodriver	INFO	Listening on 127.0.0.1:54775
+1727349721444	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54776" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileuAx8Ih"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727349722135	Marionette	INFO	Marionette enabled
+1727349722415	Marionette	INFO	Listening on port 54783
+WebDriver BiDi listening on ws://127.0.0.1:54776
+Read port: 54783
+1727349722680	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:54776/devtools/browser/6896e1fb-181d-430e-bc54-65ca4a822b91
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m1j7fftlpclpx8dg&sid=9222325317970825875&loc=https%3A%2F%2Fwww.barrons.com%2F&new=1&arf=0&ltm=1727349727464&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m1j7fgvsrjqdnehc&ckp=m1j7fftl6gybh8hu&glb=&cp_userState=anon&cp_testGroup=0&cp_topDomain=barrons.com&cp_access=free&cp_section=US%20Home%20Page%20Weekday&cp_subsection=&cp_cms_name=CAPS&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=8&cp_ab_bucket=48&cp_pageContentSource=Barrons%20Online&cp_pageContentType=Home&cp_pageContentTypeDetai=default&cp_pageSiteProduct=BOL&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.barrons.com/ line 33 > injectedScript, line 37: SecurityError: Permission denied to access property "setTimeout" on cross-origin object
+JavaScript warning: https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.barrons.com&us_privacy=1---&gpp=DBAA&gpp_sid=-1#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.5547739683106463%22,%22tld%22:%22www.barrons.com%22,%22topUrl%22:%22www.barrons.com%22,%22version%22:%229_12_0%22}, line 13: Script terminated by timeout at:
+r.prototype.logPixel@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.barrons.com&us_privacy=1---&gpp=DBAA&gpp_sid=-1#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.5547739683106463%22,%22tld%22:%22www.barrons.com%22,%22topUrl%22:%22www.barrons.com%22,%22version%22:%229_12_0%22}:13:3418
+r.prototype.flushEventQueue@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.barrons.com&us_privacy=1---&gpp=DBAA&gpp_sid=-1#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.5547739683106463%22,%22tld%22:%22www.barrons.com%22,%22topUrl%22:%22www.barrons.com%22,%22version%22:%229_12_0%22}:13:3152
+r/<@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.barrons.com&us_privacy=1---&gpp=DBAA&gpp_sid=-1#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.5547739683106463%22,%22tld%22:%22www.barrons.com%22,%22topUrl%22:%22www.barrons.com%22,%22version%22:%229_12_0%22}:13:3642
+
+console.error: ({})
+console.error: ({})
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m1j7fvbxgxgd6e5b&sid=9222325317970825875&loc=https%3A%2F%2Fwww.s.dev.barrons.com%2Farticles%2Fbuy-under-armour-stock-pick-51650672000&new=0&arf=0&ltm=1727349747556&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m1j7fviy2nbiw6uw&ckp=m1j7fftl6gybh8hu&glb=&amo=1720048200&cp_userState=anon&cp_testGroup=0&cp_topDomain=barrons.com&cp_pwTag=default&cp_pwPlacement=cx-snippetad&cp_pwCampaign=10&cp_pwType=personalized&cp_type=Retail&cp_template=preview&cp_access=paid&cp_section=Retail&cp_subsection=Sizing%20Up%20Small-Caps&cp_cms_name=Methode&cp_vix=&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=8&cp_ab_bucket=48&cp_pageContentSource=Barrons%20Online&cp_pageContentType=Article&cp_pageContentTypeDetai=continuous&cp_pageSiteProduct=BOL&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+JavaScript warning: https://pagead2.googlesyndication.com/bg/gV8oOBGKSZbVoBuTsHuy49HjUHUKsGGS79HUBzhlvTM.js line 2 > eval line 5332 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.cxense.com/cx.js, line 6: Script terminated by timeout at:
+r@https://cdn.cxense.com/cx.js:6:1244
+l<@https://cdn.cxense.com/cx.js:6:1807
+Vi@https://cdn.cxense.com/cx.js:6:52260
+ro@https://cdn.cxense.com/cx.js:6:54649
+ea@https://cdn.cxense.com/cx.js:6:70307
+ra/<@https://cdn.cxense.com/cx.js:6:70614
+
+JavaScript warning: https://s0.2mdn.net/879366/dfa7banner_html_inpage_rendering_lib_200_268.js, line 39: Script terminated by timeout at:
+K@https://s0.2mdn.net/879366/dfa7banner_html_inpage_rendering_lib_200_268.js:39:2518
+Rd@https://s0.2mdn.net/879366/dfa7banner_html_inpage_rendering_lib_200_268.js:39:2629
+ie@https://s0.2mdn.net/879366/dfa7banner_html_inpage_rendering_lib_200_268.js:45:470
+ge/b<@https://s0.2mdn.net/879366/dfa7banner_html_inpage_rendering_lib_200_268.js:42:292
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT, line 226: Script terminated by timeout at:
+Zc@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:226:542
+cd@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:228:26
+r@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:226:1791
+fA@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:589:149
+dA/</<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:587:189
+sb@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:205:204
+dA/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:587:168
+sb@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:205:204
+dA@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:587:135
+eA/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:587:111
+
+1727349819555	Marionette	INFO	Stopped listening on port 54783
+Dynamically enable window occlusion 1
+Marionette threw an error: TypeError: browsingContext.currentWindowGlobal is null
+getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:357:17
+
+console.error: "Marionette threw an error: TypeError: browsingContext.currentWindowGlobal is null\ngetMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:357:17\n"
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 47: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+Exiting due to channel error.

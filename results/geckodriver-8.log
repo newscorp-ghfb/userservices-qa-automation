@@ -1,0 +1,31 @@
+1727348657733	geckodriver	INFO	Listening on 127.0.0.1:64353
+1727348661294	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64354" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileEDvXNY"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727348664048	Marionette	INFO	Marionette enabled
+1727348664724	Marionette	INFO	Listening on port 64478
+WebDriver BiDi listening on ws://127.0.0.1:64354
+Read port: 64478
+1727348665249	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64354/devtools/browser/f22bb803-3932-4343-9253-5369a18e9e5f
+JavaScript warning: https://z.moatads.com/dowjonesheader64568365681/moatheader.js, line 386: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727348671998	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1727348671999	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://www.marketwatch.com/, line 358: Script terminated by timeout at:
+i@https://www.marketwatch.com/:358:12671
+b@https://www.marketwatch.com/:358:44631
+emit@https://www.marketwatch.com/:358:9497
+emit@https://www.marketwatch.com/:358:9435
+se/r/e[r]@https://www.marketwatch.com/:358:38915
+cV.prototype.g@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202409230101/pubads_impl.js:33:466261
+wM.prototype.start/<@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202409230101/pubads_impl.js:33:253301
+by@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202409230101/pubads_impl.js:33:128408
+dy/this.next@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202409230101/pubads_impl.js:33:128707
+b@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202409230101/pubads_impl.js:33:128958
+nrWrapper@https://www.marketwatch.com/:358:17823
+
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+1727348693065	Marionette	INFO	Stopped listening on port 64478
+Dynamically enable window occlusion 1
