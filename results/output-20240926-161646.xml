@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.5 on win32)" generated="20240926 16:16:47.578" rpa="false" schemaversion="4">
+<suite id="s1" name="Userservices-Qa-Automation" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation">
+<suite id="s1-s1" name="Panda-Qa" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\panda-qa">
+<suite id="s1-s1-s1" name="Tests" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\panda-qa\Tests">
+<suite id="s1-s1-s1-s1" name="FollowWidget" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\panda-qa\Tests\FollowWidget">
+<suite id="s1-s1-s1-s1-s1" name="Regression" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\panda-qa\Tests\FollowWidget\Regression">
+<suite id="s1-s1-s1-s1-s1-s1" name="MarketWatch Regression" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\panda-qa\Tests\FollowWidget\Regression\MarketWatch_Regression.robot">
+<test id="s1-s1-s1-s1-s1-s1-t1" name="Validate the MarketWatch Newsletter" line="120">
+<kw name="Set Selenium Speed">
+<arg>0.50</arg>
+<msg timestamp="20240926 16:16:47.643" level="FAIL">No keyword with name 'Set Selenium Speed' found.</msg>
+<status status="FAIL" starttime="20240926 16:16:47.643" endtime="20240926 16:16:47.643"/>
+</kw>
+<kw name="CommonFunctionality.Start MarketWatch Newsletter">
+<status status="NOT RUN" starttime="20240926 16:16:47.645" endtime="20240926 16:16:47.645"/>
+</kw>
+<kw name="DefinedKeywords.Market Watch Sign In Process">
+<status status="NOT RUN" starttime="20240926 16:16:47.648" endtime="20240926 16:16:47.648"/>
+</kw>
+<kw name="Set Selenium Implicit Wait">
+<arg>20</arg>
+<status status="NOT RUN" starttime="20240926 16:16:47.651" endtime="20240926 16:16:47.652"/>
+</kw>
+<kw name="MarketWatchAlertsPage.Validate Newsletters option on MW Preference Center">
+<status status="NOT RUN" starttime="20240926 16:16:47.653" endtime="20240926 16:16:47.653"/>
+</kw>
+<kw name="MarketWatchAlertsPage.Click Newsletters option on MW Preference Center">
+<status status="NOT RUN" starttime="20240926 16:16:47.655" endtime="20240926 16:16:47.655"/>
+</kw>
+<kw name="Execute javascript">
+<arg>window.scrollTo(0,500)</arg>
+<status status="NOT RUN" starttime="20240926 16:16:47.656" endtime="20240926 16:16:47.656"/>
+</kw>
+<kw name="Set Selenium Implicit Wait">
+<arg>10</arg>
+<status status="NOT RUN" starttime="20240926 16:16:47.657" endtime="20240926 16:16:47.657"/>
+</kw>
+<kw name="MarketWatchAlertsPage.Validation of subscription to Mutual Funds Weekly newsletters">
+<status status="NOT RUN" starttime="20240926 16:16:47.659" endtime="20240926 16:16:47.659"/>
+</kw>
+<kw name="MarketWatchAlertsPage.Validation of Unsubscripton of Mutual Funds Weekly newsletters">
+<status status="NOT RUN" starttime="20240926 16:16:47.660" endtime="20240926 16:16:47.660"/>
+</kw>
+<doc>This test case validates the MarketWatch price and volume alerts on the Quote page</doc>
+<tag>Regression</tag>
+<tag>TagMWNews</tag>
+<status status="FAIL" starttime="20240926 16:16:47.641" endtime="20240926 16:16:47.660">No keyword with name 'Set Selenium Speed' found.</status>
+</test>
+<status status="FAIL" starttime="20240926 16:16:47.638" endtime="20240926 16:16:47.661"/>
+</suite>
+<status status="FAIL" starttime="20240926 16:16:47.634" endtime="20240926 16:16:47.662"/>
+</suite>
+<status status="FAIL" starttime="20240926 16:16:47.631" endtime="20240926 16:16:47.664"/>
+</suite>
+<status status="FAIL" starttime="20240926 16:16:47.627" endtime="20240926 16:16:47.666"/>
+</suite>
+<status status="FAIL" starttime="20240926 16:16:47.623" endtime="20240926 16:16:47.667"/>
+</suite>
+<status status="FAIL" starttime="20240926 16:16:47.581" endtime="20240926 16:16:47.667"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Regression</stat>
+<stat pass="0" fail="1" skip="0">TagMWNews</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Userservices-Qa-Automation">Userservices-Qa-Automation</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Panda-Qa">Userservices-Qa-Automation.Panda-Qa</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Tests">Userservices-Qa-Automation.Panda-Qa.Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1" name="FollowWidget">Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1-s1" name="Regression">Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1-s1-s1" name="MarketWatch Regression">Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression.MarketWatch Regression</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -11,6 +11,7 @@ Resource  ../../../Resources/PageObjects/MarketWatchMailboxPage.robot
 Resource  ../../../Resources/PageObjects/MarketWatchAlertsPage.robot
 
 Test Setup  CommonFunctionality.Start Market Watch Article
+#Test Setup  CommonFunctionality.Start Market Watch Newsletter
 Test Teardown  CommonFunctionality.Finish Testcase
 
 *** Variables ***
@@ -20,7 +21,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T93
 Validate the Market Watch Preference Center page
     [Documentation]  This test case validates the Market Watch preference center page
-    [Tags]  Regression  PreferenceCenter  Follow1
+    [Tags]  Regression  PreferenceCenter  Follow11
 
     MarketWatchPreferenceCenterPage.Add Author By Hotlink
     DefinedKeywords.MarketWatch PreferenceCenter User Sign In Process
@@ -35,12 +36,12 @@ Validate the Market Watch Preference Center page
     #MarketWatchPreferenceCenterPage.Validate Following Toggle Alert Pop up
     #MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up
     #MarketWatchPreferenceCenterPage.Navigate Article page
-    #MarketWatchArticlePage.Scroll stories
+    #MarketWatchArticlePage.Scroll storie
 
 #US-T28
 Validate Authors for MarketWatch Article page without byline
     [Documentation]  This test case validates authors without byline for Market Watch article page
-    [Tags]  Regression  Author  Article  Follow1
+    [Tags]  Regression  Author  Article
 
     CommonFunctionality.Start Market Watch Article without byline
     MarketWatchArticlePage.Validate author without byline
@@ -133,10 +134,24 @@ Validate the MW digest notification
     MarketWatchMailboxPage.Search Your Daily Digest from MW
     #MarketWatchMailboxPage.Validate MW Digest notification
 
+#US-T415
+Validate the MarketWatch Newsletter
+  [Documentation]  This test case validates the MarketWatch price and volume alerts on the Quote page
+  [Tags]  Regression  TagMWN
+     CommonFunctionality.Start Market Watch Newsletter
+     DefinedKeywords.Market Watch Sign In Process
+     Set Selenium Implicit Wait  20
+     MarketWatchAlertsPage.Validate Newsletters option on MW Preference Center
+     MarketWatchAlertsPage.Click Newsletters option on MW Preference Center
+     Execute javascript  window.scrollTo(0,500)
+     Set Selenium Implicit Wait  10
+     MarketWatchAlertsPage.Validation of subscription to Mutual Funds Weekly newsletters
+     MarketWatchAlertsPage.Validation of Unsubscripton of Mutual Funds Weekly newsletters
+
 #US-T122
 Validate the MW real-time author notification
     [Documentation]  This test case validates the MW real-time author notification
-    [Tags]  Regression  Notifications  Author  Follow1
+    [Tags]  Regression  Notifications  Author  Follow11
     MarketWatchMailboxPage.Navigate Mailbox page
     MarketWatchMailboxPage.Login
     MarketWatchMailboxPage.Select Inbox

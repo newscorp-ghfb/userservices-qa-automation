@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.5 on win32)" generated="20240926 14:31:01.322" rpa="false" schemaversion="4">
+<suite id="s1" name="Userservices-Qa-Automation" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation">
+<suite id="s1-s1" name="Panda-Qa" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\panda-qa">
+<suite id="s1-s1-s1" name="Tests" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\panda-qa\Tests">
+<suite id="s1-s1-s1-s1" name="FollowWidget" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\panda-qa\Tests\FollowWidget">
+<suite id="s1-s1-s1-s1-s1" name="Regression" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\panda-qa\Tests\FollowWidget\Regression">
+<suite id="s1-s1-s1-s1-s1-s1" name="MarketWatch Regression" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\panda-qa\Tests\FollowWidget\Regression\MarketWatch_Regression.robot">
+<test id="s1-s1-s1-s1-s1-s1-t1" name="Validate the Market Watch Preference Center page" line="4">
+<kw name="MarketWatchPreferenceCenterPage.Add Author By Hotlink">
+<msg timestamp="20240926 14:31:01.390" level="FAIL">No keyword with name 'MarketWatchPreferenceCenterPage.Add Author By Hotlink' found.</msg>
+<status status="FAIL" starttime="20240926 14:31:01.390" endtime="20240926 14:31:01.390"/>
+</kw>
+<kw name="DefinedKeywords.MarketWatch PreferenceCenter User Sign In Process">
+<status status="NOT RUN" starttime="20240926 14:31:01.392" endtime="20240926 14:31:01.392"/>
+</kw>
+<kw name="MarketWatchPreferenceCenterPage.Validate Followed Authors">
+<status status="NOT RUN" starttime="20240926 14:31:01.393" endtime="20240926 14:31:01.393"/>
+</kw>
+<kw name="Get Element Count">
+<var>${val}</var>
+<arg>//*[@id="root"]/div/div/div/div[3]/div/div/button</arg>
+<status status="NOT RUN" starttime="20240926 14:31:01.396" endtime="20240926 14:31:01.397"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${val} &gt; 0</arg>
+<arg>MarketWatchPreferenceCenterPage.Click Following Toggle Alert Pop up</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" starttime="20240926 14:31:01.397" endtime="20240926 14:31:01.397"/>
+</kw>
+<kw name="MarketWatchPreferenceCenterPage.Validate Author Name">
+<status status="NOT RUN" starttime="20240926 14:31:01.398" endtime="20240926 14:31:01.398"/>
+</kw>
+<kw name="MarketWatchPreferenceCenterPage.Validate Following Toggle Feature">
+<status status="NOT RUN" starttime="20240926 14:31:01.399" endtime="20240926 14:31:01.399"/>
+</kw>
+<kw name="MarketWatchPreferenceCenterPage.Validate Following Frequency">
+<status status="NOT RUN" starttime="20240926 14:31:01.401" endtime="20240926 14:31:01.401"/>
+</kw>
+<kw name="MarketWatchPreferenceCenterPage.Validate All Tabs Displayed">
+<status status="NOT RUN" starttime="20240926 14:31:01.402" endtime="20240926 14:31:01.402"/>
+</kw>
+<kw name="MarketWatchPreferenceCenterPage.Validate Author On All Tab">
+<status status="NOT RUN" starttime="20240926 14:31:01.403" endtime="20240926 14:31:01.403"/>
+</kw>
+<doc>This test case validates the Market Watch preference center page</doc>
+<tag>Follow11</tag>
+<tag>PreferenceCenter</tag>
+<tag>Regression</tag>
+<status status="FAIL" starttime="20240926 14:31:01.386" endtime="20240926 14:31:01.403">No keyword with name 'MarketWatchPreferenceCenterPage.Add Author By Hotlink' found.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s1-t2" name="Validate the MW real-time author notification" line="134">
+<kw name="MarketWatchMailboxPage.Navigate Mailbox page">
+<msg timestamp="20240926 14:31:01.406" level="FAIL">No keyword with name 'MarketWatchMailboxPage.Navigate Mailbox page' found.</msg>
+<status status="FAIL" starttime="20240926 14:31:01.406" endtime="20240926 14:31:01.406"/>
+</kw>
+<kw name="MarketWatchMailboxPage.Login">
+<status status="NOT RUN" starttime="20240926 14:31:01.408" endtime="20240926 14:31:01.408"/>
+</kw>
+<kw name="MarketWatchMailboxPage.Select Inbox">
+<status status="NOT RUN" starttime="20240926 14:31:01.409" endtime="20240926 14:31:01.409"/>
+</kw>
+<kw name="MarketWatchMailboxPage.Search Your MW real-time author notification">
+<status status="NOT RUN" starttime="20240926 14:31:01.411" endtime="20240926 14:31:01.411"/>
+</kw>
+<kw name="MarketWatchMailboxPage.Validate MW real-time author notification">
+<status status="NOT RUN" starttime="20240926 14:31:01.412" endtime="20240926 14:31:01.412"/>
+</kw>
+<doc>This test case validates the MW real-time author notification</doc>
+<tag>Author</tag>
+<tag>Follow11</tag>
+<tag>Notifications</tag>
+<tag>Regression</tag>
+<status status="FAIL" starttime="20240926 14:31:01.404" endtime="20240926 14:31:01.412">No keyword with name 'MarketWatchMailboxPage.Navigate Mailbox page' found.</status>
+</test>
+<status status="FAIL" starttime="20240926 14:31:01.382" endtime="20240926 14:31:01.414"/>
+</suite>
+<status status="FAIL" starttime="20240926 14:31:01.377" endtime="20240926 14:31:01.415"/>
+</suite>
+<status status="FAIL" starttime="20240926 14:31:01.374" endtime="20240926 14:31:01.416"/>
+</suite>
+<status status="FAIL" starttime="20240926 14:31:01.371" endtime="20240926 14:31:01.418"/>
+</suite>
+<status status="FAIL" starttime="20240926 14:31:01.367" endtime="20240926 14:31:01.419"/>
+</suite>
+<status status="FAIL" starttime="20240926 14:31:01.325" endtime="20240926 14:31:01.421"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Author</stat>
+<stat pass="0" fail="2" skip="0">Follow11</stat>
+<stat pass="0" fail="1" skip="0">Notifications</stat>
+<stat pass="0" fail="1" skip="0">PreferenceCenter</stat>
+<stat pass="0" fail="2" skip="0">Regression</stat>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Userservices-Qa-Automation">Userservices-Qa-Automation</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s1" name="Panda-Qa">Userservices-Qa-Automation.Panda-Qa</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s1-s1" name="Tests">Userservices-Qa-Automation.Panda-Qa.Tests</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s1-s1-s1" name="FollowWidget">Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s1-s1-s1-s1" name="Regression">Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s1-s1-s1-s1-s1" name="MarketWatch Regression">Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression.MarketWatch Regression</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

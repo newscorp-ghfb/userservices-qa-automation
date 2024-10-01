@@ -19,6 +19,7 @@ Resource  ../../../Resources/PageObjects/BarronsStockScreenerPage.robot
 Library  SeleniumLibrary
 
 Test Setup  CommonFunctionality.Start Barrons Article
+#Test Setup  CommonFunctionality.Start Barrons Newsletter
 Test Teardown  CommonFunctionality.Finish Testcase
 *** Variables ***
 
@@ -29,19 +30,30 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T56
 Validate the multiple authors follow button from articles page
     [Documentation]  This test case validates the multiple authors follow button from articles page
-    [Tags]  Regression  Follow  MultipleAuthors  Article   BarronsMultipleauthors   Follow1
+    [Tags]  Regression  Follow  MultipleAuthors  Article   BarronsMultipleauthors   TagBAF
 
     Set Selenium Speed  0.5 seconds
     DefinedKeywords.Barrons Article Sign in Process
     Set Selenium Implicit Wait  50s
     BarronsArticlePage.Validate author on article page
 
+
+#US-T477
+Validate the Barrons Preference Center page
+    [Documentation]  This test case validates the barrons preference center page
+    [Tags]  Regression  PreferenceCenter  TagBN
+    CommonFunctionality.Start Barrons Newsletter
+    DefinedKeywords.Barrons Newsletter Sign in Process
+    BarronsNewslettersPage.Click Watchlist Button
+    BarronsNewslettersPage.Barrons Signout Process
+    BarronsNewslettersPage.Validate watchlist is present
+
 #US-T82
 #US-T80
 #US-T81
 Validate the Barrons Preference Center page
     [Documentation]  This test case validates the barrons preference center page
-    [Tags]  Regression  PreferenceCenter  Follow1
+    [Tags]  Regression  PreferenceCenter  TagBFCP
 
     BarronsPreferenceCenterPage.Add Author By Hotlink
     DefinedKeywords.Sign In Process
@@ -103,6 +115,29 @@ Validate the Watchlist widget from Watchlist page
     #BarronsWatchlistPage.Validate Default New Watchlist
     #BarronsWatchlistPage.Validate No Symbol in Default New Watchlist
 
+#US-T468
+Validate the Watchlist widget from Watchlist
+    [Documentation]  This test case validates the watchlist widget from watchlist page
+    [Tags]  Regression  Watchlist      TagWatch1
+
+    CommonFunctionality.Start Barrons for Watchlist page
+    DefinedKeywords.Sign In Process
+    Set Selenium Speed  0.5 seconds
+    Capture Page Screenshot    screenshot.png
+    BarronsWatchlistPage.Validate Watchlist Page
+    BarronsWatchlistPage.Click Add Symbol Input
+    BarronsWatchlistPage.Type Symbol
+    BarronsWatchlistPage.Select Symbol
+    BarronsWatchlistPage.Create Watchlist Name
+    BarronsWatchlistPage.Edit Watchlist Name
+    BarronsWatchlistPage.Type Symbol
+    BarronsWatchlistPage.Select Symbol
+    BarronsWatchlistPage.Validate Symbol in Created Watchlist
+    #BarronsWatchlistPage.Sort Symbols
+    #BarronsWatchlistPage.Delete Watchlists
+    #BarronsWatchlistPage.Validate Default New Watchlist
+    #BarronsWatchlistPage.Validate No Symbol in Default New Watchlist
+
 #US-T248
 #US-T249
 #US-T250
@@ -122,7 +157,7 @@ Validate the Watchlist widget from Quotes page
 #US-T384
 Verify if a user is able to login into Barrons Stock Screener and access the Featured Preset Screeners without any subscription for free review.
     [Documentation]  This test case validates that a user is able to login into Barrons Stock Screener and access the Featured Preset Screeners without any subscription for free review.
-    [Tags]  Barrons StockScreener Page      Follow1
+        [Tags]  Barrons StockScreener Page              BB
 
     CommonFunctionality.Start Barrons Stock Screener Page for Featured Preset Screener
     Set Selenium Speed  0.25 seconds
@@ -135,7 +170,7 @@ Verify if a user is able to login into Barrons Stock Screener and access the Fea
 #US-T385
 Verify if a user is able to navigate to Barrons Stock Screener and subscribe in order to edit the list of featured preset screens.
     [Documentation]  This test case validates that a user is able to subscribe and login into Barrons Stock Screener in order to edit the list of featured preset screens.
-    [Tags]  Barrons StockScreener Page      Follow1
+    [Tags]  Barrons StockScreener Page      BSC
 
     CommonFunctionality.Start Barrons Stock Screener Page for Featured Preset Screener
     Set Selenium Speed  0.2 seconds
