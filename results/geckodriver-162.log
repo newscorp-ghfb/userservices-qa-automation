@@ -1,0 +1,53 @@
+1728054457527	geckodriver	INFO	Listening on 127.0.0.1:64127
+1728054460658	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64128" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofile9QhAwp"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728054461475	Marionette	INFO	Marionette enabled
+1728054461743	Marionette	INFO	Listening on port 64146
+WebDriver BiDi listening on ws://127.0.0.1:64128
+Read port: 64146
+1728054462034	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64128/devtools/browser/440de2ca-e458-4db2-8a20-d280276311f0
+JavaScript warning: https://www.marketwatch.com/, line 358: Script terminated by timeout at:
+3434/c/r/<@https://www.marketwatch.com/:358:17441
+r@https://www.marketwatch.com/:358:17615
+8139/f/</i<@https://www.marketwatch.com/:358:16685
+i@https://www.marketwatch.com/:358:13693
+8139/f/<@https://www.marketwatch.com/:358:16528
+emit@https://www.marketwatch.com/:358:9476
+i@https://www.marketwatch.com/:358:17943
+nrWrapper@https://www.marketwatch.com/:358:17771
+s@https://sts3.wsj.net/bucket-a/maggie/static/js/scripts-9518c21bc3.min.js:101:222429
+nrWrapper@https://www.marketwatch.com/:358:17810
+
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS, line 200: Script terminated by timeout at:
+Kc@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:200:321
+nG@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:648:262
+pG.prototype.flush@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:652:300
+ba.flush@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:669:132
+FH/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:680:210
+ba.Qk/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:623:126
+ba.Qk/c/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:622:420
+
+JavaScript error: https://us.tags.newscgp.com/prod/ncg/ncg.js, line 10: TypeError: window.GlobalSnowplowNamespace is undefined
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m1uv0vgxoj5yq3aq&sid=9222325317970825873&loc=https%3A%2F%2Fwww.marketwatch.com%2Ffollow&new=1&arf=0&ltm=1728054486612&ref=https%3A%2F%2Fsso.accounts.dowjones.com%2F&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m1uv0vin3dwwgt5s&ckp=m1uv0vgxj6gnbu2s&glb=&eid0=e4cefa22ef027cc0132f0c218da37da39cdb3228234af4df969b5c463592e123&eit0=wsj&cp_userState=anon&cp_testGroup=75&cp_topDomain=marketwatch.com&cp_template=full&cp_access=free&cp_section=Follow&cp_subsection=mw&cp_cms_name=CAPS&cp_subscriber=registered&cp_edition=naus&cp_bucket=5&cp_ab_bucket=15&cp_pageContentSource=MarketWatch&cp_pageContentType=Follow&cp_pageContentTypeDetai=follow&cp_pageSiteProduct=MW&cp_userTags=&cp_sessionState=ca, line 1: TypeError: cX.loadScript is not a function
+JavaScript error: https://us.tags.newscgp.com/prod/ncg/ncg.js, line 10: TypeError: window.GlobalSnowplowNamespace is undefined
+1728054498987	Marionette	INFO	Stopped listening on port 64146
+JavaScript warning: https://www.marketwatch.com/asset/dj-ufc/v1.33.0/p-5a49cb7f.js, line 1: Script terminated by timeout at:
+Y/$<@https://www.marketwatch.com/asset/dj-ufc/v1.33.0/p-5a49cb7f.js:1:6894
+Y/<@https://www.marketwatch.com/asset/dj-ufc/v1.33.0/p-5a49cb7f.js:1:6896
+Y@https://www.marketwatch.com/asset/dj-ufc/v1.33.0/p-5a49cb7f.js:1:7662
+X@https://www.marketwatch.com/asset/dj-ufc/v1.33.0/p-5a49cb7f.js:1:6654
+Q/<@https://www.marketwatch.com/asset/dj-ufc/v1.33.0/p-5a49cb7f.js:1:6097
+ne@https://www.marketwatch.com/asset/dj-ufc/v1.33.0/p-5a49cb7f.js:1:8066
+Q@https://www.marketwatch.com/asset/dj-ufc/v1.33.0/p-5a49cb7f.js:1:6086
+K/<@https://www.marketwatch.com/asset/dj-ufc/v1.33.0/p-5a49cb7f.js:1:5945
+Se@https://www.marketwatch.com/asset/dj-ufc/v1.33.0/p-5a49cb7f.js:1:11812
+je@https://www.marketwatch.com/asset/dj-ufc/v1.33.0/p-5a49cb7f.js:1:11874
+
+Dynamically enable window occlusion 1

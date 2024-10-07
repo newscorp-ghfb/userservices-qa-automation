@@ -17,6 +17,14 @@ Navigate Preference Center page
     ELSE IF  "${Env}" == "dev"
         Go To  https://www.dev.wsj.com/preference-center/alerts
     END
+
+Navigate Newsletters Page
+    IF  "${Env}" == "prod"
+        Go To  https://www.wsj.com/preference-center/newsletters
+    ELSE IF  "${Env}" == "dev"
+        Go To  https://www.dev.wsj.com/preference-center/newsletters
+    END
+
 Navigate Article page
     IF  "${Env}" == "prod"
         Go To  https://www.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s

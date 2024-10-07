@@ -138,6 +138,19 @@ Validate the Watchlist widget from Watchlist
     #BarronsWatchlistPage.Validate Default New Watchlist
     #BarronsWatchlistPage.Validate No Symbol in Default New Watchlist
 
+#US-3892
+Validate the Watchlist widget from Watchlist
+    [Documentation]  This test case validates the watchlist widget xZfrom watchlist page
+    [Tags]  Regression  Watchlist  TagSPW
+
+    CommonFunctionality.Start Barrons Stock Picks
+    DefinedKeywords.Barrons Stock Pick Sign In Process
+    Set Selenium Speed  0.5 seconds
+    Execute javascript  window.scrollTo(0,500)
+    BarronsWatchlistPage.Click Search
+
+
+
 #US-T248
 #US-T249
 #US-T250
@@ -260,7 +273,7 @@ Validate the Barrons real-time company notification
 #US-T139
 Validate the Barrons real-time stock picks notification
     [Documentation]  This test case validates the Barrons real-time stock picks notification
-    [Tags]  Regression  Notifications  CustomTopic   Follow1
+    [Tags]  Regression  Notifications  CustomTopic   SP
     BarronsMailboxPage.Navigate Mailbox page
     BarronsMailboxPage.Login
     BarronsMailboxPage.Select Inbox

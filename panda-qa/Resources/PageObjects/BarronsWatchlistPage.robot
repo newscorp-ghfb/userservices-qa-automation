@@ -4,6 +4,8 @@ Library  SeleniumLibrary
 *** Variables ***
 
 *** Keywords ***
+
+
 Validate Watchlist Page
     Page Should Contain Element  //*[text()="Add Symbol"]
 
@@ -12,6 +14,9 @@ Validate Watchlist Page
 
 Click Add Symbol Input
     Click Element  //input[@id="symbol-search"]
+
+Click Search
+    Click Element  //*[@id="__next"]/div/div[2]/div[2]/div/div[14]/div[2]
 
 Type Symbol
     Input Text  //input[@id="symbol-search"]  Microsoft
@@ -30,7 +35,7 @@ Create Watchlist Name
 
 Edit Watchlist Name
     Click Element  //*[text()="Watchlist Name"]/../button[@class="btn btn--icon i-edit u-floatRight"]
-    Input Text  //*[@value="Watchlist Name"]  Test
+    Input Text  //*[@value="Watchlist Name"]  Jansi
     Click Element  //button[text()="Save"]
 
 Validate Symbol in Created Watchlist

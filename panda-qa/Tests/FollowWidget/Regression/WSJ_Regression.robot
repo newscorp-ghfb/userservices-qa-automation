@@ -23,7 +23,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T75
 Validate the multiple authors follow button from articles page
     [Documentation]  This test case validates the multiple authors follow button from articles page
-    [Tags]  Regression  Author  Follow  Article       Follow1
+    [Tags]  Regression  Author  Follow  Article       MA
 
     DefinedKeywords.Sign In Process
     Set Selenium Speed  0.2 seconds
@@ -47,6 +47,15 @@ Validate the multiple authors follow button from articles page
 #    WSJPreferenceCenterPage.Validate Author 1
 #    WSJPreferenceCenterPage.Validate Author 2
 
+#US-T431
+Validate the WSJ Preference Center page
+    [Documentation]  This test case validates the WSJ preference center page
+    [Tags]  Regression  PreferenceCenter  TagWSJ1
+
+    CommonFunctionality.Start WSJ Preference Center Page Newsletter
+    DefinedKeywords.WSJ Newsletters Page Sign In Process
+
+
 
 #US-T91
 #US-T98
@@ -54,7 +63,7 @@ Validate the multiple authors follow button from articles page
 #US-T229
 Validate the WSJ Preference Center page
     [Documentation]  This test case validates the WSJ preference center page
-    [Tags]  Regression  PreferenceCenter  Follow1
+    [Tags]  Regression  PreferenceCenter  TagWSJPS
 
     CommonFunctionality.Start WSJ Preference Center Page
                     IF  "${Env}" == "prod"

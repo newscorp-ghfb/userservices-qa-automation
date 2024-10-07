@@ -1,0 +1,58 @@
+1728047585722	geckodriver	INFO	Listening on 127.0.0.1:51995
+1728047588740	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51996" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileaC6LV8"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728047589536	Marionette	INFO	Marionette enabled
+1728047589838	Marionette	INFO	Listening on port 52011
+WebDriver BiDi listening on ws://127.0.0.1:51996
+Read port: 52011
+1728047590120	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51996/devtools/browser/bee79ea6-a541-47e7-9901-e34a4ea557b6
+JavaScript warning: https://www.marketwatch.com/, line 358: Script terminated by timeout at:
+emit@https://www.marketwatch.com/:358:9463
+i@https://www.marketwatch.com/:358:17943
+nrWrapper@https://www.marketwatch.com/:358:17771
+
+JavaScript warning: https://www.marketwatch.com/, line 358: Script terminated by timeout at:
+3434/c/r/<@https://www.marketwatch.com/:358:17441
+r@https://www.marketwatch.com/:358:17615
+Ue/i.prototype.then@https://www.marketwatch.com/:358:53366
+f@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410010101/pubads_impl.js:33:140039
+Ty/<@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410010101/pubads_impl.js:33:140050
+nrWrapper@https://www.marketwatch.com/:358:17810
+e@https://www.marketwatch.com/:358:52590
+Ty@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410010101/pubads_impl.js:33:139938
+_.cg@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410010101/pubads_impl.js:33:140088
+tv/</<@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410010101/pubads_impl.js:33:293888
+nrWrapper@https://www.marketwatch.com/:358:17810
+e@https://www.marketwatch.com/:358:52590
+tv/<@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410010101/pubads_impl.js:33:293832
+Qy@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410010101/pubads_impl.js:33:139341
+Sy/this.next@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410010101/pubads_impl.js:33:139640
+Ty/<@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410010101/pubads_impl.js:33:140053
+nrWrapper@https://www.marketwatch.com/:358:17810
+e@https://www.marketwatch.com/:358:52590
+Ty@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410010101/pubads_impl.js:33:139938
+_.cg@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410010101/pubads_impl.js:33:140088
+tv@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410010101/pubads_impl.js:33:293456
+HT.prototype.g@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410010101/pubads_impl.js:33:464807
+YK.prototype.start/<@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410010101/pubads_impl.js:33:256632
+Qy@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410010101/pubads_impl.js:33:139341
+Sy/this.next@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410010101/pubads_impl.js:33:139640
+b@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410010101/pubads_impl.js:33:139891
+nrWrapper@https://www.marketwatch.com/:358:17810
+
+JavaScript error: https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.2ttuSS2XBQ8.O/m=gapi_iframes,gapi_iframes_style_common/rt=j/sv=1/d=1/ed=1/am=AACA/rs=AHpOoo-TYe36ShA0ds8KrukIhF82BwaKlg/cb=gapi.loaded_0, line 183: SecurityError: Permission denied to access property "I0_1728047593662" on cross-origin object
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+JavaScript warning: https://tags.tiqcdn.com/utag/wsjdn/oneidentity-consumer/prod/utag.17.js?utv=ut4.46.202405071405, line 4: Script terminated by timeout at:
+AppMeasurement/a.cookieRead@https://tags.tiqcdn.com/utag/wsjdn/oneidentity-consumer/prod/utag.17.js?utv=ut4.46.202405071405:4:1661
+AppMeasurement/a.cookieWrite@https://tags.tiqcdn.com/utag/wsjdn/oneidentity-consumer/prod/utag.17.js?utv=ut4.46.202405071405:4:2266
+anonymous/W.s_PPVevent@https://tags.tiqcdn.com/utag/wsjdn/oneidentity-consumer/prod/utag.17.js?utv=ut4.46.202405071405 line 22 > Function:3:1579
+
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m1uqxlvrsix0bpeb&sid=9222325317970825873&loc=https%3A%2F%2Fwww.marketwatch.com%2Ffollow&new=1&arf=0&ltm=1728047615754&ref=https%3A%2F%2Fsso.accounts.dowjones.com%2F&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m1uqxlx53vimdxfl&ckp=m1uqxlvrojssn0wu&glb=&eid0=e4cefa22ef027cc0132f0c218da37da39cdb3228234af4df969b5c463592e123&eit0=wsj&cp_userState=anon&cp_testGroup=13&cp_topDomain=marketwatch.com&cp_template=full&cp_access=free&cp_section=Follow&cp_subsection=mw&cp_cms_name=CAPS&cp_subscriber=registered&cp_edition=naus&cp_bucket=7&cp_ab_bucket=77&cp_pageContentSource=MarketWatch&cp_pageContentType=Follow&cp_pageContentTypeDetai=follow&cp_pageSiteProduct=MW&cp_userTags=&cp_sessionState=ca, line 1: TypeError: cX.loadScript is not a function
+1728047628027	Marionette	INFO	Stopped listening on port 52011
+Dynamically enable window occlusion 1

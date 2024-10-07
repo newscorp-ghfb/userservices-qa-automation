@@ -403,7 +403,14 @@ Start Barrons Stock Picks for Stock Picks breadcrumb
         Open Browser  https://www.s.dev.barrons.com  ${Browser}  options=${options}
         Go To  https://www.s.dev.barrons.com/market-data/stocks/stock-picks?mod=BOL_TOPNAV
     END
-    Set Focus To Element  //*[text()="Barron's Latest Stock Picks"]
+    Set Focus To Element  //*[@id="__next"]/div/div[2]/div[1]/h1  #//*[text()="Barron's Latest Stock Picks"]
+    Maximize Browser Window
+
+Start Barrons Stock Picks
+    Set Selenium Speed  0.5 seconds
+    ${options} =  Set Browser Options
+       Open Browser  https://www.s.dev.barrons.com  ${Browser}  options=${options}
+        Go To   https://www.s.dev.barrons.com/market-data/stocks/stock-picks?mod=BOL_TOPNAV
     Maximize Browser Window
 
 Start Barrons Stock Screener Page for Featured Preset Screener
@@ -446,6 +453,7 @@ Start Barrons for Watchlist page
         Go To  https://www.s.dev.barrons.com/watchlist
     END
     Maximize Browser Window
+
 
 Start WSJ for Watchlist page
     Set Selenium Speed  0.5 seconds
@@ -583,6 +591,15 @@ Start WSJ Preference Center Page
         Open Browser  https://www.wsj.com/preference-center/alerts  ${Browser}  options=${options}
     ELSE IF  "${Env}" == "dev"
         Open Browser  https://www.dev.wsj.com/preference-center/alerts  ${Browser}  options=${options}
+    END
+    Maximize Browser Window
+
+Start WSJ Preference Center Page Newsletter
+    ${options} =  Set Browser Options
+    IF  "${Env}" == "prod"
+        Open Browser  https://www.wsj.com/preference-center/newsletters  ${Browser}  options=${options}
+    ELSE IF  "${Env}" == "dev"
+        Open Browser  https://www.dev.wsj.com/preference-center/newsletters  ${Browser}  options=${options}
     END
     Maximize Browser Window
 

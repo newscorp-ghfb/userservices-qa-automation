@@ -4,6 +4,17 @@ Library  SeleniumLibrary
 *** Variables ***
 ${JSDeleteButtonMWPath}=  document.querySelector("#delete-alert-modal").shadowRoot.querySelector("ufc-modal > div > ufc-button:nth-child(1) > button")
 ${JSCloseButtonMWPath}=  document.querySelector("#edit-alert-modal > ufc-modal").shadowRoot.querySelector("div > div.modal > focus-trap > div.modal-header > button > ufc-icon")
+${PersonalFinance}=  document.querySelector("#root > div > div > div > div:nth-child(2) > div:nth-child(2) > ufc-follow-newsletter-widget:nth-child(7)").shadowRoot.querySelector("ufc-follow-widget > div > div > div.ufc-newsletter--actions > div > ufc-follow-toggle").shadowRoot.querySelector("div")
+${PersonalFinanceUS}=  document.querySelector("#root > div > div > div > div:nth-child(2) > div:nth-child(2) > ufc-follow-newsletter-widget:nth-child(7)").shadowRoot.querySelector("ufc-follow-widget > div > div > div.ufc-newsletter--confirmation > div > div.ufc-newsletter--confirmation-buttons > button.ufc-newsletter--unfollow-button")
+${MiddayReport}=  document.querySelector("#root > div > div > div > div:nth-child(2) > div:nth-child(2) > ufc-follow-newsletter-widget:nth-child(13)").shadowRoot.querySelector("ufc-follow-widget > div > div > div.ufc-newsletter--actions > div > ufc-follow-toggle").shadowRoot.querySelector("div")
+${MiddayReportUS}=  document.querySelector("#root > div > div > div > div:nth-child(2) > div:nth-child(2) > ufc-follow-newsletter-widget:nth-child(13)").shadowRoot.querySelector("ufc-follow-widget > div > div > div.ufc-newsletter--confirmation > div > div.ufc-newsletter--confirmation-buttons > button.ufc-newsletter--unfollow-button")
+${AftertheBell}=  document.querySelector("#root > div > div > div > div:nth-child(2) > div:nth-child(2) > ufc-follow-newsletter-widget:nth-child(15)").shadowRoot.querySelector("ufc-follow-widget > div > div > div.ufc-newsletter--actions > div > ufc-follow-toggle").shadowRoot.querySelector("div > div")
+${AftertheBellUS}=  document.querySelector("#root > div > div > div > div:nth-child(2) > div:nth-child(2) > ufc-follow-newsletter-widget:nth-child(15)").shadowRoot.querySelector("ufc-follow-widget > div > div > div.ufc-newsletter--confirmation > div > div.ufc-newsletter--confirmation-buttons > button.ufc-newsletter--unfollow-button")
+${EuropeDaily}=  document.querySelector("#root > div > div > div > div:nth-child(2) > div:nth-child(2) > ufc-follow-newsletter-widget:nth-child(14)").shadowRoot.querySelector("ufc-follow-widget > div > div > div.ufc-newsletter--actions > div > ufc-follow-toggle").shadowRoot.querySelector("div > div")
+${EuropeDailyUS}=  document.querySelector("#root > div > div > div > div:nth-child(2) > div:nth-child(2) > ufc-follow-newsletter-widget:nth-child(14)").shadowRoot.querySelector("ufc-follow-widget > div > div > div.ufc-newsletter--confirmation > div > div.ufc-newsletter--confirmation-buttons > button.ufc-newsletter--unfollow-button")
+${TechDaily}=  document.querySelector("#root > div > div > div > div:nth-child(2) > div:nth-child(2) > ufc-follow-newsletter-widget:nth-child(8)").shadowRoot.querySelector("ufc-follow-widget > div > div > div.ufc-newsletter--actions > div > ufc-follow-toggle").shadowRoot.querySelector("div > div")
+${TechDailyUS}=  document.querySelector("#root > div > div > div > div:nth-child(2) > div:nth-child(2) > ufc-follow-newsletter-widget:nth-child(8)").shadowRoot.querySelector("ufc-follow-widget > div > div > div.ufc-newsletter--confirmation > div > div.ufc-newsletter--confirmation-buttons > button.ufc-newsletter--unfollow-button")
+
 *** Keywords ***
 Validate Price and Volume Alert page
     Page Should Contain Element  //*[text()='Alerts']
@@ -14,10 +25,49 @@ Validate Newsletters option on MW Preference Center
 Click Newsletters option on MW Preference Center
     Click Element  //*[@id='root']/div/div/div/div[1]/aside/nav/div[2]/ul/li[3]/a  #//html/body/div[2]/div/div/div/div[1]/aside/nav/div[2]/ul/li/[3]/a
 
-Validation of subscription to Mutual Funds Weekly newsletters
+Validation of subscription to Personal Finace newsletters
+  Wait Until Element is Visible  dom:${PersonalFinance}  #//html/body/div[1]/div/div/div/div[2]/div[1]/ufc-follow-newsletter-widget[1]
+  Click Element  dom:${PersonalFinance}  #//html/body/div[1]/div/div/div/div[2]/div[1]/ufc-follow-newsletter-widget[1]  #//html/body/div[2]/div/div/div/div[2]/div[1]/ufc-follow-newsletter-widget[3]  #//html/body/div[2]/div/div/div/div[2]/div[1]/ufc-follow-newsletter-widget[3]
 
+Validation of Unsubscripton of Personal Finace newsletters
+  Wait Until Element is Visible  dom:${PersonalFinanceUS}  #//html/body/div[1]/div/div/div/div[2]/div[1]/ufc-follow-newsletter-widget[1]
+  Click Element  dom:${PersonalFinanceUS}
+
+Validation of subscription to Midday Report newsletters
+  Wait Until Element is Visible  dom:${MiddayReport}
+  Click Element  dom:${MiddayReport}
+
+Validation of Unsubscripton of Midday Report newsletters
+  Wait Until Element is Visible  dom:${MiddayReportUS}  10S
+  Click Element  dom:${MiddayReportUS}
+
+Validation of subscription to After the Bell newsletters
+   Wait Until Element is Visible  dom:${AftertheBell}
+   Click Element  dom:${AftertheBell}
+
+Validation of Unsubscripton of After the Bell newsletters
+  Wait Until Element is Visible  dom:${AftertheBellUS}    10S
+  Click Element  dom:${AftertheBellUS}
+
+Validation of subscription to Europe Daily newsletters
+  Wait Until Element is Visible  dom:${EuropeDaily}
+  Click Element  dom:${EuropeDaily}
+
+Validation of Unsubscription to Europe Daily newsletters
+  Wait Until Element is Visible  dom:${EuropeDailyUS}
+  Click Element  dom:${EuropeDailyUS}
+
+Validation of subscription to Mutual Funds Weekly newsletters
   Wait Until Element is Visible  //*[@id="newsletter-card-container-704"]/div/div[2]/div/div/div[1]  #//html/body/div[2]/div/div/div/div[2]/div[1]/ufc-follow-newsletter-widget[3]
   Click Element  //*[@id="newsletter-card-container-704"]/div/div[2]/div/div/div[1]  #//html/body/div[2]/div/div/div/div[2]/div[1]/ufc-follow-newsletter-widget[3]  #//html/body/div[2]/div/div/div/div[2]/div[1]/ufc-follow-newsletter-widget[3]
+
+Validation of subscription to Tech Daily newsletters
+  Wait Until Element is Visible  dom:${TechDaily}
+  Click Element  dom:${TechDaily}
+
+Validation of Unsubscription to Tech Daily newsletters
+  Wait Until Element is Visible  dom:${TechDailyUS}
+  Click Element  dom:${TechDailyUS}
 
 Validation of Unsubscripton of Mutual Funds Weekly newsletters
   Wait Until Element is Visible  //*[@id='newsletter-card-container-704']/div/div[2]/div/div[2]/button[1]  #//*[@id="newsletter-card-container-704"]/div/div[2]/div/div/div[1]

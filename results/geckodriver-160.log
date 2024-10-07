@@ -1,0 +1,33 @@
+1728054261337	geckodriver	INFO	Listening on 127.0.0.1:52446
+1728054264645	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52447" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofilebs9RFs"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728054265453	Marionette	INFO	Marionette enabled
+1728054265811	Marionette	INFO	Listening on port 52468
+WebDriver BiDi listening on ws://127.0.0.1:52447
+Read port: 52468
+1728054266125	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52447/devtools/browser/711cdfef-b896-41ea-b28f-61ba8951ea45
+JavaScript warning: https://js-agent.newrelic.com/nr-spa-1.267.0.min.js, line 2: Script terminated by timeout at:
+appendGlobalCustomAttributes@https://js-agent.newrelic.com/nr-spa-1.267.0.min.js:2:43903
+getPayload@https://js-agent.newrelic.com/nr-spa-1.267.0.min.js:2:44266
+prepareHarvest@https://js-agent.newrelic.com/nr-spa-1.267.0.min.js:2:44004
+getPayload@https://js-agent.newrelic.com/nr-spa-1.267.0.min.js:2:42872
+runHarvest@https://js-agent.newrelic.com/nr-spa-1.267.0.min.js:2:1493
+unload@https://js-agent.newrelic.com/nr-spa-1.267.0.min.js:2:838
+nrWrapper@https://www.marketwatch.com/:358:17810
+
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+JavaScript warning: https://sso.accounts.dowjones.com/one_identity_login_pages/login/0905e7365768f8c947bfb0c526fb8b9e/js/vendor.js, line 51: Script terminated by timeout at:
+BE@https://sso.accounts.dowjones.com/one_identity_login_pages/login/0905e7365768f8c947bfb0c526fb8b9e/js/vendor.js:51:4468
+b@https://sso.accounts.dowjones.com/one_identity_login_pages/login/0905e7365768f8c947bfb0c526fb8b9e/js/vendor.js:49:13761
+
+JavaScript error: https://us.tags.newscgp.com/prod/ncg/ncg.js, line 10: TypeError: window.GlobalSnowplowNamespace is undefined
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m1uuwsjl9juaqegh&sid=9222325317970825873&loc=https%3A%2F%2Fwww.marketwatch.com%2Ffollow&new=1&arf=0&ltm=1728054296197&ref=https%3A%2F%2Fsso.accounts.dowjones.com%2F&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m1uuwslacq7t1wtw&ckp=m1uuwsjlw28d5rtk&glb=&eid0=e4cefa22ef027cc0132f0c218da37da39cdb3228234af4df969b5c463592e123&eit0=wsj&cp_userState=anon&cp_testGroup=15&cp_topDomain=marketwatch.com&cp_template=full&cp_access=free&cp_section=Follow&cp_subsection=mw&cp_cms_name=CAPS&cp_subscriber=registered&cp_edition=naus&cp_bucket=7&cp_ab_bucket=27&cp_pageContentSource=MarketWatch&cp_pageContentType=Follow&cp_pageContentTypeDetai=follow&cp_pageSiteProduct=MW&cp_userTags=&cp_sessionState=ca, line 1: TypeError: cX.loadScript is not a function
+JavaScript error: https://us.tags.newscgp.com/prod/ncg/ncg.js, line 10: TypeError: window.GlobalSnowplowNamespace is undefined
+1728054308282	Marionette	INFO	Stopped listening on port 52468
+Dynamically enable window occlusion 1

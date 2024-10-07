@@ -1,0 +1,49 @@
+1728284236250	geckodriver	INFO	Listening on 127.0.0.1:53088
+1728284239527	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53089" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileXrOIW9"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728284240160	Marionette	INFO	Marionette enabled
+1728284240408	Marionette	INFO	Listening on port 53110
+WebDriver BiDi listening on ws://127.0.0.1:53089
+Read port: 53110
+1728284240680	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53089/devtools/browser/c11c472f-cd07-4624-a651-03682b0396d9
+JavaScript warning: https://www.marketwatch.com/, line 358: Script terminated by timeout at:
+nrWrapper@https://www.marketwatch.com/:358:17660
+
+JavaScript warning: https://sts3.wsj.net/bucket-a/maggie/static/js/scripts-9518c21bc3.min.js, line 85: Script terminated by timeout at:
+u@https://sts3.wsj.net/bucket-a/maggie/static/js/scripts-9518c21bc3.min.js:85:11927
+n@https://c.amazon-adsystem.com/aax2/apstag.js:4:195240
+c/<@https://c.amazon-adsystem.com/aax2/apstag.js:4:195503
+nrWrapper@https://www.marketwatch.com/:358:17810
+
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+JavaScript warning: https://tags.tiqcdn.com/utag/wsjdn/oneidentity-consumer/prod/utag.17.js?utv=ut4.46.202405071405, line 4: Script terminated by timeout at:
+AppMeasurement/a.cookieRead@https://tags.tiqcdn.com/utag/wsjdn/oneidentity-consumer/prod/utag.17.js?utv=ut4.46.202405071405:4:1661
+AppMeasurement/a.cookieWrite@https://tags.tiqcdn.com/utag/wsjdn/oneidentity-consumer/prod/utag.17.js?utv=ut4.46.202405071405:4:2266
+anonymous/W.s_PPVevent@https://tags.tiqcdn.com/utag/wsjdn/oneidentity-consumer/prod/utag.17.js?utv=ut4.46.202405071405 line 22 > Function:3:1579
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1728284272409	Marionette	INFO	Stopped listening on port 53110
+Dynamically enable window occlusion 1
+console.error: services.settings: 
+  Message: NetworkError: Network error: TypeError: NetworkError: Network request failed
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:107:1
+NetworkError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:5
+_adjustedError@resource://services-settings/RemoteSettingsClient.sys.mjs:916:14
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:821:38
+
+console.warn: services.settings: main/devtools-compatibility-browsers sync interrupted by shutdown
+console.warn: services.settings: main/search-config-icons sync interrupted by shutdown
+console.warn: services.settings: main/urlbar-persisted-search-terms sync interrupted by shutdown
+console.warn: services.settings: main/url-classifier-skip-urls sync interrupted by shutdown
+console.warn: services.settings: main/translations-models sync interrupted by shutdown
+console.warn: services.settings: main/tracking-protection-lists sync interrupted by shutdown
+console.warn: services.settings: main/sites-classification sync interrupted by shutdown
+console.warn: services.settings: main/anti-tracking-url-decoration sync interrupted by shutdown
+console.error: (new AbortError("IndexedDB: main/windows-default-browser-agent getLastModified() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/IDBHelpers.sys.mjs", 16))

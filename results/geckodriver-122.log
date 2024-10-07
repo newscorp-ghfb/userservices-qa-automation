@@ -1,0 +1,39 @@
+1728046728006	geckodriver	INFO	Listening on 127.0.0.1:59787
+1728046731045	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59788" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofile8SWv49"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728046731763	Marionette	INFO	Marionette enabled
+1728046732037	Marionette	INFO	Listening on port 59809
+WebDriver BiDi listening on ws://127.0.0.1:59788
+Read port: 59809
+1728046732287	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59788/devtools/browser/c6910651-8326-4bd9-9d2c-4920716ec5f9
+JavaScript warning: https://www.marketwatch.com/asset/ace/uac.min.1.0.76.js, line 1: Script terminated by timeout at:
+d@https://www.marketwatch.com/asset/ace/uac.min.1.0.76.js:1:50542
+B<.vxid<@https://www.marketwatch.com/asset/ace/uac.min.1.0.76.js:1:60381
+j/<@https://www.marketwatch.com/asset/ace/uac.min.1.0.76.js:1:52495
+$/</u<@https://www.marketwatch.com/asset/ace/uac.min.1.0.76.js:1:66091
+$/<@https://www.marketwatch.com/asset/ace/uac.min.1.0.76.js:1:65860
+p<@https://www.marketwatch.com/asset/ace/uac.min.1.0.76.js:1:48192
+nrWrapper@https://www.marketwatch.com/:358:17810
+f@https://www.marketwatch.com/asset/ace/uac.min.1.0.76.js:1:13859
+A/<@https://www.marketwatch.com/asset/ace/uac.min.1.0.76.js:1:22112
+nrWrapper@https://www.marketwatch.com/:358:17810
+
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS, line 257: Script terminated by timeout at:
+ag@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:257:249
+cg@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:256:60
+pG.prototype.flush@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:652:280
+ba.flush@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:669:132
+FH/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:680:210
+ba.Qk/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:623:126
+ba.Qk/c/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:622:420
+
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m1uqf7r6salhsvlk&sid=9222325317970825873&loc=https%3A%2F%2Fwww.marketwatch.com%2Ffollow&new=1&arf=0&ltm=1728046757636&ref=https%3A%2F%2Fsso.accounts.dowjones.com%2F&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m1uqf7uu27pes4r8&ckp=m1uqf7r66pnc32hn&glb=&eid0=e4cefa22ef027cc0132f0c218da37da39cdb3228234af4df969b5c463592e123&eit0=wsj&cp_userState=anon&cp_testGroup=47&cp_topDomain=marketwatch.com&cp_template=full&cp_access=free&cp_section=Follow&cp_subsection=mw&cp_cms_name=CAPS&cp_subscriber=registered&cp_edition=naus&cp_bucket=7&cp_ab_bucket=77&cp_pageContentSource=MarketWatch&cp_pageContentType=Follow&cp_pageContentTypeDetai=follow&cp_pageSiteProduct=MW&cp_userTags=&cp_sessionState=ca, line 1: TypeError: cX.loadScript is not a function
+1728046766435	Marionette	INFO	Stopped listening on port 59809
+Dynamically enable window occlusion 1

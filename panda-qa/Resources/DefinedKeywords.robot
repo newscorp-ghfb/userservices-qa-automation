@@ -169,8 +169,8 @@ Barrons Newsletter Sign in Process
    Click Element  //html/body/div/section/div/div[2]/form/button  #//html/body/main/div[2]/section[16]/div/form/div[5]/button
 
 Barrons Stock Pick Sign In Process
-   Wait Until Element is Visible  //html/body/div[3]/div/div/header/div/div[1]/div[3]/div/a
-   Click Element  //html/body/div[3]/div/div/header/div/div[1]/div[3]/div/a
+   Wait Until Element is Visible  //html/body/div[1]/div/header/div/div[1]/div[3]/div/a  #//html/body/div[3]/div/div/header/div/div[1]/div[3]/div/a
+   Click Element  //html/body/div[1]/div/header/div/div[1]/div[3]/div/a   #//html/body/div[3]/div/div/header/div/div[1]/div[3]/div/a
    Wait Until Element is Visible  //*[@id="emailOrUsername"]
    Input Text  //*[@id="emailOrUsername"]  QABARRONSONLY  #akhilesh.khanduri@dowjones.com  #//*[@id=":r5:-form-item"]  QABARRONSONLY  #akhilesh.khanduri@dowjones.com
    Set Selenium Implicit Wait  10s
@@ -389,6 +389,11 @@ WSJ Preference Center Page Sign In Process
     Input Text  //*[@id=":r8:-form-item"]  password1  #January2024  #Cuceis19841234!
     Set Selenium Implicit Wait  10s
     Click Button  //html/body/div/section/div/div[2]/form/button
+
+WSJ Newsletters Page Sign In Process
+
+    Click Element  //*[@id="__next"]/div[1]/header/div/button
+
 
 Sailthru User Sign In Process
     Click Button  //input[@type='text']
