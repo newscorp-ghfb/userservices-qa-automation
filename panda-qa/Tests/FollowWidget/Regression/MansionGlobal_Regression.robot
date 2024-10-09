@@ -19,7 +19,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T100
 Validate the Mansion GLobal Preference Center page
     [Documentation]  This test case validates the Mansion Global preference center page
-    [Tags]  Regression  PrefrenceCenter   Follow1
+    [Tags]  Regression  PrefrenceCenter   MG
 
     MansionGLobalPreferenceCenterPage.Add Author By Hotlink
     DefinedKeywords.Sign In Process
@@ -33,8 +33,8 @@ Validate the Mansion GLobal Preference Center page
     MansionGlobalPreferenceCenterPage.Validate Author On All Tab
     MansionGlobalPreferenceCenterPage.Add Company By Hotlink
     MansionGlobalPreferenceCenterPage.Validate Followed Companies
-    ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
-    Run Keyword If  ${val2} > 0
+    #${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
+    #Run Keyword If  ${val2} > 0
     MansionGlobalPreferenceCenterPage.Click Following Toggle Alert Pop up
 #    MansionGLobalPreferenceCenterPage.Validate Company Frequency
 #    MansionGLobalPreferenceCenterPage.Validate Company Quote Link

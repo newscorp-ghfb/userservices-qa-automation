@@ -1,0 +1,105 @@
+1728421540106	geckodriver	INFO	Listening on 127.0.0.1:61849
+1728421543135	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61850" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileX3LLUW"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728421543748	Marionette	INFO	Marionette enabled
+1728421544063	Marionette	INFO	Listening on port 61857
+WebDriver BiDi listening on ws://127.0.0.1:61850
+Read port: 61857
+1728421544321	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:61850/devtools/browser/a4ef6ea6-6ce5-4b07-8e0e-780dffc0f36a
+1728421549233	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://www.marketwatch.com/_next/static/chunks/main-7c2c5b4ee7ae4ea0.js, line 1: unreachable code after return statement
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m20xkd7c631tk4cb&sid=9222325317970825873&loc=https%3A%2F%2Fwww.marketwatch.com%2Fstory%2Fis-the-u-s-stock-market-closed-on-juneteenth-what-investors-need-to-know-11655230158&new=1&arf=0&ltm=1728421552351&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m20xkd8urdqskfs0&ckp=m20xkd7cq76zchtn&glb=&amo=1655731440&cp_userState=anon&cp_testGroup=13&cp_topDomain=marketwatch.com&cp_pwTag=default&cp_pwPlacement=cx-articlecover&cp_pwCampaign=226&cp_pwType=free&cp_type=Market%20Extra&cp_template=preview&cp_access=paid&cp_section=Markets&cp_subsection=Markets&cp_cms_name=MarketWatch%20CMS%20(PROD)&cp_vix=&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=9&cp_ab_bucket=59&cp_pageContentSource=MarketWatch&cp_pageContentType=Article&cp_pageContentTypeDetai=standard&cp_pageSiteProduct=MW&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+1728421559261	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WEoqGYGTldYSfSNCQ9Ugqu-00NFuS6e6WOK2G2Y_zzI.js line 2 > eval line 1596 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1728421561814	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript warning: https://www.marketwatch.com/story/is-the-u-s-stock-market-closed-on-juneteenth-what-investors-need-to-know-11655230158, line 104: Script terminated by timeout at:
+i@https://www.marketwatch.com/story/is-the-u-s-stock-market-closed-on-juneteenth-what-investors-need-to-know-11655230158:104:17917
+nrWrapper@https://www.marketwatch.com/story/is-the-u-s-stock-market-closed-on-juneteenth-what-investors-need-to-know-11655230158:104:17870
+s@https://www.wsj.com/static_html_files/bluegrass/2.2.119/bluegrass2.min.js:1:19101
+ajax@https://www.wsj.com/static_html_files/bluegrass/2.2.119/bluegrass2.min.js:2:10493
+ajaxSend@https://www.wsj.com/static_html_files/bluegrass/2.2.119/bluegrass2.min.js:2:13158
+send@https://www.wsj.com/static_html_files/bluegrass/2.2.119/bluegrass2.min.js:2:21379
+send@https://www.wsj.com/static_html_files/bluegrass/2.2.119/bluegrass2.min.js:2:5926
+invoke@https://www.wsj.com/static_html_files/bluegrass/2.2.119/bluegrass2.min.js:2:30650
+J@https://www.wsj.com/static_html_files/bluegrass/2.2.119/bluegrass2.min.js:1:13158
+V@https://www.wsj.com/static_html_files/bluegrass/2.2.119/bluegrass2.min.js:1:12843
+X@https://www.wsj.com/static_html_files/bluegrass/2.2.119/bluegrass2.min.js:1:13385
+e.exports/u/J/n/<@https://www.wsj.com/static_html_files/bluegrass/2.2.119/bluegrass2.min.js:1:12956
+d@https://www.wsj.com/static_html_files/bluegrass/2.2.119/bluegrass2.min.js:1:21334
+fireWith@https://www.wsj.com/static_html_files/bluegrass/2.2.119/bluegrass2.min.js:1:22124
+l@https://www.wsj.com/static_html_files/bluegrass/2.2.119/bluegrass2.min.js:2:30430
+l.fn.init/<@https://www.wsj.com/static_html_files/bluegrass/2.2.119/bluegrass2.min.js:2:31392
+received/<@https://www.wsj.com/static_html_files/bluegrass/2.2.119/bluegrass2.min.js:2:6017
+i/triggerHandler/<@https://www.wsj.com/static_html_files/bluegrass/2.2.119/bluegrass2.min.js:1:18380
+triggerHandler@https://www.wsj.com/static_html_files/bluegrass/2.2.119/bluegrass2.min.js:1:18297
+triggerReceived@https://www.wsj.com/static_html_files/bluegrass/2.2.119/bluegrass2.min.js:2:14888
+success@https://www.wsj.com/static_html_files/bluegrass/2.2.119/bluegrass2.min.js:2:13426
+s/n.onreadystatechange@https://www.wsj.com/static_html_files/bluegrass/2.2.119/bluegrass2.min.js:1:18672
+nrWrapper@https://www.marketwatch.com/story/is-the-u-s-stock-market-closed-on-juneteenth-what-investors-need-to-know-11655230158:104:17810
+
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=95335178, line 14: Script terminated by timeout at:
+E@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=95335178:14:325
+h@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=95335178:94:449
+
+JavaScript warning: https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.Y7snZc84UmY.es5.O/am=YDBgBg/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4o6JJW61vjfL39b99y1stb_FZTXg/m=_b,_tp, line 290: Script terminated by timeout at:
+c@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.Y7snZc84UmY.es5.O/am=YDBgBg/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4o6JJW61vjfL39b99y1stb_FZTXg/m=_b,_tp:290:187
+b@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.Y7snZc84UmY.es5.O/am=YDBgBg/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4o6JJW61vjfL39b99y1stb_FZTXg/m=_b,_tp:281:48
+
+JavaScript warning: https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.marketwatch.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=8#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.6309637442471606%22,%22tld%22:%22www.marketwatch.com%22,%22topUrl%22:%22www.marketwatch.com%22,%22version%22:%229_12_0%22}, line 13: Script terminated by timeout at:
+r.prototype.flushEventQueue@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.marketwatch.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=8#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.6309637442471606%22,%22tld%22:%22www.marketwatch.com%22,%22topUrl%22:%22www.marketwatch.com%22,%22version%22:%229_12_0%22}:13:3137
+r/<@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.marketwatch.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=8#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.6309637442471606%22,%22tld%22:%22www.marketwatch.com%22,%22topUrl%22:%22www.marketwatch.com%22,%22version%22:%229_12_0%22}:13:3642
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://fpt.live.com/?session_id=5898b5e810f5459dae02d3cf775dd3d9&CustomerId=33e01921-4d64-4f8c-a055-5bdaffd5e33d&PageId=SI, line 5: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+1728421569178	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://res-1.cdn.office.net/midgard/versionless/livepersonacard_without-react_4e09eb534f633f2b7d57.js, line 2: unreachable code after return statement
+JavaScript warning: https://cdn.adnxs.com/v/s/246/trk.js, line 334: Script terminated by timeout at:
+cf@https://cdn.adnxs.com/v/s/246/trk.js:334:84
+_e@https://cdn.adnxs.com/v/s/246/trk.js:513:127
+mi@https://cdn.adnxs.com/v/s/246/trk.js:557:831
+gi@https://cdn.adnxs.com/v/s/246/trk.js:139:30
+Kh@https://cdn.adnxs.com/v/s/246/trk.js:521:194
+Uh@https://cdn.adnxs.com/v/s/246/trk.js:365:60
+Cc@https://cdn.adnxs.com/v/s/246/trk.js:449:76
+_.B@https://cdn.adnxs.com/v/s/246/trk.js:560:3327
+_.C@https://cdn.adnxs.com/v/s/246/trk.js:560:1400
+md/<@https://cdn.adnxs.com/v/s/246/trk.js:560:5653
+
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js, line 14: Script terminated by timeout at:
+E@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:14:325
+h@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:94:449
+
+1728421608012	Marionette	INFO	Stopped listening on port 61857
+JavaScript warning: https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.mailindex.57c50e1a.js, line 2: Script terminated by timeout at:
+787012/n.dehanceValue@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.mailindex.57c50e1a.js:2:130451
+787012/n.get@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.mailindex.57c50e1a.js:2:131020
+787012/t.getObservablePropValue_@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.mailindex.57c50e1a.js:2:164828
+get@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.mailindex.57c50e1a.js:2:169602
+f@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.AppBoot.m.d5c9c439.js:17:266921
+u@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.AppBoot.m.d5c9c439.js:17:273482
+eY@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.AppBoot.m.d5c9c439.js:17:279837
+logSubstrateConnectionStateTimes@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.Notification.m.c2bdbd12.js:1:7999
+logSubstrateConnectionStateChange@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.Notification.m.c2bdbd12.js:1:8548
+connectionStateChangedHandler@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.Notification.m.c2bdbd12.js:1:25126
+249580/stateChanged/<@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.JquerySignalR.m.ea1f4ce2.js:1:16441
+249580/r/t.triggerHandler@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.JquerySignalR.m.ea1f4ce2.js:1:271
+u@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.JquerySignalR.m.ea1f4ce2.js:1:6308
+stop@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.JquerySignalR.m.ea1f4ce2.js:1:18043
+355250/t3/l.stop@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.Notification.m.c2bdbd12.js:1:45526
+249580/start/l/</</<@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.JquerySignalR.m.ea1f4ce2.js:1:13109
+
+Dynamically enable window occlusion 1

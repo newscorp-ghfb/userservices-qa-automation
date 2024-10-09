@@ -1,0 +1,99 @@
+1728466135292	geckodriver	INFO	Listening on 127.0.0.1:61755
+1728466138330	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61756" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileBQHCGF"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728466138988	Marionette	INFO	Marionette enabled
+1728466139295	Marionette	INFO	Listening on port 61772
+WebDriver BiDi listening on ws://127.0.0.1:61756
+Read port: 61772
+1728466139572	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:61756/devtools/browser/f87ac706-5d6c-436b-8f12-818e7c8fc6f9
+console.error: ({})
+console.error: ({})
+1728466150463	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: https://instant.page/5.1.0, line 1: SyntaxError: redeclaration of var e
+JavaScript error: https://instant.page/5.1.0, line 1: SyntaxError: redeclaration of var e
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m21o491g1jfxtgma&sid=9222325317970825875&loc=https%3A%2F%2Fwww.s.dev.barrons.com%2F&new=1&arf=0&ltm=1728466150089&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m21o4druosa6ft63&ckp=m21o491gme809ya5&glb=&amo=1728052320&cp_userState=anon&cp_testGroup=10&cp_loadDelay=6.1&cp_env=staging&cp_topDomain=barrons.com&cp_pwTag=default&cp_pwPlacement=cx-snippetad&cp_pwCampaign=10&cp_pwType=personalized&cp_type=&cp_template=preview&cp_access=paid&cp_section=&cp_subsection=&cp_cms_name=Barron's%20Authoring%20QA&cp_vix=&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=7&cp_ab_bucket=97&cp_pageContentSource=Barrons%20Online&cp_pageContentType=Article&cp_pageContentTypeDetai=continuous&cp_pageSiteProduct=BOL&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.Y7snZc84UmY.es5.O/am=YDBgBg/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4o6JJW61vjfL39b99y1stb_FZTXg/m=_b,_tp, line 290: Script terminated by timeout at:
+c@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.Y7snZc84UmY.es5.O/am=YDBgBg/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4o6JJW61vjfL39b99y1stb_FZTXg/m=_b,_tp:290:187
+b@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.Y7snZc84UmY.es5.O/am=YDBgBg/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4o6JJW61vjfL39b99y1stb_FZTXg/m=_b,_tp:281:48
+
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://pagead2.googlesyndication.com/bg/OPjMWwJBtReHhWwOPXWsCqm1x5VpbT9SkyMWV37nL8g.js line 2 > eval line 3407 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/OPjMWwJBtReHhWwOPXWsCqm1x5VpbT9SkyMWV37nL8g.js line 2 > eval line 6252 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/OPjMWwJBtReHhWwOPXWsCqm1x5VpbT9SkyMWV37nL8g.js line 2 > eval line 7337 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1728466168097	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:467:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:220:33
+JavaScript warning: https://cdn.parsely.com/keys/barrons.com/p.js, line 7: Script terminated by timeout at:
+n._generateCookieString@https://cdn.parsely.com/keys/barrons.com/p.js:7:29148
+n.set@https://cdn.parsely.com/keys/barrons.com/p.js:7:28150
+n.expire@https://cdn.parsely.com/keys/barrons.com/p.js:7:28423
+t._migrateCookie@https://cdn.parsely.com/keys/barrons.com/p.js:7:32415
+t.get@https://cdn.parsely.com/keys/barrons.com/p.js:7:31085
+getVisitorInfo@https://cdn.parsely.com/keys/barrons.com/p.js:7:33929
+getSession@https://cdn.parsely.com/keys/barrons.com/p.js:7:35584
+beacon@https://cdn.parsely.com/keys/barrons.com/p.js:7:64086
+e.engagedTime.sendHeartbeat@https://cdn.parsely.com/keys/barrons.com/p.js:7:43415
+i.sendHeartbeat@https://cdn.parsely.com/keys/barrons.com/p.js:7:41440
+i._sendHeartbeats@https://cdn.parsely.com/keys/barrons.com/p.js:7:41594
+i._setUnloadListeners/<@https://cdn.parsely.com/keys/barrons.com/p.js:7:41747
+value/<@https://cdn.parsely.com/keys/barrons.com/p.js:7:22304
+value@https://cdn.parsely.com/keys/barrons.com/p.js:7:22277
+value@https://cdn.parsely.com/keys/barrons.com/p.js:7:24351
+value@https://cdn.parsely.com/keys/barrons.com/p.js:7:24771
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js, line 80: Script terminated by timeout at:
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:506
+ph/c/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:139:320
+Ua@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:49:339
+Ra.prototype.flush@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:49:127
+Ta@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:483
+ph/c/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:139:292
+sc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+lg/</</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:122:516
+Qa.prototype.Nb/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:315
+lg/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:122:525
+sc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+lg/</</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:122:516
+Qa.prototype.Nb/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:315
+lg/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:122:525
+sc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+h@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:94:477
+
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+JavaScript warning: https://sso.int.accounts.dowjones.com/one_identity_login_pages/login/30480cbd6ffffea7743d4c1d4226bb50/js/vendor.js, line 51: Script terminated by timeout at:
+BE@https://sso.int.accounts.dowjones.com/one_identity_login_pages/login/30480cbd6ffffea7743d4c1d4226bb50/js/vendor.js:51:4767
+b@https://sso.int.accounts.dowjones.com/one_identity_login_pages/login/30480cbd6ffffea7743d4c1d4226bb50/js/vendor.js:49:13806
+
+1728466186235	Marionette	INFO	Stopped listening on port 61772
+JavaScript warning: https://securepubads.g.doubleclick.net/tag/js/gpt.js, line 6: Script terminated by timeout at:
+id@https://securepubads.g.doubleclick.net/tag/js/gpt.js:6:17060
+jd@https://securepubads.g.doubleclick.net/tag/js/gpt.js:6:16819
+Qh@https://securepubads.g.doubleclick.net/tag/js/gpt.js:11:33267
+Sh/<@https://securepubads.g.doubleclick.net/tag/js/gpt.js:11:33980
+th/a.j@https://securepubads.g.doubleclick.net/tag/js/gpt.js:11:28694
+$i@https://securepubads.g.doubleclick.net/tag/js/gpt.js:11:44425
+Bj@https://securepubads.g.doubleclick.net/tag/js/gpt.js:11:51228
+xj@https://securepubads.g.doubleclick.net/tag/js/gpt.js:11:49568
+@https://securepubads.g.doubleclick.net/tag/js/gpt.js:11:51562
+@https://securepubads.g.doubleclick.net/tag/js/gpt.js:11:51610
+
+Dynamically enable window occlusion 1

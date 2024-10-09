@@ -56,9 +56,11 @@ Validate the Market Watch Preference Center page
     [Tags]  Smoke  PreferenceCenter        TagMWPC
 
     MarketWatchPreferenceCenterPage.Navigate Preference Center page
+    Set Selenium Implicit Wait  20
     DefinedKeywords.Market Watch Sign In Process
     Set Selenium Implicit Wait  20
     MarketWatchPreferenceCenterPage.Add Author By Hotlink
+    DefinedKeywords.Market Watch Sign In Process
     MarketWatchPreferenceCenterPage.Validate Followed Authors
     Set Selenium Speed  0.5 seconds
     MarketWatchPreferenceCenterPage.Validate Following Toggle Feature

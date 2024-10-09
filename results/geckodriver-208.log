@@ -1,0 +1,56 @@
+1728381175358	geckodriver	INFO	Listening on 127.0.0.1:50287
+1728381178400	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50288" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileyxgou9"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728381178983	Marionette	INFO	Marionette enabled
+1728381179209	Marionette	INFO	Listening on port 50298
+Read port: 50298
+WebDriver BiDi listening on ws://127.0.0.1:50288
+1728381179314	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:50288/devtools/browser/0541c01d-17ba-4866-b15d-29826c76d7e9
+JavaScript warning: https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js, line 1: unreachable code after return statement
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m209j7nwt9j5wds8&sid=1134002947328204066&loc=https%3A%2F%2Fwww.dev.wsj.com%2F&new=1&arf=0&ltm=1728381187731&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m209j7q25ebxvh4f&ckp=m209j7nwu5n6yw70&glb=&cp_userState=anon&cp_testGroup=51&cp_env=staging&cp_topDomain=wsj.com&cp_template=full&cp_access=free&cp_section=US%20Home%20Page&cp_subsection=&cp_cms_name=CAPS&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=3&cp_ab_bucket=93&cp_pageContentSource=WSJ%20Online&cp_pageContentType=Home&cp_pageContentTypeDetai=desktopweb&cp_pageSiteProduct=WSJ&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+1728381189521	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://d3h0wybtovte4j.cloudfront.net/ugeovhprh.js, line 1: TypeError: URL constructor: null/foo.html?o=u&r=&l=https://www.dev.wsj.com/&aa=NA&ib=false&buster=zdSHVhphUIQtOKBJ is not a valid URL.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WEoqGYGTldYSfSNCQ9Ugqu-00NFuS6e6WOK2G2Y_zzI.js line 2 > eval line 3664 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.dev.wsj.com/_next/static/chunks/main-cd92e5a27ba2f238.js, line 1: Script terminated by timeout at:
+78018/y/<@https://www.dev.wsj.com/_next/static/chunks/main-cd92e5a27ba2f238.js:1:118364
+r@https://www.dev.wsj.com/_next/static/chunks/main-cd92e5a27ba2f238.js:1:117860
+
+JavaScript warning: https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js, line 1: Script terminated by timeout at:
+8018/g/<@https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js:1:111956
+r@https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js:1:111426
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://newscorp.okta.com/assets/js/sdk/okta-signin-widget/7.23.1/js/okta-sign-in.min.js, line 99: Script terminated by timeout at:
+79602/</x.Event@https://newscorp.okta.com/assets/js/sdk/okta-signin-widget/7.23.1/js/okta-sign-in.min.js:99:41544
+fix@https://newscorp.okta.com/assets/js/sdk/okta-signin-widget/7.23.1/js/okta-sign-in.min.js:99:40524
+n@https://newscorp.okta.com/assets/js/sdk/okta-signin-widget/7.23.1/js/okta-sign-in.min.js:99:69064
+
+1728381210902	Marionette	INFO	Stopped listening on port 50298
+Dynamically enable window occlusion 1
+console.warn: services.settings: main/query-stripping sync interrupted by shutdown
+console.warn: services.settings: main/partitioning-exempt-urls sync interrupted by shutdown
+console.warn: services.settings: main/translations-wasm sync interrupted by shutdown
+console.warn: services.settings: main/search-config-overrides-v2 sync interrupted by shutdown
+console.warn: services.settings: main/fingerprinting-protection-overrides sync interrupted by shutdown
+console.warn: services.settings: main/top-sites sync interrupted by shutdown
+console.warn: services.settings: main/normandy-recipes-capabilities sync interrupted by shutdown
+console.warn: services.settings: main/search-default-override-allowlist sync interrupted by shutdown
+console.warn: services.settings: main/search-config-v2 sync interrupted by shutdown
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 47: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+!!! error running onStopped callback: TypeError: callback is not a function
+console.warn: services.settings: main/search-telemetry-v2 sync interrupted by shutdown
+console.warn: services.settings: main/cookie-banner-rules-list sync interrupted by shutdown
+console.warn: services.settings: main/devtools-compatibility-browsers sync interrupted by shutdown
+console.warn: services.settings: main/search-config-icons sync interrupted by shutdown
+console.warn: services.settings: main/urlbar-persisted-search-terms sync interrupted by shutdown
+console.warn: services.settings: main/url-classifier-skip-urls sync interrupted by shutdown
+console.warn: services.settings: main/translations-models sync interrupted by shutdown
+1728381211153	WebDriver BiDi	ERROR	Failed to stop protocol: [Exception... "Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: chrome://remote/content/marionette/cert.sys.mjs :: allowAllCerts.disable :: line 47"  data: no] Stack trace: allowAllCerts.disable()@cert.sys.mjs:47
+destroy()@Session.sys.mjs:280
+deleteSession()@WebDriverBiDi.sys.mjs:174
+stop()@WebDriverBiDi.sys.mjs:264

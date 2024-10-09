@@ -1,0 +1,32 @@
+1728453584901	geckodriver	INFO	Listening on 127.0.0.1:56358
+1728453587922	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56359" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofilesR9AaE"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728453588976	Marionette	INFO	Marionette enabled
+1728453589348	Marionette	INFO	Listening on port 56370
+WebDriver BiDi listening on ws://127.0.0.1:56359
+Read port: 56370
+1728453589692	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:56359/devtools/browser/1c29c431-38c4-4f90-9526-6f69ce050ee6
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m21gn7mq74b1yxaq&sid=1139592114930554183&loc=https%3A%2F%2Fwww.fnlondon.com%2Farticles%2Fcomplaints-commissioner-fca-transparency-20220615&new=1&arf=0&ltm=1728453597806&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m21gn7q1a4djngh5&ckp=m21gn7mqty5xutf4&glb=&amo=1677944280&cp_userState=anon&cp_testGroup=19&cp_topDomain=fnlondon.com&cp_pwTag=default&cp_pwPlacement=cx-snippetad&cp_pwCampaign=6&cp_type=Politics&cp_template=preview&cp_access=paid&cp_section=Politics&cp_subsection=Politics&cp_cms_name=Wordpress&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=1&cp_ab_bucket=41&cp_pageContentSource=FN%20London&cp_pageContentType=Article&cp_pageContentTypeDetai=article&cp_pageSiteProduct=FN&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+Marionette threw an error: NoBrowsingContext: No BrowsingContext found
+getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:348:23
+
+console.error: "Marionette threw an error: NoBrowsingContext: No BrowsingContext found\ngetMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:348:23\n"
+[[GFX1-]: CompositorBridgeChild[[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutd[[ o[GFX1-]: CompositorBridgeChild receives IPC closeGG[GFX1-FX1-]: CompositorBridgeChild receives IPCFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+ clo[ with reason=AbnormalShutdown
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbGGn]: CompositorBridgeChild receives IPC close with reason=AbnormasFX1-]: CompositorBridgeChild receives IPC close with reason=Abnormaereceives IPC close with reason=AbnormalShutdown
+lFlShutdown
+wShutdown
+ nXormalShutd
+Gw1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+ith reason=AbnormalShutdown
+FX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+own
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.

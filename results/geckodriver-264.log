@@ -1,0 +1,51 @@
+1728407954210	geckodriver	INFO	Listening on 127.0.0.1:55082
+1728407957267	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55083" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileNwdfMd"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728407957977	Marionette	INFO	Marionette enabled
+1728407958256	Marionette	INFO	Listening on port 55095
+WebDriver BiDi listening on ws://127.0.0.1:55083
+Read port: 55095
+1728407958503	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:55083/devtools/browser/a21f35d0-cd13-467a-9a8e-648454791913
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m20ph5qzcs9qlm4z&sid=1139592114930554183&loc=https%3A%2F%2Fwww.s.dev.fnlondon.com%2F&new=1&arf=0&ltm=1728407965792&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m20ph5svhkujbq3h&ckp=m20ph5qzt79j4yav&glb=&cp_userState=anon&cp_testGroup=43&cp_env=staging&cp_topDomain=fnlondon.com&cp_template=full&cp_access=free&cp_section=Home&cp_subsection=&cp_cms_name=CAPS&cp_subscriber=nonsubscriber&cp_edition=europegb&cp_bucket=0&cp_ab_bucket=40&cp_pageContentSource=FN%20London&cp_pageContentType=Home&cp_pageContentTypeDetai=default&cp_pageSiteProduct=FN&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WEoqGYGTldYSfSNCQ9Ugqu-00NFuS6e6WOK2G2Y_zzI.js line 2 > eval line 6963 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://asset.barrons.com/article/public/fn_full_article.dfb75bf78e25.js, line 62: TypeError: e(...).offset() is undefined
+JavaScript error: https://asset.barrons.com/article/public/fn_full_article.dfb75bf78e25.js, line 26: TypeError: e(...).offset() is undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WEoqGYGTldYSfSNCQ9Ugqu-00NFuS6e6WOK2G2Y_zzI.js line 2 > eval line 3377 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.parsely.com/keys/fnlondon.com/p.js, line 7: Script terminated by timeout at:
+n.get@https://cdn.parsely.com/keys/fnlondon.com/p.js:7:27896
+t._migrateCookie@https://cdn.parsely.com/keys/fnlondon.com/p.js:7:32395
+t.get@https://cdn.parsely.com/keys/fnlondon.com/p.js:7:31085
+getVisitorInfo@https://cdn.parsely.com/keys/fnlondon.com/p.js:7:33929
+getSession@https://cdn.parsely.com/keys/fnlondon.com/p.js:7:35584
+beacon@https://cdn.parsely.com/keys/fnlondon.com/p.js:7:62284
+e.engagedTime.sendHeartbeat@https://cdn.parsely.com/keys/fnlondon.com/p.js:7:40449
+i.sendHeartbeat@https://cdn.parsely.com/keys/fnlondon.com/p.js:7:38474
+i._sendHeartbeats@https://cdn.parsely.com/keys/fnlondon.com/p.js:7:38628
+i._setUnloadListeners/<@https://cdn.parsely.com/keys/fnlondon.com/p.js:7:38781
+value/<@https://cdn.parsely.com/keys/fnlondon.com/p.js:7:22304
+value@https://cdn.parsely.com/keys/fnlondon.com/p.js:7:22277
+value@https://cdn.parsely.com/keys/fnlondon.com/p.js:7:24351
+value@https://cdn.parsely.com/keys/fnlondon.com/p.js:7:24771
+
+JavaScript warning: https://imasdk.googleapis.com/js/core/bridge3.672.0_en.html#goog_587560498, line 451: Script terminated by timeout at:
+bC@https://imasdk.googleapis.com/js/core/bridge3.672.0_en.html#goog_587560498:451:310
+fC/this.aa@https://imasdk.googleapis.com/js/core/bridge3.672.0_en.html#goog_587560498:449:29
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+JavaScript warning: https://sso.int.accounts.dowjones.com/one_identity_login_pages/login/8ef5d3ebeaef210670e951a3a15529f6/js/vendor.js, line 51: Script terminated by timeout at:
+BE@https://sso.int.accounts.dowjones.com/one_identity_login_pages/login/8ef5d3ebeaef210670e951a3a15529f6/js/vendor.js:51:4767
+b@https://sso.int.accounts.dowjones.com/one_identity_login_pages/login/8ef5d3ebeaef210670e951a3a15529f6/js/vendor.js:49:13806
+
+1728407987023	Marionette	INFO	Stopped listening on port 55095
+JavaScript error: https://asset.barrons.com/article/public/fn_full_article.dfb75bf78e25.js, line 62: TypeError: e(...).offset() is undefined
+Dynamically enable window occlusion 1
+JavaScript error: https://djcs-multi-region-assets-ohio.s3.us-east-2.amazonaws.com/dj-ufc/asset/dj-ufc/qa/v1.34.0-beta.217/p-5a49cb7f.js, line 1: TypeError: o is undefined
+JavaScript error: https://djcs-multi-region-assets-ohio.s3.us-east-2.amazonaws.com/dj-ufc/asset/dj-ufc/qa/v1.34.0-beta.217/p-5a49cb7f.js, line 1: TypeError: o is undefined

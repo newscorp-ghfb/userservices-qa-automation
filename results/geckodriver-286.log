@@ -1,0 +1,20 @@
+1728412948615	geckodriver	INFO	Listening on 127.0.0.1:49363
+1728412951669	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49364" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofilen5Ddjo"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728412952343	Marionette	INFO	Marionette enabled
+1728412952593	Marionette	INFO	Listening on port 49375
+WebDriver BiDi listening on ws://127.0.0.1:49364
+Read port: 49375
+1728412952851	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:49364/devtools/browser/ec0be43b-2ba1-4b39-a2a9-6d445b95eb24
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WEoqGYGTldYSfSNCQ9Ugqu-00NFuS6e6WOK2G2Y_zzI.js line 2 > eval line 1916 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m20sg9dsdloj22jn&sid=1133979867428110118&loc=https%3A%2F%2Fwww.s.dev.penews.com%2Farticles%2Ftest-3testing-wsj-full-bleed-3k-words-20220215&new=1&arf=0&ltm=1728412962692&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m20sg9f8fn1613sg&ckp=m20sg9dso5mdfsoy&glb=&amo=1644922380&cp_userState=anon&cp_testGroup=93&cp_env=staging&cp_topDomain=penews.com&cp_type=Advisers&cp_template=preview&cp_access=free&cp_section=ESG&cp_subsection=ESG&cp_cms_name=Wordpress&cp_subscriber=nonsubscriber&cp_edition=europegb&cp_bucket=9&cp_ab_bucket=49&cp_pageContentSource=Private%20Equity%20News&cp_pageContentType=Article&cp_pageContentTypeDetai=article&cp_pageSiteProduct=PEN&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WEoqGYGTldYSfSNCQ9Ugqu-00NFuS6e6WOK2G2Y_zzI.js line 2 > eval line 3733 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1728412969706	Marionette	INFO	Stopped listening on port 49375
+JavaScript warning: https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js, line 1: Script terminated by timeout at:
+n@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:14505
+
+Dynamically enable window occlusion 1
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.

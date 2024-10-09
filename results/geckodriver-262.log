@@ -1,0 +1,123 @@
+1728407808491	geckodriver	INFO	Listening on 127.0.0.1:54613
+1728407811531	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54614" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileaI1rDk"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728407812153	Marionette	INFO	Marionette enabled
+1728407812397	Marionette	INFO	Listening on port 54624
+WebDriver BiDi listening on ws://127.0.0.1:54614
+Read port: 54624
+1728407812626	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:54614/devtools/browser/22ee904b-dd3a-43dc-80d8-ea6af7f3ec94
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m20pe1fw717z0kl3&sid=1139592114930554183&loc=https%3A%2F%2Fwww.s.dev.fnlondon.com%2F&new=1&arf=0&ltm=1728407820238&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m20pe1hkgskgrg5f&ckp=m20pe1fwljj5fi4l&glb=&cp_userState=anon&cp_testGroup=70&cp_env=staging&cp_topDomain=fnlondon.com&cp_template=full&cp_access=free&cp_section=Home&cp_subsection=&cp_cms_name=CAPS&cp_subscriber=nonsubscriber&cp_edition=europegb&cp_bucket=7&cp_ab_bucket=47&cp_pageContentSource=FN%20London&cp_pageContentType=Home&cp_pageContentTypeDetai=default&cp_pageSiteProduct=FN&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WEoqGYGTldYSfSNCQ9Ugqu-00NFuS6e6WOK2G2Y_zzI.js line 2 > eval line 6856 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://asset.barrons.com/article/public/fn_full_article.dfb75bf78e25.js, line 62: TypeError: e(...).offset() is undefined
+JavaScript error: https://asset.barrons.com/article/public/fn_full_article.dfb75bf78e25.js, line 26: TypeError: e(...).offset() is undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WEoqGYGTldYSfSNCQ9Ugqu-00NFuS6e6WOK2G2Y_zzI.js line 2 > eval line 1483 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://asset.barrons.com/article/public/fn_full_article.dfb75bf78e25.js, line 26: TypeError: e(...).offset() is undefined
+JavaScript warning: https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js, line 1: Script terminated by timeout at:
+2652/A/<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:194410
+p@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:249645
+7985/q/</I</</<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:113831
+p@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:249577
+7985/q/</I</<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:113813
+p@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:249596
+7985/q/</I<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:113768
+2851/I/</<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:18565
+2851/w/<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:17615
+s@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:15444
+2851/u/notify/<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:15618
+notify@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:15606
+2851/x/<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:20078
+2851/l/<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:15731
+s@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:19299
+@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:16025
+2851/p/o<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:16617
+2851/l/<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:15731
+o@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:16038
+2851/d/</<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:16211
+s@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:15444
+2851/u/notify/<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:15618
+notify@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:15606
+2851/p/o<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:16632
+2851/l/<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:15731
+@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:18048
+s@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:15444
+2851/u/notify/<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:15618
+notify@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:15606
+2851/p/o<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:16632
+2851/l/<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:15731
+o@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:16038
+2851/d/</<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:16211
+s@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:15444
+2851/u/notify/<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:15618
+notify@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:15606
+2851/p/o<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:16632
+2851/l/<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:15731
+o@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:16038
+2851/d/</<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:16211
+s@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:15444
+2851/u/notify/<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:15618
+notify@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:15606
+2851/p/o<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:16632
+2851/l/<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:15731
+@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:18048
+s@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:15444
+2851/u/notify/<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:15618
+notify@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:15606
+2851/p/o<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:16632
+2851/l/<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:15731
+2851/_/r<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:16925
+2851/l/<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:15731
+2851/_/<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:16989
+2851/m/<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:17124
+trackEvent@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:125852
+@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:129258
+589/track/</<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:144647
+
+JavaScript warning: https://imasdk.googleapis.com/js/core/bridge3.670.0_en.html#goog_615176379, line 453: Script terminated by timeout at:
+PB@https://imasdk.googleapis.com/js/core/bridge3.670.0_en.html#goog_615176379:453:310
+TB/this.aa@https://imasdk.googleapis.com/js/core/bridge3.670.0_en.html#goog_615176379:451:29
+
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+JavaScript warning: https://sso.int.accounts.dowjones.com/one_identity_login_pages/login/8ef5d3ebeaef210670e951a3a15529f6/js/vendor.js, line 51: Script terminated by timeout at:
+BE@https://sso.int.accounts.dowjones.com/one_identity_login_pages/login/8ef5d3ebeaef210670e951a3a15529f6/js/vendor.js:51:4767
+b@https://sso.int.accounts.dowjones.com/one_identity_login_pages/login/8ef5d3ebeaef210670e951a3a15529f6/js/vendor.js:49:13806
+
+JavaScript error: https://asset.barrons.com/article/public/fn_full_article.dfb75bf78e25.js, line 62: TypeError: e(...).offset() is undefined
+1728407840230	Marionette	INFO	Stopped listening on port 54624
+JavaScript warning: https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js, line 33: Script terminated by timeout at:
+Vk@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js:33:170681
+hn/b<@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js:33:70880
+hn@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js:33:70852
+sp/this.setTargeting<@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js:33:315592
+sm/<@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js:33:68759
+O/<@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js:33:68365
+value@https://c.amazon-adsystem.com/aax2/apstag.js:4:157493
+f/<@https://c.amazon-adsystem.com/aax2/apstag.js:4:83866
+f@https://c.amazon-adsystem.com/aax2/apstag.js:4:83836
+i@https://c.amazon-adsystem.com/aax2/apstag.js:4:80002
+W/<@https://c.amazon-adsystem.com/aax2/apstag.js:4:84335
+W@https://c.amazon-adsystem.com/aax2/apstag.js:4:84307
+Y@https://c.amazon-adsystem.com/aax2/apstag.js:4:84590
+Et@https://c.amazon-adsystem.com/aax2/apstag.js:4:117594
+s/<@https://c.amazon-adsystem.com/aax2/apstag.js:4:195882
+p/<@https://c.amazon-adsystem.com/aax2/apstag.js:4:4478
+b/w/<@https://ace.wsj.com/assets-staging/ace/uac.min.js:1:19744
+Qp.prototype.push@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js:33:327107
+sm/<@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js:33:68759
+O/<@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js:33:68365
+w@https://ace.wsj.com/assets-staging/ace/uac.min.js:1:19725
+execute@https://www.s.dev.fnlondon.com/articles/testing-article-timestamp-20231102?target=/?mod=sign-in-top-nav:204:501
+globalMessaging@https://www.s.dev.fnlondon.com/articles/testing-article-timestamp-20231102?target=/?mod=sign-in-top-nav:204:1682
+doBids/</<@https://www.s.dev.fnlondon.com/articles/testing-article-timestamp-20231102?target=/?mod=sign-in-top-nav:363:30
+nt/<@https://c.amazon-adsystem.com/aax2/apstag.js:4:93211
+o@https://c.amazon-adsystem.com/aax2/apstag.js:4:40109
+c@https://c.amazon-adsystem.com/aax2/apstag.js:4:72430
+t@https://c.amazon-adsystem.com/aax2/apstag.js:4:73243
+
+Dynamically enable window occlusion 1

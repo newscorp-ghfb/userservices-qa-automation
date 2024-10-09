@@ -134,6 +134,7 @@ Validate author on article page
    Page Should Contain  Teresa Rivas
 
 Validate Custom Topic Stock Pick Follow Button
+    Set Selenium Implicit Wait  10
     Wait Until Element is Visible  dom:${JSStockPickCTFollowButtonBarronsPath}
     Wait Until Element Contains  dom:${JSStockPickCTFollowButtonBarronsPath}  Follow  timeout=15
     Element Text Should Be  dom:${JSStockPickCTFollowButtonBarronsPath}  Follow  timeout=15

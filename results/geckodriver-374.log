@@ -1,0 +1,21 @@
+1728422519729	geckodriver	INFO	Listening on 127.0.0.1:52302
+1728422522760	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52303" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofile6uqkb2"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728422523411	Marionette	INFO	Marionette enabled
+1728422523660	Marionette	INFO	Listening on port 52310
+WebDriver BiDi listening on ws://127.0.0.1:52303
+Read port: 52310
+1728422523893	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52303/devtools/browser/0e4ed2d3-ac9e-4391-8868-4783d11d4a32
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+JavaScript warning: https://www.wsj.com/, line 194: Script terminated by timeout at:
+emit@https://www.wsj.com/:194:9463
+emit@https://www.wsj.com/:194:9414
+i@https://www.wsj.com/:194:17943
+nrWrapper@https://www.wsj.com/:194:17771
+
+1728422528114	Marionette	INFO	Stopped listening on port 52310
+Dynamically enable window occlusion 1
+console.error: (new NetworkError("Network error: TypeError: NetworkError: Network request failed", "resource://services-settings/RemoteSettingsClient.sys.mjs", 107))

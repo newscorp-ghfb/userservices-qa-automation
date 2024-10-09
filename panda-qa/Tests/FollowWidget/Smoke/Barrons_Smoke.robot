@@ -51,9 +51,9 @@ Validate the follow button from authors page
     Set Selenium Speed  0.5 seconds
     BarronsArticlePage.Validate author hyperlink
     BarronsArticlePage.Click author hyperlink
-    IF  "${Env}" == "dev"
-        BarronsArticlePage.Click author hyperlink
-    END
+    #IF  "${Env}" == "dev"
+        #BarronsArticlePage.Click author hyperlink
+    #END
     BarronsAuthorsPage.Validate Authors Page
     BarronsArticlePage.Validate Follow Button
     BarronsArticlePage.Click Follow Button

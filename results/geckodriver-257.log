@@ -1,0 +1,35 @@
+1728407381276	geckodriver	INFO	Listening on 127.0.0.1:53398
+1728407384332	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53399" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileVRLK0m"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728407384931	Marionette	INFO	Marionette enabled
+1728407385179	Marionette	INFO	Listening on port 53408
+WebDriver BiDi listening on ws://127.0.0.1:53399
+Read port: 53408
+1728407385432	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53399/devtools/browser/70e6418d-4533-43a3-9391-9fc672fa5d5c
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m20p4v17isdbzorl&sid=1139592114930554183&loc=https%3A%2F%2Fwww.s.dev.fnlondon.com%2F&new=1&arf=0&ltm=1728407392030&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m20p4v2e7khwz3s7&ckp=m20p4v178ey7lgpi&glb=&cp_userState=anon&cp_testGroup=4&cp_env=staging&cp_topDomain=fnlondon.com&cp_template=full&cp_access=free&cp_section=Home&cp_subsection=&cp_cms_name=CAPS&cp_subscriber=nonsubscriber&cp_edition=europegb&cp_bucket=2&cp_ab_bucket=52&cp_pageContentSource=FN%20London&cp_pageContentType=Home&cp_pageContentTypeDetai=default&cp_pageSiteProduct=FN&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://asset.barrons.com/article/public/fn_full_article.dfb75bf78e25.js, line 62: TypeError: e(...).offset() is undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WEoqGYGTldYSfSNCQ9Ugqu-00NFuS6e6WOK2G2Y_zzI.js line 2 > eval line 4791 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://asset.barrons.com/article/public/fn_full_article.dfb75bf78e25.js, line 26: TypeError: e(...).offset() is undefined
+JavaScript error: https://asset.barrons.com/article/public/fn_full_article.dfb75bf78e25.js, line 26: TypeError: e(...).offset() is undefined
+JavaScript warning: https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js, line 33: Script terminated by timeout at:
+Py@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js:33:138973
+Ry/this.next@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js:33:139300
+Sy/<@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js:33:139713
+Sy@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js:33:139598
+_.dg@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js:33:139748
+vv@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js:33:293596
+xx/this.L<@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js:33:440105
+g@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js:33:176525
+_.UA/<@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js:33:176580
+yT@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js:33:440736
+xx.prototype.g/<@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js:33:440589
+sm/<@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js:33:68759
+
+1728407471913	Marionette	INFO	Stopped listening on port 53408
+Dynamically enable window occlusion 1

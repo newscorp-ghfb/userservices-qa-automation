@@ -1,0 +1,14 @@
+1728381497402	geckodriver	INFO	Listening on 127.0.0.1:64682
+1728381500435	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64683" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofile1pGsBu"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728381501019	Marionette	INFO	Marionette enabled
+1728381501252	Marionette	INFO	Listening on port 64690
+Read port: 64690
+WebDriver BiDi listening on ws://127.0.0.1:64683
+1728381501364	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64683/devtools/browser/a3be3954-c18b-4c15-b116-7eb8ce8f17e9
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.dev.wsj.com/client" ({})
+1728381650048	Marionette	INFO	Stopped listening on port 64690
+Dynamically enable window occlusion 1

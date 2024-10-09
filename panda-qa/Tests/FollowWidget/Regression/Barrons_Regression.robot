@@ -94,7 +94,7 @@ Validate Authors for Barrons Article page without byline
 #US-T217
 Validate the Watchlist widget from Watchlist page
     [Documentation]  This test case validates the watchlist widget from watchlist page
-    [Tags]  Regression  Watchlist      Follow1
+    [Tags]  Regression  Watchlist      215
 
     CommonFunctionality.Start Barrons for Watchlist page
     DefinedKeywords.Sign In Process
@@ -156,7 +156,7 @@ Validate the Watchlist widget from Watchlist
 #US-T250
 Validate the Watchlist widget from Quotes page
     [Documentation]  This test case validates the watchlist widget from quotes page
-    [Tags]  Regression  Watchlist  QuotesPage     Follow1
+    [Tags]  Regression  Watchlist  QuotesPage     follow
 
     CommonFunctionality.Start Barrons for Quotes page
     DefinedKeywords.Barrons Quote Page Sign in Process
@@ -213,7 +213,7 @@ Verify if a user is able to navigate to Barrons Stock Screener and subscribe in 
 #US-T130
 Validate the Watchlist widget from Market Data page
     [Documentation]  This test case validates the watchlist widget from market data page
-    [Tags]  Regression  Watchlist  MarketdataPage   Follow1
+    [Tags]  Regression  Watchlist  MarketdataPage   JJ
 
     CommonFunctionality.Start Barrons for Market Data page
     BarronsMarketDataPage.Validate Watchlist for non-logged user
@@ -243,7 +243,7 @@ Validate the Watchlist widget from Market Data page
 #US-T136
 Validate the Barrons digest notification
     [Documentation]  This test case validates the Barrons digest notification
-    [Tags]  Regression  Notifications             Follow1
+    [Tags]  Regression  Notifications             digest
     BarronsMailboxPage.Navigate Mailbox page
     BarronsMailboxPage.Login
     BarronsMailboxPage.Select Inbox

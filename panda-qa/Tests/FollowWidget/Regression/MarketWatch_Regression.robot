@@ -21,7 +21,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T93
 Validate the Market Watch Preference Center page
     [Documentation]  This test case validates the Market Watch preference center page
-    [Tags]  Regression  PreferenceCenter  Follow11
+    [Tags]  Regression  PreferenceCenter  M
 
     MarketWatchPreferenceCenterPage.Add Author By Hotlink
     DefinedKeywords.MarketWatch PreferenceCenter User Sign In Process
@@ -51,7 +51,7 @@ Validate Authors for MarketWatch Article page without byline
 #US-T220
 Validate the Watchlist widget from Watchlist page
     [Documentation]  This test case validates the watchlist widget from watchlist page
-    [Tags]  Regression  Watchlist  Follow1
+    [Tags]  Regression  Watchlist  follow
 
     CommonFunctionality.Start MarketWatch for Watchlist page
     DefinedKeywords.MarketWatch Test User Sign In Process
@@ -237,7 +237,7 @@ Validate the MW real-time author notification
 #US-T146
 Validate the MW real-time company notification
     [Documentation]  This test case validates the MW real-time company notification
-    [Tags]  Regression  Notifications  Company  Follow1
+    [Tags]  Regression  Notifications  Company  real
     MarketWatchMailboxPage.Navigate Mailbox page
     MarketWatchMailboxPage.Login
     MarketWatchMailboxPage.Select Inbox

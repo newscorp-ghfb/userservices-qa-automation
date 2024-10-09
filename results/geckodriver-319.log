@@ -1,0 +1,39 @@
+1728418564089	geckodriver	INFO	Listening on 127.0.0.1:57232
+1728418567503	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57233" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileYV7i2A"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728418568946	Marionette	INFO	Marionette enabled
+1728418569255	Marionette	INFO	Listening on port 57356
+WebDriver BiDi listening on ws://127.0.0.1:57233
+Read port: 57356
+1728418569623	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:57233/devtools/browser/e969421e-aa82-4818-b0f4-9e9a238bb73b
+console.error: ({})
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 54ms)
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WEoqGYGTldYSfSNCQ9Ugqu-00NFuS6e6WOK2G2Y_zzI.js line 2 > eval line 4380 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1728418589559	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:467:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:220:33
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT, line 213: Script terminated by timeout at:
+Dc@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:213:87
+Uz@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:585:1
+lA@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:591:163
+jA/</<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:590:187
+z@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:198:203
+jA/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:590:167
+z@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:198:203
+jA@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:590:134
+kA/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:590:111
+
+1728418618057	Marionette	INFO	Stopped listening on port 57356
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 18ms)
+Dynamically enable window occlusion 1
