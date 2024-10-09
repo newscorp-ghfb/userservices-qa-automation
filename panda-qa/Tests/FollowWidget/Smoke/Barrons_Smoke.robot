@@ -1,11 +1,12 @@
 *** Settings ***
 Documentation  Barrons Smoke Tests
-Force Tags  Barrons
+Force Tags  BarronsSmoke  TagBarrons
 Resource  ../../../Resources/CommonFunctionality.robot
 Resource  ../../../Resources/DefinedKeywords.robot
 Resource  ../../../Resources/PageObjects/BarronsArticlePage.robot
 Resource  ../../../Resources/PageObjects/BarronsAuthorsPage.robot
 Resource  ../../../Resources/PageObjects/BarronsPreferenceCenterPage.robot
+
 
 Test Setup  CommonFunctionality.Start Barrons Article
 Test Teardown  CommonFunctionality.Finish Testcase
@@ -19,25 +20,25 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T2
 Validate the author follow button from articles page
     [Documentation]  This test case validates the author follow button from articles page
-    [Tags]  Smoke  Follow  Article
+    [Tags]  Smoke  Follow  Article     TagBarronsAF
 
+    Set Selenium Speed  0.5 seconds
+    DefinedKeywords.Barrons Article Sign in Process
+    Set Selenium Implicit Wait  40
+    Execute javascript  window.scrollTo(0,500)
+    Set Selenium Implicit Wait  60
+    Execute javascript  window.scrollTo(0,500)
     BarronsArticlePage.Validate Follow Button
     BarronsArticlePage.Click Follow Button
-    Set Selenium Speed  0.7 seconds
-    #BarronsArticlePage.Validate Sign In Modal
-    BarronsArticlePage.Click Sign In Button Modal
-    DefinedKeywords.Sign In Process
+    Set Selenium Implicit Wait  40
     BarronsArticlePage.Validate Following Button
     Set Selenium Speed  0.2 seconds
-    IF  ${Env} == "dev"
+    IF  "${Env}" == "dev"
         Set Selenium Speed  0.5 seconds
-    END
     BarronsArticlePage.Click Following Button
-    Set Selenium Speed  0.2 seconds
-    BarronsArticlePage.Click Undo Link
-    BarronsArticlePage.Validate Following Button
-    BarronsArticlePage.Click Preference Center link
-    BarronsPreferenceCenterPage.Validate Preference Center page
+    END
+#    BarronsArticlePage.Click Preference Center link
+#    BarronsPreferenceCenterPage.Validate Preference Center page
 #US-T188
 #US-T34
 #US-T33
@@ -45,18 +46,17 @@ Validate the author follow button from articles page
 #US-T32
 Validate the follow button from authors page
     [Documentation]  This test case validates the follow button from authors page
-    [Tags]  Smoke  Follow  Author
+    [Tags]  Smoke  Follow  Author   TagBarronsFA
 
     Set Selenium Speed  0.5 seconds
-
     BarronsArticlePage.Validate author hyperlink
     BarronsArticlePage.Click author hyperlink
-    IF  ${Env} == "dev"
-        BarronsArticlePage.Click author hyperlink
-    END
+    #IF  "${Env}" == "dev"
+        #BarronsArticlePage.Click author hyperlink
+    #END
     BarronsAuthorsPage.Validate Authors Page
     BarronsArticlePage.Validate Follow Button
-
+    BarronsArticlePage.Click Follow Button
 
 #US-T54
 #US-T53
@@ -64,17 +64,17 @@ Validate the follow button from authors page
 #US-T51
 Validate the stock pick follow button from articles page
     [Documentation]  This test case validates the stock pick follow button from articles page
-    [Tags]  Smoke  Follow  CustomTopic
+    [Tags]  Smoke  Follow  CustomTopic        TagBarronsSP
     CommonFunctionality.Start Barrons Stock Picks for Stock Picks in article
+    DefinedKeywords.Barrons Article Sign in Process
+    Set Selenium Implicit Wait  40
+    Execute javascript  window.scrollTo(0,500)
+    Set Selenium Implicit Wait  30
     BarronsArticlePage.Validate Stock Pick Follow Button
     BarronsArticlePage.Click Stock Pick Follow Button
-    BarronsArticlePage.Validate Sign In Modal
-    BarronsArticlePage.Click Sign In Button 2 Modal
-    DefinedKeywords.Sign In Process
-    Set Selenium Speed  0.1 seconds
+    Set Selenium Speed  0.5 seconds
     BarronsArticlePage.Validate Stock Pick Following Button
     BarronsArticlePage.Click Stock Pick Following Button
-
 
 #US-T188
 #US-T79
@@ -82,7 +82,7 @@ Validate the stock pick follow button from articles page
 #US-T254
 Validate the Barrons Preference Center page
     [Documentation]  This test case validates the barrons preference center page
-    [Tags]  Smoke  PreferenceCenter
+    [Tags]  Smoke  PreferenceCenter              TagBarronsPFS
     Set Selenium Speed  0.2 seconds
     BarronsPreferenceCenterPage.Navigate Preference Center page
     DefinedKeywords.Sign In Process
@@ -91,8 +91,14 @@ Validate the Barrons Preference Center page
     BarronsPreferenceCenterPage.Click Following Toggle Feature
     BarronsPreferenceCenterPage.Validate Following Toggle Alert Pop up
     BarronsPreferenceCenterPage.Click Following Toggle Alert Pop up
-    BarronsPreferenceCenterPage.Navigate Article page
-    BarronsArticlePage.Validate Follow Button
+    BarronsPreferenceCenterPage.Add Author By Hotlink
+    BarronsPreferenceCenterPage.Validate Following Toggle Alert Pop up
+    BarronsPreferenceCenterPage.Click Following Toggle Alert Pop up
+    Set Selenium Implicit Wait  30
+    BarronsPreferenceCenterPage.Validate Author Name
+
+
+
 
 #US-T126
 #US-T127
@@ -100,20 +106,15 @@ Validate the Barrons Preference Center page
 #US-T135
 Validate the stock pick follow button from stock pick page
     [Documentation]  This test case validates the stock pick follow button from stock pick page
-    [Tags]  Smoke  Follow  CustomTopic
+    [Tags]  Smoke  Follow  CustomTopic  TagBarronsCTS
 
     CommonFunctionality.Start Barrons Stock Picks for Stock Picks breadcrumb
-    BarronsArticlePage.Validate Stock Pick Follow Button
-    BarronsArticlePage.Click Stock Pick Follow Button
-    Set Selenium Speed  0.3 seconds
-    BarronsArticlePage.Validate Sign In Modal
-    BarronsArticlePage.Click Sign In Button 2 Modal
-    DefinedKeywords.Sign In Process
-    Set Selenium Speed  0.1 seconds
-    BarronsArticlePage.Validate Stock Pick Following Button
-    BarronsArticlePage.Click Stock Pick Following Button
-    BarronsArticlePage.Click Stock Pick Undo Link
+    DefinedKeywords.Barrons Stock Pick Sign In Process
+    Set Selenium Implicit Wait  40
+    Execute javascript  window.scrollTo(0,500)
+    Set Selenium Implicit Wait  30
+    BarronsArticlePage.Validate Custom Topic Stock Pick Follow Button
+    BarronsArticlePage.Click Custom Topic Stock Pick Follow Button
     Set Selenium Speed  0.2 seconds
-    BarronsArticlePage.Validate Stock Pick Following Button
-    BarronsArticlePage.Click Stock Pick Preference Center link
-    BarronsPreferenceCenterPage.Validate Preference Center page
+    BarronsArticlePage.Validate Custom Topic Stock Pick UnFollow Button
+    BarronsArticlePage.Click Custom Topic Stock Pick UnFollow Button

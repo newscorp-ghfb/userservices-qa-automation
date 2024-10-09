@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated Xpath and Element IDs for Barron's Quotes page">
+    <list default="true" id="dd61df4e-0647-41ce-925e-eeb1285ccee7" name="Changes" comment="Updated the Xpath for Marketwatch watchlist widget validation and other relevant test cases.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/DefinedKeywords.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/DefinedKeywords.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/BarronsMailboxPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Resources/PageObjects/BarronsMailboxPage.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/browserstack.yml" beforeDir="false" afterPath="$PROJECT_DIR$/browserstack.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/Barrons_Regression.robot" beforeDir="false" afterPath="$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/Barrons_Regression.robot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,11 +17,19 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Archana_MG_Regression_2432" />
+        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$/python-selenium-browserstack" value="5a2688e59f1dc4af5c36ade5c50f4d088c958ff0" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;JansiSasiumar12&quot;
+  }
+}</component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
     <option name="recentBranches">
@@ -57,8 +64,15 @@
       </RecentBranches>
     </option>
   </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/newscorp-ghfb/userservices-qa-automation.git&quot;,
+    &quot;accountId&quot;: &quot;b9d1044e-3963-40a6-8e6e-a46ca376bab4&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/panda-qa/Resources/CommonFunctionality.robot" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/panda-qa/Resources/DefinedKeywords.robot" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/BarronsArticlePage.robot" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/BarronsAuthorsPage.robot" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/BarronsMailboxPage.robot" root0="SKIP_INSPECTION" />
@@ -66,28 +80,72 @@
     <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/BarronsPreferenceCenterPage.robot" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/BarronsQuotesPage.robot" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/BarronsWatchlistPage.robot" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/FNMailboxPage.robot" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/MarketWatchAlertsPage.robot" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/MarketWatchPreferenceCenterPage.robot" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJArticlePage.robot" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJPreferenceCenterPage.robot" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJSailthruAuthors.robot" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJSailthruCampaigns.robot" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJSailthruCompanies.robot" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/panda-qa/Resources/PageObjects/WSJSailthruCustomTopics.robot" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/Barrons_Regression.robot" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/FN_Regression.robot" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/MarketWatch_Regression.robot" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/Sailthru_Regression.robot" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Regression/WSJ_Regression.robot" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/panda-qa/Tests/FollowWidget/Smoke/WSJ_Smoke.robot" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2ZRg3HuiRX2lnGXCAkpDSMXTS02" />
   <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "Jansi-Automation-Testing",
+    "last_opened_file_path": "D:/Codes/Jenkins_2050/userservices-qa-automation",
+    "run.code.analysis.last.selected.profile": "aDefault",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  },
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
+    ]
+=======
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Akhilesh-BarronsRegression&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Codes/Jenkins_2050/userservices-qa-automation&quot;
+    &quot;git-widget-placeholder&quot;: &quot;BrowserStack__Implementation&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Codes/Jenkins_2050/userservices-qa-automation&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+>>>>>>> 7b9a0d28a0b7999321609350324da131cea0cd49
   }
-}</component>
+}]]></component>
   <component name="ReadonlyStatusHandler">
     <option name="SHOW_DIALOG" value="false" />
   </component>
@@ -95,6 +153,115 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Codes\Jenkins_2050\userservices-qa-automation\panda-qa\Tests\FollowWidget\Smoke" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\khanduria\PycharmProjects\panda-qa-develop\panda-qa" />
+      <recent name="D:\Users\khanduria\PycharmProjects\panda-qa-develop\panda-qa\Resources" />
+      <recent name="D:\Users\khanduria\PycharmProjects\panda-qa-develop\panda-qa\results\Tests\FollowWidget\Smoke\pabot_results" />
+      <recent name="D:\Users\khanduria\PycharmProjects\panda-qa-develop\panda-qa\results" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test-script" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="userservices-qa-automation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/panda-qa" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/panda-qa/test-script.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Docutils task">
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Sphinx task">
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.test-script" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-ce3d9afa04ac-ba05f1cad1b1-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.20224.347" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -105,79 +272,399 @@
       <option name="presentableId" value="Default" />
       <updated>1702390104711</updated>
     </task>
-    <task id="LOCAL-00001" summary="added chrome code for jenkins">
+    <task id="LOCAL-00028" summary="Updated New WSJ Sign In Process and Xpath for Letters Breadcrumb on WSJ article page and WSJ Preference Center page for Letters breadcrumb">
       <option name="closed" value="true" />
-      <created>1702390959960</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
+      <created>1707923333162</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
       <option name="project" value="LOCAL" />
-      <updated>1702390959960</updated>
+      <updated>1707923333162</updated>
     </task>
-    <task id="LOCAL-00002" summary="added chrome code for jenkins">
+    <task id="LOCAL-00029" summary="Updated Xpath and element ID for FN article page and FN mailbox page.">
       <option name="closed" value="true" />
-      <created>1702391443231</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
+      <created>1708097384646</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
       <option name="project" value="LOCAL" />
-      <updated>1702391443231</updated>
+      <updated>1708097384646</updated>
     </task>
-    <task id="LOCAL-00003" summary="added chrome code for jenkins">
+    <task id="LOCAL-00030" summary="Updated the latest password for WSJ New Sign in Process, Marketwatch, mansion global and PE News Sign-In process under defined keywords.">
       <option name="closed" value="true" />
-      <created>1702391464319</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
+      <created>1708701019556</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
       <option name="project" value="LOCAL" />
-      <updated>1702391464319</updated>
+      <updated>1708701019556</updated>
     </task>
-    <task id="LOCAL-00004" summary="Updated the Xpath value for View in Web Browser optionBarron's daily digest notification.">
+    <task id="LOCAL-00031" summary="Updated the CommonFunctionality browser options as per the latest requirements under develop.">
       <option name="closed" value="true" />
-      <created>1705672133780</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
+      <created>1708959402651</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
       <option name="project" value="LOCAL" />
-      <updated>1705672133780</updated>
+      <updated>1708959402651</updated>
     </task>
-    <task id="LOCAL-00005" summary="Updated the Xpath value for Company Follow feature on Barron's Preference Center page.">
+    <task id="LOCAL-00032" summary="Updated the CommonFunctionality browser options as per the latest requirements under develop.">
       <option name="closed" value="true" />
-      <created>1705676112555</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
+      <created>1708959728928</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
       <option name="project" value="LOCAL" />
-      <updated>1705676112555</updated>
+      <updated>1708959728928</updated>
     </task>
-    <task id="LOCAL-00006" summary="Updated the relevant Element IDs and Xpath for the validation of Barron's watchlist widget and Barron's Market data page.">
+    <task id="LOCAL-00033" summary="Updated the Tags for testing WSJ regression test cases">
       <option name="closed" value="true" />
-      <created>1705938171119</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
+      <created>1709042625222</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
       <option name="project" value="LOCAL" />
-      <updated>1705938171119</updated>
+      <updated>1709042625222</updated>
     </task>
-    <task id="LOCAL-00007" summary="Updated the relevant Xpath and Element IDs for Barron's Market Data page.">
+    <task id="LOCAL-00034" summary="Updated all the Force Tags and relevant keywords for MarketWatch, Mansion Global and PE News as perthe develop branch">
       <option name="closed" value="true" />
-      <created>1706024703201</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
+      <created>1709046664057</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
       <option name="project" value="LOCAL" />
-      <updated>1706024703201</updated>
+      <updated>1709046664057</updated>
     </task>
-    <task id="LOCAL-00008" summary="Updated the SignInHeader Path for Barron's article page and Xpath for Barron's Postback functionality">
+    <task id="LOCAL-00035" summary="Updated all the Force Tags and relevant keywords for MarketWatch, WSJ, Mansion Global and PE News as perthe develop branch">
       <option name="closed" value="true" />
-      <created>1706109957840</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
+      <created>1709130899933</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
       <option name="project" value="LOCAL" />
-      <updated>1706109957840</updated>
+      <updated>1709130899933</updated>
     </task>
-    <task id="LOCAL-00009" summary="Updated Xpath and Element IDs for Barron's Quotes page">
+    <task id="LOCAL-00036" summary="Updated the Common Functionality browsers and set environment as &quot;dev&quot; for .DEV environment">
       <option name="closed" value="true" />
-      <created>1706172975112</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
+      <created>1709131977192</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
       <option name="project" value="LOCAL" />
-      <updated>1706172975112</updated>
+      <updated>1709131977193</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00037" summary="Updated the New WSJ Sign In Process for WSJ Puzzles page validation">
+      <option name="closed" value="true" />
+      <created>1709211734229</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1709211734229</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Updated the Browser options for all brands as per the develop branch and method for mouse tooltip notification on FN Preference Center page.">
+      <option name="closed" value="true" />
+      <created>1709306990860</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1709306990860</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Updated the Browser options and environment for PEN Capabilities page">
+      <option name="closed" value="true" />
+      <created>1709564335245</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1709564335245</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Updated and added the test case for ST authors validation using Sailthru">
+      <option name="closed" value="true" />
+      <created>1709564976343</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1709564976343</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Updated the regression test case for ST authors validation using Sailthru">
+      <option name="closed" value="true" />
+      <created>1709647398089</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1709647398089</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Updated the browser for CommonFunctionality Page">
+      <option name="closed" value="true" />
+      <created>1709647645356</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1709647645356</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Updated the Sailthru Sign In Process on CommonFunctionality Page">
+      <option name="closed" value="true" />
+      <created>1709652660906</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1709652660906</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Updated the Sailthru Sign In Process and created test cases for STCustomTopics, STCampaign and STCompanies.">
+      <option name="closed" value="true" />
+      <created>1709737166254</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1709737166255</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Updated the Sailthru Regression test case">
+      <option name="closed" value="true" />
+      <created>1709737234437</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1709737234437</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Updated the Sailthru Regression test cases for ST authors, ST company, ST campaigns and ST custom topics.">
+      <option name="closed" value="true" />
+      <created>1709738252428</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1709738252428</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Updated the Sailthru Regression test cases for navigating to WSJ Preference Center page for comparing ST authors, ST company, ST campaigns and ST custom topics.">
+      <option name="closed" value="true" />
+      <created>1709825331286</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1709825331287</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Updated the Sailthru Regression test cases for the users lookup in order to get the subscribed ST authors, ST companies, ST campaigns and ST custom topics.">
+      <option name="closed" value="true" />
+      <created>1709911173340</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1709911173340</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Updated xpath for FN article without byline">
+      <option name="closed" value="true" />
+      <created>1713524682788</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1713524682788</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Updated author's Xpath for WSj article without byline">
+      <option name="closed" value="true" />
+      <created>1713525478752</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1713525478752</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Updated Xpath for Barrons mailbox page, Mansion Global postback functionality, Marketwatch postback functionality and WSJ postback functionality">
+      <option name="closed" value="true" />
+      <created>1713530199148</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1713530199148</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Updated the Sign In process for Marketwatch and PE News preference center page">
+      <option name="closed" value="true" />
+      <created>1713532649342</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1713532649342</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Updated the WSJ Sign In Process for all WSJ test cases and URL for WSJ Preference center page.">
+      <option name="closed" value="true" />
+      <created>1713536005912</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1713536005912</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Updated the Xpath for &quot;View in Browser&quot; option in alerts notification emails">
+      <option name="closed" value="true" />
+      <created>1713791335376</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1713791335377</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Updated the test setup and test teardown steps for FN_regression test class.">
+      <option name="closed" value="true" />
+      <created>1714054108610</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1714054108611</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Updated the test case for editing and deleting the Marketwatch price and volume alerts">
+      <option name="closed" value="true" />
+      <created>1714138255304</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1714138255304</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Updated the xpath for delete button to delete the Marketwatch price and volume alerts">
+      <option name="closed" value="true" />
+      <created>1714139780239</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1714139780239</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Updated the xpath for Price and Volume alerts page">
+      <option name="closed" value="true" />
+      <created>1714141495867</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1714141495867</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Updated the xpath for Price and Volume alerts to overview historical quotes and change values on Quote page">
+      <option name="closed" value="true" />
+      <created>1714397569302</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1714397569302</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Updated the xpath for Price and Volume alerts to overview historical quotes and updating the new WSJ Sign In Process for test user">
+      <option name="closed" value="true" />
+      <created>1714660339825</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1714660339825</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Updated the xpath for Price and Volume alerts to overview historical quotes and updating the new WSJ Test user Sign In Process for Watchlist">
+      <option name="closed" value="true" />
+      <created>1714746627217</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1714746627217</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Updated the test cases for MarketWatch Price and Volume alerts on the alerts and Quote page.">
+      <option name="closed" value="true" />
+      <created>1715694063525</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1715694063526</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Updated the test cases for Barrons Stock Screener, WSJ Editorials Breadcrumbs articles, WSJ Commentary articles and Barrons Quotes pages.">
+      <option name="closed" value="true" />
+      <created>1717167200131</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1717167200132</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Updated the test cases for WSJ OKTA Authentication bypass by adding CommonFunctionality.CookieTestWSJ file">
+      <option name="closed" value="true" />
+      <created>1719494485184</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1719494485184</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Updated the test cases for WSJ OKTA Authentication bypass and Barron's Stock Screener by adding cookies as well as set the Browser options under the CommonFunctionality.robot file.">
+      <option name="closed" value="true" />
+      <created>1720181491993</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1720181491994</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Updated and fixed the test cases for brands as Barrons,FN London and Mansion Global under the Smoke test suite for their execution on Jenkins">
+      <option name="closed" value="true" />
+      <created>1720191900341</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1720191900341</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Updated the browser options and fixed the test cases for brands as FN London and Mansion Global under the Smoke test suite for their execution on Jenkins">
+      <option name="closed" value="true" />
+      <created>1720447148714</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1720447148715</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Updated the Xpath and fixed the test cases for brands as MarketWatch and PE News under the Smoke test suite for their execution on Jenkins.">
+      <option name="closed" value="true" />
+      <created>1720540255872</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1720540255872</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Updated the relevant Xpath and fixed the test cases for Barron's under the Smoke test suite for their execution on Jenkins">
+      <option name="closed" value="true" />
+      <created>1720621384982</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1720621384982</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Updated the browser version, desired capabilities and Xpath for the web elements in order to fix all the entire test cases under the Regression test suite.">
+      <option name="closed" value="true" />
+      <created>1722351439489</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1722351439489</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Updated the browser version, desired capabilities and Xpath for the web elements in order to fix and execute all the entire test cases under the Regression test suite on Browserstack.">
+      <option name="closed" value="true" />
+      <created>1723040378483</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1723040378483</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Updated the browser version, desired capabilities and Xpath for web elements in order to fix and execute all the entire test cases under the Regression test suite on Browserstack.">
+      <option name="closed" value="true" />
+      <created>1723475518717</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1723475518718</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Updated the remote_url=${BROWSERSTACK_URL} for the browser and options under the CommonFunctionality.robot file for all the test cases">
+      <option name="closed" value="true" />
+      <created>1723559190775</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1723559190775</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Updated the Xpath for Marketwatch watchlist widget validation and other relevant test cases.">
+      <option name="closed" value="true" />
+      <created>1723822006728</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1723822006728</updated>
+    </task>
+    <task id="LOCAL-00075" summary="TEST PUSH">
+      <option name="closed" value="true" />
+      <created>1727290515276</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1727290515276</updated>
+    </task>
+    <task id="LOCAL-00076" summary="TEST PUSH">
+      <option name="closed" value="true" />
+      <created>1727294557169</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1727294557170</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -191,7 +678,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Akhilesh-BarronsRegression" />
+                        <option value="Akhilesh-Regression-Testing-Latest" />
                       </list>
                     </value>
                   </entry>
@@ -204,13 +691,31 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added chrome code for jenkins" />
-    <MESSAGE value="Updated the Xpath value for View in Web Browser optionBarron's daily digest notification." />
-    <MESSAGE value="Updated the Xpath value for Company Follow feature on Barron's Preference Center page." />
-    <MESSAGE value="Updated the relevant Element IDs and Xpath for the validation of Barron's watchlist widget and Barron's Market data page." />
-    <MESSAGE value="Updated the relevant Xpath and Element IDs for Barron's Market Data page." />
-    <MESSAGE value="Updated the SignInHeader Path for Barron's article page and Xpath for Barron's Postback functionality" />
-    <MESSAGE value="Updated Xpath and Element IDs for Barron's Quotes page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Xpath and Element IDs for Barron's Quotes page" />
+    <MESSAGE value="Updated Xpath for Barrons mailbox page, Mansion Global postback functionality, Marketwatch postback functionality and WSJ postback functionality" />
+    <MESSAGE value="Updated the Sign In process for Marketwatch and PE News preference center page" />
+    <MESSAGE value="Updated the WSJ Sign In Process for all WSJ test cases and URL for WSJ Preference center page." />
+    <MESSAGE value="Updated the Xpath for &quot;View in Browser&quot; option in alerts notification emails" />
+    <MESSAGE value="Updated the test setup and test teardown steps for FN_regression test class." />
+    <MESSAGE value="Updated the test case for editing and deleting the Marketwatch price and volume alerts" />
+    <MESSAGE value="Updated the xpath for delete button to delete the Marketwatch price and volume alerts" />
+    <MESSAGE value="Updated the xpath for Price and Volume alerts page" />
+    <MESSAGE value="Updated the xpath for Price and Volume alerts to overview historical quotes and change values on Quote page" />
+    <MESSAGE value="Updated the xpath for Price and Volume alerts to overview historical quotes and updating the new WSJ Sign In Process for test user" />
+    <MESSAGE value="Updated the xpath for Price and Volume alerts to overview historical quotes and updating the new WSJ Test user Sign In Process for Watchlist" />
+    <MESSAGE value="Updated the test cases for MarketWatch Price and Volume alerts on the alerts and Quote page." />
+    <MESSAGE value="Updated the test cases for Barrons Stock Screener, WSJ Editorials Breadcrumbs articles, WSJ Commentary articles and Barrons Quotes pages." />
+    <MESSAGE value="Updated the test cases for WSJ OKTA Authentication bypass by adding CommonFunctionality.CookieTestWSJ file" />
+    <MESSAGE value="Updated the test cases for WSJ OKTA Authentication bypass and Barron's Stock Screener by adding cookies as well as set the Browser options under the CommonFunctionality.robot file." />
+    <MESSAGE value="Updated and fixed the test cases for brands as Barrons,FN London and Mansion Global under the Smoke test suite for their execution on Jenkins" />
+    <MESSAGE value="Updated the browser options and fixed the test cases for brands as FN London and Mansion Global under the Smoke test suite for their execution on Jenkins" />
+    <MESSAGE value="Updated the Xpath and fixed the test cases for brands as MarketWatch and PE News under the Smoke test suite for their execution on Jenkins." />
+    <MESSAGE value="Updated the relevant Xpath and fixed the test cases for Barron's under the Smoke test suite for their execution on Jenkins" />
+    <MESSAGE value="Updated the browser version, desired capabilities and Xpath for the web elements in order to fix all the entire test cases under the Regression test suite." />
+    <MESSAGE value="Updated the browser version, desired capabilities and Xpath for the web elements in order to fix and execute all the entire test cases under the Regression test suite on Browserstack." />
+    <MESSAGE value="Updated the browser version, desired capabilities and Xpath for web elements in order to fix and execute all the entire test cases under the Regression test suite on Browserstack." />
+    <MESSAGE value="Updated the remote_url=${BROWSERSTACK_URL} for the browser and options under the CommonFunctionality.robot file for all the test cases" />
+    <MESSAGE value="Updated the Xpath for Marketwatch watchlist widget validation and other relevant test cases." />
+    <MESSAGE value="TEST PUSH" />
+    <option name="LAST_COMMIT_MESSAGE" value="TEST PUSH" />
   </component>
 </project>

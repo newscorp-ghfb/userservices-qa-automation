@@ -1,0 +1,34 @@
+1728047331226	geckodriver	INFO	Listening on 127.0.0.1:60533
+1728047334445	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60534" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileu7Vboq"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728047335234	Marionette	INFO	Marionette enabled
+1728047335496	Marionette	INFO	Listening on port 60550
+Read port: 60550
+WebDriver BiDi listening on ws://127.0.0.1:60534
+1728047335676	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60534/devtools/browser/09ab369c-fc05-4b17-9701-494699025b96
+JavaScript warning: https://cdn.cxense.com/cx.js, line 6: Script terminated by timeout at:
+lazyActive@https://cdn.cxense.com/cx.js:6:27018
+f/</<@https://cdn.cxense.com/cx.js:6:33389
+f/<@https://cdn.cxense.com/cx.js:6:33352
+d@https://cdn.cxense.com/cx.js:6:33315
+f@https://cdn.cxense.com/cx.js:6:33336
+S@https://cdn.cxense.com/cx.js:6:35242
+ro@https://cdn.cxense.com/cx.js:6:54658
+getTestGroup@https://cdn.cxense.com/cx.cce.js:1:4044
+init@https://cdn.cxense.com/cx.cce.js:1:1980
+bootstrapPage@https://sts3.wsj.net/iweb/static_html_files/cxense-candy.js:1:33640
+init/t.onload/<@https://sts3.wsj.net/iweb/static_html_files/cxense-candy.js:1:33194
+invoke@https://cdn.cxense.com/cx.js:6:114944
+Fa@https://cdn.cxense.com/cx.js:6:80880
+pr/r<@https://cdn.cxense.com/cx.js:6:41793
+nrWrapper@https://www.marketwatch.com/:358:17810
+
+[GFX[GFX1-]: CompositorBridgeChild [GFX1-]: CompositorBridge[CGFXhild receives IPC close with reason=AbnormalShutdown
+1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+receives IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.

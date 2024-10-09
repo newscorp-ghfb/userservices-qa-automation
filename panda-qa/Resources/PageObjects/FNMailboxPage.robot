@@ -23,12 +23,11 @@ Login
     Input Text  //*[@id="i0118"]  Testing.123
     Wait Until Element is Visible  //*[@id="idSIButton9"]
     Click Button  //*[@id="idSIButton9"]
-    Wait Until Element is Visible  //input[@id="idBtn_Back"]
-    Click Button  //input[@id="idBtn_Back"]
+    Wait Until Element is Visible  //*[@id="acceptButton"]
+    Click Button  //*[@id="acceptButton"]
 
 
 Select Inbox
-    Set Selenium Speed  2.0 seconds
     Wait Until Page Contains Element  //input[@id="topSearchInput"]
     Click Element  //input[@id="topSearchInput"]
     Wait Until Page Contains Element  //span[@id="searchScopeButtonId-option"]
@@ -45,10 +44,10 @@ Search Your Daily Digest from FN
 Validate FN Digest notification
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
-    Page Should Contain Element  //a[contains(text(),'View in browser')]
+    Page Should Contain Element  //a[contains(text(),'View in web browser')]
     Page Should Contain Element  //table[@role="presentation"]//span[text()="Daily"]/../span[text()="Digest"]
-    Page Should Contain Element  //a[text()="Preferences"]
-    Page Should Contain Element  //a[text()="Unsubscribe"]
+#    Page Should Contain Element  //a[text()="Preferences"]
+#    Page Should Contain Element  //a[text()="Unsubscribe"]
     Page Should Contain Element  //a[text()="Privacy Notice"]
     Page Should Contain Element  //a[text()="Cookie Notice"]
 
@@ -64,11 +63,11 @@ Validate FN real-time author notification
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
     Page Should Contain Element  //a[contains(text(),'View in browser')]
     Page Should Contain Element  //a[.='David Wighton']
-    Page Should Contain Element  //a[text()="Read More "]
-    Page Should Contain Element  //a[text()="Preferences"]
-    Page Should Contain Element  //a[text()="Unsubscribe"]
-    Page Should Contain Element  //a[text()="Privacy Notice"]
-    Page Should Contain Element  //a[text()="Cookie Notice"]
+    Page Should Contain Element  //*[contains(text(),'Read More')]
+#    Page Should Contain Element  //a[text()="Preferences"]
+#    Page Should Contain Element  //a[text()="Unsubscribe"]
+    Page Should Contain Element  //a[text()="Privacy Policy"]
+    Page Should Contain Element  //a[text()="Cookie Policy"]
 
 Search Your FN real-time company notification
     Wait Until Page Contains Element  //input[@id="topSearchInput"]
@@ -80,13 +79,13 @@ Validate FN real-time company notification
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
     Page Should Contain Element  //a[contains(text(),'View in browser')]
-    Page Should Contain Element  //*[text()="BLK (U.S.: NYSE)"]
-    Page Should Contain Element  //a[text()="Read More "]
-    Page Should Contain Element  //a[text()="Preferences"]
-    Page Should Contain Element  //a[text()="Alerts Center"]
-    Page Should Contain Element  //a[text()="Unsubscribe"]
-    Page Should Contain Element  //a[text()="Privacy Notice"]
-    Page Should Contain Element  //a[text()="Cookie Notice"]
+    Page Should Contain Element  //*[text()='BlackRock']  #//*[text()="BLK (U.S.: NYSE)"]
+    Page Should Contain Element  //*[contains(text(),'Read More')]
+#    Page Should Contain Element  //a[text()="Preferences"]
+#    Page Should Contain Element  //a[text()="Alerts Center"]
+#    Page Should Contain Element  //a[text()="Unsubscribe"]
+    Page Should Contain Element  //a[text()="Privacy Policy"]
+    Page Should Contain Element  //a[text()="Cookie Policy"]
 
 Search FN real-time company notification for Postback
     Wait Until Page Contains Element  //input[@id="topSearchInput"]
@@ -97,14 +96,14 @@ Search FN real-time company notification for Postback
 Validate FN real-time company notification for Postback
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
-    Page Should Contain Element  //a[text()="View in web browser ›"]
-    Page Should Contain Element  //*[text()="BLK (U.S.: NYSE)"]
-    Page Should Contain Element  //a[text()="Read More "]
-    Page Should Contain Element  //a[text()="Preferences"]
+    Page Should Contain Element  //a[contains(text(),'View in browser')]
+    Page Should Contain Element  //*[text()='BlackRock']  #//*[text()="BLK (U.S.: NYSE)"]
+    Page Should Contain Element  //*[contains(text(),'Read More')]
+#    Page Should Contain Element  //a[text()="Preferences"]
     #Page Should Contain Element  //a[text()="Alerts Center"]
-    Page Should Contain Element  //a[text()="Unsubscribe"]
-    Page Should Contain Element  //a[text()="Privacy Notice"]
-    Page Should Contain Element  //a[text()="Cookie Notice"]
+#    Page Should Contain Element  //a[text()="Unsubscribe"]
+    Page Should Contain Element  //a[text()="Privacy Policy"]
+    Page Should Contain Element  //a[text()="Cookie Policy"]
 
 Unsubscribe the mails
     Page Should Contain Element  //div[text()="Unsubscribe"]

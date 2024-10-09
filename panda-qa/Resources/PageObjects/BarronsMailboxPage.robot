@@ -12,6 +12,7 @@ Resource  ../../Resources/CommonFunctionality.robot
 Navigate Mailbox page
     Go To  https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1661294982&rver=7.0.6737.0&wp=MBI_SSL&wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26RpsCsrfState%3dfb29a836-86c5-c6e2-eeef-e3747c5e70dd&id=292841&aadredir=1&CBCXT=out&lw=1&fl=dob%2cflname%2cwld&cobrandid=90018
 
+
 Login
     Wait Until Element is Visible  //*[text()="Sign in"]
     Click Element  //*[text()="Sign in"]
@@ -23,8 +24,8 @@ Login
     Input Text  //*[@id="i0118"]  Testing.123
     Wait Until Element is Visible  //*[@id="idSIButton9"]
     Click Button  //*[@id="idSIButton9"]
-    Wait Until Element is Visible  //*[@id="idSIButton9"]
-    Click Button  //*[@id="idSIButton9"]
+    Wait Until Element is Visible  //*[@id="acceptButton"]
+    Click Button  //*[@id="acceptButton"]
 
 
 Select Inbox
@@ -44,6 +45,7 @@ Search Your Daily Digest from Barron's
 Validate Barron's Digest notification
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
+    Set Selenium Speed  5 seconds
     Page Should Contain Element  //table[@role="presentation"]//span[text()="Daily"]/../span[text()="Digest"]
     Page Should Contain Element  //a[text()="Preferences"]
     Page Should Contain Element  //a[text()="Unsubscribe"]
@@ -60,7 +62,7 @@ Validate Barrons real-time author notification
     Wait Until Page Contains Element  //div[@id="groupHeaderTop results"]/../div[2]
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
     Page Should Contain Element  //a[contains(text(),'View in browser')]
-    Page Should Contain Element  //a[text()="Read More "]
+    Page Should Contain Element  //*[contains(text(),'Read More')]
     Page Should Contain Element  //a[text()="Alerts Center"]
     Page Should Contain Element  //a[text()="Contact Us"]
     Page Should Contain Element  //a[text()="Privacy Policy"]
@@ -78,7 +80,7 @@ Validate Barrons real-time company notification
     Page Should Contain Element  //a[contains(text(),'View in browser')]
     Page Should Contain Element  //div/span[text()='Amazon.com']
     Page Should Contain Element  //div/span[text()='Inc']
-    Page Should Contain Element  //a[text()="Read More "]
+    Page Should Contain Element  //*[contains(text(),'Read More')]
     Page Should Contain Element  //a[text()="Alerts Center"]
     Page Should Contain Element  //a[text()="Contact Us"]
     Page Should Contain Element  //a[text()="Unsubscribe"]
@@ -96,7 +98,7 @@ Validate Barrons real-time stock picks notification
     Click Element  //div[@id="groupHeaderTop results"]/../div[2]
     Page Should Contain Element  //a[contains(text(),'View in browser')]
     Page Should Contain Element  //span[text()='Picks']  #//*contains[text()="Barron's Stock Picks"]
-    Page Should Contain Element  //a[text()="Read More "]
+    Page Should Contain Element  //*[contains(text(),'Read More')]
     Page Should Contain Element  //a[text()="Alerts Center"]
     Page Should Contain Element  //a[text()="Contact Us"]
     Page Should Contain Element  //a[text()="Privacy Policy"]

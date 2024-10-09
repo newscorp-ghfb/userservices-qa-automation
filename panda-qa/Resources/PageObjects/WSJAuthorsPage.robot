@@ -1,13 +1,16 @@
 *** Settings ***
 Library  SeleniumLibrary
-
+Resource  ../../Resources/CommonFunctionality.robot
 *** Variables ***
+${JSFollowButtonWSJPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
+    ...  .querySelector('ufc-follow-button').shadowRoot  #2
+    ...  .querySelector('button')  #3
 
 *** Keywords ***
 Validate Authors Page
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Page Should Contain  John West
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Page Should Contain  Joanna Stern
     END
 

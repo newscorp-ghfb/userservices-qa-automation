@@ -1,0 +1,22 @@
+{
+  "version": "2.1",
+  "project_name": "userservices",
+  "github_events": [
+    "pull_request"
+  ],
+  "default_env": "dev",
+  "pr_action_triggers": [
+    "synchronize",
+    "opened",
+    "ready_for_review",
+    "reopened"
+  ],
+  "slack": {
+    "channel": "userservices-qa-team",
+    "credentials": "%{SLACK_CREDENTIALS_ID}",
+    "notify": {
+      "failed": ["archana.saini"],
+      "success": ["archana.saini"]
+    }
+  }
+}

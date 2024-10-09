@@ -1,5 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
+Library    Dialogs
 Resource  ../../Resources/CommonFunctionality.robot
 
 *** Variables ***
@@ -14,9 +15,9 @@ ${JSFollowButtonBarronsPath}=  document.querySelector('ufc-follow-author-widget'
 
 
 Navigate Capabilities Dashboard page
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://int-prod-capabilities-dashboard.vir.onservo.com/app
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://int-int-capabilities-dashboard.vir-dev.onservo.com/app
     END
     Pause Execution  Click to coninute
@@ -49,23 +50,23 @@ Validate Following Button
 
 Validate Authors Reflected On Dashboard
     ${Totalauthorsubs} = Get Value  //*[text()="Total subscriptions"]/../div[2]
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.barrons.com/follow?alert=author&id=8572_BARRONS&frequency=realtime
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.barrons.com/follow?alert=author&id=8572_BARRONS&frequency=realtime
     END
     Navigate Capabilities Dashboard page
     Click Author Tab
     ${Totalauthorsubs2} = Get Value  //*[text()="Total subscriptions"]/../div[2]
     ${Totalauthorsubs2} == ${Totalauthorsubs} + 1
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.barrons.com/follow
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.barrons.com/follow
     END
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.barrons.com/follow
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Click Button  //*[@href="https://www.s.dev.barrons.com/authors/8572?mod=followUI"]/../../../../*/*[@role="switch"]
     END
 
@@ -73,10 +74,10 @@ Validate Authors Reflected On Dashboard
 Validate Authors On Search Tab
     Click Button  //*[text()='Search']
     Click Button  //*[@placeholder="Author name"]
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Input Text   //*[@placeholder="Author name"]  Ben Walsh
         Click Button  //*[text()="Ben Walsh"]
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Input Text   //*[@placeholder="Author name"]  Andrew Bary
         Click Button  //*[text()="Andrew Bary"]
     END
@@ -86,9 +87,9 @@ Validate Follow Hotlink for Authors
     Click Author Tab
     Click Button  //*[text()='Follow Hotlinks']
     Click Button  //*[@placeholder="Author name"]
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Input Text   //*[@placeholder="Author name"]  Ben Walsh
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Input Text   //*[@placeholder="Author name"]  John Smith
     END
     Wait Until Element is Visible  //button[text()="Copy"]
@@ -99,23 +100,23 @@ Validate Custom Topic On Dashboard
 
 Validate Company Reflected On Dashboard
     ${Totalauthorsubs} = Get Value  //*[text()="Total subscriptions"]/../div[2]
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.barrons.com/follow?alert=company&fcode=SGPM
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.barrons.com/follow?alert=company&fcode=SGPM
     END
     Navigate Capabilities Dashboard page
     Click Author Tab
     ${Totalauthorsubs2} = Get Value  //*[text()="Total subscriptions"]/../div[2]
     ${Totalauthorsubs2} == ${Totalauthorsubs} + 1
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.barrons.com/follow
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.barrons.com/follow
     END
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.barrons.com/follow
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Click Button  //*[@href="https://www.s.dev.barrons.com/market-data/stocks/eQSGO"]/../../../*/*[@role="switch"]
     END
 
@@ -128,23 +129,23 @@ Validate Company On Search Tab
 
 Validate Industry Reflected On Dashboard
     ${Totalauthorsubs} = Get Value  //*[text()="Total subscriptions"]/../div[2]
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.barrons.com/follow?alert=industry&fcode=indcera
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.barrons.com/follow?alert=industry&fcode=indcera
     END
     Navigate Capabilities Dashboard page
     Click Author Tab
     ${Totalauthorsubs2} = Get Value  //*[text()="Total subscriptions"]/../div[2]
     ${Totalauthorsubs2} == ${Totalauthorsubs} + 1
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.barrons.com/follow
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.barrons.com/follow
     END
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.barrons.com/follow
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Click Button  //*[text()="Industrial Ceramics"]/../../*/*[@role="switch"]
     END
 

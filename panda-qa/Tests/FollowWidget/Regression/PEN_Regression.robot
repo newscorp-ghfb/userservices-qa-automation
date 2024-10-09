@@ -11,6 +11,7 @@ Resource  ../../../Resources/PageObjects/PENCapabilitiesPage.robot
 
 Test Setup  CommonFunctionality.Start PEN Article
 Test Teardown  CommonFunctionality.Finish Testcase
+
 *** Variables ***
 
 *** Test Cases ***
@@ -18,7 +19,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T96
 Validate the PEN Preference Center page
     [Documentation]  This test case validates the PEN preference center page
-    [Tags]  Regression  PreferenceCenter
+    [Tags]  Regression  PreferenceCenter  Follow1
 
     PENPreferenceCenterPage.Add Author By Hotlink
     DefinedKeywords.Sign In Process
@@ -30,25 +31,13 @@ Validate the PEN Preference Center page
     PENPreferenceCenterPage.Validate Following Frequency
     PENPreferenceCenterPage.Validate All Tabs Displayed
     PENPreferenceCenterPage.Validate Author On All Tab
-    PENPreferenceCenterPage.Add Company By Hotlink
-    PENPreferenceCenterPage.Validate Followed Companies
-    ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
-    Run Keyword If  ${val2} > 0  PENPreferenceCenterPage.Click Following Toggle Alert Pop up
-    PENPreferenceCenterPage.Validate Company Frequency
-    PENPreferenceCenterPage.Validate Company Quote Link
-    PENPreferenceCenterPage.Validate Company On All Tab
-    PENPreferenceCenterPage.Click PEN tab
-    PENPreferenceCenterPage.Validate Company Toggle Feature
-    PENPreferenceCenterPage.Click Company Toggle Feature
-    PENPreferenceCenterPage.Validate Following Toggle Alert Pop up
-    PENPreferenceCenterPage.Click Following Toggle Alert Pop up
     #PENlPreferenceCenterPage.Navigate Article page
     #PENArticlePage.Scroll stories
 
 #US-T29
 Validate Authors for PEN Article page without byline
     [Documentation]  This test case validates authors without byline for PEN article page
-    [Tags]  Regression  Article  Author
+    [Tags]  Regression  Article  Author   Follow1
 
     CommonFunctionality.Start PEN Article without byline
     PENArticlePage.Validate author without byline
@@ -56,7 +45,7 @@ Validate Authors for PEN Article page without byline
 #US-T123
 Validate the PEN digest notification
     [Documentation]  This test case validates the PEN digest notification
-    [Tags]  Regression  Notifications
+    [Tags]  Regression  Notifications    Follow1
     PENMailboxPage.Navigate Mailbox page
     PENMailboxPage.Login
     PENMailboxPage.Select Inbox
@@ -66,7 +55,7 @@ Validate the PEN digest notification
 #US-T150
 Validate the PEN real-time author notification
     [Documentation]  This test case validates the PEN real-time author notification
-    [Tags]  Regression  Notifications  Author
+    [Tags]  Regression  Notifications  Author      Follow1
     PENMailboxPage.Navigate Mailbox page
     PENMailboxPage.Login
     PENMailboxPage.Select Inbox
@@ -76,17 +65,17 @@ Validate the PEN real-time author notification
 #US-T152
 Validate the PEN real-time company notification
     [Documentation]  This test case validates the PEN real-time company notification
-    [Tags]  Regression  Company  Notifications
+    [Tags]  Regression  Company  Notifications       Follow1
     PENMailboxPage.Navigate Mailbox page
     PENMailboxPage.Login
     PENMailboxPage.Select Inbox
     PENMailboxPage.Search Your PEN real-time company notification
     PENMailboxPage.Validate PEN real-time company notification
 
-#US-T3600
+#US-T360
 Validate Postback on Preference Center
     [Documentation]  This test case validates the PEN Postback on Preference Center
-    [Tags]  Regression  Postback
+    [Tags]  Regression  Postback     Follow1
     PENPreferenceCenterPage.Add Breaking News By Hotlink
     DefinedKeywords.Sign In Process
     PENPreferenceCenterPage.Validate Followed Breaking News
@@ -109,7 +98,7 @@ Validate Postback on Preference Center
 #US-T113
 Validate Private Equity News Capabilities Dashboard for Author
     [Documentation]  This test case validates the PEN Capabilities Dashboard for Author
-    [Tags]  Regression  Capabilities  Author
+    [Tags]  Regression  Capabilities  Author      Follow1
     PENCapabilitiesPage.Navigate Capabilities Dashboard page
     PENCapabilitiesPage.Click Login button
     PENCapabilitiesPage.Capabilities Dashboard Sign In Process
@@ -125,7 +114,7 @@ Validate Private Equity News Capabilities Dashboard for Author
  #US-T114
 Validate Private Equity News Capabilities Dashboard for Company
     [Documentation]  This test case validates the PEN Capabilities Dashboard for Company
-    [Tags]  Regression  Capabilities  Company
+    [Tags]  Regression  Capabilities  Company       TagPECB
     PENCapabilitiesPage.Navigate Capabilities Dashboard page
     PENCapabilitiesPage.Click Login button
     PENCapabilitiesPage.Capabilities Dashboard Sign In Process

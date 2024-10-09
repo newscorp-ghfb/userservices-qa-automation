@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 6.1.1 (Python 3.12.0 on win32)" generated="20240702 18:47:13.424" rpa="false" schemaversion="4">
+<suite id="s1" name="Barrons Smoke" source="D:\Users\khanduria\PycharmProjects\panda-qa-develop\panda-qa\results\Tests\FollowWidget\Smoke\Barrons_Smoke.robot">
+<test id="s1-t1" name="Validate the author follow button from articles page" line="22">
+<kw name="CommonFunctionality.Start Barrons Article" type="SETUP">
+<msg timestamp="20240702 18:47:13.061" level="FAIL">No keyword with name 'CommonFunctionality.Start Barrons Article' found.</msg>
+<status status="FAIL" starttime="20240702 18:47:13.061" endtime="20240702 18:47:13.061"/>
+</kw>
+<kw name="CommonFunctionality.Finish Testcase" type="TEARDOWN">
+<msg timestamp="20240702 18:47:13.064" level="FAIL">No keyword with name 'CommonFunctionality.Finish Testcase' found.</msg>
+<status status="FAIL" starttime="20240702 18:47:13.064" endtime="20240702 18:47:13.064">No keyword with name 'CommonFunctionality.Finish Testcase' found.</status>
+</kw>
+<doc>This test case validates the author follow button from articles page</doc>
+<tag>Article</tag>
+<tag>BarronsSmoke</tag>
+<tag>Follow</tag>
+<tag>Smoke</tag>
+<tag>TagBarrons</tag>
+<status status="FAIL" starttime="20240702 18:47:13.059" endtime="20240702 18:47:13.064">Setup failed:
+No keyword with name 'CommonFunctionality.Start Barrons Article' found.
+
+Also teardown failed:
+No keyword with name 'CommonFunctionality.Finish Testcase' found.</status>
+</test>
+<test id="s1-t2" name="Validate the follow button from authors page" line="48">
+<kw name="CommonFunctionality.Start Barrons Article" type="SETUP">
+<msg timestamp="20240702 18:47:13.067" level="FAIL">No keyword with name 'CommonFunctionality.Start Barrons Article' found.</msg>
+<status status="FAIL" starttime="20240702 18:47:13.067" endtime="20240702 18:47:13.068"/>
+</kw>
+<kw name="CommonFunctionality.Finish Testcase" type="TEARDOWN">
+<msg timestamp="20240702 18:47:13.069" level="FAIL">No keyword with name 'CommonFunctionality.Finish Testcase' found.</msg>
+<status status="FAIL" starttime="20240702 18:47:13.069" endtime="20240702 18:47:13.069">No keyword with name 'CommonFunctionality.Finish Testcase' found.</status>
+</kw>
+<doc>This test case validates the follow button from authors page</doc>
+<tag>Author</tag>
+<tag>BarronsSmoke</tag>
+<tag>Follow</tag>
+<tag>Smoke</tag>
+<tag>TagBarrons</tag>
+<status status="FAIL" starttime="20240702 18:47:13.066" endtime="20240702 18:47:13.069">Setup failed:
+No keyword with name 'CommonFunctionality.Start Barrons Article' found.
+
+Also teardown failed:
+No keyword with name 'CommonFunctionality.Finish Testcase' found.</status>
+</test>
+<test id="s1-t3" name="Validate the stock pick follow button from articles page" line="66">
+<kw name="CommonFunctionality.Start Barrons Article" type="SETUP">
+<msg timestamp="20240702 18:47:13.072" level="FAIL">No keyword with name 'CommonFunctionality.Start Barrons Article' found.</msg>
+<status status="FAIL" starttime="20240702 18:47:13.072" endtime="20240702 18:47:13.073"/>
+</kw>
+<kw name="CommonFunctionality.Finish Testcase" type="TEARDOWN">
+<msg timestamp="20240702 18:47:13.074" level="FAIL">No keyword with name 'CommonFunctionality.Finish Testcase' found.</msg>
+<status status="FAIL" starttime="20240702 18:47:13.074" endtime="20240702 18:47:13.074">No keyword with name 'CommonFunctionality.Finish Testcase' found.</status>
+</kw>
+<doc>This test case validates the stock pick follow button from articles page</doc>
+<tag>BarronsSmoke</tag>
+<tag>CustomTopic</tag>
+<tag>Follow</tag>
+<tag>Smoke</tag>
+<tag>TagBarrons</tag>
+<status status="FAIL" starttime="20240702 18:47:13.071" endtime="20240702 18:47:13.074">Setup failed:
+No keyword with name 'CommonFunctionality.Start Barrons Article' found.
+
+Also teardown failed:
+No keyword with name 'CommonFunctionality.Finish Testcase' found.</status>
+</test>
+<test id="s1-t4" name="Validate the Barrons Preference Center page" line="84">
+<kw name="CommonFunctionality.Start Barrons Article" type="SETUP">
+<msg timestamp="20240702 18:47:13.077" level="FAIL">No keyword with name 'CommonFunctionality.Start Barrons Article' found.</msg>
+<status status="FAIL" starttime="20240702 18:47:13.077" endtime="20240702 18:47:13.077"/>
+</kw>
+<kw name="CommonFunctionality.Finish Testcase" type="TEARDOWN">
+<msg timestamp="20240702 18:47:13.079" level="FAIL">No keyword with name 'CommonFunctionality.Finish Testcase' found.</msg>
+<status status="FAIL" starttime="20240702 18:47:13.079" endtime="20240702 18:47:13.079">No keyword with name 'CommonFunctionality.Finish Testcase' found.</status>
+</kw>
+<doc>This test case validates the barrons preference center page</doc>
+<tag>BarronsSmoke</tag>
+<tag>PreferenceCenter</tag>
+<tag>Smoke</tag>
+<tag>TagBarrons</tag>
+<status status="FAIL" starttime="20240702 18:47:13.075" endtime="20240702 18:47:13.079">Setup failed:
+No keyword with name 'CommonFunctionality.Start Barrons Article' found.
+
+Also teardown failed:
+No keyword with name 'CommonFunctionality.Finish Testcase' found.</status>
+</test>
+<test id="s1-t5" name="Validate the stock pick follow button from stock pick page" line="102">
+<kw name="CommonFunctionality.Start Barrons Article" type="SETUP">
+<msg timestamp="20240702 18:47:13.081" level="FAIL">No keyword with name 'CommonFunctionality.Start Barrons Article' found.</msg>
+<status status="FAIL" starttime="20240702 18:47:13.081" endtime="20240702 18:47:13.081"/>
+</kw>
+<kw name="CommonFunctionality.Finish Testcase" type="TEARDOWN">
+<msg timestamp="20240702 18:47:13.083" level="FAIL">No keyword with name 'CommonFunctionality.Finish Testcase' found.</msg>
+<status status="FAIL" starttime="20240702 18:47:13.082" endtime="20240702 18:47:13.083">No keyword with name 'CommonFunctionality.Finish Testcase' found.</status>
+</kw>
+<doc>This test case validates the stock pick follow button from stock pick page</doc>
+<tag>BarronsSmoke</tag>
+<tag>CustomTopic</tag>
+<tag>Follow</tag>
+<tag>Smoke</tag>
+<tag>TagBarrons</tag>
+<status status="FAIL" starttime="20240702 18:47:13.079" endtime="20240702 18:47:13.083">Setup failed:
+No keyword with name 'CommonFunctionality.Start Barrons Article' found.
+
+Also teardown failed:
+No keyword with name 'CommonFunctionality.Finish Testcase' found.</status>
+</test>
+<doc>Barrons Smoke Tests</doc>
+<status status="FAIL" starttime="20240702 18:47:13.023" endtime="20240702 18:47:13.083"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="5" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Article</stat>
+<stat pass="0" fail="1" skip="0">Author</stat>
+<stat pass="0" fail="5" skip="0">BarronsSmoke</stat>
+<stat pass="0" fail="2" skip="0">CustomTopic</stat>
+<stat pass="0" fail="4" skip="0">Follow</stat>
+<stat pass="0" fail="1" skip="0">PreferenceCenter</stat>
+<stat pass="0" fail="5" skip="0">Smoke</stat>
+<stat pass="0" fail="5" skip="0">TagBarrons</stat>
+</tag>
+<suite>
+<stat pass="0" fail="5" skip="0" id="s1" name="Barrons Smoke">Barrons Smoke</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240702 18:47:13.051" level="ERROR">Error in file 'D:\Users\khanduria\PycharmProjects\panda-qa-develop\panda-qa\results\Tests\FollowWidget\Smoke\Barrons_Smoke.robot' on line 5: Resource file '..\..\..\Resources\CommonFunctionality.robot' does not exist.</msg>
+<msg timestamp="20240702 18:47:13.054" level="ERROR">Error in file 'D:\Users\khanduria\PycharmProjects\panda-qa-develop\panda-qa\results\Tests\FollowWidget\Smoke\Barrons_Smoke.robot' on line 6: Resource file '..\..\..\Resources\DefinedKeywords.robot' does not exist.</msg>
+<msg timestamp="20240702 18:47:13.055" level="ERROR">Error in file 'D:\Users\khanduria\PycharmProjects\panda-qa-develop\panda-qa\results\Tests\FollowWidget\Smoke\Barrons_Smoke.robot' on line 7: Resource file '..\..\..\Resources\PageObjects\BarronsArticlePage.robot' does not exist.</msg>
+<msg timestamp="20240702 18:47:13.056" level="ERROR">Error in file 'D:\Users\khanduria\PycharmProjects\panda-qa-develop\panda-qa\results\Tests\FollowWidget\Smoke\Barrons_Smoke.robot' on line 8: Resource file '..\..\..\Resources\PageObjects\BarronsAuthorsPage.robot' does not exist.</msg>
+<msg timestamp="20240702 18:47:13.058" level="ERROR">Error in file 'D:\Users\khanduria\PycharmProjects\panda-qa-develop\panda-qa\results\Tests\FollowWidget\Smoke\Barrons_Smoke.robot' on line 9: Resource file '..\..\..\Resources\PageObjects\BarronsPreferenceCenterPage.robot' does not exist.</msg>
+</errors>
+</robot>

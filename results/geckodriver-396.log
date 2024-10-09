@@ -1,0 +1,85 @@
+1728452269749	geckodriver	INFO	Listening on 127.0.0.1:56243
+1728452272782	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56244" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofiledgjtWQ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728452273500	Marionette	INFO	Marionette enabled
+1728452273865	Marionette	INFO	Listening on port 56251
+WebDriver BiDi listening on ws://127.0.0.1:56244
+Read port: 56251
+1728452274147	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:56244/devtools/browser/39e922c7-a752-4803-a7e3-a716f2af9fbf
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m21fux3khp0ddfgk&sid=9222325317970825875&loc=https%3A%2F%2Fwww.barrons.com%2F&new=1&arf=0&ltm=1728452277808&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m21fuxr51aaq3lct&ckp=m21fux3kbhkkl7yy&glb=&cp_userState=anon&cp_testGroup=82&cp_topDomain=barrons.com&cp_access=free&cp_section=US%20Home%20Page%20Weekday&cp_subsection=&cp_cms_name=CAPS&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=2&cp_ab_bucket=82&cp_pageContentSource=Barrons%20Online&cp_pageContentType=Home&cp_pageContentTypeDetai=default&cp_pageSiteProduct=BOL&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript error: https://asset.barrons.com/fp/assets/webpack4/runtime.9e37bf9b1d9ed2.js, line 1: ChunkLoadError: Loading chunk 877 failed.
+(error: https://asset.barrons.com/fp/assets/webpack4/877.4e5d331222ef02.js)
+JavaScript error: https://asset.barrons.com/fp/assets/webpack4/runtime.9e37bf9b1d9ed2.js, line 1: ChunkLoadError: Loading chunk 877 failed.
+(error: https://asset.barrons.com/fp/assets/webpack4/877.4e5d331222ef02.js)
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.barrons.com/asset/dj-watchlist/v1.11.0/p-8e3b6675.entry.js, line 11: TypeError: Error.captureStackTrace is not a function
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.error: ({})
+console.error: ({})
+JavaScript warning: https://cdn.cxense.com/cx.js, line 6: Script terminated by timeout at:
+e@https://cdn.cxense.com/cx.js:6:585
+t@https://cdn.cxense.com/cx.js:6:1098
+a@https://cdn.cxense.com/cx.js:6:1369
+Hi@https://cdn.cxense.com/cx.js:6:52152
+ro@https://cdn.cxense.com/cx.js:6:54510
+ea@https://cdn.cxense.com/cx.js:6:70307
+ra/<@https://cdn.cxense.com/cx.js:6:70614
+nrWrapper@https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634:129:17810
+
+JavaScript warning: https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.Y7snZc84UmY.es5.O/am=YDBgBg/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4o6JJW61vjfL39b99y1stb_FZTXg/m=_b,_tp, line 290: Script terminated by timeout at:
+c@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.Y7snZc84UmY.es5.O/am=YDBgBg/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4o6JJW61vjfL39b99y1stb_FZTXg/m=_b,_tp:290:187
+b@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.Y7snZc84UmY.es5.O/am=YDBgBg/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4o6JJW61vjfL39b99y1stb_FZTXg/m=_b,_tp:281:48
+
+JavaScript warning: https://fpt.live.com/?session_id=f794b3da52b14352a46dad147dc458f6&CustomerId=33e01921-4d64-4f8c-a055-5bdaffd5e33d&PageId=SI, line 5: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+1728452305714	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://res-1.cdn.office.net/midgard/versionless/livepersonacard_without-react_4e09eb534f633f2b7d57.js, line 2: unreachable code after return statement
+JavaScript warning: https://cdn.adnxs.com/v/s/246/trk.js, line 492: Script terminated by timeout at:
+lj@https://cdn.adnxs.com/v/s/246/trk.js:492:80
+qj@https://cdn.adnxs.com/v/s/246/trk.js:549:279
+oj@https://cdn.adnxs.com/v/s/246/trk.js:189:40
+rj@https://cdn.adnxs.com/v/s/246/trk.js:497:154
+Vi@https://cdn.adnxs.com/v/s/246/trk.js:256:24
+Ri@https://cdn.adnxs.com/v/s/246/trk.js:514:49
+Uh@https://cdn.adnxs.com/v/s/246/trk.js:365:26
+Cc@https://cdn.adnxs.com/v/s/246/trk.js:449:76
+_.B@https://cdn.adnxs.com/v/s/246/trk.js:560:3327
+_.C@https://cdn.adnxs.com/v/s/246/trk.js:560:1400
+md/<@https://cdn.adnxs.com/v/s/246/trk.js:560:5653
+
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=95335179, line 14: Script terminated by timeout at:
+E@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=95335179:14:325
+h@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js?cache=95335179:94:449
+
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WEoqGYGTldYSfSNCQ9Ugqu-00NFuS6e6WOK2G2Y_zzI.js line 2 > eval line 4988 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1728452326470	Marionette	INFO	Stopped listening on port 56251
+JavaScript warning: https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.JquerySignalR.m.ea1f4ce2.js, line 1: Script terminated by timeout at:
+ajax@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.JquerySignalR.m.ea1f4ce2.js:1:20923
+ajaxAbort@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.JquerySignalR.m.ea1f4ce2.js:1:23417
+abort@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.JquerySignalR.m.ea1f4ce2.js:1:31680
+stop@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.JquerySignalR.m.ea1f4ce2.js:1:17606
+355250/t3/l.stop@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.Notification.m.c2bdbd12.js:1:45526
+249580/start/l/</</<@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.JquerySignalR.m.ea1f4ce2.js:1:13109
+
+Dynamically enable window occlusion 1
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.

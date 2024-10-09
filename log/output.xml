@@ -1,273 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20240105 12:40:13.728" rpa="false" schemaversion="4">
-<suite id="s1" name="MansionGlobal Regression" source="D:\Codes\Jenkins_2050\userservices-qa-automation\panda-qa\Tests\FollowWidget\Regression\MansionGlobal_Regression.robot">
-<test id="s1-t1" name="Validate the Mansion Global digest notification" line="58">
-<kw name="Start Mansion Global Article" library="CommonFunctionality" type="SETUP">
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20240419 14:36:24.226" rpa="false" schemaversion="4">
+<suite id="s1" name="API Automation" source="D:\Codes\Jenkins_2050\userservices-qa-automation\panda-qa\Tests\FollowWidget\Regression\API_Automation.robot">
+<test id="s1-t1" name="Create Company for WSJ brand" line="29">
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
-<arg>1 seconds</arg>
+<arg>0.2 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20240105 12:40:15.617" endtime="20240105 12:40:15.621"/>
+<status status="PASS" starttime="20240419 14:36:27.730" endtime="20240419 14:36:27.733"/>
 </kw>
-<if>
-<branch type="IF" condition="${Env} == &quot;prod&quot;">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://www.mansionglobal.com</arg>
-<arg>${Browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="NOT RUN" starttime="20240105 12:40:15.625" endtime="20240105 12:40:15.626"/>
-</kw>
-<kw name="Go To" library="SeleniumLibrary">
-<arg>https://www.mansionglobal.com/articles/are-there-tax-breaks-on-agricultural-land-in-pennsylvania-01648119848</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="NOT RUN" starttime="20240105 12:40:15.627" endtime="20240105 12:40:15.628"/>
-</kw>
-<status status="NOT RUN" starttime="20240105 12:40:15.623" endtime="20240105 12:40:15.629"/>
-</branch>
-<branch type="ELSE IF" condition="${Env} == &quot;dev&quot;">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://www.s.dev.mansionglobal.com</arg>
-<arg>${Browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20240105 12:40:15.636" level="INFO">Opening browser 'chrome' to base url 'https://www.s.dev.mansionglobal.com'.</msg>
-<status status="PASS" starttime="20240105 12:40:15.632" endtime="20240105 12:40:23.266"/>
-</kw>
-<kw name="Go To" library="SeleniumLibrary">
-<arg>https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20240105 12:40:23.268" level="INFO">Opening url 'https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212'</msg>
-<status status="PASS" starttime="20240105 12:40:23.267" endtime="20240105 12:40:29.900"/>
-</kw>
-<status status="PASS" starttime="20240105 12:40:15.631" endtime="20240105 12:40:29.901"/>
-</branch>
-<status status="PASS" starttime="20240105 12:40:15.622" endtime="20240105 12:40:29.902"/>
-</if>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>dom:${JSFollowButtonMGPath}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20240105 12:40:29.903" endtime="20240105 12:40:30.918"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20240105 12:40:30.919" endtime="20240105 12:40:32.055"/>
-</kw>
-<status status="PASS" starttime="20240105 12:40:15.613" endtime="20240105 12:40:32.056"/>
-</kw>
-<kw name="Navigate Mailbox page" library="MansionGlobalMailboxPage">
-<kw name="Go To" library="SeleniumLibrary">
-<arg>https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=13&amp;ct=1661294982&amp;rver=7.0.6737.0&amp;wp=MBI_SSL&amp;wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26RpsCsrfState%3dfb29a836-86c5-c6e2-eeef-e3747c5e70dd&amp;id=292841&amp;aadredir=1&amp;CBCXT=out&amp;lw=1&amp;fl=dob%2cflname%2cwld&amp;cobrandid=90015</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20240105 12:40:32.061" level="INFO">Opening url 'https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=13&amp;ct=1661294982&amp;rver=7.0.6737.0&amp;wp=MBI_SSL&amp;wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26RpsCsrfState%3dfb29a836-86c5-c6e2-eeef-e3747c5e70dd&amp;id=292841&amp;aadredir=1&amp;CBCXT=out&amp;lw=1&amp;fl=dob%2cflname%2cwld&amp;cobrandid=90015'</msg>
-<status status="PASS" starttime="20240105 12:40:32.060" endtime="20240105 12:40:33.174"/>
-</kw>
-<status status="PASS" starttime="20240105 12:40:32.057" endtime="20240105 12:40:33.175"/>
-</kw>
-<kw name="Login" library="MansionGlobalMailboxPage">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>//*[@id="i0116"]</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20240105 12:40:33.178" endtime="20240105 12:40:35.223"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>//*[@id="i0116"]</arg>
-<arg>qapandaautomation@hotmail.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20240105 12:40:35.227" level="INFO">Typing text 'qapandaautomation@hotmail.com' into text field '//*[@id="i0116"]'.</msg>
-<status status="PASS" starttime="20240105 12:40:35.224" endtime="20240105 12:40:38.367"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>//*[@id="idSIButton9"]</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20240105 12:40:38.368" endtime="20240105 12:40:40.406"/>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>//*[@id="idSIButton9"]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20240105 12:40:40.409" level="INFO">Clicking button '//*[@id="idSIButton9"]'.</msg>
-<status status="PASS" starttime="20240105 12:40:40.407" endtime="20240105 12:40:43.487"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>//*[@id="i0118"]</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20240105 12:40:43.489" endtime="20240105 12:40:45.522"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>//*[@id="i0118"]</arg>
-<arg>Testing.123</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20240105 12:40:45.526" level="INFO">Typing text 'Testing.123' into text field '//*[@id="i0118"]'.</msg>
-<status status="PASS" starttime="20240105 12:40:45.523" endtime="20240105 12:40:48.616"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>//*[@id="idSIButton9"]</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20240105 12:40:48.617" endtime="20240105 12:40:50.645"/>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>//*[@id="idSIButton9"]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20240105 12:40:50.649" level="INFO">Clicking button '//*[@id="idSIButton9"]'.</msg>
-<status status="PASS" starttime="20240105 12:40:50.645" endtime="20240105 12:40:53.830"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>//input[@id="idBtn_Back"]</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20240105 12:40:53.831" endtime="20240105 12:40:55.866"/>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>//input[@id="idBtn_Back"]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20240105 12:40:55.870" level="INFO">Clicking button '//input[@id="idBtn_Back"]'.</msg>
-<status status="PASS" starttime="20240105 12:40:55.867" endtime="20240105 12:40:59.185"/>
-</kw>
-<status status="PASS" starttime="20240105 12:40:33.176" endtime="20240105 12:40:59.187"/>
-</kw>
-<kw name="Select Inbox" library="MansionGlobalMailboxPage">
+<kw name="EXECUTE POST API Call" library="APIAutomationPage">
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
-<arg>2.0 seconds</arg>
+<arg>0.2 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20240105 12:40:59.190" endtime="20240105 12:40:59.192"/>
+<status status="PASS" starttime="20240419 14:36:58.479" endtime="20240419 14:36:59.538"/>
 </kw>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>//input[@id="topSearchInput"]</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20240105 12:40:59.194" endtime="20240105 12:41:04.576"/>
+<kw name="Create Session" library="RequestsLibrary">
+<arg>MySession</arg>
+<arg>${BASE_URL}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20240419 14:37:00.418" level="INFO">Creating Session using : alias=MySession, url=https://int-int-panda-api.vir-dev.onservo.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20240419 14:36:59.549" endtime="20240419 14:37:00.428"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//input[@id="topSearchInput"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240105 12:41:04.580" level="INFO">Clicking element '//input[@id="topSearchInput"]'.</msg>
-<status status="PASS" starttime="20240105 12:41:04.577" endtime="20240105 12:41:08.784"/>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${headers}</var>
+<arg>${HEADER_CONTENT_TYPE}</arg>
+<arg>${HEADER_COOKIE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20240419 14:37:00.766" level="INFO">${headers} = {'Cookie': 'ca_id=eJw1kE1PwzAMhv9Lzm2X5nPZiUkbaBLiMAQXhCY3cVhGP6Y2W0GI_07aiaMfP7b1-od8hCu2hxYaJCuy7u0RWiAZ8dCE-vufP0NoQ6LYQKhTDTevGCZ-57rx1LU4FLZrknS5BJecSmovjFzm0lY6Fx4xB8dl7ikT3moQAnSyYw_2cx6QCpyitL...</msg>
+<status status="PASS" starttime="20240419 14:37:00.430" endtime="20240419 14:37:00.766"/>
 </kw>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>//span[@id="searchScopeButtonId-option"]</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20240105 12:41:08.785" endtime="20240105 12:41:10.805"/>
+<kw name="Post Request" library="RequestsLibrary">
+<var>${response}</var>
+<arg>MySession</arg>
+<arg>/subscription</arg>
+<arg>headers=${headers}</arg>
+<arg>data=${COMPANY_JSON}</arg>
+<doc>*DEPRECATED* Please use `POST On Session` instead.</doc>
+<msg timestamp="20240419 14:37:01.465" level="WARN">Keyword 'RequestsLibrary.Post Request' is deprecated. Please use `POST On Session` instead.</msg>
+<msg timestamp="20240419 14:37:01.702" level="INFO">POST Request : url=https://int-int-panda-api.vir-dev.onservo.com/subscription 
+ path_url=/subscription 
+ headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'ca_id=eJw1kE1PwzAMhv9Lzm2X5nPZiUkbaBLiMAQXhCY3cVhGP6Y2W0GI_07aiaMfP7b1-od8hCu2hxYaJCuy7u0RWiAZ8dCE-vufP0NoQ6LYQKhTDTevGCZ-57rx1LU4FLZrknS5BJecSmovjFzm0lY6Fx4xB8dl7ikT3moQAnSyYw_2cx6QCpyitLJSojIWraXacqFRcsmZZgyY0soJ9AyWhlOlqqVHrpypUq8yaVnf1TiQ1Ru532-3--1Dvnva7F53m5f1I3nPCFzi8RDDFKnUJZ_30ozYHiGiO0BMXBlNpS6VykiYwSQKJkyZ4n-db8BoMYMwpGvkGON5WC0W4zgWDq_FOJymVyxsHbCN5PcPMtxqKg.Q7c8V8-MnpTsTvToiOjrpQXWNpeQZVfKKegHZucDAaRa3wN3Rj3Hj-PPSjGaWaMT1Eg9PQoefDxnbk3xIv-ep1Jburv-IKc9lA1juMuTTyNGxvoPuXn7GdG1y2PLR7IbpFQyNF_PPw210IQr27OsiKzcdlk9Z8fwAmi1uHU5vz00WcgehnEzflyaKJZH-vzSrw_SIOm_CntCoryXlXLsV0QMFEIMHmoaOx0WFfpusttHMZmTinN9TPsKs_7qZSri8fkDxsFyJ0XOB7DtV55mTI3CFEyz_K15JuxU4Sz_GUln8M2hJkokFwvT3MRQq9bk_k23i8SjtVQADxan5NotnhP0leA2ib3YzZNq3SJBiKAX8ZzOySSPmiwOvyo-py0NRl_WQtAtXuxPIaIxlqNCyrUOWnS5TFuGGvD_FiNwMD00i9DldnLmeB4OeSTT_mmbNcN4ARUrn6wr_vfHzpgzLQLuwQvxrwi6xIMIwFlb-KdCnl15S0Rek-PQQM09Klf0PR2-WDAKYcqI0w3ZfsXnu-_89ru0qngR3J_LV1hE7IHk1q1CCbXOMk5jvp0jf4T4XIWI9IxrG14ZWJikxy6KuIckMq67YRKPv68PpzUVoxIN-ucFkb-1q3870ZHO-gShEZYeyEQSyUYn65p_NCJt15300zhTGALEILmSmRSUYww', 'Content-Length': '203'} 
+ body=b'{"deliveryPreferences": [],"timezone": "UTC+01:00","criteria": { "engine": "Allesseh", "product": "wsj", "alertType": "company", "term": { "operator": "equal_to", "field": "Fcode", "value": "AMZCOM" } }}' 
+ </msg>
+<msg timestamp="20240419 14:37:01.703" level="INFO">POST Response : url=https://int-int-panda-api.vir-dev.onservo.com/subscription 
+ status=415, reason=Unsupported Media Type 
+ headers={'Date': 'Fri, 19 Apr 2024 21:37:01 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '73', 'Connection': 'keep-alive', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Content-Security-Policy': "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests", 'Cross-Origin-Opener-Policy': 'same-origin', 'Cross-Origin-Resource-Policy': 'same-origin', 'Origin-Agent-Cluster': '?1', 'Referrer-Policy': 'no-referrer', 'Strict-Transport-Security': 'max-age=15552000; includeSubDomains', 'X-Content-Type-Options': 'nosniff', 'X-DNS-Prefetch-Control': 'off', 'X-Download-Options': 'noopen', 'X-Frame-Options': 'SAMEORIGIN', 'X-Permitted-Cross-Domain-Policies': 'none', 'X-XSS-Protection': '0', 'ETag': 'W/"49-XMXEq8HBoLi/XG1gcO2ngPqbE30"'} 
+ body={"code":415,"message":"unsupported media type undefined","level":"error"} 
+ </msg>
+<msg timestamp="20240419 14:37:01.703" level="INFO">D:\Users\sainiarchana\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py:1100: InsecureRequestWarning: Unverified HTTPS request is being made to host 'int-int-panda-api.vir-dev.onservo.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg timestamp="20240419 14:37:01.704" level="INFO">${response} = &lt;Response [415]&gt;</msg>
+<status status="PASS" starttime="20240419 14:37:00.768" endtime="20240419 14:37:01.706"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//span[@id="searchScopeButtonId-option"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240105 12:41:10.809" level="INFO">Clicking element '//span[@id="searchScopeButtonId-option"]'.</msg>
-<status status="PASS" starttime="20240105 12:41:10.806" endtime="20240105 12:41:14.951"/>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${response.status_code}</arg>
+<arg>200</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<msg timestamp="20240419 14:37:03.766" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<msg timestamp="20240419 14:37:03.768" level="FAIL">415 != 200</msg>
+<status status="FAIL" starttime="20240419 14:37:01.707" endtime="20240419 14:37:03.770"/>
 </kw>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>//button[@id="searchScopeButtonId-list1"]</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20240105 12:41:14.952" endtime="20240105 12:41:16.990"/>
+<kw name="Set Variable" library="BuiltIn">
+<var>${json_response}</var>
+<arg>${response.json()}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20240419 14:37:03.771" endtime="20240419 14:37:03.773"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//button[@id="searchScopeButtonId-list1"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240105 12:41:16.994" level="INFO">Clicking element '//button[@id="searchScopeButtonId-list1"]'.</msg>
-<status status="PASS" starttime="20240105 12:41:16.990" endtime="20240105 12:41:21.088"/>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${RESPONSE_JSON}</arg>
+<arg>${json_response}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" starttime="20240419 14:37:03.774" endtime="20240419 14:37:03.775"/>
 </kw>
-<status status="PASS" starttime="20240105 12:40:59.188" endtime="20240105 12:41:21.089"/>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${CRITERIA_ID}</arg>
+<arg>${json_response['items'][0]['criteria']['criteriaId']}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" starttime="20240419 14:37:03.777" endtime="20240419 14:37:03.778"/>
 </kw>
-<kw name="Search Your Daily Digest from Mansion Global" library="MansionGlobalMailboxPage">
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>//input[@id="topSearchInput"]</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20240105 12:41:21.093" endtime="20240105 12:41:23.108"/>
+<status status="FAIL" starttime="20240419 14:36:27.735" endtime="20240419 14:37:03.779"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//input[@id="topSearchInput"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240105 12:41:23.112" level="INFO">Clicking element '//input[@id="topSearchInput"]'.</msg>
-<status status="PASS" starttime="20240105 12:41:23.109" endtime="20240105 12:41:27.183"/>
+<kw name="Validate All Subscriptions from Preference Center" library="APIAutomationPage">
+<status status="NOT RUN" starttime="20240419 14:37:03.780" endtime="20240419 14:37:03.782"/>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>//input[@id="topSearchInput"]</arg>
-<arg>Your Daily Digest from Mansion Global</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20240105 12:41:27.187" level="INFO">Typing text 'Your Daily Digest from Mansion Global' into text field '//input[@id="topSearchInput"]'.</msg>
-<status status="PASS" starttime="20240105 12:41:27.184" endtime="20240105 12:41:33.427"/>
+<kw name="EXECUTE GET API Call" library="APIAutomationPage">
+<status status="NOT RUN" starttime="20240419 14:37:03.783" endtime="20240419 14:37:03.784"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//button[@aria-label="Search"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240105 12:41:33.431" level="INFO">Clicking element '//button[@aria-label="Search"]'.</msg>
-<status status="PASS" starttime="20240105 12:41:33.428" endtime="20240105 12:41:37.673"/>
+<kw name="Validate API data with Pref Center Data" library="APIAutomationPage">
+<arg>delete</arg>
+<status status="NOT RUN" starttime="20240419 14:37:03.785" endtime="20240419 14:37:03.785"/>
 </kw>
-<status status="PASS" starttime="20240105 12:41:21.090" endtime="20240105 12:41:37.674"/>
-</kw>
-<kw name="Validate Mansion Global Digest notification" library="MansionGlobalMailboxPage">
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>//div[@id="groupHeaderTop results"]/../div[2]</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20240105 12:41:37.678" endtime="20240105 12:41:39.700"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//div[@id="groupHeaderTop results"]/../div[2]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240105 12:41:39.704" level="INFO">Clicking element '//div[@id="groupHeaderTop results"]/../div[2]'.</msg>
-<status status="PASS" starttime="20240105 12:41:39.701" endtime="20240105 12:41:43.871"/>
-</kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>${viewInBrowserPath}</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20240105 12:41:56.187" level="INFO">Current page contains element '//a[contains(text(),'View in web browser')]'.</msg>
-<status status="PASS" starttime="20240105 12:41:43.872" endtime="20240105 12:41:56.187"/>
-</kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>//table[@role="presentation"]//span[text()="Daily"]/../span[text()="Digest"]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20240105 12:42:17.563" level="INFO">Current page contains element '//table[@role="presentation"]//span[text()="Daily"]/../span[text()="Digest"]'.</msg>
-<status status="PASS" starttime="20240105 12:41:56.188" endtime="20240105 12:42:17.564"/>
-</kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>//a[text()="Preferences"]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20240105 12:42:19.591" level="INFO">Current page contains element '//a[text()="Preferences"]'.</msg>
-<status status="PASS" starttime="20240105 12:42:17.565" endtime="20240105 12:42:19.591"/>
-</kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>//a[text()="Unsubscribe"]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20240105 12:42:21.614" level="INFO">Current page contains element '//a[text()="Unsubscribe"]'.</msg>
-<status status="PASS" starttime="20240105 12:42:19.593" endtime="20240105 12:42:21.614"/>
-</kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>//a[text()="Privacy Notice"]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20240105 12:42:23.639" level="INFO">Current page contains element '//a[text()="Privacy Notice"]'.</msg>
-<status status="PASS" starttime="20240105 12:42:21.615" endtime="20240105 12:42:23.639"/>
-</kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>//a[text()="Cookie Notice"]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20240105 12:42:25.661" level="INFO">Current page contains element '//a[text()="Cookie Notice"]'.</msg>
-<status status="PASS" starttime="20240105 12:42:23.640" endtime="20240105 12:42:25.663"/>
-</kw>
-<status status="PASS" starttime="20240105 12:41:37.675" endtime="20240105 12:42:25.664"/>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" starttime="20240419 14:37:03.786" endtime="20240419 14:37:03.787"/>
 </kw>
 <kw name="Finish Testcase" library="CommonFunctionality" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20240105 12:42:25.667" endtime="20240105 12:42:29.905"/>
+<status status="PASS" starttime="20240419 14:37:06.430" endtime="20240419 14:37:06.433"/>
 </kw>
-<status status="PASS" starttime="20240105 12:42:25.665" endtime="20240105 12:42:29.906"/>
+<status status="PASS" starttime="20240419 14:37:03.790" endtime="20240419 14:37:06.435"/>
 </kw>
-<doc>This test case validates the Mansion Global digest notification</doc>
-<tag>MansionGlobal</tag>
-<tag>Notifications</tag>
+<doc>This test case validates theget subscription API Call</doc>
+<tag>API</tag>
 <tag>Regression</tag>
-<status status="PASS" starttime="20240105 12:40:15.603" endtime="20240105 12:42:29.907"/>
+<status status="FAIL" starttime="20240419 14:36:27.720" endtime="20240419 14:37:06.436">415 != 200</status>
 </test>
-<doc>Mansion Global Regression Tests</doc>
-<status status="PASS" starttime="20240105 12:40:13.740" endtime="20240105 12:42:29.911"/>
+<doc>PANDA API Regression Tests</doc>
+<status status="FAIL" starttime="20240419 14:36:24.237" endtime="20240419 14:37:06.442"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">MansionGlobal</stat>
-<stat pass="1" fail="0" skip="0">Notifications</stat>
-<stat pass="1" fail="0" skip="0">Regression</stat>
+<stat pass="0" fail="1" skip="0">API</stat>
+<stat pass="0" fail="1" skip="0">Regression</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="MansionGlobal Regression">MansionGlobal Regression</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="API Automation">API Automation</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20240419 14:37:01.465" level="WARN">Keyword 'RequestsLibrary.Post Request' is deprecated. Please use `POST On Session` instead.</msg>
 </errors>
 </robot>

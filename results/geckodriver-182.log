@@ -1,0 +1,53 @@
+1728062719599	geckodriver	INFO	Listening on 127.0.0.1:62689
+1728062722880	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62690" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileL2WrK2"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728062723765	Marionette	INFO	Marionette enabled
+1728062724089	Marionette	INFO	Listening on port 62708
+WebDriver BiDi listening on ws://127.0.0.1:62690
+Read port: 62708
+1728062724527	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62690/devtools/browser/a424e98f-d285-4404-80a5-8f50d2bedaae
+JavaScript warning: https://www.marketwatch.com/, line 358: Script terminated by timeout at:
+nrWrapper@https://www.marketwatch.com/:358:17660
+e@https://www.marketwatch.com/:358:52590
+Ue/</e[r]@https://www.marketwatch.com/:358:53144
+f@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js?cb=31087776:33:139672
+Sy/<@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js?cb=31087776:33:139710
+nrWrapper@https://www.marketwatch.com/:358:17810
+e@https://www.marketwatch.com/:358:52590
+Sy@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js?cb=31087776:33:139598
+_.dg@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js?cb=31087776:33:139748
+vv@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js?cb=31087776:33:293596
+MT.prototype.g@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js?cb=31087776:33:465320
+bL.prototype.start/<@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js?cb=31087776:33:256766
+Py@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js?cb=31087776:33:139001
+Ry/this.next@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js?cb=31087776:33:139300
+b@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202410030101/pubads_impl.js?cb=31087776:33:139551
+nrWrapper@https://www.marketwatch.com/:358:17810
+
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+JavaScript warning: https://tags.tiqcdn.com/utag/wsjdn/oneidentity-consumer/prod/utag.17.js?utv=ut4.46.202405071405 line 22 > Function, line 3: Script terminated by timeout at:
+anonymous/W.s_PPVevent@https://tags.tiqcdn.com/utag/wsjdn/oneidentity-consumer/prod/utag.17.js?utv=ut4.46.202405071405 line 22 > Function:3:1253
+
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m1uzy35qwmn7thfr&sid=9222325317970825873&loc=https%3A%2F%2Fwww.marketwatch.com%2Fnewsletters%3Fmod%3DfollowUI&new=1&arf=0&ltm=1728062754689&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m1uzy3if2erzk2tg&ckp=m1uzy35qxdanym47&glb=&eid0=e4cefa22ef027cc0132f0c218da37da39cdb3228234af4df969b5c463592e123&eit0=wsj&cp_userState=anon&cp_testGroup=95&cp_topDomain=marketwatch.com&cp_navSource=followUI&cp_template=full&cp_access=free&cp_section=Newsletters&cp_subsection=&cp_cms_name=&cp_subscriber=registered&cp_edition=naus&cp_bucket=0&cp_ab_bucket=70&cp_pageContentSource=MarketWatch&cp_pageContentType=Summaries&cp_pageContentTypeDetai=newsletters&cp_pageSiteProduct=MW&cp_userTags=&cp_sessionState=ca, line 1: TypeError: cX.loadScript is not a function
+1728062758633	Marionette	INFO	Stopped listening on port 62708
+Dynamically enable window occlusion 1
+console.error: services.settings: 
+  Message: NetworkError: Network error: TypeError: NetworkError: Network request failed
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:107:1
+NetworkError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:5
+_adjustedError@resource://services-settings/RemoteSettingsClient.sys.mjs:916:14
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:821:38
+
+console.warn: services.settings: main/doh-providers sync interrupted by shutdown
+console.warn: services.settings: main/doh-config sync interrupted by shutdown
+console.warn: services.settings: main/devtools-devices sync interrupted by shutdown
+console.warn: services.settings: main/websites-with-shared-credential-backends sync interrupted by shutdown
+console.warn: services.settings: main/language-dictionaries sync interrupted by shutdown
+console.error: (new AbortError("IndexedDB: main/password-recipes getLastModified() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/IDBHelpers.sys.mjs", 16))

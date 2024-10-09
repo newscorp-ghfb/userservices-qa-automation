@@ -1,0 +1,3297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20240115 13:12:22.911" rpa="false" schemaversion="4">
+<suite id="s1" name="Userservices-Qa-Automation" source="D:\Codes\Jenkins_2050\userservices-qa-automation">
+<suite id="s1-s1" name="Panda-Qa" source="D:\Codes\Jenkins_2050\userservices-qa-automation\panda-qa">
+<suite id="s1-s1-s1" name="Tests" source="D:\Codes\Jenkins_2050\userservices-qa-automation\panda-qa\Tests">
+<suite id="s1-s1-s1-s1" name="FollowWidget" source="D:\Codes\Jenkins_2050\userservices-qa-automation\panda-qa\Tests\FollowWidget">
+<suite id="s1-s1-s1-s1-s1" name="Regression" source="D:\Codes\Jenkins_2050\userservices-qa-automation\panda-qa\Tests\FollowWidget\Regression">
+<suite id="s1-s1-s1-s1-s1-s1" name="MansionGlobal Regression" source="D:\Codes\Jenkins_2050\userservices-qa-automation\panda-qa\Tests\FollowWidget\Regression\MansionGlobal_Regression.robot">
+<test id="s1-s1-s1-s1-s1-s1-t1" name="Validate the Mansion GLobal Preference Center page" line="20">
+<kw name="Start Mansion Global Article" library="CommonFunctionality" type="SETUP">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240115 13:12:23.442" endtime="20240115 13:12:23.442"/>
+</kw>
+<kw name="Set Browser Options" library="CommonFunctionality">
+<var>${options}</var>
+<if>
+<branch type="IF" condition="&quot;${Browser}&quot; == &quot;firefox&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${options}</var>
+<arg>selenium.webdriver.FirefoxOptions()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20240115 13:12:23.443" endtime="20240115 13:12:23.443"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--CreateProfile</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:12:23.443" endtime="20240115 13:12:23.443"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--start-maximized</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:12:23.443" endtime="20240115 13:12:23.443"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:12:23.443" endtime="20240115 13:12:23.443"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:12:23.443" endtime="20240115 13:12:23.443"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:12:23.443" endtime="20240115 13:12:23.443"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--headless</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:12:23.443" endtime="20240115 13:12:23.443"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.debugger.force-local</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:12:23.443" endtime="20240115 13:12:23.444"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.debugger.remote-enabled</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:12:23.444" endtime="20240115 13:12:23.444"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.chrome.enabled</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:12:23.444" endtime="20240115 13:12:23.444"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.debugger.prompt-connection</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:12:23.444" endtime="20240115 13:12:23.444"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--browser.dom.window.dump.enabled</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:12:23.444" endtime="20240115 13:12:23.444"/>
+</kw>
+<return>
+<value>${options}</value>
+<status status="NOT RUN" starttime="20240115 13:12:23.444" endtime="20240115 13:12:23.444"/>
+</return>
+<status status="NOT RUN" starttime="20240115 13:12:23.442" endtime="20240115 13:12:23.444"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Browser}&quot; == &quot;chrome&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${options}</var>
+<arg>selenium.webdriver.ChromeOptions()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20240115 13:12:23.445" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000002CB286C20F0&gt;</msg>
+<status status="PASS" starttime="20240115 13:12:23.444" endtime="20240115 13:12:23.445"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--start-maximized</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:12:23.445" endtime="20240115 13:12:23.446"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:12:23.446" endtime="20240115 13:12:23.447"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:12:23.447" endtime="20240115 13:12:23.447"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:12:23.447" endtime="20240115 13:12:23.447"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--ignore-certificate-errors</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:12:23.447" endtime="20240115 13:12:23.447"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-extensions</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:12:23.448" endtime="20240115 13:12:23.448"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-user-gesture-required</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:12:23.448" endtime="20240115 13:12:23.448"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-first-run</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:12:23.448" endtime="20240115 13:12:23.448"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--use-fake-ui-for-media-stream</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:12:23.448" endtime="20240115 13:12:23.449"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--use-fake-device-for-media-stream</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:12:23.449" endtime="20240115 13:12:23.449"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-sync</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:12:23.449" endtime="20240115 13:12:23.450"/>
+</kw>
+<return>
+<value>${options}</value>
+<status status="PASS" starttime="20240115 13:12:23.450" endtime="20240115 13:12:23.450"/>
+</return>
+<status status="PASS" starttime="20240115 13:12:23.444" endtime="20240115 13:12:23.450"/>
+</branch>
+<status status="PASS" starttime="20240115 13:12:23.442" endtime="20240115 13:12:23.450"/>
+</if>
+<msg timestamp="20240115 13:12:23.450" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000002CB286C20F0&gt;</msg>
+<status status="PASS" starttime="20240115 13:12:23.442" endtime="20240115 13:12:23.450"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com</arg>
+<arg>${Browser}</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20240115 13:12:23.450" endtime="20240115 13:12:23.451"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com/articles/are-there-tax-breaks-on-agricultural-land-in-pennsylvania-01648119848</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20240115 13:12:23.451" endtime="20240115 13:12:23.451"/>
+</kw>
+<status status="NOT RUN" starttime="20240115 13:12:23.450" endtime="20240115 13:12:23.451"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com</arg>
+<arg>${Browser}</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240115 13:12:23.452" level="INFO">Opening browser 'chrome' to base url 'https://www.s.dev.mansionglobal.com'.</msg>
+<status status="PASS" starttime="20240115 13:12:23.451" endtime="20240115 13:12:31.889"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20240115 13:12:31.889" level="INFO">Opening url 'https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212'</msg>
+<status status="PASS" starttime="20240115 13:12:31.889" endtime="20240115 13:12:37.664"/>
+</kw>
+<status status="PASS" starttime="20240115 13:12:23.451" endtime="20240115 13:12:37.664"/>
+</branch>
+<status status="PASS" starttime="20240115 13:12:23.450" endtime="20240115 13:12:37.664"/>
+</if>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>dom:${JSFollowButtonMGPath}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240115 13:12:37.664" endtime="20240115 13:12:38.674"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240115 13:12:38.674" endtime="20240115 13:12:39.679"/>
+</kw>
+<status status="PASS" starttime="20240115 13:12:23.441" endtime="20240115 13:12:39.679"/>
+</kw>
+<kw name="Add Author By Hotlink" library="MansionGlobalPreferenceCenterPage">
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com/follow?alert=author&amp;id=8686_MG&amp;frequency=realtime</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20240115 13:12:39.680" endtime="20240115 13:12:39.680"/>
+</kw>
+<status status="NOT RUN" starttime="20240115 13:12:39.680" endtime="20240115 13:12:39.680"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com/follow?alert=author&amp;id=8686_MG&amp;frequency=realtime</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20240115 13:12:39.680" level="INFO">Opening url 'https://www.s.dev.mansionglobal.com/follow?alert=author&amp;id=8686_MG&amp;frequency=realtime'</msg>
+<status status="PASS" starttime="20240115 13:12:39.680" endtime="20240115 13:12:41.768"/>
+</kw>
+<status status="PASS" starttime="20240115 13:12:39.680" endtime="20240115 13:12:41.768"/>
+</branch>
+<status status="PASS" starttime="20240115 13:12:39.680" endtime="20240115 13:12:41.768"/>
+</if>
+<status status="PASS" starttime="20240115 13:12:39.679" endtime="20240115 13:12:41.768"/>
+</kw>
+<kw name="Sign In Process" library="DefinedKeywords">
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Set Variable" library="BuiltIn">
+<var>${Email}</var>
+<arg>${Email_prod}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20240115 13:12:41.769" endtime="20240115 13:12:41.769"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${Password}</var>
+<arg>${Password_prod}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20240115 13:12:41.769" endtime="20240115 13:12:41.769"/>
+</kw>
+<status status="NOT RUN" starttime="20240115 13:12:41.769" endtime="20240115 13:12:41.769"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Set Variable" library="BuiltIn">
+<var>${Email}</var>
+<arg>${Email_dev}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240115 13:12:41.770" level="INFO">${Email} = QABARRONSONLY</msg>
+<status status="PASS" starttime="20240115 13:12:41.770" endtime="20240115 13:12:41.770"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${Password}</var>
+<arg>${Password_dev}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240115 13:12:41.770" level="INFO">${Password} = password1</msg>
+<status status="PASS" starttime="20240115 13:12:41.770" endtime="20240115 13:12:41.770"/>
+</kw>
+<status status="PASS" starttime="20240115 13:12:41.769" endtime="20240115 13:12:41.770"/>
+</branch>
+<status status="PASS" starttime="20240115 13:12:41.769" endtime="20240115 13:12:41.770"/>
+</if>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//input[@type='email']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240115 13:12:41.770" endtime="20240115 13:12:43.819"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//input[@type='email']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240115 13:12:43.820" level="INFO">Clicking button '//input[@type='email']'.</msg>
+<status status="PASS" starttime="20240115 13:12:43.819" endtime="20240115 13:12:50.942"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@type='email']</arg>
+<arg>${Email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 13:12:50.943" level="INFO">Typing text 'QABARRONSONLY' into text field '//input[@type='email']'.</msg>
+<status status="PASS" starttime="20240115 13:12:50.943" endtime="20240115 13:12:54.095"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20240115 13:12:54.095" endtime="20240115 13:12:55.098"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[text()="Continue"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:12:55.098" level="INFO">Clicking element '//span[text()="Continue"]'.</msg>
+<status status="PASS" starttime="20240115 13:12:55.098" endtime="20240115 13:12:57.188"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20240115 13:12:57.188" endtime="20240115 13:12:58.191"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="password-login-password"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240115 13:12:58.191" endtime="20240115 13:13:00.233"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="password-login-password"]</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 13:13:00.234" level="INFO">Typing text 'password1' into text field '//*[@id="password-login-password"]'.</msg>
+<status status="PASS" starttime="20240115 13:13:00.233" endtime="20240115 13:13:03.421"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20240115 13:13:03.421" endtime="20240115 13:13:04.424"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1.0 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240115 13:13:04.424" endtime="20240115 13:13:04.424"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="password-login"]/div/form/div[5]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240115 13:13:04.424" endtime="20240115 13:13:04.424"/>
+</kw>
+<status status="NOT RUN" starttime="20240115 13:13:04.424" endtime="20240115 13:13:04.424"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="password-login"]/div/form/div[5]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:13:04.425" level="INFO">Clicking element '//*[@id="password-login"]/div/form/div[5]/button'.</msg>
+<status status="PASS" starttime="20240115 13:13:04.424" endtime="20240115 13:13:06.506"/>
+</kw>
+<status status="PASS" starttime="20240115 13:13:04.424" endtime="20240115 13:13:06.506"/>
+</branch>
+<status status="PASS" starttime="20240115 13:13:04.424" endtime="20240115 13:13:06.506"/>
+</if>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>//*[@id="password-login"]/div/form/div/div[5]/div[1]/button</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20240115 13:13:06.506" endtime="20240115 13:13:18.884"/>
+</kw>
+<status status="PASS" starttime="20240115 13:12:41.768" endtime="20240115 13:13:18.884"/>
+</kw>
+<kw name="Validate Followed Authors" library="MansionGlobalPreferenceCenterPage">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Authors</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 13:13:20.906" level="INFO">Current page contains text 'Authors'.</msg>
+<status status="PASS" starttime="20240115 13:13:18.885" endtime="20240115 13:13:20.906"/>
+</kw>
+<status status="PASS" starttime="20240115 13:13:18.884" endtime="20240115 13:13:20.906"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${val}</var>
+<arg>//*[@id="root"]/div/div/div/div[3]/div/div/button</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20240115 13:13:31.965" level="INFO">${val} = 0</msg>
+<status status="PASS" starttime="20240115 13:13:20.906" endtime="20240115 13:13:31.965"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${val} &gt; 0</arg>
+<arg>MansionGLobalPreferenceCenterPage.Click Following Toggle Alert Pop up</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20240115 13:13:31.965" endtime="20240115 13:13:31.966"/>
+</kw>
+<kw name="Validate Author Name" library="MansionGlobalPreferenceCenterPage">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Mariana Nuñez</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 13:13:33.988" level="INFO">Current page contains text 'Mariana Nuñez'.</msg>
+<status status="PASS" starttime="20240115 13:13:31.966" endtime="20240115 13:13:33.988"/>
+</kw>
+<status status="PASS" starttime="20240115 13:13:31.966" endtime="20240115 13:13:33.988"/>
+</kw>
+<kw name="Validate Following Toggle Feature" library="MansionGlobalPreferenceCenterPage">
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[text()="V.L. HENDRICKSON"]/../../../../td[4]/div</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20240115 13:13:33.989" endtime="20240115 13:13:33.989"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//*[text()="V.L. HENDRICKSON"]/../../../../td[4]/div</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20240115 13:13:33.989" endtime="20240115 13:13:33.989"/>
+</kw>
+<status status="NOT RUN" starttime="20240115 13:13:33.989" endtime="20240115 13:13:33.989"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[text()="Mariana Nuñez"]/../../../../td[4]/div</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240115 13:13:33.989" endtime="20240115 13:13:36.025"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//*[text()="Mariana Nuñez"]/../../../../td[4]/div</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:13:37.037" level="INFO">Current page contains element '//*[text()="Mariana Nuñez"]/../../../../td[4]/div'.</msg>
+<status status="PASS" starttime="20240115 13:13:36.025" endtime="20240115 13:13:37.037"/>
+</kw>
+<status status="PASS" starttime="20240115 13:13:33.989" endtime="20240115 13:13:37.037"/>
+</branch>
+<status status="PASS" starttime="20240115 13:13:33.989" endtime="20240115 13:13:37.037"/>
+</if>
+<status status="PASS" starttime="20240115 13:13:33.988" endtime="20240115 13:13:37.037"/>
+</kw>
+<kw name="Validate Following Frequency" library="MansionGlobalPreferenceCenterPage">
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//*[text()="V.L. HENDRICKSON"]/../../../../td[3]/div/div/label[1]/span[2]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20240115 13:13:37.038" endtime="20240115 13:13:37.038"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//*[text()="V.L. HENDRICKSON"]/../../../../td[3]/div/div/label[2]/span[2]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20240115 13:13:37.038" endtime="20240115 13:13:37.038"/>
+</kw>
+<status status="NOT RUN" starttime="20240115 13:13:37.037" endtime="20240115 13:13:37.038"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//*[text()="Mariana Nuñez"]/../../../../td[3]/div/div/label[1]/span[2]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:13:38.055" level="INFO">Current page contains element '//*[text()="Mariana Nuñez"]/../../../../td[3]/div/div/label[1]/span[2]'.</msg>
+<status status="PASS" starttime="20240115 13:13:37.038" endtime="20240115 13:13:38.055"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//*[text()="Mariana Nuñez"]/../../../../td[3]/div/div/label[2]/span[2]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:13:39.071" level="INFO">Current page contains element '//*[text()="Mariana Nuñez"]/../../../../td[3]/div/div/label[2]/span[2]'.</msg>
+<status status="PASS" starttime="20240115 13:13:38.055" endtime="20240115 13:13:39.071"/>
+</kw>
+<status status="PASS" starttime="20240115 13:13:37.038" endtime="20240115 13:13:39.071"/>
+</branch>
+<status status="PASS" starttime="20240115 13:13:37.037" endtime="20240115 13:13:39.071"/>
+</if>
+<status status="PASS" starttime="20240115 13:13:37.037" endtime="20240115 13:13:39.071"/>
+</kw>
+<kw name="Validate All Tabs Displayed" library="MansionGlobalPreferenceCenterPage">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Barron's</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 13:13:41.093" level="INFO">Current page contains text 'Barron's'.</msg>
+<status status="PASS" starttime="20240115 13:13:39.073" endtime="20240115 13:13:41.093"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>FN London</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 13:13:43.114" level="INFO">Current page contains text 'FN London'.</msg>
+<status status="PASS" starttime="20240115 13:13:41.093" endtime="20240115 13:13:43.114"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Mansion Global</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 13:13:45.135" level="INFO">Current page contains text 'Mansion Global'.</msg>
+<status status="PASS" starttime="20240115 13:13:43.114" endtime="20240115 13:13:45.135"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>MarketWatch</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 13:13:47.156" level="INFO">Current page contains text 'MarketWatch'.</msg>
+<status status="PASS" starttime="20240115 13:13:45.135" endtime="20240115 13:13:47.156"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>PE News</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 13:13:49.177" level="INFO">Current page contains text 'PE News'.</msg>
+<status status="PASS" starttime="20240115 13:13:47.156" endtime="20240115 13:13:49.177"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>WSJ</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 13:13:51.198" level="INFO">Current page contains text 'WSJ'.</msg>
+<status status="PASS" starttime="20240115 13:13:49.177" endtime="20240115 13:13:51.198"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>View All</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 13:13:53.220" level="INFO">Current page contains text 'View All'.</msg>
+<status status="PASS" starttime="20240115 13:13:51.198" endtime="20240115 13:13:53.220"/>
+</kw>
+<status status="PASS" starttime="20240115 13:13:39.073" endtime="20240115 13:13:53.220"/>
+</kw>
+<kw name="Validate Author On All Tab" library="MansionGlobalPreferenceCenterPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div/div/div[2]/div/ul/li[7]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:13:53.221" level="INFO">Clicking element '//*[@id="root"]/div/div/div/div[2]/div/ul/li[7]'.</msg>
+<status status="PASS" starttime="20240115 13:13:53.221" endtime="20240115 13:13:55.401"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Mariana Nuñez</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 13:13:57.421" level="INFO">Current page contains text 'Mariana Nuñez'.</msg>
+<status status="PASS" starttime="20240115 13:13:55.401" endtime="20240115 13:13:57.421"/>
+</kw>
+<status status="PASS" starttime="20240115 13:13:53.220" endtime="20240115 13:13:57.421"/>
+</kw>
+<kw name="Add Company By Hotlink" library="MansionGlobalPreferenceCenterPage">
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com/follow?alert=company&amp;fcode=AMZCOM</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20240115 13:13:57.422" endtime="20240115 13:13:57.422"/>
+</kw>
+<status status="NOT RUN" starttime="20240115 13:13:57.422" endtime="20240115 13:13:57.422"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com/follow?alert=company&amp;fcode=AMZCOM</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20240115 13:13:57.422" level="INFO">Opening url 'https://www.s.dev.mansionglobal.com/follow?alert=company&amp;fcode=AMZCOM'</msg>
+<status status="PASS" starttime="20240115 13:13:57.422" endtime="20240115 13:14:00.695"/>
+</kw>
+<status status="PASS" starttime="20240115 13:13:57.422" endtime="20240115 13:14:00.695"/>
+</branch>
+<status status="PASS" starttime="20240115 13:13:57.422" endtime="20240115 13:14:00.695"/>
+</if>
+<status status="PASS" starttime="20240115 13:13:57.421" endtime="20240115 13:14:00.695"/>
+</kw>
+<kw name="Validate Followed Companies" library="MansionGlobalPreferenceCenterPage">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Companies</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 13:14:02.728" level="INFO">Current page contains text 'Companies'.</msg>
+<status status="PASS" starttime="20240115 13:14:00.704" endtime="20240115 13:14:02.728"/>
+</kw>
+<status status="PASS" starttime="20240115 13:14:00.704" endtime="20240115 13:14:02.728"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${val2}</var>
+<arg>//*[@id="root"]/div/div/div/div[3]/div/div/button</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20240115 13:14:03.742" level="INFO">${val2} = 1</msg>
+<status status="PASS" starttime="20240115 13:14:02.729" endtime="20240115 13:14:03.742"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${val2} &gt; 0</arg>
+<arg>MansionGLobalPreferenceCenterPage.Click Following Toggle Alert Pop up</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Click Following Toggle Alert Pop up" library="MansionGlobalPreferenceCenterPage">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div/div/div[3]/div/div/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240115 13:14:03.745" level="INFO">Clicking button '//*[@id="root"]/div/div/div/div[3]/div/div/button'.</msg>
+<status status="PASS" starttime="20240115 13:14:03.743" endtime="20240115 13:14:08.851"/>
+</kw>
+<status status="PASS" starttime="20240115 13:14:03.743" endtime="20240115 13:14:08.851"/>
+</kw>
+<status status="PASS" starttime="20240115 13:14:03.742" endtime="20240115 13:14:08.851"/>
+</kw>
+<kw name="Validate Company Frequency" library="MansionGlobalPreferenceCenterPage">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//*[text()="Amazon.com, Inc."]/../../..//*[text()="Immediately"]/..//input[@checked]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:14:09.871" level="INFO">Current page contains element '//*[text()="Amazon.com, Inc."]/../../..//*[text()="Immediately"]/..//input[@checked]'.</msg>
+<status status="PASS" starttime="20240115 13:14:08.852" endtime="20240115 13:14:09.871"/>
+</kw>
+<status status="PASS" starttime="20240115 13:14:08.851" endtime="20240115 13:14:09.871"/>
+</kw>
+<kw name="Validate Company Quote Link" library="MansionGlobalPreferenceCenterPage">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//a[text()="Amazon.com, Inc."]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:14:10.888" level="INFO">Current page contains element '//a[text()="Amazon.com, Inc."]'.</msg>
+<status status="PASS" starttime="20240115 13:14:09.872" endtime="20240115 13:14:10.888"/>
+</kw>
+<status status="PASS" starttime="20240115 13:14:09.872" endtime="20240115 13:14:10.888"/>
+</kw>
+<kw name="Validate Company On All Tab" library="MansionGlobalPreferenceCenterPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div/div/div[2]/div/ul/li[7]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:14:10.890" level="INFO">Clicking element '//*[@id="root"]/div/div/div/div[2]/div/ul/li[7]'.</msg>
+<status status="PASS" starttime="20240115 13:14:10.889" endtime="20240115 13:14:12.953"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//*[text()="Amazon.com, Inc."]/../*[text()="Mansion Global"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:14:13.971" level="INFO">Current page contains element '//*[text()="Amazon.com, Inc."]/../*[text()="Mansion Global"]'.</msg>
+<status status="PASS" starttime="20240115 13:14:12.953" endtime="20240115 13:14:13.971"/>
+</kw>
+<status status="PASS" starttime="20240115 13:14:10.889" endtime="20240115 13:14:13.971"/>
+</kw>
+<kw name="Click Mansion Global tab" library="MansionGlobalPreferenceCenterPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div/div/div[2]/div/ul/li[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:14:13.972" level="INFO">Clicking element '//*[@id="root"]/div/div/div/div[2]/div/ul/li[3]'.</msg>
+<status status="PASS" starttime="20240115 13:14:13.972" endtime="20240115 13:14:16.069"/>
+</kw>
+<status status="PASS" starttime="20240115 13:14:13.971" endtime="20240115 13:14:16.069"/>
+</kw>
+<kw name="Validate Company Toggle Feature" library="MansionGlobalPreferenceCenterPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[text()="Amazon.com, Inc."]/../../..//*[@role="switch"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240115 13:14:16.070" endtime="20240115 13:14:18.105"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//*[text()="Amazon.com, Inc."]/../../..//*[@role="switch"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:14:19.117" level="INFO">Current page contains element '//*[text()="Amazon.com, Inc."]/../../..//*[@role="switch"]'.</msg>
+<status status="PASS" starttime="20240115 13:14:18.105" endtime="20240115 13:14:19.118"/>
+</kw>
+<status status="PASS" starttime="20240115 13:14:16.069" endtime="20240115 13:14:19.118"/>
+</kw>
+<kw name="Click Company Toggle Feature" library="MansionGlobalPreferenceCenterPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[text()="Amazon.com, Inc."]/../../..//*[@role="switch"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:14:19.119" level="INFO">Clicking element '//*[text()="Amazon.com, Inc."]/../../..//*[@role="switch"]'.</msg>
+<status status="PASS" starttime="20240115 13:14:19.119" endtime="20240115 13:14:21.194"/>
+</kw>
+<status status="PASS" starttime="20240115 13:14:19.118" endtime="20240115 13:14:21.194"/>
+</kw>
+<kw name="Validate Following Toggle Alert Pop up" library="MansionGlobalPreferenceCenterPage">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div/div/div[3]/div/span</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:14:22.211" level="INFO">Current page contains element '//*[@id="root"]/div/div/div/div[3]/div/span'.</msg>
+<status status="PASS" starttime="20240115 13:14:21.195" endtime="20240115 13:14:22.211"/>
+</kw>
+<status status="PASS" starttime="20240115 13:14:21.194" endtime="20240115 13:14:22.211"/>
+</kw>
+<kw name="Click Following Toggle Alert Pop up" library="MansionGlobalPreferenceCenterPage">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div/div/div[3]/div/div/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240115 13:14:22.213" level="INFO">Clicking button '//*[@id="root"]/div/div/div/div[3]/div/div/button'.</msg>
+<status status="PASS" starttime="20240115 13:14:22.211" endtime="20240115 13:14:27.304"/>
+</kw>
+<status status="PASS" starttime="20240115 13:14:22.211" endtime="20240115 13:14:27.304"/>
+</kw>
+<kw name="Finish Testcase" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240115 13:14:27.305" endtime="20240115 13:14:30.552"/>
+</kw>
+<status status="PASS" starttime="20240115 13:14:27.304" endtime="20240115 13:14:30.552"/>
+</kw>
+<doc>This test case validates the Mansion GLobal preference center page</doc>
+<tag>MansionGlobal</tag>
+<tag>PrefrenceCenter</tag>
+<tag>Regression</tag>
+<tag>TagMGPF</tag>
+<status status="PASS" starttime="20240115 13:12:23.440" endtime="20240115 13:14:30.552"/>
+</test>
+<test id="s1-s1-s1-s1-s1-s1-t2" name="Validate Authors for Mansion Global Article page without byline" line="50">
+<kw name="Start Mansion Global Article" library="CommonFunctionality" type="SETUP">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240115 13:14:30.555" endtime="20240115 13:14:30.556"/>
+</kw>
+<kw name="Set Browser Options" library="CommonFunctionality">
+<var>${options}</var>
+<if>
+<branch type="IF" condition="&quot;${Browser}&quot; == &quot;firefox&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${options}</var>
+<arg>selenium.webdriver.FirefoxOptions()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20240115 13:14:30.556" endtime="20240115 13:14:30.556"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--CreateProfile</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:14:30.556" endtime="20240115 13:14:30.556"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--start-maximized</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:14:30.556" endtime="20240115 13:14:30.557"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:14:30.557" endtime="20240115 13:14:30.557"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:14:30.557" endtime="20240115 13:14:30.557"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:14:30.557" endtime="20240115 13:14:30.557"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--headless</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:14:30.557" endtime="20240115 13:14:30.557"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.debugger.force-local</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:14:30.557" endtime="20240115 13:14:30.557"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.debugger.remote-enabled</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:14:30.557" endtime="20240115 13:14:30.557"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.chrome.enabled</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:14:30.558" endtime="20240115 13:14:30.558"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.debugger.prompt-connection</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:14:30.558" endtime="20240115 13:14:30.558"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--browser.dom.window.dump.enabled</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:14:30.558" endtime="20240115 13:14:30.558"/>
+</kw>
+<return>
+<value>${options}</value>
+<status status="NOT RUN" starttime="20240115 13:14:30.558" endtime="20240115 13:14:30.558"/>
+</return>
+<status status="NOT RUN" starttime="20240115 13:14:30.556" endtime="20240115 13:14:30.558"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Browser}&quot; == &quot;chrome&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${options}</var>
+<arg>selenium.webdriver.ChromeOptions()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20240115 13:14:30.558" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000002CB286D5C40&gt;</msg>
+<status status="PASS" starttime="20240115 13:14:30.558" endtime="20240115 13:14:30.558"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--start-maximized</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:14:30.559" endtime="20240115 13:14:30.559"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:14:30.559" endtime="20240115 13:14:30.559"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:14:30.559" endtime="20240115 13:14:30.559"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:14:30.559" endtime="20240115 13:14:30.559"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--ignore-certificate-errors</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:14:30.560" endtime="20240115 13:14:30.560"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-extensions</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:14:30.560" endtime="20240115 13:14:30.560"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-user-gesture-required</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:14:30.560" endtime="20240115 13:14:30.560"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-first-run</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:14:30.560" endtime="20240115 13:14:30.560"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--use-fake-ui-for-media-stream</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:14:30.560" endtime="20240115 13:14:30.562"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--use-fake-device-for-media-stream</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:14:30.562" endtime="20240115 13:14:30.562"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-sync</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:14:30.562" endtime="20240115 13:14:30.562"/>
+</kw>
+<return>
+<value>${options}</value>
+<status status="PASS" starttime="20240115 13:14:30.562" endtime="20240115 13:14:30.562"/>
+</return>
+<status status="PASS" starttime="20240115 13:14:30.558" endtime="20240115 13:14:30.562"/>
+</branch>
+<status status="PASS" starttime="20240115 13:14:30.556" endtime="20240115 13:14:30.562"/>
+</if>
+<msg timestamp="20240115 13:14:30.562" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000002CB286D5C40&gt;</msg>
+<status status="PASS" starttime="20240115 13:14:30.556" endtime="20240115 13:14:30.562"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com</arg>
+<arg>${Browser}</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20240115 13:14:30.563" endtime="20240115 13:14:30.563"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com/articles/are-there-tax-breaks-on-agricultural-land-in-pennsylvania-01648119848</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20240115 13:14:30.563" endtime="20240115 13:14:30.563"/>
+</kw>
+<status status="NOT RUN" starttime="20240115 13:14:30.563" endtime="20240115 13:14:30.563"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com</arg>
+<arg>${Browser}</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240115 13:14:30.564" level="INFO">Opening browser 'chrome' to base url 'https://www.s.dev.mansionglobal.com'.</msg>
+<status status="PASS" starttime="20240115 13:14:30.563" endtime="20240115 13:14:38.295"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20240115 13:14:38.296" level="INFO">Opening url 'https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212'</msg>
+<status status="PASS" starttime="20240115 13:14:38.295" endtime="20240115 13:14:44.114"/>
+</kw>
+<status status="PASS" starttime="20240115 13:14:30.563" endtime="20240115 13:14:44.114"/>
+</branch>
+<status status="PASS" starttime="20240115 13:14:30.563" endtime="20240115 13:14:44.114"/>
+</if>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>dom:${JSFollowButtonMGPath}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240115 13:14:44.114" endtime="20240115 13:14:45.127"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240115 13:14:45.127" endtime="20240115 13:14:46.131"/>
+</kw>
+<status status="PASS" starttime="20240115 13:14:30.555" endtime="20240115 13:14:46.131"/>
+</kw>
+<kw name="Start Mansion Global Article without byline" library="CommonFunctionality">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240115 13:14:46.132" endtime="20240115 13:14:46.133"/>
+</kw>
+<kw name="Set Browser Options" library="CommonFunctionality">
+<var>${options}</var>
+<if>
+<branch type="IF" condition="&quot;${Browser}&quot; == &quot;firefox&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${options}</var>
+<arg>selenium.webdriver.FirefoxOptions()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20240115 13:14:46.133" endtime="20240115 13:14:46.133"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--CreateProfile</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:14:46.133" endtime="20240115 13:14:46.133"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--start-maximized</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:14:46.134" endtime="20240115 13:14:46.134"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:14:46.134" endtime="20240115 13:14:46.134"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:14:46.134" endtime="20240115 13:14:46.134"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:14:46.134" endtime="20240115 13:14:46.134"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--headless</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:14:46.134" endtime="20240115 13:14:46.134"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.debugger.force-local</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:14:46.134" endtime="20240115 13:14:46.134"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.debugger.remote-enabled</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:14:46.134" endtime="20240115 13:14:46.134"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.chrome.enabled</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:14:46.134" endtime="20240115 13:14:46.134"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.debugger.prompt-connection</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:14:46.135" endtime="20240115 13:14:46.135"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--browser.dom.window.dump.enabled</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:14:46.135" endtime="20240115 13:14:46.135"/>
+</kw>
+<return>
+<value>${options}</value>
+<status status="NOT RUN" starttime="20240115 13:14:46.135" endtime="20240115 13:14:46.135"/>
+</return>
+<status status="NOT RUN" starttime="20240115 13:14:46.133" endtime="20240115 13:14:46.135"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Browser}&quot; == &quot;chrome&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${options}</var>
+<arg>selenium.webdriver.ChromeOptions()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20240115 13:14:46.135" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000002CB286D5AC0&gt;</msg>
+<status status="PASS" starttime="20240115 13:14:46.135" endtime="20240115 13:14:46.135"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--start-maximized</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:14:46.135" endtime="20240115 13:14:46.136"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:14:46.136" endtime="20240115 13:14:46.136"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:14:46.136" endtime="20240115 13:14:46.136"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:14:46.136" endtime="20240115 13:14:46.137"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--ignore-certificate-errors</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:14:46.137" endtime="20240115 13:14:46.137"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-extensions</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:14:46.137" endtime="20240115 13:14:46.137"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-user-gesture-required</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:14:46.137" endtime="20240115 13:14:46.137"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-first-run</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:14:46.137" endtime="20240115 13:14:46.139"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--use-fake-ui-for-media-stream</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:14:46.139" endtime="20240115 13:14:46.139"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--use-fake-device-for-media-stream</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:14:46.139" endtime="20240115 13:14:46.139"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-sync</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:14:46.139" endtime="20240115 13:14:46.139"/>
+</kw>
+<return>
+<value>${options}</value>
+<status status="PASS" starttime="20240115 13:14:46.139" endtime="20240115 13:14:46.140"/>
+</return>
+<status status="PASS" starttime="20240115 13:14:46.135" endtime="20240115 13:14:46.140"/>
+</branch>
+<status status="PASS" starttime="20240115 13:14:46.133" endtime="20240115 13:14:46.140"/>
+</if>
+<msg timestamp="20240115 13:14:46.140" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000002CB286D5AC0&gt;</msg>
+<status status="PASS" starttime="20240115 13:14:46.133" endtime="20240115 13:14:46.140"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com</arg>
+<arg>${Browser}</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20240115 13:14:46.140" endtime="20240115 13:14:46.140"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com/articles/what-property-tax-changes-are-in-store-for-luxury-home-owners-in-edmonton-canada-e0d92933</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20240115 13:14:46.140" endtime="20240115 13:14:46.140"/>
+</kw>
+<status status="NOT RUN" starttime="20240115 13:14:46.140" endtime="20240115 13:14:46.140"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com</arg>
+<arg>${Browser}</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240115 13:14:46.142" level="INFO">Opening browser 'chrome' to base url 'https://www.s.dev.mansionglobal.com'.</msg>
+<status status="PASS" starttime="20240115 13:14:46.141" endtime="20240115 13:14:53.608"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20240115 13:14:53.608" level="INFO">Opening url 'https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212'</msg>
+<status status="PASS" starttime="20240115 13:14:53.608" endtime="20240115 13:15:01.158"/>
+</kw>
+<status status="PASS" starttime="20240115 13:14:46.140" endtime="20240115 13:15:01.158"/>
+</branch>
+<status status="PASS" starttime="20240115 13:14:46.140" endtime="20240115 13:15:01.158"/>
+</if>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240115 13:15:01.158" endtime="20240115 13:15:02.167"/>
+</kw>
+<status status="PASS" starttime="20240115 13:14:46.132" endtime="20240115 13:15:02.167"/>
+</kw>
+<kw name="Validate author without byline" library="MansionGlobalArticlePage">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//div/div/strong[contains(., 'Mariana Nuñez')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:15:03.189" level="INFO">Current page contains element '//div/div/strong[contains(., 'Mariana Nuñez')]'.</msg>
+<status status="PASS" starttime="20240115 13:15:02.168" endtime="20240115 13:15:03.189"/>
+</kw>
+<status status="PASS" starttime="20240115 13:15:02.167" endtime="20240115 13:15:03.189"/>
+</kw>
+<kw name="Finish Testcase" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240115 13:15:03.190" endtime="20240115 13:15:06.426"/>
+</kw>
+<status status="PASS" starttime="20240115 13:15:03.190" endtime="20240115 13:15:06.426"/>
+</kw>
+<doc>This test case validates authors without byline for Mansion Global article page</doc>
+<tag>Article</tag>
+<tag>Author</tag>
+<tag>MansionGlobal</tag>
+<tag>Regression</tag>
+<tag>TagMGauthorwb</tag>
+<status status="PASS" starttime="20240115 13:14:30.554" endtime="20240115 13:15:06.426"/>
+</test>
+<test id="s1-s1-s1-s1-s1-s1-t3" name="Validate the Mansion Global digest notification" line="58">
+<kw name="Start Mansion Global Article" library="CommonFunctionality" type="SETUP">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240115 13:15:06.429" endtime="20240115 13:15:06.430"/>
+</kw>
+<kw name="Set Browser Options" library="CommonFunctionality">
+<var>${options}</var>
+<if>
+<branch type="IF" condition="&quot;${Browser}&quot; == &quot;firefox&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${options}</var>
+<arg>selenium.webdriver.FirefoxOptions()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20240115 13:15:06.430" endtime="20240115 13:15:06.430"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--CreateProfile</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:15:06.430" endtime="20240115 13:15:06.431"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--start-maximized</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:15:06.431" endtime="20240115 13:15:06.431"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:15:06.431" endtime="20240115 13:15:06.431"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:15:06.431" endtime="20240115 13:15:06.431"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:15:06.431" endtime="20240115 13:15:06.431"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--headless</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:15:06.431" endtime="20240115 13:15:06.431"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.debugger.force-local</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:15:06.431" endtime="20240115 13:15:06.431"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.debugger.remote-enabled</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:15:06.431" endtime="20240115 13:15:06.432"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.chrome.enabled</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:15:06.432" endtime="20240115 13:15:06.432"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.debugger.prompt-connection</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:15:06.432" endtime="20240115 13:15:06.432"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--browser.dom.window.dump.enabled</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:15:06.432" endtime="20240115 13:15:06.432"/>
+</kw>
+<return>
+<value>${options}</value>
+<status status="NOT RUN" starttime="20240115 13:15:06.432" endtime="20240115 13:15:06.432"/>
+</return>
+<status status="NOT RUN" starttime="20240115 13:15:06.430" endtime="20240115 13:15:06.432"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Browser}&quot; == &quot;chrome&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${options}</var>
+<arg>selenium.webdriver.ChromeOptions()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20240115 13:15:06.432" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000002CB2869F5C0&gt;</msg>
+<status status="PASS" starttime="20240115 13:15:06.432" endtime="20240115 13:15:06.432"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--start-maximized</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:15:06.433" endtime="20240115 13:15:06.433"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:15:06.433" endtime="20240115 13:15:06.433"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:15:06.433" endtime="20240115 13:15:06.433"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:15:06.433" endtime="20240115 13:15:06.434"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--ignore-certificate-errors</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:15:06.434" endtime="20240115 13:15:06.434"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-extensions</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:15:06.434" endtime="20240115 13:15:06.434"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-user-gesture-required</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:15:06.434" endtime="20240115 13:15:06.434"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-first-run</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:15:06.434" endtime="20240115 13:15:06.434"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--use-fake-ui-for-media-stream</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:15:06.434" endtime="20240115 13:15:06.434"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--use-fake-device-for-media-stream</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:15:06.434" endtime="20240115 13:15:06.434"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-sync</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:15:06.434" endtime="20240115 13:15:06.435"/>
+</kw>
+<return>
+<value>${options}</value>
+<status status="PASS" starttime="20240115 13:15:06.435" endtime="20240115 13:15:06.435"/>
+</return>
+<status status="PASS" starttime="20240115 13:15:06.432" endtime="20240115 13:15:06.435"/>
+</branch>
+<status status="PASS" starttime="20240115 13:15:06.430" endtime="20240115 13:15:06.435"/>
+</if>
+<msg timestamp="20240115 13:15:06.435" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000002CB2869F5C0&gt;</msg>
+<status status="PASS" starttime="20240115 13:15:06.430" endtime="20240115 13:15:06.435"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com</arg>
+<arg>${Browser}</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20240115 13:15:06.435" endtime="20240115 13:15:06.435"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com/articles/are-there-tax-breaks-on-agricultural-land-in-pennsylvania-01648119848</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20240115 13:15:06.435" endtime="20240115 13:15:06.435"/>
+</kw>
+<status status="NOT RUN" starttime="20240115 13:15:06.435" endtime="20240115 13:15:06.436"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com</arg>
+<arg>${Browser}</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240115 13:15:06.436" level="INFO">Opening browser 'chrome' to base url 'https://www.s.dev.mansionglobal.com'.</msg>
+<status status="PASS" starttime="20240115 13:15:06.436" endtime="20240115 13:15:13.510"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20240115 13:15:13.510" level="INFO">Opening url 'https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212'</msg>
+<status status="PASS" starttime="20240115 13:15:13.510" endtime="20240115 13:15:19.258"/>
+</kw>
+<status status="PASS" starttime="20240115 13:15:06.436" endtime="20240115 13:15:19.258"/>
+</branch>
+<status status="PASS" starttime="20240115 13:15:06.435" endtime="20240115 13:15:19.258"/>
+</if>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>dom:${JSFollowButtonMGPath}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240115 13:15:19.258" endtime="20240115 13:15:20.271"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240115 13:15:20.271" endtime="20240115 13:15:21.276"/>
+</kw>
+<status status="PASS" starttime="20240115 13:15:06.429" endtime="20240115 13:15:21.276"/>
+</kw>
+<kw name="Navigate Mailbox page" library="MansionGlobalMailboxPage">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=13&amp;ct=1661294982&amp;rver=7.0.6737.0&amp;wp=MBI_SSL&amp;wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26RpsCsrfState%3dfb29a836-86c5-c6e2-eeef-e3747c5e70dd&amp;id=292841&amp;aadredir=1&amp;CBCXT=out&amp;lw=1&amp;fl=dob%2cflname%2cwld&amp;cobrandid=90015</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20240115 13:15:21.277" level="INFO">Opening url 'https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=13&amp;ct=1661294982&amp;rver=7.0.6737.0&amp;wp=MBI_SSL&amp;wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26RpsCsrfState%3dfb29a836-86c5-c6e2-eeef-e3747c5e70dd&amp;id=292841&amp;aadredir=1&amp;CBCXT=out&amp;lw=1&amp;fl=dob%2cflname%2cwld&amp;cobrandid=90015'</msg>
+<status status="PASS" starttime="20240115 13:15:21.277" endtime="20240115 13:15:22.839"/>
+</kw>
+<status status="PASS" starttime="20240115 13:15:21.276" endtime="20240115 13:15:22.839"/>
+</kw>
+<kw name="Login" library="MansionGlobalMailboxPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="i0116"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240115 13:15:22.840" endtime="20240115 13:15:24.879"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="i0116"]</arg>
+<arg>qapandaautomation@hotmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 13:15:24.880" level="INFO">Typing text 'qapandaautomation@hotmail.com' into text field '//*[@id="i0116"]'.</msg>
+<status status="PASS" starttime="20240115 13:15:24.879" endtime="20240115 13:15:28.050"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="idSIButton9"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240115 13:15:28.050" endtime="20240115 13:15:30.085"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="idSIButton9"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240115 13:15:30.085" level="INFO">Clicking button '//*[@id="idSIButton9"]'.</msg>
+<status status="PASS" starttime="20240115 13:15:30.085" endtime="20240115 13:15:33.170"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="i0118"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240115 13:15:33.170" endtime="20240115 13:15:35.200"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="i0118"]</arg>
+<arg>Testing.123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 13:15:35.201" level="INFO">Typing text 'Testing.123' into text field '//*[@id="i0118"]'.</msg>
+<status status="PASS" starttime="20240115 13:15:35.200" endtime="20240115 13:15:38.294"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="idSIButton9"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240115 13:15:38.294" endtime="20240115 13:15:40.319"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="idSIButton9"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240115 13:15:40.320" level="INFO">Clicking button '//*[@id="idSIButton9"]'.</msg>
+<status status="PASS" starttime="20240115 13:15:40.319" endtime="20240115 13:15:43.486"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//input[@id="idBtn_Back"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240115 13:15:43.486" endtime="20240115 13:15:45.519"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//input[@id="idBtn_Back"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240115 13:15:45.519" level="INFO">Clicking button '//input[@id="idBtn_Back"]'.</msg>
+<status status="PASS" starttime="20240115 13:15:45.519" endtime="20240115 13:15:48.809"/>
+</kw>
+<status status="PASS" starttime="20240115 13:15:22.839" endtime="20240115 13:15:48.809"/>
+</kw>
+<kw name="Select Inbox" library="MansionGlobalMailboxPage">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2.0 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240115 13:15:48.810" endtime="20240115 13:15:48.810"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//input[@id="topSearchInput"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240115 13:15:48.810" endtime="20240115 13:15:52.803"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@id="topSearchInput"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:15:52.805" level="INFO">Clicking element '//input[@id="topSearchInput"]'.</msg>
+<status status="PASS" starttime="20240115 13:15:52.803" endtime="20240115 13:15:57.529"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//span[@id="searchScopeButtonId-option"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240115 13:15:57.529" endtime="20240115 13:15:59.546"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[@id="searchScopeButtonId-option"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:15:59.547" level="INFO">Clicking element '//span[@id="searchScopeButtonId-option"]'.</msg>
+<status status="PASS" starttime="20240115 13:15:59.546" endtime="20240115 13:16:03.640"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//button[@id="searchScopeButtonId-list1"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240115 13:16:03.640" endtime="20240115 13:16:05.673"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id="searchScopeButtonId-list1"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:16:05.674" level="INFO">Clicking element '//button[@id="searchScopeButtonId-list1"]'.</msg>
+<status status="PASS" starttime="20240115 13:16:05.673" endtime="20240115 13:16:09.806"/>
+</kw>
+<status status="PASS" starttime="20240115 13:15:48.809" endtime="20240115 13:16:09.806"/>
+</kw>
+<kw name="Search Your Daily Digest from Mansion Global" library="MansionGlobalMailboxPage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//input[@id="topSearchInput"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240115 13:16:09.807" endtime="20240115 13:16:11.819"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@id="topSearchInput"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:16:11.820" level="INFO">Clicking element '//input[@id="topSearchInput"]'.</msg>
+<status status="PASS" starttime="20240115 13:16:11.819" endtime="20240115 13:16:15.897"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id="topSearchInput"]</arg>
+<arg>Your Daily Digest from Mansion Global</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 13:16:15.897" level="INFO">Typing text 'Your Daily Digest from Mansion Global' into text field '//input[@id="topSearchInput"]'.</msg>
+<status status="PASS" starttime="20240115 13:16:15.897" endtime="20240115 13:16:22.153"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@aria-label="Search"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:16:22.154" level="INFO">Clicking element '//button[@aria-label="Search"]'.</msg>
+<status status="PASS" starttime="20240115 13:16:22.153" endtime="20240115 13:16:26.390"/>
+</kw>
+<status status="PASS" starttime="20240115 13:16:09.806" endtime="20240115 13:16:26.390"/>
+</kw>
+<kw name="Validate Mansion Global Digest notification" library="MansionGlobalMailboxPage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//div[@id="groupHeaderTop results"]/../div[2]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240115 13:16:26.391" endtime="20240115 13:16:28.417"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//div[@id="groupHeaderTop results"]/../div[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:16:28.418" level="INFO">Clicking element '//div[@id="groupHeaderTop results"]/../div[2]'.</msg>
+<status status="PASS" starttime="20240115 13:16:28.417" endtime="20240115 13:16:32.579"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//a[contains(text(),'View in web browser')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:16:34.771" level="INFO">Current page contains element '//a[contains(text(),'View in web browser')]'.</msg>
+<status status="PASS" starttime="20240115 13:16:32.579" endtime="20240115 13:16:34.771"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//table[@role="presentation"]//span[text()="Daily"]/../span[text()="Digest"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:16:36.788" level="INFO">Current page contains element '//table[@role="presentation"]//span[text()="Daily"]/../span[text()="Digest"]'.</msg>
+<status status="PASS" starttime="20240115 13:16:34.771" endtime="20240115 13:16:36.788"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//a[text()="Preferences"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:16:38.806" level="INFO">Current page contains element '//a[text()="Preferences"]'.</msg>
+<status status="PASS" starttime="20240115 13:16:36.788" endtime="20240115 13:16:38.806"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//a[text()="Unsubscribe"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:16:40.823" level="INFO">Current page contains element '//a[text()="Unsubscribe"]'.</msg>
+<status status="PASS" starttime="20240115 13:16:38.806" endtime="20240115 13:16:40.823"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//a[text()="Privacy Notice"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:16:42.840" level="INFO">Current page contains element '//a[text()="Privacy Notice"]'.</msg>
+<status status="PASS" starttime="20240115 13:16:40.823" endtime="20240115 13:16:42.840"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//a[text()="Cookie Notice"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:16:44.857" level="INFO">Current page contains element '//a[text()="Cookie Notice"]'.</msg>
+<status status="PASS" starttime="20240115 13:16:42.840" endtime="20240115 13:16:44.857"/>
+</kw>
+<status status="PASS" starttime="20240115 13:16:26.390" endtime="20240115 13:16:44.857"/>
+</kw>
+<kw name="Finish Testcase" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240115 13:16:44.858" endtime="20240115 13:16:49.032"/>
+</kw>
+<status status="PASS" starttime="20240115 13:16:44.858" endtime="20240115 13:16:49.032"/>
+</kw>
+<doc>This test case validates the Mansion Global digest notification</doc>
+<tag>MansionGlobal</tag>
+<tag>Notifications</tag>
+<tag>Regression</tag>
+<status status="PASS" starttime="20240115 13:15:06.428" endtime="20240115 13:16:49.034"/>
+</test>
+<test id="s1-s1-s1-s1-s1-s1-t4" name="Validate the Mansion Global real-time author notification" line="68">
+<kw name="Start Mansion Global Article" library="CommonFunctionality" type="SETUP">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240115 13:16:49.036" endtime="20240115 13:16:49.036"/>
+</kw>
+<kw name="Set Browser Options" library="CommonFunctionality">
+<var>${options}</var>
+<if>
+<branch type="IF" condition="&quot;${Browser}&quot; == &quot;firefox&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${options}</var>
+<arg>selenium.webdriver.FirefoxOptions()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20240115 13:16:49.037" endtime="20240115 13:16:49.037"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--CreateProfile</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:16:49.037" endtime="20240115 13:16:49.037"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--start-maximized</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:16:49.037" endtime="20240115 13:16:49.037"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:16:49.037" endtime="20240115 13:16:49.037"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:16:49.037" endtime="20240115 13:16:49.037"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:16:49.037" endtime="20240115 13:16:49.037"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--headless</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:16:49.037" endtime="20240115 13:16:49.038"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.debugger.force-local</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:16:49.038" endtime="20240115 13:16:49.038"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.debugger.remote-enabled</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:16:49.038" endtime="20240115 13:16:49.038"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.chrome.enabled</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:16:49.038" endtime="20240115 13:16:49.038"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.debugger.prompt-connection</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:16:49.038" endtime="20240115 13:16:49.038"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--browser.dom.window.dump.enabled</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:16:49.038" endtime="20240115 13:16:49.038"/>
+</kw>
+<return>
+<value>${options}</value>
+<status status="NOT RUN" starttime="20240115 13:16:49.038" endtime="20240115 13:16:49.039"/>
+</return>
+<status status="NOT RUN" starttime="20240115 13:16:49.036" endtime="20240115 13:16:49.039"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Browser}&quot; == &quot;chrome&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${options}</var>
+<arg>selenium.webdriver.ChromeOptions()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20240115 13:16:49.039" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000002CB286C3500&gt;</msg>
+<status status="PASS" starttime="20240115 13:16:49.039" endtime="20240115 13:16:49.039"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--start-maximized</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:16:49.039" endtime="20240115 13:16:49.039"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:16:49.039" endtime="20240115 13:16:49.040"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:16:49.040" endtime="20240115 13:16:49.040"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:16:49.040" endtime="20240115 13:16:49.040"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--ignore-certificate-errors</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:16:49.040" endtime="20240115 13:16:49.040"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-extensions</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:16:49.040" endtime="20240115 13:16:49.040"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-user-gesture-required</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:16:49.041" endtime="20240115 13:16:49.041"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-first-run</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:16:49.041" endtime="20240115 13:16:49.041"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--use-fake-ui-for-media-stream</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:16:49.041" endtime="20240115 13:16:49.041"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--use-fake-device-for-media-stream</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:16:49.041" endtime="20240115 13:16:49.041"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-sync</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:16:49.041" endtime="20240115 13:16:49.043"/>
+</kw>
+<return>
+<value>${options}</value>
+<status status="PASS" starttime="20240115 13:16:49.043" endtime="20240115 13:16:49.043"/>
+</return>
+<status status="PASS" starttime="20240115 13:16:49.039" endtime="20240115 13:16:49.043"/>
+</branch>
+<status status="PASS" starttime="20240115 13:16:49.036" endtime="20240115 13:16:49.043"/>
+</if>
+<msg timestamp="20240115 13:16:49.043" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000002CB286C3500&gt;</msg>
+<status status="PASS" starttime="20240115 13:16:49.036" endtime="20240115 13:16:49.043"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com</arg>
+<arg>${Browser}</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20240115 13:16:49.043" endtime="20240115 13:16:49.043"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com/articles/are-there-tax-breaks-on-agricultural-land-in-pennsylvania-01648119848</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20240115 13:16:49.043" endtime="20240115 13:16:49.043"/>
+</kw>
+<status status="NOT RUN" starttime="20240115 13:16:49.043" endtime="20240115 13:16:49.043"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com</arg>
+<arg>${Browser}</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240115 13:16:49.044" level="INFO">Opening browser 'chrome' to base url 'https://www.s.dev.mansionglobal.com'.</msg>
+<status status="PASS" starttime="20240115 13:16:49.044" endtime="20240115 13:16:56.889"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20240115 13:16:56.889" level="INFO">Opening url 'https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212'</msg>
+<status status="PASS" starttime="20240115 13:16:56.889" endtime="20240115 13:17:02.108"/>
+</kw>
+<status status="PASS" starttime="20240115 13:16:49.043" endtime="20240115 13:17:02.108"/>
+</branch>
+<status status="PASS" starttime="20240115 13:16:49.043" endtime="20240115 13:17:02.108"/>
+</if>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>dom:${JSFollowButtonMGPath}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240115 13:17:02.108" endtime="20240115 13:17:03.121"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240115 13:17:03.121" endtime="20240115 13:17:04.126"/>
+</kw>
+<status status="PASS" starttime="20240115 13:16:49.036" endtime="20240115 13:17:04.126"/>
+</kw>
+<kw name="Navigate Mailbox page" library="MansionGlobalMailboxPage">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=13&amp;ct=1661294982&amp;rver=7.0.6737.0&amp;wp=MBI_SSL&amp;wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26RpsCsrfState%3dfb29a836-86c5-c6e2-eeef-e3747c5e70dd&amp;id=292841&amp;aadredir=1&amp;CBCXT=out&amp;lw=1&amp;fl=dob%2cflname%2cwld&amp;cobrandid=90015</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20240115 13:17:04.127" level="INFO">Opening url 'https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=13&amp;ct=1661294982&amp;rver=7.0.6737.0&amp;wp=MBI_SSL&amp;wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26RpsCsrfState%3dfb29a836-86c5-c6e2-eeef-e3747c5e70dd&amp;id=292841&amp;aadredir=1&amp;CBCXT=out&amp;lw=1&amp;fl=dob%2cflname%2cwld&amp;cobrandid=90015'</msg>
+<status status="PASS" starttime="20240115 13:17:04.127" endtime="20240115 13:17:05.639"/>
+</kw>
+<status status="PASS" starttime="20240115 13:17:04.127" endtime="20240115 13:17:05.639"/>
+</kw>
+<kw name="Login" library="MansionGlobalMailboxPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="i0116"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240115 13:17:05.640" endtime="20240115 13:17:07.675"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="i0116"]</arg>
+<arg>qapandaautomation@hotmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 13:17:07.675" level="INFO">Typing text 'qapandaautomation@hotmail.com' into text field '//*[@id="i0116"]'.</msg>
+<status status="PASS" starttime="20240115 13:17:07.675" endtime="20240115 13:17:10.829"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="idSIButton9"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240115 13:17:10.829" endtime="20240115 13:17:12.863"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="idSIButton9"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240115 13:17:12.863" level="INFO">Clicking button '//*[@id="idSIButton9"]'.</msg>
+<status status="PASS" starttime="20240115 13:17:12.863" endtime="20240115 13:17:15.959"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="i0118"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240115 13:17:15.959" endtime="20240115 13:17:17.996"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="i0118"]</arg>
+<arg>Testing.123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 13:17:17.996" level="INFO">Typing text 'Testing.123' into text field '//*[@id="i0118"]'.</msg>
+<status status="PASS" starttime="20240115 13:17:17.996" endtime="20240115 13:17:21.082"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="idSIButton9"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240115 13:17:21.082" endtime="20240115 13:17:23.107"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="idSIButton9"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240115 13:17:23.108" level="INFO">Clicking button '//*[@id="idSIButton9"]'.</msg>
+<status status="PASS" starttime="20240115 13:17:23.107" endtime="20240115 13:17:26.271"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//input[@id="idBtn_Back"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240115 13:17:26.271" endtime="20240115 13:17:28.304"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//input[@id="idBtn_Back"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240115 13:17:28.305" level="INFO">Clicking button '//input[@id="idBtn_Back"]'.</msg>
+<status status="PASS" starttime="20240115 13:17:28.304" endtime="20240115 13:17:33.283"/>
+</kw>
+<status status="PASS" starttime="20240115 13:17:05.640" endtime="20240115 13:17:33.283"/>
+</kw>
+<kw name="Select Inbox" library="MansionGlobalMailboxPage">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2.0 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240115 13:17:33.284" endtime="20240115 13:17:33.284"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//input[@id="topSearchInput"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240115 13:17:33.284" endtime="20240115 13:17:35.613"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@id="topSearchInput"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:17:35.613" level="INFO">Clicking element '//input[@id="topSearchInput"]'.</msg>
+<status status="PASS" starttime="20240115 13:17:35.613" endtime="20240115 13:17:40.168"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//span[@id="searchScopeButtonId-option"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240115 13:17:40.168" endtime="20240115 13:17:42.185"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[@id="searchScopeButtonId-option"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:17:42.186" level="INFO">Clicking element '//span[@id="searchScopeButtonId-option"]'.</msg>
+<status status="PASS" starttime="20240115 13:17:42.185" endtime="20240115 13:17:46.393"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//button[@id="searchScopeButtonId-list1"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240115 13:17:46.393" endtime="20240115 13:17:48.447"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id="searchScopeButtonId-list1"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:17:48.447" level="INFO">Clicking element '//button[@id="searchScopeButtonId-list1"]'.</msg>
+<status status="PASS" starttime="20240115 13:17:48.447" endtime="20240115 13:17:52.568"/>
+</kw>
+<status status="PASS" starttime="20240115 13:17:33.283" endtime="20240115 13:17:52.568"/>
+</kw>
+<kw name="Search Your Mansion Global real-time author notification" library="MansionGlobalMailboxPage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//input[@id="topSearchInput"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240115 13:17:52.569" endtime="20240115 13:17:54.582"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@id="topSearchInput"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:17:54.582" level="INFO">Clicking element '//input[@id="topSearchInput"]'.</msg>
+<status status="PASS" starttime="20240115 13:17:54.582" endtime="20240115 13:17:58.656"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id="topSearchInput"]</arg>
+<arg>The latest from Casey Farmer</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 13:17:58.657" level="INFO">Typing text 'The latest from Casey Farmer' into text field '//input[@id="topSearchInput"]'.</msg>
+<status status="PASS" starttime="20240115 13:17:58.656" endtime="20240115 13:18:04.872"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@aria-label="Search"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:18:04.872" level="INFO">Clicking element '//button[@aria-label="Search"]'.</msg>
+<status status="PASS" starttime="20240115 13:18:04.872" endtime="20240115 13:18:09.122"/>
+</kw>
+<status status="PASS" starttime="20240115 13:17:52.568" endtime="20240115 13:18:09.122"/>
+</kw>
+<kw name="Validate Mansion Global real-time author notification" library="MansionGlobalMailboxPage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//div[@id="groupHeaderTop results"]/../div[2]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240115 13:18:09.123" endtime="20240115 13:18:11.149"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//div[@id="groupHeaderTop results"]/../div[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:18:11.149" level="INFO">Clicking element '//div[@id="groupHeaderTop results"]/../div[2]'.</msg>
+<status status="PASS" starttime="20240115 13:18:11.149" endtime="20240115 13:18:15.316"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${viewInBrowserPath}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:18:17.469" level="INFO">Current page contains element '//*[contains(text(),'View in browser')]'.</msg>
+<status status="PASS" starttime="20240115 13:18:15.316" endtime="20240115 13:18:17.469"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//a[text()="Read More "]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:18:19.487" level="INFO">Current page contains element '//a[text()="Read More "]'.</msg>
+<status status="PASS" starttime="20240115 13:18:17.469" endtime="20240115 13:18:19.487"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//a[text()="Alerts Center"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:18:21.506" level="INFO">Current page contains element '//a[text()="Alerts Center"]'.</msg>
+<status status="PASS" starttime="20240115 13:18:19.487" endtime="20240115 13:18:21.506"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//a[text()="Contact Us"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:18:23.523" level="INFO">Current page contains element '//a[text()="Contact Us"]'.</msg>
+<status status="PASS" starttime="20240115 13:18:21.506" endtime="20240115 13:18:23.523"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//a[text()="Privacy Policy"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:18:25.540" level="INFO">Current page contains element '//a[text()="Privacy Policy"]'.</msg>
+<status status="PASS" starttime="20240115 13:18:23.523" endtime="20240115 13:18:25.540"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//a[text()="Cookie Policy"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:18:27.558" level="INFO">Current page contains element '//a[text()="Cookie Policy"]'.</msg>
+<status status="PASS" starttime="20240115 13:18:25.540" endtime="20240115 13:18:27.558"/>
+</kw>
+<status status="PASS" starttime="20240115 13:18:09.122" endtime="20240115 13:18:27.558"/>
+</kw>
+<kw name="Finish Testcase" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240115 13:18:27.559" endtime="20240115 13:18:31.761"/>
+</kw>
+<status status="PASS" starttime="20240115 13:18:27.559" endtime="20240115 13:18:31.761"/>
+</kw>
+<doc>This test case validates the Mansion Global real-time author notification</doc>
+<tag>Author</tag>
+<tag>MansionGlobal</tag>
+<tag>Notifications</tag>
+<tag>Regression</tag>
+<status status="PASS" starttime="20240115 13:16:49.035" endtime="20240115 13:18:31.762"/>
+</test>
+<test id="s1-s1-s1-s1-s1-s1-t5" name="Validate the Mansion Global weekly saved search notification" line="78">
+<kw name="Start Mansion Global Article" library="CommonFunctionality" type="SETUP">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240115 13:18:31.764" endtime="20240115 13:18:31.764"/>
+</kw>
+<kw name="Set Browser Options" library="CommonFunctionality">
+<var>${options}</var>
+<if>
+<branch type="IF" condition="&quot;${Browser}&quot; == &quot;firefox&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${options}</var>
+<arg>selenium.webdriver.FirefoxOptions()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20240115 13:18:31.765" endtime="20240115 13:18:31.765"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--CreateProfile</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:18:31.765" endtime="20240115 13:18:31.765"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--start-maximized</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:18:31.765" endtime="20240115 13:18:31.765"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:18:31.765" endtime="20240115 13:18:31.765"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:18:31.765" endtime="20240115 13:18:31.765"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:18:31.765" endtime="20240115 13:18:31.766"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--headless</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:18:31.766" endtime="20240115 13:18:31.766"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.debugger.force-local</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:18:31.766" endtime="20240115 13:18:31.766"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.debugger.remote-enabled</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:18:31.766" endtime="20240115 13:18:31.766"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.chrome.enabled</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:18:31.766" endtime="20240115 13:18:31.766"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.debugger.prompt-connection</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:18:31.766" endtime="20240115 13:18:31.766"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--browser.dom.window.dump.enabled</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:18:31.766" endtime="20240115 13:18:31.766"/>
+</kw>
+<return>
+<value>${options}</value>
+<status status="NOT RUN" starttime="20240115 13:18:31.766" endtime="20240115 13:18:31.766"/>
+</return>
+<status status="NOT RUN" starttime="20240115 13:18:31.765" endtime="20240115 13:18:31.766"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Browser}&quot; == &quot;chrome&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${options}</var>
+<arg>selenium.webdriver.ChromeOptions()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20240115 13:18:31.767" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000002CB286D7650&gt;</msg>
+<status status="PASS" starttime="20240115 13:18:31.767" endtime="20240115 13:18:31.767"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--start-maximized</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:18:31.767" endtime="20240115 13:18:31.768"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:18:31.768" endtime="20240115 13:18:31.768"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:18:31.768" endtime="20240115 13:18:31.768"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:18:31.768" endtime="20240115 13:18:31.768"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--ignore-certificate-errors</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:18:31.768" endtime="20240115 13:18:31.769"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-extensions</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:18:31.769" endtime="20240115 13:18:31.769"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-user-gesture-required</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:18:31.769" endtime="20240115 13:18:31.769"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-first-run</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:18:31.769" endtime="20240115 13:18:31.769"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--use-fake-ui-for-media-stream</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:18:31.770" endtime="20240115 13:18:31.770"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--use-fake-device-for-media-stream</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:18:31.770" endtime="20240115 13:18:31.770"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-sync</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:18:31.770" endtime="20240115 13:18:31.770"/>
+</kw>
+<return>
+<value>${options}</value>
+<status status="PASS" starttime="20240115 13:18:31.770" endtime="20240115 13:18:31.770"/>
+</return>
+<status status="PASS" starttime="20240115 13:18:31.766" endtime="20240115 13:18:31.770"/>
+</branch>
+<status status="PASS" starttime="20240115 13:18:31.765" endtime="20240115 13:18:31.770"/>
+</if>
+<msg timestamp="20240115 13:18:31.771" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000002CB286D7650&gt;</msg>
+<status status="PASS" starttime="20240115 13:18:31.764" endtime="20240115 13:18:31.771"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com</arg>
+<arg>${Browser}</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20240115 13:18:31.771" endtime="20240115 13:18:31.771"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com/articles/are-there-tax-breaks-on-agricultural-land-in-pennsylvania-01648119848</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20240115 13:18:31.771" endtime="20240115 13:18:31.771"/>
+</kw>
+<status status="NOT RUN" starttime="20240115 13:18:31.771" endtime="20240115 13:18:31.771"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com</arg>
+<arg>${Browser}</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240115 13:18:31.772" level="INFO">Opening browser 'chrome' to base url 'https://www.s.dev.mansionglobal.com'.</msg>
+<status status="PASS" starttime="20240115 13:18:31.772" endtime="20240115 13:18:39.435"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20240115 13:18:39.435" level="INFO">Opening url 'https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212'</msg>
+<status status="PASS" starttime="20240115 13:18:39.435" endtime="20240115 13:18:44.892"/>
+</kw>
+<status status="PASS" starttime="20240115 13:18:31.771" endtime="20240115 13:18:44.892"/>
+</branch>
+<status status="PASS" starttime="20240115 13:18:31.771" endtime="20240115 13:18:44.892"/>
+</if>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>dom:${JSFollowButtonMGPath}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240115 13:18:44.892" endtime="20240115 13:18:45.904"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240115 13:18:45.904" endtime="20240115 13:18:46.908"/>
+</kw>
+<status status="PASS" starttime="20240115 13:18:31.764" endtime="20240115 13:18:46.908"/>
+</kw>
+<kw name="Navigate Mailbox page" library="MansionGlobalMailboxPage">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=13&amp;ct=1661294982&amp;rver=7.0.6737.0&amp;wp=MBI_SSL&amp;wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26RpsCsrfState%3dfb29a836-86c5-c6e2-eeef-e3747c5e70dd&amp;id=292841&amp;aadredir=1&amp;CBCXT=out&amp;lw=1&amp;fl=dob%2cflname%2cwld&amp;cobrandid=90015</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20240115 13:18:46.909" level="INFO">Opening url 'https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=13&amp;ct=1661294982&amp;rver=7.0.6737.0&amp;wp=MBI_SSL&amp;wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26RpsCsrfState%3dfb29a836-86c5-c6e2-eeef-e3747c5e70dd&amp;id=292841&amp;aadredir=1&amp;CBCXT=out&amp;lw=1&amp;fl=dob%2cflname%2cwld&amp;cobrandid=90015'</msg>
+<status status="PASS" starttime="20240115 13:18:46.909" endtime="20240115 13:18:48.360"/>
+</kw>
+<status status="PASS" starttime="20240115 13:18:46.908" endtime="20240115 13:18:48.360"/>
+</kw>
+<kw name="Login" library="MansionGlobalMailboxPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="i0116"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240115 13:18:48.362" endtime="20240115 13:18:50.398"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="i0116"]</arg>
+<arg>qapandaautomation@hotmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 13:18:50.399" level="INFO">Typing text 'qapandaautomation@hotmail.com' into text field '//*[@id="i0116"]'.</msg>
+<status status="PASS" starttime="20240115 13:18:50.398" endtime="20240115 13:18:53.554"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="idSIButton9"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240115 13:18:53.554" endtime="20240115 13:18:55.587"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="idSIButton9"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240115 13:18:55.587" level="INFO">Clicking button '//*[@id="idSIButton9"]'.</msg>
+<status status="PASS" starttime="20240115 13:18:55.587" endtime="20240115 13:18:58.670"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="i0118"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240115 13:18:58.670" endtime="20240115 13:19:00.699"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="i0118"]</arg>
+<arg>Testing.123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 13:19:00.699" level="INFO">Typing text 'Testing.123' into text field '//*[@id="i0118"]'.</msg>
+<status status="PASS" starttime="20240115 13:19:00.699" endtime="20240115 13:19:03.795"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="idSIButton9"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240115 13:19:03.795" endtime="20240115 13:19:05.819"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="idSIButton9"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240115 13:19:05.820" level="INFO">Clicking button '//*[@id="idSIButton9"]'.</msg>
+<status status="PASS" starttime="20240115 13:19:05.819" endtime="20240115 13:19:08.966"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//input[@id="idBtn_Back"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240115 13:19:08.966" endtime="20240115 13:19:10.996"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//input[@id="idBtn_Back"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240115 13:19:10.996" level="INFO">Clicking button '//input[@id="idBtn_Back"]'.</msg>
+<status status="PASS" starttime="20240115 13:19:10.996" endtime="20240115 13:19:14.144"/>
+</kw>
+<status status="PASS" starttime="20240115 13:18:48.361" endtime="20240115 13:19:14.144"/>
+</kw>
+<kw name="Select Inbox" library="MansionGlobalMailboxPage">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2.0 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240115 13:19:14.145" endtime="20240115 13:19:14.145"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//input[@id="topSearchInput"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240115 13:19:14.145" endtime="20240115 13:19:18.327"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@id="topSearchInput"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:19:18.328" level="INFO">Clicking element '//input[@id="topSearchInput"]'.</msg>
+<status status="PASS" starttime="20240115 13:19:18.327" endtime="20240115 13:19:22.503"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//span[@id="searchScopeButtonId-option"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240115 13:19:22.503" endtime="20240115 13:19:24.520"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[@id="searchScopeButtonId-option"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:19:24.521" level="INFO">Clicking element '//span[@id="searchScopeButtonId-option"]'.</msg>
+<status status="PASS" starttime="20240115 13:19:24.520" endtime="20240115 13:19:28.609"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//button[@id="searchScopeButtonId-list1"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240115 13:19:28.609" endtime="20240115 13:19:30.627"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id="searchScopeButtonId-list1"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:19:30.628" level="INFO">Clicking element '//button[@id="searchScopeButtonId-list1"]'.</msg>
+<status status="PASS" starttime="20240115 13:19:30.627" endtime="20240115 13:19:34.813"/>
+</kw>
+<status status="PASS" starttime="20240115 13:19:14.144" endtime="20240115 13:19:34.813"/>
+</kw>
+<kw name="Search Your Mansion Global weekly saved search notification" library="MansionGlobalMailboxPage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//input[@id="topSearchInput"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240115 13:19:34.814" endtime="20240115 13:19:36.833"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@id="topSearchInput"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:19:36.833" level="INFO">Clicking element '//input[@id="topSearchInput"]'.</msg>
+<status status="PASS" starttime="20240115 13:19:36.833" endtime="20240115 13:19:40.910"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id="topSearchInput"]</arg>
+<arg>Barrons The latest news on Amazon.com, Inc.</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 13:19:40.910" level="INFO">Typing text 'Barrons The latest news on Amazon.com, Inc.' into text field '//input[@id="topSearchInput"]'.</msg>
+<status status="PASS" starttime="20240115 13:19:40.910" endtime="20240115 13:19:47.182"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@aria-label="Search"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:19:47.182" level="INFO">Clicking element '//button[@aria-label="Search"]'.</msg>
+<status status="PASS" starttime="20240115 13:19:47.182" endtime="20240115 13:19:51.387"/>
+</kw>
+<status status="PASS" starttime="20240115 13:19:34.814" endtime="20240115 13:19:51.387"/>
+</kw>
+<kw name="Validate Mansion Global weekly saved search notification" library="MansionGlobalMailboxPage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//div[@id="groupHeaderTop results"]/../div[2]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240115 13:19:51.388" endtime="20240115 13:19:53.408"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//div[@id="groupHeaderTop results"]/../div[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:19:53.409" level="INFO">Clicking element '//div[@id="groupHeaderTop results"]/../div[2]'.</msg>
+<status status="PASS" starttime="20240115 13:19:53.408" endtime="20240115 13:19:57.577"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${viewInBrowserPath}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:19:59.626" level="INFO">Current page contains element '//*[contains(text(),'View in browser')]'.</msg>
+<status status="PASS" starttime="20240115 13:19:57.577" endtime="20240115 13:19:59.626"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//div/span[text()='Amazon.com']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:20:01.649" level="INFO">Current page contains element '//div/span[text()='Amazon.com']'.</msg>
+<status status="PASS" starttime="20240115 13:19:59.626" endtime="20240115 13:20:01.649"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//div/span[text()='Inc']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:20:03.670" level="INFO">Current page contains element '//div/span[text()='Inc']'.</msg>
+<status status="PASS" starttime="20240115 13:20:01.649" endtime="20240115 13:20:03.670"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//a[text()="Read More "]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:20:05.687" level="INFO">Current page contains element '//a[text()="Read More "]'.</msg>
+<status status="PASS" starttime="20240115 13:20:03.670" endtime="20240115 13:20:05.687"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//a[text()="Alerts Center"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:20:07.705" level="INFO">Current page contains element '//a[text()="Alerts Center"]'.</msg>
+<status status="PASS" starttime="20240115 13:20:05.687" endtime="20240115 13:20:07.705"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//a[text()="Contact Us"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:20:09.721" level="INFO">Current page contains element '//a[text()="Contact Us"]'.</msg>
+<status status="PASS" starttime="20240115 13:20:07.705" endtime="20240115 13:20:09.721"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//a[text()="Unsubscribe"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:20:11.739" level="INFO">Current page contains element '//a[text()="Unsubscribe"]'.</msg>
+<status status="PASS" starttime="20240115 13:20:09.721" endtime="20240115 13:20:11.739"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//a[text()="Privacy Policy"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:20:13.758" level="INFO">Current page contains element '//a[text()="Privacy Policy"]'.</msg>
+<status status="PASS" starttime="20240115 13:20:11.739" endtime="20240115 13:20:13.758"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//a[text()="Cookie Policy"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:20:15.776" level="INFO">Current page contains element '//a[text()="Cookie Policy"]'.</msg>
+<status status="PASS" starttime="20240115 13:20:13.758" endtime="20240115 13:20:15.776"/>
+</kw>
+<status status="PASS" starttime="20240115 13:19:51.388" endtime="20240115 13:20:15.776"/>
+</kw>
+<kw name="Finish Testcase" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240115 13:20:15.777" endtime="20240115 13:20:19.962"/>
+</kw>
+<status status="PASS" starttime="20240115 13:20:15.777" endtime="20240115 13:20:19.962"/>
+</kw>
+<doc>This test case validates the Mansion Global weekly saved search notification</doc>
+<tag>MansionGlobal</tag>
+<tag>Notifications</tag>
+<tag>Regression</tag>
+<status status="PASS" starttime="20240115 13:18:31.763" endtime="20240115 13:20:19.963"/>
+</test>
+<test id="s1-s1-s1-s1-s1-s1-t6" name="Validate Postback on Preference Center" line="88">
+<kw name="Start Mansion Global Article" library="CommonFunctionality" type="SETUP">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240115 13:20:19.964" endtime="20240115 13:20:19.965"/>
+</kw>
+<kw name="Set Browser Options" library="CommonFunctionality">
+<var>${options}</var>
+<if>
+<branch type="IF" condition="&quot;${Browser}&quot; == &quot;firefox&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${options}</var>
+<arg>selenium.webdriver.FirefoxOptions()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20240115 13:20:19.965" endtime="20240115 13:20:19.965"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--CreateProfile</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:20:19.965" endtime="20240115 13:20:19.965"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--start-maximized</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:20:19.966" endtime="20240115 13:20:19.966"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:20:19.966" endtime="20240115 13:20:19.966"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:20:19.966" endtime="20240115 13:20:19.966"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:20:19.966" endtime="20240115 13:20:19.966"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--headless</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:20:19.966" endtime="20240115 13:20:19.966"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.debugger.force-local</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:20:19.966" endtime="20240115 13:20:19.966"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.debugger.remote-enabled</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:20:19.966" endtime="20240115 13:20:19.966"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.chrome.enabled</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:20:19.967" endtime="20240115 13:20:19.967"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.debugger.prompt-connection</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:20:19.967" endtime="20240115 13:20:19.967"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--browser.dom.window.dump.enabled</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20240115 13:20:19.967" endtime="20240115 13:20:19.967"/>
+</kw>
+<return>
+<value>${options}</value>
+<status status="NOT RUN" starttime="20240115 13:20:19.967" endtime="20240115 13:20:19.967"/>
+</return>
+<status status="NOT RUN" starttime="20240115 13:20:19.965" endtime="20240115 13:20:19.967"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Browser}&quot; == &quot;chrome&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${options}</var>
+<arg>selenium.webdriver.ChromeOptions()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20240115 13:20:19.968" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000002CB286D53D0&gt;</msg>
+<status status="PASS" starttime="20240115 13:20:19.968" endtime="20240115 13:20:19.968"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--start-maximized</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:20:19.968" endtime="20240115 13:20:19.968"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:20:19.968" endtime="20240115 13:20:19.968"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:20:19.969" endtime="20240115 13:20:19.969"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:20:19.969" endtime="20240115 13:20:19.969"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--ignore-certificate-errors</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:20:19.969" endtime="20240115 13:20:19.969"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-extensions</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:20:19.969" endtime="20240115 13:20:19.970"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-user-gesture-required</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:20:19.970" endtime="20240115 13:20:19.970"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-first-run</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:20:19.970" endtime="20240115 13:20:19.970"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--use-fake-ui-for-media-stream</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:20:19.970" endtime="20240115 13:20:19.970"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--use-fake-device-for-media-stream</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:20:19.970" endtime="20240115 13:20:19.971"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-sync</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20240115 13:20:19.971" endtime="20240115 13:20:19.971"/>
+</kw>
+<return>
+<value>${options}</value>
+<status status="PASS" starttime="20240115 13:20:19.971" endtime="20240115 13:20:19.971"/>
+</return>
+<status status="PASS" starttime="20240115 13:20:19.967" endtime="20240115 13:20:19.971"/>
+</branch>
+<status status="PASS" starttime="20240115 13:20:19.965" endtime="20240115 13:20:19.971"/>
+</if>
+<msg timestamp="20240115 13:20:19.972" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000002CB286D53D0&gt;</msg>
+<status status="PASS" starttime="20240115 13:20:19.965" endtime="20240115 13:20:19.972"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com</arg>
+<arg>${Browser}</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20240115 13:20:19.972" endtime="20240115 13:20:19.972"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com/articles/are-there-tax-breaks-on-agricultural-land-in-pennsylvania-01648119848</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20240115 13:20:19.972" endtime="20240115 13:20:19.972"/>
+</kw>
+<status status="NOT RUN" starttime="20240115 13:20:19.972" endtime="20240115 13:20:19.972"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com</arg>
+<arg>${Browser}</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240115 13:20:19.973" level="INFO">Opening browser 'chrome' to base url 'https://www.s.dev.mansionglobal.com'.</msg>
+<status status="PASS" starttime="20240115 13:20:19.973" endtime="20240115 13:20:25.334"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20240115 13:20:25.334" level="INFO">Opening url 'https://www.s.dev.mansionglobal.com/articles/article-long-text-01643043212'</msg>
+<status status="PASS" starttime="20240115 13:20:25.334" endtime="20240115 13:20:30.371"/>
+</kw>
+<status status="PASS" starttime="20240115 13:20:19.972" endtime="20240115 13:20:30.371"/>
+</branch>
+<status status="PASS" starttime="20240115 13:20:19.972" endtime="20240115 13:20:30.371"/>
+</if>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>dom:${JSFollowButtonMGPath}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240115 13:20:30.371" endtime="20240115 13:20:31.382"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240115 13:20:31.382" endtime="20240115 13:20:32.386"/>
+</kw>
+<status status="PASS" starttime="20240115 13:20:19.964" endtime="20240115 13:20:32.386"/>
+</kw>
+<kw name="Add Breaking News By Hotlink" library="MansionGlobalPreferenceCenterPage">
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.mansionglobal.com/follow?alert=news_alert&amp;id=NewsAlertEmailTechnology</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20240115 13:20:32.387" endtime="20240115 13:20:32.387"/>
+</kw>
+<status status="NOT RUN" starttime="20240115 13:20:32.387" endtime="20240115 13:20:32.387"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.s.dev.mansionglobal.com/follow?alert=news_alert&amp;id=NewsAlertEmailTechnology</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20240115 13:20:32.387" level="INFO">Opening url 'https://www.s.dev.mansionglobal.com/follow?alert=news_alert&amp;id=NewsAlertEmailTechnology'</msg>
+<status status="PASS" starttime="20240115 13:20:32.387" endtime="20240115 13:20:34.529"/>
+</kw>
+<status status="PASS" starttime="20240115 13:20:32.387" endtime="20240115 13:20:34.529"/>
+</branch>
+<status status="PASS" starttime="20240115 13:20:32.387" endtime="20240115 13:20:34.529"/>
+</if>
+<status status="PASS" starttime="20240115 13:20:32.386" endtime="20240115 13:20:34.529"/>
+</kw>
+<kw name="Sign In Process" library="DefinedKeywords">
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Set Variable" library="BuiltIn">
+<var>${Email}</var>
+<arg>${Email_prod}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20240115 13:20:34.530" endtime="20240115 13:20:34.530"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${Password}</var>
+<arg>${Password_prod}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20240115 13:20:34.530" endtime="20240115 13:20:34.530"/>
+</kw>
+<status status="NOT RUN" starttime="20240115 13:20:34.530" endtime="20240115 13:20:34.530"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Set Variable" library="BuiltIn">
+<var>${Email}</var>
+<arg>${Email_dev}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240115 13:20:34.530" level="INFO">${Email} = QABARRONSONLY</msg>
+<status status="PASS" starttime="20240115 13:20:34.530" endtime="20240115 13:20:34.530"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${Password}</var>
+<arg>${Password_dev}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240115 13:20:34.531" level="INFO">${Password} = password1</msg>
+<status status="PASS" starttime="20240115 13:20:34.531" endtime="20240115 13:20:34.531"/>
+</kw>
+<status status="PASS" starttime="20240115 13:20:34.530" endtime="20240115 13:20:34.531"/>
+</branch>
+<status status="PASS" starttime="20240115 13:20:34.530" endtime="20240115 13:20:34.531"/>
+</if>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//input[@type='email']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240115 13:20:34.531" endtime="20240115 13:20:36.576"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//input[@type='email']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240115 13:20:36.576" level="INFO">Clicking button '//input[@type='email']'.</msg>
+<status status="PASS" starttime="20240115 13:20:36.576" endtime="20240115 13:20:43.695"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@type='email']</arg>
+<arg>${Email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 13:20:43.696" level="INFO">Typing text 'QABARRONSONLY' into text field '//input[@type='email']'.</msg>
+<status status="PASS" starttime="20240115 13:20:43.695" endtime="20240115 13:20:46.855"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20240115 13:20:46.855" endtime="20240115 13:20:48.860"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[text()="Continue"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:20:48.860" level="INFO">Clicking element '//span[text()="Continue"]'.</msg>
+<status status="PASS" starttime="20240115 13:20:48.860" endtime="20240115 13:20:50.948"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20240115 13:20:50.948" endtime="20240115 13:20:52.952"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="password-login-password"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240115 13:20:52.952" endtime="20240115 13:20:55.006"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="password-login-password"]</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 13:20:55.007" level="INFO">Typing text 'password1' into text field '//*[@id="password-login-password"]'.</msg>
+<status status="PASS" starttime="20240115 13:20:55.006" endtime="20240115 13:20:58.111"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20240115 13:20:58.111" endtime="20240115 13:21:00.115"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1.0 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240115 13:21:00.115" endtime="20240115 13:21:00.115"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="password-login"]/div/form/div[5]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240115 13:21:00.116" endtime="20240115 13:21:00.116"/>
+</kw>
+<status status="NOT RUN" starttime="20240115 13:21:00.115" endtime="20240115 13:21:00.116"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="password-login"]/div/form/div[5]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:21:00.117" level="INFO">Clicking element '//*[@id="password-login"]/div/form/div[5]/button'.</msg>
+<status status="PASS" starttime="20240115 13:21:00.116" endtime="20240115 13:21:02.199"/>
+</kw>
+<status status="PASS" starttime="20240115 13:21:00.116" endtime="20240115 13:21:02.199"/>
+</branch>
+<status status="PASS" starttime="20240115 13:21:00.115" endtime="20240115 13:21:02.199"/>
+</if>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>//*[@id="password-login"]/div/form/div/div[5]/div[1]/button</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20240115 13:21:02.199" endtime="20240115 13:21:14.789"/>
+</kw>
+<status status="PASS" starttime="20240115 13:20:34.529" endtime="20240115 13:21:14.789"/>
+</kw>
+<kw name="Validate Followed Breaking News" library="MansionGlobalPreferenceCenterPage">
+<kw name="Scroll Down" library="BarronsQuotesPage">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20240115 13:21:14.792" level="INFO">Executing JavaScript:
+window.scrollTo(0,500)
+Without any arguments.</msg>
+<status status="PASS" starttime="20240115 13:21:14.791" endtime="20240115 13:21:15.803"/>
+</kw>
+<status status="PASS" starttime="20240115 13:21:14.791" endtime="20240115 13:21:15.803"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>News Alerts</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 13:21:17.824" level="INFO">Current page contains text 'News Alerts'.</msg>
+<status status="PASS" starttime="20240115 13:21:15.803" endtime="20240115 13:21:17.824"/>
+</kw>
+<status status="PASS" starttime="20240115 13:21:14.789" endtime="20240115 13:21:17.824"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${val2}</var>
+<arg>//*[@id="root"]/div/div/div/div[3]/div/div/button</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20240115 13:21:28.876" level="INFO">${val2} = 0</msg>
+<status status="PASS" starttime="20240115 13:21:17.825" endtime="20240115 13:21:28.876"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${val2} &gt; 0</arg>
+<arg>MansionGlobalPreferenceCenterPage.Click Following Toggle Alert Pop up</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20240115 13:21:28.877" endtime="20240115 13:21:28.877"/>
+</kw>
+<kw name="Validate Breaking News Toggle Feature" library="MansionGlobalPreferenceCenterPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[text()="Technology"]/../../..//*[@role="switch"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240115 13:21:28.877" endtime="20240115 13:21:30.912"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//*[text()="Technology"]/../../..//*[@role="switch"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:21:31.924" level="INFO">Current page contains element '//*[text()="Technology"]/../../..//*[@role="switch"]'.</msg>
+<status status="PASS" starttime="20240115 13:21:30.912" endtime="20240115 13:21:31.924"/>
+</kw>
+<status status="PASS" starttime="20240115 13:21:28.877" endtime="20240115 13:21:31.924"/>
+</kw>
+<kw name="Click Breaking News Toggle Feature" library="MansionGlobalPreferenceCenterPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[text()="Technology"]/../../..//*[@role="switch"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:21:31.925" level="INFO">Clicking element '//*[text()="Technology"]/../../..//*[@role="switch"]'.</msg>
+<status status="PASS" starttime="20240115 13:21:31.925" endtime="20240115 13:21:34.013"/>
+</kw>
+<status status="PASS" starttime="20240115 13:21:31.925" endtime="20240115 13:21:34.013"/>
+</kw>
+<kw name="Validate Following Toggle Alert Pop up" library="MansionGlobalPreferenceCenterPage">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div/div/div[3]/div/span</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:21:35.476" level="INFO">Current page contains element '//*[@id="root"]/div/div/div/div[3]/div/span'.</msg>
+<status status="PASS" starttime="20240115 13:21:34.014" endtime="20240115 13:21:35.476"/>
+</kw>
+<status status="PASS" starttime="20240115 13:21:34.013" endtime="20240115 13:21:35.476"/>
+</kw>
+<kw name="Click Following Toggle Alert Pop up" library="MansionGlobalPreferenceCenterPage">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div/div/div[3]/div/div/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240115 13:21:35.478" level="INFO">Clicking button '//*[@id="root"]/div/div/div/div[3]/div/div/button'.</msg>
+<status status="PASS" starttime="20240115 13:21:35.477" endtime="20240115 13:21:40.570"/>
+</kw>
+<status status="PASS" starttime="20240115 13:21:35.477" endtime="20240115 13:21:40.570"/>
+</kw>
+<kw name="Validate Over Mouse On Notification Tooltip" library="MansionGlobalPreferenceCenterPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/thead/tr/th[3]/div/button/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:21:40.572" level="INFO">Clicking element '//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/thead/tr/th[3]/div/button/span'.</msg>
+<status status="PASS" starttime="20240115 13:21:40.571" endtime="20240115 13:21:42.646"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Choose whether you want to receive alerts as soon as an article gets published or once a day as a digest.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20240115 13:21:44.668" level="INFO">Current page contains text 'Choose whether you want to receive alerts as soon as an article gets published or once a day as a digest.'.</msg>
+<status status="PASS" starttime="20240115 13:21:42.646" endtime="20240115 13:21:44.668"/>
+</kw>
+<status status="PASS" starttime="20240115 13:21:40.570" endtime="20240115 13:21:44.668"/>
+</kw>
+<kw name="Navigate Mailbox page" library="MansionGlobalMailboxPage">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=13&amp;ct=1661294982&amp;rver=7.0.6737.0&amp;wp=MBI_SSL&amp;wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26RpsCsrfState%3dfb29a836-86c5-c6e2-eeef-e3747c5e70dd&amp;id=292841&amp;aadredir=1&amp;CBCXT=out&amp;lw=1&amp;fl=dob%2cflname%2cwld&amp;cobrandid=90015</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20240115 13:21:44.669" level="INFO">Opening url 'https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=13&amp;ct=1661294982&amp;rver=7.0.6737.0&amp;wp=MBI_SSL&amp;wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26RpsCsrfState%3dfb29a836-86c5-c6e2-eeef-e3747c5e70dd&amp;id=292841&amp;aadredir=1&amp;CBCXT=out&amp;lw=1&amp;fl=dob%2cflname%2cwld&amp;cobrandid=90015'</msg>
+<status status="PASS" starttime="20240115 13:21:44.669" endtime="20240115 13:21:46.249"/>
+</kw>
+<status status="PASS" starttime="20240115 13:21:44.668" endtime="20240115 13:21:46.249"/>
+</kw>
+<kw name="Login" library="MansionGlobalMailboxPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="i0116"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240115 13:21:46.250" endtime="20240115 13:21:48.289"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="i0116"]</arg>
+<arg>qapandaautomation@hotmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 13:21:48.289" level="INFO">Typing text 'qapandaautomation@hotmail.com' into text field '//*[@id="i0116"]'.</msg>
+<status status="PASS" starttime="20240115 13:21:48.289" endtime="20240115 13:21:51.445"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="idSIButton9"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240115 13:21:51.445" endtime="20240115 13:21:53.477"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="idSIButton9"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240115 13:21:53.477" level="INFO">Clicking button '//*[@id="idSIButton9"]'.</msg>
+<status status="PASS" starttime="20240115 13:21:53.477" endtime="20240115 13:21:56.557"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="i0118"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240115 13:21:56.557" endtime="20240115 13:21:58.586"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="i0118"]</arg>
+<arg>Testing.123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 13:21:58.587" level="INFO">Typing text 'Testing.123' into text field '//*[@id="i0118"]'.</msg>
+<status status="PASS" starttime="20240115 13:21:58.586" endtime="20240115 13:22:01.672"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="idSIButton9"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240115 13:22:01.672" endtime="20240115 13:22:03.696"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="idSIButton9"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240115 13:22:03.697" level="INFO">Clicking button '//*[@id="idSIButton9"]'.</msg>
+<status status="PASS" starttime="20240115 13:22:03.696" endtime="20240115 13:22:07.002"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//input[@id="idBtn_Back"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240115 13:22:07.002" endtime="20240115 13:22:09.032"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//input[@id="idBtn_Back"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240115 13:22:09.032" level="INFO">Clicking button '//input[@id="idBtn_Back"]'.</msg>
+<status status="PASS" starttime="20240115 13:22:09.032" endtime="20240115 13:22:12.176"/>
+</kw>
+<status status="PASS" starttime="20240115 13:21:46.250" endtime="20240115 13:22:12.176"/>
+</kw>
+<kw name="Select Inbox" library="MansionGlobalMailboxPage">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2.0 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240115 13:22:12.177" endtime="20240115 13:22:12.177"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//input[@id="topSearchInput"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240115 13:22:12.177" endtime="20240115 13:22:15.975"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@id="topSearchInput"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:22:15.976" level="INFO">Clicking element '//input[@id="topSearchInput"]'.</msg>
+<status status="PASS" starttime="20240115 13:22:15.975" endtime="20240115 13:22:20.253"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//span[@id="searchScopeButtonId-option"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240115 13:22:20.253" endtime="20240115 13:22:22.271"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[@id="searchScopeButtonId-option"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:22:22.271" level="INFO">Clicking element '//span[@id="searchScopeButtonId-option"]'.</msg>
+<status status="PASS" starttime="20240115 13:22:22.271" endtime="20240115 13:22:26.355"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//button[@id="searchScopeButtonId-list1"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240115 13:22:26.355" endtime="20240115 13:22:28.500"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id="searchScopeButtonId-list1"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:22:28.501" level="INFO">Clicking element '//button[@id="searchScopeButtonId-list1"]'.</msg>
+<status status="PASS" starttime="20240115 13:22:28.500" endtime="20240115 13:22:32.592"/>
+</kw>
+<status status="PASS" starttime="20240115 13:22:12.176" endtime="20240115 13:22:32.592"/>
+</kw>
+<kw name="Search Mansion Global real-time author notification for Postback" library="MansionGlobalMailboxPage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//input[@id="topSearchInput"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240115 13:22:32.593" endtime="20240115 13:22:34.606"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@id="topSearchInput"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:22:34.606" level="INFO">Clicking element '//input[@id="topSearchInput"]'.</msg>
+<status status="PASS" starttime="20240115 13:22:34.606" endtime="20240115 13:22:38.684"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id="topSearchInput"]</arg>
+<arg>The latest from Casey Farmer</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240115 13:22:38.684" level="INFO">Typing text 'The latest from Casey Farmer' into text field '//input[@id="topSearchInput"]'.</msg>
+<status status="PASS" starttime="20240115 13:22:38.684" endtime="20240115 13:22:44.887"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@aria-label="Search"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:22:44.887" level="INFO">Clicking element '//button[@aria-label="Search"]'.</msg>
+<status status="PASS" starttime="20240115 13:22:44.887" endtime="20240115 13:22:49.112"/>
+</kw>
+<status status="PASS" starttime="20240115 13:22:32.593" endtime="20240115 13:22:49.112"/>
+</kw>
+<kw name="Validate Mansion Global real-time author notification for Postback" library="MansionGlobalMailboxPage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//div[@id="groupHeaderTop results"]/../div[2]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240115 13:22:49.113" endtime="20240115 13:22:51.133"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//div[@id="groupHeaderTop results"]/../div[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240115 13:22:51.134" level="INFO">Clicking element '//div[@id="groupHeaderTop results"]/../div[2]'.</msg>
+<status status="PASS" starttime="20240115 13:22:51.133" endtime="20240115 13:22:55.292"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${viewInBrowserPath}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:22:57.357" level="INFO">Current page contains element '//*[contains(text(),'View in browser')]'.</msg>
+<status status="PASS" starttime="20240115 13:22:55.292" endtime="20240115 13:22:57.357"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//a[text()="Read More "]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:22:59.374" level="INFO">Current page contains element '//a[text()="Read More "]'.</msg>
+<status status="PASS" starttime="20240115 13:22:57.357" endtime="20240115 13:22:59.374"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//a[text()="Alerts Center"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:23:01.393" level="INFO">Current page contains element '//a[text()="Alerts Center"]'.</msg>
+<status status="PASS" starttime="20240115 13:22:59.374" endtime="20240115 13:23:01.393"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//a[text()="Contact Us"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:23:03.409" level="INFO">Current page contains element '//a[text()="Contact Us"]'.</msg>
+<status status="PASS" starttime="20240115 13:23:01.393" endtime="20240115 13:23:03.409"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//a[text()="Privacy Policy"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:23:05.426" level="INFO">Current page contains element '//a[text()="Privacy Policy"]'.</msg>
+<status status="PASS" starttime="20240115 13:23:03.409" endtime="20240115 13:23:05.426"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//a[text()="Cookie Policy"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:23:07.444" level="INFO">Current page contains element '//a[text()="Cookie Policy"]'.</msg>
+<status status="PASS" starttime="20240115 13:23:05.426" endtime="20240115 13:23:07.444"/>
+</kw>
+<status status="PASS" starttime="20240115 13:22:49.112" endtime="20240115 13:23:07.444"/>
+</kw>
+<kw name="Unsubscribe the mails" library="MansionGlobalMailboxPage">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//div[text()="Unsubscribe"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20240115 13:23:23.703" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-145.png"&gt;&lt;img src="selenium-screenshot-145.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240115 13:23:23.703" level="FAIL">Page should have contained element '//div[text()="Unsubscribe"]' but did not.</msg>
+<status status="FAIL" starttime="20240115 13:23:07.445" endtime="20240115 13:23:23.707"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//div[text()="Unsubscribe"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240115 13:23:23.707" endtime="20240115 13:23:23.707"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>50s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" starttime="20240115 13:23:23.707" endtime="20240115 13:23:23.707"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//button[@id="ok-1"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20240115 13:23:23.707" endtime="20240115 13:23:23.707"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id="ok-1"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240115 13:23:23.707" endtime="20240115 13:23:23.707"/>
+</kw>
+<status status="FAIL" starttime="20240115 13:23:07.444" endtime="20240115 13:23:23.707"/>
+</kw>
+<kw name="Verify the mail is unsubscribed" library="MansionGlobalMailboxPage">
+<status status="NOT RUN" starttime="20240115 13:23:23.708" endtime="20240115 13:23:23.708"/>
+</kw>
+<kw name="Add Author By Hotlink" library="MansionGlobalPreferenceCenterPage">
+<status status="NOT RUN" starttime="20240115 13:23:23.709" endtime="20240115 13:23:23.709"/>
+</kw>
+<kw name="Finish Testcase" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240115 13:23:23.709" endtime="20240115 13:23:27.892"/>
+</kw>
+<status status="PASS" starttime="20240115 13:23:23.709" endtime="20240115 13:23:27.892"/>
+</kw>
+<doc>This test case vabrlidates the Mansion Global Postback on Preference Center</doc>
+<tag>MansionGlobal</tag>
+<tag>Postback</tag>
+<tag>Regression</tag>
+<status status="FAIL" starttime="20240115 13:20:19.964" endtime="20240115 13:23:27.892">Page should have contained element '//div[text()="Unsubscribe"]' but did not.</status>
+</test>
+<doc>Mansion Global Regression Tests</doc>
+<status status="FAIL" starttime="20240115 13:12:22.963" endtime="20240115 13:23:27.894"/>
+</suite>
+<status status="FAIL" starttime="20240115 13:12:22.959" endtime="20240115 13:23:27.898"/>
+</suite>
+<status status="FAIL" starttime="20240115 13:12:22.956" endtime="20240115 13:23:27.899"/>
+</suite>
+<status status="FAIL" starttime="20240115 13:12:22.952" endtime="20240115 13:23:27.901"/>
+</suite>
+<status status="FAIL" starttime="20240115 13:12:22.947" endtime="20240115 13:23:27.903"/>
+</suite>
+<status status="FAIL" starttime="20240115 13:12:22.914" endtime="20240115 13:23:27.906"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Article</stat>
+<stat pass="2" fail="0" skip="0">Author</stat>
+<stat pass="5" fail="1" skip="0">MansionGlobal</stat>
+<stat pass="3" fail="0" skip="0">Notifications</stat>
+<stat pass="0" fail="1" skip="0">Postback</stat>
+<stat pass="1" fail="0" skip="0">PrefrenceCenter</stat>
+<stat pass="5" fail="1" skip="0">Regression</stat>
+<stat pass="1" fail="0" skip="0">TagMGauthorwb</stat>
+<stat pass="1" fail="0" skip="0">TagMGPF</stat>
+</tag>
+<suite>
+<stat pass="5" fail="1" skip="0" id="s1" name="Userservices-Qa-Automation">Userservices-Qa-Automation</stat>
+<stat pass="5" fail="1" skip="0" id="s1-s1" name="Panda-Qa">Userservices-Qa-Automation.Panda-Qa</stat>
+<stat pass="5" fail="1" skip="0" id="s1-s1-s1" name="Tests">Userservices-Qa-Automation.Panda-Qa.Tests</stat>
+<stat pass="5" fail="1" skip="0" id="s1-s1-s1-s1" name="FollowWidget">Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget</stat>
+<stat pass="5" fail="1" skip="0" id="s1-s1-s1-s1-s1" name="Regression">Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression</stat>
+<stat pass="5" fail="1" skip="0" id="s1-s1-s1-s1-s1-s1" name="MansionGlobal Regression">Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression.MansionGlobal Regression</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

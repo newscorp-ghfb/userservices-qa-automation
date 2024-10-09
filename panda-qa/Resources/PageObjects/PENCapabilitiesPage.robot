@@ -1,7 +1,7 @@
 *** Settings ***
 Library  SeleniumLibrary
 Resource  ../../Resources/CommonFunctionality.robot
-Resource    FNArticlePage.robot
+Resource    PENCapabilitiesPage.robot
 
 *** Variables ***
 ${JSFollowButtonBarronsPath}=  document.querySelector('ufc-follow-author-widget').shadowRoot  #1
@@ -13,30 +13,41 @@ ${JSFollowButtonBarronsPath}=  document.querySelector('ufc-follow-author-widget'
 *** Keywords ***
 
 Navigate Capabilities Dashboard page
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://int-prod-capabilities-dashboard.vir.onservo.com/app
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://int-int-capabilities-dashboard.vir-dev.onservo.com/app
     END
 
 Click Login button
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Click Element    //*[@id="__next"]/div[1]/div/div
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Click Element    //*[@id="__next"]/div[1]/div/div
     END
 
 Capabilities Dashboard Sign In Process
     Click Button    //input[@id='input28']
-    Input Text  //input[@id='input28']  priyanka.bhoomraogari@dowjones.com
-    Click Button    //input[@type='submit']
-    Sleep    15s
+    Input Text  //input[@type='text']  newsroomdev.test@dowjones.com  #newsroomdev.test@dowjones.com  #akhilesh.khanduri@dowjones.com
+    Set Selenium Implicit Wait  10s
+    Click Button  //input[@type='submit']  #//*[@id="basic-login"]/div[1]/form/div[2]/div[6]/div[1]/button[2]
+    Set Selenium Implicit Wait  10s
+    Wait Until Element Is Visible  //input[@type='password']  #//*[@id="password-login-password"]
+    Input Text  //input[@type='password']   B9oB6pTg4LO8obgDjsy6Gjj9vUE2fe
+        #VTdnnCgCnny100g62    #AKpolarzx@2594  #68L91AbU?98&T-Ryk7h|c}Q:uX   #//*[@id="password-login-password"]  #Cuceis19841234!
+    Set Selenium Implicit Wait  10s
+    Click Button  //input[@type='submit']  #//*[@id="password-login"]/div/form/div/div[5]/div[1]/button
+    Set Selenium Implicit Wait  30s
+    Wait Until Element Is Visible  //*[@id="input55"]   #//*[@id="password-login-password"]
+    Input Text  //*[@id="input55"]  QA integration testing
+    Set Selenium Implicit Wait  10s
+    Click Button  //input[@type='submit']
 
-Sign In Process
-    Wait Until Element Is Visible  //*[@type="password"]
-    Input Text  //*[@type="password"]  January2024
-    Click Button    //input[@type='submit']
-    Sleep  30s
+#Sign In Process
+#    Wait Until Element Is Visible  //*[@type="password"]
+#    Input Text  //*[@type="password"]  AKpolarszxi2594
+#    Click Button    //input[@type='submit']
+#    Sleep  30s
 
 Click Author Tab
     Click Element  //*[@href="/app/follow/author/tab/dashboard"]/*[text()="Author"]
@@ -50,40 +61,40 @@ Validate Author Page
 Validate Author tab
     Scroll Down
     Click Button    //*[@id="__next"]/div[3]/div/div/div[2]/div/section[2]/div[2]/button[1]
-        IF  ${Env} == "prod"
+        IF  "${Env}" == "prod"
             Page Should Contain  Andrew Bary
-        ELSE IF  ${Env} == "dev"
+        ELSE IF  "${Env}" == "dev"
           Page Should Contain  Carleton English
       END
     Page Should Contain Element    //*[@id="__next"]/div[3]/div/div/div[2]/div/section[2]/div[3]/div/table/tbody/tr[2]/td[2]
     Click Button    //*[@id="__next"]/div[3]/div/div/div[2]/div/section[2]/div[2]/button[2]
-        IF  ${Env} == "prod"
+        IF  "${Env}" == "prod"
          Page Should Contain  Paul Clarke
-        ELSE IF  ${Env} == "dev"
+        ELSE IF  "${Env}" == "dev"
          Page Should Contain  Sunita Adhikarla
      END
     Click Button    //*[@id="__next"]/div[3]/div/div/div[2]/div/section[2]/div[2]/button[3]
-        IF  ${Env} == "prod"
+        IF "${Env}"  == "prod"
         Page Should Contain  Mansion Global Staff
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Page Should Contain  Mariana Nuñez
     END
     Click Button    //*[@id="__next"]/div[3]/div/div/div[2]/div/section[2]/div[2]/button[4]
-     IF  ${Env} == "prod"
+     IF  "${Env}" == "prod"
         Page Should Contain  William Watts
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Page Should Contain  Angela Moore
     END
     Click Button    //*[@id="__next"]/div[3]/div/div/div[2]/div/section[2]/div[2]/button[5]
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Page Should Contain  Sebastian McCarthy
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Page Should Contain  Sunita Adhikarla
     END
     Click Button    //*[@id="__next"]/div[3]/div/div/div[2]/div/section[2]/div[2]/button[6]
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Page Should Contain  Joanna Stern
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Page Should Contain  Joanna Stern
     END
 
@@ -110,37 +121,37 @@ Validate Company Page
 Validate Company tab
     Scroll Down
     Click Button    //*[@id="__next"]/div[3]/div/div/div[2]/div/section[2]/div[2]/button[1]
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Page Should Contain  Amazon.com, Inc.
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Page Should Contain  Amazon Com Inc
     END
     Page Should Contain Element    //*[@id="__next"]/div[3]/div/div/div[2]/div/section[2]/div[3]/div/table/tbody/tr[2]/td[2]
     Click Button    //*[@id="__next"]/div[3]/div/div/div[2]/div/section[2]/div[2]/button[2]
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Page Should Contain  BlackRock Inc.
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Page Should Contain  Blackrock Inc
     END
     Click Button    //*[@id="__next"]/div[3]/div/div/div[2]/div/section[2]/div[2]/button[3]
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Page Should Contain  Amazon.com, Inc.
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Page Should Contain  Amazon Com Inc
     END
     Click Button    //*[@id="__next"]/div[3]/div/div/div[2]/div/section[2]/div[2]/button[4]
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Page Should Contain  Amazon.com, Inc.
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Page Should Contain  Amazon Com Inc
     END
     Click Button    //*[@id="__next"]/div[3]/div/div/div[2]/div/section[2]/div[2]/button[5]
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Page Should Contain  Apple Inc.
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Page Should Contain  Blackrock Inc
     END
-    IF  ${Env} == "dev"
+    IF  "${Env}" == "dev"
         Click Button    //*[@id="__next"]/div[3]/div/div/div[2]/div/section[2]/div[2]/button[6]
         Page Should Contain  Amazon Com Inc
     END
@@ -179,33 +190,33 @@ Validate Following Button
 
 Validate Authors Reflected On Dashboard
     ${Totalauthorsubs} = Get Value  //*[text()="Total subscriptions"]/../div[2]
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.barrons.com/follow?alert=author&id=8572_BARRONS&frequency=realtime
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.barrons.com/follow?alert=author&id=8572_BARRONS&frequency=realtime
     END
 
     ${Totalauthorsubs2} = Get Value  //*[text()="Total subscriptions"]/../div[2]
     ${Totalauthorsubs2} == ${Totalauthorsubs} + 1
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.barrons.com/follow
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.barrons.com/follow
     END
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.barrons.com/follow
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Click Button  //*[@href="https://www.s.dev.barrons.com/authors/8572?mod=followUI"]/../../../../*/*[@role="switch"]
     END
 
 Validate Authors On Search Tab
     Click Button  //*[text()='Search']
     Click Button  //*[@placeholder="Author name"]
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Input Text   //*[@placeholder="Author name"]  Mark Latham
         Click Element  //*[text()="Mark Latham"]
         Page Should Contain  Followers
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Input Text   //*[@placeholder="Author name"]  John Smith
         Click Element  //*[text()="John Smith"]
         Element Text Should Be  //*[text()="About"]/../h2[2]  2 Followers
@@ -246,22 +257,22 @@ Validate Custom Topic On Dashboard
 
 Validate Company Reflected On Dashboard
     ${Totalauthorsubs} = Get Value  //*[text()="Total subscriptions"]/../div[2]
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.barrons.com/follow?alert=company&fcode=SGPM
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.barrons.com/follow?alert=company&fcode=SGPM
     END
 
     ${Totalauthorsubs2} = Get Value  //*[text()="Total subscriptions"]/../div[2]
     ${Totalauthorsubs2} == ${Totalauthorsubs} + 1
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.barrons.com/follow
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.barrons.com/follow
     END
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.barrons.com/follow
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Click Button  //*[@href="https://www.s.dev.barrons.com/market-data/stocks/eQSGO"]/../../../*/*[@role="switch"]
     END
 
@@ -269,9 +280,9 @@ Validate Company On Search Tab
     Click Button  //*[text()='Search']
     Click Button  //*[@placeholder="Company name"]
     Input Text   //*[@placeholder="Company name"]  Compagnie de Saint-Gobain SA
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
     Click Element  //*[text()="Compagnie de Saint-Gobain SA"]
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
     Click Element   //*[text()="Compagnie de Saint Gobain SA"]
     END
     Element Text Should Be  //*[text()="Aliases:"]/../../h2  1 Followers
@@ -279,22 +290,22 @@ Validate Company On Search Tab
 
 Validate Industry Reflected On Dashboard
     ${Totalauthorsubs} = Get Value  //*[text()="Total subscriptions"]/../div[2]
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.barrons.com/follow?alert=industry&fcode=indcera
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.barrons.com/follow?alert=industry&fcode=indcera
     END
 
     ${Totalauthorsubs2} = Get Value  //*[text()="Total subscriptions"]/../div[2]
     ${Totalauthorsubs2} == ${Totalauthorsubs} + 1
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.barrons.com/follow
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Go To  https://www.s.dev.barrons.com/follow
     END
-    IF  ${Env} == "prod"
+    IF  "${Env}" == "prod"
         Go To  https://www.barrons.com/follow
-    ELSE IF  ${Env} == "dev"
+    ELSE IF  "${Env}" == "dev"
         Click Button  //*[text()="Industrial Ceramics"]/../../*/*[@role="switch"]
     END
 

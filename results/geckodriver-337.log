@@ -1,0 +1,104 @@
+1728420394294	geckodriver	INFO	Listening on 127.0.0.1:59589
+1728420397320	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59590" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileQ0lHn0"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728420398029	Marionette	INFO	Marionette enabled
+1728420398304	Marionette	INFO	Listening on port 59597
+WebDriver BiDi listening on ws://127.0.0.1:59590
+Read port: 59597
+1728420398531	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59590/devtools/browser/e04f358c-af19-4239-99b9-0db664826e16
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m20wvs7i15s2wurj&sid=1144071410389139719&loc=https%3A%2F%2Fwww.mansionglobal.com%2F&new=1&arf=0&ltm=1728420405394&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m20wvshuyp9lh3eu&ckp=m20wvs7ihgt1xdps&glb=&cp_userState=anon&cp_testGroup=18&cp_topDomain=mansionglobal.com&cp_template=full&cp_access=free&cp_section=Home&cp_subsection=&cp_cms_name=CMS%20Wordpress&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=3&cp_ab_bucket=33&cp_pageContentSource=Mansion%20Global&cp_pageContentType=Home&cp_pageContentTypeDetai=default&cp_pageSiteProduct=MG&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript error: resource://gre/actors/PictureInPictureChild.sys.mjs, line 381: TypeError: can't access dead object
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WEoqGYGTldYSfSNCQ9Ugqu-00NFuS6e6WOK2G2Y_zzI.js line 2 > eval line 6623 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.mansionglobal.com/articles/are-there-tax-breaks-on-agricultural-land-in-pennsylvania-01648119848, line 115: Script terminated by timeout at:
+nrWrapper@https://www.mansionglobal.com/articles/are-there-tax-breaks-on-agricultural-land-in-pennsylvania-01648119848:115:17660
+
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js, line 14: Script terminated by timeout at:
+E@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:14:325
+h@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:94:449
+
+JavaScript warning: https://imasdk.googleapis.com/js/core/bridge3.672.0_en.html#goog_425748924, line 451: Script terminated by timeout at:
+bC@https://imasdk.googleapis.com/js/core/bridge3.672.0_en.html#goog_425748924:451:310
+fC/this.aa@https://imasdk.googleapis.com/js/core/bridge3.672.0_en.html#goog_425748924:449:29
+
+JavaScript warning: https://www.youtube-nocookie.com/s/player/8579e400/www-embed-player.vflset/www-embed-player.js, line 928: Script terminated by timeout at:
+gm/<@https://www.youtube-nocookie.com/s/player/8579e400/www-embed-player.vflset/www-embed-player.js:928:47
+
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3in_J4/y-/l/en_US/inXJ93GYvmE.js, line 56: Script terminated by timeout at:
+i.canUseNavigatorBeacon@https://static.cdninstagram.com/rsrc.php/v3in_J4/y-/l/en_US/inXJ93GYvmE.js:56:4276
+C@https://static.cdninstagram.com/rsrc.php/v3in_J4/y-/l/en_US/inXJ93GYvmE.js:56:1597
+i._initialize/<@https://static.cdninstagram.com/rsrc.php/v3in_J4/y-/l/en_US/inXJ93GYvmE.js:56:4912
+d@https://static.cdninstagram.com/rsrc.php/v3in_J4/y-/l/en_US/inXJ93GYvmE.js:28:158
+
+JavaScript warning: https://fpt.live.com/?session_id=2b1a31c848d34edd8b420569e357a0e9&CustomerId=33e01921-4d64-4f8c-a055-5bdaffd5e33d&PageId=SI, line 5: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+1728420434269	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://res-1.cdn.office.net/midgard/versionless/livepersonacard_without-react_4e09eb534f633f2b7d57.js, line 2: unreachable code after return statement
+JavaScript warning: https://cdn.adnxs.com/v/s/246/trk.js, line 334: Script terminated by timeout at:
+cf@https://cdn.adnxs.com/v/s/246/trk.js:334:84
+_e@https://cdn.adnxs.com/v/s/246/trk.js:513:127
+mi@https://cdn.adnxs.com/v/s/246/trk.js:557:831
+gi@https://cdn.adnxs.com/v/s/246/trk.js:139:30
+Kh@https://cdn.adnxs.com/v/s/246/trk.js:521:194
+Uh@https://cdn.adnxs.com/v/s/246/trk.js:365:60
+Cc@https://cdn.adnxs.com/v/s/246/trk.js:449:76
+_.B@https://cdn.adnxs.com/v/s/246/trk.js:560:3327
+_.C@https://cdn.adnxs.com/v/s/246/trk.js:560:1400
+md/<@https://cdn.adnxs.com/v/s/246/trk.js:560:5653
+
+JavaScript warning: https://cdn.adnxs.com/v/s/246/trk.js, line 334: Script terminated by timeout at:
+cf@https://cdn.adnxs.com/v/s/246/trk.js:334:84
+_e@https://cdn.adnxs.com/v/s/246/trk.js:513:127
+mi@https://cdn.adnxs.com/v/s/246/trk.js:557:831
+gi@https://cdn.adnxs.com/v/s/246/trk.js:139:30
+Kh@https://cdn.adnxs.com/v/s/246/trk.js:521:194
+Uh@https://cdn.adnxs.com/v/s/246/trk.js:365:60
+Cc@https://cdn.adnxs.com/v/s/246/trk.js:449:76
+_.B@https://cdn.adnxs.com/v/s/246/trk.js:560:3327
+_.C@https://cdn.adnxs.com/v/s/246/trk.js:560:1400
+md/<@https://cdn.adnxs.com/v/s/246/trk.js:560:5653
+
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js, line 139: Script terminated by timeout at:
+ph/c/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:139:313
+Ua@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:49:339
+Ra.prototype.flush@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:49:127
+Ta@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:483
+ph/c/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:139:292
+sc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+lg/</</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:122:516
+Qa.prototype.Nb/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:315
+lg/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:122:525
+sc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+lg/</</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:122:516
+Qa.prototype.Nb/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:315
+lg/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:122:525
+sc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+h@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:94:477
+
+1728420517219	Marionette	INFO	Stopped listening on port 59597
+JavaScript warning: https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.AppBoot.m.d5c9c439.js, line 17: Script terminated by timeout at:
+s@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.AppBoot.m.d5c9c439.js:17:200526
+performanceMark@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.AppBoot.m.d5c9c439.js:17:192467
+F@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.AppBoot.m.d5c9c439.js:17:184837
+refresh@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.62167.m.98a00357.js:1:5248
+62167/et/ee</<@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.62167.m.98a00357.js:1:8294
+62167/et/ee<@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.62167.m.98a00357.js:1:8334
+
+Dynamically enable window occlusion 1

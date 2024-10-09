@@ -10,15 +10,17 @@ Resource  ../../../Resources/PageObjects/FNMailboxPage.robot
 
 Test Setup  CommonFunctionality.Start FN Article
 Test Teardown  CommonFunctionality.Finish Testcase
+
+
 *** Variables ***
 
 *** Test Cases ***
 #US-T85
 #US-T86
 Validate the FN Preference Center page
-#This is my third PR
-    [Documentation]  This test case validates the barrons preference center page
-    [Tags]  Regression  PreferenceCenter  TagFNPF
+
+    [Documentation]  This test case validates the FN London News preference center page
+    [Tags]  Regression  PreferenceCenter  Follow1
 
     FNPreferenceCenterPage.Add Author By Hotlink
     DefinedKeywords.Sign In Process
@@ -48,7 +50,7 @@ Validate the FN Preference Center page
 #US-T25
 Validate Authors for FN Article page without byline
     [Documentation]  This test case validates authors without byline for FN article page
-    [Tags]  Regression  Author  Article   TagFNauthorwb
+    [Tags]  Regression  Author  Article   Follow1
 
     CommonFunctionality.Start FN Article without byline
     FNArticlePage.Validate author without byline
@@ -56,7 +58,7 @@ Validate Authors for FN Article page without byline
 #US-T142
 Validate the FN digest notification
     [Documentation]  This test case validates the FN digest notification
-    [Tags]  Regression  Notifications
+    [Tags]  Regression  Notifications   Follow1
     FNMailboxPage.Navigate Mailbox page
     FNMailboxPage.Login
     FNMailboxPage.Select Inbox
@@ -66,7 +68,7 @@ Validate the FN digest notification
 #US-T120
 Validate the FN real-time author notification
     [Documentation]  This test case validates the FN real-time author notification
-    [Tags]  Regression  Author  Notifications
+    [Tags]  Regression  Author  Notifications   Follow1
     FNMailboxPage.Navigate Mailbox page
     FNMailboxPage.Login
     FNMailboxPage.Select Inbox
@@ -76,7 +78,7 @@ Validate the FN real-time author notification
 #US-T140
 Validate the FN real-time company notification
     [Documentation]  This test case validates the FN real-time company notification
-    [Tags]  Regression  Company  Notifications
+    [Tags]  Regression  Company  Notifications   Follow1
     FNMailboxPage.Navigate Mailbox page
     FNMailboxPage.Login
     FNMailboxPage.Select Inbox
@@ -87,14 +89,15 @@ Validate the FN real-time company notification
 #US T357
 Validate Postback on Preference Center
     [Documentation]  This test case validates the FN Postback on Preference Center
-    [Tags]  Regression  Postback
+    [Tags]  Regression  Postback          Follow1
     FNPreferenceCenterPage.Add Breaking News By Hotlink
-    DefinedKeywords.Sign In Process
-    FNPreferenceCenterPage.Validate Followed Breaking News
+    DefinedKeywords.FN Sign In Process
+    Set Selenium Implicit Wait  15s
+    FNPreferenceCenterPage.Validate FN Followed Breaking News
     ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
     Run Keyword If  ${val2} > 0  FNPreferenceCenterPage.Click Following Toggle Alert Pop up
     FNPreferenceCenterPage.Validate Breaking News Toggle Feature
-    FNPreferenceCenterPage.Click Breaking News Toggle Feature  #--unsubscribe functionality
+    FNPreferenceCenterPage.Click Breaking News Toggle Feature
     FNPreferenceCenterPage.Validate Following Toggle Alert Pop up
     FNPreferenceCenterPage.Click Following Toggle Alert Pop up
     FNPreferenceCenterPage.Validate Over Mouse On Notification Tooltip
@@ -103,6 +106,6 @@ Validate Postback on Preference Center
     FNMailboxPage.Select Inbox
     FNMailboxPage.Search FN real-time company notification for Postback
     FNMailboxPage.Validate FN real-time company notification for Postback
-    FNMailboxPage.Unsubscribe the mails
-    FNMailboxPage.Verify the mail is unsubscribed
-    FNPreferenceCenterPage.Add Company By Hotlink
+#    FNMailboxPage.Unsubscribe the mails
+#    FNMailboxPage.Verify the mail is unsubscribed
+#    FNPreferenceCenterPage.Add Company By Hotlink

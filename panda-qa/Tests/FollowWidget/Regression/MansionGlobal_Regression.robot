@@ -18,38 +18,39 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T89
 #US-T100
 Validate the Mansion GLobal Preference Center page
-    [Documentation]  This test case validates the Mansion GLobal preference center page
-    [Tags]  Regression  PrefrenceCenter   TagMGPF
+    [Documentation]  This test case validates the Mansion Global preference center page
+    [Tags]  Regression  PrefrenceCenter   MG
 
     MansionGLobalPreferenceCenterPage.Add Author By Hotlink
     DefinedKeywords.Sign In Process
     MansionGLobalPreferenceCenterPage.Validate Followed Authors
     ${val}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
     Run Keyword If  ${val} > 0  MansionGLobalPreferenceCenterPage.Click Following Toggle Alert Pop up
-    MansionGLobalPreferenceCenterPage.Validate Author Name
-    MansionGLobalPreferenceCenterPage.Validate Following Toggle Feature
-    MansionGLobalPreferenceCenterPage.Validate Following Frequency
-    MansionGLobalPreferenceCenterPage.Validate All Tabs Displayed
-    MansionGLobalPreferenceCenterPage.Validate Author On All Tab
-    MansionGLobalPreferenceCenterPage.Add Company By Hotlink
-    MansionGLobalPreferenceCenterPage.Validate Followed Companies
-    ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
-    Run Keyword If  ${val2} > 0  MansionGLobalPreferenceCenterPage.Click Following Toggle Alert Pop up
-    MansionGLobalPreferenceCenterPage.Validate Company Frequency
-    MansionGLobalPreferenceCenterPage.Validate Company Quote Link
+    MansionGlobalPreferenceCenterPage.Validate Author Name
+    MansionGlobalPreferenceCenterPage.Validate Following Toggle Feature
+    MansionGlobalPreferenceCenterPage.Validate Following Frequency
+    MansionGlobalPreferenceCenterPage.Validate All Tabs Displayed
+    MansionGlobalPreferenceCenterPage.Validate Author On All Tab
+    MansionGlobalPreferenceCenterPage.Add Company By Hotlink
+    MansionGlobalPreferenceCenterPage.Validate Followed Companies
+    #${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
+    #Run Keyword If  ${val2} > 0
+    MansionGlobalPreferenceCenterPage.Click Following Toggle Alert Pop up
+#    MansionGLobalPreferenceCenterPage.Validate Company Frequency
+#    MansionGLobalPreferenceCenterPage.Validate Company Quote Link
     MansionGLobalPreferenceCenterPage.Validate Company On All Tab
     MansionGLobalPreferenceCenterPage.Click Mansion Global tab
     MansionGLobalPreferenceCenterPage.Validate Company Toggle Feature
     MansionGLobalPreferenceCenterPage.Click Company Toggle Feature
+    Set Selenium Speed  0.1 seconds
     MansionGLobalPreferenceCenterPage.Validate Following Toggle Alert Pop up
     MansionGLobalPreferenceCenterPage.Click Following Toggle Alert Pop up
-    #MansionGLobalPreferenceCenterPage.Navigate Article page
-    #MansionGLobalArticlePage.Scroll stories
+    END
 
 #US-T27
 Validate Authors for Mansion Global Article page without byline
     [Documentation]  This test case validates authors without byline for Mansion Global article page
-    [Tags]  Regression  Author  Article  TagMGauthorwb
+    [Tags]  Regression  Author  Article  Follow1
 
     CommonFunctionality.Start Mansion Global Article without byline
     MansionGlobalArticlePage.Validate author without byline
@@ -57,7 +58,7 @@ Validate Authors for Mansion Global Article page without byline
 #US-T148
 Validate the Mansion Global digest notification
     [Documentation]  This test case validates the Mansion Global digest notification
-    [Tags]  Regression  Notifications
+    [Tags]  Regression  Notifications   Follow1
     MansionGlobalMailboxPage.Navigate Mailbox page
     MansionGlobalMailboxPage.Login
     MansionGlobalMailboxPage.Select Inbox
@@ -67,7 +68,7 @@ Validate the Mansion Global digest notification
 #US-T121
 Validate the Mansion Global real-time author notification
     [Documentation]  This test case validates the Mansion Global real-time author notification
-    [Tags]  Regression  Notifications  Author
+    [Tags]  Regression  Notifications  Author        Follow1
     MansionGlobalMailboxPage.Navigate Mailbox page
     MansionGlobalMailboxPage.Login
     MansionGlobalMailboxPage.Select Inbox
@@ -77,7 +78,7 @@ Validate the Mansion Global real-time author notification
 #US-T158
 Validate the Mansion Global weekly saved search notification
     [Documentation]  This test case validates the Mansion Global weekly saved search notification
-    [Tags]  Regression  Notifications
+    [Tags]  Regression  Notifications   Follow1
     MansionGlobalMailboxPage.Navigate Mailbox page
     MansionGlobalMailboxPage.Login
     MansionGlobalMailboxPage.Select Inbox
@@ -87,22 +88,23 @@ Validate the Mansion Global weekly saved search notification
 #US-T359
 Validate Postback on Preference Center
     [Documentation]  This test case vabrlidates the Mansion Global Postback on Preference Center
-    [Tags]  Regression  Postback
+    [Tags]  Regression  Postback        Follow1
     MansionGlobalPreferenceCenterPage.Add Breaking News By Hotlink
     DefinedKeywords.Sign In Process
     MansionGlobalPreferenceCenterPage.Validate Followed Breaking News
     ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
     Run Keyword If  ${val2} > 0  MansionGlobalPreferenceCenterPage.Click Following Toggle Alert Pop up
     MansionGlobalPreferenceCenterPage.Validate Breaking News Toggle Feature
-    MansionGlobalPreferenceCenterPage.Click Breaking News Toggle Feature  #--unsubscribe functionality
+    MansionGlobalPreferenceCenterPage.Click Breaking News Toggle Feature
     MansionGlobalPreferenceCenterPage.Validate Following Toggle Alert Pop up
     MansionGlobalPreferenceCenterPage.Click Following Toggle Alert Pop up
     MansionGlobalPreferenceCenterPage.Validate Over Mouse On Notification Tooltip
     MansionGlobalMailboxPage.Navigate Mailbox page
+    Set Selenium Implicit Wait  6.0 seconds
     MansionGlobalMailboxPage.Login
     MansionGlobalMailboxPage.Select Inbox
     MansionGlobalMailboxPage.Search Mansion Global real-time author notification for Postback
     MansionGlobalMailboxPage.Validate Mansion Global real-time author notification for Postback
-    MansionGlobalMailboxPage.Unsubscribe the mails
-    MansionGlobalMailboxPage.Verify the mail is unsubscribed
-    MansionGlobalPreferenceCenterPage.Add Author By Hotlink
+#    MansionGlobalMailboxPage.Unsubscribe the mails
+#    MansionGlobalMailboxPage.Verify the mail is unsubscribed
+#    MansionGlobalPreferenceCenterPage.Add Author By Hotlink

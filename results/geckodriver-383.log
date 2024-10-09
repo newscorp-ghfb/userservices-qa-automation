@@ -1,0 +1,79 @@
+1728451438635	geckodriver	INFO	Listening on 127.0.0.1:58581
+1728451441864	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58582" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileIM8KhH"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728451442481	Marionette	INFO	Marionette enabled
+1728451442734	Marionette	INFO	Listening on port 58613
+WebDriver BiDi listening on ws://127.0.0.1:58582
+Read port: 58613
+1728451442987	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58582/devtools/browser/cc1eb486-65a4-4dd8-b312-f6131f93e9ac
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://www.barrons.com/ line 33 > injectedScript, line 44: Error: Can't access contentWindow of an iframe, skip placement initialization.
+JavaScript warning: https://imasdk.googleapis.com/js/core/bridge3.672.0_en.html#goog_277834672, line 451: Script terminated by timeout at:
+bC@https://imasdk.googleapis.com/js/core/bridge3.672.0_en.html#goog_277834672:451:310
+fC/this.aa@https://imasdk.googleapis.com/js/core/bridge3.672.0_en.html#goog_277834672:449:29
+
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m21fdidaqurwr0aj&sid=9222325317970825875&loc=https%3A%2F%2Fwww.s.dev.barrons.com%2Fmarket-data%2Fstocks%2Famzn&new=0&arf=0&ltm=1728451465539&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m21fdigcggg3cjb9&ckp=m21fd46x7xsrw47o&glb=cx%3A2oxbe4fducnf832ww71gpqzju3%3A2p5i2wqln05v&cp_userState=anon&cp_testGroup=13&cp_env=staging&cp_topDomain=barrons.com&cp_pwTag=default&cp_pwPlacement=cx-snippetad&cp_pwCampaign=10&cp_pwType=personalized&cp_access=free&cp_section=Market%20Data%20Center&cp_subsection=Quotes&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=5&cp_ab_bucket=95&cp_pageContentSource=Barrons%20Online&cp_pageContentType=ResearchTools&cp_pageContentTypeDetai=quote&cp_pageSiteProduct=BOL&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WEoqGYGTldYSfSNCQ9Ugqu-00NFuS6e6WOK2G2Y_zzI.js line 2 > eval line 4213 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1728451471164	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:467:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:220:33
+JavaScript warning: https://cdn.parsely.com/keys/barrons.com/p.js, line 7: Script terminated by timeout at:
+n._getCacheFromString@https://cdn.parsely.com/keys/barrons.com/p.js:7:29573
+n._renewCache@https://cdn.parsely.com/keys/barrons.com/p.js:7:30030
+n.get@https://cdn.parsely.com/keys/barrons.com/p.js:7:27898
+t._migrateCookie@https://cdn.parsely.com/keys/barrons.com/p.js:7:32395
+t.get@https://cdn.parsely.com/keys/barrons.com/p.js:7:31085
+getVisitorInfo@https://cdn.parsely.com/keys/barrons.com/p.js:7:33929
+getSession@https://cdn.parsely.com/keys/barrons.com/p.js:7:35584
+beacon@https://cdn.parsely.com/keys/barrons.com/p.js:7:64086
+e.engagedTime.sendHeartbeat@https://cdn.parsely.com/keys/barrons.com/p.js:7:43415
+i.sendHeartbeat@https://cdn.parsely.com/keys/barrons.com/p.js:7:41440
+i._sendHeartbeats@https://cdn.parsely.com/keys/barrons.com/p.js:7:41594
+i._setUnloadListeners/<@https://cdn.parsely.com/keys/barrons.com/p.js:7:41747
+value/<@https://cdn.parsely.com/keys/barrons.com/p.js:7:22304
+value@https://cdn.parsely.com/keys/barrons.com/p.js:7:22277
+value@https://cdn.parsely.com/keys/barrons.com/p.js:7:24351
+value@https://cdn.parsely.com/keys/barrons.com/p.js:7:24771
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT, line 244: Script terminated by timeout at:
+Kd@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:244:95
+Vc.prototype.invoke@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:220:403
+Ja@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:189:554
+Wc.prototype.evaluate@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:221:72
+Rd@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:246:212
+Vc.prototype.invoke@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:220:403
+Ja@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:189:554
+Ia@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:189:314
+Jd/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:244:20
+Vc.prototype.invoke@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:220:403
+r@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:222:32
+sA@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:599:149
+qA/</<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:597:187
+z@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:199:203
+qA/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:597:167
+z@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:199:203
+qA@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:597:134
+rA/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:597:111
+
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 6ms)
+1728451489078	Marionette	INFO	Stopped listening on port 58613
+Dynamically enable window occlusion 1
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.

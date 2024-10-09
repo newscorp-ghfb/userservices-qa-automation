@@ -1,0 +1,5 @@
+datasources:6e35ad0db6a55209e912a02d5fa8b4a54e2b8484
+commandlineoptions:8ee7d5a26f44cfbbb9cb11d0c2776a968931033d
+suitesfrom:no-suites-from-option
+file:85d417f29c890e0e956ec73f65bb875c7b2ca75b
+--suite Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression.Barrons Regression

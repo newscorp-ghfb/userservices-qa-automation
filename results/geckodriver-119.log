@@ -1,0 +1,34 @@
+1728044421979	geckodriver	INFO	Listening on 127.0.0.1:59025
+1728044425036	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59026" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofilewUB4zp"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728044425707	Marionette	INFO	Marionette enabled
+1728044425968	Marionette	INFO	Listening on port 59037
+WebDriver BiDi listening on ws://127.0.0.1:59026
+Read port: 59037
+1728044426216	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59026/devtools/browser/e0f3964f-f5f9-4eb9-a874-151ce2287996
+JavaScript warning: https://www.dev.marketwatch.com/_next/static/chunks/main-7c2c5b4ee7ae4ea0.js, line 1: unreachable code after return statement
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m1up1k2fwl4ydngg&sid=1138573015853471556&loc=https%3A%2F%2Fwww.dev.marketwatch.com%2Fauthor%2FCatey-Hill&new=1&arf=0&ltm=1728044440795&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m1up1k468sejw9bu&ckp=m1up1k2fk1jqxi6q&glb=&cp_userState=anon&cp_testGroup=18&cp_env=staging&cp_topDomain=marketwatch.com&cp_template=full&cp_access=free&cp_section=Author&cp_subsection=Catey%20Hill&cp_cms_name=Peavey&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=5&cp_ab_bucket=85&cp_pageContentSource=MarketWatch&cp_pageContentType=Summaries&cp_pageContentTypeDetai=default&cp_pageSiteProduct=MW&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript error: https://d3h0wybtovte4j.cloudfront.net/ugeovhprh.js, line 1: TypeError: URL constructor: null/foo.html?o=u&r=&l=https://www.dev.marketwatch.com/author/Catey-Hill&aa=NA&ib=false&buster=utZTDyWYbLPXSdXK is not a valid URL.
+1728044446231	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WEoqGYGTldYSfSNCQ9Ugqu-00NFuS6e6WOK2G2Y_zzI.js line 2 > eval line 6516 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.error: "Can't start recording from event type: " "paste"
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.dev.marketwatch.com/" ({})
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT, line 193: Script terminated by timeout at:
+Ra@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:193:70
+Ra@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:193:145
+Ra@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:193:189
+vm@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:391:455
+um.prototype.flush@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:395:336
+um.prototype.push@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:393:403
+nm@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:390:785
+FH/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:719:187
+ba.Qk/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:662:126
+ba.Qk/c/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:661:420
+
+1728044618450	Marionette	INFO	Stopped listening on port 59037
+Dynamically enable window occlusion 1
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.

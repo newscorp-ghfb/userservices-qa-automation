@@ -1,0 +1,95 @@
+1728467243155	geckodriver	INFO	Listening on 127.0.0.1:65050
+1728467246210	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65051" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofilem8bf8C"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728467246862	Marionette	INFO	Marionette enabled
+1728467247099	Marionette	INFO	Listening on port 65059
+WebDriver BiDi listening on ws://127.0.0.1:65051
+Read port: 65059
+1728467247326	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:65051/devtools/browser/9d6a3838-6cd2-42d4-96d4-5bd9faac4252
+JavaScript warning: https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js, line 1: unreachable code after return statement
+JavaScript warning: https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js, line 1: unreachable code after return statement
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m21ory73rdd8wifm&sid=1134002947328204066&loc=https%3A%2F%2Fwww.dev.wsj.com%2F&new=1&arf=0&ltm=1728467255785&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m21oryj96ntuafpu&ckp=m21ory73gpcvxuc4&glb=&cp_userState=anon&cp_testGroup=80&cp_env=staging&cp_topDomain=wsj.com&cp_template=full&cp_access=free&cp_section=US%20Home%20Page&cp_subsection=&cp_cms_name=CAPS&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=7&cp_ab_bucket=47&cp_pageContentSource=WSJ%20Online&cp_pageContentType=Home&cp_pageContentTypeDetai=desktopweb&cp_pageSiteProduct=WSJ&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript error: https://d3h0wybtovte4j.cloudfront.net/ugeovhprh.js, line 1: TypeError: URL constructor: null/foo.html?o=u&r=&l=https://www.dev.wsj.com/&aa=NA&ib=false&buster=bdXqdaYyUBHqShIz is not a valid URL.
+1728467257050	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/OPjMWwJBtReHhWwOPXWsCqm1x5VpbT9SkyMWV37nL8g.js line 2 > eval line 3168 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/OPjMWwJBtReHhWwOPXWsCqm1x5VpbT9SkyMWV37nL8g.js line 2 > eval line 7294 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js, line 1: Script terminated by timeout at:
+8018/g/<@https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js:1:111956
+r@https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js:1:111426
+
+JavaScript error: https://news.google.com/swg/js/v1/swg.js, line 17: Error: XHR Failed fetching (https://news.google.com/...): (Note: a CORS error above may indicate that this publisher or domain is not configured in Publisher Center. The CORS error happens because 4xx responses do not set CORS headers.)
+
+TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: https://news.google.com/swg/js/v1/swg.js, line 17: Error: Error: not allowed
+JavaScript warning: https://video-api.wsj.com/api-video/player/v3/js/video.min.js, line 14: Script terminated by timeout at:
+D@https://video-api.wsj.com/api-video/player/v3/js/video.min.js:14:32754
+E@https://video-api.wsj.com/api-video/player/v3/js/video.min.js:14:30819
+Sr@https://video-api.wsj.com/api-video/player/v3/js/video.min.js:41:65711
+j@https://video-api.wsj.com/api-video/player/v3/js/video.min.js:14:27415
+D@https://video-api.wsj.com/api-video/player/v3/js/video.min.js:14:24886
+C@https://video-api.wsj.com/api-video/player/v3/js/video.min.js:14:21028
+N@https://video-api.wsj.com/api-video/player/v3/js/video.min.js:14:26592
+D@https://video-api.wsj.com/api-video/player/v3/js/video.min.js:14:25336
+C@https://video-api.wsj.com/api-video/player/v3/js/video.min.js:14:21028
+N@https://video-api.wsj.com/api-video/player/v3/js/video.min.js:14:26592
+D@https://video-api.wsj.com/api-video/player/v3/js/video.min.js:14:25336
+C@https://video-api.wsj.com/api-video/player/v3/js/video.min.js:14:21028
+D@https://video-api.wsj.com/api-video/player/v3/js/video.min.js:14:25154
+C@https://video-api.wsj.com/api-video/player/v3/js/video.min.js:14:21028
+D@https://video-api.wsj.com/api-video/player/v3/js/video.min.js:14:25154
+C@https://video-api.wsj.com/api-video/player/v3/js/video.min.js:14:21028
+D@https://video-api.wsj.com/api-video/player/v3/js/video.min.js:14:25154
+k@https://video-api.wsj.com/api-video/player/v3/js/video.min.js:14:20329
+
+JavaScript warning: https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.Y7snZc84UmY.es5.O/am=YDBgBg/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4o6JJW61vjfL39b99y1stb_FZTXg/m=_b,_tp, line 290: Script terminated by timeout at:
+c@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.Y7snZc84UmY.es5.O/am=YDBgBg/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4o6JJW61vjfL39b99y1stb_FZTXg/m=_b,_tp:290:187
+b@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.Y7snZc84UmY.es5.O/am=YDBgBg/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4o6JJW61vjfL39b99y1stb_FZTXg/m=_b,_tp:281:48
+
+JavaScript warning: https://fpt.live.com/?session_id=4debb27cda68454090f7fa10a4f0ba78&CustomerId=33e01921-4d64-4f8c-a055-5bdaffd5e33d&PageId=SI, line 5: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+1728467285354	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://res-1.cdn.office.net/midgard/versionless/livepersonacard_without-react_4e09eb534f633f2b7d57.js, line 2: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/OPjMWwJBtReHhWwOPXWsCqm1x5VpbT9SkyMWV37nL8g.js line 2 > eval line 5206 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s0.2mdn.net/879366/html_inpage_rendering_lib_200_280.js, line 82: Script terminated by timeout at:
+b@https://s0.2mdn.net/879366/html_inpage_rendering_lib_200_280.js:82:280
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/OPjMWwJBtReHhWwOPXWsCqm1x5VpbT9SkyMWV37nL8g.js line 2 > eval line 7049 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_280.js, line 49: Script terminated by timeout at:
+M@https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_280.js:49:2096
+Ie@https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_280.js:49:2489
+zf@https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_280.js:55:244
+b@https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_280.js:53:297
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/OPjMWwJBtReHhWwOPXWsCqm1x5VpbT9SkyMWV37nL8g.js line 2 > eval line 7730 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1728467341184	Marionette	INFO	Stopped listening on port 65059
+JavaScript warning: https://acdn.adnxs.com/ast/static/0.60.1/ast.js, line 1: Script terminated by timeout at:
+Or/</<@https://acdn.adnxs.com/ast/static/0.60.1/ast.js:1:102466
+Ee@https://acdn.adnxs.com/ast/static/0.60.1/ast.js:1:26211
+Or/<@https://acdn.adnxs.com/ast/static/0.60.1/ast.js:1:102344
+Ee@https://acdn.adnxs.com/ast/static/0.60.1/ast.js:1:26302
+Or@https://acdn.adnxs.com/ast/static/0.60.1/ast.js:1:102324
+jr.refresh@https://acdn.adnxs.com/ast/static/0.60.1/ast.js:1:110849
+62167/refresh/<@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.62167.m.98a00357.js:1:6482
+jr.anq.push@https://acdn.adnxs.com/ast/static/0.60.1/ast.js:1:107630
+refresh@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.62167.m.98a00357.js:1:6272
+62167/et/ee</<@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.62167.m.98a00357.js:1:8294
+62167/et/ee<@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.62167.m.98a00357.js:1:8334
+
+Dynamically enable window occlusion 1
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
