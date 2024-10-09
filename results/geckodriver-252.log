@@ -1,0 +1,52 @@
+1728406660384	geckodriver	INFO	Listening on 127.0.0.1:52050
+1728406663414	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52051" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileNyKXLJ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728406664029	Marionette	INFO	Marionette enabled
+1728406664273	Marionette	INFO	Listening on port 52058
+WebDriver BiDi listening on ws://127.0.0.1:52051
+Read port: 52058
+1728406664518	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52051/devtools/browser/a19fc34e-7f81-44c8-bfe9-28c874ac9723
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m20ope2hvv38msn9&sid=1139592114930554183&loc=https%3A%2F%2Fwww.s.dev.fnlondon.com%2F&new=1&arf=0&ltm=1728406670205&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m20ope53eb3460x6&ckp=m20ope2h8rugtzo1&glb=&cp_userState=anon&cp_testGroup=71&cp_env=staging&cp_topDomain=fnlondon.com&cp_template=full&cp_access=free&cp_section=Home&cp_subsection=&cp_cms_name=CAPS&cp_subscriber=nonsubscriber&cp_edition=europegb&cp_bucket=4&cp_ab_bucket=44&cp_pageContentSource=FN%20London&cp_pageContentType=Home&cp_pageContentTypeDetai=default&cp_pageSiteProduct=FN&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WEoqGYGTldYSfSNCQ9Ugqu-00NFuS6e6WOK2G2Y_zzI.js line 2 > eval line 1376 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://asset.barrons.com/article/public/fn_full_article.dfb75bf78e25.js, line 62: TypeError: e(...).offset() is undefined
+JavaScript error: https://asset.barrons.com/article/public/fn_full_article.dfb75bf78e25.js, line 26: TypeError: e(...).offset() is undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WEoqGYGTldYSfSNCQ9Ugqu-00NFuS6e6WOK2G2Y_zzI.js line 2 > eval line 5727 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.parsely.com/keys/fnlondon.com/p.js, line 7: Script terminated by timeout at:
+value/n<@https://cdn.parsely.com/keys/fnlondon.com/p.js:7:24273
+value@https://cdn.parsely.com/keys/fnlondon.com/p.js:7:24274
+value@https://cdn.parsely.com/keys/fnlondon.com/p.js:7:24771
+
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+JavaScript error: https://asset.barrons.com/article/public/fn_full_article.dfb75bf78e25.js, line 62: TypeError: e(...).offset() is undefined
+1728406695331	Marionette	INFO	Stopped listening on port 52058
+Dynamically enable window occlusion 1
+JavaScript error: https://djcs-multi-region-assets-ohio.s3.us-east-2.amazonaws.com/dj-ufc/asset/dj-ufc/qa/v1.34.0-beta.217/p-5a49cb7f.js, line 1: TypeError: o is undefined
+JavaScript error: https://djcs-multi-region-assets-ohio.s3.us-east-2.amazonaws.com/dj-ufc/asset/dj-ufc/qa/v1.34.0-beta.217/p-5a49cb7f.js, line 1: TypeError: o is undefined
+console.error: services.settings: 
+  Message: NetworkError: Network error: TypeError: NetworkError: Network request failed
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:107:1
+NetworkError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:5
+_adjustedError@resource://services-settings/RemoteSettingsClient.sys.mjs:916:14
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:821:38
+
+console.warn: services.settings: main/fxmonitor-breaches sync interrupted by shutdown
+console.warn: services.settings: main/addons-manager-settings sync interrupted by shutdown
+console.warn: services.settings: main/query-stripping sync interrupted by shutdown
+console.warn: services.settings: main/partitioning-exempt-urls sync interrupted by shutdown
+console.warn: services.settings: main/translations-wasm sync interrupted by shutdown
+console.warn: services.settings: main/search-config-overrides-v2 sync interrupted by shutdown
+console.warn: services.settings: main/fingerprinting-protection-overrides sync interrupted by shutdown
+console.warn: services.settings: main/top-sites sync interrupted by shutdown
+console.warn: services.settings: main/normandy-recipes-capabilities sync interrupted by shutdown
+console.warn: services.settings: main/search-default-override-allowlist sync interrupted by shutdown
+console.warn: services.settings: main/search-config-v2 sync interrupted by shutdown
+console.error: (new AbortError("IndexedDB: main/ms-images getLastModified() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/IDBHelpers.sys.mjs", 16))

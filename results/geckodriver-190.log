@@ -1,0 +1,44 @@
+1728284493538	geckodriver	INFO	Listening on 127.0.0.1:56538
+1728284496580	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56539" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileya7Mhc"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728284497429	Marionette	INFO	Marionette enabled
+1728284497812	Marionette	INFO	Listening on port 56557
+WebDriver BiDi listening on ws://127.0.0.1:56539
+Read port: 56557
+1728284498123	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:56539/devtools/browser/37636dc6-c298-49d9-9f0d-8c34aaca6a9f
+JavaScript warning: https://www.marketwatch.com/, line 358: Script terminated by timeout at:
+i@https://www.marketwatch.com/:358:17917
+nrWrapper@https://www.marketwatch.com/:358:17870
+c@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:14663
+3992/p/</<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:15046
+nrWrapper@https://www.marketwatch.com/:358:17810
+e@https://www.marketwatch.com/:358:52590
+3992/p/<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:15029
+4095/traceTask/</<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:182442
+nrWrapper@https://www.marketwatch.com/:358:17810
+
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS, line 182: Script terminated by timeout at:
+z@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:182:158
+bg@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:257:374
+ag@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:257:199
+cg@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:256:60
+pG.prototype.flush@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:652:280
+ba.flush@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:669:132
+FH/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:680:210
+ba.Qk/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:623:126
+ba.Qk/c/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:622:420
+
+JavaScript error: , line 0: AbortError: The operation was aborted. 
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m1ynzftbz6n6f0gs&sid=9222325317970825873&loc=https%3A%2F%2Fwww.marketwatch.com%2Fnewsletters%3Fmod%3DfollowUI&new=1&arf=0&ltm=1728284527058&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m1ynzga566temfrk&ckp=m1ynzftb8hb9k9h4&glb=&eid0=e4cefa22ef027cc0132f0c218da37da39cdb3228234af4df969b5c463592e123&eit0=wsj&cp_userState=anon&cp_testGroup=64&cp_topDomain=marketwatch.com&cp_navSource=followUI&cp_template=full&cp_access=free&cp_section=Newsletters&cp_subsection=&cp_cms_name=&cp_subscriber=registered&cp_edition=naus&cp_bucket=1&cp_ab_bucket=61&cp_pageContentSource=MarketWatch&cp_pageContentType=Summaries&cp_pageContentTypeDetai=newsletters&cp_pageSiteProduct=MW&cp_userTags=&cp_sessionState=ca, line 1: TypeError: cX.loadScript is not a function
+1728284537452	Marionette	INFO	Stopped listening on port 56557
+JavaScript warning: https://www.marketwatch.com/newsletters?mod=followUI, line 193: Script terminated by timeout at:
+nrWrapper@https://www.marketwatch.com/newsletters?mod=followUI:193:17660
+
+Dynamically enable window occlusion 1

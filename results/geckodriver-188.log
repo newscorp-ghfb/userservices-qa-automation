@@ -1,0 +1,55 @@
+1728284321276	geckodriver	INFO	Listening on 127.0.0.1:56914
+1728284324342	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56915" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofilefj8b7v"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728284325233	Marionette	INFO	Marionette enabled
+1728284325616	Marionette	INFO	Listening on port 56934
+WebDriver BiDi listening on ws://127.0.0.1:56915
+Read port: 56934
+1728284326038	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:56915/devtools/browser/bef0b783-3825-4a91-885d-20b80065487e
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m1ynvctpv0u8ip2c&sid=9222325317970825873&loc=https%3A%2F%2Fwww.marketwatch.com%2F&new=1&arf=0&ltm=1728284336587&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m1ynvcw0lnf37c1p&ckp=m1ynvctpe92rto7k&glb=&cp_userState=anon&cp_testGroup=33&cp_topDomain=marketwatch.com&cp_template=full&cp_access=free&cp_section=Home%20Page&cp_cms_name=Peavey&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=3&cp_ab_bucket=13&cp_pageContentSource=MarketWatch&cp_pageContentType=Home&cp_pageContentTypeDetai=default&cp_pageSiteProduct=MW&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/OPjMWwJBtReHhWwOPXWsCqm1x5VpbT9SkyMWV37nL8g.js line 2 > eval line 1726 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/OPjMWwJBtReHhWwOPXWsCqm1x5VpbT9SkyMWV37nL8g.js line 2 > eval line 5448 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript warning: https://cdn.cxense.com/cx.js, line 6: Script terminated by timeout at:
+Yi/<@https://cdn.cxense.com/cx.js:6:52930
+Yi@https://cdn.cxense.com/cx.js:6:52931
+ea@https://cdn.cxense.com/cx.js:6:70153
+ra/<@https://cdn.cxense.com/cx.js:6:70614
+nrWrapper@https://www.marketwatch.com/:358:17810
+
+1728284356079	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://cdn.parsely.com/keys/marketwatch.com/p.js, line 7: Script terminated by timeout at:
+y.param@https://cdn.parsely.com/keys/marketwatch.com/p.js:7:20520
+buildEventRequestUrl@https://cdn.parsely.com/keys/marketwatch.com/p.js:7:64865
+sendEvent@https://cdn.parsely.com/keys/marketwatch.com/p.js:7:64375
+beacon@https://cdn.parsely.com/keys/marketwatch.com/p.js:7:65924
+e.engagedTime.sendHeartbeat@https://cdn.parsely.com/keys/marketwatch.com/p.js:7:43415
+i.sendHeartbeat@https://cdn.parsely.com/keys/marketwatch.com/p.js:7:41440
+i._sendHeartbeats@https://cdn.parsely.com/keys/marketwatch.com/p.js:7:41594
+i._setUnloadListeners/<@https://cdn.parsely.com/keys/marketwatch.com/p.js:7:41747
+value/<@https://cdn.parsely.com/keys/marketwatch.com/p.js:7:22304
+value@https://cdn.parsely.com/keys/marketwatch.com/p.js:7:22277
+value@https://cdn.parsely.com/keys/marketwatch.com/p.js:7:24351
+value@https://cdn.parsely.com/keys/marketwatch.com/p.js:7:24771
+nrWrapper@https://www.marketwatch.com/:358:17810
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS, line 200: Script terminated by timeout at:
+Kc@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:200:321
+nG@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:648:262
+pG.prototype.flush@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:652:300
+ba.flush@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:669:132
+FH/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:680:210
+ba.Qk/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:623:126
+ba.Qk/c/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:622:420
+
+1728284374213	Marionette	INFO	Stopped listening on port 56934
+Dynamically enable window occlusion 1

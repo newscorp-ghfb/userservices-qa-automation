@@ -1,0 +1,69 @@
+1727700147813	geckodriver	INFO	Listening on 127.0.0.1:62800
+1727700150862	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62801" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileU4pvIC"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727700151537	Marionette	INFO	Marionette enabled
+1727700151778	Marionette	INFO	Listening on port 62811
+WebDriver BiDi listening on ws://127.0.0.1:62801
+Read port: 62811
+1727700152019	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62801/devtools/browser/5744f064-c101-432c-94aa-0c2a5e493efa
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m1p02bxt5fvznim4&sid=9222325317970825875&loc=https%3A%2F%2Fwww.barrons.com%2F&new=1&arf=0&ltm=1727700155646&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m1p02d32b1ssl8ns&ckp=m1p02bxtpcy6mfw8&glb=&cp_userState=anon&cp_testGroup=54&cp_topDomain=barrons.com&cp_access=free&cp_section=US%20Home%20Page%20Weekday&cp_subsection=&cp_cms_name=CAPS&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=1&cp_ab_bucket=21&cp_pageContentSource=Barrons%20Online&cp_pageContentType=Home&cp_pageContentTypeDetai=default&cp_pageSiteProduct=BOL&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript error: https://asset.barrons.com/fp/assets/webpack4/runtime.6d26069f71aa13.js, line 1: ChunkLoadError: Loading chunk 877 failed.
+(error: https://asset.barrons.com/fp/assets/webpack4/877.4e5d331222ef02.js)
+JavaScript error: https://asset.barrons.com/fp/assets/webpack4/runtime.6d26069f71aa13.js, line 1: ChunkLoadError: Loading chunk 877 failed.
+(error: https://asset.barrons.com/fp/assets/webpack4/877.4e5d331222ef02.js)
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.barrons.com/asset/dj-watchlist/v1.11.0/p-8e3b6675.entry.js, line 11: TypeError: Error.captureStackTrace is not a function
+console.error: ({})
+console.error: ({})
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m1p02gvkj111a818&sid=9222325317970825875&loc=https%3A%2F%2Fwww.s.dev.barrons.com%2Farticles%2Fbuy-under-armour-stock-pick-51650672000&new=0&arf=0&ltm=1727700162038&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m1p02h8vuxjgn2r9&ckp=m1p02bxtpcy6mfw8&glb=&amo=1720048200&cp_userState=anon&cp_testGroup=54&cp_topDomain=barrons.com&cp_pwTag=default&cp_pwPlacement=cx-snippetad&cp_pwCampaign=10&cp_pwType=personalized&cp_type=Retail&cp_template=preview&cp_access=paid&cp_section=Retail&cp_subsection=Sizing%20Up%20Small-Caps&cp_cms_name=Methode&cp_vix=&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=1&cp_ab_bucket=21&cp_pageContentSource=Barrons%20Online&cp_pageContentType=Article&cp_pageContentTypeDetai=continuous&cp_pageSiteProduct=BOL&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/Ofjd5SEjadZox9_ebcUE7qVtcVJKxbTf46gjSEHhnaE.js line 2 > eval line 5549 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/Ofjd5SEjadZox9_ebcUE7qVtcVJKxbTf46gjSEHhnaE.js line 2 > eval line 2026 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000" ({})
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js, line 48: Script terminated by timeout at:
+Ra@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:485
+Sa@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:418
+ph/c/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:138:292
+tc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+R/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:102:1458
+M/this.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:91:888
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+O/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:92:471
+M/this.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:91:888
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+R/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:102:1458
+M/this.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:91:888
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+O/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:92:471
+M/this.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:91:888
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+lg/</</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:121:516
+Pa.prototype.Ob/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:297
+lg/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:121:525
+tc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+wd/k/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:93:510
+M/this.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:91:888
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+h@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:94:477
+
+1727700356047	Marionette	INFO	Stopped listening on port 62811
+Dynamically enable window occlusion 1
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.

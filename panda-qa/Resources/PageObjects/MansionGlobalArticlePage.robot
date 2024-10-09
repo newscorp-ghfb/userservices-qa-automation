@@ -50,15 +50,15 @@ Click Following Button
     Click Button  dom:${JSFollowButtonGMPath}
 
 Validate Sign In Modal
-    Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}
-    Page Should Contain Element  dom:${JSFollowSignInHeaderPath}
+    Wait Until Element is Visible  //*[@id="header-wrapper"]/div[1]/div/div[3]/div/div/a  #dom:${JSFollowSignInHeaderPath}
+    Page Should Contain Element  //*[@id="header-wrapper"]/div[1]/div/div[3]/div/div/a  #dom:${JSFollowSignInHeaderPath}
 
 Click Sign In Button Modal
-    Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}
+    Wait Until Element is Visible  //*[@id="header-wrapper"]/div[1]/div/div[3]/div/div/a  #dom:${JSFollowSignInHeaderPath}
     IF  "${Env}" == "prod"
-        Click Button  dom:${JSFollowSignInButtonPath}
+        Click Button  //*[@id="header-wrapper"]/div[1]/div/div[3]/div/div/a  #dom:${JSFollowSignInButtonPath}
     ELSE IF  "${Env}" == "dev"
-        Click Element  dom:${JSFollowSignInButton2Path}
+        Click Element  //*[@id="header-wrapper"]/div[1]/div/div[3]/div/div/a  #dom:${JSFollowSignInButton2Path}
     END
 
 

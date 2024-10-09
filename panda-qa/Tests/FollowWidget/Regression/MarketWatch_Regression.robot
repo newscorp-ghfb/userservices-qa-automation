@@ -21,7 +21,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T93
 Validate the Market Watch Preference Center page
     [Documentation]  This test case validates the Market Watch preference center page
-    [Tags]  Regression  PreferenceCenter  Follow11
+    [Tags]  Regression  PreferenceCenter  M
 
     MarketWatchPreferenceCenterPage.Add Author By Hotlink
     DefinedKeywords.MarketWatch PreferenceCenter User Sign In Process
@@ -51,7 +51,7 @@ Validate Authors for MarketWatch Article page without byline
 #US-T220
 Validate the Watchlist widget from Watchlist page
     [Documentation]  This test case validates the watchlist widget from watchlist page
-    [Tags]  Regression  Watchlist  Follow1
+    [Tags]  Regression  Watchlist  follow
 
     CommonFunctionality.Start MarketWatch for Watchlist page
     DefinedKeywords.MarketWatch Test User Sign In Process
@@ -134,6 +134,7 @@ Validate the MW digest notification
     MarketWatchMailboxPage.Search Your Daily Digest from MW
     #MarketWatchMailboxPage.Validate MW Digest notification
 
+
 #US-T415
 Validate the MarketWatch Newsletter
   [Documentation]  This test case validates the MarketWatch price and volume alerts on the Quote page
@@ -148,6 +149,81 @@ Validate the MarketWatch Newsletter
      MarketWatchAlertsPage.Validation of subscription to Mutual Funds Weekly newsletters
      MarketWatchAlertsPage.Validation of Unsubscripton of Mutual Funds Weekly newsletters
 
+#US-T432
+Validate the MarketWatch Newsletter
+  [Documentation]  This test case validates the Personal Finance
+  [Tags]  Regression  TagPF
+     CommonFunctionality.Start Market Watch Newsletter
+     DefinedKeywords.Market Watch Sign In Process
+     Set Selenium Implicit Wait  20
+     MarketWatchAlertsPage.Validate Newsletters option on MW Preference Center
+     MarketWatchAlertsPage.Click Newsletters option on MW Preference Center
+     Execute javascript  window.scrollTo(0,250)
+     Set Selenium Implicit Wait  10
+     MarketWatchAlertsPage.Validation of subscription to Personal Finace newsletters
+     Set Selenium Implicit Wait  10
+     MarketWatchAlertsPage.Validation of Unsubscripton of Personal Finace newsletters
+
+#US-T431
+Validate the MarketWatch Newsletter
+  [Documentation]  This test case validates the Midday Report
+  [Tags]  Regression  TagMR
+     CommonFunctionality.Start Market Watch Newsletter
+     DefinedKeywords.Market Watch Sign In Process
+     Set Selenium Implicit Wait  20
+     MarketWatchAlertsPage.Validate Newsletters option on MW Preference Center
+     MarketWatchAlertsPage.Click Newsletters option on MW Preference Center
+     Execute javascript  window.scrollTo(0,600)
+     Set Selenium Implicit Wait  10
+     MarketWatchAlertsPage.Validation of subscription to Midday Report newsletters
+     Set Selenium Implicit Wait  10
+     MarketWatchAlertsPage.Validation of Unsubscripton of Midday Report newsletters
+
+#US-T433
+Validate the MarketWatch Newsletter
+  [Documentation]  This test case validates the After the Bell
+  [Tags]  Regression  TagAB
+     CommonFunctionality.Start Market Watch Newsletter
+     DefinedKeywords.Market Watch Sign In Process
+     Set Selenium Implicit Wait  20
+     MarketWatchAlertsPage.Validate Newsletters option on MW Preference Center
+     MarketWatchAlertsPage.Click Newsletters option on MW Preference Center
+     Execute javascript  window.scrollTo(0,600)
+     Set Selenium Implicit Wait  10
+     MarketWatchAlertsPage.Validation of subscription to After the Bell newsletters
+     Set Selenium Implicit Wait  10
+     MarketWatchAlertsPage.Validation of Unsubscripton of After the Bell newsletters
+
+#US-T434
+Validate the MarketWatch Newsletter
+  [Documentation]  This test case validates the Europe Daily
+  [Tags]  Regression  TagED
+     CommonFunctionality.Start Market Watch Newsletter
+     DefinedKeywords.Market Watch Sign In Process
+     Set Selenium Implicit Wait  20
+     MarketWatchAlertsPage.Validate Newsletters option on MW Preference Center
+     MarketWatchAlertsPage.Click Newsletters option on MW Preference Center
+     Execute javascript  window.scrollTo(0,600)
+     Set Selenium Implicit Wait  10
+     MarketWatchAlertsPage.Validation of subscription to Europe Daily newsletters
+     Set Selenium Implicit Wait  10
+     MarketWatchAlertsPage.Validation of Unsubscription to Europe Daily newsletters
+
+#US-T435
+Validate the MarketWatch Newsletter
+  [Documentation]  This test case validates the Tech Daily
+  [Tags]  Regression  TagTD
+     CommonFunctionality.Start Market Watch Newsletter
+     DefinedKeywords.Market Watch Sign In Process
+     Set Selenium Implicit Wait  20
+     MarketWatchAlertsPage.Validate Newsletters option on MW Preference Center
+     MarketWatchAlertsPage.Click Newsletters option on MW Preference Center
+     Execute javascript  window.scrollTo(0,600)
+     Set Selenium Implicit Wait  10
+     MarketWatchAlertsPage.Validation of subscription to Tech Daily newsletters
+     Set Selenium Implicit Wait  10
+     MarketWatchAlertsPage.Validation of Unsubscription to Tech Daily newsletters
+
 #US-T122
 Validate the MW real-time author notification
     [Documentation]  This test case validates the MW real-time author notification
@@ -161,7 +237,7 @@ Validate the MW real-time author notification
 #US-T146
 Validate the MW real-time company notification
     [Documentation]  This test case validates the MW real-time company notification
-    [Tags]  Regression  Notifications  Company  Follow1
+    [Tags]  Regression  Notifications  Company  real
     MarketWatchMailboxPage.Navigate Mailbox page
     MarketWatchMailboxPage.Login
     MarketWatchMailboxPage.Select Inbox

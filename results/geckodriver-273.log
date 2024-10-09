@@ -1,0 +1,14 @@
+1728409076082	geckodriver	INFO	Listening on 127.0.0.1:51340
+1728409079139	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51341" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileOMAbRZ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728409079757	Marionette	INFO	Marionette enabled
+1728409079989	Marionette	INFO	Listening on port 51352
+WebDriver BiDi listening on ws://127.0.0.1:51341
+Read port: 51352
+1728409080245	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51341/devtools/browser/38837cd5-101e-4710-9914-1eb9b48a8c6c
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m20q57sm7ywj6u4o&sid=1144071410389139719&loc=https%3A%2F%2Fwww.s.dev.mansionglobal.com%2F&new=1&arf=0&ltm=1728409088185&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m20q57x5p0hbfovd&ckp=m20q57smhdmlk31j&glb=&cp_userState=anon&cp_testGroup=54&cp_env=staging&cp_topDomain=mansionglobal.com&cp_template=full&cp_access=free&cp_section=Home&cp_subsection=&cp_cms_name=CMS%20Wordpress&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=6&cp_ab_bucket=86&cp_pageContentSource=Mansion%20Global&cp_pageContentType=Home&cp_pageContentTypeDetai=default&cp_pageSiteProduct=MG&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+1728409151778	Marionette	INFO	Stopped listening on port 51352
+Dynamically enable window occlusion 1

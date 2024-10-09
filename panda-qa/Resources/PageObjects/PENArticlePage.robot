@@ -2,7 +2,7 @@
 Library  SeleniumLibrary
 
 *** Variables ***
-${JSFollowButtonPENPath}=  document.querySelector("#pen-pre-body-article-wrap > div.clearfix.byline-wrap > div > div > ufc-follow-author-widget").shadowRoot.querySelector("ufc-follow-widget > ufc-follow-button").shadowRoot.querySelector("button")
+${JSFollowButtonPENPath}=  document.querySelector("#pen-pre-body-article-wrap > div.clearfix.byline-wrap > div > div > ufc-follow-author-widget").shadowRoot.querySelector("ufc-follow-widget > ufc-follow-button").shadowRoot.querySelector("button")  #document.querySelector("#pen-pre-body-article-wrap > div.clearfix.byline-wrap > div > div > ufc-follow-author-widget").shadowRoot.querySelector("ufc-follow-widget > ufc-follow-button").shadowRoot.querySelector("button")
 
 ${JSUndoButtonPENPath}=  document.querySelector('ufc-snackbar').shadowRoot  #1
     ...  .querySelector('div')  #2

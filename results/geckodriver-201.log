@@ -1,0 +1,35 @@
+1728374875091	geckodriver	INFO	Listening on 127.0.0.1:65349
+1728374878137	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65350" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileG2J7dw"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728374878791	Marionette	INFO	Marionette enabled
+1728374879031	Marionette	INFO	Listening on port 65359
+WebDriver BiDi listening on ws://127.0.0.1:65350
+Read port: 65359
+1728374879245	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:65350/devtools/browser/6802cf0b-7247-46e8-9e67-80bcfcf15457
+JavaScript warning: https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js, line 1: unreachable code after return statement
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m205s713ddn247ob&sid=1134002947328204066&loc=https%3A%2F%2Fwww.dev.wsj.com%2F&new=1&arf=0&ltm=1728374888347&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m205s72hnd4q8tkz&ckp=m205s713rkodd21h&glb=&cp_userState=anon&cp_testGroup=43&cp_env=staging&cp_topDomain=wsj.com&cp_template=full&cp_access=free&cp_section=US%20Home%20Page&cp_subsection=&cp_cms_name=CAPS&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=2&cp_ab_bucket=2&cp_pageContentSource=WSJ%20Online&cp_pageContentType=Home&cp_pageContentTypeDetai=desktopweb&cp_pageSiteProduct=WSJ&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+1728374891057	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://d3h0wybtovte4j.cloudfront.net/ugeovhprh.js, line 1: TypeError: URL constructor: null/foo.html?o=u&r=&l=https://www.dev.wsj.com/&aa=NA&ib=false&buster=lDbVVTkVsQEpfgEj is not a valid URL.
+JavaScript warning: https://sc-static.net/scevent.min.js, line 2: Script terminated by timeout at:
+m@https://sc-static.net/scevent.min.js:2:2789
+c@https://sc-static.net/scevent.min.js:2:6893
+
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WEoqGYGTldYSfSNCQ9Ugqu-00NFuS6e6WOK2G2Y_zzI.js line 2 > eval line 4806 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.dev.wsj.com/ line 33 > injectedScript, line 34: Script terminated by timeout at:
+CTicker.prototype._tick@https://www.dev.wsj.com/ line 33 > injectedScript:34:822
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js, line 1: Script terminated by timeout at:
+8018/g/<@https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js:1:111956
+r@https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js:1:111426
+
+JavaScript warning: https://newscorp.okta.com/assets/js/sdk/okta-signin-widget/7.23.1/js/okta-sign-in.min.js, line 88: Script terminated by timeout at:
+79602/</x.fn.extend@https://newscorp.okta.com/assets/js/sdk/okta-signin-widget/7.23.1/js/okta-sign-in.min.js:88:2290
+simulate@https://newscorp.okta.com/assets/js/sdk/okta-signin-widget/7.23.1/js/okta-sign-in.min.js:99:68690
+n@https://newscorp.okta.com/assets/js/sdk/okta-signin-widget/7.23.1/js/okta-sign-in.min.js:99:69036
+
+1728374942375	Marionette	INFO	Stopped listening on port 65359
+Dynamically enable window occlusion 1

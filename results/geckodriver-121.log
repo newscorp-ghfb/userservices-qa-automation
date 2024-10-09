@@ -1,0 +1,61 @@
+1728046700058	geckodriver	INFO	Listening on 127.0.0.1:53691
+1728046703104	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53692" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileWKzAAB"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728046703852	Marionette	INFO	Marionette enabled
+1728046704137	Marionette	INFO	Listening on port 53702
+WebDriver BiDi listening on ws://127.0.0.1:53692
+Read port: 53702
+1728046704442	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53692/devtools/browser/ad0c0ef5-aab3-498f-a974-dbd7e9045f64
+JavaScript warning: https://www.dev.marketwatch.com/_next/static/chunks/main-7c2c5b4ee7ae4ea0.js, line 1: unreachable code after return statement
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m1uqee4m7fsmo5p2&sid=1138573015853471556&loc=https%3A%2F%2Fwww.dev.marketwatch.com%2Fauthor%2FCatey-Hill&new=1&arf=0&ltm=1728046719241&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m1uqee5x3ck8myte&ckp=m1uqee4mk8x5ldak&glb=&cp_userState=anon&cp_testGroup=25&cp_env=staging&cp_topDomain=marketwatch.com&cp_template=full&cp_access=free&cp_section=Author&cp_subsection=Catey%20Hill&cp_cms_name=Peavey&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=1&cp_ab_bucket=11&cp_pageContentSource=MarketWatch&cp_pageContentType=Summaries&cp_pageContentTypeDetai=default&cp_pageSiteProduct=MW&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript error: https://d3h0wybtovte4j.cloudfront.net/ugeovhprh.js, line 1: TypeError: URL constructor: null/foo.html?o=u&r=&l=https://www.dev.marketwatch.com/author/Catey-Hill&aa=NA&ib=false&buster=rnLhLrCpUfSMKFvD is not a valid URL.
+1728046724732	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WEoqGYGTldYSfSNCQ9Ugqu-00NFuS6e6WOK2G2Y_zzI.js line 2 > eval line 2266 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.dev.marketwatch.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.dev.marketwatch.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.dev.marketwatch.com/" ({})
+JavaScript warning: https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js, line 1: Script terminated by timeout at:
+notify@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:15606
+2851/x/<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:20078
+2851/l/<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:15731
+2851/_/</<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:16996
+2851/_/r<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:16912
+2851/l/<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:15731
+2851/_/<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:16989
+7271/initialiseWebSDK/</webClient<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:161400
+3992/u/i</n<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:14883
+
+JavaScript warning: https://cdn.cxense.com/cx.js, line 6: Script terminated by timeout at:
+zn@https://cdn.cxense.com/cx.js:6:40216
+ea/<@https://cdn.cxense.com/cx.js:6:70427
+ea@https://cdn.cxense.com/cx.js:6:70519
+ra/<@https://cdn.cxense.com/cx.js:6:70614
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://ads.pubmatic.com/AdServer/js/user_sync.html?gdpr=0&gdpr_consent=null&us_privacy=&predirect=https%3A%2F%2Fserver.prebid.dianomi.com%2F%2Fsetuid%3Fbidder%3Dpubmatic%26gdpr%3D0%26gdpr_consent%3Dnull%26gpp%3D%26gpp_sid%3D%26f%3Db%26uid%3D, line 1: Script terminated by timeout at:
+F@https://ads.pubmatic.com/AdServer/js/user_sync.html?gdpr=0&gdpr_consent=null&us_privacy=&predirect=https%3A%2F%2Fserver.prebid.dianomi.com%2F%2Fsetuid%3Fbidder%3Dpubmatic%26gdpr%3D0%26gdpr_consent%3Dnull%26gpp%3D%26gpp_sid%3D%26f%3Db%26uid%3D:1:9731
+q@https://ads.pubmatic.com/AdServer/js/user_sync.html?gdpr=0&gdpr_consent=null&us_privacy=&predirect=https%3A%2F%2Fserver.prebid.dianomi.com%2F%2Fsetuid%3Fbidder%3Dpubmatic%26gdpr%3D0%26gdpr_consent%3Dnull%26gpp%3D%26gpp_sid%3D%26f%3Db%26uid%3D:1:9748
+J@https://ads.pubmatic.com/AdServer/js/user_sync.html?gdpr=0&gdpr_consent=null&us_privacy=&predirect=https%3A%2F%2Fserver.prebid.dianomi.com%2F%2Fsetuid%3Fbidder%3Dpubmatic%26gdpr%3D0%26gdpr_consent%3Dnull%26gpp%3D%26gpp_sid%3D%26f%3Db%26uid%3D:1:14129
+x@https://ads.pubmatic.com/AdServer/js/user_sync.html?gdpr=0&gdpr_consent=null&us_privacy=&predirect=https%3A%2F%2Fserver.prebid.dianomi.com%2F%2Fsetuid%3Fbidder%3Dpubmatic%26gdpr%3D0%26gdpr_consent%3Dnull%26gpp%3D%26gpp_sid%3D%26f%3Db%26uid%3D:1:10976
+
+JavaScript warning: https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.dev.marketwatch.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.868314468453595%22,%22tld%22:%22www.dev.marketwatch.com%22,%22topUrl%22:%22www.dev.marketwatch.com%22,%22version%22:%229_12_0%22}, line 13: Script terminated by timeout at:
+r.prototype.flushEventQueue@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.dev.marketwatch.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.868314468453595%22,%22tld%22:%22www.dev.marketwatch.com%22,%22topUrl%22:%22www.dev.marketwatch.com%22,%22version%22:%229_12_0%22}:13:3137
+r/<@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.dev.marketwatch.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.868314468453595%22,%22tld%22:%22www.dev.marketwatch.com%22,%22topUrl%22:%22www.dev.marketwatch.com%22,%22version%22:%229_12_0%22}:13:3642
+
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.dev.marketwatch.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.dev.marketwatch.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.dev.marketwatch.com/" ({})
+[GFX1-]: CompositorBridgeChild receives IPC close with[GFX1-]: Composi[GF[GFXX1-1-]: CompositorBridge]Child receives IPC close with reason=AbnormalShutdown
+: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+ reason[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+=torBridgeChild receives IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.

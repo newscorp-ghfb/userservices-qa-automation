@@ -94,7 +94,7 @@ Validate Authors for Barrons Article page without byline
 #US-T217
 Validate the Watchlist widget from Watchlist page
     [Documentation]  This test case validates the watchlist widget from watchlist page
-    [Tags]  Regression  Watchlist      Follow1
+    [Tags]  Regression  Watchlist      215
 
     CommonFunctionality.Start Barrons for Watchlist page
     DefinedKeywords.Sign In Process
@@ -138,12 +138,25 @@ Validate the Watchlist widget from Watchlist
     #BarronsWatchlistPage.Validate Default New Watchlist
     #BarronsWatchlistPage.Validate No Symbol in Default New Watchlist
 
+#US-3892
+Validate the Watchlist widget from Watchlist
+    [Documentation]  This test case validates the watchlist widget xZfrom watchlist page
+    [Tags]  Regression  Watchlist  TagSPW
+
+    CommonFunctionality.Start Barrons Stock Picks
+    DefinedKeywords.Barrons Stock Pick Sign In Process
+    Set Selenium Speed  0.5 seconds
+    Execute javascript  window.scrollTo(0,500)
+    BarronsWatchlistPage.Click Search
+
+
+
 #US-T248
 #US-T249
 #US-T250
 Validate the Watchlist widget from Quotes page
     [Documentation]  This test case validates the watchlist widget from quotes page
-    [Tags]  Regression  Watchlist  QuotesPage     Follow1
+    [Tags]  Regression  Watchlist  QuotesPage     follow
 
     CommonFunctionality.Start Barrons for Quotes page
     DefinedKeywords.Barrons Quote Page Sign in Process
@@ -200,7 +213,7 @@ Verify if a user is able to navigate to Barrons Stock Screener and subscribe in 
 #US-T130
 Validate the Watchlist widget from Market Data page
     [Documentation]  This test case validates the watchlist widget from market data page
-    [Tags]  Regression  Watchlist  MarketdataPage   Follow1
+    [Tags]  Regression  Watchlist  MarketdataPage   JJ
 
     CommonFunctionality.Start Barrons for Market Data page
     BarronsMarketDataPage.Validate Watchlist for non-logged user
@@ -230,7 +243,7 @@ Validate the Watchlist widget from Market Data page
 #US-T136
 Validate the Barrons digest notification
     [Documentation]  This test case validates the Barrons digest notification
-    [Tags]  Regression  Notifications             Follow1
+    [Tags]  Regression  Notifications             digest
     BarronsMailboxPage.Navigate Mailbox page
     BarronsMailboxPage.Login
     BarronsMailboxPage.Select Inbox
@@ -260,7 +273,7 @@ Validate the Barrons real-time company notification
 #US-T139
 Validate the Barrons real-time stock picks notification
     [Documentation]  This test case validates the Barrons real-time stock picks notification
-    [Tags]  Regression  Notifications  CustomTopic   Follow1
+    [Tags]  Regression  Notifications  CustomTopic   SP
     BarronsMailboxPage.Navigate Mailbox page
     BarronsMailboxPage.Login
     BarronsMailboxPage.Select Inbox

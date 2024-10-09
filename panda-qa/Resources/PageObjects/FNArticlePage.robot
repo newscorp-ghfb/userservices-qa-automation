@@ -3,7 +3,7 @@ Library  SeleniumLibrary
 Resource  ../../Resources/CommonFunctionality.robot
 
 *** Variables ***
-${JSFollowButtonFNPath}=  document.querySelector("#fn-pre-body-article-wrap > div.clearfix.byline-wrap > div > div > div > ufc-follow-author-widget").shadowRoot.querySelector("ufc-follow-widget > ufc-follow-button").shadowRoot.querySelector("button")
+${JSFollowButtonFNPath}=  document.querySelector("#fn-pre-body-article-wrap > div.clearfix.byline-wrap > div > div > div > ufc-follow-author-widget").shadowRoot.querySelector("ufc-follow-widget > ufc-follow-button").shadowRoot.querySelector("button")  #document.querySelector("#fn-pre-body-article-wrap > div.clearfix.byline-wrap > div > div > div > ufc-follow-author-widget").shadowRoot.querySelector("ufc-follow-widget > ufc-follow-button").shadowRoot.querySelector("button")
 
 ${JSFollowingButtonFNPath}=  document.querySelector("#fn-pre-body-article-wrap > div.clearfix.byline-wrap > div > div > div > ufc-follow-author-widget").shadowRoot.querySelector("ufc-follow-widget > ufc-follow-button").shadowRoot.querySelector("button")
 
@@ -36,7 +36,7 @@ ${JSFollowSignInHeaderPath}=  document.querySelector("#fn_header > div > div > d
 
 *** Keywords ***
 Validate Follow Button
-    Wait Until Element is Visible  dom:${JSFollowButtonFNPath}
+    Wait Until Element is Visible   dom:${JSFollowButtonFNPath}
 
 Scroll Down
     Execute javascript  window.scrollTo(0,500)

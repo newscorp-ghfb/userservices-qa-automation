@@ -1,0 +1,19 @@
+1728398762828	geckodriver	INFO	Listening on 127.0.0.1:59094
+1728398765853	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59095" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileXuLmLy"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728398766512	Marionette	INFO	Marionette enabled
+1728398766770	Marionette	INFO	Listening on port 59102
+Read port: 59102
+WebDriver BiDi listening on ws://127.0.0.1:59095
+1728398766913	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59095/devtools/browser/6dd4c97f-0fc9-46da-b635-a837c2381af2
+JavaScript warning: https://www.dev.wsj.com/, line 193: Script terminated by timeout at:
+globalMessaging@https://www.dev.wsj.com/:193:3983
+@https://www.dev.wsj.com/:997:22
+@https://www.dev.wsj.com/:998:15
+
+1728398771162	Marionette	INFO	Stopped listening on port 59102
+Dynamically enable window occlusion 1
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))

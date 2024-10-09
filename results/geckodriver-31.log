@@ -1,0 +1,224 @@
+1727690509663	geckodriver	INFO	Listening on 127.0.0.1:51841
+1727690512712	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51842" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofile2o2lRC"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727690513280	Marionette	INFO	Marionette enabled
+1727690513518	Marionette	INFO	Listening on port 51849
+Read port: 51849
+WebDriver BiDi listening on ws://127.0.0.1:51842
+1727690513631	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51842/devtools/browser/785b83f7-315c-4b9d-aac9-d4be37427771
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m1oubr6l1i9n8r7y&sid=9222325317970825875&loc=https%3A%2F%2Fwww.barrons.com%2F&new=1&arf=0&ltm=1727690517601&ref=&tzo=-330&wsz=1280x595&res=1280x720&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m1oubr9rzavfh8lo&ckp=m1oubr6l7zjr6v30&glb=&cp_userState=anon&cp_testGroup=80&cp_topDomain=barrons.com&cp_access=free&cp_section=US%20Home%20Page%20Weekday&cp_subsection=&cp_cms_name=CAPS&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=5&cp_ab_bucket=75&cp_pageContentSource=Barrons%20Online&cp_pageContentType=Home&cp_pageContentTypeDetai=default&cp_pageSiteProduct=BOL&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript error: https://asset.barrons.com/fp/assets/webpack4/runtime.6d26069f71aa13.js, line 1: ChunkLoadError: Loading chunk 877 failed.
+(error: https://asset.barrons.com/fp/assets/webpack4/877.4e5d331222ef02.js)
+JavaScript error: https://asset.barrons.com/fp/assets/webpack4/runtime.6d26069f71aa13.js, line 1: ChunkLoadError: Loading chunk 877 failed.
+(error: https://asset.barrons.com/fp/assets/webpack4/877.4e5d331222ef02.js)
+JavaScript error: https://asset.barrons.com/fp/assets/webpack4/runtime.6d26069f71aa13.js, line 1: ChunkLoadError: Loading chunk 877 failed.
+(error: https://asset.barrons.com/fp/assets/webpack4/877.4e5d331222ef02.js)
+JavaScript error: https://asset.barrons.com/fp/assets/webpack4/runtime.6d26069f71aa13.js, line 1: ChunkLoadError: Loading chunk 877 failed.
+(error: https://asset.barrons.com/fp/assets/webpack4/877.4e5d331222ef02.js)
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.barrons.com/asset/dj-watchlist/v1.11.0/p-8e3b6675.entry.js, line 11: TypeError: Error.captureStackTrace is not a function
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 16ms)
+console.error: ({})
+console.error: ({})
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m1oubwew2k95lsqv&sid=9222325317970825875&loc=https%3A%2F%2Fwww.s.dev.barrons.com%2Farticles%2Fbuy-under-armour-stock-pick-51650672000&new=0&arf=0&ltm=1727690524393&ref=&tzo=-330&wsz=1280x595&res=1280x720&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m1oubx6p80unk4rf&ckp=m1oubr6l7zjr6v30&glb=&amo=1720048200&cp_userState=anon&cp_testGroup=80&cp_topDomain=barrons.com&cp_pwTag=default&cp_pwPlacement=cx-snippetad&cp_pwCampaign=10&cp_pwType=personalized&cp_type=Retail&cp_template=preview&cp_access=paid&cp_section=Retail&cp_subsection=Sizing%20Up%20Small-Caps&cp_cms_name=Methode&cp_vix=&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=5&cp_ab_bucket=75&cp_pageContentSource=Barrons%20Online&cp_pageContentType=Article&cp_pageContentTypeDetai=continuous&cp_pageSiteProduct=BOL&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+1727690527214	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/Ofjd5SEjadZox9_ebcUE7qVtcVJKxbTf46gjSEHhnaE.js line 2 > eval line 5736 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/Ofjd5SEjadZox9_ebcUE7qVtcVJKxbTf46gjSEHhnaE.js line 2 > eval line 7559 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js, line 48: Script terminated by timeout at:
+Ra@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:551
+Sa@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:418
+ph/c/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:138:292
+tc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:83:903
+ad.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:90:806
+tc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+ph/c/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:138:320
+Ta@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:49:339
+Qa.prototype.flush@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:49:127
+Sa@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:465
+ph/c/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:138:292
+tc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+lg/</</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:121:516
+Pa.prototype.Ob/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:297
+lg/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:121:525
+tc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+lg/</</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:121:516
+Pa.prototype.Ob/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:297
+lg/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:121:525
+tc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+h@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:94:477
+
+JavaScript warning: https://pagead2.googlesyndication.com/bg/Ofjd5SEjadZox9_ebcUE7qVtcVJKxbTf46gjSEHhnaE.js line 2 > eval line 5504 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/Ofjd5SEjadZox9_ebcUE7qVtcVJKxbTf46gjSEHhnaE.js line 2 > eval line 371 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js, line 91: Script terminated by timeout at:
+ad.prototype.ya@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:91:105
+n.td@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:82:795
+n.td@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:84:216
+n.subscribe@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:82:745
+hd.prototype.ya@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:91:1838
+n.subscribe@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:82:734
+gd/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:91:1643
+N/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:91:1368
+n.subscribe@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:82:717
+ph/c/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:138:268
+n.td@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:82:795
+n.subscribe@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:82:745
+O/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:92:439
+N/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:91:1368
+n.subscribe@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:82:717
+lf@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:103:1095
+kf.prototype.H@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:103:856
+je.prototype.H@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:99:780
+Bo/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:257:200
+Bo/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:257:178
+O/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:92:478
+M/this.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:91:888
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:83:903
+ad.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:90:806
+tc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:83:903
+ad.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:90:806
+tc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:83:903
+ad.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:90:806
+tc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:83:903
+ad.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:90:806
+tc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+cf/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:102:3810
+M/this.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:91:888
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+O/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:92:471
+M/this.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:91:888
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+mo/</h/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:249:1969
+Ta@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:49:339
+Qa.prototype.flush@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:49:147
+Sa@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:465
+ph/c/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:138:292
+tc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+lg/</</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:121:516
+Pa.prototype.Ob/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:297
+lg/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:121:525
+tc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+lg/</</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:121:516
+Pa.prototype.Ob/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:297
+lg/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:121:525
+tc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+h@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:94:477
+
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js, line 121: Script terminated by timeout at:
+n.now@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:121:848
+wp/</r<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:272:173
+tc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:83:903
+Jr/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:305:1144
+O/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:92:478
+M/this.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:91:888
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+Q/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:97:1195
+M/this.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:91:888
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+Rd/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:97:1542
+M/this.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:91:888
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+ph/c/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:138:320
+Ta@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:49:339
+Qa.prototype.flush@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:49:127
+Sa@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:465
+ph/c/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:138:292
+tc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+lg/</</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:121:516
+Pa.prototype.Ob/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:297
+lg/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:121:525
+tc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+lg/</</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:121:516
+Pa.prototype.Ob/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:297
+lg/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:121:525
+tc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+h@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:94:477
+
+JavaScript warning: https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js, line 1: Script terminated by timeout at:
+isEnabled@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:173532
+trackRequestMetrics@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:93520
+reqWithBeacon@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:91844
+metricsBeacon@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:88765
+6478/p/f/d</</<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:52888
+6478/p/f/d</<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:52948
+3582/E/</</<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:247301
+3582/_/a/</<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:246882
+3582/_/a/<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:246987
+3582/f/<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:245923
+f@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:245668
+3582/E/<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:247178
+5151/g/</</<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:244268
+
+1727690601975	Marionette	INFO	Stopped listening on port 51849
+Dynamically enable window occlusion 1

@@ -30,7 +30,8 @@ Validate the follow button from articles page
     Set Selenium Implicit Wait  20
     FNArticlePage.Scroll Down
     Set Selenium Implicit Wait  40
-    FNArticlePage.Scroll Down
+    #FNArticlePage.Scroll Down
+    Execute javascript  window.scrollTo(0,500)
     FNArticlePage.Validate Follow Button
     FNArticlePage.Click Follow Button
 

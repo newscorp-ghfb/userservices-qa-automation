@@ -1,0 +1,84 @@
+1728459828796	geckodriver	INFO	Listening on 127.0.0.1:60732
+1728459831849	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60733" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileDsYXts"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728459832458	Marionette	INFO	Marionette enabled
+1728459832700	Marionette	INFO	Listening on port 60742
+WebDriver BiDi listening on ws://127.0.0.1:60733
+Read port: 60742
+1728459832957	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60733/devtools/browser/b1a84248-c19a-4c61-90b0-055f9eb9daeb
+JavaScript warning: https://www.dev.marketwatch.com/_next/static/chunks/main-7c2c5b4ee7ae4ea0.js, line 1: unreachable code after return statement
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m21kd4owqgiznqoh&sid=1138573015853471556&loc=https%3A%2F%2Fwww.dev.marketwatch.com%2Fauthor%2FCatey-Hill&new=1&arf=0&ltm=1728459845892&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m21kd4q8nk33uozh&ckp=m21kd4ow1fpsalx3&glb=&cp_userState=anon&cp_testGroup=89&cp_env=staging&cp_topDomain=marketwatch.com&cp_template=full&cp_access=free&cp_section=Author&cp_subsection=Catey%20Hill&cp_cms_name=Peavey&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=4&cp_ab_bucket=14&cp_pageContentSource=MarketWatch&cp_pageContentType=Summaries&cp_pageContentTypeDetai=default&cp_pageSiteProduct=MW&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript warning: https://cdn.doubleverify.com/dv-measurements6793.js, line 2: Script terminated by timeout at:
+131/e.wrapFunction/<@https://cdn.doubleverify.com/dv-measurements6793.js:2:342749
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://fpt.live.com/?session_id=67df8dbf8313496c871e90555c613f78&CustomerId=33e01921-4d64-4f8c-a055-5bdaffd5e33d&PageId=SI, line 5: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+1728459859234	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ib.3lift.com/rev/6b634f21eb4cd90a349bdd9108bd5ad5aebc0cbf/dist/bundle.js, line 1: SecurityError: Permission denied to access property "__gpp" on cross-origin object
+1728459865662	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1728459865671	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+JavaScript warning: https://res-1.cdn.office.net/midgard/versionless/livepersonacard_without-react_4e09eb534f633f2b7d57.js, line 2: unreachable code after return statement
+JavaScript warning: https://cdn.adnxs.com/v/s/246/trk.js, line 334: Script terminated by timeout at:
+cf@https://cdn.adnxs.com/v/s/246/trk.js:334:84
+_e@https://cdn.adnxs.com/v/s/246/trk.js:513:127
+mi@https://cdn.adnxs.com/v/s/246/trk.js:557:831
+gi@https://cdn.adnxs.com/v/s/246/trk.js:139:30
+Kh@https://cdn.adnxs.com/v/s/246/trk.js:521:194
+Uh@https://cdn.adnxs.com/v/s/246/trk.js:365:60
+Cc@https://cdn.adnxs.com/v/s/246/trk.js:449:76
+_.B@https://cdn.adnxs.com/v/s/246/trk.js:560:3327
+_.C@https://cdn.adnxs.com/v/s/246/trk.js:560:1400
+md/<@https://cdn.adnxs.com/v/s/246/trk.js:560:5653
+
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js, line 91: Script terminated by timeout at:
+M/this.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:91:879
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+R/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:102:1458
+M/this.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:91:888
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+ph/c/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:139:320
+Ua@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:49:339
+Ra.prototype.flush@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:49:127
+Ta@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:483
+ph/c/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:139:292
+sc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+lg/</</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:122:516
+Qa.prototype.Nb/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:315
+lg/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:122:525
+sc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+lg/</</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:122:516
+Qa.prototype.Nb/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:315
+lg/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:122:525
+sc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+h@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:94:477
+
+1728459918194	Marionette	INFO	Stopped listening on port 60742
+JavaScript warning: https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.AppBoot.m.d5c9c439.js, line 9: Script terminated by timeout at:
+S@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.AppBoot.m.d5c9c439.js:9:7135
+w@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.AppBoot.m.d5c9c439.js:9:7170
+u@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.AppBoot.m.d5c9c439.js:9:2575
+62167/et/ee</<@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.62167.m.98a00357.js:1:8084
+62167/et/ee<@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.62167.m.98a00357.js:1:8334
+
+Dynamically enable window occlusion 1

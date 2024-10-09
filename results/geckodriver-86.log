@@ -1,0 +1,64 @@
+1727700269364	geckodriver	INFO	Listening on 127.0.0.1:63563
+1727700272673	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63564" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileSfZPiv"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727700273729	Marionette	INFO	Marionette enabled
+1727700274071	Marionette	INFO	Listening on port 63670
+WebDriver BiDi listening on ws://127.0.0.1:63564
+Read port: 63670
+1727700274312	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63564/devtools/browser/92bdf1c6-11c7-4cef-8fc6-bc0bf0aeb9ef
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m1p04ycviq0j5qvh&sid=9222325317970825875&loc=https%3A%2F%2Fwww.barrons.com%2F&new=1&arf=0&ltm=1727700278007&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m1p04ykbt3g866ih&ckp=m1p04ycv263sbf7z&glb=&cp_userState=anon&cp_testGroup=3&cp_topDomain=barrons.com&cp_access=free&cp_section=US%20Home%20Page%20Weekday&cp_subsection=&cp_cms_name=CAPS&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=6&cp_ab_bucket=36&cp_pageContentSource=Barrons%20Online&cp_pageContentType=Home&cp_pageContentTypeDetai=default&cp_pageSiteProduct=BOL&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://imasdk.googleapis.com/js/core/bridge3.668.1_en.html#goog_1975153493, line 455: Script terminated by timeout at:
+OB@https://imasdk.googleapis.com/js/core/bridge3.668.1_en.html#goog_1975153493:455:310
+SB/this.aa@https://imasdk.googleapis.com/js/core/bridge3.668.1_en.html#goog_1975153493:453:29
+
+JavaScript error: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 10: Error: Error while loading plugin at URL: 'https://aswpsdkeu.com/notify/v1/ua-html-prompt.min.js'
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript warning: https://imasdk.googleapis.com/js/core/bridge3.668.1_en.html#goog_1975153494, line 455: Script terminated by timeout at:
+OB@https://imasdk.googleapis.com/js/core/bridge3.668.1_en.html#goog_1975153494:455:310
+SB/this.aa@https://imasdk.googleapis.com/js/core/bridge3.668.1_en.html#goog_1975153494:453:29
+
+JavaScript warning: https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.barrons.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.20819842146815803%22,%22tld%22:%22www.barrons.com%22,%22topUrl%22:%22www.barrons.com%22,%22version%22:%229_12_0%22}, line 13: Script terminated by timeout at:
+r.prototype.flushEventQueue@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.barrons.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.20819842146815803%22,%22tld%22:%22www.barrons.com%22,%22topUrl%22:%22www.barrons.com%22,%22version%22:%229_12_0%22}:13:3137
+r/<@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.barrons.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.20819842146815803%22,%22tld%22:%22www.barrons.com%22,%22topUrl%22:%22www.barrons.com%22,%22version%22:%229_12_0%22}:13:3642
+
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 7ms)
+JavaScript error: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 10: Error: Piano SDK is loaded twice on same page. Try to fix that to prevent the message.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/Ofjd5SEjadZox9_ebcUE7qVtcVJKxbTf46gjSEHhnaE.js line 2 > eval line 7812 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727700299902	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:467:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:220:33
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://cdn.parsely.com/keys/barrons.com/p.js, line 7: Script terminated by timeout at:
+n@https://cdn.parsely.com/keys/barrons.com/p.js:7:21110
+b@https://cdn.parsely.com/keys/barrons.com/p.js:7:22457
+t@https://cdn.parsely.com/keys/barrons.com/p.js:7:22572
+value@https://cdn.parsely.com/keys/barrons.com/p.js:7:24365
+value@https://cdn.parsely.com/keys/barrons.com/p.js:7:24771
+
+1727700300959	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1727700300961	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+JavaScript warning: https://sso.int.accounts.dowjones.com/one_identity_login_pages/login/8ef5d3ebeaef210670e951a3a15529f6/js/vendor.js, line 51: Script terminated by timeout at:
+BE@https://sso.int.accounts.dowjones.com/one_identity_login_pages/login/8ef5d3ebeaef210670e951a3a15529f6/js/vendor.js:51:4767
+b@https://sso.int.accounts.dowjones.com/one_identity_login_pages/login/8ef5d3ebeaef210670e951a3a15529f6/js/vendor.js:49:13806
+
+1727700323215	Marionette	INFO	Stopped listening on port 63670
+JavaScript warning: https://www.s.dev.barrons.com/_next/static/chunks/fe024cd3.f1a3ff4f985f1d0a.js, line 1: Script terminated by timeout at:
+6862/ChartDefinition</u<@https://www.s.dev.barrons.com/_next/static/chunks/fe024cd3.f1a3ff4f985f1d0a.js:1:279224
+getDefinition@https://www.s.dev.barrons.com/_next/static/chunks/8106-e2710852fef7c471.js:30:1823
+69960/useMichelangelo$1/</t<@https://www.s.dev.barrons.com/_next/static/chunks/9738-e5a526bdd46133aa.js:1:2063
+
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+Dynamically enable window occlusion 1

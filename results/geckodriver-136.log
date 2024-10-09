@@ -1,0 +1,50 @@
+1728048576361	geckodriver	INFO	Listening on 127.0.0.1:55331
+1728048579511	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55332" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileY02UgL"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728048581628	Marionette	INFO	Marionette enabled
+1728048582533	Marionette	INFO	Listening on port 55453
+WebDriver BiDi listening on ws://127.0.0.1:55332
+Read port: 55453
+1728048583182	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:55332/devtools/browser/7d2c4633-1fdc-4677-898b-fa21525cdcf2
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript warning: https://www.marketwatch.com/, line 358: Script terminated by timeout at:
+i@https://www.marketwatch.com/:358:17917
+nrWrapper@https://www.marketwatch.com/:358:17870
+fetchURL/</<@https://www.marketwatch.com/aiq/marketwatch-prod.js:20:72081
+nrWrapper@https://www.marketwatch.com/:358:17810
+e@https://www.marketwatch.com/:358:52590
+fetchURL/<@https://www.marketwatch.com/aiq/marketwatch-prod.js:20:71793
+yt/<@https://www.marketwatch.com/aiq/marketwatch-prod.js:20:71009
+nrWrapper@https://www.marketwatch.com/:358:17810
+e@https://www.marketwatch.com/:358:52590
+yt@https://www.marketwatch.com/aiq/marketwatch-prod.js:20:70829
+fetchURL@https://www.marketwatch.com/aiq/marketwatch-prod.js:20:71761
+runCrossDomainSyncs/</<@https://www.marketwatch.com/aiq/marketwatch-prod.js:20:72300
+runCrossDomainSyncs/<@https://www.marketwatch.com/aiq/marketwatch-prod.js:20:72275
+yt/<@https://www.marketwatch.com/aiq/marketwatch-prod.js:20:71009
+nrWrapper@https://www.marketwatch.com/:358:17810
+e@https://www.marketwatch.com/:358:52590
+yt@https://www.marketwatch.com/aiq/marketwatch-prod.js:20:70829
+runCrossDomainSyncs@https://www.marketwatch.com/aiq/marketwatch-prod.js:20:72140
+execute/<@https://www.marketwatch.com/aiq/marketwatch-prod.js:20:71466
+o@https://www.marketwatch.com/aiq/marketwatch-prod.js:20:70867
+nrWrapper@https://www.marketwatch.com/:358:17810
+
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS, line 200: Script terminated by timeout at:
+Kc@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:200:321
+nG@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:648:262
+pG.prototype.flush@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:652:300
+ba.flush@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:669:132
+FH/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:680:210
+ba.Qk/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:623:126
+ba.Qk/c/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:622:420
+
+1728048631536	Marionette	INFO	Stopped listening on port 55453
+Dynamically enable window occlusion 1

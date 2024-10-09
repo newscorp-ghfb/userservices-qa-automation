@@ -1,0 +1,77 @@
+1727693034988	geckodriver	INFO	Listening on 127.0.0.1:53243
+1727693038191	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53244" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofilee6EzCL"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727693039146	Marionette	INFO	Marionette enabled
+1727693039505	Marionette	INFO	Listening on port 53344
+WebDriver BiDi listening on ws://127.0.0.1:53244
+Read port: 53344
+1727693039869	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53244/devtools/browser/e129be6e-5899-4d3b-8e7c-06644a56fd3f
+console.error: ({})
+console.error: ({})
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m1ovtzxk8opnpynb&sid=9222325317970825875&loc=https%3A%2F%2Fwww.s.dev.barrons.com%2F&new=1&arf=0&ltm=1727693048364&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m1ovu04f2lqx72t5&ckp=m1ovtzxkqr12fkqn&glb=&amo=1726570740&cp_userState=anon&cp_testGroup=8&cp_env=staging&cp_topDomain=barrons.com&cp_pwTag=default&cp_pwPlacement=cx-snippetad&cp_pwCampaign=10&cp_pwType=personalized&cp_type=&cp_template=preview&cp_access=paid&cp_section=&cp_subsection=&cp_cms_name=Barron's%20Authoring%20QA&cp_vix=&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=7&cp_ab_bucket=87&cp_pageContentSource=Barrons%20Online&cp_pageContentType=Article&cp_pageContentTypeDetai=continuous&cp_pageSiteProduct=BOL&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript error: https://instant.page/5.1.0, line 1: SyntaxError: redeclaration of var e
+JavaScript error: https://www.s.dev.barrons.com/_next/static/chunks/framework-1093784b1a58324b.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.s.dev.barrons.com/_next/static/chunks/framework-1093784b1a58324b.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.s.dev.barrons.com/_next/static/chunks/framework-1093784b1a58324b.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.s.dev.barrons.com/_next/static/chunks/framework-1093784b1a58324b.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.s.dev.barrons.com/_next/static/chunks/framework-1093784b1a58324b.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.s.dev.barrons.com/_next/static/chunks/framework-1093784b1a58324b.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.s.dev.barrons.com/_next/static/chunks/framework-1093784b1a58324b.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.s.dev.barrons.com/_next/static/chunks/framework-1093784b1a58324b.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.s.dev.barrons.com/_next/static/chunks/framework-1093784b1a58324b.js, line 9: Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://djcs-multi-region-assets-ohio.s3.us-east-2.amazonaws.com/dj-watchlist/asset/dj-watchlist/qa/v1.12.0-beta.85/p-c4e7c817.entry.js, line 11: TypeError: Error.captureStackTrace is not a function
+JavaScript error: https://video-api.stg.wsj.com/api-video/player/v3/js/video.min.js, line 56: TypeError: this._adContainer is null
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 9ms)
+JavaScript warning: https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.0eXORzFfzfU.es5.O/am=AMGAGQ/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4LpzYUKp_ZcvThenLf86tdLtnqaQ/m=_b,_tp, line 286: Script terminated by timeout at:
+c@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.0eXORzFfzfU.es5.O/am=AMGAGQ/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4LpzYUKp_ZcvThenLf86tdLtnqaQ/m=_b,_tp:286:187
+b@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.0eXORzFfzfU.es5.O/am=AMGAGQ/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4LpzYUKp_ZcvThenLf86tdLtnqaQ/m=_b,_tp:277:48
+
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript error: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 10: Error: Piano SDK is loaded twice on same page. Try to fix that to prevent the message.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/Ofjd5SEjadZox9_ebcUE7qVtcVJKxbTf46gjSEHhnaE.js line 2 > eval line 5197 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727693064884	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:467:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:220:33
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://www.s.dev.barrons.com/_next/static/chunks/1747-f41dfd6fac562e9c.js, line 1: Script terminated by timeout at:
+run@https://www.s.dev.barrons.com/_next/static/chunks/1747-f41dfd6fac562e9c.js:1:26973
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+1727693083071	Marionette	INFO	Stopped listening on port 53344
+Dynamically enable window occlusion 1

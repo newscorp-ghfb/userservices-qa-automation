@@ -1,0 +1,123 @@
+1728406932031	geckodriver	INFO	Listening on 127.0.0.1:52582
+1728406935085	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52583" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileaus74N"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728406935751	Marionette	INFO	Marionette enabled
+1728406935995	Marionette	INFO	Listening on port 52590
+WebDriver BiDi listening on ws://127.0.0.1:52583
+Read port: 52590
+1728406936215	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52583/devtools/browser/5c82ee06-50c3-4489-8143-9bee03e06213
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m20ov7j66ny65ld3&sid=1139592114930554183&loc=https%3A%2F%2Fwww.s.dev.fnlondon.com%2F&new=1&arf=0&ltm=1728406941669&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m20ov7lrjuhyqafi&ckp=m20ov7j6boh3qgnr&glb=&cp_userState=anon&cp_testGroup=37&cp_env=staging&cp_topDomain=fnlondon.com&cp_template=full&cp_access=free&cp_section=Home&cp_subsection=&cp_cms_name=CAPS&cp_subscriber=nonsubscriber&cp_edition=europegb&cp_bucket=5&cp_ab_bucket=5&cp_pageContentSource=FN%20London&cp_pageContentType=Home&cp_pageContentTypeDetai=default&cp_pageSiteProduct=FN&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WEoqGYGTldYSfSNCQ9Ugqu-00NFuS6e6WOK2G2Y_zzI.js line 2 > eval line 3652 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://asset.barrons.com/article/public/fn_full_article.dfb75bf78e25.js, line 62: TypeError: e(...).offset() is undefined
+JavaScript error: https://asset.barrons.com/article/public/fn_full_article.dfb75bf78e25.js, line 26: TypeError: e(...).offset() is undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WEoqGYGTldYSfSNCQ9Ugqu-00NFuS6e6WOK2G2Y_zzI.js line 2 > eval line 2429 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://asset.barrons.com/article/public/fn_full_article.dfb75bf78e25.js, line 26: TypeError: e(...).offset() is undefined
+JavaScript warning: https://cdn.parsely.com/keys/fnlondon.com/p.js, line 7: Script terminated by timeout at:
+value/n<@https://cdn.parsely.com/keys/fnlondon.com/p.js:7:24273
+value@https://cdn.parsely.com/keys/fnlondon.com/p.js:7:24274
+value@https://cdn.parsely.com/keys/fnlondon.com/p.js:7:24771
+
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+JavaScript warning: https://sso.int.accounts.dowjones.com/one_identity_login_pages/login/8ef5d3ebeaef210670e951a3a15529f6/js/vendor.js, line 51: Script terminated by timeout at:
+BE@https://sso.int.accounts.dowjones.com/one_identity_login_pages/login/8ef5d3ebeaef210670e951a3a15529f6/js/vendor.js:51:4767
+b@https://sso.int.accounts.dowjones.com/one_identity_login_pages/login/8ef5d3ebeaef210670e951a3a15529f6/js/vendor.js:49:13806
+
+JavaScript error: https://asset.barrons.com/article/public/fn_full_article.dfb75bf78e25.js, line 62: TypeError: e(...).offset() is undefined
+1728406962805	Marionette	INFO	Stopped listening on port 52590
+JavaScript warning: https://c.amazon-adsystem.com/aax2/apstag.js, line 4: Script terminated by timeout at:
+s@https://c.amazon-adsystem.com/aax2/apstag.js:4:5431
+b/<.displayAdServer<@https://c.amazon-adsystem.com/aax2/apstag.js:4:10425
+b@https://c.amazon-adsystem.com/aax2/apstag.js:4:10473
+dispatch@https://c.amazon-adsystem.com/aax2/apstag.js:4:13650
+s/<@https://c.amazon-adsystem.com/aax2/apstag.js:4:195800
+p/<@https://c.amazon-adsystem.com/aax2/apstag.js:4:4478
+t.prototype.isAPStagAllowedToAccessInfoOnDevice@https://c.amazon-adsystem.com/aax2/apstag.js:2:24860
+t.prototype.updateUserConsent@https://c.amazon-adsystem.com/aax2/apstag.js:2:24929
+t.prototype.isAllowedToAccessInfoOnDevice@https://c.amazon-adsystem.com/aax2/apstag.js:2:24731
+t.prototype.isBrowserStorageAllowed@https://c.amazon-adsystem.com/aax2/apstag.js:2:25204
+t.prototype.readCookieStorage@https://c.amazon-adsystem.com/aax2/apstag.js:2:25330
+ye@https://c.amazon-adsystem.com/aax2/apstag.js:2:60604
+handler/</<@https://c.amazon-adsystem.com/aax2/apstag.js:2:60343
+i/c/</<@https://c.amazon-adsystem.com/aax2/apstag.js:2:2276
+i/c/<@https://c.amazon-adsystem.com/aax2/apstag.js:2:2381
+r/<@https://c.amazon-adsystem.com/aax2/apstag.js:2:1297
+r@https://c.amazon-adsystem.com/aax2/apstag.js:2:1042
+handler@https://c.amazon-adsystem.com/aax2/apstag.js:2:60257
+t.prototype.wrapHandler/V/V</<@https://c.amazon-adsystem.com/aax2/apstag.js:2:19484
+i/c/</<@https://c.amazon-adsystem.com/aax2/apstag.js:2:2276
+i/c/<@https://c.amazon-adsystem.com/aax2/apstag.js:2:2381
+r/<@https://c.amazon-adsystem.com/aax2/apstag.js:2:1297
+r@https://c.amazon-adsystem.com/aax2/apstag.js:2:1042
+t.prototype.wrapHandler/V@https://c.amazon-adsystem.com/aax2/apstag.js:2:19266
+t.prototype.addListenerToPromiseRace@https://c.amazon-adsystem.com/aax2/apstag.js:2:35013
+t.prototype.executeListenerRace@https://c.amazon-adsystem.com/aax2/apstag.js:2:35471
+t.prototype.dispatchEvent@https://c.amazon-adsystem.com/aax2/apstag.js:2:37188
+t.prototype.dispatchAccount/<@https://c.amazon-adsystem.com/aax2/apstag.js:2:37700
+t.prototype.dispatchAccount@https://c.amazon-adsystem.com/aax2/apstag.js:2:37670
+t.prototype.dispatch/<@https://c.amazon-adsystem.com/aax2/apstag.js:2:40869
+t.prototype.dispatch@https://c.amazon-adsystem.com/aax2/apstag.js:2:40839
+t.prototype.observeAccountQueuesPush/</e.queue.push@https://c.amazon-adsystem.com/aax2/apstag.js:2:29061
+t.prototype.recordListener/$</</<@https://c.amazon-adsystem.com/aax2/apstag.js:2:22238
+t.prototype.recordListener/$</<@https://c.amazon-adsystem.com/aax2/apstag.js:2:22203
+i/c/</<@https://c.amazon-adsystem.com/aax2/apstag.js:2:2276
+i/c/<@https://c.amazon-adsystem.com/aax2/apstag.js:2:2381
+r/<@https://c.amazon-adsystem.com/aax2/apstag.js:2:1297
+r@https://c.amazon-adsystem.com/aax2/apstag.js:2:1042
+t.prototype.recordListener@https://c.amazon-adsystem.com/aax2/apstag.js:2:22100
+handler/</<@https://c.amazon-adsystem.com/aax2/apstag.js:2:62976
+i/c/</<@https://c.amazon-adsystem.com/aax2/apstag.js:2:2276
+i/c/<@https://c.amazon-adsystem.com/aax2/apstag.js:2:2381
+r/<@https://c.amazon-adsystem.com/aax2/apstag.js:2:1297
+r@https://c.amazon-adsystem.com/aax2/apstag.js:2:1042
+handler@https://c.amazon-adsystem.com/aax2/apstag.js:2:62804
+t.prototype.wrapHandler/V/V</<@https://c.amazon-adsystem.com/aax2/apstag.js:2:19484
+i/c/</<@https://c.amazon-adsystem.com/aax2/apstag.js:2:2276
+i/c/<@https://c.amazon-adsystem.com/aax2/apstag.js:2:2381
+r/<@https://c.amazon-adsystem.com/aax2/apstag.js:2:1297
+r@https://c.amazon-adsystem.com/aax2/apstag.js:2:1042
+t.prototype.wrapHandler/V@https://c.amazon-adsystem.com/aax2/apstag.js:2:19266
+t.prototype.addListenerToPromiseRace@https://c.amazon-adsystem.com/aax2/apstag.js:2:35013
+t.prototype.executeListenerRace@https://c.amazon-adsystem.com/aax2/apstag.js:2:35471
+t.prototype.dispatchEvent@https://c.amazon-adsystem.com/aax2/apstag.js:2:37188
+t.prototype.dispatchAccount/<@https://c.amazon-adsystem.com/aax2/apstag.js:2:37700
+t.prototype.dispatchAccount@https://c.amazon-adsystem.com/aax2/apstag.js:2:37670
+t.prototype.dispatch/<@https://c.amazon-adsystem.com/aax2/apstag.js:2:40869
+t.prototype.dispatch@https://c.amazon-adsystem.com/aax2/apstag.js:2:40839
+t.prototype.observeAccountQueuesPush/</e.queue.push@https://c.amazon-adsystem.com/aax2/apstag.js:2:29061
+value/s<@https://c.amazon-adsystem.com/aax2/apstag.js:4:22590
+value@https://c.amazon-adsystem.com/aax2/apstag.js:4:22528
+E@https://c.amazon-adsystem.com/aax2/apstag.js:4:138109
+St@https://c.amazon-adsystem.com/aax2/apstag.js:4:110781
+s/<@https://c.amazon-adsystem.com/aax2/apstag.js:4:195882
+p/<@https://c.amazon-adsystem.com/aax2/apstag.js:4:4478
+doBids/<@https://www.s.dev.fnlondon.com/articles/testing-article-timestamp-20231102?target=/?mod=sign-in-top-nav:360:27
+doBids@https://www.s.dev.fnlondon.com/articles/testing-article-timestamp-20231102?target=/?mod=sign-in-top-nav:359:32
+Ge@https://ace.wsj.com/assets-staging/ace/djcmp.min.1.0.57.js:1:40135
+Fe/cb/<@https://ace.wsj.com/assets-staging/ace/djcmp.min.1.0.57.js:1:40404
+cb@https://ace.wsj.com/assets-staging/ace/djcmp.min.1.0.57.js:1:40470
+we@https://ace.wsj.com/assets-staging/ace/djcmp.min.1.0.57.js:1:34568
+Ae@https://ace.wsj.com/assets-staging/ace/djcmp.min.1.0.57.js:1:35725
+Re@https://ace.wsj.com/assets-staging/ace/djcmp.min.1.0.57.js:1:36384
+execute@https://www.s.dev.fnlondon.com/articles/testing-article-timestamp-20231102?target=/?mod=sign-in-top-nav:204:501
+globalMessaging@https://www.s.dev.fnlondon.com/articles/testing-article-timestamp-20231102?target=/?mod=sign-in-top-nav:204:1682
+Fe@https://ace.wsj.com/assets-staging/ace/djcmp.min.1.0.57.js:1:40250
+execute@https://www.s.dev.fnlondon.com/articles/testing-article-timestamp-20231102?target=/?mod=sign-in-top-nav:204:501
+executeQueue/<@https://www.s.dev.fnlondon.com/articles/testing-article-timestamp-20231102?target=/?mod=sign-in-top-nav:204:273
+executeQueue@https://www.s.dev.fnlondon.com/articles/testing-article-timestamp-20231102?target=/?mod=sign-in-top-nav:204:256
+subscribe@https://www.s.dev.fnlondon.com/articles/testing-article-timestamp-20231102?target=/?mod=sign-in-top-nav:204:1353
+e/<@https://ace.wsj.com/assets-staging/ace/djcmp.min.1.0.57.js:1:51079
+u@https://ace.wsj.com/assets-staging/ace/djcmp.min.1.0.57.js:1:4905
+s/c._invoke@https://ace.wsj.com/assets-staging/ace/djcmp.min.1.0.57.js:1:4694
+A/</<@https://ace.wsj.com/assets-staging/ace/djcmp.min.1.0.57.js:1:5330
+a@https://ace.wsj.com/assets-staging/ace/djcmp.min.1.0.57.js:1:1002
+o@https://ace.wsj.com/assets-staging/ace/djcmp.min.1.0.57.js:1:1214
+
+Dynamically enable window occlusion 1

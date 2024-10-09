@@ -1,0 +1,41 @@
+1728049203541	geckodriver	INFO	Listening on 127.0.0.1:60784
+1728049206620	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60785" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofilerhsn4N"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728049207797	Marionette	INFO	Marionette enabled
+1728049208340	Marionette	INFO	Listening on port 60794
+WebDriver BiDi listening on ws://127.0.0.1:60785
+Read port: 60794
+1728049208756	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60785/devtools/browser/44a3598d-ecb6-4cfa-ab9f-7c90daa92561
+JavaScript warning: https://www.dev.marketwatch.com/_next/static/chunks/main-7c2c5b4ee7ae4ea0.js, line 1: unreachable code after return statement
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m1urw2yyn1dmq7mm&sid=1138573015853471556&loc=https%3A%2F%2Fwww.dev.marketwatch.com%2Fauthor%2FCatey-Hill&new=1&arf=0&ltm=1728049224211&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m1urw33l1ip4s5ko&ckp=m1urw2yzo8tin92z&glb=&cp_userState=anon&cp_testGroup=90&cp_env=staging&cp_topDomain=marketwatch.com&cp_template=full&cp_access=free&cp_section=Author&cp_subsection=Catey%20Hill&cp_cms_name=Peavey&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=3&cp_ab_bucket=83&cp_pageContentSource=MarketWatch&cp_pageContentType=Summaries&cp_pageContentTypeDetai=default&cp_pageSiteProduct=MW&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WEoqGYGTldYSfSNCQ9Ugqu-00NFuS6e6WOK2G2Y_zzI.js line 2 > eval line 2517 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://d3h0wybtovte4j.cloudfront.net/ugeovhprh.js, line 1: TypeError: URL constructor: null/foo.html?o=u&r=&l=https://www.dev.marketwatch.com/author/Catey-Hill&aa=NA&ib=false&buster=EGUXgrZQaYdPfmai is not a valid URL.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WEoqGYGTldYSfSNCQ9Ugqu-00NFuS6e6WOK2G2Y_zzI.js line 2 > eval line 2131 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WEoqGYGTldYSfSNCQ9Ugqu-00NFuS6e6WOK2G2Y_zzI.js line 2 > eval line 2723 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WEoqGYGTldYSfSNCQ9Ugqu-00NFuS6e6WOK2G2Y_zzI.js line 2 > eval line 3157 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WEoqGYGTldYSfSNCQ9Ugqu-00NFuS6e6WOK2G2Y_zzI.js line 2 > eval line 3450 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WEoqGYGTldYSfSNCQ9Ugqu-00NFuS6e6WOK2G2Y_zzI.js line 2 > eval line 1463 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WEoqGYGTldYSfSNCQ9Ugqu-00NFuS6e6WOK2G2Y_zzI.js line 2 > eval line 1107 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.dev.marketwatch.com/" ({})
+JavaScript warning: https://cdn.cxense.com/cx.js, line 6: Script terminated by timeout at:
+n@https://cdn.cxense.com/cx.js:6:1149
+r@https://cdn.cxense.com/cx.js:6:1272
+Xi@https://cdn.cxense.com/cx.js:6:52098
+io@https://cdn.cxense.com/cx.js:6:54856
+oo@https://cdn.cxense.com/cx.js:6:54904
+ea@https://cdn.cxense.com/cx.js:6:70350
+ta@https://cdn.cxense.com/cx.js:6:70555
+ra/<@https://cdn.cxense.com/cx.js:6:70614
+
+1728049332428	Marionette	INFO	Stopped listening on port 60794
+Dynamically enable window occlusion 1

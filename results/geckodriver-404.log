@@ -1,0 +1,86 @@
+1728454334026	geckodriver	INFO	Listening on 127.0.0.1:62572
+1728454337082	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62573" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileaT75R6"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728454337650	Marionette	INFO	Marionette enabled
+1728454337864	Marionette	INFO	Listening on port 62580
+WebDriver BiDi listening on ws://127.0.0.1:62573
+Read port: 62580
+1728454338085	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62573/devtools/browser/5054dc5e-c123-4d11-852c-5ee912274d06
+JavaScript warning: https://www.marketwatch.com/_next/static/chunks/main-7c2c5b4ee7ae4ea0.js, line 1: unreachable code after return statement
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m21h38rl4gctk0xe&sid=9222325317970825873&loc=https%3A%2F%2Fwww.marketwatch.com%2Fstory%2Fis-the-u-s-stock-market-closed-on-juneteenth-what-investors-need-to-know-11655230158&new=1&arf=0&ltm=1728454345783&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m21h398qm7z7i8qe&ckp=m21h38rlg465yxxb&glb=&amo=1655731440&cp_userState=anon&cp_testGroup=16&cp_topDomain=marketwatch.com&cp_pwTag=default&cp_pwPlacement=cx-articlecover&cp_pwCampaign=226&cp_pwType=free&cp_type=Market%20Extra&cp_template=preview&cp_access=paid&cp_section=Markets&cp_subsection=Markets&cp_cms_name=MarketWatch%20CMS%20(PROD)&cp_vix=&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=8&cp_ab_bucket=88&cp_pageContentSource=MarketWatch&cp_pageContentType=Article&cp_pageContentTypeDetai=standard&cp_pageSiteProduct=MW&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS, line 627: Script terminated by timeout at:
+bF@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:627:3
+Dg/c<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:265:187
+Vc.prototype.invoke@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:204:403
+Ja@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:173:554
+Wc.prototype.evaluate@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:205:72
+yd@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:221:468
+Vc.prototype.invoke@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:204:403
+Ja@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:173:554
+Wc.prototype.evaluate@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:205:72
+fe@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:232:414
+Vc.prototype.invoke@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:204:403
+Ja@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:173:554
+Ia@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:173:314
+Jd/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:228:20
+Vc.prototype.invoke@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:204:403
+Ja@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:173:554
+aa.Wk@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:173:1074
+Be@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:238:782
+Kz/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:573:350
+yf@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:248:92
+xf@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:244:473
+vf@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:244:81
+uf@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:243:34
+Ff/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:249:282
+Gf@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:249:67
+Ef@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:248:1426
+Lx@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:541:149
+My@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:559:272
+Py@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:563:7
+Ry@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:564:43
+nrWrapper@https://www.marketwatch.com/story/is-the-u-s-stock-market-closed-on-juneteenth-what-investors-need-to-know-11655230158:104:17810
+
+JavaScript warning: https://www.datadoghq-browser-agent.com/datadog-logs-v4.js, line 1: Script terminated by timeout at:
+d@https://www.datadoghq-browser-agent.com/datadog-logs-v4.js:1:884
+l/<@https://www.datadoghq-browser-agent.com/datadog-logs-v4.js:1:853
+
+JavaScript warning: https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.Y7snZc84UmY.es5.O/am=YDBgBgg/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI7e2QTk8jLMAh4Jus7bNDMJwY_jJQ/m=_b,_tp, line 290: Script terminated by timeout at:
+c@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.Y7snZc84UmY.es5.O/am=YDBgBgg/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI7e2QTk8jLMAh4Jus7bNDMJwY_jJQ/m=_b,_tp:290:187
+b@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.Y7snZc84UmY.es5.O/am=YDBgBgg/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI7e2QTk8jLMAh4Jus7bNDMJwY_jJQ/m=_b,_tp:281:48
+
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+JavaScript error: resource://gre/actors/FormHandlerChild.sys.mjs, line 103: InvalidStateError: JSWindowActorChild.document getter: Cannot access property 'document' after actor 'FormHandler' has been destroyed
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+JavaScript error: resource://gre/actors/FormHandlerChild.sys.mjs, line 182: InvalidStateError: JSWindowActorChild.document getter: Cannot access property 'document' after actor 'FormHandler' has been destroyed
+JavaScript error: resource://gre/actors/FormHandlerChild.sys.mjs, line 103: InvalidStateError: JSWindowActorChild.document getter: Cannot access property 'document' after actor 'FormHandler' has been destroyed
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT, line 189: Script terminated by timeout at:
+Ia@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:189:285
+Rd@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:246:275
+Vc.prototype.invoke@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:220:403
+Ja@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:189:554
+Ia@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:189:314
+Jd/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:244:20
+Vc.prototype.invoke@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:220:403
+r@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:222:32
+sA@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:599:149
+qA/</<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:597:187
+z@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:199:203
+qA/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:597:167
+z@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:199:203
+qA@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:597:134
+rA/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:597:111
+
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m21h3lk25qyueqt0&sid=9222325317970825873&loc=https%3A%2F%2Fwww.s.dev.marketwatch.com%2Ffollow&new=0&arf=0&ltm=1728454362344&ref=https%3A%2F%2Fsso.int.accounts.dowjones.com%2F&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m21h3llpdkyacqcl&ckp=m21h38rlg465yxxb&glb=&eid0=e4cefa22ef027cc0132f0c218da37da39cdb3228234af4df969b5c463592e123&eit0=wsj&cp_userState=anon&cp_testGroup=16&cp_env=staging&cp_topDomain=marketwatch.com&cp_template=full&cp_access=free&cp_section=Follow&cp_subsection=mw&cp_cms_name=CAPS&cp_subscriber=registered&cp_edition=naus&cp_bucket=5&cp_ab_bucket=55&cp_pageContentSource=MarketWatch&cp_pageContentType=Follow&cp_pageContentTypeDetai=follow&cp_pageSiteProduct=MW&cp_userTags=BARRONS-SUB&cp_sessionState=ca, line 1: TypeError: cX.loadScript is not a function
+JavaScript error: https://d3h0wybtovte4j.cloudfront.net/ugeovhprh.js, line 1: TypeError: URL constructor: null/foo.html?o=u&r=https://sso.int.accounts.dowjones.com/&l=https://www.s.dev.marketwatch.com/follow&aa=NA&ib=false&buster=wXSSlHywgzyyWPhe is not a valid URL.
+1728454374952	Marionette	INFO	Stopped listening on port 62580
+JavaScript warning: https://www.redditstatic.com/ads/pixel.js, line 1: Script terminated by timeout at:
+updateURLListeners@https://www.redditstatic.com/ads/pixel.js:1:23331
+
+Dynamically enable window occlusion 1

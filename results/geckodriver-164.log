@@ -1,0 +1,30 @@
+1728058272348	geckodriver	INFO	Listening on 127.0.0.1:56795
+1728058275599	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56796" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileAxpVI6"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728058276508	Marionette	INFO	Marionette enabled
+1728058277032	Marionette	INFO	Listening on port 56815
+WebDriver BiDi listening on ws://127.0.0.1:56796
+Read port: 56815
+1728058277553	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:56796/devtools/browser/34a11f04-cd46-4e57-9fb6-0f832cc79f14
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://www.marketwatch.com/, line 358: Script terminated by timeout at:
+nrWrapper@https://www.marketwatch.com/:358:17660
+
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS, line 378: Script terminated by timeout at:
+um.prototype.flush@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:378:62
+FH/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:680:142
+ba.Qk/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:623:126
+ba.Qk/c/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:622:420
+
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m1uxasi2vx9g5jcb&sid=9222325317970825873&loc=https%3A%2F%2Fwww.marketwatch.com%2Ffollow&new=1&arf=0&ltm=1728058308557&ref=https%3A%2F%2Fsso.accounts.dowjones.com%2F&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m1uxask6rv3spvno&ckp=m1uxasi2haz6mcpi&glb=&eid0=e4cefa22ef027cc0132f0c218da37da39cdb3228234af4df969b5c463592e123&eit0=wsj&cp_userState=anon&cp_testGroup=50&cp_topDomain=marketwatch.com&cp_template=full&cp_access=free&cp_section=Follow&cp_subsection=mw&cp_cms_name=CAPS&cp_subscriber=registered&cp_edition=naus&cp_bucket=5&cp_ab_bucket=15&cp_pageContentSource=MarketWatch&cp_pageContentType=Follow&cp_pageContentTypeDetai=follow&cp_pageSiteProduct=MW&cp_userTags=&cp_sessionState=ca, line 1: TypeError: cX.loadScript is not a function
+1728058319138	Marionette	INFO	Stopped listening on port 56815
+Dynamically enable window occlusion 1

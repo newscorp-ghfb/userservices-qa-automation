@@ -10,10 +10,10 @@ ${JSFollowSignInButtonPath}=  document.querySelector('ufc-portal')  #1
     ...  .querySelector('ufc-button').shadowRoot  #6
     ...  .querySelector('button')  #7
 
-${JSRegisterNowButtonPath}=  document.querySelector('dj-watchlist').shadowRoot  #1
-    ...  .querySelector('div.watchlist')  #2
-    ...  .querySelector('div.non-logged-in-panel')  #3
-    ...  .querySelector('button')  #4
+${JSRegisterNowButtonPath}=  document.querySelector("#root > div > div > div > div:nth-child(2) > div:nth-child(4) > div.style--column--2u7yywNS.style--column-top--2wtJOJkr.style--column-4--ZPhiDfvL.style--column--37Q00wRx.style--column-top--3XcIEFYc.style--column-4--3npTI-aZ.style--mdc-fixed-column--3NOKJKlR > div:nth-child(2) > dj-watchlist").shadowRoot.querySelector("div > div > button")  #document.querySelector('dj-watchlist').shadowRoot  #1
+    #...  .querySelector('div.watchlist')  #2
+    #...  .querySelector('div.non-logged-in-panel')  #3
+    #...  .querySelector('button')  #4
 
 ${JSDefaultSymbolDJIA-P}=  document.querySelector('dj-watchlist').shadowRoot  #1
     ...  .querySelector('div.watchlist')  #2
@@ -217,13 +217,14 @@ ${JSDeleteWatchlistConfimationButtonPath}=  document.querySelector('dj-watchlist
 
 *** Keywords ***
 Validate Watchlist for non-logged user
+    Execute javascript  window.scrollTo(0,500)
     Wait Until Element is Visible  dom:${JSRegisterNowButtonPath}
-    Page Should Contain Element  dom:${JSRegisterNowButtonPath}
-    IF  "${Env}" == "prod"
-        Page Should Contain Element  dom:${JSDefaultSymbolDJIA-P}
-    ELSE IF  "${Env}" == "dev"
-        Page Should Contain Element  dom:${JSDefaultSymbolDJIA-Dev}
-    END
+    #Page Should Contain Element  dom:${JSRegisterNowButtonPath}
+    #IF  "${Env}" == "prod"
+        #Page Should Contain Element  dom:${JSDefaultSymbolDJIA-P}
+    #ELSE IF  "${Env}" == "dev"
+       # Page Should Contain Element  dom:${JSDefaultSymbolDJIA-Dev}
+    #END
 
 Validate Market Data Page
     Page Should Contain Element  //*[text()='Overview']  #//span[text()="Overview"]

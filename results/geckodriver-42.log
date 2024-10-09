@@ -1,0 +1,70 @@
+1727691587332	geckodriver	INFO	Listening on 127.0.0.1:50604
+1727691590613	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50605" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileAkeRNl"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727691591627	Marionette	INFO	Marionette enabled
+1727691591970	Marionette	INFO	Listening on port 50724
+WebDriver BiDi listening on ws://127.0.0.1:50605
+Read port: 50724
+1727691592219	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:50605/devtools/browser/6ba4f464-d568-4d02-b35c-e2310a2d5058
+console.error: ({})
+console.error: ({})
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m1ouyzcqxr06hprq&sid=9222325317970825875&loc=https%3A%2F%2Fwww.s.dev.barrons.com%2F&new=1&arf=0&ltm=1727691601281&ref=&tzo=-330&wsz=1280x595&res=1280x720&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m1ouyzfau9yt8fe6&ckp=m1ouyzcqgc6oqemj&glb=&amo=1726570740&cp_userState=anon&cp_testGroup=63&cp_env=staging&cp_topDomain=barrons.com&cp_pwTag=default&cp_pwPlacement=cx-snippetad&cp_pwCampaign=10&cp_pwType=personalized&cp_type=&cp_template=preview&cp_access=paid&cp_section=&cp_subsection=&cp_cms_name=Barron's%20Authoring%20QA&cp_vix=&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=5&cp_ab_bucket=35&cp_pageContentSource=Barrons%20Online&cp_pageContentType=Article&cp_pageContentTypeDetai=continuous&cp_pageSiteProduct=BOL&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript error: https://instant.page/5.1.0, line 1: SyntaxError: redeclaration of var e
+JavaScript error: https://www.s.dev.barrons.com/_next/static/chunks/framework-1093784b1a58324b.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.s.dev.barrons.com/_next/static/chunks/framework-1093784b1a58324b.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.s.dev.barrons.com/_next/static/chunks/framework-1093784b1a58324b.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.s.dev.barrons.com/_next/static/chunks/framework-1093784b1a58324b.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.s.dev.barrons.com/_next/static/chunks/framework-1093784b1a58324b.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.s.dev.barrons.com/_next/static/chunks/framework-1093784b1a58324b.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.s.dev.barrons.com/_next/static/chunks/framework-1093784b1a58324b.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.s.dev.barrons.com/_next/static/chunks/framework-1093784b1a58324b.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.s.dev.barrons.com/_next/static/chunks/framework-1093784b1a58324b.js, line 9: Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://djcs-multi-region-assets-ohio.s3.us-east-2.amazonaws.com/dj-watchlist/asset/dj-watchlist/qa/v1.12.0-beta.85/p-c4e7c817.entry.js, line 11: TypeError: Error.captureStackTrace is not a function
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: https://video-api.stg.wsj.com/api-video/player/v3/js/video.min.js, line 56: TypeError: this._adContainer is null
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript error: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 10: Error: Piano SDK is loaded twice on same page. Try to fix that to prevent the message.
+JavaScript warning: https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.0eXORzFfzfU.es5.O/am=AMGAGQ/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4LpzYUKp_ZcvThenLf86tdLtnqaQ/m=_b,_tp, line 286: Script terminated by timeout at:
+c@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.0eXORzFfzfU.es5.O/am=AMGAGQ/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4LpzYUKp_ZcvThenLf86tdLtnqaQ/m=_b,_tp:286:187
+b@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.0eXORzFfzfU.es5.O/am=AMGAGQ/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4LpzYUKp_ZcvThenLf86tdLtnqaQ/m=_b,_tp:277:48
+
+JavaScript warning: https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.s.dev.barrons.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.5137168667253635%22,%22tld%22:%22www.s.dev.barrons.com%22,%22topUrl%22:%22www.s.dev.barrons.com%22,%22version%22:%229_12_0%22}, line 13: Script terminated by timeout at:
+r.prototype.flushEventQueue@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.s.dev.barrons.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.5137168667253635%22,%22tld%22:%22www.s.dev.barrons.com%22,%22topUrl%22:%22www.s.dev.barrons.com%22,%22version%22:%229_12_0%22}:13:3137
+r/<@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.s.dev.barrons.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.5137168667253635%22,%22tld%22:%22www.s.dev.barrons.com%22,%22topUrl%22:%22www.s.dev.barrons.com%22,%22version%22:%229_12_0%22}:13:3642
+
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 5ms)
+JavaScript error: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 10: Error: Piano SDK is loaded twice on same page. Try to fix that to prevent the message.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/Ofjd5SEjadZox9_ebcUE7qVtcVJKxbTf46gjSEHhnaE.js line 2 > eval line 6124 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727691620035	Marionette	INFO	Stopped listening on port 50724
+Dynamically enable window occlusion 1
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.

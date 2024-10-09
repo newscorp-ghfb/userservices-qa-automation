@@ -1,0 +1,137 @@
+1727688752474	geckodriver	INFO	Listening on 127.0.0.1:65316
+1727688755548	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65317" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileEZK5sj"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727688756229	Marionette	INFO	Marionette enabled
+1727688756471	Marionette	INFO	Listening on port 65326
+WebDriver BiDi listening on ws://127.0.0.1:65317
+Read port: 65326
+1727688756693	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:65317/devtools/browser/2f67ec71-aa1d-4e8a-9ca3-940d43801630
+JavaScript error: https://asset.barrons.com/fp/assets/webpack4/runtime.6d26069f71aa13.js, line 1: ChunkLoadError: Loading chunk 877 failed.
+(error: https://asset.barrons.com/fp/assets/webpack4/877.4e5d331222ef02.js)
+JavaScript error: https://asset.barrons.com/fp/assets/webpack4/runtime.6d26069f71aa13.js, line 1: ChunkLoadError: Loading chunk 877 failed.
+(error: https://asset.barrons.com/fp/assets/webpack4/877.4e5d331222ef02.js)
+JavaScript error: https://asset.barrons.com/fp/assets/webpack4/runtime.6d26069f71aa13.js, line 1: ChunkLoadError: Loading chunk 877 failed.
+(error: https://asset.barrons.com/fp/assets/webpack4/877.4e5d331222ef02.js)
+JavaScript error: https://asset.barrons.com/fp/assets/webpack4/runtime.6d26069f71aa13.js, line 1: ChunkLoadError: Loading chunk 877 failed.
+(error: https://asset.barrons.com/fp/assets/webpack4/877.4e5d331222ef02.js)
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.barrons.com/asset/dj-watchlist/v1.11.0/p-8e3b6675.entry.js, line 11: TypeError: Error.captureStackTrace is not a function
+console.error: ({})
+console.error: ({})
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m1ota8cmdbin3wtt&sid=9222325317970825875&loc=https%3A%2F%2Fwww.s.dev.barrons.com%2Farticles%2Fbuy-under-armour-stock-pick-51650672000&new=0&arf=0&ltm=1727688766923&ref=&tzo=-330&wsz=1280x595&res=1280x720&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m1ota8eoha10ds25&ckp=m1ota3f8u8toz6v0&glb=cx%3Azewi7rl37tg8d06ltc5dvtc%3A9j7syauyvkkh&amo=1720048200&cp_userState=anon&cp_testGroup=21&cp_topDomain=barrons.com&cp_pwTag=default&cp_pwPlacement=cx-snippetad&cp_pwCampaign=10&cp_pwType=personalized&cp_type=Retail&cp_template=preview&cp_access=paid&cp_section=Retail&cp_subsection=Sizing%20Up%20Small-Caps&cp_cms_name=Methode&cp_vix=&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=3&cp_ab_bucket=83&cp_pageContentSource=Barrons%20Online&cp_pageContentType=Article&cp_pageContentTypeDetai=continuous&cp_pageSiteProduct=BOL&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 5ms)
+1727688772115	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/Ofjd5SEjadZox9_ebcUE7qVtcVJKxbTf46gjSEHhnaE.js line 2 > eval line 1196 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://www.s.dev.barrons.com/_next/static/chunks/main-fc8ea3f3c8e9e983.js, line 6: Script terminated by timeout at:
+78018/w/<@https://www.s.dev.barrons.com/_next/static/chunks/main-fc8ea3f3c8e9e983.js:6:16343
+t@https://www.s.dev.barrons.com/_next/static/chunks/main-fc8ea3f3c8e9e983.js:6:15839
+
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js, line 77: Script terminated by timeout at:
+jc@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:77:383
+n.remove@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:79:464
+n.unsubscribe@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:78:174
+n.unsubscribe@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:709
+M.prototype.unsubscribe@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:91:1262
+Rd/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:97:1519
+M/this.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:91:888
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+O/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:92:471
+M/this.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:91:888
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+O/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:92:471
+M/this.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:91:888
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+ph/c/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:138:320
+Ta@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:49:339
+Qa.prototype.flush@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:49:127
+Sa@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:465
+ph/c/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:138:292
+tc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+lg/</</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:121:516
+Pa.prototype.Ob/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:297
+lg/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:121:525
+tc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+lg/</</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:121:516
+Pa.prototype.Ob/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:297
+lg/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:121:525
+tc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+h@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:94:477
+
+JavaScript warning: https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.0eXORzFfzfU.es5.O/am=AMGAGQ/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4LpzYUKp_ZcvThenLf86tdLtnqaQ/m=_b,_tp, line 286: Script terminated by timeout at:
+c@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.0eXORzFfzfU.es5.O/am=AMGAGQ/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4LpzYUKp_ZcvThenLf86tdLtnqaQ/m=_b,_tp:286:187
+b@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.0eXORzFfzfU.es5.O/am=AMGAGQ/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4LpzYUKp_ZcvThenLf86tdLtnqaQ/m=_b,_tp:277:48
+
+JavaScript warning: https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.s.dev.barrons.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.39924381433833855%22,%22tld%22:%22www.s.dev.barrons.com%22,%22topUrl%22:%22www.s.dev.barrons.com%22,%22version%22:%229_12_0%22}, line 13: Script terminated by timeout at:
+r.prototype.logPixel@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.s.dev.barrons.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.39924381433833855%22,%22tld%22:%22www.s.dev.barrons.com%22,%22topUrl%22:%22www.s.dev.barrons.com%22,%22version%22:%229_12_0%22}:13:3418
+r.prototype.flushEventQueue@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.s.dev.barrons.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.39924381433833855%22,%22tld%22:%22www.s.dev.barrons.com%22,%22topUrl%22:%22www.s.dev.barrons.com%22,%22version%22:%229_12_0%22}:13:3152
+r/<@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.s.dev.barrons.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.39924381433833855%22,%22tld%22:%22www.s.dev.barrons.com%22,%22topUrl%22:%22www.s.dev.barrons.com%22,%22version%22:%229_12_0%22}:13:3642
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://fpt.live.com/?session_id=97f04114b8eb4924b0fe9a9060acd7b6&CustomerId=33e01921-4d64-4f8c-a055-5bdaffd5e33d&PageId=SI, line 5: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+1727688794755	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: , line 0: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+JavaScript warning: https://res-1.cdn.office.net/midgard/versionless/livepersonacard_without-react_6b7f3bce8ad52a623539.js, line 2: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/Ofjd5SEjadZox9_ebcUE7qVtcVJKxbTf46gjSEHhnaE.js line 2 > eval line 501 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.adnxs.com/v/s/246/trk.js, line 560: Script terminated by timeout at:
+_.C@https://cdn.adnxs.com/v/s/246/trk.js:560:1382
+md/<@https://cdn.adnxs.com/v/s/246/trk.js:560:5653
+
+JavaScript warning: https://cdn.js7k.com/rq/iv/inside.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1727688814640	Marionette	INFO	Stopped listening on port 65326
+JavaScript warning: https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.61781.m.26b036fb.js, line 31: Script terminated by timeout at:
+ep@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.61781.m.26b036fb.js:31:822855
+ir@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.61781.m.26b036fb.js:31:871822
+828181/u/<@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.61781.m.26b036fb.js:31:930397
+u@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.61781.m.26b036fb.js:31:931091
+sM@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.61781.m.26b036fb.js:31:910935
+828181/sN/<@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.61781.m.26b036fb.js:31:910802
+sN@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.61781.m.26b036fb.js:31:910808
+sF@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.61781.m.26b036fb.js:31:907895
+n6@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.61781.m.26b036fb.js:31:856780
+sx@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.61781.m.26b036fb.js:31:904676
+i0@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.61781.m.26b036fb.js:31:878179
+227297/i/l<@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.AppBoot.m.3a4499fc.js:17:376021
+s@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.AppBoot.m.3a4499fc.js:17:376830
+
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function

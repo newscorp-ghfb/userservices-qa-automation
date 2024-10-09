@@ -1,0 +1,132 @@
+1728398961184	geckodriver	INFO	Listening on 127.0.0.1:59264
+1728398964260	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59265" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofilerD3qYu"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728398965014	Marionette	INFO	Marionette enabled
+1728398965261	Marionette	INFO	Listening on port 59274
+Read port: 59274
+WebDriver BiDi listening on ws://127.0.0.1:59265
+1728398965419	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59265/devtools/browser/8cb6fff2-1c31-491d-80ec-8339ef6c3285
+JavaScript warning: https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js, line 1: unreachable code after return statement
+JavaScript error: https://d3h0wybtovte4j.cloudfront.net/ugeovhprh.js, line 1: TypeError: URL constructor: null/foo.html?o=u&r=&l=https://www.dev.wsj.com/&aa=NA&ib=false&buster=ssDmNsVOKKqWOZbs is not a valid URL.
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m20k4g1ujanpb2b0&sid=1134002947328204066&loc=https%3A%2F%2Fwww.dev.wsj.com%2F&new=1&arf=0&ltm=1728398974538&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m20k4gd2p4ji5nta&ckp=m20k4g1ue0vzdydx&glb=&cp_userState=anon&cp_testGroup=7&cp_env=staging&cp_topDomain=wsj.com&cp_template=full&cp_access=free&cp_section=US%20Home%20Page&cp_subsection=&cp_cms_name=CAPS&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=0&cp_ab_bucket=70&cp_pageContentSource=WSJ%20Online&cp_pageContentType=Home&cp_pageContentTypeDetai=desktopweb&cp_pageSiteProduct=WSJ&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+1728398975962	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://sc-static.net/scevent.min.js, line 2: Script terminated by timeout at:
+m@https://sc-static.net/scevent.min.js:2:2789
+c@https://sc-static.net/scevent.min.js:2:6893
+
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript warning: https://www.dev.wsj.com/_next/static/chunks/main-cd92e5a27ba2f238.js, line 1: Script terminated by timeout at:
+78018/y/<@https://www.dev.wsj.com/_next/static/chunks/main-cd92e5a27ba2f238.js:1:118364
+r@https://www.dev.wsj.com/_next/static/chunks/main-cd92e5a27ba2f238.js:1:117860
+
+JavaScript warning: https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js, line 1: Script terminated by timeout at:
+8018/g/<@https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js:1:111956
+r@https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js:1:111426
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://newscorp.okta.com."
+JavaScript warning: https://newscorp.okta.com/assets/js/vendor/lib/fingerprint2.min.68ab45bd98459cb766f3ab26d086e5f5.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://newscorp.okta.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://newscorp.okta.com."
+JavaScript error: https://news.google.com/swg/js/v1/swg.js, line 17: Error: XHR Failed fetching (https://news.google.com/...): (Note: a CORS error above may indicate that this publisher or domain is not configured in Publisher Center. The CORS error happens because 4xx responses do not set CORS headers.)
+
+TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: https://news.google.com/swg/js/v1/swg.js, line 17: Error: Error: not allowed
+JavaScript error: https://d3h0wybtovte4j.cloudfront.net/ugeovhprh.js, line 1: TypeError: URL constructor: null/foo.html?o=u&r=https://newscorp.okta.com/&l=https://www.dev.wsj.com/articles/test-oil-demand-will-fall-by-a-fifth-in-april-opec-forecasts-11587072843&aa=NA&ib=false&buster=kOmQZYJsOorPVUOW is not a valid URL.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: AbortError: The operation was aborted. 
+JavaScript error: , line 0: AbortError: The operation was aborted. 
+JavaScript warning: https://www.dev.wsj.com/_next/static/chunks/main-cd92e5a27ba2f238.js, line 1: Script terminated by timeout at:
+78018/y/<@https://www.dev.wsj.com/_next/static/chunks/main-cd92e5a27ba2f238.js:1:118364
+r@https://www.dev.wsj.com/_next/static/chunks/main-cd92e5a27ba2f238.js:1:117860
+
+JavaScript warning: https://imasdk.googleapis.com/js/core/bridge3.670.0_en.html#goog_702786997, line 453: Script terminated by timeout at:
+PB@https://imasdk.googleapis.com/js/core/bridge3.670.0_en.html#goog_702786997:453:310
+TB/this.aa@https://imasdk.googleapis.com/js/core/bridge3.670.0_en.html#goog_702786997:451:29
+
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT, line 231: Script terminated by timeout at:
+ld@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:231:137
+Vc.prototype.invoke@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:218:403
+Ia@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:188:554
+Wc.prototype.evaluate@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:219:72
+qd@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:234:258
+Vc.prototype.invoke@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:218:403
+Ia@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:188:554
+Ha@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:188:314
+nd@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:233:429
+Vc.prototype.invoke@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:218:403
+Ia@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:188:554
+Ha@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:188:314
+Rd@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:244:275
+Vc.prototype.invoke@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:218:403
+Ia@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:188:554
+Ha@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:188:314
+Jd/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:242:20
+Vc.prototype.invoke@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:218:403
+Ia@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:188:554
+Wc.prototype.evaluate@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:219:72
+qd@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:234:258
+Vc.prototype.invoke@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:218:403
+Ia@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:188:554
+Wc.prototype.evaluate@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:219:72
+pd@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:234:98
+Vc.prototype.invoke@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:218:403
+Ia@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:188:554
+Wc.prototype.evaluate@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:219:72
+ie@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:248:247
+Vc.prototype.invoke@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:218:403
+Ia@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:188:554
+Ha@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:188:314
+Jd/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:242:20
+Vc.prototype.invoke@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:218:403
+Ia@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:188:554
+Wc.prototype.evaluate@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:219:72
+qd@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:234:258
+Vc.prototype.invoke@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:218:403
+Ia@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:188:554
+Ha@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:188:314
+nd@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:233:429
+Vc.prototype.invoke@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:218:403
+Ia@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:188:554
+Ha@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:188:314
+zd@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:236:63
+Fd@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:239:137
+Gd@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:238:234
+Vc.prototype.invoke@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:218:403
+Ia@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:188:554
+Ha@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:188:314
+nd@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:233:429
+Vc.prototype.invoke@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:218:403
+Ia@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:188:554
+Ha@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:188:314
+Rd@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:244:275
+Vc.prototype.invoke@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:218:403
+Ia@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:188:554
+Ha@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:188:314
+Jd/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:242:20
+Vc.prototype.invoke@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:218:403
+oI/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:735:686
+$r@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:496:242
+ba.Hm@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:707:153
+ba.Gm/</<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:704:489
+Ek@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:374:151
+dl@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:380:70
+ba.Gm/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:704:475
+c@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:515:411
+Tt@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:516:237
+ba.Gm@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:704:461
+c@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:718:970
+vm@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:393:1
+um.prototype.flush@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:395:336
+um.prototype.push@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:393:403
+nm@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:390:785
+FH/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:719:187
+ba.Qk/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:662:126
+ba.Qk/c/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:661:420
+
+1728399177310	Marionette	INFO	Stopped listening on port 59274
+Dynamically enable window occlusion 1

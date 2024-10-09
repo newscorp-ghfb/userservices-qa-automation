@@ -1,0 +1,23 @@
+1727945955952	geckodriver	INFO	Listening on 127.0.0.1:65350
+1727945959029	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65351" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofilehu8jSo"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727945959612	Marionette	INFO	Marionette enabled
+1727945959850	Marionette	INFO	Listening on port 65367
+Read port: 65367
+WebDriver BiDi listening on ws://127.0.0.1:65351
+1727945959969	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:65351/devtools/browser/895b7ed5-d336-42fc-957d-01981d7e4601
+JavaScript error: https://www.dev.wsj.com/preference-center/alerts, line 9: SyntaxError: function statement requires a name
+JavaScript warning: https://rock.defybrick.com/placement_invocation?id=65349&idx=0, line 1: Failed to create WebGL context: WebGL creation failed: 
+* AllowWebgl2:false restricts context creation on this system. ()
+JavaScript warning: https://rock.defybrick.com/placement_invocation?id=65349&idx=0, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727945969475	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m1t2exwx7rnf7jcr&sid=1134002947328204066&loc=https%3A%2F%2Fwww.dev.wsj.com%2Fpreference-center%2Falerts&new=1&arf=0&ltm=1727945967924&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m1t2ey7p4f30q38q&ckp=m1t2exwxvtzevkes&glb=&cp_userState=anon&cp_testGroup=10&cp_env=staging&cp_topDomain=wsj.com&cp_template=full&cp_access=paid&cp_section=Preference%20Center&cp_subsection=Alerts&cp_cms_name=servo&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=2&cp_ab_bucket=22&cp_pageContentSource=WSJ%20Online&cp_pageContentType=CustomerResources&cp_pageContentTypeDetai=preference-center&cp_pageSiteProduct=WSJ&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript warning: https://sc-static.net/scevent.min.js, line 2: Script terminated by timeout at:
+m@https://sc-static.net/scevent.min.js:2:2789
+c@https://sc-static.net/scevent.min.js:2:6893
+
+1727945993453	Marionette	INFO	Stopped listening on port 65367
+Dynamically enable window occlusion 1

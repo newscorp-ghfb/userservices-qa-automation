@@ -1,0 +1,106 @@
+1728418383199	geckodriver	INFO	Listening on 127.0.0.1:56452
+1728418386241	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56453" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileHKveZe"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728418386951	Marionette	INFO	Marionette enabled
+1728418387223	Marionette	INFO	Listening on port 56461
+WebDriver BiDi listening on ws://127.0.0.1:56453
+Read port: 56461
+1728418387452	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:56453/devtools/browser/49d54350-a392-4f1b-9246-c9d222abd621
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m20vom1d6tsbrt60&sid=9222325317970825875&loc=https%3A%2F%2Fwww.barrons.com%2F&new=1&arf=0&ltm=1728418391192&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m20vomnf5uqv2jf0&ckp=m20vom1dkto38qko&glb=&cp_userState=anon&cp_testGroup=42&cp_topDomain=barrons.com&cp_access=free&cp_section=US%20Home%20Page%20Weekday&cp_subsection=&cp_cms_name=CAPS&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=4&cp_ab_bucket=84&cp_pageContentSource=Barrons%20Online&cp_pageContentType=Home&cp_pageContentTypeDetai=default&cp_pageSiteProduct=BOL&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript error: https://asset.barrons.com/fp/assets/webpack4/runtime.9e37bf9b1d9ed2.js, line 1: ChunkLoadError: Loading chunk 877 failed.
+(error: https://asset.barrons.com/fp/assets/webpack4/877.4e5d331222ef02.js)
+JavaScript error: https://asset.barrons.com/fp/assets/webpack4/runtime.9e37bf9b1d9ed2.js, line 1: ChunkLoadError: Loading chunk 877 failed.
+(error: https://asset.barrons.com/fp/assets/webpack4/877.4e5d331222ef02.js)
+JavaScript error: https://asset.barrons.com/fp/assets/webpack4/runtime.9e37bf9b1d9ed2.js, line 1: ChunkLoadError: Loading chunk 877 failed.
+(error: https://asset.barrons.com/fp/assets/webpack4/877.4e5d331222ef02.js)
+JavaScript error: https://asset.barrons.com/fp/assets/webpack4/runtime.9e37bf9b1d9ed2.js, line 1: ChunkLoadError: Loading chunk 877 failed.
+(error: https://asset.barrons.com/fp/assets/webpack4/877.4e5d331222ef02.js)
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.barrons.com/asset/dj-watchlist/v1.12.0/p-8bc137c5.entry.js, line 11: TypeError: Error.captureStackTrace is not a function
+console.error: ({})
+console.error: ({})
+JavaScript warning: https://cdn.cxense.com/cx.js, line 6: Script terminated by timeout at:
+ro@https://cdn.cxense.com/cx.js:6:54510
+ea@https://cdn.cxense.com/cx.js:6:70307
+ra/<@https://cdn.cxense.com/cx.js:6:70614
+nrWrapper@https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634:129:17810
+
+JavaScript warning: https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.Y7snZc84UmY.es5.O/am=YDBgBg/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4o6JJW61vjfL39b99y1stb_FZTXg/m=_b,_tp, line 290: Script terminated by timeout at:
+c@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.Y7snZc84UmY.es5.O/am=YDBgBg/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4o6JJW61vjfL39b99y1stb_FZTXg/m=_b,_tp:290:187
+b@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.Y7snZc84UmY.es5.O/am=YDBgBg/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4o6JJW61vjfL39b99y1stb_FZTXg/m=_b,_tp:281:48
+
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS, line 182: Script terminated by timeout at:
+z@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:182:158
+bg@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:257:374
+ag@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:257:199
+cg@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:256:60
+pG.prototype.flush@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:652:280
+ba.flush@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:669:132
+FH/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:680:210
+ba.Qk/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:623:126
+ba.Qk/c/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:622:420
+
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+1728418423348	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WEoqGYGTldYSfSNCQ9Ugqu-00NFuS6e6WOK2G2Y_zzI.js line 2 > eval line 5698 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1728418424053	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1728418425576	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1728418430081	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:467:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:220:33
+1728418434963	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:467:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:220:33
+1728418440065	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:467:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:220:33
+1728418443472	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:467:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:220:33
+1728418467373	Marionette	INFO	Stopped listening on port 56461
+JavaScript warning: https://www.barrons.com/watchlist/public/js/chunks/watchlist-client.75dbe6053a398e6e29d0.js, line 23198: Script terminated by timeout at:
+stop@https://www.barrons.com/watchlist/public/js/chunks/watchlist-client.75dbe6053a398e6e29d0.js:23198:9
+stop@https://www.barrons.com/watchlist/public/js/chunks/watchlist-client.75dbe6053a398e6e29d0.js:22306:38
+702/module.exports/$.signalR.prototype.stop@https://www.barrons.com/watchlist/public/js/chunks/bluegrass2-client.b448a782adf60d9a9a66.js:2789:47
+487/start/initialize/</</<@https://www.barrons.com/watchlist/public/js/chunks/watchlist-client.75dbe6053a398e6e29d0.js:21961:48
+
+Dynamically enable window occlusion 1
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.

@@ -23,10 +23,12 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T75
 Validate the multiple authors follow button from articles page
     [Documentation]  This test case validates the multiple authors follow button from articles page
-    [Tags]  Regression  Author  Follow  Article       Follow1
+    [Tags]  Regression  Author  Follow  Article       MA
 
     DefinedKeywords.Sign In Process
     Set Selenium Speed  0.2 seconds
+    Set Selenium Implicit Wait  10s
+    Execute javascript  window.scrollTo(0,500)
     WSJArticlePage.Validate Follow Button
     WSJArticlePage.Click Follow Button
     WSJArticlePage.Validate Sign In Modal
@@ -47,6 +49,15 @@ Validate the multiple authors follow button from articles page
 #    WSJPreferenceCenterPage.Validate Author 1
 #    WSJPreferenceCenterPage.Validate Author 2
 
+#US-T431
+Validate the WSJ Preference Center page
+    [Documentation]  This test case validates the WSJ preference center page
+    [Tags]  Regression  PreferenceCenter  TagWSJ1
+
+    CommonFunctionality.Start WSJ Preference Center Page Newsletter
+    DefinedKeywords.WSJ Newsletters Page Sign In Process
+
+
 
 #US-T91
 #US-T98
@@ -54,7 +65,7 @@ Validate the multiple authors follow button from articles page
 #US-T229
 Validate the WSJ Preference Center page
     [Documentation]  This test case validates the WSJ preference center page
-    [Tags]  Regression  PreferenceCenter  Follow1
+    [Tags]  Regression  PreferenceCenter  TagWSJPS
 
     CommonFunctionality.Start WSJ Preference Center Page
                     IF  "${Env}" == "prod"
@@ -227,7 +238,7 @@ Validate the follow button for Editorials breadcrumb from articles page
 #US-T177
 Validate the follow button for Commentary breadcrumb from articles page
     [Documentation]  This test case validates the follow button from articles page
-    [Tags]  Regression  Follow  Breadcrumb  Article    Follow1
+    [Tags]  Regression  Follow  Breadcrumb  Article    Jan
     CommonFunctionality.CookieTestWSJ
     Set Selenium Speed  100.5 seconds
     CommonFunctionality.Start WSJ Article for Commentary breadcrumb
@@ -238,6 +249,7 @@ Validate the follow button for Commentary breadcrumb from articles page
 #         END
 #         Set Selenium Implicit Wait  50s
 #    DefinedKeywords.WSJ Breadcrumbs Sign In Process
+    Set Selenium Implicit Wait  10s
     DefinedKeywords.WSJ New Breadcrumbs Sign In Process
     Set Selenium Speed  15 seconds
 #    WSJArticlePage.Validate Custom Following Button
@@ -280,7 +292,7 @@ Validate the WSJ Preference Center page for Commentary breadcrumb
 #US-T167
 Validate the follow button for Commentary breadcrumb from Commentary page
     [Documentation]  This test case validates the follow button from articles page
-    [Tags]  Regression  Follow  Breadcrumb  Commentarypage   Follow1
+    [Tags]  Regression  Follow  Breadcrumb  Commentarypage   follow1
 
     CommonFunctionality.CookieTestWSJ
     Set Selenium Speed  100.5 seconds
@@ -308,13 +320,13 @@ Validate the follow button for Commentary breadcrumb from Commentary page
 #US-T163
 Validate the follow button for Editorials breadcrumb from Editorials page
     [Documentation]  This test case validates the follow button from Editorials page
-    [Tags]  Regression  Follow  Breadcrumb           Follow1
+    [Tags]  Regression  Follow  Breadcrumb          EB
     CommonFunctionality.Start WSJ Editorials for Editorials breadcrumb
-                    IF  "${Env}" == "prod"
-        DefinedKeywords.New WSJ Sign In Process
-    ELSE IF  "${Env}" == "dev"
-        DefinedKeywords.New WSJ Sign In Process
-         END
+                    #IF  "${Env}" == "prod"
+        #DefinedKeywords.New WSJ Sign In Process
+    #ELSE IF  "${Env}" == "dev"
+        DefinedKeywords.WSJ Sign In Process
+         #END
          Set Selenium Implicit Wait  50s
     WSJArticlePage.Validate Custom Following Button
     WSJArticlePage.Click Custom Following Button
@@ -347,9 +359,10 @@ Validate the follow button for Editorials breadcrumb from Editorials page
 #US-T171
 Validate the follow button for Letters breadcrumb from Letters page
     [Documentation]  This test case validates the follow button from Letters page
-    [Tags]  Regression  Follow  Breadcrumb      Follow1
+    [Tags]  Regression  Follow  Breadcrumb      T
     CommonFunctionality.Start WSJ Letters for Letters breadcrumb
     #WSJArticlePage.Validate Custom Following Button
+    Set Selenium Implicit Wait  10s
     WSJArticlePage.Click Custom Follow Button
     WSJArticlePage.Validate Sign In Modal
     WSJArticlePage.Click Sign In Button Modal
@@ -380,13 +393,13 @@ Validate the follow button for Letters breadcrumb from Letters page
 #US-T134
 Validate the follow button for Elections breadcrumb from Elections page
     [Documentation]  This test case validates the follow button from Elections page
-    [Tags]  Regression  Follow  Breadcrumb    Follow1
+    [Tags]  Regression  Follow  Breadcrumb    EB1
     CommonFunctionality.Start WSJ Elections for Elections breadcrumb
-                    IF  "${Env}" == "prod"
-        DefinedKeywords.New WSJ Sign In Process
-    ELSE IF  "${Env}" == "dev"
-        DefinedKeywords.New WSJ Sign In Process
-         END
+                   # IF  "${Env}" == "prod"
+        #DefinedKeywords.New WSJ Sign In Process
+    #ELSE IF  "${Env}" == "dev"
+        DefinedKeywords.WSJ Sign In Process
+         #END
          Set Selenium Implicit Wait  50s
     #WSJArticlePage.Validate Custom Following Button
 #    WSJArticlePage.Click Custom Follow Button
@@ -475,7 +488,7 @@ Validate the follow button for Elections breadcrumb from articles page
 #US-T223
 Validate the Watchlist widget from Watchlist page
     [Documentation]  This test case validates the watchlist widget from watchlist page
-    [Tags]  Regression  Watchlist   Follow1
+    [Tags]  Regression  Watchlist   follow
 
     CommonFunctionality.Start WSJ for Watchlist page
     DefinedKeywords.Sign In Process
@@ -532,7 +545,7 @@ Validate the alert button for Board Pack Exclusive from articles page
 #US-T153
 Validate the WSJ digest notification
     [Documentation]  This test case validates the WSJ digest notification
-    [Tags]  Regression  Notifications     Follow1
+    [Tags]  Regression  Notifications     follow
     WSJMailboxPage.Navigate Mailbox page
     WSJMailboxPage.Login
     WSJMailboxPage.Select Inbox
@@ -625,7 +638,7 @@ Validate the WSJ real-time author notification
 #US-T154
 Validate the WSJ real-time company notification
     [Documentation]  This test case validates the WSJ real-time company notification
-    [Tags]  Regression  Notifications  Company           Follow1
+    [Tags]  Regression  Notifications  Company           follow
     WSJMailboxPage.Navigate Mailbox page
     WSJMailboxPage.Login
     WSJMailboxPage.Select Inbox
@@ -635,7 +648,7 @@ Validate the WSJ real-time company notification
 #US-T143
 Validate the WSJ real-time custom topic notification
     [Documentation]  This test case validates the WSJ real-time custom topic notification
-    [Tags]  Regression  Notifications  CustomTopic   Follow1
+    [Tags]  Regression  Notifications  CustomTopic   AA
     WSJMailboxPage.Navigate Mailbox page
     WSJMailboxPage.Login
     WSJMailboxPage.Select Inbox

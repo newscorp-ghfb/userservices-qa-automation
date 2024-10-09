@@ -1,0 +1,16 @@
+1728422492284	geckodriver	INFO	Listening on 127.0.0.1:52215
+1728422495327	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52216" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofile706am7"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728422495994	Marionette	INFO	Marionette enabled
+1728422496273	Marionette	INFO	Listening on port 52223
+WebDriver BiDi listening on ws://127.0.0.1:52216
+Read port: 52223
+1728422496547	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52216/devtools/browser/43ff8054-4008-4cd5-b9d1-86c1c6abf58d
+JavaScript error: resource://services-settings/Utils.sys.mjs, line 263: NS_ERROR_OUT_OF_MEMORY: 
+Exiting due to channel error.
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+Exiting due to channel error.

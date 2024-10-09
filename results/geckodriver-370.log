@@ -1,0 +1,21 @@
+1728422466928	geckodriver	INFO	Listening on 127.0.0.1:52133
+1728422469979	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52134" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofile1YyaWa"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728422470651	Marionette	INFO	Marionette enabled
+1728422470904	Marionette	INFO	Listening on port 52142
+WebDriver BiDi listening on ws://127.0.0.1:52134
+Read port: 52142
+1728422471156	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52134/devtools/browser/7276c5e5-8ece-458b-8bb0-0fc050b1a7fe
+JavaScript error: , line 0: uncaught exception: out of memory
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+JavaScript warning: https://vir.wsj.net/fp/assets/webpack4/runtime.cce394cb45eae1.js, line 1: Script terminated by timeout at:
+a@https://vir.wsj.net/fp/assets/webpack4/runtime.cce394cb45eae1.js:1:42
+@https://vir.wsj.net/fp/assets/webpack4/31733831-8156-4b5c-85e3-bc324b7c9557.9fe75ad35fdda4.js:1:47
+
+JavaScript error: https://vir.wsj.net/fp/assets/webpack4/runtime.cce394cb45eae1.js, line 1: ChunkLoadError: Loading chunk 109 failed.
+(missing: https://vir.wsj.net/fp/assets/webpack4/31733831-8156-4b5c-85e3-bc324b7c9557.9fe75ad35fdda4.js)
+1728422476312	Marionette	INFO	Stopped listening on port 52142
+Dynamically enable window occlusion 1

@@ -40,8 +40,8 @@ ${JSPreferenceCenterLinkMarketWatchPath}=  document.querySelector('ufc-snackbar'
 Validate Follow Button
     IF  "${Env}" == "prod"
         Execute javascript  window.scrollTo(0,500)
-    #ELSE IF  "${Env}" == "dev"
-        # Execute javascript  window.scrollTo(0,500)
+    ELSE IF  "${Env}" == "dev"
+         Execute javascript  window.scrollTo(0,500)
     END
 
     Wait Until Element is Visible  dom:${JSFollowButtonMWPath}
