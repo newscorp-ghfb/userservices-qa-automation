@@ -75,7 +75,7 @@ Validate the PEN real-time company notification
 #US-T360
 Validate Postback on Preference Center
     [Documentation]  This test case validates the PEN Postback on Preference Center
-    [Tags]  Regression  Postback     Follow1
+    [Tags]  Regression  Postback     360
     PENPreferenceCenterPage.Add Breaking News By Hotlink
     DefinedKeywords.Sign In Process
     PENPreferenceCenterPage.Validate Followed Breaking News

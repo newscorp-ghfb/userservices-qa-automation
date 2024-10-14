@@ -167,9 +167,12 @@ Start MarketWatch Newsletter
 Start Barrons Newsletter
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
-
-       Open Browser  https://www.barrons.com  ${Browser}  options=${options}
-        Go To   https://www.s.dev.barrons.com/market-data/stocks/amzn
+       IF  "${Env}" == "prod"
+        Open Browser  https://www.barrons.com  ${Browser}  options=${options}
+        Go To  https://www.barrons.com/newsletters
+    ELSE IF  "${Env}" == "dev"
+       Open Browser  https://www.s.dev.barrons.com  ${Browser}  options=${options}
+        Go To   https://www.s.dev.barrons.com/newsletters  #https://www.s.dev.barrons.com/market-data/stocks/amzn
     Maximize Browser Window
 
 Start PEN Article

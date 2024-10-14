@@ -1,0 +1,63 @@
+1728550793585	geckodriver	INFO	Listening on 127.0.0.1:57277
+1728550796787	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57278" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofile1oVbaK"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728550797764	Marionette	INFO	Marionette enabled
+1728550798013	Marionette	INFO	Listening on port 57382
+WebDriver BiDi listening on ws://127.0.0.1:57278
+Read port: 57382
+1728550798259	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:57278/devtools/browser/9ecc3a04-f011-43f3-b0ac-96f15fccc629
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.81&typ=pgv&rnd=m232iqragqubqu92&sid=9222325317970825875&loc=https%3A%2F%2Fwww.s.dev.barrons.com%2F&new=1&arf=0&ltm=1728550807032&ref=&tzo=-330&wsz=1280x595&res=1280x720&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m232ir4eeojudpy9&ckp=m232iqratbgokuqc&glb=&amo=1728052320&cp_userState=anon&cp_testGroup=29&cp_env=staging&cp_topDomain=barrons.com&cp_pwTag=default&cp_pwPlacement=cx-snippetad&cp_pwCampaign=10&cp_pwType=personalized&cp_type=&cp_template=preview&cp_access=PAID&cp_section=&cp_subsection=&cp_cms_name=Barron's%20Authoring%20QA&cp_vix=&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=2&cp_ab_bucket=82&cp_pageContentSource=Barron's%20Online&cp_pageContentType=Article&cp_pageContentTypeDetai=STANDARD&cp_pageSiteProduct=BOL&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: AbortError: The operation was aborted. 
+JavaScript error: https://djcs-multi-region-assets-ohio.s3.us-east-2.amazonaws.com/dj-watchlist/asset/dj-watchlist/qa/v1.12.0-beta.128/p-8bc137c5.entry.js, line 11: TypeError: Error.captureStackTrace is not a function
+JavaScript error: , line 0: AbortError: The operation was aborted. 
+JavaScript warning: https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.SplArP-rjcA.es5.O/ck=boq-subscribewithgoogle.SubscribewithgoogleClientUi.UO8WMvWLyLU.L.F4.O/am=MBgwAw/d=1/exm=FCpbqb,LEikZe,P6sQOc,W93Wdc,WhJNk,Wt6vjf,_b,_tp,hhhU8/excm=_b,_tp,serviceiframeview/ed=1/wt=2/ujg=1/rs=ABXTjI60rZdKU21Zqtj5ahFFs2ivQcfU5w/ee=EVNhjf:pw70Gc;EmZ2Bf:zr1jrb;JsbNhc:Xd8iUd;K5nYTd:ZDZcre;LBgRLc:SdcwHb;Me32dd:MEeYgc;NPKaK:SdcwHb;NSEoX:lazG7b;Pjplud:EEDORb;QGR0gd:Mlhmy;SNUn3:ZwDk9d;ScI3Yc:e7Hzgb;Uvc8o:VDovNc;YIZmRd:A1yn5d;a56pNe:JEfCwb;cEt90b:ws9Tlc;dIoSBb:SpsfSb;dowIGb:ebZ3mb;eBAeSb:zbML3c;iFQyKf:QIhFr;lOO0Vd:OTA3Ae;nAFL3:s39S4;oGtAuc:sOXFj;pXdRYb:MdUzUe;qafBPd:yDVVkb;qddgKe:xQtZb;wR5FRb:O1Gjze;xqZiqf:wmnU7d;yxTchf:KUM7Z;zxnPse:GkRiKb/m=RqjULd, line 34: Script terminated by timeout at:
+Eia/</b<@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.SplArP-rjcA.es5.O/ck=boq-subscribewithgoogle.SubscribewithgoogleClientUi.UO8WMvWLyLU.L.F4.O/am=MBgwAw/d=1/exm=FCpbqb,LEikZe,P6sQOc,W93Wdc,WhJNk,Wt6vjf,_b,_tp,hhhU8/excm=_b,_tp,serviceiframeview/ed=1/wt=2/ujg=1/rs=ABXTjI60rZdKU21Zqtj5ahFFs2ivQcfU5w/ee=EVNhjf:pw70Gc;EmZ2Bf:zr1jrb;JsbNhc:Xd8iUd;K5nYTd:ZDZcre;LBgRLc:SdcwHb;Me32dd:MEeYgc;NPKaK:SdcwHb;NSEoX:lazG7b;Pjplud:EEDORb;QGR0gd:Mlhmy;SNUn3:ZwDk9d;ScI3Yc:e7Hzgb;Uvc8o:VDovNc;YIZmRd:A1yn5d;a56pNe:JEfCwb;cEt90b:ws9Tlc;dIoSBb:SpsfSb;dowIGb:ebZ3mb;eBAeSb:zbML3c;iFQyKf:QIhFr;lOO0Vd:OTA3Ae;nAFL3:s39S4;oGtAuc:sOXFj;pXdRYb:MdUzUe;qafBPd:yDVVkb;qddgKe:xQtZb;wR5FRb:O1Gjze;xqZiqf:wmnU7d;yxTchf:KUM7Z;zxnPse:GkRiKb/m=RqjULd:34:137
+lp@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.SplArP-rjcA.es5.O/am=MBgwAw/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI58lWJaA1O4F6MTgQYBsFgWIvXmAQ/m=_b,_tp:288:486
+c@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.SplArP-rjcA.es5.O/am=MBgwAw/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI58lWJaA1O4F6MTgQYBsFgWIvXmAQ/m=_b,_tp:296:252
+b@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.SplArP-rjcA.es5.O/am=MBgwAw/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI58lWJaA1O4F6MTgQYBsFgWIvXmAQ/m=_b,_tp:287:48
+
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 5ms)
+JavaScript warning: https://pagead2.googlesyndication.com/bg/OPjMWwJBtReHhWwOPXWsCqm1x5VpbT9SkyMWV37nL8g.js line 2 > eval line 2925 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1728550816289	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:467:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:220:33
+1728550816326	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://www.s.dev.barrons.com/market-data/barrons-stock-screener?mod=stock_screener_internal line 33 > injectedScript, line 20: Script terminated by timeout at:
+CTicker.prototype._tick@https://www.s.dev.barrons.com/market-data/barrons-stock-screener?mod=stock_screener_internal line 33 > injectedScript:20:822
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT, line 593: Script terminated by timeout at:
+bA@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:593:429
+cA@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:593:129
+sA@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:598:418
+qA/</<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:597:187
+z@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:199:203
+qA/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:597:167
+z@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:199:203
+qA@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:597:134
+rA/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:597:111
+
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 4ms)
+JavaScript warning: https://pagead2.googlesyndication.com/bg/OPjMWwJBtReHhWwOPXWsCqm1x5VpbT9SkyMWV37nL8g.js line 2 > eval line 6037 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/OPjMWwJBtReHhWwOPXWsCqm1x5VpbT9SkyMWV37nL8g.js line 2 > eval line 2155 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/OPjMWwJBtReHhWwOPXWsCqm1x5VpbT9SkyMWV37nL8g.js line 2 > eval line 5146 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1728550874019	Marionette	INFO	Stopped listening on port 57382
+JavaScript warning: https://cdn.cxense.com/cx.js, line 6: Script terminated by timeout at:
+remove@https://cdn.cxense.com/cx.js:6:41098
+wr/r<@https://cdn.cxense.com/cx.js:6:42090
+
+Dynamically enable window occlusion 1
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.

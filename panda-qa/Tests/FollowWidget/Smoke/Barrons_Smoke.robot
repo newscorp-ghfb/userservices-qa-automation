@@ -106,7 +106,7 @@ Validate the Barrons Preference Center page
 #US-T135
 Validate the stock pick follow button from stock pick page
     [Documentation]  This test case validates the stock pick follow button from stock pick page
-    [Tags]  Smoke  Follow  CustomTopic  TagBarronsCTS
+    [Tags]  Smoke  Follow  CustomTopic  126
 
     CommonFunctionality.Start Barrons Stock Picks for Stock Picks breadcrumb
     DefinedKeywords.Barrons Stock Pick Sign In Process

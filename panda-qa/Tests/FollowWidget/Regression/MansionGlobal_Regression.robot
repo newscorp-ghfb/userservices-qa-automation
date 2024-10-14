@@ -78,7 +78,7 @@ Validate the Mansion Global real-time author notification
 #US-T158
 Validate the Mansion Global weekly saved search notification
     [Documentation]  This test case validates the Mansion Global weekly saved search notification
-    [Tags]  Regression  Notifications   Follow1
+    [Tags]  Regression  Notifications   US-T158
     MansionGlobalMailboxPage.Navigate Mailbox page
     MansionGlobalMailboxPage.Login
     MansionGlobalMailboxPage.Select Inbox
@@ -88,7 +88,7 @@ Validate the Mansion Global weekly saved search notification
 #US-T359
 Validate Postback on Preference Center
     [Documentation]  This test case vabrlidates the Mansion Global Postback on Preference Center
-    [Tags]  Regression  Postback        Follow1
+    [Tags]  Regression  Postback        359
     MansionGlobalPreferenceCenterPage.Add Breaking News By Hotlink
     DefinedKeywords.Sign In Process
     MansionGlobalPreferenceCenterPage.Validate Followed Breaking News

@@ -1,0 +1,88 @@
+1728543986193	geckodriver	INFO	Listening on 127.0.0.1:58919
+1728543989427	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58920" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileOPIPhc"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728543990106	Marionette	INFO	Marionette enabled
+1728543990350	Marionette	INFO	Listening on port 58934
+WebDriver BiDi listening on ws://127.0.0.1:58920
+Read port: 58934
+1728543990630	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58920/devtools/browser/a1eb77a3-8c05-40af-b450-f1a361df15f0
+JavaScript warning: https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js, line 1: unreachable code after return statement
+JavaScript warning: https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js, line 1: unreachable code after return statement
+JavaScript error: https://d3h0wybtovte4j.cloudfront.net/ugeovhprhsxhowudv.js, line 1: TypeError: URL constructor: null/foo.html?o=u&r=&l=https://www.dev.wsj.com/&aa=NA&ib=false&buster=QKnhyzusmeadtgRZ is not a valid URL.
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m22ygupjs02jcao1&sid=1134002947328204066&loc=https%3A%2F%2Fwww.dev.wsj.com%2F&new=1&arf=0&ltm=1728544000381&ref=&tzo=-330&wsz=1280x595&res=1280x720&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m22ygv0j9smr7la3&ckp=m22ygupjhlxepj2o&glb=&cp_userState=anon&cp_testGroup=64&cp_env=staging&cp_topDomain=wsj.com&cp_template=full&cp_access=free&cp_section=US%20Home%20Page&cp_subsection=&cp_cms_name=CAPS&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=7&cp_ab_bucket=47&cp_pageContentSource=WSJ%20Online&cp_pageContentType=Home&cp_pageContentTypeDetai=desktopweb&cp_pageSiteProduct=WSJ&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+1728544001857	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://sc-static.net/scevent.min.js, line 2: Script terminated by timeout at:
+m@https://sc-static.net/scevent.min.js:2:2789
+pt@https://sc-static.net/scevent.min.js:2:5935
+ja@https://sc-static.net/scevent.min.js:2:53905
+
+JavaScript warning: https://pagead2.googlesyndication.com/bg/OPjMWwJBtReHhWwOPXWsCqm1x5VpbT9SkyMWV37nL8g.js line 2 > eval line 4314 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/OPjMWwJBtReHhWwOPXWsCqm1x5VpbT9SkyMWV37nL8g.js line 2 > eval line 493 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js, line 1: Script terminated by timeout at:
+8018/g/<@https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js:1:111956
+r@https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js:1:111426
+
+JavaScript error: https://www.dev.wsj.com/_next/static/chunks/framework-85b6536238798673.js, line 1: Error: Minified React error #425; visit https://reactjs.org/docs/error-decoder.html?invariant=425 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.dev.wsj.com/_next/static/chunks/framework-85b6536238798673.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.dev.wsj.com/_next/static/chunks/framework-85b6536238798673.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.dev.wsj.com/_next/static/chunks/framework-85b6536238798673.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.dev.wsj.com/_next/static/chunks/framework-85b6536238798673.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.dev.wsj.com/_next/static/chunks/framework-85b6536238798673.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.dev.wsj.com/_next/static/chunks/framework-85b6536238798673.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.dev.wsj.com/_next/static/chunks/framework-85b6536238798673.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.dev.wsj.com/_next/static/chunks/framework-85b6536238798673.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.dev.wsj.com/_next/static/chunks/framework-85b6536238798673.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.dev.wsj.com/_next/static/chunks/framework-85b6536238798673.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.dev.wsj.com/_next/static/chunks/framework-85b6536238798673.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.dev.wsj.com/_next/static/chunks/framework-85b6536238798673.js, line 1: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://www.dev.wsj.com/_next/static/chunks/framework-85b6536238798673.js, line 1: Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://news.google.com/swg/js/v1/swg.js, line 17: Error: XHR Failed fetching (https://news.google.com/...): (Note: a CORS error above may indicate that this publisher or domain is not configured in Publisher Center. The CORS error happens because 4xx responses do not set CORS headers.)
+
+TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: https://news.google.com/swg/js/v1/swg.js, line 17: Error: Error: not allowed
+JavaScript error: https://d3h0wybtovte4j.cloudfront.net/ugeovhprhsxhowudv.js, line 1: TypeError: URL constructor: null/foo.html?o=u&r=&l=https://www.dev.wsj.com/articles/what-the-board-needs-to-know-acec160b?mod=panda_wsj_custom_topic_alert&aa=NA&ib=false&buster=mMrREFwAKqdtnTUS is not a valid URL.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/OPjMWwJBtReHhWwOPXWsCqm1x5VpbT9SkyMWV37nL8g.js line 2 > eval line 4077 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.SplArP-rjcA.es5.O/ck=boq-subscribewithgoogle.SubscribewithgoogleClientUi.UO8WMvWLyLU.L.F4.O/am=MBgwAw/d=1/exm=FCpbqb,LEikZe,P6sQOc,W93Wdc,WhJNk,Wt6vjf,_b,_tp,hhhU8/excm=_b,_tp,serviceiframeview/ed=1/wt=2/ujg=1/rs=ABXTjI60rZdKU21Zqtj5ahFFs2ivQcfU5w/ee=EVNhjf:pw70Gc;EmZ2Bf:zr1jrb;JsbNhc:Xd8iUd;K5nYTd:ZDZcre;LBgRLc:SdcwHb;Me32dd:MEeYgc;NPKaK:SdcwHb;NSEoX:lazG7b;Pjplud:EEDORb;QGR0gd:Mlhmy;SNUn3:ZwDk9d;ScI3Yc:e7Hzgb;Uvc8o:VDovNc;YIZmRd:A1yn5d;a56pNe:JEfCwb;cEt90b:ws9Tlc;dIoSBb:SpsfSb;dowIGb:ebZ3mb;eBAeSb:zbML3c;iFQyKf:QIhFr;lOO0Vd:OTA3Ae;nAFL3:s39S4;oGtAuc:sOXFj;pXdRYb:MdUzUe;qafBPd:yDVVkb;qddgKe:xQtZb;wR5FRb:O1Gjze;xqZiqf:wmnU7d;yxTchf:KUM7Z;zxnPse:GkRiKb/m=RqjULd, line 20: Script terminated by timeout at:
+MJ/<@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.SplArP-rjcA.es5.O/ck=boq-subscribewithgoogle.SubscribewithgoogleClientUi.UO8WMvWLyLU.L.F4.O/am=MBgwAw/d=1/exm=FCpbqb,LEikZe,P6sQOc,W93Wdc,WhJNk,Wt6vjf,_b,_tp,hhhU8/excm=_b,_tp,serviceiframeview/ed=1/wt=2/ujg=1/rs=ABXTjI60rZdKU21Zqtj5ahFFs2ivQcfU5w/ee=EVNhjf:pw70Gc;EmZ2Bf:zr1jrb;JsbNhc:Xd8iUd;K5nYTd:ZDZcre;LBgRLc:SdcwHb;Me32dd:MEeYgc;NPKaK:SdcwHb;NSEoX:lazG7b;Pjplud:EEDORb;QGR0gd:Mlhmy;SNUn3:ZwDk9d;ScI3Yc:e7Hzgb;Uvc8o:VDovNc;YIZmRd:A1yn5d;a56pNe:JEfCwb;cEt90b:ws9Tlc;dIoSBb:SpsfSb;dowIGb:ebZ3mb;eBAeSb:zbML3c;iFQyKf:QIhFr;lOO0Vd:OTA3Ae;nAFL3:s39S4;oGtAuc:sOXFj;pXdRYb:MdUzUe;qafBPd:yDVVkb;qddgKe:xQtZb;wR5FRb:O1Gjze;xqZiqf:wmnU7d;yxTchf:KUM7Z;zxnPse:GkRiKb/m=RqjULd:20:1333
+xia/</k<@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.SplArP-rjcA.es5.O/ck=boq-subscribewithgoogle.SubscribewithgoogleClientUi.UO8WMvWLyLU.L.F4.O/am=MBgwAw/d=1/exm=FCpbqb,LEikZe,P6sQOc,W93Wdc,WhJNk,Wt6vjf,_b,_tp,hhhU8/excm=_b,_tp,serviceiframeview/ed=1/wt=2/ujg=1/rs=ABXTjI60rZdKU21Zqtj5ahFFs2ivQcfU5w/ee=EVNhjf:pw70Gc;EmZ2Bf:zr1jrb;JsbNhc:Xd8iUd;K5nYTd:ZDZcre;LBgRLc:SdcwHb;Me32dd:MEeYgc;NPKaK:SdcwHb;NSEoX:lazG7b;Pjplud:EEDORb;QGR0gd:Mlhmy;SNUn3:ZwDk9d;ScI3Yc:e7Hzgb;Uvc8o:VDovNc;YIZmRd:A1yn5d;a56pNe:JEfCwb;cEt90b:ws9Tlc;dIoSBb:SpsfSb;dowIGb:ebZ3mb;eBAeSb:zbML3c;iFQyKf:QIhFr;lOO0Vd:OTA3Ae;nAFL3:s39S4;oGtAuc:sOXFj;pXdRYb:MdUzUe;qafBPd:yDVVkb;qddgKe:xQtZb;wR5FRb:O1Gjze;xqZiqf:wmnU7d;yxTchf:KUM7Z;zxnPse:GkRiKb/m=RqjULd:29:676
+cK/<@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.SplArP-rjcA.es5.O/ck=boq-subscribewithgoogle.SubscribewithgoogleClientUi.UO8WMvWLyLU.L.F4.O/am=MBgwAw/d=1/exm=FCpbqb,LEikZe,P6sQOc,W93Wdc,WhJNk,Wt6vjf,_b,_tp,hhhU8/excm=_b,_tp,serviceiframeview/ed=1/wt=2/ujg=1/rs=ABXTjI60rZdKU21Zqtj5ahFFs2ivQcfU5w/ee=EVNhjf:pw70Gc;EmZ2Bf:zr1jrb;JsbNhc:Xd8iUd;K5nYTd:ZDZcre;LBgRLc:SdcwHb;Me32dd:MEeYgc;NPKaK:SdcwHb;NSEoX:lazG7b;Pjplud:EEDORb;QGR0gd:Mlhmy;SNUn3:ZwDk9d;ScI3Yc:e7Hzgb;Uvc8o:VDovNc;YIZmRd:A1yn5d;a56pNe:JEfCwb;cEt90b:ws9Tlc;dIoSBb:SpsfSb;dowIGb:ebZ3mb;eBAeSb:zbML3c;iFQyKf:QIhFr;lOO0Vd:OTA3Ae;nAFL3:s39S4;oGtAuc:sOXFj;pXdRYb:MdUzUe;qafBPd:yDVVkb;qddgKe:xQtZb;wR5FRb:O1Gjze;xqZiqf:wmnU7d;yxTchf:KUM7Z;zxnPse:GkRiKb/m=RqjULd:22:377
+UJ/<@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.SplArP-rjcA.es5.O/ck=boq-subscribewithgoogle.SubscribewithgoogleClientUi.UO8WMvWLyLU.L.F4.O/am=MBgwAw/d=1/exm=FCpbqb,LEikZe,P6sQOc,W93Wdc,WhJNk,Wt6vjf,_b,_tp,hhhU8/excm=_b,_tp,serviceiframeview/ed=1/wt=2/ujg=1/rs=ABXTjI60rZdKU21Zqtj5ahFFs2ivQcfU5w/ee=EVNhjf:pw70Gc;EmZ2Bf:zr1jrb;JsbNhc:Xd8iUd;K5nYTd:ZDZcre;LBgRLc:SdcwHb;Me32dd:MEeYgc;NPKaK:SdcwHb;NSEoX:lazG7b;Pjplud:EEDORb;QGR0gd:Mlhmy;SNUn3:ZwDk9d;ScI3Yc:e7Hzgb;Uvc8o:VDovNc;YIZmRd:A1yn5d;a56pNe:JEfCwb;cEt90b:ws9Tlc;dIoSBb:SpsfSb;dowIGb:ebZ3mb;eBAeSb:zbML3c;iFQyKf:QIhFr;lOO0Vd:OTA3Ae;nAFL3:s39S4;oGtAuc:sOXFj;pXdRYb:MdUzUe;qafBPd:yDVVkb;qddgKe:xQtZb;wR5FRb:O1Gjze;xqZiqf:wmnU7d;yxTchf:KUM7Z;zxnPse:GkRiKb/m=RqjULd:21:835
+
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m22yh5g4pekwf2nd&sid=1134002947328204066&loc=https%3A%2F%2Fwww.s.dev.wsj.com%2Fpro%2Fcybersecurity%2Fnewsletters%3F_gl%3D1*lx9ot8*_gcl_au*MTc1MzI2ODkzNi4xNzI4NTQ0MDAw*_ga*OTQxOTYyOTQ1LjE3Mjg1NDQwMDA.*_ga_GJ5S1GJYKT*MTcyODU0Mzk5OS4xLjEuMTcyODU0NDAxMC4wLjAuMA..&new=0&arf=0&ltm=1728544014296&ref=https%3A%2F%2Fwww.dev.wsj.com%2F&tzo=-330&wsz=1280x595&res=1280x720&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m22yh5qolzzcsng1&ckp=m22ygupjhlxepj2o&glb=&cp_userState=anon&cp_testGroup=64&cp_env=staging&cp_topDomain=wsj.com&cp_access=free&cp_section=Newsletters&cp_subsection=&cp_cms_name=CAPS&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=7&cp_ab_bucket=47&cp_pageContentSource=PRO%2CWSJ-PRO-CYBER&cp_pageContentType=Summaries&cp_pageContentTypeDetai=default&cp_pageSiteProduct=WSJProCS&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript warning: https://rock.defybrick.com/placement_invocation?id=65349&idx=0, line 1: Failed to create WebGL context: WebGL creation failed: 
+* AllowWebgl2:false restricts context creation on this system. ()
+JavaScript warning: https://rock.defybrick.com/placement_invocation?id=65349&idx=0, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/OPjMWwJBtReHhWwOPXWsCqm1x5VpbT9SkyMWV37nL8g.js line 2 > eval line 6292 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1728544018939	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://cdn.cxense.com/cx.js, line 6: Script terminated by timeout at:
+c@https://cdn.cxense.com/cx.js:6:126
+e@https://cdn.cxense.com/cx.js:6:767
+t@https://cdn.cxense.com/cx.js:6:1098
+a@https://cdn.cxense.com/cx.js:6:1369
+Hi@https://cdn.cxense.com/cx.js:6:52152
+ro@https://cdn.cxense.com/cx.js:6:54510
+ea@https://cdn.cxense.com/cx.js:6:70307
+ra/<@https://cdn.cxense.com/cx.js:6:70614
+
+JavaScript warning: https://s0.2mdn.net/879366/dfa7banner_html_inpage_rendering_lib_200_268.js, line 39: Script terminated by timeout at:
+K@https://s0.2mdn.net/879366/dfa7banner_html_inpage_rendering_lib_200_268.js:39:2518
+Rd@https://s0.2mdn.net/879366/dfa7banner_html_inpage_rendering_lib_200_268.js:39:2629
+ie@https://s0.2mdn.net/879366/dfa7banner_html_inpage_rendering_lib_200_268.js:45:470
+ge/b<@https://s0.2mdn.net/879366/dfa7banner_html_inpage_rendering_lib_200_268.js:42:292
+
+JavaScript warning: https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.s.dev.wsj.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.6001661947981293%22,%22tld%22:%22www.s.dev.wsj.com%22,%22topUrl%22:%22www.s.dev.wsj.com%22,%22version%22:%229_12_0%22}, line 13: Script terminated by timeout at:
+r.prototype.logPixel@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.s.dev.wsj.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.6001661947981293%22,%22tld%22:%22www.s.dev.wsj.com%22,%22topUrl%22:%22www.s.dev.wsj.com%22,%22version%22:%229_12_0%22}:13:3418
+r.prototype.flushEventQueue@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.s.dev.wsj.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.6001661947981293%22,%22tld%22:%22www.s.dev.wsj.com%22,%22topUrl%22:%22www.s.dev.wsj.com%22,%22version%22:%229_12_0%22}:13:3152
+r/<@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.s.dev.wsj.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.6001661947981293%22,%22tld%22:%22www.s.dev.wsj.com%22,%22topUrl%22:%22www.s.dev.wsj.com%22,%22version%22:%229_12_0%22}:13:3642
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1728544043678	Marionette	INFO	Stopped listening on port 58934
+Dynamically enable window occlusion 1

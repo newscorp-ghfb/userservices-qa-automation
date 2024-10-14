@@ -410,24 +410,24 @@ Sailthru User Sign In Process
     Set Selenium Implicit Wait  10s
     Click Button  //input[@type='submit']
 
-Sailthru Sign In Process
-    Click Button  //input[@type='text']
-    Input Text  //input[@type='text']  QABARRONSONLY  #akhilesh.khanduri@dowjones.com
-    Set Selenium Implicit Wait  10s
-    Click Button  //html/body/div/main/section/div/div/div/div/div/form/div[2]/button  #//*[@id="form20"]/div[2]/input  #//*[@id="basic-login"]/div[1]/form/div[2]/div[6]/div[1]/button[2]
-    Set Selenium Implicit Wait  10s
-    Click Button  //input[@type='text']
-    Input Text  //input[@type='text']  QABARRONSONLY  #akhilesh.khanduri@dowjones.com
-    Set Selenium Implicit Wait  10s
-    Click Button  //*[@id="form20"]/div[2]/input  #//*[@id="basic-login"]/div[1]/form/div[2]/div[6]/div[1]/button[2]
-    Set Selenium Implicit Wait  10s
-    Wait Until Element Is Visible  //input[@type='password']  #//*[@id="password-login-password"]
-    Input Text  //input[@type='password']  password1  #AKpolarsxzi2594  #//*[@id="password-login-password"]  #Cuceis19841234!
-    Set Selenium Implicit Wait  10s
-    Click Button  //input[@type='submit']
-    Sleep  30s
-    Set Selenium Implicit Wait  0.01s
-    Wait Until Element Is Not Visible  //input[@type='submit']
+#Sailthru Sign In Process
+#    Click Button  //input[@type='text']
+#    Input Text  //input[@type='text']  QABARRONSONLY  #akhilesh.khanduri@dowjones.com
+#    Set Selenium Implicit Wait  10s
+#    Click Button  //html/body/div/main/section/div/div/div/div/div/form/div[2]/button  #//*[@id="form20"]/div[2]/input  #//*[@id="basic-login"]/div[1]/form/div[2]/div[6]/div[1]/button[2]
+#    Set Selenium Implicit Wait  10s
+#    Click Button  //input[@type='text']
+#    Input Text  //input[@type='text']  QABARRONSONLY  #akhilesh.khanduri@dowjones.com
+#    Set Selenium Implicit Wait  10s
+#    Click Button  //*[@id="form20"]/div[2]/input  #//*[@id="basic-login"]/div[1]/form/div[2]/div[6]/div[1]/button[2]
+#    Set Selenium Implicit Wait  10s
+#    Wait Until Element Is Visible  //input[@type='password']  #//*[@id="password-login-password"]
+#    Input Text  //input[@type='password']  password1  #AKpolarsxzi2594  #//*[@id="password-login-password"]  #Cuceis19841234!
+#    Set Selenium Implicit Wait  10s
+#    Click Button  //input[@type='submit']
+#    Sleep  30s
+#    Set Selenium Implicit Wait  0.01s
+#    Wait Until Element Is Not Visible  //input[@type='submit']
 
 MarketWatch PreferenceCenter User Sign In Process
     Set Selenium Implicit Wait  10s
@@ -729,17 +729,16 @@ Capabilities Dashboard Main Menu
 
 Sign In Process for Preference Center
 
-    Wait Until Element Is Visible  //input[@id='username']
-    Click Button  //input[@id='username']
-    Input Text  //input[@id='username']  archana.saini@dowjones.com
+    Wait Until Element Is Visible  //*[@id="emailOrUsername"]
+    Click Button  //*[@id="emailOrUsername"]
+    Input Text  //*[@id="emailOrUsername"]  archana.saini@dowjones.com
     Set Selenium Speed  1.0 seconds
-    Click Element  //span[text()='Continue']/..
+    Click Element  //*[@id="signin-continue-btn"]
     Set Selenium Speed  1.0 seconds
-    Wait Until Element Is Visible  //*[@id="password-login-password"]
-    Input Text  //*[@id="password-login-password"]  Lactomania@123
+    Wait Until Element Is Visible  //*[@id="password"]
+    Input Text  //*[@id="password"]  Lactomania@123
     Set Selenium Speed  1.0 seconds
     Click Element  (//span[@title='Sign In'])[2]/..
-
     Wait Until Element Is Visible  //li[text()='View All']
 
 

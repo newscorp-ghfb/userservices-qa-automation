@@ -1,0 +1,111 @@
+1728541673887	geckodriver	INFO	Listening on 127.0.0.1:50168
+1728541676931	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50169" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofile4foYWy"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728541677607	Marionette	INFO	Marionette enabled
+1728541677853	Marionette	INFO	Listening on port 50178
+Read port: 50178
+WebDriver BiDi listening on ws://127.0.0.1:50169
+1728541677991	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:50169/devtools/browser/e4a10f1d-f016-4cf7-9039-17e1c424d476
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.barrons.com/asset/dj-watchlist/v1.11.0/p-8e3b6675.entry.js, line 11: TypeError: Error.captureStackTrace is not a function
+JavaScript error: https://video-api.barrons.com/api-video/player/v3/js/video.min.js, line 56: TypeError: this._adContainer is null
+JavaScript error: https://www.barrons.com/asset/dj-watchlist/v1.11.0/p-8e3b6675.entry.js, line 11: TypeError: Error.captureStackTrace is not a function
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+console.error: ({})
+console.error: ({})
+JavaScript warning: https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.SplArP-rjcA.es5.O/am=MBgwAw/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI58lWJaA1O4F6MTgQYBsFgWIvXmAQ/m=_b,_tp, line 296: Script terminated by timeout at:
+c@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.SplArP-rjcA.es5.O/am=MBgwAw/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI58lWJaA1O4F6MTgQYBsFgWIvXmAQ/m=_b,_tp:296:187
+b@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.SplArP-rjcA.es5.O/am=MBgwAw/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI58lWJaA1O4F6MTgQYBsFgWIvXmAQ/m=_b,_tp:287:48
+
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m22x3hki4hqo6u9z&sid=9222325317970825875&loc=https%3A%2F%2Fwww.s.dev.barrons.com%2Fmarket-data%2Findexes%2Fdjia&new=0&arf=0&ltm=1728541697206&ref=&tzo=-330&wsz=1280x595&res=1280x720&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m22x3hnau86p1aw5&ckp=m22x35qlfshim0f8&glb=cx%3A1sqa1s513hns42lj9od2boq8t4%3A10nqe7zf9reid&cp_userState=anon&cp_testGroup=39&cp_env=staging&cp_topDomain=barrons.com&cp_pwTag=default&cp_pwPlacement=cx-snippetad&cp_pwCampaign=10&cp_pwType=personalized&cp_template=full&cp_access=free&cp_section=Market%20Data%20Center&cp_subsection=Quotes&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=5&cp_ab_bucket=35&cp_pageContentSource=Barrons%20Online&cp_pageContentType=ResearchTools&cp_pageContentTypeDetai=quote&cp_pageSiteProduct=BOL&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+JavaScript warning: https://pagead2.googlesyndication.com/bg/OPjMWwJBtReHhWwOPXWsCqm1x5VpbT9SkyMWV37nL8g.js line 2 > eval line 6321 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1728541701463	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:467:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:220:33
+1728541702311	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+JavaScript warning: https://www.s.dev.barrons.com/market-data/indexes/djia line 33 > injectedScript, line 19: Script terminated by timeout at:
+CTickerQueue.prototype.process@https://www.s.dev.barrons.com/market-data/indexes/djia line 33 > injectedScript:19:391
+CTicker.prototype._tick@https://www.s.dev.barrons.com/market-data/indexes/djia line 33 > injectedScript:20:850
+
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js, line 48: Script terminated by timeout at:
+Sa@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:569
+Ua@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:49:304
+Ra.prototype.flush@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:49:127
+Ta@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:483
+ph/c/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:139:292
+sc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+lg/</</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:122:516
+Qa.prototype.Nb/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:315
+lg/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:122:525
+sc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+lg/</</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:122:516
+Qa.prototype.Nb/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:315
+lg/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:122:525
+sc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.rd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+h@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:94:477
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT, line 187: Script terminated by timeout at:
+aa.set@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:187:184
+aa.set@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:189:1243
+e@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:223:85
+f@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:223:297
+cd@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:225:79
+r@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:221:1781
+sA@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:599:149
+qA/</<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:597:187
+z@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:199:203
+qA/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:597:167
+z@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:199:203
+qA@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:597:134
+rA/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:597:111
+
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 22ms)
+JavaScript warning: https://pagead2.googlesyndication.com/bg/OPjMWwJBtReHhWwOPXWsCqm1x5VpbT9SkyMWV37nL8g.js line 2 > eval line 3113 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1728541722536	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+1728541723155	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1728541723428	Marionette	INFO	Stopped listening on port 50178
+JavaScript warning: https://www.s.dev.barrons.com/market-data/_next/static/chunks/565-e1ee3553233b95b1.js, line 24: Script terminated by timeout at:
+log@https://www.s.dev.barrons.com/market-data/_next/static/chunks/565-e1ee3553233b95b1.js:24:15732
+ajaxAbort@https://www.s.dev.barrons.com/market-data/_next/static/chunks/565-e1ee3553233b95b1.js:24:21200
+abort@https://www.s.dev.barrons.com/market-data/_next/static/chunks/565-e1ee3553233b95b1.js:24:27448
+stop@https://www.s.dev.barrons.com/market-data/_next/static/chunks/565-e1ee3553233b95b1.js:24:14957
+20450/e.exports/r.signalR.prototype.stop@https://www.s.dev.barrons.com/market-data/_next/static/chunks/565-e1ee3553233b95b1.js:7:561
+45368/start/m/</</<@https://www.s.dev.barrons.com/market-data/_next/static/chunks/565-e1ee3553233b95b1.js:24:10435
+
+Dynamically enable window occlusion 1
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.

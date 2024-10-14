@@ -1,0 +1,80 @@
+1728565898622	geckodriver	INFO	Listening on 127.0.0.1:53177
+1728565901665	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53178" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileaEEFwh"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728565902304	Marionette	INFO	Marionette enabled
+1728565902554	Marionette	INFO	Listening on port 53185
+WebDriver BiDi listening on ws://127.0.0.1:53178
+Read port: 53185
+1728565902775	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53178/devtools/browser/9d7dc3f9-52c8-4321-bff1-95ffda675986
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.81&typ=pgv&rnd=m23bifvm8smhtade&sid=1139592114930554183&loc=https%3A%2F%2Fwww.s.dev.fnlondon.com%2F&new=1&arf=0&ltm=1728565909478&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m23bifwwl1s6zln8&ckp=m23bifvmomg9qok0&glb=&cp_userState=anon&cp_testGroup=75&cp_env=staging&cp_topDomain=fnlondon.com&cp_template=full&cp_access=free&cp_section=Home&cp_subsection=&cp_cms_name=CAPS&cp_subscriber=nonsubscriber&cp_edition=europegb&cp_bucket=2&cp_ab_bucket=12&cp_pageContentSource=FN%20London&cp_pageContentType=Home&cp_pageContentTypeDetai=default&cp_pageSiteProduct=FN&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/OPjMWwJBtReHhWwOPXWsCqm1x5VpbT9SkyMWV37nL8g.js line 2 > eval line 2021 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://asset.barrons.com/article/public/fn_full_article.dfb75bf78e25.js, line 62: TypeError: e(...).offset() is undefined
+JavaScript error: https://asset.barrons.com/article/public/fn_full_article.dfb75bf78e25.js, line 26: TypeError: e(...).offset() is undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/OPjMWwJBtReHhWwOPXWsCqm1x5VpbT9SkyMWV37nL8g.js line 2 > eval line 6383 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.parsely.com/keys/fnlondon.com/p.js, line 7: Script terminated by timeout at:
+value/n<@https://cdn.parsely.com/keys/fnlondon.com/p.js:7:24273
+value@https://cdn.parsely.com/keys/fnlondon.com/p.js:7:24274
+value@https://cdn.parsely.com/keys/fnlondon.com/p.js:7:24771
+
+JavaScript warning: https://imasdk.googleapis.com/js/core/bridge3.672.0_en.html#goog_760431127, line 451: Script terminated by timeout at:
+bC@https://imasdk.googleapis.com/js/core/bridge3.672.0_en.html#goog_760431127:451:310
+fC/this.aa@https://imasdk.googleapis.com/js/core/bridge3.672.0_en.html#goog_760431127:449:29
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://fpt.live.com/?session_id=d9674424b5d5450392abbe9c9ea512ca&CustomerId=33e01921-4d64-4f8c-a055-5bdaffd5e33d&PageId=SI, line 5: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.live.com."
+1728565942008	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://res-1.cdn.office.net/midgard/versionless/livepersonacard_without-react_4e09eb534f633f2b7d57.js, line 2: unreachable code after return statement
+JavaScript warning: https://cdn.adnxs.com/v/s/246/trk.js, line 334: Script terminated by timeout at:
+cf@https://cdn.adnxs.com/v/s/246/trk.js:334:84
+_e@https://cdn.adnxs.com/v/s/246/trk.js:513:127
+mi@https://cdn.adnxs.com/v/s/246/trk.js:557:831
+gi@https://cdn.adnxs.com/v/s/246/trk.js:139:30
+Kh@https://cdn.adnxs.com/v/s/246/trk.js:521:194
+Uh@https://cdn.adnxs.com/v/s/246/trk.js:365:60
+Cc@https://cdn.adnxs.com/v/s/246/trk.js:449:76
+_.B@https://cdn.adnxs.com/v/s/246/trk.js:560:3327
+_.C@https://cdn.adnxs.com/v/s/246/trk.js:560:1400
+md/<@https://cdn.adnxs.com/v/s/246/trk.js:560:5653
+
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js, line 14: Script terminated by timeout at:
+E@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:14:325
+h@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:94:449
+
+JavaScript warning: https://pagead2.googlesyndication.com/bg/OPjMWwJBtReHhWwOPXWsCqm1x5VpbT9SkyMWV37nL8g.js line 2 > eval line 1725 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1728565960817	Marionette	INFO	Stopped listening on port 53185
+JavaScript warning: https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.AppBoot.m.d5c9c439.js, line 17: Script terminated by timeout at:
+Y@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.AppBoot.m.d5c9c439.js:17:180940
+p@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.Analytics.m.dfc77c4b.js:1:715
+m@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.mailindex.7c391d98.js:1:56417
+g@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.mailindex.7c391d98.js:1:56392
+u@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.Analytics.m.dfc77c4b.js:1:555
+f@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.Analytics.m.dfc77c4b.js:1:820
+p/this.importAndExecute/<@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.mailindex.7c391d98.js:1:60062
+then@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.mailindex.7c391d98.js:1:58202
+p/this.importAndExecute@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.mailindex.7c391d98.js:1:60041
+r@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.AppBoot.m.d5c9c439.js:17:183195
+retryConnectionWithBackOff@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.Notification.m.c2bdbd12.js:1:26600
+connectionDisconnectedHandler@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.Notification.m.c2bdbd12.js:1:24982
+249580/disconnected/<@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.JquerySignalR.m.ea1f4ce2.js:1:16691
+249580/r/t.triggerHandler@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.JquerySignalR.m.ea1f4ce2.js:1:271
+stop@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.JquerySignalR.m.ea1f4ce2.js:1:18101
+355250/t3/l.stop@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.Notification.m.c2bdbd12.js:1:45526
+249580/start/l/</</<@https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.JquerySignalR.m.ea1f4ce2.js:1:13109
+
+Dynamically enable window occlusion 1
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.

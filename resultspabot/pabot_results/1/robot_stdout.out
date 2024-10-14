@@ -1,7 +1,7 @@
 
-16:08:41 [browserstack_sdk.__init__][INFO] - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+21:13:09 [browserstack_sdk.__init__][INFO] - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
 
-16:08:49 [browserstack_sdk.__init__][INFO] - Setting up for Browserstack, using framework: robot
+21:13:10 [browserstack_sdk.__init__][INFO] - Setting up for Browserstack, using framework: robot
 ==============================================================================
 Userservices-Qa-Automation                                                    
 ==============================================================================
@@ -15,101 +15,32 @@ Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression
 ==============================================================================
 Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression.Barrons R...
 ==============================================================================
-Validate the multiple authors follow button from articles page :: ... 
-16:08:50 [browserstack_sdk.__init__][INFO] - Completed setup!
-| FAIL |
-Page should have contained text 'Teresa Rivas' but did not.
-------------------------------------------------------------------------------
 Validate the Barrons Preference Center page :: This test case vali... 
-16:11:22 [browserstack_sdk.__init__][INFO] - Completed setup!
+21:13:12 [browserstack_sdk.__init__][INFO] - Completed setup!
 | FAIL |
-Page should have contained text 'Authors' but did not.
-------------------------------------------------------------------------------
-Validate Authors for Barrons Article page without byline :: This t... 
-16:14:22 [browserstack_sdk.__init__][INFO] - Completed setup!
-
-16:14:58 [browserstack_sdk.__init__][INFO] - Completed setup!
-| PASS |
-------------------------------------------------------------------------------
-Validate the Watchlist widget from Watchlist page :: This test cas... 
-16:15:41 [browserstack_sdk.__init__][INFO] - Completed setup!
-| FAIL |
-Page should have contained element '//*[text()="Add Symbol"]' but did not.
-------------------------------------------------------------------------------
-Validate the Watchlist widget from Quotes page :: This test case v... 
-16:17:43 [browserstack_sdk.__init__][INFO] - Completed setup!
-| FAIL |
-Element '//html/body/div[3]/div/div/header/div/div[1]/div[3]/div/a' not visible after 5 seconds.
-------------------------------------------------------------------------------
-Validate the Watchlist widget from Market Data page :: This test c... 
-16:19:24 [browserstack_sdk.__init__][INFO] - Completed setup!
-| FAIL |
-JavascriptException: Message: javascript error: Cannot read properties of null (reading 'querySelector')
-  (Session info: chrome=128.0.6613.85)
-Stacktrace:
-	GetHandleVerifier [0x00007FF6E682B632+29090]
-	(No symbol) [0x00007FF6E679E6E9]
-	(No symbol) [0x00007FF6E665B1CA]
-	(No symbol) [0x00007FF6E6661CD3]
-	(No symbol) [0x00007FF6E6664398]
-	(No symbol) [0x00007FF6E66F775C]
-	(No symbol) [0x00007FF6E66D66EA]
-	(No symbol) [0x00007FF6E66F65D9]
-	(No symbol) [0x00007FF6E66D6493]
-	(No symbol) [0x00007FF6E66A09B1]
-	(No symbol) [0x00007FF6E66A1B11]
-	GetHandleVerifier [0x00007FF6E6B4881D+3294093]
-	GetHandleVerifier [0x00007FF6E6B94403+3604339]
-	GetHandleVerifier [0x00007FF6E6B8A2C7+3563063]
-	GetHandleVerifier [0x00007FF6E68E6F16+797318]
-	(No symbol) [0x00007FF6E67A986F]
-	(No symbol) [0x00007FF6E67A5454]
-	(No symbol) [0x00007FF6E67A55E0]
-	(No symbol) [0x00007FF6E6794A7F]
-	BaseThreadInitThunk [0x00007FFA34117034+20]
-	RtlUserThreadStart [0x00007FFA35F82651+33]
-------------------------------------------------------------------------------
-Validate the Barrons digest notification :: This test case validat... 
-16:20:17 [browserstack_sdk.__init__][INFO] - Completed setup!
-| PASS |
-------------------------------------------------------------------------------
-Validate the Barrons real-time author notification :: This test ca... 
-16:22:34 [browserstack_sdk.__init__][INFO] - Completed setup!
-| PASS |
-------------------------------------------------------------------------------
-Validate the Barrons real-time company notification :: This test c... 
-16:23:53 [browserstack_sdk.__init__][INFO] - Completed setup!
-| PASS |
-------------------------------------------------------------------------------
-Validate the Barrons real-time stock picks notification :: This te... 
-16:25:32 [browserstack_sdk.__init__][INFO] - Completed setup!
-| PASS |
-------------------------------------------------------------------------------
-Validate Postback on Preference Center :: This test case validates... 
-16:27:06 [browserstack_sdk.__init__][INFO] - Completed setup!
-| FAIL |
-WebDriverException: Message: Session not started or terminated
+Setup failed:
+WebDriverException: Message: Automate testing time expired.
 ------------------------------------------------------------------------------
 Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression.... | FAIL |
-11 tests, 5 passed, 6 failed
+1 test, 0 passed, 1 failed
 ==============================================================================
 Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression     | FAIL |
-11 tests, 5 passed, 6 failed
+1 test, 0 passed, 1 failed
 ==============================================================================
 Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget                | FAIL |
-11 tests, 5 passed, 6 failed
+1 test, 0 passed, 1 failed
 ==============================================================================
 Userservices-Qa-Automation.Panda-Qa.Tests                             | FAIL |
-11 tests, 5 passed, 6 failed
+1 test, 0 passed, 1 failed
 ==============================================================================
 Userservices-Qa-Automation.Panda-Qa                                   | FAIL |
-11 tests, 5 passed, 6 failed
+1 test, 0 passed, 1 failed
 ==============================================================================
 Userservices-Qa-Automation                                            | FAIL |
-11 tests, 5 passed, 6 failed
+1 test, 0 passed, 1 failed
 ==============================================================================
-Output:  D:\Codes\Jenkins_2050\userservices-qa-automation\resultspabot\pabot_results\1\output.xml
+Output:  D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\resultspabot\pabot_results\1\output.xml
 
-16:27:42 [browserstack_sdk.__init__][INFO] - Handling session close
+21:13:13 [browserstack_sdk.__init__][INFO] - Handling session close
 
-16:27:43 [browserstack_sdk.__init__][INFO] - All done!
+21:13:13 [browserstack_sdk.__init__][INFO] - All done!

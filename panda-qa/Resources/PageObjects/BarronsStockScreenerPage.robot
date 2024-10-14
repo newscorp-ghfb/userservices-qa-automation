@@ -15,8 +15,8 @@ Barron's All Screeners Option
     Click Element  //*[@id="stock-screener"]/div[3]/div/div[2]/div[1]/a/span/span[2]/p
 
 Barron's Stock Test02 Screen Button
-     Wait Until Element is Visible  //html/body/div[3]/div/div[4]/div/div[2]/div[2]/a[2]/div/div[1]
-     Click Element  //html/body/div[3]/div/div[4]/div/div[2]/div[2]/a[2]/div/div[1]
+     Wait Until Element is Visible  //*[@id="__next"]/div/div[4]/div/div[1]/div/div[2]/a/span
+     Click Element  //*[@id="__next"]/div/div[4]/div/div[1]/div/div[2]/a/span
 
 Barron's Exchange Option
      Wait Until Element is Visible  //html/body/div[3]/div/div[3]/div/div[3]/div[1]/div/div[1]/div/div/label[1]/div/div[2]/input
@@ -63,8 +63,8 @@ Click on Show Results Button
      Click Element  //html/body/div[3]/div/div[3]/div/div[3]/div[2]/div[2]/div/a/span
 
 Click on Edit Screen Name Option
-     Wait Until Element is Visible  //html/body/div[3]/div/div/div[3]/div/div[2]/div[1]/div/div[2]/div/a
-     Click ELement   //html/body/div[3]/div/div/div[3]/div/div[2]/div[1]/div/div[2]/div/a
+     Wait Until Element is Visible  //*[@id="nk-1-content"]/label[2]/div/div[2]/input  20s  #//html/body/div[3]/div/div/div[3]/div/div[2]/div[1]/div/div[2]/div/a
+     Click ELement   //*[@id="nk-1-content"]/label[2]/div/div[2]/input  20s
 
 Click on Cancel Option
      Wait Until Element is Visible  //html/body/div[3]/div/div[3]/div/div[3]/div[2]/div[2]/div/div/button/span

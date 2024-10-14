@@ -1,0 +1,19 @@
+1728541202402	geckodriver	INFO	Listening on 127.0.0.1:62345
+1728541205451	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62346" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofilev7TOh3"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728541206093	Marionette	INFO	Marionette enabled
+1728541206349	Marionette	INFO	Listening on port 62356
+WebDriver BiDi listening on ws://127.0.0.1:62346
+Read port: 62356
+1728541206589	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62346/devtools/browser/6a6b1b09-5c0d-486d-9cd4-34b60104d24e
+JavaScript warning: https://asset.barrons.com/fp/assets/webpack4/runtime.9e37bf9b1d9ed2.js, line 1: Script terminated by timeout at:
+a@https://asset.barrons.com/fp/assets/webpack4/runtime.9e37bf9b1d9ed2.js:1:42
+@https://asset.barrons.com/fp/assets/webpack4/23c4ea94-df57-4f12-8c9b-55d9b32c7064.38233f7c4b2b69.js:1:47
+
+JavaScript error: https://asset.barrons.com/fp/assets/webpack4/runtime.9e37bf9b1d9ed2.js, line 1: ChunkLoadError: Loading chunk 80 failed.
+(missing: https://asset.barrons.com/fp/assets/webpack4/23c4ea94-df57-4f12-8c9b-55d9b32c7064.38233f7c4b2b69.js)
+1728541212315	Marionette	INFO	Stopped listening on port 62356
+Dynamically enable window occlusion 1

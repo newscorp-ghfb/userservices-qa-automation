@@ -1,0 +1,123 @@
+1728566433408	geckodriver	INFO	Listening on 127.0.0.1:59577
+1728566436569	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59578" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofilexZRlgO"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1728566437739	Marionette	INFO	Marionette enabled
+1728566438046	Marionette	INFO	Listening on port 59593
+Read port: 59593
+WebDriver BiDi listening on ws://127.0.0.1:59578
+1728566438216	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59578/devtools/browser/3e5e8e55-8771-4a13-a1ee-140c3f8631e5
+JavaScript warning: https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js, line 1: unreachable code after return statement
+JavaScript warning: https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js, line 1: unreachable code after return statement
+JavaScript error: https://d3h0wybtovte4j.cloudfront.net/ugeovhprhsxhowudv.js, line 1: TypeError: URL constructor: null/foo.html?o=u&r=&l=https://www.dev.wsj.com/&aa=NA&ib=false&buster=YyfrDgjGMeNFJrCz is not a valid URL.
+1728566449048	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.81&typ=pgv&rnd=m23btzbcy8ap4u67&sid=1134002947328204066&loc=https%3A%2F%2Fwww.dev.wsj.com%2F&new=1&arf=0&ltm=1728566447886&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m23btzopr834cmkf&ckp=m23btzbcxpan36rc&glb=&cp_userState=anon&cp_testGroup=44&cp_env=staging&cp_topDomain=wsj.com&cp_template=full&cp_access=free&cp_section=US%20Home%20Page&cp_subsection=&cp_cms_name=CAPS&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=1&cp_ab_bucket=71&cp_pageContentSource=WSJ%20Online&cp_pageContentType=Home&cp_pageContentTypeDetai=desktopweb&cp_pageSiteProduct=WSJ&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript warning: https://sc-static.net/scevent.min.js, line 2: Script terminated by timeout at:
+Zo@https://sc-static.net/scevent.min.js:2:43420
+@https://sc-static.net/scevent.min.js:2:45968
+Z/c/s/<@https://sc-static.net/scevent.min.js:2:4779
+m@https://sc-static.net/scevent.min.js:2:2806
+s@https://sc-static.net/scevent.min.js:2:4757
+m@https://sc-static.net/scevent.min.js:2:2806
+Z/c.send@https://sc-static.net/scevent.min.js:2:5065
+Lt/</c/<@https://sc-static.net/scevent.min.js:2:6916
+m@https://sc-static.net/scevent.min.js:2:2806
+c@https://sc-static.net/scevent.min.js:2:6893
+
+JavaScript warning: https://pagead2.googlesyndication.com/bg/OPjMWwJBtReHhWwOPXWsCqm1x5VpbT9SkyMWV37nL8g.js line 2 > eval line 2435 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/OPjMWwJBtReHhWwOPXWsCqm1x5VpbT9SkyMWV37nL8g.js line 2 > eval line 5760 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.doubleverify.com/dv-measurements6793.js, line 2: Script terminated by timeout at:
+mapData@https://cdn.doubleverify.com/dv-measurements6793.js:2:234704
+report@https://cdn.doubleverify.com/dv-measurements6793.js:2:104903
+7360/mapToWrapperFunction/</t[e]@https://cdn.doubleverify.com/dv-measurements6793.js:2:196720
+runSafely@https://cdn.doubleverify.com/dv-measurements6793.js:2:197487
+7360/publishEvents/<@https://cdn.doubleverify.com/dv-measurements6793.js:2:196577
+publishEvents@https://cdn.doubleverify.com/dv-measurements6793.js:2:196559
+dispatchEvent@https://cdn.doubleverify.com/dv-measurements6793.js:2:195141
+adSelected@https://cdn.doubleverify.com/dv-measurements6793.js:2:53577
+7360/mapToWrapperFunction/</t[e]@https://cdn.doubleverify.com/dv-measurements6793.js:2:196720
+runSafely@https://cdn.doubleverify.com/dv-measurements6793.js:2:197487
+7360/publishEvents/<@https://cdn.doubleverify.com/dv-measurements6793.js:2:196577
+publishEvents@https://cdn.doubleverify.com/dv-measurements6793.js:2:196559
+dispatchEvent@https://cdn.doubleverify.com/dv-measurements6793.js:2:195141
+reportSelectedAd@https://cdn.doubleverify.com/dv-measurements6793.js:2:58971
+unloadData@https://cdn.doubleverify.com/dv-measurements6793.js:2:59242
+7360/mapToWrapperFunction/</t[e]@https://cdn.doubleverify.com/dv-measurements6793.js:2:196720
+runSafely@https://cdn.doubleverify.com/dv-measurements6793.js:2:197487
+7360/publishEvents/<@https://cdn.doubleverify.com/dv-measurements6793.js:2:196577
+publishEvents@https://cdn.doubleverify.com/dv-measurements6793.js:2:196559
+dispatchEvent@https://cdn.doubleverify.com/dv-measurements6793.js:2:195141
+processAdData@https://cdn.doubleverify.com/dv-measurements6793.js:2:284849
+processAdDataWrapper@https://cdn.doubleverify.com/dv-measurements6793.js:2:279555
+7360/mapToWrapperFunction/</t[e]@https://cdn.doubleverify.com/dv-measurements6793.js:2:196720
+runSafely@https://cdn.doubleverify.com/dv-measurements6793.js:2:197487
+7360/publishEvents/<@https://cdn.doubleverify.com/dv-measurements6793.js:2:196577
+publishEvents@https://cdn.doubleverify.com/dv-measurements6793.js:2:196559
+dispatchEvent@https://cdn.doubleverify.com/dv-measurements6793.js:2:195141
+handleUnload@https://cdn.doubleverify.com/dv-measurements6793.js:2:286312
+131/e.wrapFunction/<@https://cdn.doubleverify.com/dv-measurements6793.js:2:342805
+
+JavaScript warning: https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js, line 1: Script terminated by timeout at:
+8018/g/<@https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js:1:111956
+r@https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js:1:111426
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://news.google.com/swg/js/v1/swg.js, line 17: Error: XHR Failed fetching (https://news.google.com/...): (Note: a CORS error above may indicate that this publisher or domain is not configured in Publisher Center. The CORS error happens because 4xx responses do not set CORS headers.)
+
+TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: https://news.google.com/swg/js/v1/swg.js, line 17: Error: Error: not allowed
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: AbortError: The operation was aborted. 
+JavaScript warning: https://cdn.cxense.com/cx.js, line 6: Script terminated by timeout at:
+n@https://cdn.cxense.com/cx.js:6:1191
+r@https://cdn.cxense.com/cx.js:6:1272
+l<@https://cdn.cxense.com/cx.js:6:1807
+Yi@https://cdn.cxense.com/cx.js:6:52590
+uo@https://cdn.cxense.com/cx.js:6:54979
+aa@https://cdn.cxense.com/cx.js:6:70625
+ua/<@https://cdn.cxense.com/cx.js:6:70932
+
+JavaScript warning: https://imasdk.googleapis.com/js/core/bridge3.672.0_en.html#goog_1485473960, line 451: Script terminated by timeout at:
+bC@https://imasdk.googleapis.com/js/core/bridge3.672.0_en.html#goog_1485473960:451:310
+fC/this.aa@https://imasdk.googleapis.com/js/core/bridge3.672.0_en.html#goog_1485473960:449:29
+
+JavaScript warning: https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.SplArP-rjcA.es5.O/am=MBgwAw/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI58lWJaA1O4F6MTgQYBsFgWIvXmAQ/m=_b,_tp, line 296: Script terminated by timeout at:
+c@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.SplArP-rjcA.es5.O/am=MBgwAw/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI58lWJaA1O4F6MTgQYBsFgWIvXmAQ/m=_b,_tp:296:187
+b@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.SplArP-rjcA.es5.O/am=MBgwAw/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI58lWJaA1O4F6MTgQYBsFgWIvXmAQ/m=_b,_tp:287:48
+
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT, line 199: Script terminated by timeout at:
+z@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:199:158
+$B/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:622:53
+z@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:199:203
+$B@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:622:20
+dC/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:625:424
+
+1728566476812	Marionette	INFO	Stopped listening on port 59593
+JavaScript warning: https://www.wsj.com/js/scroll-timeline/637746fa559c3f9d01fcdaf2fcb7e649d18dfc33/scroll-timeline.js, line 1: Script terminated by timeout at:
+get@https://www.wsj.com/js/scroll-timeline/637746fa559c3f9d01fcdaf2fcb7e649d18dfc33/scroll-timeline.js:1:5937
+get@https://www.wsj.com/js/scroll-timeline/637746fa559c3f9d01fcdaf2fcb7e649d18dfc33/scroll-timeline.js:1:7106
+get@https://www.wsj.com/js/scroll-timeline/637746fa559c3f9d01fcdaf2fcb7e649d18dfc33/scroll-timeline.js:1:7614
+N@https://www.wsj.com/js/scroll-timeline/637746fa559c3f9d01fcdaf2fcb7e649d18dfc33/scroll-timeline.js:1:11760
+get@https://www.wsj.com/js/scroll-timeline/637746fa559c3f9d01fcdaf2fcb7e649d18dfc33/scroll-timeline.js:1:21347
+get@https://www.wsj.com/js/scroll-timeline/637746fa559c3f9d01fcdaf2fcb7e649d18dfc33/scroll-timeline.js:1:22199
+F@https://www.wsj.com/js/scroll-timeline/637746fa559c3f9d01fcdaf2fcb7e649d18dfc33/scroll-timeline.js:1:13142
+n.play@https://www.wsj.com/js/scroll-timeline/637746fa559c3f9d01fcdaf2fcb7e649d18dfc33/scroll-timeline.js:1:16045
+value@https://www.wsj.com/js/scroll-timeline/637746fa559c3f9d01fcdaf2fcb7e649d18dfc33/scroll-timeline.js:1:33769
+a@https://www.wsj.com/_next/static/chunks/7577-36cee8b2e0603a15.js:4:422
+i@https://www.wsj.com/_next/static/chunks/4611-9fdc1b990516e061.js:21:5575
+25671/n/a.ready/<@https://www.wsj.com/_next/static/chunks/4611-9fdc1b990516e061.js:21:7082
+o@https://www.wsj.com/_next/static/chunks/4611-9fdc1b990516e061.js:21:6997
+o@https://www.wsj.com/_next/static/chunks/4611-9fdc1b990516e061.js:21:5475
+25671/n/a/u/<@https://www.wsj.com/_next/static/chunks/4611-9fdc1b990516e061.js:21:6801
+o@https://www.wsj.com/_next/static/chunks/4611-9fdc1b990516e061.js:21:5833
+25671/n/a/u/c.onbeforeload@https://www.wsj.com/_next/static/chunks/4611-9fdc1b990516e061.js:21:6679
+
+Dynamically enable window occlusion 1
