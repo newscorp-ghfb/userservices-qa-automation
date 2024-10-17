@@ -7,11 +7,9 @@ ${JSFollowButtonWSJPath}=  document.querySelector("#__next > div > main > div.ar
     #...  .querySelector('ufc-follow-button').shadowRoot  #2
     #...  .querySelector('button')  #3
 
-${JSCustomFollowButtonWSJPath}=  document.querySelector("#__next > div > main > div.article-container.css-5u49c7.e1ja801i8 > article > div.crawler.css-j6808u.etunnkc9 > div.enimwd21.css-hb9xd5 > div > div > div > div.css-1mfi1zu > div > div > div > ufc-follow-author-widget").shadowRoot.querySelector("ufc-follow-widget > ufc-follow-button").shadowRoot.querySelector("button")  #document.querySelector("#__next > div > main > div.article-container.css-5u49c7.e1ja801i8 > article > div.crawler.css-j6808u.etunnkc10 > div.enimwd21.css-hb9xd5 > div > div > div > div.css-1mfi1zu > div > div > div > ufc-follow-author-widget").shadowRoot.querySelector("ufc-follow-widget > ufc-follow-button").shadowRoot.querySelector("button")
-
-#document.querySelector('ufc-follow-custom-topic-widget').shadowRoot  #1
-#    ...  .querySelector('ufc-follow-button').shadowRoot  #2
-#    ...  .querySelector('button')  #3
+${JSCustomFollowButtonWSJPath}=  document.querySelector('ufc-follow-custom-topic-widget').shadowRoot  #1
+  ...  .querySelector('ufc-follow-button').shadowRoot  #2
+     ...  .querySelector('button')  #3
 
 ${JSUndoButtonWSJPath}=  document.querySelector('ufc-snackbar').shadowRoot  #1
     ...  .querySelector('div')  #2
@@ -105,8 +103,8 @@ Validate Sign In Modal
     Page Should Contain Element  dom:${JSFollowSignInHeaderPath}
 
 Click Sign In Button Modal
-    Wait Until Element is Visible  dom:${JSFollowSignInHeaderPath}  20s
-    Click Element  dom:${JSFollowSignInButtonPath}
+    Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[1]/div[1]/header/div[1]/div[3]/a[2]  #dom:${JSFollowSignInHeaderPath}  20s
+    Click Element  //*[@id="root"]/div/div/div/div[1]/div[1]/header/div[1]/div[3]/a[2]  #dom:${JSFollowSignInButtonPath}
 
 Click Undo Link
     Wait Until Element is Visible  dom:${JSUndoButtonWSJPath}
@@ -116,7 +114,8 @@ Click Preference Center Link
     Wait Until Element is Visible  dom:${JSPreferenceCenterLinkWSJPath}
     Click Element  dom:${JSPreferenceCenterLinkWSJPath}
 
-Click Board Pack Exclusive Newsletter Button   #Click Board Pack Exclusive Button
+#Click Board Pack Exclusive Newsletter Button
+Click Board Pack Exclusive Button
      Wait Until Element is visible  //html/body/div[3]/div/div[2]/div/header[1]/div[5]/section/ul/li[4]
      Click Element  //html/body/div[3]/div/div[2]/div/header[1]/div[5]/section/ul/li[4]
 #    Click Button  dom:${JSCustomFollowButtonWSJPath}  #This should be the user name

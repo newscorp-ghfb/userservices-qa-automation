@@ -1,68 +1,51 @@
-1727690138507	geckodriver	INFO	Listening on 127.0.0.1:51019
-1727690141840	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51020" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileu1Fwqu"
+1729054713158	geckodriver	INFO	Listening on 127.0.0.1:58479
+1729054716398	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58480" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofilenXxYaX"
 console.warn: services.settings: Ignoring preference override of remote settings server
 console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
 Dynamically enable window occlusion 0
-1727690142654	Marionette	INFO	Marionette enabled
-1727690142928	Marionette	INFO	Listening on port 50572
-WebDriver BiDi listening on ws://127.0.0.1:51020
-Read port: 50572
-1727690143213	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-DevTools listening on ws://127.0.0.1:51020/devtools/browser/d15dba7a-d9f0-4259-a9f9-9f6fdd13e0fb
-JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m1ou3ydxlfn1ezis&sid=9222325317970825875&loc=https%3A%2F%2Fwww.s.dev.barrons.com%2F&new=1&arf=0&ltm=1727690153688&ref=&tzo=-330&wsz=1280x595&res=1280x720&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m1ou3yg05z4nb3yu&ckp=m1ou3ydxylgg2oeu&glb=&amo=1726570740&cp_userState=anon&cp_testGroup=96&cp_env=staging&cp_topDomain=barrons.com&cp_pwTag=default&cp_pwPlacement=cx-snippetad&cp_pwCampaign=10&cp_pwType=personalized&cp_type=&cp_template=preview&cp_access=paid&cp_section=&cp_subsection=&cp_cms_name=Barron's%20Authoring%20QA&cp_vix=&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=3&cp_ab_bucket=23&cp_pageContentSource=Barrons%20Online&cp_pageContentType=Article&cp_pageContentTypeDetai=continuous&cp_pageSiteProduct=BOL&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
-JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
-JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
-console.error: ({})
-console.error: ({})
-JavaScript error: https://instant.page/5.1.0, line 1: SyntaxError: redeclaration of var e
-JavaScript error: https://instant.page/5.1.0, line 1: SyntaxError: redeclaration of var e
-JavaScript error: , line 0: uncaught exception: undefined
-JavaScript error: https://djcs-multi-region-assets-ohio.s3.us-east-2.amazonaws.com/dj-watchlist/asset/dj-watchlist/qa/v1.12.0-beta.85/p-c4e7c817.entry.js, line 11: TypeError: Error.captureStackTrace is not a function
-JavaScript error: https://www.s.dev.barrons.com/_next/static/chunks/545-a4003013de084026.js, line 1: TypeError: IntersectionObserver.observe: Argument 1 is not an object.
-JavaScript warning: https://pagead2.googlesyndication.com/bg/Ofjd5SEjadZox9_ebcUE7qVtcVJKxbTf46gjSEHhnaE.js line 2 > eval line 2360 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
-JavaScript warning: https://pagead2.googlesyndication.com/bg/Ofjd5SEjadZox9_ebcUE7qVtcVJKxbTf46gjSEHhnaE.js line 2 > eval line 466 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
-JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
-1727690164809	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
-1727690164814	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
-JavaScript error: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 10: Error: Piano SDK is loaded twice on same page. Try to fix that to prevent the message.
-JavaScript error: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 10: Error: Piano SDK is loaded twice on same page. Try to fix that to prevent the message.
-JavaScript warning: https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.0eXORzFfzfU.es5.O/am=AMGAGQ/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4LpzYUKp_ZcvThenLf86tdLtnqaQ/m=_b,_tp, line 286: Script terminated by timeout at:
-c@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.0eXORzFfzfU.es5.O/am=AMGAGQ/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4LpzYUKp_ZcvThenLf86tdLtnqaQ/m=_b,_tp:286:187
-b@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.0eXORzFfzfU.es5.O/am=AMGAGQ/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4LpzYUKp_ZcvThenLf86tdLtnqaQ/m=_b,_tp:277:48
+1729054717063	Marionette	INFO	Marionette enabled
+1729054717352	Marionette	INFO	Listening on port 58502
+Read port: 58502
+WebDriver BiDi listening on ws://127.0.0.1:58480
+1729054717503	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58480/devtools/browser/14a38da9-7760-43f9-be4c-1be2336f9635
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.81&typ=pgv&rnd=m2bejeqatfrecd5s&sid=1134002947328204066&loc=https%3A%2F%2Fwww.s.dev.wsj.com%2F&new=1&arf=0&ltm=1729054722911&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m2bejez5eu9vq6x2&ckp=m2bejeqaybjcz1lc&glb=&cp_userState=anon&cp_testGroup=59&cp_env=staging&cp_topDomain=wsj.com&cp_access=free&cp_section=US%20Home%20Page&cp_subsection=&cp_cms_name=CAPS&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=3&cp_ab_bucket=93&cp_pageContentSource=WSJ%20Online&cp_pageContentType=Home&cp_pageContentTypeDetai=desktopweb&cp_pageSiteProduct=WSJ&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript error: https://www.s.dev.wsj.com/ line 1 > injectedScript, line 1: SyntaxError: redeclaration of const cxHandleCusomterNavSubscribeBtnUpdate
+JavaScript warning: https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js, line 1: unreachable code after return statement
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/-DbLkJJK3YZOSOasYi6rcjkBM_N5vpNI48728xD2bD8.js line 2 > eval line 5021 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/-DbLkJJK3YZOSOasYi6rcjkBM_N5vpNI48728xD2bD8.js line 2 > eval line 4937 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.cxense.com/cx.js, line 6: Script terminated by timeout at:
+ua/<@https://cdn.cxense.com/cx.js:6:70921
+
+JavaScript warning: https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js, line 1: Script terminated by timeout at:
+8018/g/<@https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js:1:111956
+r@https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js:1:111426
 
 JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
 JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript warning: https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.s.dev.barrons.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.46792092508208605%22,%22tld%22:%22www.s.dev.barrons.com%22,%22topUrl%22:%22www.s.dev.barrons.com%22,%22version%22:%229_12_0%22}, line 13: Script terminated by timeout at:
-r.prototype.flushEventQueue@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.s.dev.barrons.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.46792092508208605%22,%22tld%22:%22www.s.dev.barrons.com%22,%22topUrl%22:%22www.s.dev.barrons.com%22,%22version%22:%229_12_0%22}:13:3137
-r/<@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.s.dev.barrons.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.46792092508208605%22,%22tld%22:%22www.s.dev.barrons.com%22,%22topUrl%22:%22www.s.dev.barrons.com%22,%22version%22:%229_12_0%22}:13:3642
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT, line 223: Script terminated by timeout at:
+f@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:223:111
+dd@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:225:79
+r@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:221:1781
+FA@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:593:149
+DA/</<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:591:187
+z@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:199:203
+DA/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:591:167
+z@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:199:203
+DA@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:591:134
+EA/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:591:111
 
-JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
-JavaScript error: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 10: Error: Piano SDK is loaded twice on same page. Try to fix that to prevent the message.
-JavaScript warning: https://pagead2.googlesyndication.com/bg/Ofjd5SEjadZox9_ebcUE7qVtcVJKxbTf46gjSEHhnaE.js line 2 > eval line 347 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
-1727690173882	Marionette	INFO	Stopped listening on port 50572
-JavaScript warning: https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js, line 1: Script terminated by timeout at:
-3992/a/<@https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js:1:14309
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.81&typ=pgv&rnd=m2bek0x1fuxpgh7i&sid=1134002947328204066&loc=https%3A%2F%2Fwww.dev.wsj.com%2Fpreference-center%2Falerts%3Falert%3Dsection%26id%3Dtech%252Fai&new=0&arf=0&ltm=1729054751663&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m2bek129vet21q63&ckp=m2bejeqaybjcz1lc&glb=&eid0=e4cefa22ef027cc0132f0c218da37da39cdb3228234af4df969b5c463592e123&eit0=wsj&cp_userState=anon&cp_testGroup=59&cp_env=staging&cp_topDomain=wsj.com&cp_template=full&cp_access=paid&cp_section=Preference%20Center&cp_subsection=Alerts&cp_cms_name=servo&cp_subscriber=registered&cp_edition=naus&cp_bucket=5&cp_ab_bucket=55&cp_pageContentSource=WSJ%20Online&cp_pageContentType=CustomerResources&cp_pageContentTypeDetai=preference-center&cp_pageSiteProduct=WSJ&cp_userTags=BARRONS-SUB&cp_sessionState=ca, line 1: TypeError: cX.loadScript is not a function
+1729054753676	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://sc-static.net/scevent.min.js, line 2: Script terminated by timeout at:
+m@https://sc-static.net/scevent.min.js:2:2789
+c@https://sc-static.net/scevent.min.js:2:6893
 
+1729054754483	Marionette	INFO	Stopped listening on port 58502
 Dynamically enable window occlusion 1
-console.error: services.settings: 
-  Message: NetworkError: Network error: TypeError: NetworkError: Network request failed
-  Stack:
-    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:107:1
-NetworkError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:5
-_adjustedError@resource://services-settings/RemoteSettingsClient.sys.mjs:916:14
-maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:821:38
-
-console.warn: services.settings: main/doh-providers sync interrupted by shutdown
-console.warn: services.settings: main/doh-config sync interrupted by shutdown
-console.warn: services.settings: main/devtools-devices sync interrupted by shutdown
-console.warn: services.settings: main/websites-with-shared-credential-backends sync interrupted by shutdown
-console.warn: services.settings: main/language-dictionaries sync interrupted by shutdown
-console.warn: services.settings: main/password-recipes sync interrupted by shutdown
-console.warn: services.settings: main/password-rules sync interrupted by shutdown
-console.warn: services.settings: main/fxmonitor-breaches sync interrupted by shutdown
-console.warn: services.settings: main/addons-manager-settings sync interrupted by shutdown
-console.warn: services.settings: main/query-stripping sync interrupted by shutdown
-console.warn: services.settings: main/partitioning-exempt-urls sync interrupted by shutdown
-console.warn: services.settings: main/translations-wasm sync interrupted by shutdown
-console.error: (new AbortError("IndexedDB: main/search-config-overrides getLastModified() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/IDBHelpers.sys.mjs", 16))

@@ -9,7 +9,7 @@ Resource  ../../../Resources/PageObjects/APIAutomationPage.robot
 Library  SeleniumLibrary
 Library  RequestsLibrary
 
-#Test Setup  CommonFunctionality.Start Barrons Article
+Test Setup  CommonFunctionality.Start Barrons Article
 Test Teardown  CommonFunctionality.Finish Testcase
 *** Variables ***
 

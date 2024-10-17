@@ -58,7 +58,7 @@ Validate Authors for FN Article page without byline
 #US-T142
 Validate the FN digest notification
     [Documentation]  This test case validates the FN digest notification
-    [Tags]  Regression  Notifications   Follow1
+    [Tags]  Regression  Notifications   US-T142
     FNMailboxPage.Navigate Mailbox page
     FNMailboxPage.Login
     FNMailboxPage.Select Inbox
@@ -78,7 +78,7 @@ Validate the FN real-time author notification
 #US-T140
 Validate the FN real-time company notification
     [Documentation]  This test case validates the FN real-time company notification
-    [Tags]  Regression  Company  Notifications   Follow1
+    [Tags]  Regression  Company  Notifications   US-T140
     FNMailboxPage.Navigate Mailbox page
     FNMailboxPage.Login
     FNMailboxPage.Select Inbox
@@ -89,7 +89,7 @@ Validate the FN real-time company notification
 #US T357
 Validate Postback on Preference Center
     [Documentation]  This test case validates the FN Postback on Preference Center
-    [Tags]  Regression  Postback          Follow1
+    [Tags]  Regression  Postback          357
     FNPreferenceCenterPage.Add Breaking News By Hotlink
     DefinedKeywords.FN Sign In Process
     Set Selenium Implicit Wait  15s

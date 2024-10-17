@@ -18,6 +18,7 @@ Resource  ../../../Resources/PageObjects/BarronsStockScreenerPage.robot
 
 Library  SeleniumLibrary
 
+
 Test Setup  CommonFunctionality.Start Barrons Article
 #Test Setup  CommonFunctionality.Start Barrons Newsletter
 Test Teardown  CommonFunctionality.Finish Testcase
@@ -41,6 +42,16 @@ Validate the multiple authors follow button from articles page
 #US-T477
 Validate the Barrons Preference Center page
     [Documentation]  This test case validates the barrons preference center page
+    [Tags]  Regression  PreferenceCenter  477
+    CommonFunctionality.Start Barrons Newsletter
+    DefinedKeywords.Barrons Newsletter Sign in Process
+    BarronsNewslettersPage.Click Watchlist Button
+    BarronsNewslettersPage.Barrons Signout Process
+    BarronsNewslettersPage.Validate watchlist is present
+
+#US-T467
+Validate the Barrons Preference Center page watchlist logout
+    [Documentation]  This test case validates the barrons preference center page Logout
     [Tags]  Regression  PreferenceCenter  TagBN
     CommonFunctionality.Start Barrons Newsletter
     DefinedKeywords.Barrons Newsletter Sign in Process
@@ -118,7 +129,7 @@ Validate the Watchlist widget from Watchlist page
 #US-T468
 Validate the Watchlist widget from Watchlist
     [Documentation]  This test case validates the watchlist widget from watchlist page
-    [Tags]  Regression  Watchlist      TagWatch1
+    [Tags]  Regression  Watchlist      468
 
     CommonFunctionality.Start Barrons for Watchlist page
     DefinedKeywords.Sign In Process
@@ -156,7 +167,7 @@ Validate the Watchlist widget from Watchlist
 #US-T250
 Validate the Watchlist widget from Quotes page
     [Documentation]  This test case validates the watchlist widget from quotes page
-    [Tags]  Regression  Watchlist  QuotesPage     follow
+    [Tags]  Regression  Watchlist  QuotesPage     250
 
     CommonFunctionality.Start Barrons for Quotes page
     DefinedKeywords.Barrons Quote Page Sign in Process
@@ -170,7 +181,7 @@ Validate the Watchlist widget from Quotes page
 #US-T384
 Verify if a user is able to login into Barrons Stock Screener and access the Featured Preset Screeners without any subscription for free review.
     [Documentation]  This test case validates that a user is able to login into Barrons Stock Screener and access the Featured Preset Screeners without any subscription for free review.
-        [Tags]  Barrons StockScreener Page              BB
+        [Tags]  Barrons StockScreener Page              384
 
     CommonFunctionality.Start Barrons Stock Screener Page for Featured Preset Screener
     Set Selenium Speed  0.25 seconds
@@ -183,7 +194,7 @@ Verify if a user is able to login into Barrons Stock Screener and access the Fea
 #US-T385
 Verify if a user is able to navigate to Barrons Stock Screener and subscribe in order to edit the list of featured preset screens.
     [Documentation]  This test case validates that a user is able to subscribe and login into Barrons Stock Screener in order to edit the list of featured preset screens.
-    [Tags]  Barrons StockScreener Page      BSC
+    [Tags]  Barrons StockScreener Page      385
 
     CommonFunctionality.Start Barrons Stock Screener Page for Featured Preset Screener
     Set Selenium Speed  0.2 seconds
@@ -191,6 +202,7 @@ Verify if a user is able to navigate to Barrons Stock Screener and subscribe in 
     Set Selenium Implicit Wait  35 seconds
     BarronsStockScreenerPage.Barron's Stock Test02 Screen Button
     Set Selenium Speed  15 seconds
+    Execute javascript  window.scrollTo(0,500)
     BarronsStockScreenerPage.Click on Edit Screen Name Option
 #    BarronsStockScreenerPage.Barron's Stocks Market Capitalization Index Value
     BarronsStockScreenerPage.Click on Show Results Button
@@ -263,7 +275,7 @@ Validate the Barrons real-time author notification
 #US-T137
 Validate the Barrons real-time company notification
     [Documentation]  This test case validates the Barrons real-time company notification
-    [Tags]  Regression  Notifications  Company  Follow1
+    [Tags]  Regression  Notifications  Company  137
     BarronsMailboxPage.Navigate Mailbox page
     BarronsMailboxPage.Login
     BarronsMailboxPage.Select Inbox
@@ -273,7 +285,7 @@ Validate the Barrons real-time company notification
 #US-T139
 Validate the Barrons real-time stock picks notification
     [Documentation]  This test case validates the Barrons real-time stock picks notification
-    [Tags]  Regression  Notifications  CustomTopic   SP
+    [Tags]  Regression  Notifications  CustomTopic   139
     BarronsMailboxPage.Navigate Mailbox page
     BarronsMailboxPage.Login
     BarronsMailboxPage.Select Inbox

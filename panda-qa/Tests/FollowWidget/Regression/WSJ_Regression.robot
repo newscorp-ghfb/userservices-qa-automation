@@ -15,6 +15,7 @@ Resource  ../../../Resources/PageObjects/WSJPreferenceCenterPage.robot
 Test Setup  CommonFunctionality.Start WSJ Article
 Test Teardown  CommonFunctionality.Finish Testcase
 *** Variables ***
+${URL}=  https://www.wsj.com/preference-center/alerts?alert=section&id=tech%2Fai
 
 *** Test Cases ***
 #US-T78
@@ -23,7 +24,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T75
 Validate the multiple authors follow button from articles page
     [Documentation]  This test case validates the multiple authors follow button from articles page
-    [Tags]  Regression  Author  Follow  Article       MA
+    [Tags]  Regression  Author  Follow  Article
 
     DefinedKeywords.Sign In Process
     Set Selenium Speed  0.2 seconds
@@ -49,11 +50,42 @@ Validate the multiple authors follow button from articles page
 #    WSJPreferenceCenterPage.Validate Author 1
 #    WSJPreferenceCenterPage.Validate Author 2
 
+#US-T479
+Validate the WSJ Preference Center page Subscribe color
+    [Documentation]  This test case validates the WSJ preference center page Subsdcribe color
+    [Tags]  Regression  PreferenceCenter  479
+    CommonFunctionality.Start WSJ Homepage
+    Set Selenium Implicit Wait  10s
+    DefinedKeywords.WSJ Alerts Sign In Process
+    #WSJPreferenceCenterPage.Navigate Sign in logo
+    #WSJPreferenceCenterPage.Click Email & Alerts
+    #WSJPreferenceCenterPage.Navigate Author page prod env
+    #WSJPreferenceCenterPage.Navigate Author Secetion Prod Env
+    CommonFunctionality.Start WSJ Preference Center Page
+    Set Selenium Implicit Wait  10s
+    WSJPreferenceCenterPage.Navigate Author Secetion
+    Execute javascript  window.scrollTo(0,500)
+    WSJPreferenceCenterPage.Validate the Selection color
+
+#US-T461
+Validate the WSJ Follow Function
+    [Documentation]  This test case validates the WSJ Follow Function
+    [Tags]  Regression  Follow Function  461
+    CommonFunctionality.Start WSJ Homepage
+    Set Selenium Implicit Wait  10s
+    DefinedKeywords.WSJ Alerts Sign In Process
+    #Switch Window  ${URL}
+    WSJPreferenceCenterPage.Validate the follow function for AI alerts prod
+    #Set Selenium Implicit Wait  10s
+
+    WSJPreferenceCenterPage.Navigate to the Sections&Topics prod
+
+
+
 #US-T431
 Validate the WSJ Preference Center page
     [Documentation]  This test case validates the WSJ preference center page
-    [Tags]  Regression  PreferenceCenter  TagWSJ1
-
+    [Tags]  Regression  PreferenceCenter  431
     CommonFunctionality.Start WSJ Preference Center Page Newsletter
     DefinedKeywords.WSJ Newsletters Page Sign In Process
 
@@ -320,7 +352,7 @@ Validate the follow button for Commentary breadcrumb from Commentary page
 #US-T163
 Validate the follow button for Editorials breadcrumb from Editorials page
     [Documentation]  This test case validates the follow button from Editorials page
-    [Tags]  Regression  Follow  Breadcrumb          EB
+    [Tags]  Regression  Follow  Breadcrumb          US-T160
     CommonFunctionality.Start WSJ Editorials for Editorials breadcrumb
                     #IF  "${Env}" == "prod"
         #DefinedKeywords.New WSJ Sign In Process
@@ -488,7 +520,7 @@ Validate the follow button for Elections breadcrumb from articles page
 #US-T223
 Validate the Watchlist widget from Watchlist page
     [Documentation]  This test case validates the watchlist widget from watchlist page
-    [Tags]  Regression  Watchlist   follow
+    [Tags]  Regression  Watchlist   22
 
     CommonFunctionality.Start WSJ for Watchlist page
     DefinedKeywords.Sign In Process
@@ -516,7 +548,7 @@ Validate the Watchlist widget from Watchlist page
 #US-T271
 Validate the alert button for Board Pack Exclusive from articles page
     [Documentation]  This test case validates the alert button for Board Pack Exclusive from articles pag
-    [Tags]  Regression Alerts  CustomTopic  Article   Follow1
+    [Tags]  Regression Alerts  CustomTopic  Article   268
     CommonFunctionality.Start WSJ Article for Board Pack Exclusive
     #WSJArticlePage.Validate Custom Following Button
     WSJArticlePage.Click Board Pack Exclusive Button
@@ -525,14 +557,14 @@ Validate the alert button for Board Pack Exclusive from articles page
     IF  "${Env}" == "prod"
         DefinedKeywords.New WSJ Sign In Process
     ELSE IF  "${Env}"} == "dev"
-        DefinedKeywords.New WSJ Sign In Process
-    END
+        DefinedKeywords.WSJ Sign In Process
+   END
     Set Selenium Speed  0.2 seconds
     IF  "${Env}" == "prod"
         Set Selenium Speed  0.2 seconds
     ELSE IF  "${Env}" == "dev"
-        Set Selenium Speed  0.35 seconds
-    END
+      Set Selenium Speed  0.35 seconds
+   END
     WSJArticlePage.Click Board Pack Exclusive Button
 #    WSJArticlePage.Validate Custom Following Button
 #    WSJArticlePage.Click Custom Following Button
@@ -628,7 +660,7 @@ Validate WSJ Legacy company Facebook to be added to New Preference Center
 #US-T124
 Validate the WSJ real-time author notification
     [Documentation]  This test case validates the WSJ real-time author notification
-    [Tags]  Regression  Notifications  Author      Follow1
+    [Tags]  Regression  Notifications  Author      124
     WSJMailboxPage.Navigate Mailbox page
     WSJMailboxPage.Login
     WSJMailboxPage.Select Inbox
@@ -681,7 +713,7 @@ Validate the WSJ real-time author video notification
 #US-T312
 Validate the WSJ real-time campaign notification
     [Documentation]  This test case validates the WSJ real-time campaign notification
-    [Tags]  Regression  Notifications             Follow1
+    [Tags]  Regression  Notifications             312
     WSJMailboxPage.Navigate Mailbox page
     WSJMailboxPage.Login
     WSJMailboxPage.Select Inbox
@@ -694,7 +726,7 @@ Validate the WSJ real-time campaign notification
 #US-T322
 Validate the alert button for Education
     [Documentation]  This test case validates the alert button for Education
-    [Tags]  Regression  Alerts    Follow1
+    [Tags]  Regression  Alerts    320
     CommonFunctionality.Start WSJ Article for Education
     WSJArticlePage.Click Education Button
     WSJArticlePage.Validate Sign In Modal
@@ -725,7 +757,7 @@ Validate the alert button for Education
 #US-T326
 Validate the alert button for heard on the street
     [Documentation]  This test case validates the alert button for heard on the street
-    [Tags]  Regression  Alerts            Follow1
+    [Tags]  Regression  Alerts            323
     CommonFunctionality.Start WSJ Article for heard on the street page
         IF  "${Env}" == "prod"
         DefinedKeywords.New WSJ Sign In Process

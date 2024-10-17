@@ -1,51 +1,43 @@
-1727350892768	geckodriver	INFO	Listening on 127.0.0.1:55414
-1727350895805	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55415" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofilei46eKd"
+1729049996699	geckodriver	INFO	Listening on 127.0.0.1:53258
+1729049999752	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53259" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileKMUWPf"
 console.warn: services.settings: Ignoring preference override of remote settings server
 console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
 Dynamically enable window occlusion 0
-1727350896418	Marionette	INFO	Marionette enabled
-1727350896658	Marionette	INFO	Listening on port 55423
-WebDriver BiDi listening on ws://127.0.0.1:55415
-Read port: 55423
-1727350896901	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-DevTools listening on ws://127.0.0.1:55415/devtools/browser/f5d8a775-a326-4218-b254-5a587ab2ded0
-JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m1j84ktqbzuoifc9&sid=9222325317970825875&loc=https%3A%2F%2Fwww.barrons.com%2F&new=1&arf=0&ltm=1727350900337&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m1j84lz61vw42f3v&ckp=m1j84ktq3t6lspbf&glb=&cp_userState=anon&cp_testGroup=30&cp_topDomain=barrons.com&cp_access=free&cp_section=US%20Home%20Page%20Weekday&cp_subsection=&cp_cms_name=CAPS&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=4&cp_ab_bucket=64&cp_pageContentSource=Barrons%20Online&cp_pageContentType=Home&cp_pageContentTypeDetai=default&cp_pageSiteProduct=BOL&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
-JavaScript error: https://asset.barrons.com/fp/assets/webpack4/runtime.83d0252bc6db90.js, line 1: ChunkLoadError: Loading chunk 877 failed.
-(error: https://asset.barrons.com/fp/assets/webpack4/877.4e5d331222ef02.js)
-JavaScript error: https://asset.barrons.com/fp/assets/webpack4/runtime.83d0252bc6db90.js, line 1: ChunkLoadError: Loading chunk 877 failed.
-(error: https://asset.barrons.com/fp/assets/webpack4/877.4e5d331222ef02.js)
-JavaScript error: https://asset.barrons.com/fp/assets/webpack4/runtime.83d0252bc6db90.js, line 1: ChunkLoadError: Loading chunk 877 failed.
-(error: https://asset.barrons.com/fp/assets/webpack4/877.4e5d331222ef02.js)
-JavaScript error: https://asset.barrons.com/fp/assets/webpack4/runtime.83d0252bc6db90.js, line 1: ChunkLoadError: Loading chunk 877 failed.
-(error: https://asset.barrons.com/fp/assets/webpack4/877.4e5d331222ef02.js)
+1729050000439	Marionette	INFO	Marionette enabled
+1729050000688	Marionette	INFO	Listening on port 53268
+WebDriver BiDi listening on ws://127.0.0.1:53259
+Read port: 53268
+1729050000908	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53259/devtools/browser/c30eda16-c99c-4a47-a563-0abf10c60b7e
+JavaScript warning: https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js, line 1: unreachable code after return statement
+JavaScript warning: https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js, line 1: unreachable code after return statement
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.81&typ=pgv&rnd=m2bbqhjbyt006pej&sid=1134002947328204066&loc=https%3A%2F%2Fwww.dev.wsj.com%2F&new=1&arf=0&ltm=1729050014284&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m2bbqi0a3f8xaltt&ckp=m2bbqhjbcqj77aob&glb=&cp_userState=anon&cp_testGroup=24&cp_env=staging&cp_topDomain=wsj.com&cp_template=full&cp_access=free&cp_section=US%20Home%20Page&cp_subsection=&cp_cms_name=CAPS&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=5&cp_ab_bucket=95&cp_pageContentSource=WSJ%20Online&cp_pageContentType=Home&cp_pageContentTypeDetai=desktopweb&cp_pageSiteProduct=WSJ&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+1729050015607	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: , line 0: uncaught exception: undefined
 JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: https://www.barrons.com/asset/dj-watchlist/v1.11.0/p-8e3b6675.entry.js, line 11: TypeError: Error.captureStackTrace is not a function
-JavaScript error: https://www.barrons.com/asset/dj-watchlist/v1.11.0/p-8e3b6675.entry.js, line 11: TypeError: Error.captureStackTrace is not a function
-console.error: ({})
-console.error: ({})
-JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m1j84p8iasqh8y15&sid=9222325317970825875&loc=https%3A%2F%2Fwww.s.dev.barrons.com%2Farticles%2Fbuy-under-armour-stock-pick-51650672000&new=0&arf=0&ltm=1727350906054&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m1j84pai3up69n6c&ckp=m1j84ktq3t6lspbf&glb=&amo=1720048200&cp_userState=anon&cp_testGroup=30&cp_topDomain=barrons.com&cp_pwTag=default&cp_pwPlacement=cx-snippetad&cp_pwCampaign=10&cp_pwType=personalized&cp_type=Retail&cp_template=preview&cp_access=paid&cp_section=Retail&cp_subsection=Sizing%20Up%20Small-Caps&cp_cms_name=Methode&cp_vix=&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=4&cp_ab_bucket=64&cp_pageContentSource=Barrons%20Online&cp_pageContentType=Article&cp_pageContentTypeDetai=continuous&cp_pageSiteProduct=BOL&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
-JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
-JavaScript warning: https://pagead2.googlesyndication.com/bg/gV8oOBGKSZbVoBuTsHuy49HjUHUKsGGS79HUBzhlvTM.js line 2 > eval line 4133 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
-1727350912062	Marionette	INFO	Stopped listening on port 55423
+JavaScript warning: https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js, line 1: Script terminated by timeout at:
+i@https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js:1:116011
+c@https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js:1:116110
+r@https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js:1:111426
+
+JavaScript error: https://news.google.com/swg/js/v1/swg.js, line 17: Error: XHR Failed fetching (https://news.google.com/...): (Note: a CORS error above may indicate that this publisher or domain is not configured in Publisher Center. The CORS error happens because 4xx responses do not set CORS headers.)
+
+TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: https://news.google.com/swg/js/v1/swg.js, line 17: Error: Error: not allowed
+JavaScript error: https://d3h0wybtovte4j.cloudfront.net/ugeovhprhsxhowudv.js, line 1: TypeError: URL constructor: null/foo.html?o=u&r=&l=https://www.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s&aa=NA&ib=false&buster=yTGNgHhKzbTmtJCg is not a valid URL.
+JavaScript error: https://www.wsj.com/static_html_files/bluegrass/2.2.119/bluegrass2.min.js, line 1: TypeError: e.xhrFields is undefined
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT, line 192: Script terminated by timeout at:
+Pa@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:192:124
+Ta@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:193:37
+Sm@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:391:404
+Rm.prototype.flush@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:395:336
+Rm.prototype.push@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:393:403
+Km@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:390:785
+fI/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:721:187
+aa.Yk/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:663:126
+aa.Yk/c/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:662:420
+
+1729054018340	Marionette	INFO	Stopped listening on port 53268
 Dynamically enable window occlusion 1
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+!!! error running onStopped callback: TypeError: callback is not a function

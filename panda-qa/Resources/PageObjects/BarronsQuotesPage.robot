@@ -137,8 +137,7 @@ ${JSSymbolAMZN-D}=  document.querySelector('dj-watchlist').shadowRoot  #1
     ...  .querySelector('div.sc-dj-instrument-barrons')  #8
     ...  .querySelector('[href="https://www.barrons.com/market-data/stocks/AMZN?countrycode=US&mod=watchlist_ticker"]')  #9
 
-${JSAddToListButtonBarronsPath}=  document.querySelector("#__next > div > div > div.LayoutBodyMd__Content-sc-19vky37-1.hjkvMv > div.TickerStrapline__Wrapper-sc-hr42ly-0.hwwYeb > div.TickerStrapline__MobileTools-sc-hr42ly-5.kmyiVu > div.TickerStrapline__MobileToolsButtonContainer-sc-hr42ly-6.dMtaVg > div > button > div.AddToWatchlist__AddQuotesSimpleLabel-sc-tu8ksx-0.ebcXig")
-
+${JSAddToListButtonBarronsPath}=  document.querySelector("#__next > div > div > div.LayoutBodyLg__Content-sc-khxrl4-1.glEHAY > div.TickerStrapline__Wrapper-sc-hr42ly-0.gpNSlf > div.TickerStrapline__MobileTools-sc-hr42ly-5.dMGvMi > div.TickerStrapline__MobileToolsButtonContainer-sc-hr42ly-6.iEyxys > dj-add-to-watchlist").shadowRoot.querySelector("dj-watchlist-button").shadowRoot.querySelector("button > span")
 ${JSWatchListNameFieldBarronsPath}=  document.querySelector('dj-watchlist').shadowRoot  #1
     ...  .querySelector('div.watchlist')  #2
     ...  .querySelector('section')  #3

@@ -1,90 +1,72 @@
-1727691477882	geckodriver	INFO	Listening on 127.0.0.1:50026
-1727691480932	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50027" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofilewZBg8P"
+1729057552472	geckodriver	INFO	Listening on 127.0.0.1:57302
+1729057555373	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57303" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileTPXnkX"
 console.warn: services.settings: Ignoring preference override of remote settings server
 console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
 Dynamically enable window occlusion 0
-1727691481639	Marionette	INFO	Marionette enabled
-1727691481892	Marionette	INFO	Listening on port 50044
-WebDriver BiDi listening on ws://127.0.0.1:50027
-Read port: 50044
-1727691482147	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-DevTools listening on ws://127.0.0.1:50027/devtools/browser/0e0c6671-eb80-4c0b-ba3f-c523f454a3d8
-console.error: ({})
-console.error: ({})
-JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m1ouwmqlovl0rl30&sid=9222325317970825875&loc=https%3A%2F%2Fwww.s.dev.barrons.com%2F&new=1&arf=0&ltm=1727691491633&ref=&tzo=-330&wsz=1280x595&res=1280x720&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m1ouwmw4uuq22pf3&ckp=m1ouwmql8zmg051y&glb=&amo=1726570740&cp_userState=anon&cp_testGroup=76&cp_env=staging&cp_topDomain=barrons.com&cp_pwTag=default&cp_pwPlacement=cx-snippetad&cp_pwCampaign=10&cp_pwType=personalized&cp_type=&cp_template=preview&cp_access=paid&cp_section=&cp_subsection=&cp_cms_name=Barron's%20Authoring%20QA&cp_vix=&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=0&cp_ab_bucket=20&cp_pageContentSource=Barrons%20Online&cp_pageContentType=Article&cp_pageContentTypeDetai=continuous&cp_pageSiteProduct=BOL&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
-JavaScript error: https://instant.page/5.1.0, line 1: SyntaxError: redeclaration of var e
-JavaScript error: https://www.s.dev.barrons.com/_next/static/chunks/framework-1093784b1a58324b.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
-JavaScript error: https://www.s.dev.barrons.com/_next/static/chunks/framework-1093784b1a58324b.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
-JavaScript error: https://www.s.dev.barrons.com/_next/static/chunks/framework-1093784b1a58324b.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
-JavaScript error: https://www.s.dev.barrons.com/_next/static/chunks/framework-1093784b1a58324b.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
-JavaScript error: https://www.s.dev.barrons.com/_next/static/chunks/framework-1093784b1a58324b.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
-JavaScript error: https://www.s.dev.barrons.com/_next/static/chunks/framework-1093784b1a58324b.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
-JavaScript error: https://www.s.dev.barrons.com/_next/static/chunks/framework-1093784b1a58324b.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
-JavaScript error: https://www.s.dev.barrons.com/_next/static/chunks/framework-1093784b1a58324b.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
-JavaScript error: https://www.s.dev.barrons.com/_next/static/chunks/framework-1093784b1a58324b.js, line 9: Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+1729057556271	Marionette	INFO	Marionette enabled
+1729057556594	Marionette	INFO	Listening on port 57450
+WebDriver BiDi listening on ws://127.0.0.1:57303
+Read port: 57450
+1729057556973	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:57303/devtools/browser/acc96ad0-932b-4b01-a6df-50ec818b8a0b
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.81&typ=pgv&rnd=m2bg8caw3g7ilffl&sid=9222318613852486900&loc=https%3A%2F%2Fwww.wsj.com%2F&new=1&arf=0&ltm=1729057565794&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m2bg8ceeb9yslfi9&ckp=m2bg8cawg79374r1&glb=&cp_userState=anon&cp_testGroup=5&cp_topDomain=wsj.com&cp_template=full&cp_access=free&cp_section=US%20Home%20Page&cp_subsection=&cp_cms_name=CAPS&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=0&cp_ab_bucket=80&cp_pageContentSource=WSJ%20Online&cp_pageContentType=Home&cp_pageContentTypeDetai=desktopweb&cp_pageSiteProduct=WSJ&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+1729057572846	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
 JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: https://djcs-multi-region-assets-ohio.s3.us-east-2.amazonaws.com/dj-watchlist/asset/dj-watchlist/qa/v1.12.0-beta.85/p-c4e7c817.entry.js, line 11: TypeError: Error.captureStackTrace is not a function
-JavaScript error: , line 0: uncaught exception: undefined
-JavaScript error: https://video-api.stg.wsj.com/api-video/player/v3/js/video.min.js, line 56: TypeError: this._adContainer is null
-JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
-JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
-JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
-JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
-JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
-JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
-JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
-JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
-JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
-JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
-JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
-JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
-JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
-JavaScript error: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 10: Error: Piano SDK is loaded twice on same page. Try to fix that to prevent the message.
-JavaScript warning: https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.0eXORzFfzfU.es5.O/am=AMGAGQ/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4LpzYUKp_ZcvThenLf86tdLtnqaQ/m=_b,_tp, line 286: Script terminated by timeout at:
-c@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.0eXORzFfzfU.es5.O/am=AMGAGQ/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4LpzYUKp_ZcvThenLf86tdLtnqaQ/m=_b,_tp:286:187
-b@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.0eXORzFfzfU.es5.O/am=AMGAGQ/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4LpzYUKp_ZcvThenLf86tdLtnqaQ/m=_b,_tp:277:48
+JavaScript warning: https://pagead2.googlesyndication.com/bg/-DbLkJJK3YZOSOasYi6rcjkBM_N5vpNI48728xD2bD8.js line 2 > eval line 2143 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/-DbLkJJK3YZOSOasYi6rcjkBM_N5vpNI48728xD2bD8.js line 2 > eval line 7499 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/-DbLkJJK3YZOSOasYi6rcjkBM_N5vpNI48728xD2bD8.js line 2 > eval, line 3677: Script terminated by timeout at:
+V@https://pagead2.googlesyndication.com/bg/-DbLkJJK3YZOSOasYi6rcjkBM_N5vpNI48728xD2bD8.js line 2 > eval:3677:10653
+Gu@https://pagead2.googlesyndication.com/bg/-DbLkJJK3YZOSOasYi6rcjkBM_N5vpNI48728xD2bD8.js line 2 > eval line 3677 > eval line 1 > eval line 1 > eval:1:181
+IY@https://pagead2.googlesyndication.com/bg/-DbLkJJK3YZOSOasYi6rcjkBM_N5vpNI48728xD2bD8.js line 2 > eval line 3677 > eval line 1 > eval line 1 > eval:1:41
+q.D</<@https://pagead2.googlesyndication.com/bg/-DbLkJJK3YZOSOasYi6rcjkBM_N5vpNI48728xD2bD8.js line 2 > eval:3677:51205
+Fi@https://pagead2.googlesyndication.com/bg/-DbLkJJK3YZOSOasYi6rcjkBM_N5vpNI48728xD2bD8.js line 2 > eval:3677:24893
+V@https://pagead2.googlesyndication.com/bg/-DbLkJJK3YZOSOasYi6rcjkBM_N5vpNI48728xD2bD8.js line 2 > eval:3677:10778
+v@https://pagead2.googlesyndication.com/bg/-DbLkJJK3YZOSOasYi6rcjkBM_N5vpNI48728xD2bD8.js line 2 > eval:3677:8758
+V/<@https://pagead2.googlesyndication.com/bg/-DbLkJJK3YZOSOasYi6rcjkBM_N5vpNI48728xD2bD8.js line 2 > eval:3677:11926
+AH</<@https://pagead2.googlesyndication.com/bg/-DbLkJJK3YZOSOasYi6rcjkBM_N5vpNI48728xD2bD8.js line 2 > eval:3677:48278
 
-JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
-JavaScript warning: https://pagead2.googlesyndication.com/bg/Ofjd5SEjadZox9_ebcUE7qVtcVJKxbTf46gjSEHhnaE.js line 2 > eval line 5785 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
-JavaScript error: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 10: Error: Piano SDK is loaded twice on same page. Try to fix that to prevent the message.
-1727691511725	Marionette	INFO	Stopped listening on port 50044
-JavaScript warning: https://djcs-multi-region-assets-ohio.s3.us-east-2.amazonaws.com/dj-watchlist/asset/dj-watchlist/qa/v1.12.0-beta.85/p-c4e7c817.entry.js, line 37: Script terminated by timeout at:
-t@https://djcs-multi-region-assets-ohio.s3.us-east-2.amazonaws.com/dj-watchlist/asset/dj-watchlist/qa/v1.12.0-beta.85/p-c4e7c817.entry.js:37:2147
-e@https://djcs-multi-region-assets-ohio.s3.us-east-2.amazonaws.com/dj-watchlist/asset/dj-watchlist/qa/v1.12.0-beta.85/p-c4e7c817.entry.js:45:18660
-t@https://djcs-multi-region-assets-ohio.s3.us-east-2.amazonaws.com/dj-watchlist/asset/dj-watchlist/qa/v1.12.0-beta.85/p-c4e7c817.entry.js:45:21947
-t@https://djcs-multi-region-assets-ohio.s3.us-east-2.amazonaws.com/dj-watchlist/asset/dj-watchlist/qa/v1.12.0-beta.85/p-c4e7c817.entry.js:45:27863
-n@https://djcs-multi-region-assets-ohio.s3.us-east-2.amazonaws.com/dj-watchlist/asset/dj-watchlist/qa/v1.12.0-beta.85/p-c4e7c817.entry.js:45:15196
-En/Cn.signalR.prototype.stop@https://djcs-multi-region-assets-ohio.s3.us-east-2.amazonaws.com/dj-watchlist/asset/dj-watchlist/qa/v1.12.0-beta.85/p-c4e7c817.entry.js:45:42502
-n/n/</</<@https://djcs-multi-region-assets-ohio.s3.us-east-2.amazonaws.com/dj-watchlist/asset/dj-watchlist/qa/v1.12.0-beta.85/p-c4e7c817.entry.js:45:10631
+1729057579357	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:467:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:220:33
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://www.wsj.com/, line 194: Script terminated by timeout at:
+nrWrapper@https://www.wsj.com/:194:17490
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+JavaScript warning: https://sso.accounts.dowjones.com/one_identity_login_pages/login/b7359049d4e1392dd34868849d74326b/js/vendor.js, line 51: Script terminated by timeout at:
+WE@https://sso.accounts.dowjones.com/one_identity_login_pages/login/b7359049d4e1392dd34868849d74326b/js/vendor.js:51:4767
+k@https://sso.accounts.dowjones.com/one_identity_login_pages/login/b7359049d4e1392dd34868849d74326b/js/vendor.js:49:13806
+
+JavaScript warning: https://pagead2.googlesyndication.com/bg/-DbLkJJK3YZOSOasYi6rcjkBM_N5vpNI48728xD2bD8.js line 2 > eval line 904 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/-DbLkJJK3YZOSOasYi6rcjkBM_N5vpNI48728xD2bD8.js line 2 > eval line 6899 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1729057599929	Marionette	INFO	Stopped listening on port 57450
+JavaScript warning: https://cdn.doubleverify.com/dv-measurements6813.js, line 2: Script terminated by timeout at:
+workingWindow@https://cdn.doubleverify.com/dv-measurements6813.js:2:250029
+logDvSignal@https://cdn.doubleverify.com/dv-measurements6813.js:2:238804
+sendBeacon@https://cdn.doubleverify.com/dv-measurements6813.js:2:159930
+sendDataToServer@https://cdn.doubleverify.com/dv-measurements6813.js:2:204443
+registerEventCall@https://cdn.doubleverify.com/dv-measurements6813.js:2:202138
+sendWaitingMessages@https://cdn.doubleverify.com/dv-measurements6813.js:2:202517
+sendMessage@https://cdn.doubleverify.com/dv-measurements6813.js:2:200491
+handleImpressionServed@https://cdn.doubleverify.com/dv-measurements6813.js:2:229156
+7360/mapToWrapperFunction/</t[e]@https://cdn.doubleverify.com/dv-measurements6813.js:2:196720
+runSafely@https://cdn.doubleverify.com/dv-measurements6813.js:2:197487
+7360/publishEvents/<@https://cdn.doubleverify.com/dv-measurements6813.js:2:196577
+publishEvents@https://cdn.doubleverify.com/dv-measurements6813.js:2:196559
+dispatchEvent@https://cdn.doubleverify.com/dv-measurements6813.js:2:195141
+i@https://cdn.doubleverify.com/dv-measurements6813.js:2:334185
+runSafely@https://cdn.doubleverify.com/dvbm.js:2:214829
+7360/publishEvents/<@https://cdn.doubleverify.com/dvbm.js:2:213919
+publishEvents@https://cdn.doubleverify.com/dvbm.js:2:213901
+publish@https://cdn.doubleverify.com/dvbm.js:2:213172
+@https://tps.doubleverify.com/visit.js?gdpr_consent=&flvr=0&ttmms=751&ttfrms=14&brid=97&bridua=2&bds=1&tstype=2&eparams=DC4FC%3Dl9EEADTbpTauTauHHH%5DHD%3B%5D4%40%3ETauU42%3FFC%3Dl9EEADTbpTauTauHHH%5DHD%3B%5D4%40%3ETau&srcurlD=0&aUrlD=0&ssl=https:&dfs=839&ddur=207&uid=1729057599400328&jsCallback=dvCallback_1729057599400609&dvtagver=6.1.src&navUa=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64%3B%20rv%3A131.0)%20Gecko%2F20100101%20Firefox%2F131.0&htmlmsging=1&chro=0&hist=4&winh=497&winw=1278&wouh=598&wouw=1294&scah=582&scaw=1278&jsver=6813&tgjsver=6813&lvvn=28&m1=0&refD=1&fwc=6&fcl=4325&flt=0&fec=4399&fcifrms=11&brh=4&dvp_epl=97&noc=4&nav_pltfrm=Win32&ctx=21055239&cmp=DV1327368&btreg=6776175745138492802461&btadsrv=6776175745138492802461&adsrv=104&unit=970x250&seltag=1&sadv=5652582369&ord=3582774201&litm=6776175745&scrt=138492802461&splc=/2/interactive.wsj.com/front&adu=58001066&c1=TOPBANNER&gdpr=0&errorURL=https://tps.doubleverify.com/visit.jpg&mib=0&t2te=0&dvp_pubaap=0&dvp_uptbcid=1.1.0&dvp_rcp=2&dvp_htec=1&dvp_seem=2&dvp_tuk=1&dvp_tcnt=2&dvp_sukv=52838067436.38055&ee_dp_sukv=52838067436.38055&dvp_tukv=428554100525.6687&ee_dp_tukv=428554100525.6687&dvp_tuid=89182610015&jurtd=1099061708:1:532
 
 Dynamically enable window occlusion 1
-console.warn: services.settings: main/anti-tracking-url-decoration sync interrupted by shutdown
-console.warn: services.settings: main/public-suffix-list sync interrupted by shutdown
-console.warn: services.settings: main/hijack-blocklists sync interrupted by shutdown
-console.warn: services.settings: main/pioneer-study-addons-v1 sync interrupted by shutdown
-console.warn: services.settings: main/doh-providers sync interrupted by shutdown
-console.warn: services.settings: main/doh-config sync interrupted by shutdown
-console.warn: services.settings: main/devtools-devices sync interrupted by shutdown
-console.warn: services.settings: main/websites-with-shared-credential-backends sync interrupted by shutdown
-console.warn: services.settings: main/language-dictionaries sync interrupted by shutdown
-console.warn: services.settings: main/password-recipes sync interrupted by shutdown
-console.warn: services.settings: main/password-rules sync interrupted by shutdown
-console.warn: services.settings: main/fxmonitor-breaches sync interrupted by shutdown
-console.warn: services.settings: main/addons-manager-settings sync interrupted by shutdown
-console.warn: services.settings: main/query-stripping sync interrupted by shutdown
-console.warn: services.settings: main/partitioning-exempt-urls sync interrupted by shutdown
-console.warn: services.settings: main/translations-wasm sync interrupted by shutdown
-console.warn: services.settings: main/search-config-overrides-v2 sync interrupted by shutdown
-console.warn: services.settings: main/fingerprinting-protection-overrides sync interrupted by shutdown
-console.warn: services.settings: main/top-sites sync interrupted by shutdown
-console.error: (new AbortError("IndexedDB: main/backup-recovery-download-links getLastModified() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/IDBHelpers.sys.mjs", 16))
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.

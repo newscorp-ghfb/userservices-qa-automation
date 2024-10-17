@@ -12,6 +12,9 @@ Validate Watchlist Page
 #Validate Default New Watchlist
 #    Page Should Contain Element  //button[text()="New Watchlist"]
 
+Validate New Watchlist is present
+    Page Should Contain Element  //button[text()="New Watchlist"]
+
 Click Add Symbol Input
     Click Element  //input[@id="symbol-search"]
 
@@ -35,7 +38,7 @@ Create Watchlist Name
 
 Edit Watchlist Name
     Click Element  //*[text()="Watchlist Name"]/../button[@class="btn btn--icon i-edit u-floatRight"]
-    Input Text  //*[@value="Watchlist Name"]  Jansi
+    Input Text  //*[@value="Watchlist Name"]  Satz
     Click Element  //button[text()="Save"]
 
 Validate Symbol in Created Watchlist
