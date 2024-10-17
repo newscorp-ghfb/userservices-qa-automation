@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.12.5 on win32)" generated="20241011 21:13:11.558" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.12.5 on win32)" generated="20241015 20:26:30.403" rpa="false" schemaversion="4">
 <suite id="s1" name="Userservices-Qa-Automation" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation">
 <suite id="s1-s1" name="Panda-Qa" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\panda-qa">
 <suite id="s1-s1-s1" name="Tests" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\panda-qa\Tests">
 <suite id="s1-s1-s1-s1" name="FollowWidget" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\panda-qa\Tests\FollowWidget">
 <suite id="s1-s1-s1-s1-s1" name="Regression" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\panda-qa\Tests\FollowWidget\Regression">
 <suite id="s1-s1-s1-s1-s1-s1" name="Barrons Regression" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\panda-qa\Tests\FollowWidget\Regression\Barrons_Regression.robot">
-<test id="s1-s1-s1-s1-s1-s1-t1" name="Validate the Barrons Preference Center page" line="42">
+<test id="s1-s1-s1-s1-s1-s1-t1" name="Validate the Barrons Preference Center page watchlist logout" line="53">
 <kw name="Start Barrons Article" library="CommonFunctionality" type="SETUP">
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
-<arg>0.5 seconds</arg>
+<arg>20 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20241011 21:13:11.892" endtime="20241011 21:13:11.894"/>
+<status status="PASS" starttime="20241015 20:26:30.774" endtime="20241015 20:26:30.775"/>
 </kw>
 <kw name="Set Browser Options" library="CommonFunctionality">
 <var>${options}</var>
@@ -21,192 +21,193 @@
 <var>${options}</var>
 <arg>selenium.webdriver.FirefoxOptions()</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" starttime="20241011 21:13:11.896" endtime="20241011 21:13:11.896"/>
+<status status="NOT RUN" starttime="20241015 20:26:30.777" endtime="20241015 20:26:30.778"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--CreateProfile</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20241011 21:13:11.898" endtime="20241011 21:13:11.898"/>
+<status status="NOT RUN" starttime="20241015 20:26:30.780" endtime="20241015 20:26:30.780"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--start-maximized</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20241011 21:13:11.899" endtime="20241011 21:13:11.900"/>
+<status status="NOT RUN" starttime="20241015 20:26:30.781" endtime="20241015 20:26:30.782"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-dev-shm-usage</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20241011 21:13:11.901" endtime="20241011 21:13:11.903"/>
+<status status="NOT RUN" starttime="20241015 20:26:30.784" endtime="20241015 20:26:30.785"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--no-sandbox</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20241011 21:13:11.905" endtime="20241011 21:13:11.905"/>
+<status status="NOT RUN" starttime="20241015 20:26:30.786" endtime="20241015 20:26:30.786"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-gpu</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20241011 21:13:11.907" endtime="20241011 21:13:11.908"/>
+<status status="NOT RUN" starttime="20241015 20:26:30.788" endtime="20241015 20:26:30.788"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--headless</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20241011 21:13:11.910" endtime="20241011 21:13:11.911"/>
+<status status="NOT RUN" starttime="20241015 20:26:30.789" endtime="20241015 20:26:30.790"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--devtools.debugger.force-local</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20241011 21:13:11.913" endtime="20241011 21:13:11.913"/>
+<status status="NOT RUN" starttime="20241015 20:26:30.791" endtime="20241015 20:26:30.791"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--devtools.debugger.remote-enabled</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20241011 21:13:11.916" endtime="20241011 21:13:11.916"/>
+<status status="NOT RUN" starttime="20241015 20:26:30.793" endtime="20241015 20:26:30.794"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--devtools.chrome.enabled</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20241011 21:13:11.918" endtime="20241011 21:13:11.918"/>
+<status status="NOT RUN" starttime="20241015 20:26:30.795" endtime="20241015 20:26:30.795"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--devtools.debugger.prompt-connection</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20241011 21:13:11.920" endtime="20241011 21:13:11.920"/>
+<status status="NOT RUN" starttime="20241015 20:26:30.796" endtime="20241015 20:26:30.797"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--browser.dom.window.dump.enabled</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20241011 21:13:11.921" endtime="20241011 21:13:11.922"/>
+<status status="NOT RUN" starttime="20241015 20:26:30.798" endtime="20241015 20:26:30.798"/>
 </kw>
 <return>
 <value>${options}</value>
-<status status="NOT RUN" starttime="20241011 21:13:11.923" endtime="20241011 21:13:11.923"/>
+<status status="NOT RUN" starttime="20241015 20:26:30.799" endtime="20241015 20:26:30.800"/>
 </return>
-<status status="NOT RUN" starttime="20241011 21:13:11.895" endtime="20241011 21:13:11.925"/>
+<status status="NOT RUN" starttime="20241015 20:26:30.777" endtime="20241015 20:26:30.801"/>
 </branch>
 <branch type="ELSE IF" condition="&quot;${Browser}&quot; == &quot;chrome&quot;">
 <kw name="Evaluate" library="BuiltIn">
 <var>${options}</var>
 <arg>selenium.webdriver.ChromeOptions()</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" starttime="20241011 21:13:11.926" endtime="20241011 21:13:11.926"/>
+<msg timestamp="20241015 20:26:30.806" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x0000023D1D427620&gt;</msg>
+<status status="PASS" starttime="20241015 20:26:30.804" endtime="20241015 20:26:30.808"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--start-maximized</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20241011 21:13:11.928" endtime="20241011 21:13:11.929"/>
+<status status="PASS" starttime="20241015 20:26:30.810" endtime="20241015 20:26:30.811"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-dev-shm-usage</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20241011 21:13:11.930" endtime="20241011 21:13:11.931"/>
+<status status="PASS" starttime="20241015 20:26:30.814" endtime="20241015 20:26:30.815"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--no-sandbox</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20241011 21:13:11.932" endtime="20241011 21:13:11.932"/>
+<status status="PASS" starttime="20241015 20:26:30.817" endtime="20241015 20:26:30.818"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--headless</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20241011 21:13:11.933" endtime="20241011 21:13:11.934"/>
+<status status="PASS" starttime="20241015 20:26:30.822" endtime="20241015 20:26:30.822"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-gpu</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20241011 21:13:11.935" endtime="20241011 21:13:11.935"/>
+<status status="PASS" starttime="20241015 20:26:30.824" endtime="20241015 20:26:30.824"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--ignore-certificate-errors</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20241011 21:13:11.936" endtime="20241011 21:13:11.937"/>
+<status status="PASS" starttime="20241015 20:26:30.826" endtime="20241015 20:26:30.826"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-extensions</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20241011 21:13:11.938" endtime="20241011 21:13:11.938"/>
+<status status="PASS" starttime="20241015 20:26:30.827" endtime="20241015 20:26:30.828"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--no-user-gesture-required</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20241011 21:13:11.939" endtime="20241011 21:13:11.940"/>
+<status status="PASS" starttime="20241015 20:26:30.829" endtime="20241015 20:26:30.830"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--no-first-run</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20241011 21:13:11.942" endtime="20241011 21:13:11.943"/>
+<status status="PASS" starttime="20241015 20:26:30.832" endtime="20241015 20:26:30.833"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--use-fake-ui-for-media-stream</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20241011 21:13:11.944" endtime="20241011 21:13:11.944"/>
+<status status="PASS" starttime="20241015 20:26:30.834" endtime="20241015 20:26:30.834"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--use-fake-device-for-media-stream</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20241011 21:13:11.945" endtime="20241011 21:13:11.945"/>
+<status status="PASS" starttime="20241015 20:26:30.836" endtime="20241015 20:26:30.837"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-sync</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20241011 21:13:11.947" endtime="20241011 21:13:11.947"/>
+<status status="PASS" starttime="20241015 20:26:30.839" endtime="20241015 20:26:30.840"/>
 </kw>
 <return>
 <value>${options}</value>
-<status status="NOT RUN" starttime="20241011 21:13:11.949" endtime="20241011 21:13:11.950"/>
+<status status="PASS" starttime="20241015 20:26:30.843" endtime="20241015 20:26:30.844"/>
 </return>
-<status status="NOT RUN" starttime="20241011 21:13:11.926" endtime="20241011 21:13:11.951"/>
+<status status="PASS" starttime="20241015 20:26:30.803" endtime="20241015 20:26:30.845"/>
 </branch>
-<status status="PASS" starttime="20241011 21:13:11.895" endtime="20241011 21:13:11.953"/>
+<status status="PASS" starttime="20241015 20:26:30.777" endtime="20241015 20:26:30.846"/>
 </if>
-<msg timestamp="20241011 21:13:11.953" level="INFO">${options} = None</msg>
-<status status="PASS" starttime="20241011 21:13:11.894" endtime="20241011 21:13:11.954"/>
+<msg timestamp="20241015 20:26:30.846" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x0000023D1D427620&gt;</msg>
+<status status="PASS" starttime="20241015 20:26:30.776" endtime="20241015 20:26:30.848"/>
 </kw>
 <if>
 <branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
@@ -215,14 +216,14 @@
 <arg>${Browser}</arg>
 <arg>options=${options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="NOT RUN" starttime="20241011 21:13:11.957" endtime="20241011 21:13:11.957"/>
+<status status="NOT RUN" starttime="20241015 20:26:30.848" endtime="20241015 20:26:30.849"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="NOT RUN" starttime="20241011 21:13:11.958" endtime="20241011 21:13:11.959"/>
+<status status="NOT RUN" starttime="20241015 20:26:30.850" endtime="20241015 20:26:30.850"/>
 </kw>
-<status status="NOT RUN" starttime="20241011 21:13:11.955" endtime="20241011 21:13:11.960"/>
+<status status="NOT RUN" starttime="20241015 20:26:30.848" endtime="20241015 20:26:30.852"/>
 </branch>
 <branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
 <kw name="Open Browser" library="SeleniumLibrary">
@@ -230,61 +231,61 @@
 <arg>${Browser}</arg>
 <arg>options=${options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20241011 21:13:11.962" level="INFO">Opening browser 'ff' to base url 'https://www.barrons.com'.</msg>
-<msg timestamp="20241011 21:13:12.785" level="INFO">Completed setup!</msg>
-<msg timestamp="20241011 21:13:13.600" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg timestamp="20241011 21:13:13.601" level="FAIL">WebDriverException: Message: Automate testing time expired.
+<msg timestamp="20241015 20:26:30.854" level="INFO">Opening browser 'chrome' to base url 'https://www.barrons.com'.</msg>
+<msg timestamp="20241015 20:26:31.716" level="INFO">Completed setup!</msg>
+<msg timestamp="20241015 20:26:32.461" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20241015 20:26:32.462" level="FAIL">WebDriverException: Message: Automate testing time expired.
 </msg>
-<status status="FAIL" starttime="20241011 21:13:11.961" endtime="20241011 21:13:13.609"/>
+<status status="FAIL" starttime="20241015 20:26:30.853" endtime="20241015 20:26:32.472"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="NOT RUN" starttime="20241011 21:13:13.611" endtime="20241011 21:13:13.611"/>
+<status status="NOT RUN" starttime="20241015 20:26:32.474" endtime="20241015 20:26:32.474"/>
 </kw>
-<status status="FAIL" starttime="20241011 21:13:11.960" endtime="20241011 21:13:13.612"/>
+<status status="FAIL" starttime="20241015 20:26:30.853" endtime="20241015 20:26:32.476"/>
 </branch>
-<status status="FAIL" starttime="20241011 21:13:11.955" endtime="20241011 21:13:13.613"/>
+<status status="FAIL" starttime="20241015 20:26:30.848" endtime="20241015 20:26:32.476"/>
 </if>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>dom:${JSFollowButtonBarronsPath}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="NOT RUN" starttime="20241011 21:13:13.613" endtime="20241011 21:13:13.614"/>
+<status status="NOT RUN" starttime="20241015 20:26:32.476" endtime="20241015 20:26:32.477"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" starttime="20241011 21:13:13.615" endtime="20241011 21:13:13.615"/>
+<status status="NOT RUN" starttime="20241015 20:26:32.477" endtime="20241015 20:26:32.478"/>
 </kw>
-<status status="FAIL" starttime="20241011 21:13:11.890" endtime="20241011 21:13:13.616"/>
+<status status="FAIL" starttime="20241015 20:26:30.772" endtime="20241015 20:26:32.478"/>
 </kw>
 <kw name="Finish Testcase" library="CommonFunctionality" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20241011 21:13:13.620" endtime="20241011 21:13:13.621"/>
+<status status="PASS" starttime="20241015 20:26:32.481" endtime="20241015 20:26:32.482"/>
 </kw>
-<status status="PASS" starttime="20241011 21:13:13.619" endtime="20241011 21:13:13.622"/>
+<status status="PASS" starttime="20241015 20:26:32.480" endtime="20241015 20:26:32.484"/>
 </kw>
-<doc>This test case validates the barrons preference center page</doc>
+<doc>This test case validates the barrons preference center page Logout</doc>
 <tag>Barrons</tag>
 <tag>PreferenceCenter</tag>
 <tag>Regression</tag>
 <tag>TagBN</tag>
-<status status="FAIL" starttime="20241011 21:13:11.886" endtime="20241011 21:13:13.623">Setup failed:
+<status status="FAIL" starttime="20241015 20:26:30.768" endtime="20241015 20:26:32.485">Setup failed:
 WebDriverException: Message: Automate testing time expired.
 </status>
 </test>
 <doc>Barrons Regression Tests</doc>
-<status status="FAIL" starttime="20241011 21:13:11.609" endtime="20241011 21:13:13.624"/>
+<status status="FAIL" starttime="20241015 20:26:30.451" endtime="20241015 20:26:32.486"/>
 </suite>
-<status status="FAIL" starttime="20241011 21:13:11.604" endtime="20241011 21:13:13.626"/>
+<status status="FAIL" starttime="20241015 20:26:30.446" endtime="20241015 20:26:32.488"/>
 </suite>
-<status status="FAIL" starttime="20241011 21:13:11.599" endtime="20241011 21:13:13.627"/>
+<status status="FAIL" starttime="20241015 20:26:30.441" endtime="20241015 20:26:32.489"/>
 </suite>
-<status status="FAIL" starttime="20241011 21:13:11.594" endtime="20241011 21:13:13.629"/>
+<status status="FAIL" starttime="20241015 20:26:30.436" endtime="20241015 20:26:32.490"/>
 </suite>
-<status status="FAIL" starttime="20241011 21:13:11.590" endtime="20241011 21:13:13.630"/>
+<status status="FAIL" starttime="20241015 20:26:30.432" endtime="20241015 20:26:32.490"/>
 </suite>
-<status status="FAIL" starttime="20241011 21:13:11.564" endtime="20241011 21:13:13.631"/>
+<status status="FAIL" starttime="20241015 20:26:30.409" endtime="20241015 20:26:32.491"/>
 </suite>
 <statistics>
 <total>

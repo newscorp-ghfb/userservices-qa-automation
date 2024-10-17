@@ -15,6 +15,7 @@ Resource  ../../../Resources/PageObjects/WSJPreferenceCenterPage.robot
 Test Setup  CommonFunctionality.Start WSJ Article
 Test Teardown  CommonFunctionality.Finish Testcase
 *** Variables ***
+${URL}=  https://www.wsj.com/preference-center/alerts?alert=section&id=tech%2Fai
 
 *** Test Cases ***
 #US-T78
@@ -49,10 +50,42 @@ Validate the multiple authors follow button from articles page
 #    WSJPreferenceCenterPage.Validate Author 1
 #    WSJPreferenceCenterPage.Validate Author 2
 
+#US-T479
+Validate the WSJ Preference Center page Subscribe color
+    [Documentation]  This test case validates the WSJ preference center page Subsdcribe color
+    [Tags]  Regression  PreferenceCenter  479
+    CommonFunctionality.Start WSJ Homepage
+    Set Selenium Implicit Wait  10s
+    DefinedKeywords.WSJ Alerts Sign In Process
+    #WSJPreferenceCenterPage.Navigate Sign in logo
+    #WSJPreferenceCenterPage.Click Email & Alerts
+    #WSJPreferenceCenterPage.Navigate Author page prod env
+    #WSJPreferenceCenterPage.Navigate Author Secetion Prod Env
+    CommonFunctionality.Start WSJ Preference Center Page
+    Set Selenium Implicit Wait  10s
+    WSJPreferenceCenterPage.Navigate Author Secetion
+    Execute javascript  window.scrollTo(0,500)
+    WSJPreferenceCenterPage.Validate the Selection color
+
+#US-T461
+Validate the WSJ Follow Function
+    [Documentation]  This test case validates the WSJ Follow Function
+    [Tags]  Regression  Follow Function  461
+    CommonFunctionality.Start WSJ Homepage
+    Set Selenium Implicit Wait  10s
+    DefinedKeywords.WSJ Alerts Sign In Process
+    #Switch Window  ${URL}
+    WSJPreferenceCenterPage.Validate the follow function for AI alerts prod
+    #Set Selenium Implicit Wait  10s
+
+    WSJPreferenceCenterPage.Navigate to the Sections&Topics prod
+
+
+
 #US-T431
 Validate the WSJ Preference Center page
     [Documentation]  This test case validates the WSJ preference center page
-    [Tags]  Regression  PreferenceCenter  Tagwpj
+    [Tags]  Regression  PreferenceCenter  431
     CommonFunctionality.Start WSJ Preference Center Page Newsletter
     DefinedKeywords.WSJ Newsletters Page Sign In Process
 

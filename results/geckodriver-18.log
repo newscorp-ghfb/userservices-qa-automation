@@ -1,57 +1,51 @@
-1727351416127	geckodriver	INFO	Listening on 127.0.0.1:49600
-1727351419172	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49601" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileTekhuv"
+1729053145862	geckodriver	INFO	Listening on 127.0.0.1:65069
+1729053149105	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65070" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileoA1Vrw"
 console.warn: services.settings: Ignoring preference override of remote settings server
 console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
 Dynamically enable window occlusion 0
-1727351419732	Marionette	INFO	Marionette enabled
-1727351419982	Marionette	INFO	Listening on port 49609
-Read port: 49609
-WebDriver BiDi listening on ws://127.0.0.1:49601
-1727351420110	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-DevTools listening on ws://127.0.0.1:49601/devtools/browser/092a9a9d-f7ec-42c0-8ab6-ea6c9a216171
-JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m1j8fsuqdrimx7gr&sid=9222325317970825875&loc=https%3A%2F%2Fwww.barrons.com%2F&new=1&arf=0&ltm=1727351423958&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m1j8ftu5lnl4gp8n&ckp=m1j8fsuqgmyj3ine&glb=&cp_userState=anon&cp_testGroup=63&cp_topDomain=barrons.com&cp_access=free&cp_section=US%20Home%20Page%20Weekday&cp_subsection=&cp_cms_name=CAPS&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=9&cp_ab_bucket=59&cp_pageContentSource=Barrons%20Online&cp_pageContentType=Home&cp_pageContentTypeDetai=default&cp_pageSiteProduct=BOL&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
-JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
-JavaScript warning: https://imasdk.googleapis.com/js/core/bridge3.668.1_en.html#goog_457127423, line 455: Script terminated by timeout at:
-OB@https://imasdk.googleapis.com/js/core/bridge3.668.1_en.html#goog_457127423:455:310
-SB/this.aa@https://imasdk.googleapis.com/js/core/bridge3.668.1_en.html#goog_457127423:453:29
+1729053149965	Marionette	INFO	Marionette enabled
+1729053150574	Marionette	INFO	Listening on port 65087
+WebDriver BiDi listening on ws://127.0.0.1:65070
+Read port: 65087
+1729053150985	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:65070/devtools/browser/ee287255-ae33-4c45-b517-0cf2bfb0f9fe
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.81&typ=pgv&rnd=m2bdluu0a502psy9&sid=1134002947328204066&loc=https%3A%2F%2Fwww.s.dev.wsj.com%2F&new=1&arf=0&ltm=1729053157469&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m2bdluw1t7h9voqc&ckp=m2bdluu0f0x04kfp&glb=&cp_userState=anon&cp_testGroup=34&cp_env=staging&cp_topDomain=wsj.com&cp_access=free&cp_section=US%20Home%20Page&cp_subsection=&cp_cms_name=CAPS&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=6&cp_ab_bucket=46&cp_pageContentSource=WSJ%20Online&cp_pageContentType=Home&cp_pageContentTypeDetai=desktopweb&cp_pageSiteProduct=WSJ&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript error: https://www.s.dev.wsj.com/ line 1 > injectedScript, line 1: SyntaxError: redeclaration of const cxHandleCusomterNavSubscribeBtnUpdate
+JavaScript warning: https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js, line 1: unreachable code after return statement
+1729053166385	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://sc-static.net/scevent.min.js, line 2: Script terminated by timeout at:
+m@https://sc-static.net/scevent.min.js:2:2789
+c@https://sc-static.net/scevent.min.js:2:6893
+
+JavaScript warning: https://pagead2.googlesyndication.com/bg/-DbLkJJK3YZOSOasYi6rcjkBM_N5vpNI48728xD2bD8.js line 2 > eval line 152 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/-DbLkJJK3YZOSOasYi6rcjkBM_N5vpNI48728xD2bD8.js line 2 > eval line 4754 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/-DbLkJJK3YZOSOasYi6rcjkBM_N5vpNI48728xD2bD8.js line 2 > eval line 2186 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.cxense.com/cx.js, line 6: Script terminated by timeout at:
+ua/<@https://cdn.cxense.com/cx.js:6:70921
+
+JavaScript warning: https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js, line 1: Script terminated by timeout at:
+8018/g/<@https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js:1:111956
+r@https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js:1:111426
 
 JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
 JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-1727351434963	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
-JavaScript error: , line 0: uncaught exception: undefined
-JavaScript error: https://www.barrons.com/asset/dj-watchlist/v1.11.0/p-8e3b6675.entry.js, line 11: TypeError: Error.captureStackTrace is not a function
-JavaScript warning: https://imasdk.googleapis.com/js/core/bridge3.668.1_en.html#goog_457127424, line 455: Script terminated by timeout at:
-OB@https://imasdk.googleapis.com/js/core/bridge3.668.1_en.html#goog_457127424:455:310
-SB/this.aa@https://imasdk.googleapis.com/js/core/bridge3.668.1_en.html#goog_457127424:453:29
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+JavaScript warning: https://sso.int.accounts.dowjones.com/one_identity_login_pages/login/b7359049d4e1392dd34868849d74326b/js/vendor.js, line 51: Script terminated by timeout at:
+WE@https://sso.int.accounts.dowjones.com/one_identity_login_pages/login/b7359049d4e1392dd34868849d74326b/js/vendor.js:51:4767
+k@https://sso.int.accounts.dowjones.com/one_identity_login_pages/login/b7359049d4e1392dd34868849d74326b/js/vendor.js:49:13806
 
-JavaScript warning: https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.barrons.com&us_privacy=1---&gpp=DBAA&gpp_sid=-1#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.6708525823125263%22,%22tld%22:%22www.barrons.com%22,%22topUrl%22:%22www.barrons.com%22,%22version%22:%229_12_0%22}, line 13: Script terminated by timeout at:
-r.prototype.flushEventQueue@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.barrons.com&us_privacy=1---&gpp=DBAA&gpp_sid=-1#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.6708525823125263%22,%22tld%22:%22www.barrons.com%22,%22topUrl%22:%22www.barrons.com%22,%22version%22:%229_12_0%22}:13:3137
-r/<@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.barrons.com&us_privacy=1---&gpp=DBAA&gpp_sid=-1#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.6708525823125263%22,%22tld%22:%22www.barrons.com%22,%22topUrl%22:%22www.barrons.com%22,%22version%22:%229_12_0%22}:13:3642
+1729053189587	Marionette	INFO	Stopped listening on port 65087
+JavaScript warning: https://tags.tiqcdn.com/utag/wsjdn/wsj/qa/utag.js, line 110: Script terminated by timeout at:
+utag.loader.GET/utag.handler.extend</<@https://tags.tiqcdn.com/utag/wsjdn/wsj/qa/utag.js:110:4035
+utag.loader.GET/utag.handler.extend<@https://tags.tiqcdn.com/utag/wsjdn/wsj/qa/utag.js:110:3963
+RE@https://tags.tiqcdn.com/utag/wsjdn/wsj/qa/utag.js:83:24
+END@https://tags.tiqcdn.com/utag/wsjdn/wsj/qa/utag.js:73:39
+LOAD@https://tags.tiqcdn.com/utag/wsjdn/wsj/qa/utag.js:69:13
+@https://tags.tiqcdn.com/utag/wsjdn/wsj/qa/utag.587.js?utv=ut4.46.202409121442:20:55
+@https://tags.tiqcdn.com/utag/wsjdn/wsj/qa/utag.587.js?utv=ut4.46.202409121442:20:65
 
-console.error: ({})
-console.error: ({})
-JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.80&typ=pgv&rnd=m1j8g41oin04l5ri&sid=9222325317970825875&loc=https%3A%2F%2Fwww.s.dev.barrons.com%2Farticles%2Fbuy-under-armour-stock-pick-51650672000&new=0&arf=0&ltm=1727351438468&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m1j8g464iobc1xxe&ckp=m1j8fsuqgmyj3ine&glb=&amo=1720048200&cp_userState=anon&cp_testGroup=63&cp_topDomain=barrons.com&cp_pwTag=default&cp_pwPlacement=cx-snippetad&cp_pwCampaign=10&cp_pwType=personalized&cp_type=Retail&cp_template=preview&cp_access=paid&cp_section=Retail&cp_subsection=Sizing%20Up%20Small-Caps&cp_cms_name=Methode&cp_vix=&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=9&cp_ab_bucket=59&cp_pageContentSource=Barrons%20Online&cp_pageContentType=Article&cp_pageContentTypeDetai=continuous&cp_pageSiteProduct=BOL&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
-JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
-JavaScript warning: https://pagead2.googlesyndication.com/bg/gV8oOBGKSZbVoBuTsHuy49HjUHUKsGGS79HUBzhlvTM.js line 2 > eval line 5089 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript warning: https://cdn.parsely.com/keys/barrons.com/p.js, line 7: Script terminated by timeout at:
-n.set@https://cdn.parsely.com/keys/barrons.com/p.js:7:28213
-n.expire@https://cdn.parsely.com/keys/barrons.com/p.js:7:28423
-t._migrateCookie@https://cdn.parsely.com/keys/barrons.com/p.js:7:32415
-t.get@https://cdn.parsely.com/keys/barrons.com/p.js:7:31085
-t.getJSON@https://cdn.parsely.com/keys/barrons.com/p.js:7:31452
-getSession@https://cdn.parsely.com/keys/barrons.com/p.js:7:35605
-beacon@https://cdn.parsely.com/keys/barrons.com/p.js:7:64086
-e.engagedTime.sendHeartbeat@https://cdn.parsely.com/keys/barrons.com/p.js:7:43415
-i.sendHeartbeat@https://cdn.parsely.com/keys/barrons.com/p.js:7:41440
-i._sendHeartbeats@https://cdn.parsely.com/keys/barrons.com/p.js:7:41594
-i._setUnloadListeners/<@https://cdn.parsely.com/keys/barrons.com/p.js:7:41747
-value/<@https://cdn.parsely.com/keys/barrons.com/p.js:7:22304
-value@https://cdn.parsely.com/keys/barrons.com/p.js:7:22277
-value@https://cdn.parsely.com/keys/barrons.com/p.js:7:24351
-value@https://cdn.parsely.com/keys/barrons.com/p.js:7:24883
-
-1727351508302	Marionette	INFO	Stopped listening on port 49609
 Dynamically enable window occlusion 1

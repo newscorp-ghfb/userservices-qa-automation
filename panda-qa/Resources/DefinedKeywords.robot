@@ -225,8 +225,8 @@ MarketWatch Alerts User Sign In Process
     Click Button  //section[@id='password-login']/div/form/div[5]/button
 
 WSJ Sign In Process
-    Wait Until Element is visible  //*[@id="__next"]/div/div[2]/div[2]/div/div/header[1]/div[1]/div/div[1]/a[2]
-    Click Element  //*[@id="__next"]/div/div[2]/div[2]/div/div/header[1]/div[1]/div/div[1]/a[2]
+    Wait Until Element is visible  //*[@id="root"]/div/div/div/div[1]/header/div[1]/div/div[2]/div/a[2]
+    Click Element  //*[@id="root"]/div/div/div/div[1]/header/div[1]/div/div[2]/div/a[2]  #//*[@id="__next"]/div/div[2]/div[2]/div/div/header[1]/div[1]/div/div[1]/a[2]
     Click Button  //*[@id="emailOrUsername"]
     Input Text  //*[@id="emailOrUsername"]  QABARRONSONLY  #isaias.iniguez@dowjones.com
     Set Selenium Implicit Wait  10s
@@ -356,13 +356,13 @@ WSJ Alerts Sign In Process
    Input Text  //*[@id="emailOrUsername"]  QABARRONSONLY  #//*[@id=":r5:-form-item"]  QABARRONSONLY  #akhilesh.khanduri@dowjones.com
    Set Selenium Implicit Wait  10s
    Click Button  //html/body/div/section/div/div[2]/form/button[1]
-   Set Selenium Speed  10s
+   #Set Selenium Speed  10s
    Wait Until Element Is Visible  //*[@id="password"]
    Input Text  //*[@id="password"]  password1
-   Set Selenium Speed  10s
+   #Set Selenium Speed  10s
    Wait Until Element is Visible  //html/body/div/section/div/div[2]/form/button
    Click Element  //html/body/div/section/div/div[2]/form/button  #//html/body/main/div[2]/section[16]/div/form/div[5]/button
-   Set Selenium Implicit Wait  60
+   #Set Selenium Implicit Wait  60
 
 WSJ Watchlist Sign In Process
     Click Button  //*[@id="password-login-username"]
@@ -377,8 +377,8 @@ WSJ Watchlist Sign In Process
 WSJ Preference Center Page Sign In Process
 #    Wait Until Element is Visible  //*[text()='View All']
 #    Click Element  //*[text()='View All']
-    Wait Until Element is Visible  //html/body/div[3]/footer/div[1]/div[1]/div/ul/li[3]/div/span[2]/a
-    Click Element  //html/body/div[3]/footer/div[1]/div[1]/div/ul/li[3]/div/span[2]/a
+    Wait Until Element is Visible  //*[@id="__next"]/div/div[1]/div[3]/header[1]/div[1]/div/div[1]/a[2]
+    Click Element  //*[@id="__next"]/div/div[1]/div[3]/header[1]/div[1]/div/div[1]/a[2]
     Click Button  //*[@id=":r5:-form-item"]
     Input Text  //*[@id=":r5:-form-item"]  QABARRONSONLY  #isaias.iniguez@dowjones.com
     Set Selenium Implicit Wait  10s

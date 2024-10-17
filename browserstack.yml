@@ -44,7 +44,7 @@ platforms:
     networkLogs: true
     consoleLogs: info
     framework: robot
-    idleTimeout: 600
+    idleTimeout: 300
 # =======================
 # Parallels per Platform
 # =======================

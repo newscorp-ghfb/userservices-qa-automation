@@ -3,8 +3,8 @@ Library  SeleniumLibrary
 Resource  ../Resources/DefinedKeywords.robot
 
 *** Variables ***
-${BROWSERSTACK_USERNAME}=   newsroomdevtest_xCBmjv
-${BROWSERSTACK_ACCESS_KEY}=  s3c1cGNU2UpLq5iJzNzx
+${BROWSERSTACK_USERNAME}=   jansisasikumar_XRKqk6  #newsroomdevtest_xCBmjv
+${BROWSERSTACK_ACCESS_KEY}=  ptazxpsTbsRFWhsEXpoM  #s3c1cGNU2UpLq5iJzNzx
 ${BROWSERSTACK_URL}=   https://automate.browserstack.com/dashboard/v2/builds/3263aa6a845e0b5e2d6e245b9107760e32c3105f?projectIds=2299596${BROWSERSTACK_USERNAME}:${BROWSERSTACK_ACCESS_KEY}@hub-cloud.browserstack.com/wd/hub
 
 ${CookieValue1}=  x-dev-access-clientid
@@ -15,7 +15,7 @@ ${ExpectedCookieValue2}=   5Nnx9DUR7NQg8XPwvztud7o0OivfiKth
 
 ${Browser}=  ff  #headless, ff, chrome, edge, safari
 
-${Env}=  dev  #dev, prod, stg
+${Env}=  prod  #dev, prod, stg
 
 ${Email_prod}=  barronsadvisorcs@gmail.com
 
@@ -76,7 +76,7 @@ Set Browser Options
         END
 
 Start Barrons Article
-    Set Selenium Speed  0.5 seconds
+    Set Selenium Speed  20 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
        Open Browser  https://www.barrons.com  ${Browser}  options=${options}
@@ -172,7 +172,8 @@ Start Barrons Newsletter
         Go To  https://www.barrons.com/newsletters
     ELSE IF  "${Env}" == "dev"
        Open Browser  https://www.s.dev.barrons.com  ${Browser}  options=${options}
-        Go To   https://www.s.dev.barrons.com/newsletters  #https://www.s.dev.barrons.com/market-data/stocks/amzn
+        Go To   https://www.s.dev.barrons.com/market-data/stocks/amzn
+        END
     Maximize Browser Window
 
 Start PEN Article
@@ -588,6 +589,26 @@ Start WSJ Article for On Wine Page
     END
     Maximize Browser Window
 
+Start WSJ Homepage
+    Set Selenium Speed  0.5 seconds
+    ${options} =  Set Browser Options
+    IF  "${Env}" == "prod"
+        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
+    ELSE IF  "${Env}" == "dev"
+        Open Browser  https://www.s.dev.wsj.com/  ${Browser}  options=${options}
+    END
+    Maximize Browser Window
+
+Start follow function AI
+    Set Selenium Speed  0.5 seconds
+    ${options} =  Set Browser Options
+    IF  "${Env}" == "prod"
+        Open Browser  https://www.wsj.com/preference-center/alerts?alert=section&id=tech%2Fai  ${Browser}  options=${options}
+    ELSE IF  "${Env}" == "dev"
+        Open Browser  https://www.dev.wsj.com/preference-center/alerts?alert=section&id=tech%2Fai  ${Browser}  options=${options}
+    END
+    Maximize Browser Window
+
 Start WSJ Preference Center Page
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
@@ -596,6 +617,7 @@ Start WSJ Preference Center Page
         Open Browser  https://www.dev.wsj.com/preference-center/alerts  ${Browser}  options=${options}
     END
     Maximize Browser Window
+
 
 Start WSJ Preference Center Page Newsletter
     ${options} =  Set Browser Options
@@ -607,7 +629,7 @@ Start WSJ Preference Center Page Newsletter
     Maximize Browser Window
 
 Start WSJ Article for Personal Finance
-    Set Selenium Speed  0.5 seconds
+    Set Selenium Speed  10 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.wsj.com  ${Browser}  options=${options}

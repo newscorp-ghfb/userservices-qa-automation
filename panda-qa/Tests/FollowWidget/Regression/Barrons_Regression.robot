@@ -18,6 +18,7 @@ Resource  ../../../Resources/PageObjects/BarronsStockScreenerPage.robot
 
 Library  SeleniumLibrary
 
+
 Test Setup  CommonFunctionality.Start Barrons Article
 #Test Setup  CommonFunctionality.Start Barrons Newsletter
 Test Teardown  CommonFunctionality.Finish Testcase
@@ -41,6 +42,16 @@ Validate the multiple authors follow button from articles page
 #US-T477
 Validate the Barrons Preference Center page
     [Documentation]  This test case validates the barrons preference center page
+    [Tags]  Regression  PreferenceCenter  477
+    CommonFunctionality.Start Barrons Newsletter
+    DefinedKeywords.Barrons Newsletter Sign in Process
+    BarronsNewslettersPage.Click Watchlist Button
+    BarronsNewslettersPage.Barrons Signout Process
+    BarronsNewslettersPage.Validate watchlist is present
+
+#US-T467
+Validate the Barrons Preference Center page watchlist logout
+    [Documentation]  This test case validates the barrons preference center page Logout
     [Tags]  Regression  PreferenceCenter  TagBN
     CommonFunctionality.Start Barrons Newsletter
     DefinedKeywords.Barrons Newsletter Sign in Process
@@ -118,7 +129,7 @@ Validate the Watchlist widget from Watchlist page
 #US-T468
 Validate the Watchlist widget from Watchlist
     [Documentation]  This test case validates the watchlist widget from watchlist page
-    [Tags]  Regression  Watchlist      TagWatch1
+    [Tags]  Regression  Watchlist      468
 
     CommonFunctionality.Start Barrons for Watchlist page
     DefinedKeywords.Sign In Process

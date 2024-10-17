@@ -6,10 +6,46 @@ Resource  ../../Resources/CommonFunctionality.robot
 ${JSSignInButtonWSJPath}=  document.querySelector("body > div:nth-child(37) > ufc-portal > ufc-signin-modal").shadowRoot.querySelector("div > div.modal > focus-trap > div.footer > ufc-button > button")
 #${JSWSJPostbackSigninPath}=  document.querySelector("body > div:nth-child(36) > ufc-portal > ufc-signin-modal").shadowRoot.querySelector("div > div.modal > focus-trap > div.footer > ufc-button > button")
 ${JSFollowAuthorButtonWSJPath}=  document.querySelector("#__next > div > main > div.article-container.css-11dgf.e1wkb4h46 > article > div.crawler.css-j6808u.e1noyqgz9 > div.eui4bu22.css-hb9xd5 > div > div > div > div.css-1mfi1zu > div > div > div > ufc-follow-author-widget").shadowRoot.querySelector("ufc-follow-widget > ufc-follow-button").shadowRoot.querySelector("button")
+${EXPECTED_COLOR}=  rgb(235, 235, 236)
+${ELEMENT}=  //*[@id="__next"]/div[2]/div/div[2]/main/div[2]/div/div[2]/div[1]/div[3]/div[1]/div[2]/ufc-delivery-pref-dropdown
+
 *** Keywords ***
+Validate the Selection color
+    ${bg_color}=    Get Element Attribute    ${ELEMENT}    style
+    Should Contain    ${bg_color}    background-color: ${EXPECTED_COLOR}
+
+Validate the follow function for AI alerts prod
+     IF  "${Env}" == "prod"
+        Go To  https://www.wsj.com/preference-center/alerts?alert=section&id=tech%2Fai
+    ELSE IF  "${Env}" == "dev"
+        Go To  https://www.dev.wsj.com/preference-center/alerts?alert=section&id=tech%2Fai
+    END
+
+Navigate to the Sections&Topics Prod
+    Wait Until Element is Visible  //*[@id="__next"]/div[2]/div/div[2]/main/div[2]/div/div[1]/div[2]/nav/ul/li[4]/button/span
+    Click Element  //*[@id="__next"]/div[2]/div/div[2]/main/div[2]/div/div[1]/div[2]/nav/ul/li[4]/button/span
 
 Validate Preference Center page
     Page Should Contain  Follow Alerts
+
+Navigate Sign in logo
+    Wait Until Element is Visible  //*[contains(text(), 'Jonathan')]    #//*[@id="headlessui-popover-button-:r12:"]
+    Click Element  //*[contains(text(), 'Jonathan')]  #//*[@id="headlessui-popover-button-:r12:"]
+
+Click Email & Alerts
+    Wait Until Element is Visible  //*[contains(text(), 'Emails')]    #//*[@id="headlessui-popover-panel-:r15:"]/div/ul/li[8]/a/span  10s
+    Click Element  //*[contains(text(), 'Emails')]    #//*[@id="headlessui-popover-panel-:r15:"]/div/ul/li[8]/a/span  10s
+
+Navigate Author page prod env
+    Wait Until Element is Visible  //*[@id="__next"]/div[2]/div/div[1]/div[1]/div[2]/nav/ul/li[2]/button  10s
+    #Page Should Contain Element  //*[@id="__next"]/div[2]/div/div[1]/div[1]/div[2]/nav/ul/li[2]/button
+    Click Element  //*[@id="__next"]/div[2]/div/div[1]/div[1]/div[2]/nav/ul/li[2]/button
+
+Navigate Author Secetion Prod Env
+    Click Element  //*[@id="__next"]/div[2]/div/div[2]/main/div[2]/div/div[1]/div[2]/nav/ul/li[2]/button
+
+Click Author option
+    Click Element  //*[@id="__next"]/div[2]/div/div[2]/main/div[2]/div/div[2]/div[1]/div[3]/div[1]/div[2]/ufc-delivery-pref-dropdown
 
 Navigate Preference Center page
     IF  "${Env}" == "prod"
@@ -31,6 +67,7 @@ Navigate Article page
     ELSE IF  "${Env}" == "dev"
         Go To  https://www.dev.wsj.com/articles/mass-vaccination-sites-for-covid-19-are-back-11641646804
     END
+
 Navigate Letters Article page
     IF  "${Env}" == "prod"
         Go To  https://www.wsj.com/articles/mary-eberstadt-furman-university-wsj-scott-yenor-campus-protest-speech-869ce29b
@@ -136,6 +173,10 @@ Add Author By Hotlink
     ELSE IF  "${Env}" == "dev"
         Go To  https://www.dev.wsj.com/follow?alert=author&id=7872
     END
+
+Navigate Author Secetion
+    Page Should Contain Element  //*[@id="__next"]/div[2]/div/div[2]/main/div[2]/div/div[1]/div[2]/nav/ul/li[2]/button
+    Click Element  //*[@id="__next"]/div[2]/div/div[2]/main/div[2]/div/div[1]/div[2]/nav/ul/li[2]/button
 
 Validate Author Name
     Page Should Contain  Joanna Stern

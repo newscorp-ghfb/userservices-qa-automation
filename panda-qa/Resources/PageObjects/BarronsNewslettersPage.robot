@@ -9,6 +9,8 @@ Validate Newsletters Page
     Page Should Contain Element  //h1[text()="Newsletters"]
 
 Click Watchlist Button
+  #Execute javascript  window.scrollTo(0,500)
+  Wait Until Element is Visible  //*[@id="__next"]/div/div/div[4]/div[1]/div[2]/div[1]/dj-add-to-watchlist
   Click Element  //*[@id="__next"]/div/div/div[4]/div[1]/div[2]/div[1]/dj-add-to-watchlist  #//html/body/div[2]/div/div/div[4]/div[1]/div[2]/div[1]/dj-add-to-watchlist
 
 Barrons Signout Process
