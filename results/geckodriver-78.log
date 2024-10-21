@@ -1,0 +1,83 @@
+1729178979025	geckodriver	INFO	Listening on 127.0.0.1:52389
+1729178982112	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52390" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileBLB5Nx"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1729178984033	Marionette	INFO	Marionette enabled
+1729178984736	Marionette	INFO	Listening on port 52399
+Read port: 52399
+WebDriver BiDi listening on ws://127.0.0.1:52390
+1729178985106	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52390/devtools/browser/d69b0115-1511-4c8f-a80b-b1237ea8b939
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 5ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 7ms)
+JavaScript error: https://js-agent.newrelic.com/nr-spa-1.268.0.min.js, line 2: TypeError: this[Z] is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/icY1g6vuuJjaJEY7xrJYTSkfXHe6CkLx64UCzaLy73w.js line 2 > eval line 3354 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.barrons.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.6719954724170383%22,%22tld%22:%22www.barrons.com%22,%22topUrl%22:%22www.barrons.com%22,%22version%22:%229_12_0%22}, line 13: Script terminated by timeout at:
+r.prototype.logPixel@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.barrons.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.6719954724170383%22,%22tld%22:%22www.barrons.com%22,%22topUrl%22:%22www.barrons.com%22,%22version%22:%229_12_0%22}:13:3418
+r.prototype.flushEventQueue@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.barrons.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.6719954724170383%22,%22tld%22:%22www.barrons.com%22,%22topUrl%22:%22www.barrons.com%22,%22version%22:%229_12_0%22}:13:3152
+r/<@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.barrons.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.6719954724170383%22,%22tld%22:%22www.barrons.com%22,%22topUrl%22:%22www.barrons.com%22,%22version%22:%229_12_0%22}:13:3642
+
+console.error: ({})
+console.error: ({})
+JavaScript warning: https://imasdk.googleapis.com/js/core/bridge3.673.0_en.html#goog_1669925748, line 448: Script terminated by timeout at:
+YB@https://imasdk.googleapis.com/js/core/bridge3.673.0_en.html#goog_1669925748:448:310
+bC/this.aa@https://imasdk.googleapis.com/js/core/bridge3.673.0_en.html#goog_1669925748:446:29
+
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+out of memory: 0x0000000000000FF0 bytes requested
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+JavaScript error: chrome://global/content/elements/browser-custom-element.js, line 1679: Error: permitUnload is already running for this tab.
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-lazy.min.js, line 8: Script terminated by timeout at:
+./src/js/DetectorDomBootstrap.js/Q/this.apply@https://cdn.gbqofs.com/sv/b/detector-lazy.min.js:8:7932
+./src/js/DetectorDomBootstrap.js/dt/this.clone/<@https://cdn.gbqofs.com/sv/b/detector-lazy.min.js:8:14657
+./src/js/DetectorDomBootstrap.js/ut/this.BW@https://cdn.gbqofs.com/sv/b/detector-lazy.min.js:8:16777
+./src/js/DetectorDomBootstrap.js/dt/this.clone@https://cdn.gbqofs.com/sv/b/detector-lazy.min.js:8:14376
+./src/js/DetectorDomBootstrap.js/rt/this.take@https://cdn.gbqofs.com/sv/b/detector-lazy.min.js:8:9452
+./src/js/DetectorDomBootstrap.js/Xt/this.LJ@https://cdn.gbqofs.com/sv/b/detector-lazy.min.js:8:45033
+./src/js/DetectorDomBootstrap.js/Xt/this.HJ@https://cdn.gbqofs.com/sv/b/detector-lazy.min.js:8:46886
+./src/js/DetectorDomBootstrap.js/Xt/this.Px@https://cdn.gbqofs.com/sv/b/detector-lazy.min.js:8:48919
+I/this.apply@https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js:10:212018
+./src/js/utils.js/Mw/Ow/<@https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js:10:40404
+M/this.kE@https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js:10:214979
+L/this.kE@https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js:10:215717
+B/this.BI@https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js:10:220680
+Ze/this.rD@https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js:10:288671
+./src/js/detector.js/st/this.rd@https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js:4:133998
+./src/js/detector.js/st/this.gj@https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js:4:135595
+Ze/this.rD@https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js:10:288671
+./src/js/DetectorDomBootstrap.js/mi/this.KQ@https://cdn.gbqofs.com/sv/b/detector-lazy.min.js:8:78855
+Ze/this.rD@https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js:10:288671
+./src/js/DetectorDomBootstrap.js/Fs/this.o3@https://cdn.gbqofs.com/sv/b/detector-lazy.min.js:8:107070
+./src/js/DetectorDomBootstrap.js/Fs/this.yt@https://cdn.gbqofs.com/sv/b/detector-lazy.min.js:8:107585
+Ze/this.rD@https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js:10:288671
+./src/js/DetectorDomBootstrap.js/j/this.ZH@https://cdn.gbqofs.com/sv/b/detector-lazy.min.js:5:29873
+./src/js/DetectorDomBootstrap.js/j/this.nq@https://cdn.gbqofs.com/sv/b/detector-lazy.min.js:5:28365
+./src/js/DetectorDomBootstrap.js/j/this.iq/this.sq<@https://cdn.gbqofs.com/sv/b/detector-lazy.min.js:5:27071
+nrWrapper@https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634:129:17640
+
+1729179067307	Marionette	INFO	Stopped listening on port 52399
+Dynamically enable window occlusion 1
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 47: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+!!! error running onStopped callback: TypeError: callback is not a function
+1729179067776	WebDriver BiDi	ERROR	Failed to stop protocol: [Exception... "Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: chrome://remote/content/marionette/cert.sys.mjs :: allowAllCerts.disable :: line 47"  data: no] Stack trace: allowAllCerts.disable()@cert.sys.mjs:47
+destroy()@Session.sys.mjs:280
+deleteSession()@WebDriverBiDi.sys.mjs:174
+stop()@WebDriverBiDi.sys.mjs:264
+observe()@resource://gre/modules/AsyncShutdown.sys.mjs:569
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=Abn[[GFX1-]: CompositorBridgeChi[o[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+GFX1-]: CompositorBridgeChild rece[

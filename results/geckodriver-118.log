@@ -1,0 +1,76 @@
+1729237731566	geckodriver	INFO	Listening on 127.0.0.1:65411
+1729237734723	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65412" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileWNeQhJ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1729237736014	Marionette	INFO	Marionette enabled
+1729237736405	Marionette	INFO	Listening on port 53666
+WebDriver BiDi listening on ws://127.0.0.1:65412
+Read port: 53666
+1729237736825	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:65412/devtools/browser/ae114633-e3ac-48b9-9b5f-9a3cdab8139e
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.81&typ=pgv&rnd=m2efi5qt31fww8sa&sid=9222325317970825875&loc=https%3A%2F%2Fwww.barrons.com%2F&new=1&arf=0&ltm=1729237742745&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m2efi6liqqdootzh&ckp=m2efi5qtd813kn1g&glb=&cp_userState=anon&cp_testGroup=48&cp_topDomain=barrons.com&cp_access=free&cp_section=US%20Home%20Page%20Weekday&cp_subsection=&cp_cms_name=CAPS&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=7&cp_ab_bucket=27&cp_pageContentSource=Barrons%20Online&cp_pageContentType=Home&cp_pageContentTypeDetai=default&cp_pageSiteProduct=BOL&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/PSoM0kjsD_lTTkrp_J6fX9q3toeH8Fj3j7xA0l2GQAA.js line 2 > eval line 2072 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 4ms)
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+JavaScript error: https://www.barrons.com/ line 33 > injectedScript, line 44: Error: Can't access contentWindow of an iframe, skip placement initialization.
+1729237762102	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1729237763985	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+console.error: ({})
+console.error: ({})
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 6ms)
+JavaScript warning: https://pagead2.googlesyndication.com/bg/PSoM0kjsD_lTTkrp_J6fX9q3toeH8Fj3j7xA0l2GQAA.js line 2 > eval line 2599 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.81&typ=pgv&rnd=m2efiv6lvpg7x5lp&sid=9222325317970825875&loc=https%3A%2F%2Fwww.s.dev.barrons.com%2Farticles%2Fbuy-under-armour-stock-pick-51650672000&new=0&arf=0&ltm=1729237775746&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m2efivcmikt3msg1&ckp=m2efi5qtd813kn1g&glb=&amo=1720048200&cp_userState=anon&cp_testGroup=48&cp_env=staging&cp_topDomain=barrons.com&cp_pwTag=default&cp_pwPlacement=cx-snippetad&cp_pwCampaign=10&cp_pwType=personalized&cp_type=Retail&cp_template=preview&cp_access=PAID&cp_section=Retail&cp_subsection=Sizing%20Up%20Small-Caps&cp_cms_name=Methode&cp_vix=&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=7&cp_ab_bucket=27&cp_pageContentSource=Barron's%20Online&cp_pageContentType=Article&cp_pageContentTypeDetai=STANDARD&cp_pageSiteProduct=BOL&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://pagead2.googlesyndication.com/bg/PSoM0kjsD_lTTkrp_J6fX9q3toeH8Fj3j7xA0l2GQAA.js line 2 > eval line 6149 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015, line 1: Script terminated by timeout at:
+o@https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015:1:18291
+104/e.onLCP/</c<@https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015:1:18393
+104/T/<@https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015:1:11636
+t@https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015:1:11507
+
+JavaScript warning: https://ads.pubmatic.com/AdServer/js/user_sync.html?gdpr=0&gdpr_consent=&us_privacy=pbs-ozone&predirect=https%3A%2F%2Felb.the-ozone-project.com%2Fsetuid%3Fbidder%3Dpubmatic%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3Dpbs-ozone%26uid%3D, line 1: Script terminated by timeout at:
+q@https://ads.pubmatic.com/AdServer/js/user_sync.html?gdpr=0&gdpr_consent=&us_privacy=pbs-ozone&predirect=https%3A%2F%2Felb.the-ozone-project.com%2Fsetuid%3Fbidder%3Dpubmatic%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3Dpbs-ozone%26uid%3D:1:9748
+x@https://ads.pubmatic.com/AdServer/js/user_sync.html?gdpr=0&gdpr_consent=&us_privacy=pbs-ozone&predirect=https%3A%2F%2Felb.the-ozone-project.com%2Fsetuid%3Fbidder%3Dpubmatic%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3Dpbs-ozone%26uid%3D:1:11152
+
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 4ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 1ms)
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+[GFX1-]: CompositorBridgeChild receives IPC close with rea[GF[[[[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShut[GFX1-][GFX1-]: CompositorBridgeC[GFX1-]: CompositorBr[GFX1-]: CompositorBridgeChild receives IPC close with reason=[GFX1[[[GFX1-]: Co[[GFX1-]: CompositorBridgeC[A[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+son=AbnormalShutdown
+down
+: CompositorBridgeChild receives IPC close GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+X1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+hild receives IPC close with reason=AbnormalShutdown
+idgeChild receives IPC close with reason=AbnormalShutdown
+-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+bnormalShutdown
+GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+mpositorBridgeChild receives IPC close with reason=AbnormalShutdown
+GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+with reason=AbnormalShutdown
+[Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.

@@ -1,0 +1,74 @@
+1729516964191	geckodriver	INFO	Listening on 127.0.0.1:53763
+1729516967180	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53764" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileJE4ais"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1729516968071	Marionette	INFO	Marionette enabled
+1729516968367	Marionette	INFO	Listening on port 53783
+WebDriver BiDi listening on ws://127.0.0.1:53764
+Read port: 53783
+1729516968660	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53764/devtools/browser/acdc3e02-97b4-4785-a015-2ee54bdd5f27
+JavaScript warning: https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js, line 1: unreachable code after return statement
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.81&typ=pgv&rnd=m2j1r56s1efnj7af&sid=1134002947328204066&loc=https%3A%2F%2Fwww.dev.wsj.com%2F&new=1&arf=0&ltm=1729516978187&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m2j1r5j0pt9lnxa0&ckp=m2j1r56svfsmrc5h&glb=&cp_userState=anon&cp_testGroup=50&cp_env=staging&cp_topDomain=wsj.com&cp_template=full&cp_access=free&cp_section=US%20Home%20Page&cp_subsection=&cp_cms_name=CAPS&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=0&cp_ab_bucket=80&cp_pageContentSource=WSJ%20Online&cp_pageContentType=Home&cp_pageContentTypeDetai=desktopweb&cp_pageSiteProduct=WSJ&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+1729516979777	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://sc-static.net/scevent.min.js, line 2: Script terminated by timeout at:
+m@https://sc-static.net/scevent.min.js:2:2789
+c@https://sc-static.net/scevent.min.js:2:6893
+
+JavaScript warning: https://pagead2.googlesyndication.com/bg/-DbLkJJK3YZOSOasYi6rcjkBM_N5vpNI48728xD2bD8.js line 2 > eval line 1897 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js, line 1: Script terminated by timeout at:
+8018/g/<@https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js:1:111956
+r@https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js:1:111426
+
+JavaScript error: https://news.google.com/swg/js/v1/swg.js, line 17: Error: XHR Failed fetching (https://news.google.com/...): (Note: a CORS error above may indicate that this publisher or domain is not configured in Publisher Center. The CORS error happens because 4xx responses do not set CORS headers.)
+
+TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: https://news.google.com/swg/js/v1/swg.js, line 17: Error: Error: not allowed
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://www.dev.wsj.com/_next/static/chunks/main-cd92e5a27ba2f238.js, line 1: Script terminated by timeout at:
+78018/y/<@https://www.dev.wsj.com/_next/static/chunks/main-cd92e5a27ba2f238.js:1:118364
+r@https://www.dev.wsj.com/_next/static/chunks/main-cd92e5a27ba2f238.js:1:117860
+
+JavaScript warning: https://imasdk.googleapis.com/js/core/bridge3.673.0_en.html#goog_1526334149, line 448: Script terminated by timeout at:
+YB@https://imasdk.googleapis.com/js/core/bridge3.673.0_en.html#goog_1526334149:448:310
+bC/this.aa@https://imasdk.googleapis.com/js/core/bridge3.673.0_en.html#goog_1526334149:446:29
+
+JavaScript warning: https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.JAdv_-4V5X4.es5.O/am=MBgwAw/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4s_diCboKz0Egrs315l494KZ7fUA/m=_b,_tp, line 297: Script terminated by timeout at:
+c@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.JAdv_-4V5X4.es5.O/am=MBgwAw/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4s_diCboKz0Egrs315l494KZ7fUA/m=_b,_tp:297:187
+b@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.JAdv_-4V5X4.es5.O/am=MBgwAw/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4s_diCboKz0Egrs315l494KZ7fUA/m=_b,_tp:288:48
+
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+JavaScript warning: https://sso.int.accounts.dowjones.com/one_identity_login_pages/login/73025206e494ccc60099196e7f650560/js/vendor.js, line 51: Script terminated by timeout at:
+WE@https://sso.int.accounts.dowjones.com/one_identity_login_pages/login/73025206e494ccc60099196e7f650560/js/vendor.js:51:4767
+k@https://sso.int.accounts.dowjones.com/one_identity_login_pages/login/73025206e494ccc60099196e7f650560/js/vendor.js:49:13806
+
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.81&typ=pgv&rnd=m2j1rud1xh14rwwf&sid=9222318613852486900&loc=https%3A%2F%2Fwww.wsj.com%2Farticles%2Ftwitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001&new=0&arf=0&ltm=1729517010814&ref=https%3A%2F%2Fsso.int.accounts.dowjones.com%2F&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m2j1rvgx33r65en4&ckp=m2j1r56svfsmrc5h&glb=&amo=1658316780&eid0=e4cefa22ef027cc0132f0c218da37da39cdb3228234af4df969b5c463592e123&eit0=wsj&cp_userState=anon&cp_testGroup=50&cp_topDomain=wsj.com&cp_pwTag=default&cp_pwPlacement=cx-snippetad&cp_pwCampaign=28324&cp_pwType=personalized&cp_type=Technology&cp_template=preview&cp_access=paid&cp_section=Tech&cp_subsection=Tech&cp_cms_name=Methode&cp_vix=&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=6&cp_ab_bucket=56&cp_pageContentSource=WSJ%20Online&cp_pageContentType=Article&cp_pageContentTypeDetai=standard&cp_pageSiteProduct=WSJ&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/-DbLkJJK3YZOSOasYi6rcjkBM_N5vpNI48728xD2bD8.js line 2 > eval line 7594 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/-DbLkJJK3YZOSOasYi6rcjkBM_N5vpNI48728xD2bD8.js line 2 > eval line 6098 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1729517013867	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1729517014519	Marionette	INFO	Stopped listening on port 53783
+JavaScript warning: https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js, line 1: Script terminated by timeout at:
+_@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:131388
+55319/e/</_<@https://www.wsj.com/_next/static/chunks/8896-d7e15300176f1bc5.js:1:5853
+9570/l/<@https://www.wsj.com/_next/static/chunks/pages/_app-2445e54d7228dd90.js:1:10251
+ad@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:58687
+uo@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:71442
+i@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:121737
+oF@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:99306
+64448/oO/<@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:99174
+oO@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:99179
+oS@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:94218
+x@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:137808
+T@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:138337
+
+Dynamically enable window occlusion 1
+JavaScript error: https://www.dianomi.com/smartads.epl?id=6896&numAds=6&cf=1529.373.WSJ2&url=https%3A%2F%2Fwww.wsj.com%2Farticles%2Ftwitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001&unitId=dianomi-6896-ZxZV1SIXiA5d8WHFP_NcBgAAAEs0&responsiveHeight=1&contextfeedFrameId=373-219&gdpr_consent=null&gdpr=null&canServeAds=true&canCookie=true&partner_tcf_status=2.0&partnerTcfStatus=2.0, line 141: NS_ERROR_UNEXPECTED: 
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.

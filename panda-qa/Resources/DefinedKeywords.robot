@@ -225,8 +225,8 @@ MarketWatch Alerts User Sign In Process
     Click Button  //section[@id='password-login']/div/form/div[5]/button
 
 WSJ Sign In Process
-    Wait Until Element is visible  //*[@id="root"]/div/div/div/div[1]/header/div[1]/div/div[2]/div/a[2]
-    Click Element  //*[@id="root"]/div/div/div/div[1]/header/div[1]/div/div[2]/div/a[2]  #//*[@id="__next"]/div/div[2]/div[2]/div/div/header[1]/div[1]/div/div[1]/a[2]
+    Wait Until Element is visible  //*[@id="__next"]/div/div[2]/div[2]/div/div/header[1]/div[1]/div/div[1]/a[2]
+    Click Element  //*[@id="__next"]/div/div[2]/div[2]/div/div/header[1]/div[1]/div/div[1]/a[2]  #//*[@id="__next"]/div/div[2]/div[2]/div/div/header[1]/div[1]/div/div[1]/a[2]
     Click Button  //*[@id="emailOrUsername"]
     Input Text  //*[@id="emailOrUsername"]  QABARRONSONLY  #isaias.iniguez@dowjones.com
     Set Selenium Implicit Wait  10s

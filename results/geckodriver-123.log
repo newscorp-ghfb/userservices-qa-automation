@@ -1,0 +1,59 @@
+1729238228153	geckodriver	INFO	Listening on 127.0.0.1:64152
+1729238231158	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64153" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofiletAF2i1"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1729238232391	Marionette	INFO	Marionette enabled
+1729238232800	Marionette	INFO	Listening on port 64161
+WebDriver BiDi listening on ws://127.0.0.1:64153
+Read port: 64161
+1729238233189	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64153/devtools/browser/9cbff97b-2541-4567-8f9c-fdd5f760cf1f
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 4ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 5ms)
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://js-agent.newrelic.com/nr-spa-1.269.0.min.js, line 2: TypeError: this[Z] is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/PSoM0kjsD_lTTkrp_J6fX9q3toeH8Fj3j7xA0l2GQAA.js line 2 > eval line 3552 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 9ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 4ms)
+1729238267980	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://imasdk.googleapis.com/js/core/bridge3.673.0_en.html#goog_333375388, line 448: Script terminated by timeout at:
+YB@https://imasdk.googleapis.com/js/core/bridge3.673.0_en.html#goog_333375388:448:310
+bC/this.aa@https://imasdk.googleapis.com/js/core/bridge3.673.0_en.html#goog_333375388:446:29
+
+JavaScript warning: https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.barrons.com&us_privacy=1---&gpp=DBAA&gpp_sid=-1#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.1802059573452286%22,%22tld%22:%22www.barrons.com%22,%22topUrl%22:%22www.barrons.com%22,%22version%22:%229_12_0%22}, line 13: Script terminated by timeout at:
+r.prototype.flushEventQueue@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.barrons.com&us_privacy=1---&gpp=DBAA&gpp_sid=-1#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.1802059573452286%22,%22tld%22:%22www.barrons.com%22,%22topUrl%22:%22www.barrons.com%22,%22version%22:%229_12_0%22}:13:3137
+r/<@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.barrons.com&us_privacy=1---&gpp=DBAA&gpp_sid=-1#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.1802059573452286%22,%22tld%22:%22www.barrons.com%22,%22topUrl%22:%22www.barrons.com%22,%22version%22:%229_12_0%22}:13:3642
+
+console.error: ({})
+console.error: ({})
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.81&typ=pgv&rnd=m2efttmc1gnncr4q&sid=9222325317970825875&loc=https%3A%2F%2Fwww.s.dev.barrons.com%2Farticles%2Fbuy-under-armour-stock-pick-51650672000&new=0&arf=0&ltm=1729238286908&ref=&tzo=-330&wsz=1280x595&res=1280x720&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m2eftto7wxkuf8oy&ckp=m2efss23q3rxqi87&glb=cx%3A2omkk3kelqwck2q4kxigkqbtkx%3A26h49fp08gzb6&amo=1720048200&cp_userState=anon&cp_testGroup=46&cp_env=staging&cp_topDomain=barrons.com&cp_pwTag=default&cp_pwPlacement=cx-snippetad&cp_pwCampaign=10&cp_pwType=personalized&cp_type=Retail&cp_template=preview&cp_access=PAID&cp_section=Retail&cp_subsection=Sizing%20Up%20Small-Caps&cp_cms_name=Methode&cp_vix=&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=0&cp_ab_bucket=40&cp_pageContentSource=Barron's%20Online&cp_pageContentType=Article&cp_pageContentTypeDetai=STANDARD&cp_pageSiteProduct=BOL&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 6ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 1ms)
+JavaScript warning: https://pagead2.googlesyndication.com/bg/PSoM0kjsD_lTTkrp_J6fX9q3toeH8Fj3j7xA0l2GQAA.js line 2 > eval line 776 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+JavaScript warning: https://pagead2.googlesyndication.com/bg/PSoM0kjsD_lTTkrp_J6fX9q3toeH8Fj3j7xA0l2GQAA.js line 2 > eval line 4254 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000" ({})
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000" ({})
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js, line 147: Script terminated by timeout at:
+Rh/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:147:385
+
+1729250915607	Marionette	INFO	Stopped listening on port 64161
+Dynamically enable window occlusion 1

@@ -1,5 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
+Library    JSONLibrary
 Resource  ../Resources/DefinedKeywords.robot
 
 *** Variables ***
@@ -15,7 +16,7 @@ ${ExpectedCookieValue2}=   5Nnx9DUR7NQg8XPwvztud7o0OivfiKth
 
 ${Browser}=  ff  #headless, ff, chrome, edge, safari
 
-${Env}=  prod  #dev, prod, stg
+${Env}=  dev  #dev, prod, stg
 
 ${Email_prod}=  barronsadvisorcs@gmail.com
 
@@ -363,7 +364,7 @@ Start WSJ Commentary for Commentary breadcrumb
         Go To  https://www.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     END
     #Wait Until Element Is Visible  //span[text()="Dave Michaels"]
-    Set Focus To Element  //*[text()="Commentary (U.S.)"]
+    #Set Focus To Element  //*[text()="Commentary (U.S.)"]
     #Wait Until Element Is Visible  dom:${JSFollowButtonMGPath}  30s
     Maximize Browser Window
 

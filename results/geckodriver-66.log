@@ -1,0 +1,30 @@
+1729177317220	geckodriver	INFO	Listening on 127.0.0.1:50291
+1729177320397	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50292" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileEgQp8p"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1729177323373	Marionette	INFO	Marionette enabled
+1729177324345	Marionette	INFO	Listening on port 50300
+WebDriver BiDi listening on ws://127.0.0.1:50292
+Read port: 50300
+1729177325053	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:50292/devtools/browser/9c24ed44-9639-4974-bab5-94cc552b3f16
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+JavaScript error: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 10: Error: Error while loading plugin at URL: 'https://aswpsdkeu.com/notify/v1/ua-html-prompt.min.js'
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 11ms)
+JavaScript warning: https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.barrons.com&us_privacy=1---&gpp=DBAA&gpp_sid=-1#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.32986734894073555%22,%22tld%22:%22www.barrons.com%22,%22topUrl%22:%22www.barrons.com%22,%22version%22:%229_12_0%22}, line 13: Script terminated by timeout at:
+r.prototype.flushEventQueue@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.barrons.com&us_privacy=1---&gpp=DBAA&gpp_sid=-1#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.32986734894073555%22,%22tld%22:%22www.barrons.com%22,%22topUrl%22:%22www.barrons.com%22,%22version%22:%229_12_0%22}:13:3137
+r/<@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.barrons.com&us_privacy=1---&gpp=DBAA&gpp_sid=-1#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.32986734894073555%22,%22tld%22:%22www.barrons.com%22,%22topUrl%22:%22www.barrons.com%22,%22version%22:%229_12_0%22}:13:3642
+
+JavaScript warning: https://ads.pubmatic.com/AdServer/js/user_sync.html?p=156011&s=165626&predirect=https%3A%2F%2Fs.amazon-adsystem.com%2Fecm3%3Fex%3Dpubmatic.com%26id%3DPM_UID&gdpr=0, line 1: Script terminated by timeout at:
+F@https://ads.pubmatic.com/AdServer/js/user_sync.html?p=156011&s=165626&predirect=https%3A%2F%2Fs.amazon-adsystem.com%2Fecm3%3Fex%3Dpubmatic.com%26id%3DPM_UID&gdpr=0:1:9731
+q@https://ads.pubmatic.com/AdServer/js/user_sync.html?p=156011&s=165626&predirect=https%3A%2F%2Fs.amazon-adsystem.com%2Fecm3%3Fex%3Dpubmatic.com%26id%3DPM_UID&gdpr=0:1:9748
+J@https://ads.pubmatic.com/AdServer/js/user_sync.html?p=156011&s=165626&predirect=https%3A%2F%2Fs.amazon-adsystem.com%2Fecm3%3Fex%3Dpubmatic.com%26id%3DPM_UID&gdpr=0:1:14129
+x@https://ads.pubmatic.com/AdServer/js/user_sync.html?p=156011&s=165626&predirect=https%3A%2F%2Fs.amazon-adsystem.com%2Fecm3%3Fex%3Dpubmatic.com%26id%3DPM_UID&gdpr=0:1:10976
+
+1729177444896	Marionette	INFO	Stopped listening on port 50300
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function

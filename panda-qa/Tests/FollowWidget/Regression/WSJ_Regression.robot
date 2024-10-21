@@ -270,7 +270,7 @@ Validate the follow button for Editorials breadcrumb from articles page
 #US-T177
 Validate the follow button for Commentary breadcrumb from articles page
     [Documentation]  This test case validates the follow button from articles page
-    [Tags]  Regression  Follow  Breadcrumb  Article    Jan
+    [Tags]  Regression  Follow  Breadcrumb  Article    US-T178
     CommonFunctionality.CookieTestWSJ
     Set Selenium Speed  100.5 seconds
     CommonFunctionality.Start WSJ Article for Commentary breadcrumb
@@ -324,22 +324,23 @@ Validate the WSJ Preference Center page for Commentary breadcrumb
 #US-T167
 Validate the follow button for Commentary breadcrumb from Commentary page
     [Documentation]  This test case validates the follow button from articles page
-    [Tags]  Regression  Follow  Breadcrumb  Commentarypage   follow1
+    [Tags]  Regression  Follow  Breadcrumb  Commentarypage   US-T166
 
     CommonFunctionality.CookieTestWSJ
-    Set Selenium Speed  100.5 seconds
     CommonFunctionality.Start WSJ Commentary for Commentary breadcrumb
-                        IF  "${Env}" == "prod"
-        DefinedKeywords.New WSJ Sign In Process
-    ELSE IF  "${Env}" == "dev"
-        DefinedKeywords.New WSJ Sign In Process
-         END
-         Set Selenium Implicit Wait  50s
+    #Set Selenium Speed  100.5 se`````````````````````````````    CommonFunctionality.Start WSJ Commentary for Commentary breadcrumb
+                        #IF  "${Env}" == "prod"
+        #DefinedKeywords.New WSJ Sign In Process
+    #ELSE IF  "${Env}" == "dev"
+       # DefinedKeywords.WSJ Sign In Process  #New WSJ Sign In Process
+       # END
+         #Set Selenium Implicit Wait  50s
+    DefinedKeywords.WSJ Sign In Process
     WSJArticlePage.Validate Custom Following Button
     WSJArticlePage.Validate Custom Following Button
 #    WSJArticlePage.Click Custom Following Button
 #    WSJArticlePage.Click Undo Link
-#    WSJArticlePage.Validate Custom Following Button
+#    WSJArticlePage.Validate Custom Following Button```2
 #    WSJArticlePage.Click Custom Following Button
 #    WSJArticlePage.Validate Custom Follow Button
 #    WSJArticlePage.Click Custom Follow Button
@@ -352,7 +353,7 @@ Validate the follow button for Commentary breadcrumb from Commentary page
 #US-T163
 Validate the follow button for Editorials breadcrumb from Editorials page
     [Documentation]  This test case validates the follow button from Editorials page
-    [Tags]  Regression  Follow  Breadcrumb          US-T160
+    [Tags]  Regression  Follow  Breadcrumb  US-T160
     CommonFunctionality.Start WSJ Editorials for Editorials breadcrumb
                     #IF  "${Env}" == "prod"
         #DefinedKeywords.New WSJ Sign In Process
@@ -391,7 +392,7 @@ Validate the follow button for Editorials breadcrumb from Editorials page
 #US-T171
 Validate the follow button for Letters breadcrumb from Letters page
     [Documentation]  This test case validates the follow button from Letters page
-    [Tags]  Regression  Follow  Breadcrumb      T
+    [Tags]  Regression  Follow  Breadcrumb  US-T170
     CommonFunctionality.Start WSJ Letters for Letters breadcrumb
     #WSJArticlePage.Validate Custom Following Button
     Set Selenium Implicit Wait  10s

@@ -1,0 +1,47 @@
+1729191035160	geckodriver	INFO	Listening on 127.0.0.1:61012
+1729191038424	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61013" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofile4SA3KK"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1729191040813	Marionette	INFO	Marionette enabled
+1729191041648	Marionette	INFO	Listening on port 61022
+WebDriver BiDi listening on ws://127.0.0.1:61013
+Read port: 61022
+1729191042438	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:61013/devtools/browser/8263374a-5876-436a-8d5d-576cdbbff717
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 5ms)
+JavaScript error: https://js-agent.newrelic.com/nr-spa-1.268.0.min.js, line 2: TypeError: this[Z] is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/icY1g6vuuJjaJEY7xrJYTSkfXHe6CkLx64UCzaLy73w.js line 2 > eval line 6457 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.error: ({})
+console.error: ({})
+JavaScript warning: https://imasdk.googleapis.com/js/core/bridge3.673.0_en.html#goog_980951689, line 448: Script terminated by timeout at:
+YB@https://imasdk.googleapis.com/js/core/bridge3.673.0_en.html#goog_980951689:448:310
+bC/this.aa@https://imasdk.googleapis.com/js/core/bridge3.673.0_en.html#goog_980951689:446:29
+
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+JavaScript warning: https://ads.pubmatic.com/AdServer/js/user_sync.html?p=156011&s=165626&predirect=https%3A%2F%2Fs.amazon-adsystem.com%2Fecm3%3Fex%3Dpubmatic.com%26id%3DPM_UID&gdpr=0, line 1: Script terminated by timeout at:
+F@https://ads.pubmatic.com/AdServer/js/user_sync.html?p=156011&s=165626&predirect=https%3A%2F%2Fs.amazon-adsystem.com%2Fecm3%3Fex%3Dpubmatic.com%26id%3DPM_UID&gdpr=0:1:9731
+q@https://ads.pubmatic.com/AdServer/js/user_sync.html?p=156011&s=165626&predirect=https%3A%2F%2Fs.amazon-adsystem.com%2Fecm3%3Fex%3Dpubmatic.com%26id%3DPM_UID&gdpr=0:1:9748
+J@https://ads.pubmatic.com/AdServer/js/user_sync.html?p=156011&s=165626&predirect=https%3A%2F%2Fs.amazon-adsystem.com%2Fecm3%3Fex%3Dpubmatic.com%26id%3DPM_UID&gdpr=0:1:14129
+x@https://ads.pubmatic.com/AdServer/js/user_sync.html?p=156011&s=165626&predirect=https%3A%2F%2Fs.amazon-adsystem.com%2Fecm3%3Fex%3Dpubmatic.com%26id%3DPM_UID&gdpr=0:1:10976
+@https://ads.pubmatic.com/AdServer/js/user_sync.html?p=156011&s=165626&predirect=https%3A%2F%2Fs.amazon-adsystem.com%2Fecm3%3Fex%3Dpubmatic.com%26id%3DPM_UID&gdpr=0:1:15792
+
+JavaScript warning: https://pagead2.googlesyndication.com/bg/icY1g6vuuJjaJEY7xrJYTSkfXHe6CkLx64UCzaLy73w.js line 2 > eval line 6852 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/icY1g6vuuJjaJEY7xrJYTSkfXHe6CkLx64UCzaLy73w.js line 2 > eval line 1118 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/icY1g6vuuJjaJEY7xrJYTSkfXHe6CkLx64UCzaLy73w.js line 2 > eval line 1037 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+JavaScript error: chrome://global/content/elements/browser-custom-element.js, line 1679: Error: permitUnload is already running for this tab.
+1729191166596	Marionette	INFO	Stopped listening on port 61022
+Dynamically enable window occlusion 1
+JavaScript error: chrome://global/content/elements/browser-custom-element.js, line 1679: Error: permitUnload is already running for this tab.
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 47: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+!!! error running onStopped callback: TypeError: callback is not a function
+1729191167199	WebDriver BiDi	ERROR	Failed to stop protocol: [Exception... "Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: chrome://remote/content/marionette/cert.sys.mjs :: allowAllCerts.disable :: line 47"  data: no] Stack trace: allowAllCerts.disable()@cert.sys.mjs:47
+destroy()@Session.sys.mjs:280
+deleteSession()@WebDriverBiDi.sys.mjs:174
+stop()@WebDriverBiDi.sys.mjs:264
+observe()@resource://gre/modules/AsyncShutdown.sys.mjs:569

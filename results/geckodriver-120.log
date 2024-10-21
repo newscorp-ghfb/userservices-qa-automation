@@ -1,0 +1,112 @@
+1729237861308	geckodriver	INFO	Listening on 127.0.0.1:54019
+1729237864421	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54020" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileE8cEkq"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1729237865842	Marionette	INFO	Marionette enabled
+1729237866247	Marionette	INFO	Listening on port 54031
+WebDriver BiDi listening on ws://127.0.0.1:54020
+Read port: 54031
+1729237866454	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:54020/devtools/browser/976337e3-9b4b-4c5f-a254-ac597e308a23
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.81&typ=pgv&rnd=m2efkx4d9nx1965b&sid=9222325317970825875&loc=https%3A%2F%2Fwww.barrons.com%2F&new=1&arf=0&ltm=1729237871537&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m2efkxyqnltsa559&ckp=m2efkx4dordtly2q&glb=&cp_userState=anon&cp_testGroup=6&cp_topDomain=barrons.com&cp_access=free&cp_section=US%20Home%20Page%20Weekday&cp_subsection=&cp_cms_name=CAPS&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=0&cp_ab_bucket=80&cp_pageContentSource=Barrons%20Online&cp_pageContentType=Home&cp_pageContentTypeDetai=default&cp_pageSiteProduct=BOL&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/PSoM0kjsD_lTTkrp_J6fX9q3toeH8Fj3j7xA0l2GQAA.js line 2 > eval line 4745 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 5ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 6ms)
+JavaScript error: https://www.barrons.com/ line 33 > injectedScript, line 44: Error: Can't access contentWindow of an iframe, skip placement initialization.
+JavaScript warning: https://imasdk.googleapis.com/js/core/bridge3.673.0_en.html#goog_1126983357, line 448: Script terminated by timeout at:
+YB@https://imasdk.googleapis.com/js/core/bridge3.673.0_en.html#goog_1126983357:448:310
+bC/this.aa@https://imasdk.googleapis.com/js/core/bridge3.673.0_en.html#goog_1126983357:446:29
+
+JavaScript warning: https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015, line 1: Script terminated by timeout at:
+o@https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015:1:18291
+104/e.onLCP/</c<@https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015:1:18393
+104/T/<@https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015:1:11636
+t@https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015:1:11507
+
+JavaScript warning: https://ads.pubmatic.com/AdServer/js/user_sync.html?gdpr=0&gdpr_consent=&us_privacy=pbs-ozone&predirect=https%3A%2F%2Felb.the-ozone-project.com%2Fsetuid%3Fbidder%3Dpubmatic%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3Dpbs-ozone%26uid%3D, line 1: Script terminated by timeout at:
+F@https://ads.pubmatic.com/AdServer/js/user_sync.html?gdpr=0&gdpr_consent=&us_privacy=pbs-ozone&predirect=https%3A%2F%2Felb.the-ozone-project.com%2Fsetuid%3Fbidder%3Dpubmatic%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3Dpbs-ozone%26uid%3D:1:9731
+q@https://ads.pubmatic.com/AdServer/js/user_sync.html?gdpr=0&gdpr_consent=&us_privacy=pbs-ozone&predirect=https%3A%2F%2Felb.the-ozone-project.com%2Fsetuid%3Fbidder%3Dpubmatic%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3Dpbs-ozone%26uid%3D:1:9748
+J@https://ads.pubmatic.com/AdServer/js/user_sync.html?gdpr=0&gdpr_consent=&us_privacy=pbs-ozone&predirect=https%3A%2F%2Felb.the-ozone-project.com%2Fsetuid%3Fbidder%3Dpubmatic%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3Dpbs-ozone%26uid%3D:1:14129
+x@https://ads.pubmatic.com/AdServer/js/user_sync.html?gdpr=0&gdpr_consent=&us_privacy=pbs-ozone&predirect=https%3A%2F%2Felb.the-ozone-project.com%2Fsetuid%3Fbidder%3Dpubmatic%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3Dpbs-ozone%26uid%3D:1:10976
+
+console.error: ({})
+console.error: ({})
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.81&typ=pgv&rnd=m2efljhlgbsw96d7&sid=9222325317970825875&loc=https%3A%2F%2Fwww.s.dev.barrons.com%2Farticles%2Fbuy-under-armour-stock-pick-51650672000&new=0&arf=0&ltm=1729237900534&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m2efljkflml9khzb&ckp=m2efkx4dordtly2q&glb=&amo=1720048200&cp_userState=anon&cp_testGroup=6&cp_env=staging&cp_topDomain=barrons.com&cp_pwTag=default&cp_pwPlacement=cx-snippetad&cp_pwCampaign=10&cp_pwType=personalized&cp_type=Retail&cp_template=preview&cp_access=PAID&cp_section=Retail&cp_subsection=Sizing%20Up%20Small-Caps&cp_cms_name=Methode&cp_vix=&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=0&cp_ab_bucket=80&cp_pageContentSource=Barron's%20Online&cp_pageContentType=Article&cp_pageContentTypeDetai=STANDARD&cp_pageSiteProduct=BOL&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/PSoM0kjsD_lTTkrp_J6fX9q3toeH8Fj3j7xA0l2GQAA.js line 2 > eval line 4875 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 4ms)
+JavaScript warning: https://pagead2.googlesyndication.com/bg/PSoM0kjsD_lTTkrp_J6fX9q3toeH8Fj3j7xA0l2GQAA.js line 2 > eval line 7113 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 9ms)
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1729237963715	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:467:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:220:33
+JavaScript warning: https://cdn.cxense.com/cx.js, line 6: Script terminated by timeout at:
+l<@https://cdn.cxense.com/cx.js:6:1532
+Yi@https://cdn.cxense.com/cx.js:6:52590
+uo@https://cdn.cxense.com/cx.js:6:54979
+aa@https://cdn.cxense.com/cx.js:6:70625
+ua/<@https://cdn.cxense.com/cx.js:6:70932
+
+JavaScript warning: https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.s.dev.barrons.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.780976649432217%22,%22tld%22:%22www.s.dev.barrons.com%22,%22topUrl%22:%22www.s.dev.barrons.com%22,%22version%22:%229_12_0%22}, line 13: Script terminated by timeout at:
+r.prototype.flushEventQueue@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.s.dev.barrons.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.780976649432217%22,%22tld%22:%22www.s.dev.barrons.com%22,%22topUrl%22:%22www.s.dev.barrons.com%22,%22version%22:%229_12_0%22}:13:3137
+r/<@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.s.dev.barrons.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.780976649432217%22,%22tld%22:%22www.s.dev.barrons.com%22,%22topUrl%22:%22www.s.dev.barrons.com%22,%22version%22:%229_12_0%22}:13:3642
+
+JavaScript warning: https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015, line 1: Script terminated by timeout at:
+o@https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015:1:18291
+104/e.onLCP/</c<@https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015:1:18393
+104/T/<@https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015:1:11636
+t@https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015:1:11507
+
+JavaScript warning: https://ads.pubmatic.com/AdServer/js/user_sync.html?gdpr=0&gdpr_consent=&us_privacy=pbs-ozone&predirect=https%3A%2F%2Felb.the-ozone-project.com%2Fsetuid%3Fbidder%3Dpubmatic%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3Dpbs-ozone%26uid%3D, line 1: Script terminated by timeout at:
+F@https://ads.pubmatic.com/AdServer/js/user_sync.html?gdpr=0&gdpr_consent=&us_privacy=pbs-ozone&predirect=https%3A%2F%2Felb.the-ozone-project.com%2Fsetuid%3Fbidder%3Dpubmatic%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3Dpbs-ozone%26uid%3D:1:9731
+q@https://ads.pubmatic.com/AdServer/js/user_sync.html?gdpr=0&gdpr_consent=&us_privacy=pbs-ozone&predirect=https%3A%2F%2Felb.the-ozone-project.com%2Fsetuid%3Fbidder%3Dpubmatic%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3Dpbs-ozone%26uid%3D:1:9748
+J@https://ads.pubmatic.com/AdServer/js/user_sync.html?gdpr=0&gdpr_consent=&us_privacy=pbs-ozone&predirect=https%3A%2F%2Felb.the-ozone-project.com%2Fsetuid%3Fbidder%3Dpubmatic%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3Dpbs-ozone%26uid%3D:1:14129
+x@https://ads.pubmatic.com/AdServer/js/user_sync.html?gdpr=0&gdpr_consent=&us_privacy=pbs-ozone&predirect=https%3A%2F%2Felb.the-ozone-project.com%2Fsetuid%3Fbidder%3Dpubmatic%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3Dpbs-ozone%26uid%3D:1:10976
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT, line 219: Script terminated by timeout at:
+Oc@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:219:394
+uA@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:585:482
+MA@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:592:163
+KA/</<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:591:187
+z@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:200:203
+KA/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:591:167
+z@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:200:203
+KA@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:591:134
+LA/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:591:111
+
+console.error: ({})
+console.error: ({})
+JavaScript warning: https://pagead2.googlesyndication.com/bg/PSoM0kjsD_lTTkrp_J6fX9q3toeH8Fj3j7xA0l2GQAA.js line 2 > eval line 7176 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1729237994144	Marionette	INFO	Stopped listening on port 54031
+JavaScript warning: https://tags.tiqcdn.com/utag/wsjdn/barrons/dev/utag.140.js?utv=ut4.44.202410031914, line 4: Script terminated by timeout at:
+AppMeasurement/a.escape@https://tags.tiqcdn.com/utag/wsjdn/barrons/dev/utag.140.js?utv=ut4.44.202410031914:4:1120
+AppMeasurement/a.Nb@https://tags.tiqcdn.com/utag/wsjdn/barrons/dev/utag.140.js?utv=ut4.44.202410031914:5:3066
+AppMeasurement/a.Da@https://tags.tiqcdn.com/utag/wsjdn/barrons/dev/utag.140.js?utv=ut4.44.202410031914:7:7574
+AppMeasurement/a.p@https://tags.tiqcdn.com/utag/wsjdn/barrons/dev/utag.140.js?utv=ut4.44.202410031914:7:6114
+AppMeasurement/a.Ab@https://tags.tiqcdn.com/utag/wsjdn/barrons/dev/utag.140.js?utv=ut4.44.202410031914:7:4867
+z/n/e@https://tags.tiqcdn.com/utag/wsjdn/barrons/dev/utag.js:121:13827
+qe/g._callCallback@https://tags.tiqcdn.com/utag/wsjdn/barrons/dev/utag.js:121:43663
+qe/g._getRemoteField@https://tags.tiqcdn.com/utag/wsjdn/barrons/dev/utag.js:121:51292
+qe/g.getAudienceManagerBlob@https://tags.tiqcdn.com/utag/wsjdn/barrons/dev/utag.js:121:41595
+qe/</g[t]@https://tags.tiqcdn.com/utag/wsjdn/barrons/dev/utag.js:121:56743
+z/<@https://tags.tiqcdn.com/utag/wsjdn/barrons/dev/utag.js:121:13963
+z@https://tags.tiqcdn.com/utag/wsjdn/barrons/dev/utag.js:121:13885
+qe/g.getVisitorValues@https://tags.tiqcdn.com/utag/wsjdn/barrons/dev/utag.js:121:38592
+AppMeasurement/a.ob@https://tags.tiqcdn.com/utag/wsjdn/barrons/dev/utag.140.js?utv=ut4.44.202410031914:7:5640
+AppMeasurement/a.isReadyToTrack@https://tags.tiqcdn.com/utag/wsjdn/barrons/dev/utag.140.js?utv=ut4.44.202410031914:7:5098
+AppMeasurement/a.p@https://tags.tiqcdn.com/utag/wsjdn/barrons/dev/utag.140.js?utv=ut4.44.202410031914:7:6042
+
+Dynamically enable window occlusion 1
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.

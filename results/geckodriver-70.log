@@ -1,0 +1,56 @@
+1729177871948	geckodriver	INFO	Listening on 127.0.0.1:64395
+1729177875280	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64396" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofile746Tor"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1729177877187	Marionette	INFO	Marionette enabled
+1729177877939	Marionette	INFO	Listening on port 64413
+WebDriver BiDi listening on ws://127.0.0.1:64396
+Read port: 64413
+1729177878502	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64396/devtools/browser/4db505fb-3413-479e-af4e-942c77c78597
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+JavaScript error: https://js-agent.newrelic.com/nr-spa-1.268.0.min.js, line 2: TypeError: this[Z] is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/icY1g6vuuJjaJEY7xrJYTSkfXHe6CkLx64UCzaLy73w.js line 2 > eval line 6944 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+console.error: ({})
+console.error: ({})
+JavaScript warning: https://imasdk.googleapis.com/js/core/bridge3.673.0_en.html#goog_2096943081, line 448: Script terminated by timeout at:
+YB@https://imasdk.googleapis.com/js/core/bridge3.673.0_en.html#goog_2096943081:448:310
+bC/this.aa@https://imasdk.googleapis.com/js/core/bridge3.673.0_en.html#goog_2096943081:446:29
+
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: , line 0: uncaught exception: out of memory
+JavaScript error: https://s0.2mdn.net/sadbundle/3953689380350066688/44267_16_Value_728x90.html?ev=01_252, line 24: ReferenceError: AdobeAn is not defined
+Hit MOZ_CRASH([unhandlable oom] Failed to allocate new chunk during GC) at /builds/worker/checkouts/gecko/js/src/vm/JSContext.cpp:1343
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+Hit MOZ_CRASH([unhandlable oom] Failed to allocate new chunk during GC) at /builds/worker/checkouts/gecko/js/src/vm/JSContext.cpp:1343
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+JavaScript error: chrome://global/content/elements/browser-custom-element.js, line 1679: Error: permitUnload is already running for this tab.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/icY1g6vuuJjaJEY7xrJYTSkfXHe6CkLx64UCzaLy73w.js line 2 > eval line 7121 > eval line 1 > eval line 1 > eval, line 1: Script terminated by timeout at:
+p@https://pagead2.googlesyndication.com/bg/icY1g6vuuJjaJEY7xrJYTSkfXHe6CkLx64UCzaLy73w.js line 2 > eval line 7121 > eval line 1 > eval line 1 > eval:1:13
+AV@https://pagead2.googlesyndication.com/bg/icY1g6vuuJjaJEY7xrJYTSkfXHe6CkLx64UCzaLy73w.js line 2 > eval line 7121 > eval line 1 > eval line 1 > eval:1:43
+@https://pagead2.googlesyndication.com/bg/icY1g6vuuJjaJEY7xrJYTSkfXHe6CkLx64UCzaLy73w.js line 2 > eval line 7121 > eval:1:17
+Q1@https://pagead2.googlesyndication.com/bg/icY1g6vuuJjaJEY7xrJYTSkfXHe6CkLx64UCzaLy73w.js line 2 > eval line 7121 > eval line 1 > eval line 1 > eval:1:235
+B8@https://pagead2.googlesyndication.com/bg/icY1g6vuuJjaJEY7xrJYTSkfXHe6CkLx64UCzaLy73w.js line 2 > eval line 7121 > eval line 1 > eval line 1 > eval:1:47
+@https://pagead2.googlesyndication.com/bg/icY1g6vuuJjaJEY7xrJYTSkfXHe6CkLx64UCzaLy73w.js line 2 > eval:7121:50476
+Hc@https://pagead2.googlesyndication.com/bg/icY1g6vuuJjaJEY7xrJYTSkfXHe6CkLx64UCzaLy73w.js line 2 > eval:7121:31842
+o1@https://pagead2.googlesyndication.com/bg/icY1g6vuuJjaJEY7xrJYTSkfXHe6CkLx64UCzaLy73w.js line 2 > eval:7121:18162
+L@https://pagead2.googlesyndication.com/bg/icY1g6vuuJjaJEY7xrJYTSkfXHe6CkLx64UCzaLy73w.js line 2 > eval:7121:15123
+o1/<@https://pagead2.googlesyndication.com/bg/icY1g6vuuJjaJEY7xrJYTSkfXHe6CkLx64UCzaLy73w.js line 2 > eval:7121:18117
+OF</<@https://pagead2.googlesyndication.com/bg/icY1g6vuuJjaJEY7xrJYTSkfXHe6CkLx64UCzaLy73w.js line 2 > eval:7121:48205
+
+JavaScript warning: https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634, line 129: Script terminated by timeout at:
+nrWrapper@https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634:129:17490
+
+1729177967644	Marionette	INFO	Stopped listening on port 64413
+Dynamically enable window occlusion 1
+JavaScript warning: https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.barrons.com&us_privacy=1---&gpp=DBAA&gpp_sid=-1#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.6490990505164523%22,%22tld%22:%22www.barrons.com%22,%22topUrl%22:%22www.barrons.com%22,%22version%22:%229_12_0%22}, line 13: Script terminated by timeout at:
+r.prototype.flushEventQueue@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.barrons.com&us_privacy=1---&gpp=DBAA&gpp_sid=-1#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.6490990505164523%22,%22tld%22:%22www.barrons.com%22,%22topUrl%22:%22www.barrons.com%22,%22version%22:%229_12_0%22}:13:3137
+r/<@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.barrons.com&us_privacy=1---&gpp=DBAA&gpp_sid=-1#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.6490990505164523%22,%22tld%22:%22www.barrons.com%22,%22topUrl%22:%22www.barrons.com%22,%22version%22:%229_12_0%22}:13:3642
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.

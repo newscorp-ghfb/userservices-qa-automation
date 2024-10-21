@@ -1,0 +1,93 @@
+1729516174081	geckodriver	INFO	Listening on 127.0.0.1:55485
+1729516177359	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55486" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofile4W7kTW"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1729516178160	Marionette	INFO	Marionette enabled
+1729516178430	Marionette	INFO	Listening on port 55508
+WebDriver BiDi listening on ws://127.0.0.1:55486
+Read port: 55508
+1729516178765	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:55486/devtools/browser/c9fc2df5-7a66-4285-b2a5-5986885b03b0
+JavaScript warning: https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js, line 1: unreachable code after return statement
+JavaScript warning: https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js, line 1: Script terminated by timeout at:
+8018/g/<@https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js:1:111956
+r@https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js:1:111426
+
+JavaScript error: https://news.google.com/swg/js/v1/swg.js, line 17: Error: XHR Failed fetching (https://news.google.com/...): (Note: a CORS error above may indicate that this publisher or domain is not configured in Publisher Center. The CORS error happens because 4xx responses do not set CORS headers.)
+
+TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: https://news.google.com/swg/js/v1/swg.js, line 17: Error: Error: not allowed
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: AbortError: The operation was aborted. 
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT, line 219: Script terminated by timeout at:
+Mc@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:219:321
+XG@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:688:262
+ZG.prototype.flush@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:692:300
+ca.flush@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:710:138
+pI/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:721:210
+ca.Yk/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:663:126
+ca.Yk/c/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:662:420
+
+JavaScript warning: https://imasdk.googleapis.com/js/core/bridge3.673.0_en.html#goog_1007044276, line 448: Script terminated by timeout at:
+YB@https://imasdk.googleapis.com/js/core/bridge3.673.0_en.html#goog_1007044276:448:310
+bC/this.aa@https://imasdk.googleapis.com/js/core/bridge3.673.0_en.html#goog_1007044276:446:29
+
+JavaScript warning: https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.JAdv_-4V5X4.es5.O/ck=boq-subscribewithgoogle.SubscribewithgoogleClientUi.JuGyz1fvUGQ.L.F4.O/am=MBgwAw/d=1/exm=FCpbqb,LEikZe,P6sQOc,W93Wdc,WhJNk,Wt6vjf,_b,_tp,hhhU8/excm=_b,_tp,serviceiframeview/ed=1/wt=2/ujg=1/rs=ABXTjI5vGuQc3EwDxQQPHswTkI0BV-YiAQ/ee=EVNhjf:pw70Gc;EmZ2Bf:zr1jrb;JsbNhc:Xd8iUd;K5nYTd:ZDZcre;LBgRLc:SdcwHb;Me32dd:MEeYgc;NPKaK:SdcwHb;NSEoX:lazG7b;Pjplud:EEDORb;QGR0gd:Mlhmy;SNUn3:ZwDk9d;ScI3Yc:e7Hzgb;Uvc8o:VDovNc;YIZmRd:A1yn5d;a56pNe:JEfCwb;cEt90b:ws9Tlc;dIoSBb:SpsfSb;dowIGb:ebZ3mb;eBAeSb:zbML3c;iFQyKf:QIhFr;lOO0Vd:OTA3Ae;nAFL3:s39S4;oGtAuc:sOXFj;pXdRYb:MdUzUe;qafBPd:yDVVkb;qddgKe:xQtZb;wR5FRb:O1Gjze;xqZiqf:wmnU7d;yxTchf:KUM7Z;zxnPse:GkRiKb/m=RqjULd, line 19: Script terminated by timeout at:
+VJ@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.JAdv_-4V5X4.es5.O/ck=boq-subscribewithgoogle.SubscribewithgoogleClientUi.JuGyz1fvUGQ.L.F4.O/am=MBgwAw/d=1/exm=FCpbqb,LEikZe,P6sQOc,W93Wdc,WhJNk,Wt6vjf,_b,_tp,hhhU8/excm=_b,_tp,serviceiframeview/ed=1/wt=2/ujg=1/rs=ABXTjI5vGuQc3EwDxQQPHswTkI0BV-YiAQ/ee=EVNhjf:pw70Gc;EmZ2Bf:zr1jrb;JsbNhc:Xd8iUd;K5nYTd:ZDZcre;LBgRLc:SdcwHb;Me32dd:MEeYgc;NPKaK:SdcwHb;NSEoX:lazG7b;Pjplud:EEDORb;QGR0gd:Mlhmy;SNUn3:ZwDk9d;ScI3Yc:e7Hzgb;Uvc8o:VDovNc;YIZmRd:A1yn5d;a56pNe:JEfCwb;cEt90b:ws9Tlc;dIoSBb:SpsfSb;dowIGb:ebZ3mb;eBAeSb:zbML3c;iFQyKf:QIhFr;lOO0Vd:OTA3Ae;nAFL3:s39S4;oGtAuc:sOXFj;pXdRYb:MdUzUe;qafBPd:yDVVkb;qddgKe:xQtZb;wR5FRb:O1Gjze;xqZiqf:wmnU7d;yxTchf:KUM7Z;zxnPse:GkRiKb/m=RqjULd:19:1545
+
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+JavaScript warning: https://sso.int.accounts.dowjones.com/one_identity_login_pages/login/73025206e494ccc60099196e7f650560/js/vendor.js, line 51: Script terminated by timeout at:
+WE@https://sso.int.accounts.dowjones.com/one_identity_login_pages/login/73025206e494ccc60099196e7f650560/js/vendor.js:51:4767
+k@https://sso.int.accounts.dowjones.com/one_identity_login_pages/login/73025206e494ccc60099196e7f650560/js/vendor.js:49:13806
+
+1729516210928	Marionette	INFO	Stopped listening on port 55508
+JavaScript warning: https://www.wsj.com/_next/static/chunks/pages/_app-2445e54d7228dd90.js, line 1: Script terminated by timeout at:
+p@https://www.wsj.com/_next/static/chunks/pages/_app-2445e54d7228dd90.js:1:1691
+e@https://www.wsj.com/_next/static/chunks/pages/_app-2445e54d7228dd90.js:1:8506
+e@https://www.wsj.com/_next/static/chunks/pages/_app-2445e54d7228dd90.js:1:8649
+M@https://www.wsj.com/_next/static/chunks/pages/_app-2445e54d7228dd90.js:1:9247
+d@https://www.wsj.com/_next/static/chunks/pages/_app-2445e54d7228dd90.js:1:9325
+70917/c</<@https://www.wsj.com/_next/static/chunks/pages/_app-2445e54d7228dd90.js:1:11757
+uI@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:84340
+uq@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:86745
+uQ@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:86594
+uq@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:86707
+uQ@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:86594
+uq@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:86707
+uQ@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:86594
+uq@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:88024
+uQ@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:86594
+uq@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:88024
+uQ@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:86594
+uq@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:88024
+uQ@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:86594
+uq@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:88024
+uQ@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:86594
+uq@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:88024
+uQ@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:86594
+uq@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:86707
+uQ@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:86594
+uq@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:88024
+uQ@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:86594
+uq@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:88024
+uQ@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:86594
+uq@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:86842
+uQ@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:86594
+uq@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:86707
+uQ@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:86594
+uq@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:86707
+uQ@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:86594
+uq@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:87895
+64448/oI/<@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:109598
+oI@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:111838
+oS@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:95210
+x@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:137808
+T@https://www.wsj.com/_next/static/chunks/framework-85b6536238798673.js:1:138337
+
+Dynamically enable window occlusion 1
+IPDL protocol Error: Received an invalid file descriptor
