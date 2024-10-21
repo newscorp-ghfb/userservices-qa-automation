@@ -1,0 +1,57 @@
+1729190508943	geckodriver	INFO	Listening on 127.0.0.1:65392
+1729190512455	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65393" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofilelkK8zC"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1729190517242	Marionette	INFO	Marionette enabled
+1729190518138	Marionette	INFO	Listening on port 65400
+WebDriver BiDi listening on ws://127.0.0.1:65393
+Read port: 65400
+1729190518843	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:65393/devtools/browser/7512ea10-7b91-4846-bb35-818d68d49bb5
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript error: https://js-agent.newrelic.com/nr-spa-1.268.0.min.js, line 2: TypeError: this[Z] is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/icY1g6vuuJjaJEY7xrJYTSkfXHe6CkLx64UCzaLy73w.js line 2 > eval line 7112 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+JavaScript warning: https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.barrons.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.3552508767181919%22,%22tld%22:%22www.barrons.com%22,%22topUrl%22:%22www.barrons.com%22,%22version%22:%229_12_0%22}, line 13: Script terminated by timeout at:
+r.prototype.flushEventQueue@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.barrons.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.3552508767181919%22,%22tld%22:%22www.barrons.com%22,%22topUrl%22:%22www.barrons.com%22,%22version%22:%229_12_0%22}:13:3137
+r/<@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.barrons.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.3552508767181919%22,%22tld%22:%22www.barrons.com%22,%22topUrl%22:%22www.barrons.com%22,%22version%22:%229_12_0%22}:13:3642
+
+console.error: ({})
+console.error: ({})
+JavaScript warning: https://imasdk.googleapis.com/js/core/bridge3.673.0_en.html#goog_1728951926, line 449: Script terminated by timeout at:
+ZB@https://imasdk.googleapis.com/js/core/bridge3.673.0_en.html#goog_1728951926:449:275
+bC/this.Y<@https://imasdk.googleapis.com/js/core/bridge3.673.0_en.html#goog_1728951926:446:426
+f@https://imasdk.googleapis.com/js/core/bridge3.673.0_en.html#goog_1728951926:98:334
+pf/<@https://imasdk.googleapis.com/js/core/bridge3.673.0_en.html#goog_1728951926:98:389
+bC/this.ba@https://imasdk.googleapis.com/js/core/bridge3.673.0_en.html#goog_1728951926:447:59
+
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 5ms)
+JavaScript warning: https://pagead2.googlesyndication.com/bg/icY1g6vuuJjaJEY7xrJYTSkfXHe6CkLx64UCzaLy73w.js line 2 > eval line 3687 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+JavaScript warning: https://www.dianomi.com/cdn-cgi/challenge-platform/scripts/jsd/main.js, line 1: Script terminated by timeout at:
+F@https://www.dianomi.com/cdn-cgi/challenge-platform/scripts/jsd/main.js:1:3952
+@https://www.dianomi.com/cdn-cgi/challenge-platform/scripts/jsd/main.js:1:3910
+z@https://www.dianomi.com/cdn-cgi/challenge-platform/scripts/jsd/main.js:1:6190
+B@https://www.dianomi.com/cdn-cgi/challenge-platform/scripts/jsd/main.js:1:7495
+A@https://www.dianomi.com/cdn-cgi/challenge-platform/scripts/jsd/main.js:1:7554
+@https://www.dianomi.com/cdn-cgi/challenge-platform/scripts/jsd/main.js:1:4358
+@https://www.dianomi.com/cdn-cgi/challenge-platform/scripts/jsd/main.js:1:8014
+
+1729190614555	Marionette	INFO	Stopped listening on port 65400
+Dynamically enable window occlusion 1
+1729190614887	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+Exiting due to channel error.
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+[GFX1-]: CompositorBrid[[[GFX1-]: CompositorBridgeChild receives IPC clExiting due to channel error.
+o[[[[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+sG[Exiting due to channel error.

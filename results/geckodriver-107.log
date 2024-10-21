@@ -1,0 +1,77 @@
+1729192538613	geckodriver	INFO	Listening on 127.0.0.1:52413
+1729192541662	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52414" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileTF3gX4"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1729192542752	Marionette	INFO	Marionette enabled
+1729192543055	Marionette	INFO	Listening on port 52427
+WebDriver BiDi listening on ws://127.0.0.1:52414
+Read port: 52427
+1729192543425	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52414/devtools/browser/49640191-c493-46a3-b2eb-b0779fb09158
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.81&typ=pgv&rnd=m2dolnae5s9qonv8&sid=9222325317970825875&loc=https%3A%2F%2Fwww.s.dev.barrons.com%2F&new=1&arf=0&ltm=1729192555821&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m2dolnoi2pyd4pq6&ckp=m2dolnae4iwz2x11&glb=&amo=1728052320&cp_userState=anon&cp_testGroup=44&cp_env=staging&cp_topDomain=barrons.com&cp_pwTag=default&cp_pwPlacement=cx-snippetad&cp_pwCampaign=10&cp_pwType=personalized&cp_type=&cp_template=preview&cp_access=PAID&cp_section=&cp_subsection=&cp_cms_name=Barron's%20Authoring%20QA&cp_vix=&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=7&cp_ab_bucket=37&cp_pageContentSource=Barron's%20Online&cp_pageContentType=Article&cp_pageContentTypeDetai=STANDARD&cp_pageSiteProduct=BOL&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: https://ace.wsj.com/assets-staging/ace/uac.min.js, line 1: TypeError: o is null
+JavaScript error: https://instant.page/5.1.0, line 1: SyntaxError: redeclaration of var e
+JavaScript error: https://instant.page/5.1.0, line 1: SyntaxError: redeclaration of var e
+JavaScript warning: https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.JAdv_-4V5X4.es5.O/am=MBgwAw/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4s_diCboKz0Egrs315l494KZ7fUA/m=_b,_tp, line 282: Script terminated by timeout at:
+_.Vo@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.JAdv_-4V5X4.es5.O/am=MBgwAw/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4s_diCboKz0Egrs315l494KZ7fUA/m=_b,_tp:282:911
+_.Wo@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.JAdv_-4V5X4.es5.O/am=MBgwAw/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4s_diCboKz0Egrs315l494KZ7fUA/m=_b,_tp:282:1322
+mp@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.JAdv_-4V5X4.es5.O/am=MBgwAw/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4s_diCboKz0Egrs315l494KZ7fUA/m=_b,_tp:289:415
+c@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.JAdv_-4V5X4.es5.O/am=MBgwAw/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4s_diCboKz0Egrs315l494KZ7fUA/m=_b,_tp:297:252
+b@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.JAdv_-4V5X4.es5.O/am=MBgwAw/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4s_diCboKz0Egrs315l494KZ7fUA/m=_b,_tp:288:48
+
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 4ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 6ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 5ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://pagead2.googlesyndication.com/bg/icY1g6vuuJjaJEY7xrJYTSkfXHe6CkLx64UCzaLy73w.js line 2 > eval line 6864 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1729192574733	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:467:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:220:33
+1729192575627	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://www.s.dev.barrons.com/market-data/_next/static/chunks/main-775879817cb0032d.js, line 1: Script terminated by timeout at:
+78018/O/<@https://www.s.dev.barrons.com/market-data/_next/static/chunks/main-775879817cb0032d.js:1:140968
+t@https://www.s.dev.barrons.com/market-data/_next/static/chunks/main-775879817cb0032d.js:1:140464
+
+JavaScript warning: https://ads.pubmatic.com/AdServer/js/user_sync.html?gdpr=0&gdpr_consent=&us_privacy=&predirect=https%3A%2F%2Fserver.prebid.dianomi.com%2F%2Fsetuid%3Fbidder%3Dpubmatic%26gdpr%3D0%26gdpr_consent%3D%26gpp%3D%26gpp_sid%3D%26f%3Db%26uid%3D, line 1: Script terminated by timeout at:
+F@https://ads.pubmatic.com/AdServer/js/user_sync.html?gdpr=0&gdpr_consent=&us_privacy=&predirect=https%3A%2F%2Fserver.prebid.dianomi.com%2F%2Fsetuid%3Fbidder%3Dpubmatic%26gdpr%3D0%26gdpr_consent%3D%26gpp%3D%26gpp_sid%3D%26f%3Db%26uid%3D:1:9731
+q@https://ads.pubmatic.com/AdServer/js/user_sync.html?gdpr=0&gdpr_consent=&us_privacy=&predirect=https%3A%2F%2Fserver.prebid.dianomi.com%2F%2Fsetuid%3Fbidder%3Dpubmatic%26gdpr%3D0%26gdpr_consent%3D%26gpp%3D%26gpp_sid%3D%26f%3Db%26uid%3D:1:9748
+J@https://ads.pubmatic.com/AdServer/js/user_sync.html?gdpr=0&gdpr_consent=&us_privacy=&predirect=https%3A%2F%2Fserver.prebid.dianomi.com%2F%2Fsetuid%3Fbidder%3Dpubmatic%26gdpr%3D0%26gdpr_consent%3D%26gpp%3D%26gpp_sid%3D%26f%3Db%26uid%3D:1:14129
+x@https://ads.pubmatic.com/AdServer/js/user_sync.html?gdpr=0&gdpr_consent=&us_privacy=&predirect=https%3A%2F%2Fserver.prebid.dianomi.com%2F%2Fsetuid%3Fbidder%3Dpubmatic%26gdpr%3D0%26gdpr_consent%3D%26gpp%3D%26gpp_sid%3D%26f%3Db%26uid%3D:1:10976
+
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT, line 219: Script terminated by timeout at:
+Oc@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:219:394
+tA@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:584:482
+LA@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:591:163
+JA/</<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:590:187
+z@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:200:203
+JA/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:590:167
+z@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:200:203
+JA@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:590:134
+KA/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:590:111
+
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+JavaScript warning: https://pagead2.googlesyndication.com/bg/icY1g6vuuJjaJEY7xrJYTSkfXHe6CkLx64UCzaLy73w.js line 2 > eval line 1101 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 10ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+1729192600651	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1729192606020	Marionette	INFO	Stopped listening on port 52427
+JavaScript warning: https://www.s.dev.barrons.com/market-data/_next/static/chunks/260fb190-d5a413ae11779170.js, line 1: Script terminated by timeout at:
+n@https://www.s.dev.barrons.com/market-data/_next/static/chunks/260fb190-d5a413ae11779170.js:1:21005
+
+Dynamically enable window occlusion 1

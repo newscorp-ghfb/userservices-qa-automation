@@ -1,0 +1,1304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.5 on win32)" generated="20241018 12:45:14.166" rpa="false" schemaversion="4">
+<suite id="s1" name="Userservices-Qa-Automation" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation">
+<suite id="s1-s1" name="Panda-Qa" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\panda-qa">
+<suite id="s1-s1-s1" name="Tests" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\panda-qa\Tests">
+<suite id="s1-s1-s1-s1" name="FollowWidget" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\panda-qa\Tests\FollowWidget">
+<suite id="s1-s1-s1-s1-s1" name="Regression" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\panda-qa\Tests\FollowWidget\Regression">
+<suite id="s1-s1-s1-s1-s1-s1" name="API Automation" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\panda-qa\Tests\FollowWidget\Regression\API_Automation.robot">
+<test id="s1-s1-s1-s1-s1-s1-t1" name="Validate get subscription API" line="18">
+<kw name="Start Barrons Article" library="CommonFunctionality" type="SETUP">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>20 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20241018 12:45:15.177" endtime="20241018 12:45:15.177"/>
+</kw>
+<kw name="Set Browser Options" library="CommonFunctionality">
+<var>${options}</var>
+<if>
+<branch type="IF" condition="&quot;${Browser}&quot; == &quot;firefox&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${options}</var>
+<arg>selenium.webdriver.FirefoxOptions()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20241018 12:45:15.178" endtime="20241018 12:45:15.178"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--CreateProfile</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20241018 12:45:15.178" endtime="20241018 12:45:15.178"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--start-maximized</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20241018 12:45:15.178" endtime="20241018 12:45:15.178"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20241018 12:45:15.178" endtime="20241018 12:45:15.178"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20241018 12:45:15.178" endtime="20241018 12:45:15.178"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20241018 12:45:15.178" endtime="20241018 12:45:15.178"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--headless</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20241018 12:45:15.178" endtime="20241018 12:45:15.178"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.debugger.force-local</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20241018 12:45:15.178" endtime="20241018 12:45:15.178"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.debugger.remote-enabled</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20241018 12:45:15.178" endtime="20241018 12:45:15.179"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.chrome.enabled</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20241018 12:45:15.179" endtime="20241018 12:45:15.179"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.debugger.prompt-connection</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20241018 12:45:15.179" endtime="20241018 12:45:15.179"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--browser.dom.window.dump.enabled</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20241018 12:45:15.179" endtime="20241018 12:45:15.179"/>
+</kw>
+<return>
+<value>${options}</value>
+<status status="NOT RUN" starttime="20241018 12:45:15.179" endtime="20241018 12:45:15.179"/>
+</return>
+<status status="NOT RUN" starttime="20241018 12:45:15.177" endtime="20241018 12:45:15.179"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Browser}&quot; == &quot;chrome&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${options}</var>
+<arg>selenium.webdriver.ChromeOptions()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20241018 12:45:15.179" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000002A9DA2F6B40&gt;</msg>
+<status status="PASS" starttime="20241018 12:45:15.179" endtime="20241018 12:45:15.179"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--start-maximized</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20241018 12:45:15.179" endtime="20241018 12:45:15.180"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20241018 12:45:15.180" endtime="20241018 12:45:15.180"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20241018 12:45:15.180" endtime="20241018 12:45:15.180"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--headless</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20241018 12:45:15.180" endtime="20241018 12:45:15.180"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20241018 12:45:15.180" endtime="20241018 12:45:15.181"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--ignore-certificate-errors</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20241018 12:45:15.181" endtime="20241018 12:45:15.181"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-extensions</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20241018 12:45:15.181" endtime="20241018 12:45:15.181"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-user-gesture-required</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20241018 12:45:15.182" endtime="20241018 12:45:15.182"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-first-run</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20241018 12:45:15.182" endtime="20241018 12:45:15.182"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--use-fake-ui-for-media-stream</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20241018 12:45:15.182" endtime="20241018 12:45:15.182"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--use-fake-device-for-media-stream</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20241018 12:45:15.182" endtime="20241018 12:45:15.182"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-sync</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20241018 12:45:15.182" endtime="20241018 12:45:15.182"/>
+</kw>
+<return>
+<value>${options}</value>
+<status status="PASS" starttime="20241018 12:45:15.183" endtime="20241018 12:45:15.183"/>
+</return>
+<status status="PASS" starttime="20241018 12:45:15.179" endtime="20241018 12:45:15.183"/>
+</branch>
+<status status="PASS" starttime="20241018 12:45:15.177" endtime="20241018 12:45:15.183"/>
+</if>
+<msg timestamp="20241018 12:45:15.183" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000002A9DA2F6B40&gt;</msg>
+<status status="PASS" starttime="20241018 12:45:15.177" endtime="20241018 12:45:15.183"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.barrons.com</arg>
+<arg>${Browser}</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20241018 12:45:15.183" endtime="20241018 12:45:15.183"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20241018 12:45:15.183" endtime="20241018 12:45:15.183"/>
+</kw>
+<status status="NOT RUN" starttime="20241018 12:45:15.183" endtime="20241018 12:45:15.183"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.barrons.com</arg>
+<arg>${Browser}</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20241018 12:45:15.184" level="INFO">Opening browser 'chrome' to base url 'https://www.barrons.com'.</msg>
+<status status="PASS" starttime="20241018 12:45:15.183" endtime="20241018 12:45:49.101"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20241018 12:45:49.101" level="INFO">Opening url 'https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000'</msg>
+<status status="PASS" starttime="20241018 12:45:49.101" endtime="20241018 12:46:18.609"/>
+</kw>
+<status status="PASS" starttime="20241018 12:45:15.183" endtime="20241018 12:46:18.609"/>
+</branch>
+<status status="PASS" starttime="20241018 12:45:15.183" endtime="20241018 12:46:18.609"/>
+</if>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>dom:${JSFollowButtonBarronsPath}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20241018 12:46:18.609" endtime="20241018 12:46:38.625"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<msg timestamp="20241018 12:46:42.882" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))': /session/38309c5872b8894b48254ff7c4a6f3e7/screenshot</msg>
+<msg timestamp="20241018 12:46:42.916" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))': /session/38309c5872b8894b48254ff7c4a6f3e7/screenshot</msg>
+<msg timestamp="20241018 12:46:42.921" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))': /session/38309c5872b8894b48254ff7c4a6f3e7/screenshot</msg>
+<msg timestamp="20241018 12:46:46.954" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: HTTPConnectionPool(host='localhost', port=57255): Max retries exceeded with url: /session/38309c5872b8894b48254ff7c4a6f3e7/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002A9DA2F7170&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))</msg>
+<status status="FAIL" starttime="20241018 12:46:38.625" endtime="20241018 12:46:46.955"/>
+</kw>
+<status status="FAIL" starttime="20241018 12:45:15.177" endtime="20241018 12:46:46.955"/>
+</kw>
+<kw name="Finish Testcase" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<msg timestamp="20241018 12:46:51.017" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002A9DA2F6DE0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38309c5872b8894b48254ff7c4a6f3e7</msg>
+<msg timestamp="20241018 12:46:55.207" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002A9DA2F47D0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38309c5872b8894b48254ff7c4a6f3e7</msg>
+<msg timestamp="20241018 12:46:59.761" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002A9DA2F6CF0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38309c5872b8894b48254ff7c4a6f3e7</msg>
+<status status="PASS" starttime="20241018 12:46:46.956" endtime="20241018 12:47:07.944"/>
+</kw>
+<status status="PASS" starttime="20241018 12:46:46.956" endtime="20241018 12:47:07.944"/>
+</kw>
+<doc>This test case validates theget subscription API Call</doc>
+<tag>API</tag>
+<tag>Regression</tag>
+<status status="FAIL" starttime="20241018 12:45:15.176" endtime="20241018 12:47:07.945">Setup failed:
+Execution terminated by signal</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s1-t2" name="Validate delete subscription API for Barrons Brand" line="29">
+<doc>This test case validates the delete subscription API Call and validdate the updated data</doc>
+<tag>API</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:07.946" endtime="20241018 12:47:07.947">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s1-t3" name="Validate delete subscription API for mansionglobal Brand" line="43">
+<doc>This test case validates the delete subscription API Call and validdate the updated data</doc>
+<tag>API</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:07.947" endtime="20241018 12:47:07.948">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s1-t4" name="Validate delete subscription API for Financial news Brand" line="57">
+<doc>This test case validates the delete subscription API Call and validdate the updated data</doc>
+<tag>API</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:07.950" endtime="20241018 12:47:07.950">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s1-t5" name="Validate delete subscription API for marketwatch Brand" line="71">
+<doc>This test case validates the delete subscription API Call and validdate the updated data</doc>
+<tag>API</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:07.951" endtime="20241018 12:47:07.953">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s1-t6" name="Validate delete subscription API for PENews Brand" line="85">
+<doc>This test case validates the delete subscription API Call and validdate the updated data</doc>
+<tag>API</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:07.954" endtime="20241018 12:47:07.955">Test execution stopped due to a fatal error.</status>
+</test>
+<doc>PANDA API Regression Tests</doc>
+<status status="FAIL" starttime="20241018 12:45:14.231" endtime="20241018 12:47:07.958"/>
+</suite>
+<suite id="s1-s1-s1-s1-s1-s2" name="Barrons Regression" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\panda-qa\Tests\FollowWidget\Regression\Barrons_Regression.robot">
+<test id="s1-s1-s1-s1-s1-s2-t1" name="Validate the multiple authors follow button from articles page" line="32">
+<doc>This test case validates the multiple authors follow button from articles page</doc>
+<tag>Article</tag>
+<tag>Barrons</tag>
+<tag>BarronsMultipleauthors</tag>
+<tag>Follow</tag>
+<tag>MultipleAuthors</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>TagBAF</tag>
+<status status="FAIL" starttime="20241018 12:47:07.961" endtime="20241018 12:47:07.964">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s2-t2" name="Validate the Barrons Preference Center page" line="43">
+<doc>This test case validates the barrons preference center page</doc>
+<tag>477</tag>
+<tag>Barrons</tag>
+<tag>PreferenceCenter</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:07.965" endtime="20241018 12:47:07.965">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s2-t3" name="Validate the Barrons Preference Center page watchlist logout" line="53">
+<doc>This test case validates the barrons preference center page Logout</doc>
+<tag>Barrons</tag>
+<tag>PreferenceCenter</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>TagBN</tag>
+<status status="FAIL" starttime="20241018 12:47:07.966" endtime="20241018 12:47:07.966">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s2-t4" name="Validate the Barrons Preference Center page" line="65">
+<doc>This test case validates the barrons preference center page</doc>
+<tag>Barrons</tag>
+<tag>PreferenceCenter</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>TagBFCP</tag>
+<status status="FAIL" starttime="20241018 12:47:07.968" endtime="20241018 12:47:07.969">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s2-t5" name="Validate Authors for Barrons Article page without byline" line="96">
+<doc>This test case validates authors without byline for barrons article page</doc>
+<tag>Article</tag>
+<tag>Author</tag>
+<tag>Barrons</tag>
+<tag>Follow1</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:07.970" endtime="20241018 12:47:07.971">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s2-t6" name="Validate the Watchlist widget from Watchlist page" line="106">
+<doc>This test case validates the watchlist widget from watchlist page</doc>
+<tag>215</tag>
+<tag>Barrons</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>Watchlist</tag>
+<status status="FAIL" starttime="20241018 12:47:07.971" endtime="20241018 12:47:07.972">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s2-t7" name="Validate the Watchlist widget from Watchlist" line="130">
+<doc>This test case validates the watchlist widget from watchlist page</doc>
+<tag>468</tag>
+<tag>Barrons</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>Watchlist</tag>
+<status status="FAIL" starttime="20241018 12:47:07.972" endtime="20241018 12:47:07.973">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s2-t8" name="Validate the Watchlist widget from Watchlist" line="153">
+<doc>This test case validates the watchlist widget xZfrom watchlist page</doc>
+<tag>Barrons</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>TagSPW</tag>
+<tag>Watchlist</tag>
+<status status="FAIL" starttime="20241018 12:47:07.975" endtime="20241018 12:47:07.976">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s2-t9" name="Validate the Watchlist widget from Quotes page" line="168">
+<doc>This test case validates the watchlist widget from quotes page</doc>
+<tag>250</tag>
+<tag>Barrons</tag>
+<tag>QuotesPage</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>Watchlist</tag>
+<status status="FAIL" starttime="20241018 12:47:07.976" endtime="20241018 12:47:07.978">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s2-t10" name="Validate the Watchlist widget from Market Data page" line="226">
+<doc>This test case validates the watchlist widget from market data page</doc>
+<tag>Barrons</tag>
+<tag>JJ</tag>
+<tag>MarketdataPage</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>Watchlist</tag>
+<status status="FAIL" starttime="20241018 12:47:07.978" endtime="20241018 12:47:07.979">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s2-t11" name="Validate the Barrons digest notification" line="256">
+<doc>This test case validates the Barrons digest notification</doc>
+<tag>Barrons</tag>
+<tag>digest</tag>
+<tag>Notifications</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:07.980" endtime="20241018 12:47:07.981">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s2-t12" name="Validate the Barrons real-time author notification" line="266">
+<doc>This test case validates the Barrons real-time author notification</doc>
+<tag>Author</tag>
+<tag>Barrons</tag>
+<tag>Follow1</tag>
+<tag>Notifications</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:07.982" endtime="20241018 12:47:07.983">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s2-t13" name="Validate the Barrons real-time company notification" line="276">
+<doc>This test case validates the Barrons real-time company notification</doc>
+<tag>137</tag>
+<tag>Barrons</tag>
+<tag>Company</tag>
+<tag>Notifications</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:07.984" endtime="20241018 12:47:07.985">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s2-t14" name="Validate the Barrons real-time stock picks notification" line="286">
+<doc>This test case validates the Barrons real-time stock picks notification</doc>
+<tag>139</tag>
+<tag>Barrons</tag>
+<tag>CustomTopic</tag>
+<tag>Notifications</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:07.987" endtime="20241018 12:47:07.987">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s2-t15" name="Validate Postback on Preference Center" line="296">
+<doc>This test case validates the Barrons Postback on Preference Center</doc>
+<tag>Barrons</tag>
+<tag>Follow1</tag>
+<tag>Postback</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:07.988" endtime="20241018 12:47:07.989">Test execution stopped due to a fatal error.</status>
+</test>
+<doc>Barrons Regression Tests</doc>
+<status status="FAIL" starttime="20241018 12:47:07.960" endtime="20241018 12:47:07.990"/>
+</suite>
+<suite id="s1-s1-s1-s1-s1-s3" name="FN Regression" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\panda-qa\Tests\FollowWidget\Regression\FN_Regression.robot">
+<test id="s1-s1-s1-s1-s1-s3-t1" name="Validate the FN Preference Center page" line="20">
+<doc>This test case validates the FN London News preference center page</doc>
+<tag>FinancialNews</tag>
+<tag>Follow1</tag>
+<tag>PreferenceCenter</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:07.993" endtime="20241018 12:47:07.994">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s3-t2" name="Validate Authors for FN Article page without byline" line="51">
+<doc>This test case validates authors without byline for FN article page</doc>
+<tag>Article</tag>
+<tag>Author</tag>
+<tag>FinancialNews</tag>
+<tag>Follow1</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:07.995" endtime="20241018 12:47:07.995">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s3-t3" name="Validate the FN digest notification" line="59">
+<doc>This test case validates the FN digest notification</doc>
+<tag>FinancialNews</tag>
+<tag>Notifications</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>US-T142</tag>
+<status status="FAIL" starttime="20241018 12:47:07.996" endtime="20241018 12:47:07.997">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s3-t4" name="Validate the FN real-time author notification" line="69">
+<doc>This test case validates the FN real-time author notification</doc>
+<tag>Author</tag>
+<tag>FinancialNews</tag>
+<tag>Follow1</tag>
+<tag>Notifications</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:07.997" endtime="20241018 12:47:07.997">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s3-t5" name="Validate the FN real-time company notification" line="79">
+<doc>This test case validates the FN real-time company notification</doc>
+<tag>Company</tag>
+<tag>FinancialNews</tag>
+<tag>Notifications</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>US-T140</tag>
+<status status="FAIL" starttime="20241018 12:47:07.998" endtime="20241018 12:47:08.000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s3-t6" name="Validate Postback on Preference Center" line="90">
+<doc>This test case validates the FN Postback on Preference Center</doc>
+<tag>357</tag>
+<tag>FinancialNews</tag>
+<tag>Postback</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:08.001" endtime="20241018 12:47:08.001">Test execution stopped due to a fatal error.</status>
+</test>
+<doc>FN Regression Tests</doc>
+<status status="FAIL" starttime="20241018 12:47:07.993" endtime="20241018 12:47:08.003"/>
+</suite>
+<suite id="s1-s1-s1-s1-s1-s4" name="MansionGlobal Regression" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\panda-qa\Tests\FollowWidget\Regression\MansionGlobal_Regression.robot">
+<test id="s1-s1-s1-s1-s1-s4-t1" name="Validate the Mansion GLobal Preference Center page" line="20">
+<doc>This test case validates the Mansion Global preference center page</doc>
+<tag>MansionGlobal</tag>
+<tag>MG</tag>
+<tag>PrefrenceCenter</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:08.006" endtime="20241018 12:47:08.008">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s4-t2" name="Validate Authors for Mansion Global Article page without byline" line="51">
+<doc>This test case validates authors without byline for Mansion Global article page</doc>
+<tag>Article</tag>
+<tag>Author</tag>
+<tag>Follow1</tag>
+<tag>MansionGlobal</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:08.009" endtime="20241018 12:47:08.010">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s4-t3" name="Validate the Mansion Global digest notification" line="59">
+<doc>This test case validates the Mansion Global digest notification</doc>
+<tag>Follow1</tag>
+<tag>MansionGlobal</tag>
+<tag>Notifications</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:08.011" endtime="20241018 12:47:08.012">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s4-t4" name="Validate the Mansion Global real-time author notification" line="69">
+<doc>This test case validates the Mansion Global real-time author notification</doc>
+<tag>Author</tag>
+<tag>Follow1</tag>
+<tag>MansionGlobal</tag>
+<tag>Notifications</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:08.013" endtime="20241018 12:47:08.013">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s4-t5" name="Validate the Mansion Global weekly saved search notification" line="79">
+<doc>This test case validates the Mansion Global weekly saved search notification</doc>
+<tag>MansionGlobal</tag>
+<tag>Notifications</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>US-T158</tag>
+<status status="FAIL" starttime="20241018 12:47:08.015" endtime="20241018 12:47:08.015">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s4-t6" name="Validate Postback on Preference Center" line="89">
+<doc>This test case vabrlidates the Mansion Global Postback on Preference Center</doc>
+<tag>359</tag>
+<tag>MansionGlobal</tag>
+<tag>Postback</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:08.016" endtime="20241018 12:47:08.017">Test execution stopped due to a fatal error.</status>
+</test>
+<doc>Mansion Global Regression Tests</doc>
+<status status="FAIL" starttime="20241018 12:47:08.005" endtime="20241018 12:47:08.018"/>
+</suite>
+<suite id="s1-s1-s1-s1-s1-s5" name="MarketWatch Regression" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\panda-qa\Tests\FollowWidget\Regression\MarketWatch_Regression.robot">
+<test id="s1-s1-s1-s1-s1-s5-t1" name="Validate the Market Watch Preference Center page" line="22">
+<doc>This test case validates the Market Watch preference center page</doc>
+<tag>MarketWatch</tag>
+<tag>PreferenceCenter</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>Tagmwp</tag>
+<status status="FAIL" starttime="20241018 12:47:08.020" endtime="20241018 12:47:08.021">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s5-t2" name="Validate Authors for MarketWatch Article page without byline" line="42">
+<doc>This test case validates authors without byline for Market Watch article page</doc>
+<tag>Article</tag>
+<tag>Author</tag>
+<tag>MarketWatch</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:08.022" endtime="20241018 12:47:08.024">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s5-t3" name="Validate the Watchlist widget from Watchlist page" line="52">
+<doc>This test case validates the watchlist widget from watchlist page</doc>
+<tag>218</tag>
+<tag>MarketWatch</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>Watchlist</tag>
+<status status="FAIL" starttime="20241018 12:47:08.026" endtime="20241018 12:47:08.027">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s5-t4" name="Validate the MarketWatch price and volume on the alerts page" line="75">
+<doc>This test case validates the MarketWatch price and volume on the alerts page</doc>
+<tag>Follow1</tag>
+<tag>MarketWatch</tag>
+<tag>MarketWatch Price and Volume Alerts</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:08.027" endtime="20241018 12:47:08.028">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s5-t5" name="Validate the MarketWatch price and volume alert in Quote page" line="97">
+<doc>This test case validates the MarketWatch price and volume alerts on the Quote page</doc>
+<tag>Follow1</tag>
+<tag>MarketWatch</tag>
+<tag>MarketWatch Price and Volume alert in Quote page</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:08.029" endtime="20241018 12:47:08.030">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s5-t6" name="Validate the MarketWatch price and volume alert deletion on Quote page" line="116">
+<doc>This test case validates the MarketWatch price and volume alerts on the Quote page</doc>
+<tag>Follow1</tag>
+<tag>MarketWatch</tag>
+<tag>MarketWatch Price and Volume alert in Quote page</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:08.033" endtime="20241018 12:47:08.034">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s5-t7" name="Validate the MW digest notification" line="128">
+<doc>This test case validates the MW digest notification</doc>
+<tag>Follow1</tag>
+<tag>MarketWatch</tag>
+<tag>Notifications</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:08.035" endtime="20241018 12:47:08.037">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s5-t8" name="Validate the MarketWatch Newsletter" line="139">
+<doc>This test case validates the MarketWatch price and volume alerts on the Quote page</doc>
+<tag>MarketWatch</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>TagMWN</tag>
+<status status="FAIL" starttime="20241018 12:47:08.038" endtime="20241018 12:47:08.039">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s5-t9" name="Validate the MarketWatch Newsletter" line="153">
+<doc>This test case validates the Personal Finance</doc>
+<tag>MarketWatch</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>TagPF</tag>
+<status status="FAIL" starttime="20241018 12:47:08.042" endtime="20241018 12:47:08.043">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s5-t10" name="Validate the MarketWatch Newsletter" line="168">
+<doc>This test case validates the Midday Report</doc>
+<tag>MarketWatch</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>TagMR</tag>
+<status status="FAIL" starttime="20241018 12:47:08.044" endtime="20241018 12:47:08.045">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s5-t11" name="Validate the MarketWatch Newsletter" line="183">
+<doc>This test case validates the After the Bell</doc>
+<tag>MarketWatch</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>TagAB</tag>
+<status status="FAIL" starttime="20241018 12:47:08.047" endtime="20241018 12:47:08.048">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s5-t12" name="Validate the MarketWatch Newsletter" line="198">
+<doc>This test case validates the Europe Daily</doc>
+<tag>MarketWatch</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>TagED</tag>
+<status status="FAIL" starttime="20241018 12:47:08.059" endtime="20241018 12:47:08.061">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s5-t13" name="Validate the MarketWatch Newsletter" line="213">
+<doc>This test case validates the Tech Daily</doc>
+<tag>MarketWatch</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>TagTD</tag>
+<status status="FAIL" starttime="20241018 12:47:08.072" endtime="20241018 12:47:08.073">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s5-t14" name="Validate the MW real-time author notification" line="228">
+<doc>This test case validates the MW real-time author notification</doc>
+<tag>Author</tag>
+<tag>Follow11</tag>
+<tag>MarketWatch</tag>
+<tag>Notifications</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:08.075" endtime="20241018 12:47:08.075">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s5-t15" name="Validate the MW real-time company notification" line="238">
+<doc>This test case validates the MW real-time company notification</doc>
+<tag>Company</tag>
+<tag>MarketWatch</tag>
+<tag>Notifications</tag>
+<tag>real</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:08.077" endtime="20241018 12:47:08.078">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s5-t16" name="Validate Postback on Preference Center" line="248">
+<doc>This test case validates the MW Postback on Preference Center</doc>
+<tag>356</tag>
+<tag>MarketWatch</tag>
+<tag>Postback</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:08.079" endtime="20241018 12:47:08.080">Test execution stopped due to a fatal error.</status>
+</test>
+<doc>Market Watch Regression Tests</doc>
+<status status="FAIL" starttime="20241018 12:47:08.019" endtime="20241018 12:47:08.082"/>
+</suite>
+<suite id="s1-s1-s1-s1-s1-s6" name="PEN Regression" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\panda-qa\Tests\FollowWidget\Regression\PEN_Regression.robot">
+<test id="s1-s1-s1-s1-s1-s6-t1" name="Validate the PEN Preference Center page" line="20">
+<doc>This test case validates the PEN preference center page</doc>
+<tag>Follow1</tag>
+<tag>PENews</tag>
+<tag>PreferenceCenter</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:08.087" endtime="20241018 12:47:08.088">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s6-t2" name="Validate Authors for PEN Article page without byline" line="38">
+<doc>This test case validates authors without byline for PEN article page</doc>
+<tag>Article</tag>
+<tag>Author</tag>
+<tag>Follow1</tag>
+<tag>PENews</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:08.089" endtime="20241018 12:47:08.090">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s6-t3" name="Validate the PEN digest notification" line="46">
+<doc>This test case validates the PEN digest notification</doc>
+<tag>Follow1</tag>
+<tag>Notifications</tag>
+<tag>PENews</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:08.091" endtime="20241018 12:47:08.092">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s6-t4" name="Validate the PEN real-time author notification" line="56">
+<doc>This test case validates the PEN real-time author notification</doc>
+<tag>Author</tag>
+<tag>Follow1</tag>
+<tag>Notifications</tag>
+<tag>PENews</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:08.093" endtime="20241018 12:47:08.094">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s6-t5" name="Validate the PEN real-time company notification" line="66">
+<doc>This test case validates the PEN real-time company notification</doc>
+<tag>Company</tag>
+<tag>Follow1</tag>
+<tag>Notifications</tag>
+<tag>PENews</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:08.097" endtime="20241018 12:47:08.099">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s6-t6" name="Validate Postback on Preference Center" line="76">
+<doc>This test case validates the PEN Postback on Preference Center</doc>
+<tag>360</tag>
+<tag>PENews</tag>
+<tag>Postback</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:08.101" endtime="20241018 12:47:08.101">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s6-t7" name="Validate Private Equity News Capabilities Dashboard for Author" line="99">
+<doc>This test case validates the PEN Capabilities Dashboard for Author</doc>
+<tag>Author</tag>
+<tag>Capabilities</tag>
+<tag>Follow1</tag>
+<tag>PENews</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20241018 12:47:08.104" endtime="20241018 12:47:08.104">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s6-t8" name="Validate Private Equity News Capabilities Dashboard for Company" line="115">
+<doc>This test case validates the PEN Capabilities Dashboard for Company</doc>
+<tag>Capabilities</tag>
+<tag>Company</tag>
+<tag>PENews</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>TagPECB</tag>
+<status status="FAIL" starttime="20241018 12:47:08.105" endtime="20241018 12:47:08.106">Test execution stopped due to a fatal error.</status>
+</test>
+<doc>PEN Regression Tests</doc>
+<status status="FAIL" starttime="20241018 12:47:08.085" endtime="20241018 12:47:08.108"/>
+</suite>
+<suite id="s1-s1-s1-s1-s1-s7" name="WSJ Regression" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\panda-qa\Tests\FollowWidget\Regression\WSJ_Regression.robot">
+<test id="s1-s1-s1-s1-s1-s7-t1" name="Validate the multiple authors follow button from articles page" line="25">
+<doc>This test case validates the multiple authors follow button from articles page</doc>
+<tag>Article</tag>
+<tag>Author</tag>
+<tag>Follow</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.112" endtime="20241018 12:47:08.112">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t2" name="Validate the WSJ Preference Center page Subscribe color" line="54">
+<doc>This test case validates the WSJ preference center page Subsdcribe color</doc>
+<tag>479</tag>
+<tag>PreferenceCenter</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.113" endtime="20241018 12:47:08.114">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t3" name="Validate the WSJ Follow Function" line="71">
+<doc>This test case validates the WSJ Follow Function</doc>
+<tag>461</tag>
+<tag>Follow Function</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.118" endtime="20241018 12:47:08.119">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t4" name="Validate the WSJ Preference Center page" line="86">
+<doc>This test case validates the WSJ preference center page</doc>
+<tag>431</tag>
+<tag>PreferenceCenter</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.121" endtime="20241018 12:47:08.122">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t5" name="Validate the WSJ Preference Center page" line="98">
+<doc>This test case validates the WSJ preference center page</doc>
+<tag>PreferenceCenter</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>TagWSJPS</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.124" endtime="20241018 12:47:08.125">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t6" name="Validate Authors for WSJ Article page without byline" line="146">
+<doc>This test case validates authors without byline for WSJ article page</doc>
+<tag>Article</tag>
+<tag>Author</tag>
+<tag>Follow1</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.126" endtime="20241018 12:47:08.127">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t7" name="Validate the follow button for Letters breadcrumb from articles page" line="163">
+<doc>This test case validates the follow button from articles page</doc>
+<tag>Article</tag>
+<tag>Breadcrumb</tag>
+<tag>Follow</tag>
+<tag>Follow1</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.127" endtime="20241018 12:47:08.128">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t8" name="Validate the WSJ Preference Center page for Letters breadcrumb" line="209">
+<doc>This test case validates the WSJ preference center page</doc>
+<tag>Breadcrumb</tag>
+<tag>Follow1</tag>
+<tag>PreferenceCenter</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.130" endtime="20241018 12:47:08.132">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t9" name="Validate the follow button for Editorials breadcrumb from articles page" line="233">
+<doc>This test case validates the follow button from articles page</doc>
+<tag>Article</tag>
+<tag>Breadcrumb</tag>
+<tag>Follow</tag>
+<tag>Follow1</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.133" endtime="20241018 12:47:08.134">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t10" name="Validate the follow button for Commentary breadcrumb from articles page" line="271">
+<doc>This test case validates the follow button from articles page</doc>
+<tag>Article</tag>
+<tag>Breadcrumb</tag>
+<tag>Follow</tag>
+<tag>Jan</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.135" endtime="20241018 12:47:08.136">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t11" name="Validate the WSJ Preference Center page for Commentary breadcrumb" line="295">
+<doc>This test case validates the barrons preference center page</doc>
+<tag>Breadcrumb</tag>
+<tag>Follow1</tag>
+<tag>PreferenceCenter</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.138" endtime="20241018 12:47:08.139">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t12" name="Validate the follow button for Commentary breadcrumb from Commentary page" line="325">
+<doc>This test case validates the follow button from articles page</doc>
+<tag>Breadcrumb</tag>
+<tag>Commentarypage</tag>
+<tag>Follow</tag>
+<tag>follow1</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.140" endtime="20241018 12:47:08.141">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t13" name="Validate the follow button for Editorials breadcrumb from Editorials page" line="353">
+<doc>This test case validates the follow button from Editorials page</doc>
+<tag>Breadcrumb</tag>
+<tag>Follow</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>US-T160</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.142" endtime="20241018 12:47:08.142">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t14" name="Validate the follow button for Letters breadcrumb from Letters page" line="392">
+<doc>This test case validates the follow button from Letters page</doc>
+<tag>Breadcrumb</tag>
+<tag>Follow</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>T</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.145" endtime="20241018 12:47:08.145">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t15" name="Validate the follow button for Elections breadcrumb from Elections page" line="426">
+<doc>This test case validates the follow button from Elections page</doc>
+<tag>Breadcrumb</tag>
+<tag>EB1</tag>
+<tag>Follow</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.146" endtime="20241018 12:47:08.148">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t16" name="Validate the WSJ Preference Center page for Elections breadcrumb" line="465">
+<doc>This test case validates the barrons preference center page</doc>
+<tag>Breadcrumb</tag>
+<tag>Follow1</tag>
+<tag>PreferenceCenter</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.149" endtime="20241018 12:47:08.149">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t17" name="Validate the follow button for Elections breadcrumb from articles page" line="489">
+<doc>This test case validates the follow button from articles page</doc>
+<tag>Article</tag>
+<tag>Breadcrumb</tag>
+<tag>Follow</tag>
+<tag>Follow1</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.150" endtime="20241018 12:47:08.152">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t18" name="Validate the Watchlist widget from Watchlist page" line="521">
+<doc>This test case validates the watchlist widget from watchlist page</doc>
+<tag>22</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>Watchlist</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.154" endtime="20241018 12:47:08.155">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t19" name="Validate the WSJ digest notification" line="578">
+<doc>This test case validates the WSJ digest notification</doc>
+<tag>follow</tag>
+<tag>Notifications</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.156" endtime="20241018 12:47:08.157">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t20" name="Validate WSJ Legacy company Amazon to be added to New Preference Center" line="588">
+<doc>This test case validates the WSJ legacy company as Amazon to be added to the Preference Center</doc>
+<tag>Follow1</tag>
+<tag>Notifications</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.158" endtime="20241018 12:47:08.159">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t21" name="Validate WSJ Legacy company Tesla to be added to New Preference Center" line="607">
+<doc>This test case validates the WSJ legacy company as Tesla to be added to the Preference Center</doc>
+<tag>Follow1</tag>
+<tag>Notifications</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.160" endtime="20241018 12:47:08.161">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t22" name="Validate WSJ Legacy company Goldman Sachs to be added to New Preference Center" line="625">
+<doc>This test case validates the WSJ legacy company as Goldman Sachs to be added to the Preference Center</doc>
+<tag>Follow1</tag>
+<tag>Notifications</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.161" endtime="20241018 12:47:08.162">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t23" name="Validate WSJ Legacy company Facebook to be added to New Preference Center" line="643">
+<doc>This test case validates the WSJ legacy company as Facebook to be added to the Preference Center</doc>
+<tag>Follow1</tag>
+<tag>Notifications</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.163" endtime="20241018 12:47:08.164">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t24" name="Validate the WSJ real-time author notification" line="661">
+<doc>This test case validates the WSJ real-time author notification</doc>
+<tag>124</tag>
+<tag>Author</tag>
+<tag>Notifications</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.165" endtime="20241018 12:47:08.166">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t25" name="Validate the WSJ real-time company notification" line="671">
+<doc>This test case validates the WSJ real-time company notification</doc>
+<tag>Company</tag>
+<tag>follow</tag>
+<tag>Notifications</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.167" endtime="20241018 12:47:08.168">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t26" name="Validate the WSJ real-time custom topic notification" line="681">
+<doc>This test case validates the WSJ real-time custom topic notification</doc>
+<tag>AA</tag>
+<tag>CustomTopic</tag>
+<tag>Notifications</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.169" endtime="20241018 12:47:08.170">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t27" name="Validate the WSJ real-time custom topic video notification" line="692">
+<doc>This test case validates the WSJ real-time custom topic video notification</doc>
+<tag>CustomTopic</tag>
+<tag>Follow1</tag>
+<tag>Notifications</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.171" endtime="20241018 12:47:08.172">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t28" name="Validate the WSJ real-time author video notification" line="703">
+<doc>This test case validates the WSJ real-time author video notification</doc>
+<tag>Author</tag>
+<tag>Follow1</tag>
+<tag>Notifications</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.175" endtime="20241018 12:47:08.176">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t29" name="Validate the WSJ real-time campaign notification" line="714">
+<doc>This test case validates the WSJ real-time campaign notification</doc>
+<tag>312</tag>
+<tag>Notifications</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.180" endtime="20241018 12:47:08.180">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t30" name="Validate the alert button for Education" line="727">
+<doc>This test case validates the alert button for Education</doc>
+<tag>320</tag>
+<tag>Alerts</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.187" endtime="20241018 12:47:08.191">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t31" name="Validate the alert button for heard on the street" line="758">
+<doc>This test case validates the alert button for heard on the street</doc>
+<tag>323</tag>
+<tag>Alerts</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.192" endtime="20241018 12:47:08.196">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t32" name="Validate the alert button for On Wine" line="801">
+<doc>This test case validates the alert button for On Wine</doc>
+<tag>Alerts</tag>
+<tag>Follow1</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.197" endtime="20241018 12:47:08.197">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t33" name="Validate the alert button for Personal Finance" line="842">
+<doc>This test case validates the alert button for Personal Finance</doc>
+<tag>Alerts</tag>
+<tag>Follow1</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.198" endtime="20241018 12:47:08.200">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t34" name="Validate the alert button for Personal Technology" line="881">
+<doc>This test case validates the alert button for Personal Technology</doc>
+<tag>Alerts</tag>
+<tag>Follow1</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.204" endtime="20241018 12:47:08.205">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t35" name="Validate the alert button for Puzzles" line="908">
+<doc>This test case validates the alert button for Puzzles</doc>
+<tag>Alerts</tag>
+<tag>Follow1</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.207" endtime="20241018 12:47:08.209">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t36" name="Validate the alert button for Energy" line="942">
+<doc>This test case validates the alert button for Energy</doc>
+<tag>Alerts</tag>
+<tag>Follow1</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.209" endtime="20241018 12:47:08.210">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-s1-s1-s1-s7-t37" name="Validate Postback on Preference Center" line="966">
+<doc>This test case validates the WSJ Postback on Preference Center</doc>
+<tag>Follow1</tag>
+<tag>Postback</tag>
+<tag>Regression</tag>
+<tag>robot:exit</tag>
+<tag>WSJ</tag>
+<status status="FAIL" starttime="20241018 12:47:08.213" endtime="20241018 12:47:08.213">Test execution stopped due to a fatal error.</status>
+</test>
+<doc>WSJ Regression Tests</doc>
+<status status="FAIL" starttime="20241018 12:47:08.111" endtime="20241018 12:47:08.214"/>
+</suite>
+<status status="FAIL" starttime="20241018 12:45:14.228" endtime="20241018 12:47:08.218"/>
+</suite>
+<status status="FAIL" starttime="20241018 12:45:14.224" endtime="20241018 12:47:08.221"/>
+</suite>
+<status status="FAIL" starttime="20241018 12:45:14.221" endtime="20241018 12:47:08.225"/>
+</suite>
+<status status="FAIL" starttime="20241018 12:45:14.216" endtime="20241018 12:47:08.229"/>
+</suite>
+<status status="FAIL" starttime="20241018 12:45:14.170" endtime="20241018 12:47:08.232"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="94" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0" info="combined" combined="NOT robot:exit">NOT robot:exit</stat>
+<stat pass="0" fail="1" skip="0">124</stat>
+<stat pass="0" fail="1" skip="0">137</stat>
+<stat pass="0" fail="1" skip="0">139</stat>
+<stat pass="0" fail="1" skip="0">215</stat>
+<stat pass="0" fail="1" skip="0">218</stat>
+<stat pass="0" fail="1" skip="0">22</stat>
+<stat pass="0" fail="1" skip="0">250</stat>
+<stat pass="0" fail="1" skip="0">312</stat>
+<stat pass="0" fail="1" skip="0">320</stat>
+<stat pass="0" fail="1" skip="0">323</stat>
+<stat pass="0" fail="1" skip="0">356</stat>
+<stat pass="0" fail="1" skip="0">357</stat>
+<stat pass="0" fail="1" skip="0">359</stat>
+<stat pass="0" fail="1" skip="0">360</stat>
+<stat pass="0" fail="1" skip="0">431</stat>
+<stat pass="0" fail="1" skip="0">461</stat>
+<stat pass="0" fail="1" skip="0">468</stat>
+<stat pass="0" fail="1" skip="0">477</stat>
+<stat pass="0" fail="1" skip="0">479</stat>
+<stat pass="0" fail="1" skip="0">AA</stat>
+<stat pass="0" fail="7" skip="0">Alerts</stat>
+<stat pass="0" fail="6" skip="0">API</stat>
+<stat pass="0" fail="12" skip="0">Article</stat>
+<stat pass="0" fail="15" skip="0">Author</stat>
+<stat pass="0" fail="15" skip="0">Barrons</stat>
+<stat pass="0" fail="1" skip="0">BarronsMultipleauthors</stat>
+<stat pass="0" fail="11" skip="0">Breadcrumb</stat>
+<stat pass="0" fail="2" skip="0">Capabilities</stat>
+<stat pass="0" fail="1" skip="0">Commentarypage</stat>
+<stat pass="0" fail="6" skip="0">Company</stat>
+<stat pass="0" fail="3" skip="0">CustomTopic</stat>
+<stat pass="0" fail="1" skip="0">digest</stat>
+<stat pass="0" fail="1" skip="0">EB1</stat>
+<stat pass="0" fail="6" skip="0">FinancialNews</stat>
+<stat pass="0" fail="12" skip="0">Follow</stat>
+<stat pass="0" fail="39" skip="0">Follow1</stat>
+<stat pass="0" fail="1" skip="0">Follow11</stat>
+<stat pass="0" fail="1" skip="0">Follow Function</stat>
+<stat pass="0" fail="1" skip="0">Jan</stat>
+<stat pass="0" fail="1" skip="0">JJ</stat>
+<stat pass="0" fail="6" skip="0">MansionGlobal</stat>
+<stat pass="0" fail="1" skip="0">MarketdataPage</stat>
+<stat pass="0" fail="16" skip="0">MarketWatch</stat>
+<stat pass="0" fail="2" skip="0">MarketWatch Price and Volume alert in Quote page</stat>
+<stat pass="0" fail="1" skip="0">MarketWatch Price and Volume Alerts</stat>
+<stat pass="0" fail="1" skip="0">MG</stat>
+<stat pass="0" fail="1" skip="0">MultipleAuthors</stat>
+<stat pass="0" fail="27" skip="0">Notifications</stat>
+<stat pass="0" fail="8" skip="0">PENews</stat>
+<stat pass="0" fail="6" skip="0">Postback</stat>
+<stat pass="0" fail="12" skip="0">PreferenceCenter</stat>
+<stat pass="0" fail="1" skip="0">PrefrenceCenter</stat>
+<stat pass="0" fail="1" skip="0">QuotesPage</stat>
+<stat pass="0" fail="1" skip="0">real</stat>
+<stat pass="0" fail="94" skip="0">Regression</stat>
+<stat pass="0" fail="1" skip="0">T</stat>
+<stat pass="0" fail="1" skip="0">TagAB</stat>
+<stat pass="0" fail="1" skip="0">TagBAF</stat>
+<stat pass="0" fail="1" skip="0">TagBFCP</stat>
+<stat pass="0" fail="1" skip="0">TagBN</stat>
+<stat pass="0" fail="1" skip="0">TagED</stat>
+<stat pass="0" fail="1" skip="0">TagMR</stat>
+<stat pass="0" fail="1" skip="0">TagMWN</stat>
+<stat pass="0" fail="1" skip="0">Tagmwp</stat>
+<stat pass="0" fail="1" skip="0">TagPECB</stat>
+<stat pass="0" fail="1" skip="0">TagPF</stat>
+<stat pass="0" fail="1" skip="0">TagSPW</stat>
+<stat pass="0" fail="1" skip="0">TagTD</stat>
+<stat pass="0" fail="1" skip="0">TagWSJPS</stat>
+<stat pass="0" fail="1" skip="0">US-T140</stat>
+<stat pass="0" fail="1" skip="0">US-T142</stat>
+<stat pass="0" fail="1" skip="0">US-T158</stat>
+<stat pass="0" fail="1" skip="0">US-T160</stat>
+<stat pass="0" fail="7" skip="0">Watchlist</stat>
+<stat pass="0" fail="37" skip="0">WSJ</stat>
+</tag>
+<suite>
+<stat pass="0" fail="94" skip="0" id="s1" name="Userservices-Qa-Automation">Userservices-Qa-Automation</stat>
+<stat pass="0" fail="94" skip="0" id="s1-s1" name="Panda-Qa">Userservices-Qa-Automation.Panda-Qa</stat>
+<stat pass="0" fail="94" skip="0" id="s1-s1-s1" name="Tests">Userservices-Qa-Automation.Panda-Qa.Tests</stat>
+<stat pass="0" fail="94" skip="0" id="s1-s1-s1-s1" name="FollowWidget">Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget</stat>
+<stat pass="0" fail="94" skip="0" id="s1-s1-s1-s1-s1" name="Regression">Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression</stat>
+<stat pass="0" fail="6" skip="0" id="s1-s1-s1-s1-s1-s1" name="API Automation">Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression.API Automation</stat>
+<stat pass="0" fail="15" skip="0" id="s1-s1-s1-s1-s1-s2" name="Barrons Regression">Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression.Barrons Regression</stat>
+<stat pass="0" fail="6" skip="0" id="s1-s1-s1-s1-s1-s3" name="FN Regression">Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression.FN Regression</stat>
+<stat pass="0" fail="6" skip="0" id="s1-s1-s1-s1-s1-s4" name="MansionGlobal Regression">Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression.MansionGlobal Regression</stat>
+<stat pass="0" fail="16" skip="0" id="s1-s1-s1-s1-s1-s5" name="MarketWatch Regression">Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression.MarketWatch Regression</stat>
+<stat pass="0" fail="8" skip="0" id="s1-s1-s1-s1-s1-s6" name="PEN Regression">Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression.PEN Regression</stat>
+<stat pass="0" fail="37" skip="0" id="s1-s1-s1-s1-s1-s7" name="WSJ Regression">Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression.WSJ Regression</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20241018 12:45:14.654" level="ERROR">Error in file 'D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\panda-qa\Resources\PageObjects\APIAutomationPage.robot' on line 5: Importing library 'JSONLibrary' failed: ModuleNotFoundError: No module named 'JSONLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  D:\Users\sasikumarj\AppData\Local\Programs\Python\Python312\Scripts\robot.exe
+  D:\Users\sasikumarj\AppData\Local\Programs\Python\Python312\python312.zip
+  D:\Users\sasikumarj\AppData\Local\Programs\Python\Python312\DLLs
+  D:\Users\sasikumarj\AppData\Local\Programs\Python\Python312\Lib
+  D:\Users\sasikumarj\AppData\Local\Programs\Python\Python312
+  D:\Users\sasikumarj\AppData\Local\Programs\Python\Python312\Lib\site-packages</msg>
+<msg timestamp="20241018 12:46:42.882" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))': /session/38309c5872b8894b48254ff7c4a6f3e7/screenshot</msg>
+<msg timestamp="20241018 12:46:42.916" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))': /session/38309c5872b8894b48254ff7c4a6f3e7/screenshot</msg>
+<msg timestamp="20241018 12:46:42.921" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))': /session/38309c5872b8894b48254ff7c4a6f3e7/screenshot</msg>
+<msg timestamp="20241018 12:46:46.954" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: HTTPConnectionPool(host='localhost', port=57255): Max retries exceeded with url: /session/38309c5872b8894b48254ff7c4a6f3e7/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002A9DA2F7170&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))</msg>
+<msg timestamp="20241018 12:46:51.017" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002A9DA2F6DE0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38309c5872b8894b48254ff7c4a6f3e7</msg>
+<msg timestamp="20241018 12:46:55.207" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002A9DA2F47D0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38309c5872b8894b48254ff7c4a6f3e7</msg>
+<msg timestamp="20241018 12:46:59.761" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002A9DA2F6CF0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38309c5872b8894b48254ff7c4a6f3e7</msg>
+<msg timestamp="20241018 12:47:07.968" level="WARN">Multiple tests with name 'Validate the Barrons Preference Center page' executed in suite 'Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression.Barrons Regression'.</msg>
+<msg timestamp="20241018 12:47:07.974" level="WARN">Multiple tests with name 'Validate the Watchlist widget from Watchlist' executed in suite 'Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression.Barrons Regression'.</msg>
+<msg timestamp="20241018 12:47:08.041" level="WARN">Multiple tests with name 'Validate the MarketWatch Newsletter' executed in suite 'Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression.MarketWatch Regression'.</msg>
+<msg timestamp="20241018 12:47:08.044" level="WARN">Multiple tests with name 'Validate the MarketWatch Newsletter' executed in suite 'Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression.MarketWatch Regression'.</msg>
+<msg timestamp="20241018 12:47:08.046" level="WARN">Multiple tests with name 'Validate the MarketWatch Newsletter' executed in suite 'Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression.MarketWatch Regression'.</msg>
+<msg timestamp="20241018 12:47:08.059" level="WARN">Multiple tests with name 'Validate the MarketWatch Newsletter' executed in suite 'Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression.MarketWatch Regression'.</msg>
+<msg timestamp="20241018 12:47:08.064" level="WARN">Multiple tests with name 'Validate the MarketWatch Newsletter' executed in suite 'Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression.MarketWatch Regression'.</msg>
+<msg timestamp="20241018 12:47:08.123" level="WARN">Multiple tests with name 'Validate the WSJ Preference Center page' executed in suite 'Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression.WSJ Regression'.</msg>
+</errors>
+</robot>

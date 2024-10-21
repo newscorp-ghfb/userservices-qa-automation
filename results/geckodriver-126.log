@@ -1,0 +1,55 @@
+1729513258487	geckodriver	INFO	Listening on 127.0.0.1:49241
+1729513261560	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49242" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofilelCspRO"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1729513262252	Marionette	INFO	Marionette enabled
+1729513262530	Marionette	INFO	Listening on port 49251
+WebDriver BiDi listening on ws://127.0.0.1:49242
+Read port: 49251
+1729513262798	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:49242/devtools/browser/e6d75864-0521-4df2-b661-b09e8a610054
+JavaScript warning: https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js, line 1: unreachable code after return statement
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.81&typ=pgv&rnd=m2izjridgsnga5a1&sid=1134002947328204066&loc=https%3A%2F%2Fwww.dev.wsj.com%2F&new=1&arf=0&ltm=1729513274634&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m2izjrn34g6n4cay&ckp=m2izjridxw0mh0y2&glb=&cp_userState=anon&cp_testGroup=74&cp_env=staging&cp_topDomain=wsj.com&cp_template=full&cp_access=free&cp_section=US%20Home%20Page&cp_subsection=&cp_cms_name=CAPS&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=3&cp_ab_bucket=83&cp_pageContentSource=WSJ%20Online&cp_pageContentType=Home&cp_pageContentTypeDetai=desktopweb&cp_pageSiteProduct=WSJ&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+1729513278254	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://sc-static.net/scevent.min.js, line 2: Script terminated by timeout at:
+m@https://sc-static.net/scevent.min.js:2:2789
+c@https://sc-static.net/scevent.min.js:2:6893
+
+JavaScript warning: https://pagead2.googlesyndication.com/bg/-DbLkJJK3YZOSOasYi6rcjkBM_N5vpNI48728xD2bD8.js line 2 > eval line 5002 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js, line 1: Script terminated by timeout at:
+8018/g/<@https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js:1:111956
+r@https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js:1:111426
+
+JavaScript error: https://news.google.com/swg/js/v1/swg.js, line 17: Error: XHR Failed fetching (https://news.google.com/...): (Note: a CORS error above may indicate that this publisher or domain is not configured in Publisher Center. The CORS error happens because 4xx responses do not set CORS headers.)
+
+TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: https://news.google.com/swg/js/v1/swg.js, line 17: Error: Error: not allowed
+console.error: "Exception while trigerring key [object Object]: Error: Can't select tool, wait for toolbox 'ready' event\nselectTool@resource://devtools/client/framework/toolbox.js:2906:13\nshowToolbox@resource://devtools/client/framework/devtools.js:541:23\nshowToolboxForTab@resource://devtools/client/framework/devtools.js:629:17\n"
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+1729515556549	Marionette	INFO	Stopped listening on port 49251
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT, line 680: Script terminated by timeout at:
+HG@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:680:113
+ZG.prototype.H@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:691:105
+ZG.prototype.add@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:692:201
+ca.Mj@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:710:26
+ca.Pm@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:709:455
+ca.Om/</<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:706:489
+al@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:374:151
+Al@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:379:432
+ca.Om/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:706:475
+c@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:516:411
+vu@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:517:237
+ca.Om@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:706:461
+c@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:720:970
+Um@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:393:1
+Tm.prototype.flush@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:395:336
+Tm.prototype.push@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:393:403
+Mm@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:390:785
+pI/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:721:187
+ca.Yk/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:663:126
+ca.Yk/c/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:662:420
+

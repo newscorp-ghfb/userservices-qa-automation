@@ -1,0 +1,41 @@
+1729518057791	geckodriver	INFO	Listening on 127.0.0.1:51011
+1729518060854	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51012" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileSp1YvB"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1729518061501	Marionette	INFO	Marionette enabled
+1729518061782	Marionette	INFO	Listening on port 51021
+Read port: 51021
+WebDriver BiDi listening on ws://127.0.0.1:51012
+1729518061924	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51012/devtools/browser/bca8d8ed-5e05-4b2c-af6c-7d8d8e74a69a
+JavaScript warning: https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js, line 1: unreachable code after return statement
+JavaScript warning: https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js, line 1: Script terminated by timeout at:
+8018/g/<@https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js:1:111956
+r@https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js:1:111426
+
+JavaScript error: https://news.google.com/swg/js/v1/swg.js, line 17: Error: XHR Failed fetching (https://news.google.com/...): (Note: a CORS error above may indicate that this publisher or domain is not configured in Publisher Center. The CORS error happens because 4xx responses do not set CORS headers.)
+
+TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://news.google.com/swg/js/v1/swg.js, line 17: Error: Error: not allowed
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.81&typ=pgv&rnd=m2j2eo4zg5knorg0&sid=1134002947328204066&loc=https%3A%2F%2Fwww.dev.wsj.com%2Farticles%2Ftwitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001%3Fcx_testId%3D3%26cx_testVariant%3Dcx_5%26cx_artPos%3D6%26mod%3DWTRN%23cxrecs_s&new=1&arf=0&ltm=1729518075834&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m2j2eob3us0i5uuv&ckp=m2j2eo4zlod9x1uw&glb=&amo=1720057500&cp_userState=anon&cp_testId=3&cp_testVariant=cx_5&cp_artPos=6&cp_testGroup=40&cp_env=staging&cp_topDomain=wsj.com&cp_pwTag=default&cp_pwPlacement=cx-snippetad&cp_pwCampaign=28324&cp_pwType=personalized&cp_navSource=WTRN&cp_type=Technology&cp_template=preview&cp_access=paid&cp_section=Tech&cp_subsection=Tech&cp_cms_name=Methode&cp_vix=&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=0&cp_ab_bucket=50&cp_pageContentSource=WSJ%20Online&cp_pageContentType=Article&cp_pageContentTypeDetai=standard&cp_pageSiteProduct=WSJ&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+1729518078506	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://sc-static.net/scevent.min.js, line 2: Script terminated by timeout at:
+m@https://sc-static.net/scevent.min.js:2:2789
+c@https://sc-static.net/scevent.min.js:2:6893
+
+JavaScript warning: https://cdn.taboola.com/libtrc/unip/1331069/tfa.js, line 3: Script terminated by timeout at:
+s@https://cdn.taboola.com/libtrc/unip/1331069/tfa.js:3:33391
+c@https://cdn.taboola.com/libtrc/unip/1331069/tfa.js:3:33471
+r/this.getLocalStorageImplementation@https://cdn.taboola.com/libtrc/unip/1331069/tfa.js:3:33991
+t@https://cdn.taboola.com/libtrc/unip/1331069/tfa.js:3:41048
+i@https://cdn.taboola.com/libtrc/unip/1331069/tfa.js:3:41689
+t@https://cdn.taboola.com/libtrc/unip/1331069/tfa.js:3:42691
+t/<@https://cdn.taboola.com/libtrc/unip/1331069/tfa.js:3:50079
+t@https://cdn.taboola.com/libtrc/unip/1331069/tfa.js:3:50040
+t@https://cdn.taboola.com/libtrc/unip/1331069/tfa.js:3:49791
+n.eventUtils.safeAddEventListener</<@https://cdn.taboola.com/libtrc/unip/1331069/tfa.js:3:4387
+
+1729518184607	Marionette	INFO	Stopped listening on port 51021
+Dynamically enable window occlusion 1

@@ -1,0 +1,60 @@
+1729519025556	geckodriver	INFO	Listening on 127.0.0.1:62436
+1729519028598	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62437" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileM8yePG"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1729519029254	Marionette	INFO	Marionette enabled
+1729519029509	Marionette	INFO	Listening on port 62445
+Read port: 62445
+WebDriver BiDi listening on ws://127.0.0.1:62437
+1729519029650	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62437/devtools/browser/1b3084da-570b-40ed-bf59-175bb175ad82
+JavaScript warning: https://int-replay-wsj-elections.ore.onservo.com/election/_next/static/chunks/main-c0569e4635de2e62.js, line 1: unreachable code after return statement
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.81&typ=pgv&rnd=m2j2zbf1xsv54rqp&sid=1134002947328204066&loc=https%3A%2F%2Fwww.dev.wsj.com%2F&new=1&arf=0&ltm=1729519039121&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m2j2zboftk0f3wx8&ckp=m2j2zbf1k372ls2w&glb=&cp_userState=anon&cp_testGroup=59&cp_env=staging&cp_topDomain=wsj.com&cp_template=full&cp_access=free&cp_section=US%20Home%20Page&cp_subsection=&cp_cms_name=CAPS&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=9&cp_ab_bucket=9&cp_pageContentSource=WSJ%20Online&cp_pageContentType=Home&cp_pageContentTypeDetai=desktopweb&cp_pageSiteProduct=WSJ&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1729519040868	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://sc-static.net/scevent.min.js, line 2: Script terminated by timeout at:
+m@https://sc-static.net/scevent.min.js:2:2789
+c@https://sc-static.net/scevent.min.js:2:6893
+
+JavaScript warning: https://pagead2.googlesyndication.com/bg/-DbLkJJK3YZOSOasYi6rcjkBM_N5vpNI48728xD2bD8.js line 2 > eval line 7406 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://news.google.com/swg/js/v1/swg.js, line 17: Error: XHR Failed fetching (https://news.google.com/...): (Note: a CORS error above may indicate that this publisher or domain is not configured in Publisher Center. The CORS error happens because 4xx responses do not set CORS headers.)
+
+TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: https://news.google.com/swg/js/v1/swg.js, line 17: Error: Error: not allowed
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://cdn.cxense.com/cx.js, line 6: Script terminated by timeout at:
+r@https://cdn.cxense.com/cx.js:6:1244
+l<@https://cdn.cxense.com/cx.js:6:1807
+Yi@https://cdn.cxense.com/cx.js:6:52590
+uo@https://cdn.cxense.com/cx.js:6:54979
+aa@https://cdn.cxense.com/cx.js:6:70625
+ua/<@https://cdn.cxense.com/cx.js:6:70932
+
+JavaScript warning: https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.JAdv_-4V5X4.es5.O/am=MBgwAw/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4s_diCboKz0Egrs315l494KZ7fUA/m=_b,_tp, line 297: Script terminated by timeout at:
+c@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.JAdv_-4V5X4.es5.O/am=MBgwAw/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4s_diCboKz0Egrs315l494KZ7fUA/m=_b,_tp:297:187
+b@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.JAdv_-4V5X4.es5.O/am=MBgwAw/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4s_diCboKz0Egrs315l494KZ7fUA/m=_b,_tp:288:48
+
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+JavaScript warning: https://sso.int.accounts.dowjones.com/one_identity_login_pages/login/73025206e494ccc60099196e7f650560/js/vendor.js, line 51: Script terminated by timeout at:
+WE@https://sso.int.accounts.dowjones.com/one_identity_login_pages/login/73025206e494ccc60099196e7f650560/js/vendor.js:51:4767
+k@https://sso.int.accounts.dowjones.com/one_identity_login_pages/login/73025206e494ccc60099196e7f650560/js/vendor.js:49:13806
+
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.81&typ=pgv&rnd=m2j30011l3qz14hi&sid=9222318613852486900&loc=https%3A%2F%2Fwww.wsj.com%2Farticles%2Ftwitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001&new=0&arf=0&ltm=1729519071021&ref=https%3A%2F%2Fsso.int.accounts.dowjones.com%2F&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m2j300bmgij60h6a&ckp=m2j2zbf1k372ls2w&glb=&amo=1658316780&eid0=e4cefa22ef027cc0132f0c218da37da39cdb3228234af4df969b5c463592e123&eit0=wsj&cp_userState=anon&cp_testGroup=59&cp_topDomain=wsj.com&cp_pwTag=default&cp_pwPlacement=cx-snippetad&cp_pwCampaign=28324&cp_pwType=personalized&cp_type=Technology&cp_template=preview&cp_access=paid&cp_section=Tech&cp_subsection=Tech&cp_cms_name=Methode&cp_vix=&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=6&cp_ab_bucket=56&cp_pageContentSource=WSJ%20Online&cp_pageContentType=Article&cp_pageContentTypeDetai=standard&cp_pageSiteProduct=WSJ&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+1729519074788	Marionette	INFO	Stopped listening on port 62445
+JavaScript warning: https://cdn.doubleverify.com/dvbm.js, line 2: Script terminated by timeout at:
+getQueryParamName@https://cdn.doubleverify.com/dvbm.js:2:385323
+reportTagExtensionsExecutionParams@https://cdn.doubleverify.com/dvbm.js:2:385377
+execute@https://cdn.doubleverify.com/dvbm.js:2:385022
+execute@https://cdn.doubleverify.com/dvbm.js:2:381242
+generateCallback@https://cdn.doubleverify.com/dvbm.js:2:387877
+4053/executePhase/r[t.callbackName]@https://cdn.doubleverify.com/dvbm.js:2:386613
+@https://tps.doubleverify.com/visit.js?gdpr=&gdpr_consent=&flvr=1&ttmms=13&ttfrms=18&brid=97&bridua=2&bds=1&tstype=2&prndr=1&eparams=DC4FC%3Dl9EEADTbpTauTauHHH%5DHD%3B%5D4%40%3ETau2CE%3A4%3D6DTauEH%3AEE6C%5C6%3D%40%3F%5C%3EFD%3C%5CE%40%5C2C8F6%5C%40G6C%5CEC%3A2%3D%5CE%3A%3E6E23%3D6%5CE%40%5C7%40C46%5Ccc%5C3%3A%3D%3D%3A%40%3F%5CE2%3C6%40G6C%5C%60%60edgaab__%60U42%3FFC%3Dl9EEADTbpTauTauHHH%5DHD%3B%5D4%40%3ETau2CE%3A4%3D6DTauEH%3AEE6C%5C6%3D%40%3F%5C%3EFD%3C%5CE%40%5C2C8F6%5C%40G6C%5CEC%3A2%3D%5CE%3A%3E6E23%3D6%5CE%40%5C7%40C46%5Ccc%5C3%3A%3D%3D%3A%40%3F%5CE2%3C6%40G6C%5C%60%60edgaab__%60&srcurlD=0&aUrlD=0&ssl=https:&dfs=28&ddur=722&uid=1729519074527309&jsCallback=dvCallback_1729519074527915&dvtagver=6.1.src&navUa=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64%3B%20rv%3A131.0)%20Gecko%2F20100101%20Firefox%2F131.0&htmlmsging=1&chro=0&hist=6&winh=497&winw=1278&wouh=598&wouw=1294&scah=582&scaw=1278&jsver=6813&tgjsver=6813&lvvn=28&m1=0&refD=1&fwc=6&fcl=3376&flt=0&fec=3660&fcifrms=18&brh=6&dvp_epl=459&noc=4&nav_pltfrm=Win32&ctx=34175470&cmp=32571620&sid=9738451&plc=404536426&crt=223477022&adsrv=1&advid=14006084&unit=970x250&errorURL=https://tps.doubleverify.com/visit.jpg&mib=0&mon=1&blk=0&dvp_cawf=crtwrp&cm360cw=1&dvp_rcp=2&dvp_seem=2&dvp_tuk=1&dvp_sukv=8348457021.102537&ee_dp_sukv=8348457021.102537&dvp_tukv=71904665021.51843&ee_dp_tukv=71904665021.51843&dvp_tuid=901467996409&jurtd=3058400246:1:66
+
+JavaScript warning: https://pagead2.googlesyndication.com/bg/-DbLkJJK3YZOSOasYi6rcjkBM_N5vpNI48728xD2bD8.js line 2 > eval line 573 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+Dynamically enable window occlusion 1

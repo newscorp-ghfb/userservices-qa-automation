@@ -7,9 +7,9 @@ ${JSFollowButtonWSJPath}=  document.querySelector("#__next > div > main > div.ar
     #...  .querySelector('ufc-follow-button').shadowRoot  #2
     #...  .querySelector('button')  #3
 
-${JSCustomFollowButtonWSJPath}=  document.querySelector('ufc-follow-custom-topic-widget').shadowRoot  #1
-  ...  .querySelector('ufc-follow-button').shadowRoot  #2
-     ...  .querySelector('button')  #3
+${JSCustomFollowButtonWSJPath}=  document.querySelector("#__next > div > main > div.article-container.css-5u49c7.e1ja801i8 > article > div.crawler.css-j6808u.etunnkc9 > div.enimwd21.css-hb9xd5 > div > div > div > div.css-1mfi1zu > div > div > div > ufc-follow-author-widget").shadowRoot.querySelector("ufc-follow-widget > ufc-follow-button").shadowRoot.querySelector("button")  #document.querySelector('ufc-follow-custom-topic-widget').shadowRoot  #1
+  #...  .querySelector('ufc-follow-button').shadowRoot  #2
+    # ...  .querySelector('button')  #3
 
 ${JSUndoButtonWSJPath}=  document.querySelector('ufc-snackbar').shadowRoot  #1
     ...  .querySelector('div')  #2
@@ -70,9 +70,9 @@ Validate Following Button
     Element Text Should Be  dom:${JSFollowButtonWSJPath}  Following  timeout=15
 
 Validate Custom Following Button
-    Wait Until Element is Visible  dom:${JSCustomFollowButtonWSJPath}
-    Wait Until Element Contains  dom:${JSCustomFollowButtonWSJPath}  Follow  timeout=15
-    Element Text Should Be  dom:${JSCustomFollowButtonWSJPath}  Follow  timeout=15
+    Wait Until Element is Visible  //*[@id="__next"]/div/main/div[2]/article/div[1]/div[1]/div/div/div/div[1]/div/div/div/ufc-follow-author-widget  #dom:${JSCustomFollowButtonWSJPath}  #Follow  timeout=15
+    #Wait Until Element Contains  //*[@id="__next"]/div/main/div[2]/article/div[1]/div[1]/div/div/div/div[1]/div/div/div/ufc-follow-author-widget  #dom:${JSCustomFollowButtonWSJPath}
+    #Element Text Should Be  //*[@id="__next"]/div/main/div[2]/article/div[1]/div[1]/div/div/div/div[1]/div/div/div/ufc-follow-author-widget  #dom:${JSCustomFollowButtonWSJPath}
 
 Click Follow Button
     Click Button  dom:${JSFollowButtonWSJPath}

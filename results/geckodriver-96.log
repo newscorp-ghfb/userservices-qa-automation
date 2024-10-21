@@ -1,0 +1,96 @@
+1729190758348	geckodriver	INFO	Listening on 127.0.0.1:49637
+1729190761650	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49638" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileJ4M2IO"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1729190763717	Marionette	INFO	Marionette enabled
+1729190764521	Marionette	INFO	Listening on port 49647
+WebDriver BiDi listening on ws://127.0.0.1:49638
+Read port: 49647
+1729190764793	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:49638/devtools/browser/ad42fd63-38af-4acf-b8e0-f996bb07743b
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 4ms)
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+JavaScript error: https://js-agent.newrelic.com/nr-spa-1.268.0.min.js, line 2: TypeError: this[Z] is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/icY1g6vuuJjaJEY7xrJYTSkfXHe6CkLx64UCzaLy73w.js line 2 > eval line 780 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 1ms)
+JavaScript error: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 4: NS_ERROR_FAILURE
+JavaScript error: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 4: NS_ERROR_FAILURE
+JavaScript warning: https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.barrons.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.015362786463531175%22,%22tld%22:%22www.barrons.com%22,%22topUrl%22:%22www.barrons.com%22,%22version%22:%229_12_0%22}, line 13: Script terminated by timeout at:
+r.prototype.flushEventQueue@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.barrons.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.015362786463531175%22,%22tld%22:%22www.barrons.com%22,%22topUrl%22:%22www.barrons.com%22,%22version%22:%229_12_0%22}:13:3137
+r/<@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.barrons.com&us_privacy=1YNN&gpp=DBABRg~BVoAACA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.015362786463531175%22,%22tld%22:%22www.barrons.com%22,%22topUrl%22:%22www.barrons.com%22,%22version%22:%229_12_0%22}:13:3642
+
+console.error: ({})
+console.error: ({})
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 4ms)
+JavaScript warning: https://pagead2.googlesyndication.com/bg/icY1g6vuuJjaJEY7xrJYTSkfXHe6CkLx64UCzaLy73w.js line 2 > eval line 2594 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/icY1g6vuuJjaJEY7xrJYTSkfXHe6CkLx64UCzaLy73w.js line 2 > eval line 1889 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/icY1g6vuuJjaJEY7xrJYTSkfXHe6CkLx64UCzaLy73w.js line 2 > eval line 7371 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+JavaScript warning: https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_280.js, line 78: Script terminated by timeout at:
+Eg.prototype.C@https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_280.js:78:651
+
+JavaScript warning: https://code.createjs.com/1.0.0/createjs.min.js, line 12: Script terminated by timeout at:
+a._handleTimeout@https://code.createjs.com/1.0.0/createjs.min.js:12:6739
+
+1729190881919	Marionette	INFO	Stopped listening on port 49647
+Dynamically enable window occlusion 1
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 47: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+!!! error running onStopped callback: TypeError: callback is not a function
+1729190882307	WebDriver BiDi	ERROR	Failed to stop protocol: [Exception... "Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: chrome://remote/content/marionette/cert.sys.mjs :: allowAllCerts.disable :: line 47"  data: no] Stack trace: allowAllCerts.disable()@cert.sys.mjs:47
+destroy()@Session.sys.mjs:280
+deleteSession()@WebDriverBiDi.sys.mjs:174
+stop()@WebDriverBiDi.sys.mjs:264
+observe()@resource://gre/modules/AsyncShutdown.sys.mjs:569
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS, line 205: Script terminated by timeout at:
+Xc.prototype.invoke@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:205:384
+Ka@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:174:554
+Yc.prototype.evaluate@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:206:72
+Rd@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:231:212
+Xc.prototype.invoke@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:205:403
+Ka@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:174:554
+Ja@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:174:314
+pd@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:220:429
+Xc.prototype.invoke@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:205:403
+Ka@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:174:554
+Ja@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:174:314
+zd@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:223:63
+Fd@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:226:137
+Gd@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:225:234
+Xc.prototype.invoke@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:205:403
+Ka@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:174:554
+Ja@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:174:314
+pd@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:220:429
+Xc.prototype.invoke@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:205:403
+Ka@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:174:554
+Ja@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:174:314
+Rd@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:231:275
+Xc.prototype.invoke@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:205:403
+Ka@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:174:554
+Ja@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:174:314
+Jd/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:229:20
+Xc.prototype.invoke@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:205:403
+$I/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:697:686
+Bs@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:480:242
+aa.Pm@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:669:165
+aa.Om/</<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:666:489
+al@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:357:151
+Al@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:362:432
+aa.Om/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:666:475
+c@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:499:411
+vu@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:500:237
+aa.Om@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:666:461
+c@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:680:970
+Um@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:376:1
+Tm.prototype.flush@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:378:336
+Tm.prototype.push@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:376:403
+Mm@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:373:785
+oI/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:681:187
+aa.Yk/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:623:126
+aa.Yk/c/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:622:420
+nrWrapper@https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634:129:17640
+

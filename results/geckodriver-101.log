@@ -1,0 +1,53 @@
+1729191445466	geckodriver	INFO	Listening on 127.0.0.1:50683
+1729191448628	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50684" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileBa69e5"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1729191450745	Marionette	INFO	Marionette enabled
+1729191451830	Marionette	INFO	Listening on port 50692
+WebDriver BiDi listening on ws://127.0.0.1:50684
+Read port: 50692
+1729191452622	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:50684/devtools/browser/7d5e046e-c21c-4092-874d-49f178f912be
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 4ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript error: https://js-agent.newrelic.com/nr-spa-1.268.0.min.js, line 2: TypeError: this[Z] is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/icY1g6vuuJjaJEY7xrJYTSkfXHe6CkLx64UCzaLy73w.js line 2 > eval line 331 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.error: ({})
+console.error: ({})
+Exiting due to channel error.
+[GFX1-]: C[GFX1-]: CompositorBridgeChild receives IPC c[GloFXse wit1-]:h reason=AbnormalSh Coutdown
+[[GFX1-[mpoGFX1-]: CompositorBridgeChild receives IPC close with rea]GFson=AbnormalShutdown
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+[sitorBridgeChild receives IPC [GGFX1-]: CompositorBridgeChild recX1[GFX1-]: CompositorBridgeChild receives IPC close with:ecl[ reason=AbnormalShutdown
+ ives IPC close with oGFX1-]: C[G[GFX1[ompositorBr[GFX1G[GFX1-[GFX1-]: F]FCompidC-]: C--]rea:sXo]: CompositorBridgeChild receivemposisos IPC close with reason=AbnormalShutdown
+on=torBresitorBAi: CbnormalShutdown
+dgeChild receives IPC close with reason=AbnormalShutdown
+ wigeChild receives IPC close with reason=AbnormalShutdownri
+th reasondgeChild receives IPC close with reason=AbnormalShutdown
+ompositorBridgeChild receives IPC close wit=AbnormalShutdown
+h reason=AbnormalShutdown
+FX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+ompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+ompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+ CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+X1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+[GFX1-]: CompositorBridgeChild receives I[GFX1-]: CompositorBridgeChild receives IPC clo[GFX1-]: CompositorBridgeChild receives IPC close with reason[GFX1-]: CompositorBridgeChild receives IPC[GFX1-]: Composi[[GFX1-[[[[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+PC close with reason=AbnormalShutdown
+se with reason=AbnormalShutdown
+=AbnormalShutdown
+ close with reason=AbnormalShutdown
+torBridgeChild receives IPC close with reason=AbnormalShutdown
+GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+GFX1-]: CompositorBridgeChild receives IPC close with reason=AbGnorFX1-]: CompositorBridgeChild receives IPC close with reasmalShutdown
+on=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
