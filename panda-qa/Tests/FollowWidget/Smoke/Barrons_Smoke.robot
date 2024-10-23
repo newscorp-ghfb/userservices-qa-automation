@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation  Barrons Smoke Tests
-Force Tags  BarronsSmoke  TagBarrons
+Force Tags  Barrons  Smoke  TagBarrons
 Resource  ../../../Resources/CommonFunctionality.robot
 Resource  ../../../Resources/DefinedKeywords.robot
 Resource  ../../../Resources/PageObjects/BarronsArticlePage.robot

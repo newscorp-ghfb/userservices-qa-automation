@@ -77,7 +77,7 @@ Set Browser Options
         END
 
 Start Barrons Article
-    Set Selenium Speed  20 seconds
+    Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
        Open Browser  https://www.barrons.com  ${Browser}  options=${options}

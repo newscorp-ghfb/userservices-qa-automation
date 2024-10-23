@@ -23,6 +23,7 @@ Test Setup  CommonFunctionality.Start Barrons Article
 #Test Setup  CommonFunctionality.Start Barrons Newsletter
 Test Teardown  CommonFunctionality.Finish Testcase
 *** Variables ***
+${table_locator}=  document.querySelector("#root > div > div:nth-child(1) > div > div:nth-child(9) > div.style--grid--2cXhDDnR.BarronsTheme--grid--2JEpTORq > div > div > div.style--grid--2cXhDDnR.style--padding-right--1PeddZD_.BarronsTheme--grid--2JEpTORq.BarronsTheme--homepage-row--9sIyDEGs.BarronsTheme--padding-right--2Cpz1W7R.base--padding-right--3Qqhq68s > div.style--column--2u7yywNS.style--column-top--2wtJOJkr.style--column-8--1yL3Jdqd.style--column--37Q00wRx.style--column-top--3XcIEFYc.style--column-8--UsTcXRw2.style--homepage-column--2gYPzDCd > div:nth-child(1) > div > div > div.BarronsTheme--positionRelative--2XlCjejz > div > div > dj-watchlist").shadowRoot.querySelector("div > table")
 
 *** Test Cases ***
 #US-T58
@@ -148,6 +149,26 @@ Validate the Watchlist widget from Watchlist
     #BarronsWatchlistPage.Delete Watchlists
     #BarronsWatchlistPage.Validate Default New Watchlist
     #BarronsWatchlistPage.Validate No Symbol in Default New Watchlist
+
+#US-4049
+Validate the Watchlist widget for Table Allignment
+    [Documentation]  This test case validates the watchlist widget for Table Allignment
+    [Tags]  Regression  Watchlist      4049
+
+    BarronsWatchlistPage.Add watchlist By Hotlink
+    DefinedKeywords.Barrons Table Alignment Sign in Process
+    Execute javascript  window.scrollTo(0,500)
+    BarronsWatchlistPage.Validate Table Alignment
+    #Wait Until Element Is Visible  ${table_locator}  20 seconds
+    #${table_width} =  Get Element Size  ${table_locator}  width
+    #${table_height} =  Get Element Size  ${table_locator}  height
+    #${cells} =  Get Web Elements  ${table_locator}/td
+    #FOR  ${cell}  IN  @{cells}
+     #${cell_width} =  Get Element Size  ${cell}  width
+      #${cell_height} =  Get Element Size  ${cell}  height
+       #Should Be Approximately Equal  ${cell_width}  ${table_width}  10  # Adjust tolerance as needed
+        #Should Be Approximately Equal  ${cell_height}  ${table_height}  10  # Adjust tolerance as needed
+    #END
 
 #US-3892
 Validate the Watchlist widget from Watchlist
