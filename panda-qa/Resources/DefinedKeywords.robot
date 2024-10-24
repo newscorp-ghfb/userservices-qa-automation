@@ -184,8 +184,8 @@ Barrons Newsletter Sign in Process
    Click Element  //html/body/div/section/div/div[2]/form/button  #//html/body/main/div[2]/section[16]/div/form/div[5]/button
 
 Barrons Stock Pick Sign In Process
-   Wait Until Element is Visible  //html/body/div[1]/div/header/div/div[1]/div[3]/div/a  #//html/body/div[3]/div/div/header/div/div[1]/div[3]/div/a
-   Click Element  //html/body/div[1]/div/header/div/div[1]/div[3]/div/a   #//html/body/div[3]/div/div/header/div/div[1]/div[3]/div/a
+   Wait Until Element is Visible  //*[@id="__next"]/div/header/div/div[1]/div[3]/div/a  #//html/body/div[3]/div/div/header/div/div[1]/div[3]/div/a
+   Click Element  //*[@id="__next"]/div/header/div/div[1]/div[3]/div/a  #//html/body/div[3]/div/div/header/div/div[1]/div[3]/div/a
    Wait Until Element is Visible  //*[@id="emailOrUsername"]
    Input Text  //*[@id="emailOrUsername"]  QABARRONSONLY  #akhilesh.khanduri@dowjones.com  #//*[@id=":r5:-form-item"]  QABARRONSONLY  #akhilesh.khanduri@dowjones.com
    Set Selenium Implicit Wait  10s
@@ -209,11 +209,11 @@ Market Watch Sign In Process
    Click Element  //html/body/div/section/div/div[2]/form/button
 
 MarketWatch Test User Sign In Process
-    Click Button  //html/body/div[11]/div/div[2]/div[2]/button[1]
-    Wait Until Element is visible  //html/body/section/nav/header/div[4]/label
-    Click Element   //html/body/section/nav/header/div[4]/label
-    Wait Until Element is visible  //html/body/section/nav/header/div[4]/ul/li[2]/a
-    Click Element  //html/body/section/nav/header/div[4]/ul/li[2]/a
+    #Click Button  //html/body/div[11]/div/div[2]/div[2]/button[1]
+    #Wait Until Element is visible  //html/body/section/nav/header/div[4]/label
+    #Click Element   //html/body/section/nav/header/div[4]/label
+    Wait Until Element is visible  //*[@id="maincontent"]/div/div/section/div[1]/div[3]/div/a  #//html/body/section/nav/header/div[4]/ul/li[2]/a
+    Click Element  //*[@id="maincontent"]/div/div/section/div[1]/div[3]/div/a  #//html/body/section/nav/header/div[4]/ul/li[2]/a
     Click Button  //*[@id="emailOrUsername"]
     Input Text  //*[@id="emailOrUsername"]  QABARRONSONLY  #isaias.iniguez@dowjones.com
     Set Selenium Implicit Wait  10s

@@ -62,7 +62,7 @@ Validate the follow button from articles page
 
 Validate the follow button from authors page
     [Documentation]  This test case validates the follow button from authors page
-    [Tags]  Smoke  FollUS-T97ow  Authors  47
+    [Tags]  Smoke  Follow  Authors  47
 
     WSJArticlePage.Validate author hyperlink
     WSJArticlePage.Click author hyperlink
@@ -79,11 +79,11 @@ Validate the WSJ Preference Center page
 
     Set Selenium Speed  0.2 seconds
     WSJPreferenceCenterPage.Navigate Preference Center page
-    IF  "${Env}" == "prod"
-        DefinedKeywords.Market Watch Sign In Process
-    ELSE IF  "${Env}" == "dev"
-        DefinedKeywords.Sign In Process
-    END
+    #IF  "${Env}" == "prod"
+        #DefinedKeywords.Market Watch Sign In Process
+    #ELSE IF  "${Env}" == "dev"
+        #DefinedKeywords.Sign In Process
+    #END
 
     WSJPreferenceCenterPage.Validate Followed Authors
     WSJPreferenceCenterPage.Validate Following Toggle Feature

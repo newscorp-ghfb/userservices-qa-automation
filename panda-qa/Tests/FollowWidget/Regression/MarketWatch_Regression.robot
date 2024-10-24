@@ -54,6 +54,7 @@ Validate the Watchlist widget from Watchlist page
     [Tags]  Regression  Watchlist  218
 
     CommonFunctionality.Start MarketWatch for Watchlist page
+    Execute javascript  window.scrollTo(0,500)
     DefinedKeywords.MarketWatch Test User Sign In Process
     Set Selenium Speed  0.5 seconds
     Capture Page Screenshot    screenshot.png

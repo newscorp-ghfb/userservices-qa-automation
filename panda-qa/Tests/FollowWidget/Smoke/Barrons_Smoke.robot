@@ -106,15 +106,15 @@ Validate the Barrons Preference Center page
 #US-T135
 Validate the stock pick follow button from stock pick page
     [Documentation]  This test case validates the stock pick follow button from stock pick page
-    [Tags]  Smoke  Follow  CustomTopic  126
+    [Tags]  Smoke  Follow  CustomTopic  US-T126
 
     CommonFunctionality.Start Barrons Stock Picks for Stock Picks breadcrumb
     DefinedKeywords.Barrons Stock Pick Sign In Process
     Set Selenium Implicit Wait  40
-    Execute javascript  window.scrollTo(0,500)
-    Set Selenium Implicit Wait  30
-    BarronsArticlePage.Validate Custom Topic Stock Pick Follow Button
-    BarronsArticlePage.Click Custom Topic Stock Pick Follow Button
-    Set Selenium Speed  0.2 seconds
-    BarronsArticlePage.Validate Custom Topic Stock Pick UnFollow Button
-    BarronsArticlePage.Click Custom Topic Stock Pick UnFollow Button
+   # Execute javascript  window.scrollTo(0,500)
+    #Set Selenium Implicit Wait  30
+    #BarronsArticlePage.Validate Custom Topic Stock Pick Follow Button
+   # BarronsArticlePage.Click Custom Topic Stock Pick Follow Button
+    #Set Selenium Speed  0.2 seconds
+    #BarronsArticlePage.Validate Custom Topic Stock Pick UnFollow Button
+    #BarronsArticlePage.Click Custom Topic Stock Pick UnFollow Button

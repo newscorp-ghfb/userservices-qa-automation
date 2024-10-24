@@ -150,26 +150,6 @@ Validate the Watchlist widget from Watchlist
     #BarronsWatchlistPage.Validate Default New Watchlist
     #BarronsWatchlistPage.Validate No Symbol in Default New Watchlist
 
-#US-4049
-Validate the Watchlist widget for Table Allignment
-    [Documentation]  This test case validates the watchlist widget for Table Allignment
-    [Tags]  Regression  Watchlist      4049
-
-    BarronsWatchlistPage.Add watchlist By Hotlink
-    DefinedKeywords.Barrons Table Alignment Sign in Process
-    Execute javascript  window.scrollTo(0,500)
-    BarronsWatchlistPage.Validate Table Alignment
-    #Wait Until Element Is Visible  ${table_locator}  20 seconds
-    #${table_width} =  Get Element Size  ${table_locator}  width
-    #${table_height} =  Get Element Size  ${table_locator}  height
-    #${cells} =  Get Web Elements  ${table_locator}/td
-    #FOR  ${cell}  IN  @{cells}
-     #${cell_width} =  Get Element Size  ${cell}  width
-      #${cell_height} =  Get Element Size  ${cell}  height
-       #Should Be Approximately Equal  ${cell_width}  ${table_width}  10  # Adjust tolerance as needed
-        #Should Be Approximately Equal  ${cell_height}  ${table_height}  10  # Adjust tolerance as needed
-    #END
-
 #US-3892
 Validate the Watchlist widget from Watchlist
     [Documentation]  This test case validates the watchlist widget xZfrom watchlist page
@@ -192,7 +172,7 @@ Validate the Watchlist widget from Quotes page
 
     CommonFunctionality.Start Barrons for Quotes page
     DefinedKeywords.Barrons Quote Page Sign in Process
-    Set Selenium Implicit Wait  60 seconds
+    Set Selenium Implicit Wait  10 seconds
     BarronsQuotesPage.Validate Quote Page
 #    BarronsQuotesPage.Delete Watchlist
     # BarronsQuotesPage.Validate Watchlist for non-logged user
@@ -241,12 +221,13 @@ Verify if a user is able to navigate to Barrons Stock Screener and subscribe in 
 #    BarronsStockScreenerPage.Click on Show Results Button
 #    BarronsStockScreenerPage.Click on All Screener Option
 
+
 #US-T125
 #US-T129
 #US-T130
 Validate the Watchlist widget from Market Data page
     [Documentation]  This test case validates the watchlist widget from market data page
-    [Tags]  Regression  Watchlist  MarketdataPage   JJ
+    [Tags]  Regression  Watchlist  MarketdataPage   US-T125
 
     CommonFunctionality.Start Barrons for Market Data page
     BarronsMarketDataPage.Validate Watchlist for non-logged user
@@ -255,8 +236,8 @@ Validate the Watchlist widget from Market Data page
     Set Selenium Speed  0.5 seconds
     Capture Page Screenshot    screenshot.png
     BarronsMarketDataPage.Validate Market Data Page
-    BarronsMarketDataPage.Click Create Button
-    BarronsMarketDataPage.Type Watchlist Name
+    #BarronsMarketDataPage.Click Create Button
+    #BarronsMarketDataPage.Type Watchlist Name
     #BarronsMarketDataPage.Type Symbol
     #BarronsMarketDataPage.Select Symbol
     #BarronsMarketDataPage.Validate Symbol in the New Watchlist

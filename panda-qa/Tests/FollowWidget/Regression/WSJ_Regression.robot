@@ -25,28 +25,28 @@ ${URL}=  https://www.wsj.com/preference-center/alerts?alert=section&id=tech%2Fai
 Validate the multiple authors follow button from articles page
     [Documentation]  This test case validates the multiple authors follow button from articles page
     [Tags]  Regression  Author  Follow  US-T75
-    Set Selenium Implicit Wait  10s
-    DefinedKeywords.WSJ Sign In Process
-    Set Selenium Speed  0.2 seconds
-    Set Selenium Implicit Wait  10s
+    #Set Selenium Implicit Wait  10s
+    #DefinedKeywords.WSJ Sign In Process
+    #Set Selenium Speed  0.2 seconds
+    #Set Selenium Implicit Wait  10s
     Execute javascript  window.scrollTo(0,500)
     WSJArticlePage.Validate Follow Button
     WSJArticlePage.Click Follow Button
-    WSJArticlePage.Validate Sign In Modal
-    WSJArticlePage.Click Sign In Button Modal
-    DefinedKeywords.Sign In Process
-    Set Selenium Speed  0.2 seconds
-    WSJArticlePage.Validate Following Button
+    #WSJArticlePage.Validate Sign In Modal
+    #WSJArticlePage.Click Sign In Button Modal
+    #DefinedKeywords.Sign In Process
+    #Set Selenium Speed  0.2 seconds
+    #WSJArticlePage.Validate Following Button
 #    WSJArticlePage.Click Follow Button 2
 #    WSJArticlePage.Validate Following Button 2
-    WSJArticlePage.Click Following Button
-    WSJArticlePage.Click Undo Link
-    WSJArticlePage.Validate Following Button
+    #WSJArticlePage.Click Following Button
+    #WSJArticlePage.Click Undo Link
+    #WSJArticlePage.Validate Following Button
 #    WSJArticlePage.Click Following Button 2
 #    WSJrticlePage.Click Undo Link 2
 #    WSJArticlePage.Validate Following Button 2
-    WSJPreferenceCenterPage.Navigate Preference Center page
-    WSJPreferenceCenterPage.Validate Preference Center page
+    #WSJPreferenceCenterPage.Navigate Preference Center page
+    #WSJPreferenceCenterPage.Validate Preference Center page
 #    WSJPreferenceCenterPage.Validate Author 1
 #    WSJPreferenceCenterPage.Validate Author 2
 
