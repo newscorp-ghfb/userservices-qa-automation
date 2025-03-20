@@ -44,7 +44,7 @@ Validate the author follow button from articles page
 #US-T32
 Validate the follow button from authors page
     [Documentation]  This test case validates the follow button from authors page
-    [Tags]  Smoke  Follow  Author   US-T31
+    [Tags]  Smoke  Follow  Author  JenkinsTest
 
     #Set Selenium Speed  0.5 seconds
     BarronsArticlePage.Validate author hyperlink
