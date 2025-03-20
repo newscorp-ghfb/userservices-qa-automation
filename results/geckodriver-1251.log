@@ -1,0 +1,60 @@
+1742456203967	geckodriver	INFO	Listening on 127.0.0.1:54511
+1742456206966	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54512" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofile0yeuqK"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1742456208539	Marionette	INFO	Marionette enabled
+1742456208979	Marionette	INFO	Listening on port 54654
+WebDriver BiDi listening on ws://127.0.0.1:54512
+Read port: 54654
+console.error: Policies: 
+  Download failed - ERROR_CORRUPT_FILE - file://C:\Program Files\Snow Software\Inventory\Agent\FFCloudmetering.xpi
+1742456209357	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:54512/devtools/browser/2496e9e8-cb91-444f-a2c9-4b11e2ef347e
+console.error: ({})
+console.error: ({})
+JavaScript error: https://www.barrons.com/asset/dj-watchlist/v1.14.3/p-0633e57d.entry.js, line 11: TypeError: Error.captureStackTrace is not a function
+console.error: ({})
+console.error: ({})
+JavaScript error: https://tags.tiqcdn.com/utag/wsjdn/barrons/prod/utag.js, line 94: ReferenceError: s is not defined
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://pagead2.googlesyndication.com/bg/PcSWGRWl2mLW4O5uRUTCwBTBSkoSFBc_REwve846xD4.js line 2 > eval line 638 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1742456224926	Marionette	INFO	Stopped listening on port 54654
+JavaScript warning: https://www.barrons.com/articles/how-to-handle-an-uncertain-market-buy-weakness-sell-strength-f145c306, line 129: Script terminated by timeout at:
+3434/c/r/<@https://www.barrons.com/articles/how-to-handle-an-uncertain-market-buy-weakness-sell-strength-f145c306:129:17365
+r@https://www.barrons.com/articles/how-to-handle-an-uncertain-market-buy-weakness-sell-strength-f145c306:129:17539
+De/i.prototype.then@https://www.barrons.com/articles/how-to-handle-an-uncertain-market-buy-weakness-sell-strength-f145c306:129:53339
+f@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202503130101/pubads_impl.js:33:151321
+wB/<@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202503130101/pubads_impl.js:33:151342
+nrWrapper@https://www.barrons.com/articles/how-to-handle-an-uncertain-market-buy-weakness-sell-strength-f145c306:129:17734
+e@https://www.barrons.com/articles/how-to-handle-an-uncertain-market-buy-weakness-sell-strength-f145c306:129:52592
+wB@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202503130101/pubads_impl.js:33:151230
+_.Kg@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202503130101/pubads_impl.js:33:151380
+hk@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202503130101/pubads_impl.js:33:50189
+yV.prototype.start/<@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202503130101/pubads_impl.js:33:295500
+tB@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202503130101/pubads_impl.js:33:150633
+vB/this.next@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202503130101/pubads_impl.js:33:150932
+wB/<@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202503130101/pubads_impl.js:33:151345
+nrWrapper@https://www.barrons.com/articles/how-to-handle-an-uncertain-market-buy-weakness-sell-strength-f145c306:129:17734
+e@https://www.barrons.com/articles/how-to-handle-an-uncertain-market-buy-weakness-sell-strength-f145c306:129:52592
+wB@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202503130101/pubads_impl.js:33:151230
+_.Kg@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202503130101/pubads_impl.js:33:151380
+yV.prototype.start@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202503130101/pubads_impl.js:33:295409
+Rw/<@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202503130101/pubads_impl.js:33:299304
+tB@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202503130101/pubads_impl.js:33:150633
+vB/this.next@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202503130101/pubads_impl.js:33:150932
+wB/<@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202503130101/pubads_impl.js:33:151345
+nrWrapper@https://www.barrons.com/articles/how-to-handle-an-uncertain-market-buy-weakness-sell-strength-f145c306:129:17734
+e@https://www.barrons.com/articles/how-to-handle-an-uncertain-market-buy-weakness-sell-strength-f145c306:129:52592
+wB@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202503130101/pubads_impl.js:33:151230
+_.Kg@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202503130101/pubads_impl.js:33:151380
+Rw@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202503130101/pubads_impl.js:33:299102
+Pm.prototype.run@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202503130101/pubads_impl.js:33:299738
+Vea@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202503130101/pubads_impl.js:33:479583
+pfa/<@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202503130101/pubads_impl.js:33:518804
+tB@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202503130101/pubads_impl.js:33:150633
+vB/this.next@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202503130101/pubads_impl.js:33:150932
+b@https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202503130101/pubads_impl.js:33:151183
+nrWrapper@https://www.barrons.com/articles/how-to-handle-an-uncertain-market-buy-weakness-sell-strength-f145c306:129:17734
+
+Dynamically enable window occlusion 1

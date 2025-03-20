@@ -1,0 +1,52 @@
+1742294262882	geckodriver	INFO	Listening on 127.0.0.1:55975
+1742294265936	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55976" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileYVkalr"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1742294266534	Marionette	INFO	Marionette enabled
+1742294266773	Marionette	INFO	Listening on port 55990
+WebDriver BiDi listening on ws://127.0.0.1:55976
+Read port: 55990
+console.error: Policies: 
+  Download failed - ERROR_CORRUPT_FILE - file://C:\Program Files\Snow Software\Inventory\Agent\FFCloudmetering.xpi
+1742294267018	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:55976/devtools/browser/dcc83580-d682-4cba-9cd0-56b30523fd82
+console.error: ({})
+console.error: ({})
+JavaScript error: https://pbcs.barrons.com/s/dj/barrons/pb.js, line 831: TypeError: can't convert undefined to object
+console.error: ({})
+console.error: ({})
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 6ms)
+JavaScript warning: https://pagead2.googlesyndication.com/bg/jtqLS4CpbIVFtG__JM-T91toxYP3JyzmW2J4VfJqIi8.js line 2 > eval line 272 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.92&typ=pgv&rnd=m8ed11x4xdgtvcr9&sid=9222325317970825875&loc=https%3A%2F%2Fwww.s.dev.barrons.com%2Farticles%2Fbuy-under-armour-stock-pick-51650672000&new=1&arf=0&ltm=1742294279426&ref=&tzo=-330&wsz=1280x595&res=1280x720&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m8ed12fsx8iibsjd&ckp=m8ed11x41vwuvfcr&glb=&amo=1741755900&cp_userState=anon, line 1: TypeError: cX.loadScript is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/-DAcQ9lQZbiM5HME96vizN3snXxurSkogwgOEvHdK-k.js line 2 > eval line 3444 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/-DAcQ9lQZbiM5HME96vizN3snXxurSkogwgOEvHdK-k.js line 2 > eval line 2418 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT, line 739: Script terminated by timeout at:
+nE@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:739:262
+YE@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:742:221
+aF@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:742:396
+cF@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:742:502
+V@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:743:326
+lu@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:547:215
+h.Dn@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:858:259
+h.Cn/</<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:855:524
+xm@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:415:151
+$n@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:425:435
+h.Cn/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:855:510
+c@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:602:22
+lx@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:602:349
+h.Cn@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:855:496
+c@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:871:964
+w@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:442:370
+Gm@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:416:1236
+Lp@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:442:459
+Jp.prototype.flush@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:445:391
+Jp.prototype.push@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:443:338
+Cp@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:439:540
+UL/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:872:187
+h.Rl/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:808:126
+h.Rl/c/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:807:418
+
+1742294381414	Marionette	INFO	Stopped listening on port 55990
+Dynamically enable window occlusion 1
+JavaScript error: , line 0: AbortError: The operation was aborted. 

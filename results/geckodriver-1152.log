@@ -1,0 +1,136 @@
+1739880140208	geckodriver	INFO	Listening on 127.0.0.1:53443
+1739880143251	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53444" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileswpJhi"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1739880144122	Marionette	INFO	Marionette enabled
+1739880144613	Marionette	INFO	Listening on port 53453
+WebDriver BiDi listening on ws://127.0.0.1:53444
+Read port: 53453
+console.error: Policies: 
+  Download failed - ERROR_CORRUPT_FILE - file://C:\Program Files\Snow Software\Inventory\Agent\FFCloudmetering.xpi
+1739880144983	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53444/devtools/browser/501dfc06-e863-45c8-8f97-1d18f2a593df
+JavaScript error: https://news.google.com/swg/js/v1/swg.js, line 17: Error: XHR Failed fetching (https://news.google.com/...): (Note: a CORS error above may indicate that this publisher or domain is not configured in Publisher Center. The CORS error happens because 4xx responses do not set CORS headers.)
+
+TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.90&typ=pgv&rnd=m7afpxnnnkkyds64&sid=1134002947328204066&loc=https%3A%2F%2Fwww.dev.wsj.com%2Farticles%2Ftwitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001%3Fcx_testId%3D3%26cx_testVariant%3Dcx_5%26cx_artPos%3D6%26mod%3DWTRN%23cxrecs_s&new=1&arf=0&ltm=1739880154589&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m7afpzam7ozrabln&ckp=m7afpz9zkuxymif8&glb=&amo=1720057500&cp_userState=anon&cp_testId=3&cp_testVariant=cx_5&cp_artPos=6&cp_testGroup=33&cp_env=staging&cp_topDomain=wsj.com&cp_pwTag=default&cp_pwPlacement=cx-snippetad&cp_pwCampaign=28324&cp_pwType=personalized&cp_navSource=WTRN&cp_type=Technology&cp_template=preview&cp_access=paid&cp_section=Tech&cp_subsection=Tech&cp_cms_name=Methode&cp_vix=&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=1&cp_ab_bucket=31&cp_pageContentSource=WSJ%20Online&cp_pageContentType=Article&cp_pageContentTypeDetai=standard&cp_pageSiteProduct=WSJ&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: https://news.google.com/swg/js/v1/swg.js, line 17: Error: Error: not allowed
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: AbortError: The operation was aborted. 
+JavaScript warning: https://cdn.cxense.com/cx.js, line 6: Script terminated by timeout at:
+r@https://cdn.cxense.com/cx.js:6:1244
+l<@https://cdn.cxense.com/cx.js:6:1807
+$i@https://cdn.cxense.com/cx.js:6:52727
+po@https://cdn.cxense.com/cx.js:6:55125
+ua@https://cdn.cxense.com/cx.js:6:70809
+fa/<@https://cdn.cxense.com/cx.js:6:71116
+
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+JavaScript warning: https://sso.int.accounts.dowjones.com/datadome/tags.js, line 2: Script terminated by timeout at:
+@https://sso.int.accounts.dowjones.com/datadome/tags.js:2:172706
+Cc@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:218:286
+Kx@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:611:277
+BJ@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:818:225
+DJ.prototype.flush@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:824:116
+h.flush@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:842:243
+ZK/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:855:210
+h.Fl/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:793:126
+h.Fl/c/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:792:418
+
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.90&typ=pgv&rnd=m7afqe21toer99gq&sid=9222318613852486900&loc=https%3A%2F%2Fwww.wsj.com%2Farticles%2Ftwitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001&new=0&arf=0&ltm=1739880177167&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m7afqgvjliz2b7ae&ckp=m7afpz9zkuxymif8&glb=&amo=1658316780&eid0=e4cefa22ef027cc0132f0c218da37da39cdb3228234af4df969b5c463592e123&eit0=wsj&cp_userState=anon&cp_testGroup=33&cp_topDomain=wsj.com&cp_pwTag=default&cp_pwPlacement=cx-snippetad&cp_pwCampaign=28324&cp_pwType=personalized&cp_type=Technology&cp_template=preview&cp_access=paid&cp_section=Tech&cp_subsection=Tech&cp_cms_name=Methode&cp_vix=&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=1&cp_ab_bucket=31&cp_pageContentSource=WSJ%20Online&cp_pageContentType=Article&cp_pageContentTypeDetai=standard&cp_pageSiteProduct=WSJ&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ir3IDkj-YCvNipklvF-I057_N67ylKMzk10-KClRynk.js line 2 > eval line 6308 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1739880185215	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1739880185351	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1739880185407	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://cdn.cxense.com/cx.js, line 6: Script terminated by timeout at:
+n@https://cdn.cxense.com/cx.js:6:1149
+r@https://cdn.cxense.com/cx.js:6:1272
+l<@https://cdn.cxense.com/cx.js:6:1807
+$i@https://cdn.cxense.com/cx.js:6:52727
+po@https://cdn.cxense.com/cx.js:6:55125
+ua@https://cdn.cxense.com/cx.js:6:70809
+fa/<@https://cdn.cxense.com/cx.js:6:71116
+nrWrapper@https://www.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001:246:17759
+
+JavaScript warning: https://imasdk.googleapis.com/js/core/bridge3.686.0_en.html#fid=goog_1648511596, line 11: Script terminated by timeout at:
+v@https://imasdk.googleapis.com/js/core/bridge3.686.0_en.html#fid=goog_1648511596:11:289
+dD/this.T@https://imasdk.googleapis.com/js/core/bridge3.686.0_en.html#fid=goog_1648511596:453:37
+
+JavaScript warning: https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.wsj.com&us_privacy=1YNN&gpp=DBABLA~BVQqAAAAAgA.QA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.03584459076793878%22,%22tld%22:%22www.wsj.com%22,%22topUrl%22:%22www.wsj.com%22,%22version%22:%229_30_0%22}, line 13: Script terminated by timeout at:
+r.prototype.flushEventQueue@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.wsj.com&us_privacy=1YNN&gpp=DBABLA~BVQqAAAAAgA.QA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.03584459076793878%22,%22tld%22:%22www.wsj.com%22,%22topUrl%22:%22www.wsj.com%22,%22version%22:%229_30_0%22}:13:3137
+r/<@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.wsj.com&us_privacy=1YNN&gpp=DBABLA~BVQqAAAAAgA.QA&gpp_sid=9#{%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.03584459076793878%22,%22tld%22:%22www.wsj.com%22,%22topUrl%22:%22www.wsj.com%22,%22version%22:%229_30_0%22}:13:3642
+
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js, line 13: Script terminated by timeout at:
+C@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:13:325
+h@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:93:449
+
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+JavaScript warning: https://sso.accounts.dowjones.com/datadome/tags.js, line 2: Script terminated by timeout at:
+@https://sso.accounts.dowjones.com/datadome/tags.js:2:160473
+
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ir3IDkj-YCvNipklvF-I057_N67ylKMzk10-KClRynk.js line 2 > eval line 3400 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 4ms)
+1739880207695	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1739880211330	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1739880211460	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.dev.wsj.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.dev.wsj.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.dev.wsj.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.dev.wsj.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.dev.wsj.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.dev.wsj.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.dev.wsj.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.dev.wsj.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.dev.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.dev.wsj.com/" ({})
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS, line 173: Script terminated by timeout at:
+ya@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:173:16
+h.invoke@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:214:489
+ML/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:833:835
+hu@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:530:281
+h.pn@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:802:277
+h.on/</<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:799:531
+Gl@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:391:151
+Hm@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:399:434
+h.on/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:799:517
+c@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:569:22
+Bw@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:569:349
+h.on@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:799:503
+c@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:815:981
+w@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:415:370
+Co@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:415:470
+Bo.prototype.flush@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:418:382
+Bo.prototype.push@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:416:337
+uo@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:412:424
+ZK/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:816:187
+h.Fl/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:754:126
+h.Fl/c/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:753:418
+nrWrapper@https://www.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001:246:17759
+
+1739881269546	Marionette	INFO	Stopped listening on port 53453
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript error: , line 0: AbortError: The operation was aborted. 

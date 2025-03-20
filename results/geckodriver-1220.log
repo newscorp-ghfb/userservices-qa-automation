@@ -1,0 +1,134 @@
+1742297299062	geckodriver	INFO	Listening on 127.0.0.1:58838
+1742297302116	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58839" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofile8Cekqa"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1742297302722	Marionette	INFO	Marionette enabled
+1742297302994	Marionette	INFO	Listening on port 58851
+WebDriver BiDi listening on ws://127.0.0.1:58839
+Read port: 58851
+console.error: Policies: 
+  Download failed - ERROR_CORRUPT_FILE - file://C:\Program Files\Snow Software\Inventory\Agent\FFCloudmetering.xpi
+1742297303245	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58839/devtools/browser/c9c0669c-45d5-440c-bcfa-cdfc7e694f26
+console.error: ({})
+console.error: ({})
+JavaScript error: https://www.barrons.com/asset/dj-watchlist/v1.14.3/p-0633e57d.entry.js, line 11: TypeError: Error.captureStackTrace is not a function
+console.error: ({})
+console.error: ({})
+JavaScript error: https://tags.tiqcdn.com/utag/wsjdn/barrons/prod/utag.js, line 94: ReferenceError: s is not defined
+JavaScript error: https://tags.tiqcdn.com/utag/wsjdn/barrons/prod/utag.js, line 94: ReferenceError: s is not defined
+JavaScript error: https://us.tags.newscgp.com/prod/ncg/ncg.js, line 10: TypeError: window.GlobalSnowplowNamespace is undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/jtqLS4CpbIVFtG__JM-T91toxYP3JyzmW2J4VfJqIi8.js line 2 > eval line 3218 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.92&typ=pgv&rnd=m8eeu1ssqksl5uk6&sid=9222325317970825875&loc=https%3A%2F%2Fwww.barrons.com%2Farticles%2Fwendys-wen-stock-earnings-51652268634&new=1&arf=0&ltm=1742297311906&ref=&tzo=-330&wsz=1280x595&res=1280x720&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m8eeu28lnmrldpcc&ckp=m8eeu1ssxihait9v&glb=&amo=1652281620&cp_userState=anon, line 1: TypeError: cX.loadScript is not a function
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.error: "Can't start recording from event type: " "paste"
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+JavaScript error: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 10: Error: Piano SDK is loaded twice on same page. Try to fix that to prevent the message.
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.92&typ=pgv&rnd=m8egh2z067qy2iwk&sid=9222325317970825875&loc=https%3A%2F%2Fwww.s.dev.barrons.com%2Fmarket-data%2Fstocks%2Fstock-picks%3Fmod%3DBOL_TOPNAV&new=0&arf=0&ltm=1742300066131&ref=&tzo=-330&wsz=1280x595&res=1280x720&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m8egh39v9rraj4az&ckp=m8eeu1ssxihait9v&glb=&cp_userState=anon, line 1: TypeError: cX.loadScript is not a function
+JavaScript error: , line 0: uncaught exception: Failed to track Pageview. A validation check carried out by the server did not succeed.
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+JavaScript error: https://www.wsj.com/static_html_files/bluegrass/2.2.119/bluegrass2.min.js, line 1: TypeError: e.xhrFields is undefined
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+JavaScript error: https://pbcs.barrons.com/s/dj/barrons/pb.js, line 831: TypeError: can't convert undefined to object
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 6ms)
+JavaScript error: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 10: Error: Piano SDK is loaded twice on same page. Try to fix that to prevent the message.
+JavaScript error: , line 0: uncaught exception: Failed to track Pageview. A validation check carried out by the server did not succeed.
+JavaScript error: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 10: Error: Piano SDK is loaded twice on same page. Try to fix that to prevent the message.
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT, line 199: Script terminated by timeout at:
+qb@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:199:128
+zo@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:429:30
+Cp@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:439:494
+UL/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:872:187
+h.Rl/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:808:126
+h.Rl/c/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:807:418
+
+JavaScript warning: https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634, line 129: Script terminated by timeout at:
+nrWrapper@https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634:129:17584
+
+1742309395747	Marionette	INFO	Stopped listening on port 58851
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function

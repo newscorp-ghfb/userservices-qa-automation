@@ -1,0 +1,150 @@
+1742294103711	geckodriver	INFO	Listening on 127.0.0.1:55337
+1742294106753	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55338" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofilewury44"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1742294107510	Marionette	INFO	Marionette enabled
+1742294107750	Marionette	INFO	Listening on port 55354
+Read port: 55354
+WebDriver BiDi listening on ws://127.0.0.1:55338
+1742294107892	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Policies: 
+  Download failed - ERROR_CORRUPT_FILE - file://C:\Program Files\Snow Software\Inventory\Agent\FFCloudmetering.xpi
+DevTools listening on ws://127.0.0.1:55338/devtools/browser/2a795f1b-fa27-4adb-82fc-0b57d87ca58b
+console.error: ({})
+console.error: ({})
+JavaScript warning: https://pagead2.googlesyndication.com/bg/jtqLS4CpbIVFtG__JM-T91toxYP3JyzmW2J4VfJqIi8.js line 2 > eval line 5086 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1742294117293	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://js-agent.newrelic.com/nr-1044.min.js, line 1: Script terminated by timeout at:
+r@https://js-agent.newrelic.com/nr-1044.min.js:1:22526
+[15]</r/<@https://js-agent.newrelic.com/nr-1044.min.js:1:9115
+
+JavaScript error: https://pbcs.barrons.com/s/dj/barrons/pb.js, line 831: TypeError: can't convert undefined to object
+console.error: ({})
+console.error: ({})
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.92&typ=pgv&rnd=m8ecxma2qia5s8uv&sid=9222325317970825875&loc=https%3A%2F%2Fwww.s.dev.barrons.com%2Farticles%2Fbuy-under-armour-stock-pick-51650672000&new=1&arf=0&ltm=1742294119185&ref=&tzo=-330&wsz=1280x595&res=1280x720&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m8ecxms1m27gje1m&ckp=m8ecxma2sht904qg&glb=&amo=1741755900&cp_userState=anon, line 1: TypeError: cX.loadScript is not a function
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 7ms)
+JavaScript warning: https://pagead2.googlesyndication.com/bg/jtqLS4CpbIVFtG__JM-T91toxYP3JyzmW2J4VfJqIi8.js line 2 > eval line 6126 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: uncaught exception: Failed to track Pageview. A validation check carried out by the server did not succeed.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/-DAcQ9lQZbiM5HME96vizN3snXxurSkogwgOEvHdK-k.js line 2 > eval line 7344 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/-DAcQ9lQZbiM5HME96vizN3snXxurSkogwgOEvHdK-k.js line 2 > eval line 1052 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.error: "Can't start recording from event type: " "paste"
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+JavaScript error: https://pbcs.barrons.com/s/dj/barrons/pb.js, line 831: TypeError: can't convert undefined to object
+JavaScript error: https://0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app/772abb27-aff3-4dcc-b7af-8ab66a56137a-web.js, line 1: TypeError: i.time.toISOString is not a function
+JavaScript error: https://cdn.tinypass.com/api/tinypass.min.js, line 1: Error: Piano SDK is loaded twice on same page. Try to fix that to prevent the message.
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 60ms)
+JavaScript error: https://pbcs.barrons.com/s/dj/barrons/pb.js, line 831: TypeError: can't convert undefined to object
+JavaScript error: https://cdn.tinypass.com/api/tinypass.min.js, line 1: Error: Piano SDK is loaded twice on same page. Try to fix that to prevent the message.
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+JavaScript warning: https://secure-us.imrworldwide.com/v60.js, line 1: Script terminated by timeout at:
+NolTracker.prototype.pause@https://secure-us.imrworldwide.com/v60.js:1:23885
+NolTracker.prototype.postLinkTrack@https://secure-us.imrworldwide.com/v60.js:1:17653
+NolTracker.prototype.linkTrack@https://secure-us.imrworldwide.com/v60.js:1:18191
+u.send@https://tags.tiqcdn.com/utag/wsjdn/barrons/dev/utag.163.js?utv=ut4.44.202301181531:7:180
+sendTag@https://tags.tiqcdn.com/utag/wsjdn/barrons/dev/utag.js:81:175
+trigger@https://tags.tiqcdn.com/utag/wsjdn/barrons/dev/utag.js:82:302
+track@https://tags.tiqcdn.com/utag/wsjdn/barrons/dev/utag.js:72:395
+link@https://tags.tiqcdn.com/utag/wsjdn/barrons/dev/utag.js:72:216
+handleCtaEvent@https://www.dev.barrons.com/asset/piano/piano.js:187:12
+customEventHandler@https://www.dev.barrons.com/asset/piano/piano.js:353:9
+g@https://cdn.tinypass.com/api/tinypass.min.js:1:125147
+fire@https://cdn.tinypass.com/api/tinypass.min.js:1:125334
+fireCallbacks@https://cdn.tinypass.com/api/tinypass.min.js:1:124867
+h@https://cdn.tinypass.com/api/tinypass.min.js:1:174132
+handleAcpEvent@https://cdn.tinypass.com/api/tinypass.min.js:1:175054
+G@https://cdn.tinypass.com/api/tinypass.min.js:1:257566
+E@https://cdn.tinypass.com/api/tinypass.min.js:1:122359
+r@https://cdn.tinypass.com/api/tinypass.min.js:1:119534
+
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.92&typ=pgv&rnd=m8ed5bdzj6cd35tz&sid=9222325317970825873&loc=https%3A%2F%2Fpartner.marketwatch.com%2Fp%2Fp_mwbarstudentpremium%2Fregister%3Fmod%3Diie-onsite%26targetURL%3Dhttps%253A%252F%252Fwww.s.dev.barrons.com%252Fmarket-data%252Fstocks%252Fstock-picks%253Fmod%253DBOL_TOPNAV%26cx_P%3Dm8ecxma2sht904qg%26pw_campaign%3DPC_EXSXIZXH3Z7G%26pw_widget%3DPC_OTVBVRG67IPH0%26trackingId%3D%257Bkpdx%257DAAAAwG24jRTwsQoKYmNPNWFZNlNwdRIQbThlZDR0c280eXV6dDBqYxoMRVhTWElaWEgzWjdHIiUxODA1cGc4MGJzLTAwMDAzNWQ4cXVhczQydmQ3cDExcGUyMTg0KhpzaG93VGVtcGxhdGVaWlBKWjhHODBTM0YxMzABOgxPVE02NFNDRkMxTzVCDU9UVkJWUkc2N0lQSDBSEnYtbThlY3htYnFuZDkxcGxzY1oNMzQuMjMxLjQ1LjE2MGIDZHdmaLe-6r4GcAN4BA&new=1&arf=0&ltm=1742294478315&ref=https%3A%2F%2Fwww.s.dev.barrons.com%2F&tzo=-330&wsz=1280x595&res=1280x720&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m8ed5bgta0urmfyl&ckp=m8ed5bdziy107z66&glb=&cp_userState=anon&cp_P=m8ecxma2sht904qg&cp_testGroup=73&cp_topDomain=marketwatch.com&cp_navSource=iie-onsite&cp_subscriber=default&cp_edition=naus&cp_bucket=-2&cp_ab_bucket=-2&cp_pageContentTypeDetai=default&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript warning: https://sc-static.net/scevent.min.js, line 2: Script terminated by timeout at:
+y@https://sc-static.net/scevent.min.js:2:2789
+c@https://sc-static.net/scevent.min.js:2:6931
+
+JavaScript warning: https://cdn.cxense.com/cx.js, line 6: Script terminated by timeout at:
+ca/<@https://cdn.cxense.com/cx.js:6:70992
+
+JavaScript error: https://pbcs.barrons.com/s/dj/barrons/pb.js, line 831: TypeError: can't convert undefined to object
+JavaScript error: https://cdn.tinypass.com/api/tinypass.min.js, line 1: Error: Piano SDK is loaded twice on same page. Try to fix that to prevent the message.
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript error: https://pbcs.barrons.com/s/dj/barrons/pb.js, line 831: TypeError: can't convert undefined to object
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript error: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 10: Error: Piano SDK is loaded twice on same page. Try to fix that to prevent the message.
+JavaScript warning: https://www.s.dev.barrons.com/_next/static/chunks/main-fc8ea3f3c8e9e983.js, line 6: Script terminated by timeout at:
+a@https://www.s.dev.barrons.com/_next/static/chunks/main-fc8ea3f3c8e9e983.js:6:19551
+78018/J/<@https://www.s.dev.barrons.com/_next/static/chunks/main-fc8ea3f3c8e9e983.js:6:20022
+t@https://www.s.dev.barrons.com/_next/static/chunks/main-fc8ea3f3c8e9e983.js:6:15839
+
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=sers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+, line 4029: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=sers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+, line 4029: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=sers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+, line 4029: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=sers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+, line 4029: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=sers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+, line 4029: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=sers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+, line 4029: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=sers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval, line 4029: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=sers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval, line 4029: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=sers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval, line 4029: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=sers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval, line 4029: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=sers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval, line 4029: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=sers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval line 4029 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=sers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval line 4029 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=sers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval line 4029 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=sers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval line 4029 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=sers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval line 4029 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=sers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval line 4029 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=sers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval line 4029 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=sers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval line 4029 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=sers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval line 4029 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=sers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval line 4029 > eval line 1 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=sers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval line 4029 > eval line 1 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=sers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval line 4029 > eval line 1 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript error: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fclient%3Dfirefox-b-d%26channel%3Dentpr%26q%3Dsers%255Csasikumarj%255CPycharmProjects%255Cuserservices-qa-automation%255Cresults%255Clog-20250318-163144.html%2B%26sei%3DqlPZZ-V-mIim1A-brOKZDQ&q=EgQSzQXOGKqn5b4GIjDCoUrzHh3DUcSOCjHUy99vzAVY2verf6-T2fYvdV3yiPJBhebB1HqKslIqjV1j3JIyAXJaAUM, line 1: ReferenceError: solveSimpleChallenge is not defined
+JavaScript error: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 10: Error: Piano SDK is loaded twice on same page. Try to fix that to prevent the message.
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=Log%3A+++++D%3A%5CUsers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+, line 7448: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=Log%3A+++++D%3A%5CUsers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+, line 7448: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=Log%3A+++++D%3A%5CUsers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+, line 7448: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=Log%3A+++++D%3A%5CUsers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+, line 7448: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=Log%3A+++++D%3A%5CUsers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+, line 7448: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=Log%3A+++++D%3A%5CUsers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+, line 7448: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=Log%3A+++++D%3A%5CUsers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval, line 7448: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=Log%3A+++++D%3A%5CUsers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval, line 7448: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=Log%3A+++++D%3A%5CUsers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval, line 7448: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=Log%3A+++++D%3A%5CUsers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval, line 7448: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=Log%3A+++++D%3A%5CUsers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval, line 7448: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=Log%3A+++++D%3A%5CUsers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=Log%3A+++++D%3A%5CUsers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval line 7448 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=Log%3A+++++D%3A%5CUsers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=Log%3A+++++D%3A%5CUsers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval line 7448 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=Log%3A+++++D%3A%5CUsers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=Log%3A+++++D%3A%5CUsers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval line 7448 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=Log%3A+++++D%3A%5CUsers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval line 7448 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=Log%3A+++++D%3A%5CUsers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval line 7448 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=Log%3A+++++D%3A%5CUsers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval line 7448 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=Log%3A+++++D%3A%5CUsers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval line 7448 > eval line 1 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=Log%3A+++++D%3A%5CUsers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval line 7448 > eval line 1 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/search?client=firefox-b-d&channel=entpr&q=Log%3A+++++D%3A%5CUsers%5Csasikumarj%5CPycharmProjects%5Cuserservices-qa-automation%5Cresults%5Clog-20250318-163144.html+ line 2 > eval line 7448 > eval line 1 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript error: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fclient%3Dfirefox-b-d%26channel%3Dentpr%26q%3DLog%253A%2B%2B%2B%2B%2BD%253A%255CUsers%255Csasikumarj%255CPycharmProjects%255Cuserservices-qa-automation%255Cresults%255Clog-20250318-163144.html%2B%26sei%3Dx1PZZ6W4F8a1ptQP3MPToAo&q=EgQSzQXOGMen5b4GIjCKyK1mxuJvBSzW3MsUw1f34_KdHuv8gYYa9YIhoczd9LCo1JwZnkn-snOojw5v1GkyAXJaAUM, line 1: ReferenceError: solveSimpleChallenge is not defined
+JavaScript warning: https://www.s.dev.barrons.com/_next/static/chunks/main-fc8ea3f3c8e9e983.js, line 6: Script terminated by timeout at:
+t@https://www.s.dev.barrons.com/_next/static/chunks/main-fc8ea3f3c8e9e983.js:6:15780
+
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT, line 199: Script terminated by timeout at:
+qb@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:199:128
+zo@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:429:30
+Cp@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:439:494
+UL/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:872:187
+h.Rl/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:808:126
+h.Rl/c/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:807:418
+
+JavaScript warning: https://www.s.dev.barrons.com/_next/static/chunks/main-fc8ea3f3c8e9e983.js, line 6: Script terminated by timeout at:
+a@https://www.s.dev.barrons.com/_next/static/chunks/main-fc8ea3f3c8e9e983.js:6:19551
+78018/J/<@https://www.s.dev.barrons.com/_next/static/chunks/main-fc8ea3f3c8e9e983.js:6:20022
+t@https://www.s.dev.barrons.com/_next/static/chunks/main-fc8ea3f3c8e9e983.js:6:15839
+
+1742296072229	Marionette	INFO	Stopped listening on port 55354
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript error: , line 0: AbortError: The operation was aborted. 

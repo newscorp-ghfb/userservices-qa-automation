@@ -1,0 +1,106 @@
+1739884975458	geckodriver	INFO	Listening on 127.0.0.1:56863
+1739884978618	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56864" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofile7bmV5v"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1739884979313	Marionette	INFO	Marionette enabled
+1739884979574	Marionette	INFO	Listening on port 56898
+WebDriver BiDi listening on ws://127.0.0.1:56864
+Read port: 56898
+console.error: Policies: 
+  Download failed - ERROR_CORRUPT_FILE - file://C:\Program Files\Snow Software\Inventory\Agent\FFCloudmetering.xpi
+1739884979843	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:56864/devtools/browser/50b42a79-17ef-4ec3-8e57-47cb53fe7cff
+JavaScript error: https://news.google.com/swg/js/v1/swg.js, line 17: Error: XHR Failed fetching (https://news.google.com/...): (Note: a CORS error above may indicate that this publisher or domain is not configured in Publisher Center. The CORS error happens because 4xx responses do not set CORS headers.)
+
+TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: https://news.google.com/swg/js/v1/swg.js, line 17: Error: Error: not allowed
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+1739884994382	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:205:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:189:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:467:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:220:33
+JavaScript error: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 10: ChunkLoadError: Loading chunk 92 failed.
+(error: https://cdn.gbqofs.com/sv/b/detector-lazy.min.js)
+JavaScript warning: https://widgets.outbrain.com/outbrain.js, line 562: Script terminated by timeout at:
+H@https://widgets.outbrain.com/outbrain.js:562:553
+ccs/</OBR.Jm</b.H@https://widgets.outbrain.com/outbrain.js:584:374
+ccs/</a.wI@https://widgets.outbrain.com/outbrain.js:429:452
+ccs/</b.fire@https://widgets.outbrain.com/outbrain.js:433:94
+ccs/</a.II/<@https://widgets.outbrain.com/outbrain.js:431:85
+fire@https://widgets.outbrain.com/outbrain.js:384:1007
+zb@https://widgets.outbrain.com/outbrain.js:32:189
+ccs/</Cb/<@https://widgets.outbrain.com/outbrain.js:33:251
+
+1739884995195	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://imasdk.googleapis.com/js/core/bridge3.686.0_en.html#fid=goog_1480654983, line 11: Script terminated by timeout at:
+v@https://imasdk.googleapis.com/js/core/bridge3.686.0_en.html#fid=goog_1480654983:11:289
+dD/this.T@https://imasdk.googleapis.com/js/core/bridge3.686.0_en.html#fid=goog_1480654983:453:37
+
+JavaScript warning: https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.IuTH-ln6tN0.es5.O/am=AAbc/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4XuwxXuYeKGkFWufxO2BT9tb_lNw/m=_b,_tp, line 314: Script terminated by timeout at:
+c@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.IuTH-ln6tN0.es5.O/am=AAbc/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4XuwxXuYeKGkFWufxO2BT9tb_lNw/m=_b,_tp:314:187
+b@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.IuTH-ln6tN0.es5.O/am=AAbc/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4XuwxXuYeKGkFWufxO2BT9tb_lNw/m=_b,_tp:300:48
+
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+JavaScript warning: https://sso.int.accounts.dowjones.com/datadome/tags.js, line 2: Script terminated by timeout at:
+@https://sso.int.accounts.dowjones.com/datadome/tags.js:2:160473
+
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.90&typ=pgv&rnd=m7aim3bdb1xfkfb6&sid=9222318613852486900&loc=https%3A%2F%2Fwww.wsj.com%2Farticles%2Ftwitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001&new=0&arf=0&ltm=1739885016081&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m7aim6s45h6cw98x&ckp=m7ailjujpzn9sdyv&glb=&amo=1658316780&eid0=e4cefa22ef027cc0132f0c218da37da39cdb3228234af4df969b5c463592e123&eit0=wsj&cp_userState=anon&cp_testGroup=92&cp_topDomain=wsj.com&cp_pwTag=default&cp_pwPlacement=cx-snippetad&cp_pwCampaign=28324&cp_pwType=personalized&cp_type=Technology&cp_template=preview&cp_access=paid&cp_section=Tech&cp_subsection=Tech&cp_cms_name=Methode&cp_vix=&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=9&cp_ab_bucket=49&cp_pageContentSource=WSJ%20Online&cp_pageContentType=Article&cp_pageContentTypeDetai=standard&cp_pageSiteProduct=WSJ&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ir3IDkj-YCvNipklvF-I057_N67ylKMzk10-KClRynk.js line 2 > eval line 7225 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1739885018347	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://www.googletagmanager.com/gtag/destination?id=AW-1071306083&l=dataLayer&cx=c&gtm=45je52d0v9177788093za200, line 132: Script terminated by timeout at:
+ib@https://www.googletagmanager.com/gtag/destination?id=AW-1071306083&l=dataLayer&cx=c&gtm=45je52d0v9177788093za200:132:331
+f@https://www.googletagmanager.com/gtag/destination?id=AW-1071306083&l=dataLayer&cx=c&gtm=45je52d0v9177788093za200:169:165
+e@https://www.googletagmanager.com/gtag/destination?id=AW-1071306083&l=dataLayer&cx=c&gtm=45je52d0v9177788093za200:169:91
+f@https://www.googletagmanager.com/gtag/destination?id=AW-1071306083&l=dataLayer&cx=c&gtm=45je52d0v9177788093za200:169:293
+jd@https://www.googletagmanager.com/gtag/destination?id=AW-1071306083&l=dataLayer&cx=c&gtm=45je52d0v9177788093za200:169:693
+ML/<@https://www.googletagmanager.com/gtag/destination?id=AW-1071306083&l=dataLayer&cx=c&gtm=45je52d0v9177788093za200:682:1363
+hu@https://www.googletagmanager.com/gtag/destination?id=AW-1071306083&l=dataLayer&cx=c&gtm=45je52d0v9177788093za200:473:281
+ax@https://www.googletagmanager.com/gtag/destination?id=AW-1071306083&l=dataLayer&cx=c&gtm=45je52d0v9177788093za200:516:88
+gG@https://www.googletagmanager.com/gtag/destination?id=AW-1071306083&l=dataLayer&cx=c&gtm=45je52d0v9177788093za200:663:344
+f@https://www.googletagmanager.com/gtag/destination?id=AW-1071306083&l=dataLayer&cx=c&gtm=45je52d0v9177788093za200:664:495
+iG/<@https://www.googletagmanager.com/gtag/destination?id=AW-1071306083&l=dataLayer&cx=c&gtm=45je52d0v9177788093za200:666:410
+Gl@https://www.googletagmanager.com/gtag/destination?id=AW-1071306083&l=dataLayer&cx=c&gtm=45je52d0v9177788093za200:334:151
+Hm@https://www.googletagmanager.com/gtag/destination?id=AW-1071306083&l=dataLayer&cx=c&gtm=45je52d0v9177788093za200:342:434
+iG@https://www.googletagmanager.com/gtag/destination?id=AW-1071306083&l=dataLayer&cx=c&gtm=45je52d0v9177788093za200:666:398
+w@https://www.googletagmanager.com/gtag/destination?id=AW-1071306083&l=dataLayer&cx=c&gtm=45je52d0v9177788093za200:358:370
+Co@https://www.googletagmanager.com/gtag/destination?id=AW-1071306083&l=dataLayer&cx=c&gtm=45je52d0v9177788093za200:358:470
+Bo.prototype.flush@https://www.googletagmanager.com/gtag/destination?id=AW-1071306083&l=dataLayer&cx=c&gtm=45je52d0v9177788093za200:361:178
+Bo.prototype.push@https://www.googletagmanager.com/gtag/destination?id=AW-1071306083&l=dataLayer&cx=c&gtm=45je52d0v9177788093za200:359:337
+config@https://www.googletagmanager.com/gtag/destination?id=AW-1071306083&l=dataLayer&cx=c&gtm=45je52d0v9177788093za200:604:56
+GB@https://www.googletagmanager.com/gtag/destination?id=AW-1071306083&l=dataLayer&cx=c&gtm=45je52d0v9177788093za200:613:469
+IB@https://www.googletagmanager.com/gtag/destination?id=AW-1071306083&l=dataLayer&cx=c&gtm=45je52d0v9177788093za200:615:45
+@https://www.googletagmanager.com/gtag/destination?id=AW-1071306083&l=dataLayer&cx=c&gtm=45je52d0v9177788093za200:743:242
+c@https://www.googletagmanager.com/gtag/destination?id=AW-1071306083&l=dataLayer&cx=c&gtm=45je52d0v9177788093za200:738:130
+@https://www.googletagmanager.com/gtag/destination?id=AW-1071306083&l=dataLayer&cx=c&gtm=45je52d0v9177788093za200:740:382
+@https://www.googletagmanager.com/gtag/destination?id=AW-1071306083&l=dataLayer&cx=c&gtm=45je52d0v9177788093za200:740:387
+@https://www.googletagmanager.com/gtag/destination?id=AW-1071306083&l=dataLayer&cx=c&gtm=45je52d0v9177788093za200:746:3
+
+JavaScript warning: https://imasdk.googleapis.com/js/core/bridge3.686.0_en.html#fid=goog_1443897142, line 52: Script terminated by timeout at:
+Ta@https://imasdk.googleapis.com/js/core/bridge3.686.0_en.html#fid=goog_1443897142:52:205
+dD.prototype.sendBeacon@https://imasdk.googleapis.com/js/core/bridge3.686.0_en.html#fid=goog_1443897142:458:218
+dD.prototype.j@https://imasdk.googleapis.com/js/core/bridge3.686.0_en.html#fid=goog_1443897142:456:167
+dD/this.T@https://imasdk.googleapis.com/js/core/bridge3.686.0_en.html#fid=goog_1443897142:453:327
+
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS, line 173: Script terminated by timeout at:
+ya@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:173:16
+Kx@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:595:208
+BJ@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:779:225
+DJ.prototype.flush@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:785:116
+h.flush@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:803:243
+ZK/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:816:210
+h.Fl/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:754:126
+h.Fl/c/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:753:418
+
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ir3IDkj-YCvNipklvF-I057_N67ylKMzk10-KClRynk.js line 2 > eval line 3318 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1739885046687	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1739885047623	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1739885049583	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1739885052012	Marionette	INFO	Stopped listening on port 56898
+Dynamically enable window occlusion 1
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.

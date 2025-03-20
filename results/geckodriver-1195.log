@@ -1,0 +1,23 @@
+1742290111674	geckodriver	INFO	Listening on 127.0.0.1:62838
+1742290115013	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62839" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileWLFYoN"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1742290116016	Marionette	INFO	Marionette enabled
+1742290116319	Marionette	INFO	Listening on port 62880
+WebDriver BiDi listening on ws://127.0.0.1:62839
+Read port: 62880
+console.error: Policies: 
+  Download failed - ERROR_CORRUPT_FILE - file://C:\Program Files\Snow Software\Inventory\Agent\FFCloudmetering.xpi
+1742290116596	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62839/devtools/browser/33a65f87-6379-4cee-a6ce-42927efcc903
+console.error: ({})
+console.error: ({})
+JavaScript warning: https://pagead2.googlesyndication.com/bg/jtqLS4CpbIVFtG__JM-T91toxYP3JyzmW2J4VfJqIi8.js line 2 > eval line 7621 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://tags.tiqcdn.com/utag/wsjdn/barrons/prod/utag.js, line 94: ReferenceError: s is not defined
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 22ms)
+1742290130153	Marionette	INFO	Stopped listening on port 62880
+JavaScript warning: https://www.barrons.com/market-data/stocks/stock-picks?mod=BOL_TOPNAV, line 124: Script terminated by timeout at:
+nrWrapper@https://www.barrons.com/market-data/stocks/stock-picks?mod=BOL_TOPNAV:124:17584
+
+Dynamically enable window occlusion 1

@@ -1,0 +1,28 @@
+1742459673962	geckodriver	INFO	Listening on 127.0.0.1:58262
+1742459677016	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58263" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofilelzrkQl"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1742459677815	Marionette	INFO	Marionette enabled
+1742459678068	Marionette	INFO	Listening on port 58279
+WebDriver BiDi listening on ws://127.0.0.1:58263
+Read port: 58279
+console.error: Policies: 
+  Download failed - ERROR_CORRUPT_FILE - file://C:\Program Files\Snow Software\Inventory\Agent\FFCloudmetering.xpi
+1742459678328	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58263/devtools/browser/a645cf82-93fc-4699-9d7a-5046ab338abd
+console.error: ({})
+console.error: ({})
+JavaScript error: https://tags.tiqcdn.com/utag/wsjdn/barrons/prod/utag.js, line 94: ReferenceError: s is not defined
+console.error: ({})
+console.error: ({})
+JavaScript error: https://tags.tiqcdn.com/utag/wsjdn/barrons/prod/utag.js, line 94: ReferenceError: s is not defined
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.92&typ=pgv&rnd=m8h3ibx2k7tcdqq5&sid=9222325317970825875&loc=https%3A%2F%2Fwww.barrons.com%2Farticles%2Fwendys-wen-stock-earnings-51652268634&new=1&arf=0&ltm=1742459687900&ref=&tzo=-330&wsz=1280x762&res=1920x982&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m8h3ice8265ah57y&ckp=m8h3ibx239q05wky&glb=&amo=1652281620&cp_userState=anon, line 1: TypeError: cX.loadScript is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/PcSWGRWl2mLW4O5uRUTCwBTBSkoSFBc_REwve846xD4.js line 2 > eval line 194 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1742459691031	Marionette	INFO	Stopped listening on port 58279
+Dynamically enable window occlusion 1
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript error: , line 0: AbortError: The operation was aborted. 
+JavaScript error: , line 0: AbortError: The operation was aborted. 
+JavaScript error: , line 0: AbortError: The operation was aborted. 
+JavaScript error: , line 0: AbortError: The operation was aborted. 

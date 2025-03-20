@@ -1,0 +1,63 @@
+1739878006465	geckodriver	INFO	Listening on 127.0.0.1:54851
+1739878009479	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54852" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileZefsZH"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1739878010263	Marionette	INFO	Marionette enabled
+1739878010543	Marionette	INFO	Listening on port 54879
+Read port: 54879
+WebDriver BiDi listening on ws://127.0.0.1:54852
+1739878010668	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Policies: 
+  Download failed - ERROR_CORRUPT_FILE - file://C:\Program Files\Snow Software\Inventory\Agent\FFCloudmetering.xpi
+DevTools listening on ws://127.0.0.1:54852/devtools/browser/436cae30-e9df-47e2-b383-5d5ffeb492e5
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.90&typ=pgv&rnd=m7aeg84639vw91z4&sid=1134002947328204066&loc=https%3A%2F%2Fwww.dev.wsj.com%2F&new=1&arf=0&ltm=1739878019866&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m7aeg8e5vbpan1ye&ckp=m7aeg846s7fxurm2&glb=&cp_userState=anon&cp_testGroup=97&cp_env=staging&cp_topDomain=wsj.com&cp_template=full&cp_access=free&cp_section=US%20Home%20Page&cp_subsection=&cp_cms_name=CAPS&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=2&cp_ab_bucket=62&cp_pageContentSource=WSJ%20Online&cp_pageContentType=Home&cp_pageContentTypeDetai=desktopweb&cp_pageSiteProduct=WSJ&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+1739878024068	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ir3IDkj-YCvNipklvF-I057_N67ylKMzk10-KClRynk.js line 2 > eval line 4379 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://news.google.com/swg/js/v1/swg.js, line 17: Error: XHR Failed fetching (https://news.google.com/...): (Note: a CORS error above may indicate that this publisher or domain is not configured in Publisher Center. The CORS error happens because 4xx responses do not set CORS headers.)
+
+TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: https://news.google.com/swg/js/v1/swg.js, line 17: Error: Error: not allowed
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+1739878038041	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:205:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:189:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:467:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:220:33
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pbcs.wsj.com/s/dj/wsj/pb.js, line 2679: Script terminated by timeout at:
+./src/common/Utils.js/setHbKeyValue/<@https://pbcs.wsj.com/s/dj/wsj/pb.js:2679:7
+
+JavaScript warning: https://imasdk.googleapis.com/js/core/bridge3.686.0_en.html#fid=goog_1964086976, line 11: Script terminated by timeout at:
+v@https://imasdk.googleapis.com/js/core/bridge3.686.0_en.html#fid=goog_1964086976:11:289
+dD/this.T@https://imasdk.googleapis.com/js/core/bridge3.686.0_en.html#fid=goog_1964086976:453:37
+
+JavaScript warning: https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.IuTH-ln6tN0.es5.O/am=AAbc/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4XuwxXuYeKGkFWufxO2BT9tb_lNw/m=_b,_tp, line 314: Script terminated by timeout at:
+c@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.IuTH-ln6tN0.es5.O/am=AAbc/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4XuwxXuYeKGkFWufxO2BT9tb_lNw/m=_b,_tp:314:187
+b@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.IuTH-ln6tN0.es5.O/am=AAbc/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4XuwxXuYeKGkFWufxO2BT9tb_lNw/m=_b,_tp:300:48
+
+JavaScript warning: https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.dev.wsj.com&us_privacy=1YNN&gpp=#{%22bundle%22:%223xsxX19QN01nRVlWSVpVVnd0d0thTWZOd3FVbllubTlHNUVwcnQzbjNYV2pPVmdWbXg0TTJNNDhCQ3pNMlh2ODJZTlIlMkZMMUVOTEdWZlJhaFFLR2tOSXJkNTM0cUgxZTRnZXVJdDc1eFhTMTlkUFpuM1lTMG9CandPNmVmeVg5eHpNVnBWRWpKdmNwSyUyQkhXeGgwRVclMkJmTTU4VGclM0QlM0Q%22,%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.6785785658966544%22,%22tld%22:%22www.dev.wsj.com%22,%22topUrl%22:%22www.dev.wsj.com%22,%22version%22:%229_30_0%22}, line 13: Script terminated by timeout at:
+r.prototype.flushEventQueue@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.dev.wsj.com&us_privacy=1YNN&gpp=#{%22bundle%22:%223xsxX19QN01nRVlWSVpVVnd0d0thTWZOd3FVbllubTlHNUVwcnQzbjNYV2pPVmdWbXg0TTJNNDhCQ3pNMlh2ODJZTlIlMkZMMUVOTEdWZlJhaFFLR2tOSXJkNTM0cUgxZTRnZXVJdDc1eFhTMTlkUFpuM1lTMG9CandPNmVmeVg5eHpNVnBWRWpKdmNwSyUyQkhXeGgwRVclMkJmTTU4VGclM0QlM0Q%22,%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.6785785658966544%22,%22tld%22:%22www.dev.wsj.com%22,%22topUrl%22:%22www.dev.wsj.com%22,%22version%22:%229_30_0%22}:13:3137
+r/<@https://gum.criteo.com/syncframe?origin=criteoPrebidAdapter&topUrl=www.dev.wsj.com&us_privacy=1YNN&gpp=#{%22bundle%22:%223xsxX19QN01nRVlWSVpVVnd0d0thTWZOd3FVbllubTlHNUVwcnQzbjNYV2pPVmdWbXg0TTJNNDhCQ3pNMlh2ODJZTlIlMkZMMUVOTEdWZlJhaFFLR2tOSXJkNTM0cUgxZTRnZXVJdDc1eFhTMTlkUFpuM1lTMG9CandPNmVmeVg5eHpNVnBWRWpKdmNwSyUyQkhXeGgwRVclMkJmTTU4VGclM0QlM0Q%22,%22cw%22:true,%22lsw%22:true,%22origin%22:%22criteoPrebidAdapter%22,%22requestId%22:%220.6785785658966544%22,%22tld%22:%22www.dev.wsj.com%22,%22topUrl%22:%22www.dev.wsj.com%22,%22version%22:%229_30_0%22}:13:3642
+
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT, line 707: Script terminated by timeout at:
+WC@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:707:79
+lD@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:712:418
+jD/</<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:711:189
+hb@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:198:204
+jD/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:711:168
+hb@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:198:204
+jD@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:711:135
+kD/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:711:111
+
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.90&typ=pgv&rnd=m7aegzb0a4x6ffp4&sid=9222318613852486900&loc=https%3A%2F%2Fwww.wsj.com%2Farticles%2Ftwitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001&new=0&arf=0&ltm=1739878058043&ref=&tzo=-330&wsz=1278x497&res=1278x622&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m7aeh1v7fa4ml4k1&ckp=m7aeg846s7fxurm2&glb=&amo=1658316780&eid0=e4cefa22ef027cc0132f0c218da37da39cdb3228234af4df969b5c463592e123&eit0=wsj&cp_userState=anon&cp_testGroup=97&cp_topDomain=wsj.com&cp_pwTag=default&cp_pwPlacement=cx-snippetad&cp_pwCampaign=28324&cp_pwType=personalized&cp_type=Technology&cp_template=preview&cp_access=paid&cp_section=Tech&cp_subsection=Tech&cp_cms_name=Methode&cp_vix=&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=2&cp_ab_bucket=62&cp_pageContentSource=WSJ%20Online&cp_pageContentType=Article&cp_pageContentTypeDetai=standard&cp_pageSiteProduct=WSJ&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ir3IDkj-YCvNipklvF-I057_N67ylKMzk10-KClRynk.js line 2 > eval line 2213 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+1739878061550	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1739878068727	Marionette	INFO	Stopped listening on port 54879
+Dynamically enable window occlusion 1
+[GFX1-]: VideoBridgeParent receives IPC close with reason=AbnormalShutdown

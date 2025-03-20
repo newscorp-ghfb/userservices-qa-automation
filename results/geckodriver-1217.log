@@ -1,0 +1,53 @@
+1742296740967	geckodriver	INFO	Listening on 127.0.0.1:62755
+1742296743985	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62756" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofile0TY9Y2"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1742296744571	Marionette	INFO	Marionette enabled
+1742296745025	Marionette	INFO	Listening on port 62785
+WebDriver BiDi listening on ws://127.0.0.1:62756
+Read port: 62785
+console.error: Policies: 
+  Download failed - ERROR_CORRUPT_FILE - file://C:\Program Files\Snow Software\Inventory\Agent\FFCloudmetering.xpi
+1742296745455	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62756/devtools/browser/590a1bc8-4b2c-483e-b16d-b19b8bea0e0f
+console.error: ({})
+console.error: ({})
+JavaScript error: https://tags.tiqcdn.com/utag/wsjdn/barrons/prod/utag.js, line 94: ReferenceError: s is not defined
+JavaScript warning: https://js-agent.newrelic.com/nr-1044.min.js, line 1: Script terminated by timeout at:
+r@https://js-agent.newrelic.com/nr-1044.min.js:1:22526
+[15]</r/<@https://js-agent.newrelic.com/nr-1044.min.js:1:9115
+
+JavaScript error: https://tags.tiqcdn.com/utag/wsjdn/barrons/prod/utag.js, line 94: ReferenceError: s is not defined
+JavaScript error: https://tags.tiqcdn.com/utag/wsjdn/barrons/prod/utag.js, line 94: ReferenceError: s is not defined
+JavaScript error: https://us.tags.newscgp.com/prod/ncg/ncg.js, line 10: TypeError: window.GlobalSnowplowNamespace is undefined
+JavaScript error: https://cdn.tinypass.com/api/tinypass.min.js, line 1: Error: Piano SDK is loaded twice on same page. Try to fix that to prevent the message.
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.92&typ=pgv&rnd=m8eei3vgkxfsf958&sid=9222325317970825875&loc=https%3A%2F%2Fwww.barrons.com%2Fmarket-data%2Fstocks%2Fstock-picks%3Fmod%3DBOL_TOPNAV&new=1&arf=0&ltm=1742296754718&ref=&tzo=-330&wsz=1280x595&res=1280x720&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m8eei45qu9nz3xbd&ckp=m8eei3vg4z3ftgd1&glb=&cp_userState=anon, line 1: TypeError: cX.loadScript is not a function
+1742296780705	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:205:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:189:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:467:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:220:33
+JavaScript error: https://tags.tiqcdn.com/utag/wsjdn/barrons/prod/utag.js, line 94: ReferenceError: s is not defined
+JavaScript warning: https://www.barrons.com/market-data/stocks/stock-picks?mod=BOL_TOPNAV, line 124: Script terminated by timeout at:
+nrWrapper@https://www.barrons.com/market-data/stocks/stock-picks?mod=BOL_TOPNAV:124:17584
+
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.accounts.dowjones.com."
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS, line 769: Script terminated by timeout at:
+h.ki@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:769:509
+get@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:768:119
+h.Dg@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:770:111
+UL/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:833:152
+h.Rl/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:769:126
+h.Rl/c/<@https://www.googletagmanager.com/gtag/js?id=G-K2H7B9JRSS:768:418
+
+JavaScript error: https://tags.tiqcdn.com/utag/wsjdn/barrons/prod/utag.js, line 94: ReferenceError: s is not defined
+JavaScript error: https://tags.tiqcdn.com/utag/wsjdn/barrons/prod/utag.js, line 94: ReferenceError: s is not defined
+JavaScript error: https://us.tags.newscgp.com/prod/ncg/ncg.js, line 10: TypeError: window.GlobalSnowplowNamespace is undefined
+JavaScript error: https://cdn.tinypass.com/api/tinypass.min.js, line 1: Error: Piano SDK is loaded twice on same page. Try to fix that to prevent the message.
+JavaScript warning: https://www.barrons.com/market-data/stocks/stock-picks?mod=BOL_TOPNAV, line 124: Script terminated by timeout at:
+nrWrapper@https://www.barrons.com/market-data/stocks/stock-picks?mod=BOL_TOPNAV:124:17584
+
+1742296970996	Marionette	INFO	Stopped listening on port 62785
+Dynamically enable window occlusion 1

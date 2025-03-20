@@ -1,0 +1,93 @@
+1739873084094	geckodriver	INFO	Listening on 127.0.0.1:61016
+1739873087158	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61017" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofile8XOxpT"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1739873088224	Marionette	INFO	Marionette enabled
+1739873088626	Marionette	INFO	Listening on port 61027
+Read port: 61027
+WebDriver BiDi listening on ws://127.0.0.1:61017
+1739873088822	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Policies: 
+  Download failed - ERROR_CORRUPT_FILE - file://C:\Program Files\Snow Software\Inventory\Agent\FFCloudmetering.xpi
+DevTools listening on ws://127.0.0.1:61017/devtools/browser/a1e211f9-ac3c-4744-8625-c19f6323e24f
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.90&typ=pgv&rnd=m7abis32dq11mhxt&sid=1134002947328204066&loc=https%3A%2F%2Fwww.dev.wsj.com%2F&new=1&arf=0&ltm=1739873100210&ref=&tzo=-330&wsz=1280x595&res=1280x720&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m7abis4cyjxa1lyn&ckp=m7abis32499jcuhd&glb=&cp_userState=anon&cp_testGroup=48&cp_env=staging&cp_topDomain=wsj.com&cp_access=free&cp_section=US%20Home%20Page&cp_subsection=&cp_cms_name=CAPS&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=2&cp_ab_bucket=72&cp_pageContentSource=WSJ%20Online&cp_pageContentType=Home&cp_pageContentTypeDetai=desktopweb&cp_pageSiteProduct=WSJ&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+JavaScript error: https://news.google.com/swg/js/v1/swg.js, line 17: Error: XHR Failed fetching (https://news.google.com/...): (Note: a CORS error above may indicate that this publisher or domain is not configured in Publisher Center. The CORS error happens because 4xx responses do not set CORS headers.)
+
+TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: https://news.google.com/swg/js/v1/swg.js, line 17: Error: Error: not allowed
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+JavaScript error: , line 0: AbortError: The operation was aborted. 
+JavaScript warning: https://cdn.cxense.com/cx.js, line 6: Script terminated by timeout at:
+Kn@https://cdn.cxense.com/cx.js:6:40687
+co/window[a]@https://cdn.cxense.com/cx.js:6:53852
+@https://api.cxense.com/public/widget/visibility?callback=cXJsonpCB7&json=%7B%22impressions%22%3A%5B%7B%22clickUrl%22%3A%22https%3A%2F%2Fapi.cxense.com%2Fpublic%2Fwidget%2Fclick%2FLCmdhn28R3-VUzF1u-vzYB-IfVs4DM23DmGJOxarsefVytkeDRPmoNjMtyAusmeDpCGhRzLvlxVDW3_WnVDPFcqtNm4Mr_KEHhMTDTiP36FL43X5lFgI7XKg3kmNsOQ8uuvA726KJXb2fu5BD4nmtf7zwTkA2iIgbDsmd0uHwCmIA_vVH7UzSHliCoIr9Ttdm5giTBjAWn3THI064nU0_0I72BG8fpsIxNgJDvzNkeu7kx4_kqK2-qakbfjrkvHV4pjeeC7-oE1fZMCGyrjca7jC2qUEYWhMGnD7R95E8NuWZy-G95a0XUNQh7s9RYbfrRPZGISC5K5GmTbxOrVBVfeJRk2GHrUBwzpNeeY2BZ-N87usqVK146OrtnuirQrU3NVs3MXhDvF_m3OpcDIg31fC-UqJn7vqy_T-Q22mmQ-XdNJ2twTLaw9qgE3wgPSSkTiAAVql4ALEH5sOLQ3qdYZcmbBGoUOPKF75xskURyk4DU8MrTYfHFxUKe7sXghjwdiBE1SvUh5RGH6gNHNXJB-g64RjQbUM0xUhZPe78SA8KXLGf7-MPGJ72PqncbDiceRG1u_hDtpik9Zmh2SedL3g1QsV9LxIhseMIFAza3-1NKcbb60Y3abcil3q-J_nLI3a4DS3hZ_IOqMhNArC7GPnnA3Mx-1VkgoBQKX0BhIbjV2PUCWqk6PcY7i9vXNF3U_ek9dYD20jc_50U-jD11_nbirGYqzQRKkdO3FeHj58n9GKZTA4mHg_VUfY6_Ts6X7ruarDj7FAwc6qHLKJrP1aZo-q3lQmU-CCKwgPesZdQFE88_XlwVlKdX4KDmNPZoK6nU8qniyL9LUEbDsgJHpYwJXtKZE9EvOdCOInUQa5QM-pfGqfDtkDh_wjsjfMX7tUO-tCut5J1yfzZ0mKqA0%3Fcx_testId%3D26%26cx_testVariant%3Dcx_540%26cx_artPos%3D0%22%2C%22visibilitySeconds%22%3A1%7D%5D%7D:2:11
+
+JavaScript warning: https://imasdk.googleapis.com/js/core/bridge3.686.0_en.html#fid=goog_802376509, line 11: Script terminated by timeout at:
+v@https://imasdk.googleapis.com/js/core/bridge3.686.0_en.html#fid=goog_802376509:11:289
+dD/this.T@https://imasdk.googleapis.com/js/core/bridge3.686.0_en.html#fid=goog_802376509:453:37
+
+JavaScript warning: https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.IuTH-ln6tN0.es5.O/am=AAbc/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4XuwxXuYeKGkFWufxO2BT9tb_lNw/m=_b,_tp, line 314: Script terminated by timeout at:
+c@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.IuTH-ln6tN0.es5.O/am=AAbc/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4XuwxXuYeKGkFWufxO2BT9tb_lNw/m=_b,_tp:314:187
+b@https://www.gstatic.com/_/mss/boq-subscribewithgoogle/_/js/k=boq-subscribewithgoogle.SubscribewithgoogleClientUi.en_US.IuTH-ln6tN0.es5.O/am=AAbc/d=1/excm=_b,_tp,serviceiframeview/ed=1/dg=0/wt=2/ujg=1/rs=ABXTjI4XuwxXuYeKGkFWufxO2BT9tb_lNw/m=_b,_tp:300:48
+
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sso.int.accounts.dowjones.com."
+JavaScript warning: https://sso.int.accounts.dowjones.com/datadome/tags.js, line 2: Script terminated by timeout at:
+@https://sso.int.accounts.dowjones.com/datadome/tags.js:2:172706
+Cc@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:218:286
+Kx@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:611:277
+BJ@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:818:225
+DJ.prototype.flush@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:824:116
+h.flush@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:842:243
+ZK/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:855:210
+h.Fl/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:793:126
+h.Fl/c/<@https://www.googletagmanager.com/gtag/js?id=G-GJ5S1GJYKT:792:418
+
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ir3IDkj-YCvNipklvF-I057_N67ylKMzk10-KClRynk.js line 2 > eval line 3765 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 76ms)
+1739873129706	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+ConnectToPipe() failure: GetLastError()=00000079
+ConnectToPipe() failure: GetLastError()=00000079
+ConnectToPipe() failure: GetLastError()=00000079
+ConnectToPipe() failure: GetLastError()=00000079
+ConnectToPipe() failure: GetLastError()=00000079
+ConnectToPipe() failure: GetLastError()=00000079
+ConnectToPipe() failure: GetLastError()=00000079
+ConnectToPipe() failure: GetLastError()=00000079
+ConnectToPipe() failure: GetLastError()=00000079
+ConnectToPipe() failure: GetLastError()=00000079
+ConnectToPipe() failure: GetLastError()=00000079
+ConnectToPipe() failure: GetLastError()=00000079
+1739873134454	Marionette	INFO	Stopped listening on port 61027
+JavaScript warning: https://www.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001, line 246: Script terminated by timeout at:
+i@https://www.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001:246:17866
+nrWrapper@https://www.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001:246:17819
+openAndSendXhr@https://video-api.wsj.com/api-video/player/v3/js/chunks/41.cc5f17b7fae2fdf357c4.min.js:1:262263
+loadInternal@https://video-api.wsj.com/api-video/player/v3/js/chunks/41.cc5f17b7fae2fdf357c4.min.js:1:261705
+load@https://video-api.wsj.com/api-video/player/v3/js/chunks/41.cc5f17b7fae2fdf357c4.min.js:1:261259
+3041/load/<@https://video-api.wsj.com/api-video/player/v3/js/chunks/41.cc5f17b7fae2fdf357c4.min.js:1:81267
+nrWrapper@https://www.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001:246:17759
+e@https://www.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001:246:52209
+load@https://video-api.wsj.com/api-video/player/v3/js/chunks/41.cc5f17b7fae2fdf357c4.min.js:1:80952
+_doFragLoad@https://video-api.wsj.com/api-video/player/v3/js/chunks/41.cc5f17b7fae2fdf357c4.min.js:1:107872
+_loadFragForPlayback@https://video-api.wsj.com/api-video/player/v3/js/chunks/41.cc5f17b7fae2fdf357c4.min.js:1:102380
+loadFragment@https://video-api.wsj.com/api-video/player/v3/js/chunks/41.cc5f17b7fae2fdf357c4.min.js:1:102319
+loadFragment@https://video-api.wsj.com/api-video/player/v3/js/chunks/41.cc5f17b7fae2fdf357c4.min.js:1:189537
+doTickIdle@https://video-api.wsj.com/api-video/player/v3/js/chunks/41.cc5f17b7fae2fdf357c4.min.js:1:189187
+doTick@https://video-api.wsj.com/api-video/player/v3/js/chunks/41.cc5f17b7fae2fdf357c4.min.js:1:187473
+tick@https://video-api.wsj.com/api-video/player/v3/js/chunks/41.cc5f17b7fae2fdf357c4.min.js:1:89141
+fragBufferedComplete@https://video-api.wsj.com/api-video/player/v3/js/chunks/41.cc5f17b7fae2fdf357c4.min.js:1:105389
+onFragBuffered@https://video-api.wsj.com/api-video/player/v3/js/chunks/41.cc5f17b7fae2fdf357c4.min.js:1:196080
+3041/o.prototype.emit@https://video-api.wsj.com/api-video/player/v3/js/chunks/41.cc5f17b7fae2fdf357c4.min.js:1:174541
+emit@https://video-api.wsj.com/api-video/player/v3/js/chunks/41.cc5f17b7fae2fdf357c4.min.js:1:349525
+trigger@https://video-api.wsj.com/api-video/player/v3/js/chunks/41.cc5f17b7fae2fdf357c4.min.js:1:349611
+3041/onFragParsed/<@https://video-api.wsj.com/api-video/player/v3/js/chunks/41.cc5f17b7fae2fdf357c4.min.js:1:284023
+3041/blockBuffers/<@https://video-api.wsj.com/api-video/player/v3/js/chunks/41.cc5f17b7fae2fdf357c4.min.js:1:289379
+nrWrapper@https://www.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001:246:17759
+
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.90&typ=pgv&rnd=m7abj9tmonyw8aux&sid=9222318613852486900&loc=https%3A%2F%2Fwww.wsj.com%2Farticles%2Ftwitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001&new=0&arf=0&ltm=1739873126978&ref=&tzo=-330&wsz=1280x595&res=1280x720&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m7abjdzk5cierilq&ckp=m7abis32499jcuhd&glb=&amo=1658316780&eid0=e4cefa22ef027cc0132f0c218da37da39cdb3228234af4df969b5c463592e123&eit0=wsj&cp_userState=anon&cp_testGroup=48&cp_topDomain=wsj.com&cp_pwTag=default&cp_pwPlacement=cx-snippetad&cp_pwCampaign=28324&cp_pwType=personalized&cp_type=Technology&cp_template=preview&cp_access=paid&cp_section=Tech&cp_subsection=Tech&cp_cms_name=Methode&cp_vix=&cp_subscriber=nonsubscriber&cp_edition=naus&cp_bucket=8&cp_ab_bucket=78&cp_pageContentSource=WSJ%20Online&cp_pageContentType=Article&cp_pageContentTypeDetai=standard&cp_pageSiteProduct=WSJ&cp_userTags=&cp_sessionState=none, line 1: TypeError: cX.loadScript is not a function
+Dynamically enable window occlusion 1
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.

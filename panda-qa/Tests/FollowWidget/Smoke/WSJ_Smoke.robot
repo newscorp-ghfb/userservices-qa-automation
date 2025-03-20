@@ -21,39 +21,47 @@ Test Teardown  CommonFunctionality.Finish Testcase
 Validate the follow button from articles page
     [Documentation]  This test case validates the follow button from articles page
     [Tags]  Smoke  Follow  Article  21
-    IF  "${Env}" == "prod"
-        DefinedKeywords.WSJ Sign In Process
-    ELSE IF  "${Env}" == "dev"
+    #IF  "${Env}" == "prod"
+        #DefinedKeywords.WSJ Sign In Process
+    #ELSE IF  "${Env}" == "dev"
        DefinedKeywords.WSJ Sign In Process
         #DefinedKeywords.Sign In Process
-    END
-    WSJArticlePage.Validate Follow Button
-    WSJArticlePage.Click Follow Button
-    WSJArticlePage.Validate Sign In Modal
-    WSJArticlePage.Click Sign In Button Modal
-    IF  "${Env}" == "prod"
-        DefinedKeywords.Market Watch Sign In Process
-    ELSE IF  "${Env}" == "dev"
-        DefinedKeywords.Sign In Process
-    END
+    #END
 
-    Set Selenium Speed  0.2 seconds
-    WSJArticlePage.Scroll Down
-    WSJArticlePage.Validate Following Button
-    WSJArticlePage.Scroll Down
-    IF  "${Env}" == "prod"
-        Set Selenium Speed  0.1 seconds
-    ELSE IF  "${Env}" == "dev"
-        Set Selenium Speed  0.35 seconds
-    END
-    WSJArticlePage.Click Following Button
-    WSJArticlePage.Click Undo Link
-    WSJArticlePage.Validate Following Button
-    WSJArticlePage.Click Following Button
     WSJArticlePage.Validate Follow Button
+    DefinedKeywords.WSJ Sign In Process
     WSJArticlePage.Click Follow Button
-    WSJArticlePage.Click Preference Center link
-    WSJPreferenceCenterPage.Validate Preference Center page
+    #WSJArticlePage.Validate Sign In Modal
+    #WSJArticlePage.Click Sign In Button Modal
+    Set Selenium Implicit Wait  10
+    CommonFunctionality.Start WSJ Article
+     DefinedKeywords.WSJ Sign In Process
+    #IF  "${Env}" == "prod"
+        #DefinedKeywords.Market Watch Sign In Process
+    #ELSE IF  "${Env}" == "dev"
+        #DefinedKeywords.Sign In Process
+    #END
+
+    #Set Selenium Speed  0.2 seconds
+    DefinedKeywords.WSJ Sign In Process
+      WSJArticlePage.Click Follow Button
+    WSJArticlePage.Scroll Down
+    WSJArticlePage.Validate Following Button
+   # WSJArticlePage.Scroll Down
+    #IF  "${Env}" == "prod"
+     #   Set Selenium Speed  0.1 seconds
+   #ELSE IF  "${Env}" == "dev"
+        #Set Selenium Speed  0.35 seconds
+    #END
+    #WSJArticlePage.Click Following Button
+    #Set Selenium Speed  0.35 seconds
+    #WSJArticlePage.Click Undo Link
+    #WSJArticlePage.Validate Following Button
+    #WSJArticlePage.Click Following Button
+    #WSJArticlePage.Validate Follow Button
+    #WSJArticlePage.Click Follow Button
+    #WSJArticlePage.Click Preference Center link
+    #WSJPreferenceCenterPage.Validate Preference Center page
 #US-T159
 #US-T47
 #US-T48

@@ -1,0 +1,15 @@
+1740057912819	geckodriver	INFO	Listening on 127.0.0.1:59034
+1740057915871	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59035" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileDPwka1"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1740057916449	Marionette	INFO	Marionette enabled
+1740057916695	Marionette	INFO	Listening on port 59046
+WebDriver BiDi listening on ws://127.0.0.1:59035
+Read port: 59046
+console.error: Policies: 
+  Download failed - ERROR_CORRUPT_FILE - file://C:\Program Files\Snow Software\Inventory\Agent\FFCloudmetering.xpi
+1740057916950	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59035/devtools/browser/3a91b644-fb0d-48e5-9685-9d6f3737c3c1
+1740057921614	Marionette	INFO	Stopped listening on port 59046
+Dynamically enable window occlusion 1

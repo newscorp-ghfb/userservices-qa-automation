@@ -1,0 +1,18 @@
+1740057939834	geckodriver	INFO	Listening on 127.0.0.1:64376
+1740057942880	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64377" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofile0tJg8B"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1740057943638	Marionette	INFO	Marionette enabled
+1740057943918	Marionette	INFO	Listening on port 64389
+Read port: 64389
+WebDriver BiDi listening on ws://127.0.0.1:64377
+1740057944042	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Policies: 
+  Download failed - ERROR_CORRUPT_FILE - file://C:\Program Files\Snow Software\Inventory\Agent\FFCloudmetering.xpi
+DevTools listening on ws://127.0.0.1:64377/devtools/browser/e6a8d18a-d6b6-4050-bc6b-0cae3ff93a60
+1740057950223	Marionette	INFO	Stopped listening on port 64389
+JavaScript warning: https://www.s.dev.penews.com/articles/test-3testing-wsj-full-bleed-3k-words-20220215, line 92: Script terminated by timeout at:
+q@https://www.s.dev.penews.com/articles/test-3testing-wsj-full-bleed-3k-words-20220215:92:23
+
+Dynamically enable window occlusion 1

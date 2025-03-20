@@ -1,0 +1,36 @@
+1742459707680	geckodriver	INFO	Listening on 127.0.0.1:58503
+1742459710730	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58504" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofilecvh1iK"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1742459711356	Marionette	INFO	Marionette enabled
+1742459711607	Marionette	INFO	Listening on port 58519
+WebDriver BiDi listening on ws://127.0.0.1:58504
+Read port: 58519
+console.error: Policies: 
+  Download failed - ERROR_CORRUPT_FILE - file://C:\Program Files\Snow Software\Inventory\Agent\FFCloudmetering.xpi
+1742459711855	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58504/devtools/browser/8fe49bc3-9bde-4ec8-9ad7-d41e24cd56ed
+console.error: ({})
+console.error: ({})
+JavaScript error: https://tags.tiqcdn.com/utag/wsjdn/barrons/prod/utag.js, line 94: ReferenceError: s is not defined
+console.error: ({})
+console.error: ({})
+JavaScript error: https://tags.tiqcdn.com/utag/wsjdn/barrons/prod/utag.js, line 94: ReferenceError: s is not defined
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.92&typ=pgv&rnd=m8h3j1rqbrgtuqwf&sid=9222325317970825875&loc=https%3A%2F%2Fwww.barrons.com%2Farticles%2Fwendys-wen-stock-earnings-51652268634&new=1&arf=0&ltm=1742459721411&ref=&tzo=-330&wsz=1920x857&res=1920x982&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m8h3j29qooid6juu&ckp=m8h3j1rqg41f66kr&glb=&amo=1652281620&cp_userState=anon, line 1: TypeError: cX.loadScript is not a function
+1742459724104	Marionette	INFO	Stopped listening on port 58519
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+JavaScript warning: https://pagead2.googlesyndication.com/bg/PcSWGRWl2mLW4O5uRUTCwBTBSkoSFBc_REwve846xD4.js line 2 > eval line 1148 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/PcSWGRWl2mLW4O5uRUTCwBTBSkoSFBc_REwve846xD4.js line 2 > eval line 1148 > eval line 1 > eval line 1 > eval, line 1: Script terminated by timeout at:
+g@https://pagead2.googlesyndication.com/bg/PcSWGRWl2mLW4O5uRUTCwBTBSkoSFBc_REwve846xD4.js line 2 > eval line 1148 > eval line 1 > eval line 1 > eval:1:24
+@https://pagead2.googlesyndication.com/bg/PcSWGRWl2mLW4O5uRUTCwBTBSkoSFBc_REwve846xD4.js line 2 > eval line 1148 > eval line 1 > eval line 1 > eval:1:48
+gv@https://pagead2.googlesyndication.com/bg/PcSWGRWl2mLW4O5uRUTCwBTBSkoSFBc_REwve846xD4.js line 2 > eval line 1148 > eval line 1 > eval line 1 > eval:1:217
+of@https://pagead2.googlesyndication.com/bg/PcSWGRWl2mLW4O5uRUTCwBTBSkoSFBc_REwve846xD4.js line 2 > eval line 1148 > eval line 1 > eval line 1 > eval:1:47
+@https://pagead2.googlesyndication.com/bg/PcSWGRWl2mLW4O5uRUTCwBTBSkoSFBc_REwve846xD4.js line 2 > eval:1148:51398
+Pa@https://pagead2.googlesyndication.com/bg/PcSWGRWl2mLW4O5uRUTCwBTBSkoSFBc_REwve846xD4.js line 2 > eval:1148:27081
+wt@https://pagead2.googlesyndication.com/bg/PcSWGRWl2mLW4O5uRUTCwBTBSkoSFBc_REwve846xD4.js line 2 > eval:1148:6579
+FR@https://pagead2.googlesyndication.com/bg/PcSWGRWl2mLW4O5uRUTCwBTBSkoSFBc_REwve846xD4.js line 2 > eval:1148:7681
+wt/<@https://pagead2.googlesyndication.com/bg/PcSWGRWl2mLW4O5uRUTCwBTBSkoSFBc_REwve846xD4.js line 2 > eval:1148:6677
+UH</<@https://pagead2.googlesyndication.com/bg/PcSWGRWl2mLW4O5uRUTCwBTBSkoSFBc_REwve846xD4.js line 2 > eval:1148:48881
+
+Dynamically enable window occlusion 1

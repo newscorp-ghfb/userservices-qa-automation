@@ -1,0 +1,73 @@
+1742367488161	geckodriver	INFO	Listening on 127.0.0.1:53284
+1742367491206	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53285" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileN0VcSQ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1742367491818	Marionette	INFO	Marionette enabled
+1742367492054	Marionette	INFO	Listening on port 53298
+WebDriver BiDi listening on ws://127.0.0.1:53285
+Read port: 53298
+console.error: Policies: 
+  Download failed - ERROR_CORRUPT_FILE - file://C:\Program Files\Snow Software\Inventory\Agent\FFCloudmetering.xpi
+1742367492308	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53285/devtools/browser/79a500d1-8b31-4d62-b2ea-6865bb330e68
+console.error: ({})
+console.error: ({})
+JavaScript error: https://www.barrons.com/asset/dj-watchlist/v1.14.3/p-0633e57d.entry.js, line 11: TypeError: Error.captureStackTrace is not a function
+JavaScript warning: https://js-agent.newrelic.com/nr-1044.min.js, line 1: Script terminated by timeout at:
+r@https://js-agent.newrelic.com/nr-1044.min.js:1:22526
+[15]</r/<@https://js-agent.newrelic.com/nr-1044.min.js:1:9115
+
+console.error: ({})
+console.error: ({})
+JavaScript error: https://tags.tiqcdn.com/utag/wsjdn/barrons/prod/utag.js, line 94: ReferenceError: s is not defined
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 2ms)
+JavaScript warning: https://pagead2.googlesyndication.com/bg/-DAcQ9lQZbiM5HME96vizN3snXxurSkogwgOEvHdK-k.js line 2 > eval line 1119 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://cdn.cxense.com/sp1.html#ver=2.8.92&typ=pgv&rnd=m8fkmizofi06dlww&sid=9222325317970825875&loc=https%3A%2F%2Fwww.barrons.com%2Farticles%2Fwendys-wen-stock-earnings-51652268634&new=1&arf=0&ltm=1742367504810&ref=&tzo=-330&wsz=1920x857&res=1920x982&dpr=1&col=24&bln=en-US&chs=UTF-8&cks=m8fkmjq8jtoaefuq&ckp=m8fkmizopj0kkncu&glb=&amo=1652281620&cp_userState=anon, line 1: TypeError: cX.loadScript is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/DWfktBMuXDo-4py4C4f5DVkUn3pM3IEbDs5BkaB-n2Q.js line 2 > eval line 6137 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/DWfktBMuXDo-4py4C4f5DVkUn3pM3IEbDs5BkaB-n2Q.js line 2 > eval line 403 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js, line 48: Script terminated by timeout at:
+Va@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:534
+Wa@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:436
+hh/c/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:131:292
+tc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.Fd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+pg/</</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:121:515
+Ta.prototype.Vb/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:315
+pg/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:121:524
+tc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.Fd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+pg/</</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:121:515
+Ta.prototype.Vb/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:48:315
+pg/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:121:524
+tc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:81:218
+n.Fd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:80:523
+h@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:93:477
+
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.barrons.com/" ({})
+JavaScript warning: https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634, line 129: Script terminated by timeout at:
+De/</this.getCtx@https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634:129:53818
+1847/Q/<@https://js-agent.newrelic.com/nr-spa-1.284.1.min.js:2:80307
+emit@https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634:129:9593
+i@https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634:129:17867
+nrWrapper@https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634:129:17695
+
+1742387873243	Marionette	INFO	Stopped listening on port 53298
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function

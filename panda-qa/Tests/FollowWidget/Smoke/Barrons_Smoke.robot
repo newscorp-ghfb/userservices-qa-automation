@@ -24,9 +24,7 @@ Validate the author follow button from articles page
 
     Set Selenium Speed  0.5 seconds
     DefinedKeywords.Barrons Article Sign in Process
-    Set Selenium Implicit Wait  40
-    Execute javascript  window.scrollTo(0,500)
-    Set Selenium Implicit Wait  60
+    Set Selenium Implicit Wait  20
     Execute javascript  window.scrollTo(0,500)
     BarronsArticlePage.Validate Follow Button
     BarronsArticlePage.Click Follow Button
@@ -53,7 +51,7 @@ Validate the follow button from authors page
     BarronsArticlePage.Click author hyperlink
     #IF  "${Env}" == "dev"
         #BarronsArticlePage.Click author hyperlink
-    #END
+  #  END
     BarronsAuthorsPage.Validate Authors Page
     BarronsArticlePage.Validate Follow Button
     BarronsArticlePage.Click Follow Button
@@ -110,11 +108,11 @@ Validate the stock pick follow button from stock pick page
 
     CommonFunctionality.Start Barrons Stock Picks for Stock Picks breadcrumb
     DefinedKeywords.Barrons Stock Pick Sign In Process
-    Set Selenium Implicit Wait  40
-   # Execute javascript  window.scrollTo(0,500)
+    Set Selenium Speed  05 seconds
+    #Execute javascript  window.scrollTo(0,500)
     #Set Selenium Implicit Wait  30
-    #BarronsArticlePage.Validate Custom Topic Stock Pick Follow Button
-   # BarronsArticlePage.Click Custom Topic Stock Pick Follow Button
+    BarronsArticlePage.Validate Custom Topic Stock Pick Follow Button
+    BarronsArticlePage.Click Custom Topic Stock Pick Follow Button
     #Set Selenium Speed  0.2 seconds
     #BarronsArticlePage.Validate Custom Topic Stock Pick UnFollow Button
     #BarronsArticlePage.Click Custom Topic Stock Pick UnFollow Button

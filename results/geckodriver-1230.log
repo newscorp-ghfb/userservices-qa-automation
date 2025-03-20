@@ -1,0 +1,60 @@
+1742366267763	geckodriver	INFO	Listening on 127.0.0.1:49778
+1742366270794	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49779" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofile0mIVZa"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1742366271550	Marionette	INFO	Marionette enabled
+1742366271831	Marionette	INFO	Listening on port 49796
+WebDriver BiDi listening on ws://127.0.0.1:49779
+Read port: 49796
+console.error: Policies: 
+  Download failed - ERROR_CORRUPT_FILE - file://C:\Program Files\Snow Software\Inventory\Agent\FFCloudmetering.xpi
+1742366272083	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:49779/devtools/browser/8fdbb0be-aae5-4571-a1bc-fa2898777ea7
+console.error: ({})
+console.error: ({})
+JavaScript error: https://www.barrons.com/asset/dj-watchlist/v1.14.3/p-0633e57d.entry.js, line 11: TypeError: Error.captureStackTrace is not a function
+JavaScript warning: https://js-agent.newrelic.com/nr-1044.min.js, line 1: Script terminated by timeout at:
+r@https://js-agent.newrelic.com/nr-1044.min.js:1:22526
+[15]</r/<@https://js-agent.newrelic.com/nr-1044.min.js:1:9115
+
+console.error: ({})
+console.error: ({})
+JavaScript error: https://tags.tiqcdn.com/utag/wsjdn/barrons/prod/utag.js, line 94: ReferenceError: s is not defined
+JavaScript warning: https://pbc.barrons.com/p/dj/barrons/pb.js, line 72: Script terminated by timeout at:
+5330/R/</</<@https://pbc.barrons.com/p/dj/barrons/pb.js:72:704
+5330/R/</<@https://pbc.barrons.com/p/dj/barrons/pb.js:72:596
+5023/t.emit/<@https://pbc.barrons.com/p/dj/barrons/pb.js:14:67524
+5023/t.emit/<@https://pbc.barrons.com/p/dj/barrons/pb.js:14:67492
+5023/t.emit@https://pbc.barrons.com/p/dj/barrons/pb.js:14:67600
+1445/D.callBids/</<@https://pbc.barrons.com/p/dj/barrons/pb.js:14:19042
+I@https://pbc.barrons.com/p/dj/barrons/pb.js:14:57776
+1445/D.callBids/<@https://pbc.barrons.com/p/dj/barrons/pb.js:14:18980
+1445/D.callBids@https://pbc.barrons.com/p/dj/barrons/pb.js:14:18919
+run@https://pbc.barrons.com/p/dj/barrons/pb.js:14:42476
+s@https://pbc.barrons.com/p/dj/barrons/pb.js:14:42924
+de@https://pbc.barrons.com/p/dj/barrons/pb.js:14:42977
+6881/N<@https://pbc.barrons.com/p/dj/barrons/pb.js:14:44496
+callBids@https://pbc.barrons.com/p/dj/barrons/pb.js:14:43622
+8261/oe<@https://pbc.barrons.com/p/dj/barrons/pb.js:14:99804
+8128/u/h/</y/o[n]@https://pbc.barrons.com/p/dj/barrons/pb.js:13:3129
+p@https://pbc.barrons.com/p/dj/barrons/pb.js:13:2982
+6894/d/<@https://pbc.barrons.com/p/dj/barrons/pb.js:14:136367
+8178/i</<@https://pbc.barrons.com/p/dj/barrons/pb.js:44:696
+s@https://pbc.barrons.com/p/dj/barrons/pb.js:14:138369
+5555/then/<@https://pbc.barrons.com/p/dj/barrons/pb.js:14:138419
+o@https://pbc.barrons.com/p/dj/barrons/pb.js:14:138184
+then@https://pbc.barrons.com/p/dj/barrons/pb.js:14:138257
+8178/i<@https://pbc.barrons.com/p/dj/barrons/pb.js:44:650
+6894/h/</</<@https://pbc.barrons.com/p/dj/barrons/pb.js:14:137641
+measureHookTime@https://pbc.barrons.com/p/dj/barrons/pb.js:14:135378
+6894/h/</<@https://pbc.barrons.com/p/dj/barrons/pb.js:14:137597
+p@https://pbc.barrons.com/p/dj/barrons/pb.js:13:2982
+6894/d/<@https://pbc.barrons.com/p/dj/barrons/pb.js:14:136367
+f@https://pbc.barrons.com/p/dj/barrons/pb.js:72:1530
+nrWrapper@https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634:129:17734
+
+1742366281531	Marionette	INFO	Stopped listening on port 49796
+Dynamically enable window occlusion 1
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown

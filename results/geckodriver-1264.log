@@ -1,0 +1,24 @@
+1742460570564	geckodriver	INFO	Listening on 127.0.0.1:55351
+1742460573618	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55352" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "D:\\Users\\sasikumarj\\AppData\\Local\\Temp\\rust_mozprofileXhiV6B"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1742460574232	Marionette	INFO	Marionette enabled
+1742460574497	Marionette	INFO	Listening on port 55366
+WebDriver BiDi listening on ws://127.0.0.1:55352
+Read port: 55366
+console.error: Policies: 
+  Download failed - ERROR_CORRUPT_FILE - file://C:\Program Files\Snow Software\Inventory\Agent\FFCloudmetering.xpi
+1742460574741	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:55352/devtools/browser/c258cf9b-9e59-4ccf-8c2f-c555ba4b4a52
+console.error: ({})
+console.error: ({})
+JavaScript error: https://tags.tiqcdn.com/utag/wsjdn/barrons/prod/utag.js, line 94: ReferenceError: s is not defined
+console.error: ({})
+console.error: ({})
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 1ms)
+JavaScript warning: https://pagead2.googlesyndication.com/bg/PcSWGRWl2mLW4O5uRUTCwBTBSkoSFBc_REwve846xD4.js line 2 > eval line 1738 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://tags.tiqcdn.com/utag/wsjdn/barrons/prod/utag.js, line 94: ReferenceError: s is not defined
+JavaScript warning: https://cdn.gbqofs.com/sv/b/detector-bootstrap.min.js, line 0: Successfully compiled asm.js code (total compilation time 3ms)
+1742460593570	Marionette	INFO	Stopped listening on port 55366
+Dynamically enable window occlusion 1
