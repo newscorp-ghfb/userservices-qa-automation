@@ -10,3 +10,7 @@ results/
 
 # Ignore temporary files
 *.tmp
+
+.pabotsuitenames
+local.log
+*.log
