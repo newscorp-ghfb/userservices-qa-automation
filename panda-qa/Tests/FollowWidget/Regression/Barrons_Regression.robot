@@ -15,7 +15,6 @@ Resource  ../../../Resources/PageObjects/BarronsCMSPage.robot
 Resource  ../../../Resources/PageObjects/BarronsMailboxPage.robot
 Resource  ../../../Resources/PageObjects/BarronsCreateArticlePage.robot
 Resource  ../../../Resources/PageObjects/BarronsStockScreenerPage.robot
-
 Library  SeleniumLibrary
 
 
@@ -39,7 +38,6 @@ Validate the multiple authors follow button from articles page
     Set Selenium Implicit Wait  50s
     BarronsArticlePage.Validate author on article page
 
-
 #US-T477
 Validate the Barrons Preference Center page
     [Documentation]  This test case validates the barrons preference center page
@@ -51,8 +49,6 @@ Validate the Barrons Preference Center page
     BarronsNewslettersPage.Click Watchlist Button
     BarronsNewslettersPage.Barrons Signout Process
     BarronsNewslettersPage.Validate watchlist is present
-
-
 
 #US-T467
 Validate the Barrons Preference Center page watchlist logout
@@ -98,7 +94,6 @@ Validate the Barrons Preference Center page
 #    BarronsPreferenceCenterPage.Click Following Toggle Alert Pop up
 #    BarronsPreferenceCenterPage.Click Barrons tab
 #    BarronsPreferenceCenterPage.Validate Company Quote Link Not exists
-
 
 #US-T26
 Validate Authors for Barrons Article page without byline
@@ -190,8 +185,6 @@ Validate the Watchlist widget from Watchlist
     Execute javascript  window.scrollTo(0,500)
     BarronsWatchlistPage.Click Search
 
-
-
 #US-T248
 #US-T249
 #US-T250
@@ -203,7 +196,7 @@ Validate the Watchlist widget from Quotes page
     DefinedKeywords.Barrons Quote Page Sign in Process
     Set Selenium Implicit Wait  10 seconds
     BarronsQuotesPage.Validate Quote Page
-#    BarronsQuotesPage.Delete Watchlist
+    #BarronsQuotesPage.Delete Watchlist
     # BarronsQuotesPage.Validate Watchlist for non-logged user
     #BarronsQuotesPage.Delete Watchlist
     #BarronsQuotesPage.Validate Create Button
@@ -250,7 +243,6 @@ Verify if a user is able to navigate to Barrons Stock Screener and subscribe in 
 #    BarronsStockScreenerPage.Click on Show Results Button
 #    BarronsStockScreenerPage.Click on All Screener Option
 
-
 #US-T125
 #US-T129
 #US-T130
@@ -281,7 +273,7 @@ Validate the Watchlist widget from Market Data page
     #BarronsMarketDataPage.Save Watchlist Changes
     #BarronsMarketDataPage.Delete Watchlist
     #BarronsMarketDataPage.Delete Watchlist
-#    BarronsMarketDataPage.Validate Create Button
+    #BarronsMarketDataPage.Validate Create Button
 
 #US-T466
 Validate the Watchlist widget from Market Data page
@@ -343,7 +335,7 @@ Validate the Barrons real-time stock picks notification
 #US T357
 Validate Postback on Preference Center
     [Documentation]  This test case validates the Barrons Postback on Preference Center
-    [Tags]  Regression  Postback                Follow1
+    [Tags]  Regression  Postback  Follow1
     BarronsPreferenceCenterPage.Add Breaking News By Hotlink
     DefinedKeywords.Sign In Process
     BarronsPreferenceCenterPage.Validate Followed Breaking News
@@ -361,6 +353,3 @@ Validate Postback on Preference Center
     BarronsMailboxPage.Validate Barrons real-time company notification for Postback
 #    BarronsMailboxPage.Unsubscribe the mails
 #    BarronsPreferenceCenterPage.Add Company By Hotlink
-
-
-

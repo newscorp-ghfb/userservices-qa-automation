@@ -188,13 +188,14 @@ Barrons Newsletter Sign in Process
 
 Barrons Stock Pick Sign In Process
    Set Selenium Speed  5 seconds
-   Wait Until Element is Visible  //html/body/div[3]/div/div/header/div/div[1]/div[3]/div/a
-   Click Element  //html/body/div[3]/div/div/header/div/div[1]/div[3]/div/a  #//*[@id="__next"]/div/header/div/div[1]/div[3]/div/a  #//html/body/div[3]/div/div/header/div/div[1]/div[3]/div/a
+   Wait Until Element is Visible  //*[@id="__next"]/div/header/div/div[1]/div[3]/div/a
+   Set Selenium Implicit Wait  5s
+   Click Element  //*[@id="__next"]/div/header/div/div[1]/div[3]/div/a  #//*[@id="__next"]/div/header/div/div[1]/div[3]/div/a  #//html/body/div[3]/div/div/header/div/div[1]/div[3]/div/a
    Wait Until Element is Visible  //*[@id="emailOrUsername"]
    Input Text  //*[@id="emailOrUsername"]  QABARRONSONLY  #akhilesh.khanduri@dowjones.com  #//*[@id=":r5:-form-item"]  QABARRONSONLY  #akhilesh.khanduri@dowjones.com
-   Set Selenium Implicit Wait  10s
+   Set Selenium Implicit Wait  5s
    Click Button  //html/body/div/section/div/div[2]/form/button[1]
-   Set Selenium Implicit Wait  10s
+   Set Selenium Implicit Wait  5s
    Wait Until Element Is Visible  //*[@id="password"]
    Input Text  //*[@id="password"]  password1  #AKpolarsxzi2594
    Wait Until Element is Visible  //html/body/div/section/div/div[2]/form/button
@@ -266,7 +267,7 @@ New WSJ Sign In Process
     Click Button  //input[@type='submit']  #//*[@id="basic-login"]/div[1]/form/div[2]/div[6]/div[1]/button[2]
     Set Selenium Implicit Wait  10s
     Wait Until Element Is Visible  //*[@id="input61"]  #//input[@type='password']  #//*[@id="password-login-password"]
-    Input Text  //*[@id="input61"]   iFzp4wb8qJpnUeL  #password1  #B9oB6pTg4LO8obgDjsy6Gjj9vUE2fe
+    Input Text  //*[@id="input61"]   iFzp4wb8qJpnUeL1  #password1  #B9oB6pTg4LO8obgDjsy6Gjj9vUE2fe
         #VTdnnCgCnny100g62    #AKpolarzx@2594  #68L91AbU?98&T-Ryk7h|c}Q:uX   #//*[@id="password-login-password"]  #Cuceis19841234!
     Set Selenium Implicit Wait  10s
     Click Button  //input[@type='submit']  #//*[@id="password-login"]/div/form/div/div[5]/div[1]/button

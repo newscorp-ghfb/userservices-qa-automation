@@ -5,7 +5,7 @@ Resource  ../Resources/DefinedKeywords.robot
 
 *** Variables ***
 ${BROWSERSTACK_USERNAME}=   newsroomdev.test.6@dowjones.com  #jansisasikumar_XRKqk6  #newsroomdevtest_xCBmjv
-${BROWSERSTACK_ACCESS_KEY}=  iFzp4wb8qJpnUeL  #Lv2l3jg7pYbuCg2caMMgmfqVcsuv8g #ptazxpsTbsRFWhsEXpoM  #s3c1cGNU2UpLq5iJzNzx
+${BROWSERSTACK_ACCESS_KEY}=  iFzp4wb8qJpnUeL1  #Lv2l3jg7pYbuCg2caMMgmfqVcsuv8g #ptazxpsTbsRFWhsEXpoM  #s3c1cGNU2UpLq5iJzNzx
 ${BROWSERSTACK_URL}=   https://automate.browserstack.com/dashboard/v2/builds/3263aa6a845e0b5e2d6e245b9107760e32c3105f?projectIds=2299596${BROWSERSTACK_USERNAME}:${BROWSERSTACK_ACCESS_KEY}@hub-cloud.browserstack.com/wd/hub
 
 ${CookieValue1}=  x-dev-access-clientid
@@ -16,7 +16,7 @@ ${ExpectedCookieValue2}=   5Nnx9DUR7NQg8XPwvztud7o0OivfiKth
 
 ${Browser}=  ff  #headless, ff, chrome, edge, safari
 
-${Env}=  prod  #dev, prod, stg
+${Env}=  dev   #dev, prod, stg
 
 ${Email_prod}=  barronsadvisorcs@gmail.com
 
@@ -83,10 +83,10 @@ Start Barrons Article
        Open Browser  https://www.barrons.com  ${Browser}  options=${options}
         Go To  https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634
     ELSE IF  "${Env}" == "dev"
-       Open Browser  https://www.barrons.com  ${Browser}  options=${options}
+       Open Browser  https://www.s.dev.barrons.com  ${Browser}  options=${options}
         Go To  https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000
     END
-    Wait Until Page Contains Element  dom:${JSFollowButtonBarronsPath}
+    #Wait Until Page Contains Element  dom:${JSFollowButtonBarronsPath}
     Maximize Browser Window
 
 Start Mansion Global Article
@@ -197,7 +197,7 @@ Start PEN Article
         Go To  https://www.penews.com/articles/lp-survey-warns-brace-for-some-high-profile-fundraising-failures-20220622
     ELSE IF  "${Env}" == "dev"
         Open Browser  https://www.s.dev.penews.com  ${Browser}  options=${options}
-        Go To  https://www.s.dev.penews.com/articles/test-3testing-wsj-full-bleed-3k-words-20220215
+        Go To  https://www.dev.penews.com/articles/test-3testing-wsj-full-bleed-3k-words-20220215
     END
     Wait Until Element Is Visible  dom:${JSFollowButtonMGPath}
     Wait Until Page Contains Element  dom:${JSFollowButtonMGPath}
@@ -208,7 +208,7 @@ Start Barrons Article without byline
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.barrons.com  ${Browser}  options=${options}
-        Go To  https://www.barrons.com/articles/how-to-handle-an-uncertain-market-buy-weakness-sell-strength-f145c306
+        Go To   https://www.barrons.com/articles/buy-under-armour-stock-pick-51650672000  #https://www.barrons.com/articles/how-to-handle-an-uncertain-market-buy-weakness-sell-strength-f145c306
         Execute javascript  window.scrollTo(0,500)
     ELSE IF  "${Env}" == "dev"
         Open Browser  https://www.s.dev.barrons.com  ${Browser}  options=${options}
@@ -420,7 +420,7 @@ Start Barrons Stock Picks for Stock Picks breadcrumb
         Open Browser  https://www.s.dev.barrons.com  ${Browser}  options=${options}
         Go To  https://www.s.dev.barrons.com/market-data/stocks/stock-picks?mod=BOL_TOPNAV
     END
-    Set Focus To Element  //*[@id="__next"]/div/div[2]/div[1]/h1  #//*[text()="Barron's Latest Stock Picks"]
+    #Set Focus To Element  //*[@id="__next"]/div/div[2]/div[1]/h1  #//*[text()="Barron's Latest Stock Picks"]
     Maximize Browser Window
 
 Start Barrons Stock Picks
