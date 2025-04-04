@@ -6,7 +6,7 @@ resultspabot/
 
 # Optional: Ignore other common files like logs or results
 *.log
-*.result
+*.results
 *.out
 *.tmp
 *.png
