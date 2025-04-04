@@ -1,16 +1,19 @@
+# Ignore results folder
+results/
+
+# Ignore pabot folder
+pabot/
+
+# Ignore log folder
+log/
+
 # Ignore log files
 *.log
-logs/
-debug.log
-
-# Ignore result files
-results/
-*.result
-*.out
+local.log
 
 # Ignore temporary files
 *.tmp
 
-.pabotsuitenames
-local.log
-*.log
+# Ignore result files
+*.result
+*.out

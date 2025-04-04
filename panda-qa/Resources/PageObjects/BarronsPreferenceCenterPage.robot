@@ -32,7 +32,7 @@ Validate Followed Authors
 Validate Following Toggle Feature
 #    Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[4]/div
     IF  "${Env}" == "prod"
-        Wait Until Element is Visible  //*[text()="Angela Palumbo"]/../../../../td[4]/div
+        Wait Until Element is Visible  //*[text()="Teresa Rivas"]/../../../../td[4]/div  #//*[text()="Angela Palumbo"]/../../../../td[4]/div
     ELSE IF  "${Env}" == "dev"
         Wait Until Element is Visible  //*[text()="Teresa Rivas"]/../../../../td[4]/div
     END
@@ -40,7 +40,7 @@ Validate Following Toggle Feature
 
 Click Following Toggle Feature
     IF  "${Env}" == "prod"
-        Click Element  //*[text()="Angela Palumbo"]/../../../../td[4]/div
+        Click Element  //*[text()="Teresa Rivas"]/../../../../td[4]/div
     ELSE IF  "${Env}" == "dev"
         Click Element  //*[text()="Teresa Rivas"]/../../../../td[4]/div
     END
@@ -69,8 +69,8 @@ Validate Following Frequency
 #    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div/div[2]/label[1]/span[2]    # //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[1]/span[2]
 #    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div/div[2]/label[2]/span[2]
     IF  "${Env}" == "prod"
-        Page Should Contain Element  //*[text()="Angela Palumbo"]/../../../../td[3]/div/div[2]/label[1]/input[@value='realtime']
-        Page Should Contain Element  //*[text()="Angela Palumbo"]/../../../../td[3]/div/div[2]/label[2]/input[@value='digest']
+        Page Should Contain Element  //*[text()="Teresa Rivas"]/../../../../td[3]/div/div[2]/label[1]/input[@value='realtime']
+        Page Should Contain Element  //*[text()="Teresa Rivas"]/../../../../td[3]/div/div[2]/label[1]/input[@value='realtime']  #//*[text()="Angela Palumbo"]/../../../../td[3]/div/div[2]/label[2]/input[@value='digest']
     ELSE IF  "${Env}" == "dev"
         Page Should Contain Element  //*[text()="Teresa Rivas"]/../../../../td[3]/div/div[2]/label[1]/input[@value='realtime']
         Page Should Contain Element  //*[text()="Teresa Rivas"]/../../../../td[3]/div/div[2]/label[2]/input[@value='digest']

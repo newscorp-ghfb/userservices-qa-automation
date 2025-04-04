@@ -101,21 +101,22 @@ Barrons Quote Page Sign in Process
    Click Element  //html/body/div/section/div/div[2]/form/button  #//html/body/main/div[2]/section[16]/div/form/div[5]/button
 
 Barrons Stock Screener Sign in Process
-   Wait Until Element is Visible  //html/body/div[3]/div/header/div/div[1]/div[3]/div/a
-   Set Selenium Implicit Wait  2s
-   Click Element  //html/body/div[3]/div/header/div/div[1]/div[3]/div/a
+   Set Selenium Speed  10 seconds
+   Wait Until Element is Visible  //a[text()='Sign In']  timeout=10s  #//html/body/div[3]/div/header/div/div[1]/div[3]/div/a
+   Set Selenium Speed  2 seconds
+   Click Element  //a[text()='Sign In']  #//html/body/div[3]/div/header/div/div[1]/div[3]/div/a
    Wait Until Element Is Visible  //*[@id="emailOrUsername"]
    Click Element   //*[@id="emailOrUsername"]
    Input Text  //*[@id="emailOrUsername"]  QABARRONSONLY  #//*[@id=":r5:-form-item"]  QABARRONSONLY  #akhilesh.khanduri@dowjones.com
-   Set Selenium Implicit Wait  10s
+   Set Selenium Speed  10 seconds
    Click Button  //html/body/div/section/div/div[2]/form/button[1]
-   Set Selenium Implicit Wait  10s
+   Set Selenium Speed  10 seconds
    Wait Until Element Is Visible  //*[@id="password"]
    Input Text  //*[@id="password"]  password1
-   Set Selenium Implicit Wait  10
+   Set Selenium Speed  10 seconds
    Wait Until Element is Visible  //html/body/div/section/div/div[2]/form/button
    Click Element  //html/body/div/section/div/div[2]/form/button  #//html/body/main/div[2]/section[16]/div/form/div[5]/button
-   Set Selenium Implicit Wait  60
+   Set Selenium Speed  60 seconds
 
 WSJ Postback Sign In Process
     IF  "${Env}" == "prod"
@@ -162,13 +163,11 @@ Barrons Article Sign in Process
    Wait Until Element is Visible  //*[@id="__next"]/header/div/div[1]/div[3]/div/a
    Click Element  //*[@id="__next"]/header/div/div[1]/div[3]/div/a
    Wait Until Element is Visible  //*[@id="emailOrUsername"]
+   Set Selenium Speed  5 seconds
    Input Text  //*[@id="emailOrUsername"]  QABARRONSONLY  #//*[@id=":r5:-form-item"]  QABARRONSONLY  #akhilesh.khanduri@dowjones.com
-   Set Selenium Implicit Wait  10s
    Click Button  //html/body/div/section/div/div[2]/form/button[1]
-   Set Selenium Implicit Wait  10s
    Wait Until Element Is Visible  //*[@id="password"]
    Input Text  //*[@id="password"]  password1
-   Set Selenium Implicit Wait  10
    Wait Until Element is Visible  //html/body/div/section/div/div[2]/form/button
    Click Element  //html/body/div/section/div/div[2]/form/button  #//html/body/main/div[2]/section[16]/div/form/div[5]/button
 

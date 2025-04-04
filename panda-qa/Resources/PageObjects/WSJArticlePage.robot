@@ -50,7 +50,7 @@ ${JSSignInButtonPath}=  document.querySelector('div')  #1
 *** Keywords ***
 Validate Follow Button
     Execute javascript  window.scrollTo(0,500)
-    Wait Until Element is Visible  //*[@id="__next"]/div/main/div[2]/article/div[1]/div[1]/div/div/div/div[1]/div/div/div/ufc-follow-author-widget  #dom:${JSFollowButtonWSJPath}
+    Wait Until Element is Visible   //ufc-follow-author-widget   #dom:${JSFollowButtonWSJPath}
     #Element Text Should Be  //*[@id="__next"]/div/main/div[2]/article/div[2]/div[1]/div/div/div/div[1]/div/div/div/ufc-follow-author-widget  #dom:${JSFollowButtonWSJPath}  Follow  timeout=30
 
 Validate Custom Follow Button
