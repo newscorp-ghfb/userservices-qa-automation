@@ -1,19 +1,12 @@
-# Ignore results folder
-results/
-
-# Ignore pabot folder
-pabot/
-
 # Ignore log folder
 log/
 
-# Ignore log files
+# Ignore resultspabot folder
+resultspabot/
+
+# Optional: Ignore other common files like logs or results
 *.log
-local.log
-
-# Ignore temporary files
-*.tmp
-
-# Ignore result files
 *.result
 *.out
+*.tmp
+*.png
