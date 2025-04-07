@@ -67,7 +67,7 @@ Validate the Barrons Preference Center page watchlist logout
 #US-T81
 Validate the Barrons Preference Center page
     [Documentation]  This test case validates the barrons preference center page
-    [Tags]  Regression  PreferenceCenter
+    [Tags]  Regression  PreferenceCenter  JenkinsTest
 
     Set Selenium Speed  5 seconds
     BarronsPreferenceCenterPage.Add Author By Hotlink
@@ -248,7 +248,7 @@ Verify if a user is able to navigate to Barrons Stock Screener and subscribe in 
 #US-T130
 Validate the Watchlist widget from Market Data pages
     [Documentation]  This test case validates the watchlist widget from market data page
-    [Tags]  Regression  Watchlist  MarketdataPage   JenkinsTest  #US-T125
+    [Tags]  Regression  Watchlist  MarketdataPage   US-T125
 
     CommonFunctionality.Start Barrons for Market Data page
     BarronsMarketDataPage.Validate Watchlist for non-logged user
