@@ -67,7 +67,7 @@ Validate the Barrons Preference Center page watchlist logout
 #US-T81
 Validate the Barrons Preference Center page
     [Documentation]  This test case validates the barrons preference center page
-    [Tags]  Regression  PreferenceCenter  RegressionANDJenkinsTest
+    [Tags]  Regression  PreferenceCenter
 
     Set Selenium Speed  5 seconds
     BarronsPreferenceCenterPage.Add Author By Hotlink

@@ -71,9 +71,9 @@ Validate the WSJ Preference Center page Subscribe color
 #US-T403
 Validate the WSJ Follow Function
     [Documentation]  This test case validates the WSJ Follow Function
-    [Tags]  Regression  Follow Function  JenkinsTest
+    [Tags]  Regression  Follow Function  403
     CommonFunctionality.Start WSJ Homepage
-    Set Selenium Implicit Wait  10s
+     Set Selenium Speed  10 seconds
     DefinedKeywords.WSJ Alerts Sign In Process
     #Switch Window  ${URL}
     WSJPreferenceCenterPage.Validate the follow function for AI alerts prod

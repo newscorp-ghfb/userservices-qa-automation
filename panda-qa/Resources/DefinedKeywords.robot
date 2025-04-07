@@ -107,7 +107,7 @@ Barrons Stock Screener Sign in Process
    Click Element  //a[text()='Sign In']  #//html/body/div[3]/div/header/div/div[1]/div[3]/div/a
    Wait Until Element Is Visible  //*[@id="emailOrUsername"]
    Click Element   //*[@id="emailOrUsername"]
-   Input Text  //*[@id="emailOrUsername"]  QABARRONSONLY  #//*[@id=":r5:-form-item"]  QABARRONSONLY  #akhilesh.khanduri@dowjones.com
+   Input Text  //*[@id="emailOrUsername"]  barrons_core_prod@yopmail.com  #QABARRONSONLY  #//*[@id=":r5:-form-item"]  QABARRONSONLY  #akhilesh.khanduri@dowjones.com
    Set Selenium Speed  10 seconds
    Click Button  //html/body/div/section/div/div[2]/form/button[1]
    Set Selenium Speed  10 seconds
