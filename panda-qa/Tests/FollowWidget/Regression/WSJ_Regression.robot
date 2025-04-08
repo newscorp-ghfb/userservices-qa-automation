@@ -71,14 +71,13 @@ Validate the WSJ Preference Center page Subscribe color
 #US-T403
 Validate the WSJ Follow Function
     [Documentation]  This test case validates the WSJ Follow Function
-    [Tags]  Regression  Follow Function  US-T403
+    [Tags]  Regression  Follow Function  403
     CommonFunctionality.Start WSJ Homepage
-    Set Selenium Implicit Wait  10s
+     Set Selenium Speed  10 seconds
     DefinedKeywords.WSJ Alerts Sign In Process
     #Switch Window  ${URL}
     WSJPreferenceCenterPage.Validate the follow function for AI alerts prod
     #Set Selenium Implicit Wait  10s
-
     WSJPreferenceCenterPage.Navigate to the Sections&Topics prod
 
 
@@ -156,7 +155,7 @@ Validate Authors for WSJ Article page without byline
     ELSE IF  "${Env}" == "dev"
         DefinedKeywords.WSJ Sign In Process
          END
-         Set Selenium Implicit Wait  50s
+         Set Selenium Speed  50 seconds
     WSJArticlePage.Validate author without byline
 
 #US-T183

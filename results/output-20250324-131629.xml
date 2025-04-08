@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.5 on win32)" generated="20250324 13:16:30.712" rpa="false" schemaversion="4">
+<suite id="s1" name="Userservices-Qa-Automation" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation">
+<suite id="s1-s1" name="Panda-Qa" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\panda-qa">
+<suite id="s1-s1-s1" name="Tests" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\panda-qa\Tests">
+<suite id="s1-s1-s1-s1" name="FollowWidget" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\panda-qa\Tests\FollowWidget">
+<suite id="s1-s1-s1-s1-s1" name="Smoke" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\panda-qa\Tests\FollowWidget\Smoke">
+<suite id="s1-s1-s1-s1-s1-s1" name="Barrons Smoke" source="D:\Users\sasikumarj\PycharmProjects\userservices-qa-automation\panda-qa\Tests\FollowWidget\Smoke\Barrons_Smoke.robot">
+<test id="s1-s1-s1-s1-s1-s1-t1" name="Validate the stock pick follow button from articles page" line="63">
+<kw name="Start Barrons Article" library="CommonFunctionality" type="SETUP">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20250324 13:16:31.289" endtime="20250324 13:16:31.289"/>
+</kw>
+<kw name="Set Browser Options" library="CommonFunctionality">
+<var>${options}</var>
+<if>
+<branch type="IF" condition="&quot;${Browser}&quot; == &quot;firefox&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${options}</var>
+<arg>selenium.webdriver.FirefoxOptions()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20250324 13:16:31.290" endtime="20250324 13:16:31.290"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--CreateProfile</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20250324 13:16:31.290" endtime="20250324 13:16:31.290"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--start-maximized</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20250324 13:16:31.290" endtime="20250324 13:16:31.290"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20250324 13:16:31.290" endtime="20250324 13:16:31.290"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20250324 13:16:31.290" endtime="20250324 13:16:31.290"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20250324 13:16:31.290" endtime="20250324 13:16:31.290"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--headless</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20250324 13:16:31.290" endtime="20250324 13:16:31.290"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.debugger.force-local</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20250324 13:16:31.290" endtime="20250324 13:16:31.291"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.debugger.remote-enabled</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20250324 13:16:31.291" endtime="20250324 13:16:31.291"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.chrome.enabled</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20250324 13:16:31.291" endtime="20250324 13:16:31.291"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--devtools.debugger.prompt-connection</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20250324 13:16:31.291" endtime="20250324 13:16:31.291"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--browser.dom.window.dump.enabled</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20250324 13:16:31.291" endtime="20250324 13:16:31.291"/>
+</kw>
+<return>
+<value>${options}</value>
+<status status="NOT RUN" starttime="20250324 13:16:31.291" endtime="20250324 13:16:31.291"/>
+</return>
+<status status="NOT RUN" starttime="20250324 13:16:31.290" endtime="20250324 13:16:31.291"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Browser}&quot; == &quot;chrome&quot;">
+<kw name="Evaluate" library="BuiltIn">
+<var>${options}</var>
+<arg>selenium.webdriver.ChromeOptions()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20250324 13:16:31.291" endtime="20250324 13:16:31.291"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--start-maximized</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20250324 13:16:31.291" endtime="20250324 13:16:31.291"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20250324 13:16:31.291" endtime="20250324 13:16:31.291"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20250324 13:16:31.291" endtime="20250324 13:16:31.291"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--headless</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20250324 13:16:31.291" endtime="20250324 13:16:31.291"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20250324 13:16:31.292" endtime="20250324 13:16:31.292"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--ignore-certificate-errors</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20250324 13:16:31.292" endtime="20250324 13:16:31.292"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-extensions</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20250324 13:16:31.292" endtime="20250324 13:16:31.292"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-user-gesture-required</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20250324 13:16:31.292" endtime="20250324 13:16:31.292"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-first-run</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20250324 13:16:31.292" endtime="20250324 13:16:31.292"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--use-fake-ui-for-media-stream</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20250324 13:16:31.292" endtime="20250324 13:16:31.293"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--use-fake-device-for-media-stream</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20250324 13:16:31.293" endtime="20250324 13:16:31.293"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-sync</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="NOT RUN" starttime="20250324 13:16:31.293" endtime="20250324 13:16:31.293"/>
+</kw>
+<return>
+<value>${options}</value>
+<status status="NOT RUN" starttime="20250324 13:16:31.293" endtime="20250324 13:16:31.293"/>
+</return>
+<status status="NOT RUN" starttime="20250324 13:16:31.291" endtime="20250324 13:16:31.293"/>
+</branch>
+<status status="PASS" starttime="20250324 13:16:31.290" endtime="20250324 13:16:31.293"/>
+</if>
+<msg timestamp="20250324 13:16:31.293" level="INFO">${options} = None</msg>
+<status status="PASS" starttime="20250324 13:16:31.289" endtime="20250324 13:16:31.293"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${Env}&quot; == &quot;prod&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.barrons.com</arg>
+<arg>${Browser}</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" starttime="20250324 13:16:31.293" endtime="20250324 13:16:31.293"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.barrons.com/articles/wendys-wen-stock-earnings-51652268634</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20250324 13:16:31.293" endtime="20250324 13:16:31.293"/>
+</kw>
+<status status="NOT RUN" starttime="20250324 13:16:31.293" endtime="20250324 13:16:31.293"/>
+</branch>
+<branch type="ELSE IF" condition="&quot;${Env}&quot; == &quot;dev&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.barrons.com</arg>
+<arg>${Browser}</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20250324 13:16:31.294" level="INFO">Opening browser 'ff' to base url 'https://www.barrons.com'.</msg>
+<status status="PASS" starttime="20250324 13:16:31.294" endtime="20250324 13:16:42.223"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20250324 13:16:42.223" level="INFO">Opening url 'https://www.s.dev.barrons.com/articles/buy-under-armour-stock-pick-51650672000'</msg>
+<status status="PASS" starttime="20250324 13:16:42.223" endtime="20250324 13:16:44.539"/>
+</kw>
+<status status="PASS" starttime="20250324 13:16:31.293" endtime="20250324 13:16:44.539"/>
+</branch>
+<status status="PASS" starttime="20250324 13:16:31.293" endtime="20250324 13:16:44.539"/>
+</if>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>dom:${JSFollowButtonBarronsPath}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<msg timestamp="20250324 13:16:45.272" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-600.png"&gt;&lt;img src="selenium-screenshot-600.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20250324 13:16:45.273" level="FAIL">JavascriptException: Message: TypeError: document.querySelector(...) is null
+Stacktrace:
+@https://newscorp.okta.com/app/newscorp_barronsdev_1/exk119b753qKfM5OX0x8/sso/saml?SAMLRequest=nVPLjtpAEPwVa%2B74BeYxAlYEFAVlN4uARFEuqD3TDhb2jHd6jJ2%2FjzAYcWA5cO1uVVVXV49f6jxzjmgo1WrCAtdnL9MxQZ4VfFbavVrjR4lknTrPFPGmMWGlUVwDpcQV5EjcCr6Zvb3y0PV5YbTVQmfMWS4mbNcH0Q36Q%2BxiNwwiOYqH0BvGshf3%2FcRHP4G%2BLyM%2FAeb8akWErs%2BcJVGJS0UWlJ2w0A%2Bjjt%2FthL2tP%2BC9Pu%2BF7mAU%2FWHO6kL3JVUyVX8fa4vPQ8S%2Fbberzup9s2XOAsmmCmxDvbe2IO55CisS2hSuPlhwhc49KIprdReDMVqRxOMu8LA%2BBMEoHkTdj%2B%2FJW%2FT%2B26%2BHHpH2TmYxZ0aE5oQ%2B14rKHM0GzTEV%2BHP9eubjnldVlSvx6F5wG8JWyr2eSHaUWtxBafcNjScgy2IQB3Y%2BHm%2FsMzdXe2wMtCLZ9EbSdfl7K469G6I2Mj8gx%2BVipbNU%2FHsmMrMs09XcIFicMGtKZM5XbXKwnwMEbtBUUtlJmlGOOaTZTEqDRMxrpV2CjLKJ9Vwri%2FVTsZ7rvACT0ikvWIOwree3wPMMiNaYPHOBh2OCixM0El8BUaWNPH0ACotya0BRoY29nOaenum594kd1%2B7t60%2F%2FAw%3D%3D&amp;RelayState=https%3A%2F%2Fwww.dev.barrons.com%2Farticles%2Fbuy-under-armour-stock-pick-51650672000:2:23
+@https://newscorp.okta.com/app/newscorp_barronsdev_1/exk119b753qKfM5OX0x8/sso/saml?SAMLRequest=nVPLjtpAEPwVa%2B74BeYxAlYEFAVlN4uARFEuqD3TDhb2jHd6jJ2%2FjzAYcWA5cO1uVVVXV49f6jxzjmgo1WrCAtdnL9MxQZ4VfFbavVrjR4lknTrPFPGmMWGlUVwDpcQV5EjcCr6Zvb3y0PV5YbTVQmfMWS4mbNcH0Q36Q%2BxiNwwiOYqH0BvGshf3%2FcRHP4G%2BLyM%2FAeb8akWErs%2BcJVGJS0UWlJ2w0A%2Bjjt%2FthL2tP%2BC9Pu%2BF7mAU%2FWHO6kL3JVUyVX8fa4vPQ8S%2Fbberzup9s2XOAsmmCmxDvbe2IO55CisS2hSuPlhwhc49KIprdReDMVqRxOMu8LA%2BBMEoHkTdj%2B%2FJW%2FT%2B26%2BHHpH2TmYxZ0aE5oQ%2B14rKHM0GzTEV%2BHP9eubjnldVlSvx6F5wG8JWyr2eSHaUWtxBafcNjScgy2IQB3Y%2BHm%2FsMzdXe2wMtCLZ9EbSdfl7K469G6I2Mj8gx%2BVipbNU%2FHsmMrMs09XcIFicMGtKZM5XbXKwnwMEbtBUUtlJmlGOOaTZTEqDRMxrpV2CjLKJ9Vwri%2FVTsZ7rvACT0ikvWIOwree3wPMMiNaYPHOBh2OCixM0El8BUaWNPH0ACotya0BRoY29nOaenum594kd1%2B7t60%2F%2FAw%3D%3D&amp;RelayState=https%3A%2F%2Fwww.dev.barrons.com%2Farticles%2Fbuy-under-armour-stock-pick-51650672000:3:8
+</msg>
+<status status="FAIL" starttime="20250324 13:16:44.539" endtime="20250324 13:16:45.279"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20250324 13:16:45.279" endtime="20250324 13:16:45.279"/>
+</kw>
+<status status="FAIL" starttime="20250324 13:16:31.289" endtime="20250324 13:16:45.279"/>
+</kw>
+<kw name="Finish Testcase" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20250324 13:16:45.280" endtime="20250324 13:16:49.056"/>
+</kw>
+<status status="PASS" starttime="20250324 13:16:45.280" endtime="20250324 13:16:49.056"/>
+</kw>
+<doc>This test case validates the stock pick follow button from articles page</doc>
+<tag>Barrons</tag>
+<tag>CustomTopic</tag>
+<tag>Follow</tag>
+<tag>Smoke</tag>
+<tag>TagBarrons</tag>
+<tag>US-T51</tag>
+<status status="FAIL" starttime="20250324 13:16:31.288" endtime="20250324 13:16:49.058">Setup failed:
+JavascriptException: Message: TypeError: document.querySelector(...) is null
+Stacktrace:
+@https://newscorp.okta.com/app/newscorp_barronsdev_1/exk119b753qKfM5OX0x8/sso/saml?SAMLRequest=nVPLjtpAEPwVa%2B74BeYxAlYEFAVlN4uARFEuqD3TDhb2jHd6jJ2%2FjzAYcWA5cO1uVVVXV49f6jxzjmgo1WrCAtdnL9MxQZ4VfFbavVrjR4lknTrPFPGmMWGlUVwDpcQV5EjcCr6Zvb3y0PV5YbTVQmfMWS4mbNcH0Q36Q%2BxiNwwiOYqH0BvGshf3%2FcRHP4G%2BLyM%2FAeb8akWErs%2BcJVGJS0UWlJ2w0A%2Bjjt%2FthL2tP%2BC9Pu%2BF7mAU%2FWHO6kL3JVUyVX8fa4vPQ8S%2Fbberzup9s2XOAsmmCmxDvbe2IO55CisS2hSuPlhwhc49KIprdReDMVqRxOMu8LA%2BBMEoHkTdj%2B%2FJW%2FT%2B26%2BHHpH2TmYxZ0aE5oQ%2B14rKHM0GzTEV%2BHP9eubjnldVlSvx6F5wG8JWyr2eSHaUWtxBafcNjScgy2IQB3Y%2BHm%2FsMzdXe2wMtCLZ9EbSdfl7K469G6I2Mj8gx%2BVipbNU%2FHsmMrMs09XcIFicMGtKZM5XbXKwnwMEbtBUUtlJmlGOOaTZTEqDRMxrpV2CjLKJ9Vwri%2FVTsZ7rvACT0ikvWIOwree3wPMMiNaYPHOBh2OCixM0El8BUaWNPH0ACotya0BRoY29nOaenum594kd1%2B7t60%2F%2FAw%3D%3D&amp;RelayState=https%3A%2F%2Fwww.dev.barrons.com%2Farticles%2Fbuy-under-armour-stock-pick-51650672000:2:23
+@https://newscorp.okta.com/app/newscorp_barronsdev_1/exk119b753qKfM5OX0x8/sso/saml?SAMLRequest=nVPLjtpAEPwVa%2B74BeYxAlYEFAVlN4uARFEuqD3TDhb2jHd6jJ2%2FjzAYcWA5cO1uVVVXV49f6jxzjmgo1WrCAtdnL9MxQZ4VfFbavVrjR4lknTrPFPGmMWGlUVwDpcQV5EjcCr6Zvb3y0PV5YbTVQmfMWS4mbNcH0Q36Q%2BxiNwwiOYqH0BvGshf3%2FcRHP4G%2BLyM%2FAeb8akWErs%2BcJVGJS0UWlJ2w0A%2Bjjt%2FthL2tP%2BC9Pu%2BF7mAU%2FWHO6kL3JVUyVX8fa4vPQ8S%2Fbberzup9s2XOAsmmCmxDvbe2IO55CisS2hSuPlhwhc49KIprdReDMVqRxOMu8LA%2BBMEoHkTdj%2B%2FJW%2FT%2B26%2BHHpH2TmYxZ0aE5oQ%2B14rKHM0GzTEV%2BHP9eubjnldVlSvx6F5wG8JWyr2eSHaUWtxBafcNjScgy2IQB3Y%2BHm%2FsMzdXe2wMtCLZ9EbSdfl7K469G6I2Mj8gx%2BVipbNU%2FHsmMrMs09XcIFicMGtKZM5XbXKwnwMEbtBUUtlJmlGOOaTZTEqDRMxrpV2CjLKJ9Vwri%2FVTsZ7rvACT0ikvWIOwree3wPMMiNaYPHOBh2OCixM0El8BUaWNPH0ACotya0BRoY29nOaenum594kd1%2B7t60%2F%2FAw%3D%3D&amp;RelayState=https%3A%2F%2Fwww.dev.barrons.com%2Farticles%2Fbuy-under-armour-stock-pick-51650672000:3:8
+</status>
+</test>
+<doc>Barrons Smoke Tests</doc>
+<status status="FAIL" starttime="20250324 13:16:30.775" endtime="20250324 13:16:49.061"/>
+</suite>
+<status status="FAIL" starttime="20250324 13:16:30.770" endtime="20250324 13:16:49.067"/>
+</suite>
+<status status="FAIL" starttime="20250324 13:16:30.767" endtime="20250324 13:16:49.069"/>
+</suite>
+<status status="FAIL" starttime="20250324 13:16:30.764" endtime="20250324 13:16:49.071"/>
+</suite>
+<status status="FAIL" starttime="20250324 13:16:30.761" endtime="20250324 13:16:49.072"/>
+</suite>
+<status status="FAIL" starttime="20250324 13:16:30.717" endtime="20250324 13:16:49.074"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Barrons</stat>
+<stat pass="0" fail="1" skip="0">CustomTopic</stat>
+<stat pass="0" fail="1" skip="0">Follow</stat>
+<stat pass="0" fail="1" skip="0">Smoke</stat>
+<stat pass="0" fail="1" skip="0">TagBarrons</stat>
+<stat pass="0" fail="1" skip="0">US-T51</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Userservices-Qa-Automation">Userservices-Qa-Automation</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Panda-Qa">Userservices-Qa-Automation.Panda-Qa</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Tests">Userservices-Qa-Automation.Panda-Qa.Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1" name="FollowWidget">Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1-s1" name="Smoke">Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Smoke</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1-s1-s1" name="Barrons Smoke">Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Smoke.Barrons Smoke</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

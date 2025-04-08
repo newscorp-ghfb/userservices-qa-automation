@@ -67,7 +67,7 @@ Validate the Barrons Preference Center page watchlist logout
 #US-T81
 Validate the Barrons Preference Center page
     [Documentation]  This test case validates the barrons preference center page
-    [Tags]  Regression  PreferenceCenter  US-T80
+    [Tags]  Regression  PreferenceCenter  JenkinsTest
 
     Set Selenium Speed  5 seconds
     BarronsPreferenceCenterPage.Add Author By Hotlink
@@ -222,7 +222,7 @@ Verify if a user is able to navigate to Barrons Stock Screener and subscribe in 
     CommonFunctionality.Start Barrons Stock Screener Page for Featured Preset Screener
     Set Selenium Speed  0.2 seconds
     DefinedKeywords.Barrons Stock Screener Sign in Process
-    Set Selenium Implicit Wait  35 seconds
+    Set Selenium Speed  35 seconds
     BarronsStockScreenerPage.Barron's Stock Test02 Screen Button
     Set Selenium Speed  15 seconds
     Execute javascript  window.scrollTo(0,500)
@@ -246,7 +246,7 @@ Verify if a user is able to navigate to Barrons Stock Screener and subscribe in 
 #US-T125
 #US-T129
 #US-T130
-Validate the Watchlist widget from Market Data page
+Validate the Watchlist widget from Market Data pages
     [Documentation]  This test case validates the watchlist widget from market data page
     [Tags]  Regression  Watchlist  MarketdataPage   US-T125
 
@@ -278,7 +278,7 @@ Validate the Watchlist widget from Market Data page
 #US-T466
 Validate the Watchlist widget from Market Data page
     [Documentation]  This test case validates the watchlist widget from market data page
-    [Tags]  Regression  Watchlist  MarketdataPage   US-T125
+    [Tags]  Regression  Watchlist  MarketdataPage   US-T466
 
     CommonFunctionality.Start Barrons for Market Data page
     BarronsMarketDataPage.Validate Watchlist for non-logged user
@@ -295,7 +295,7 @@ Validate the Watchlist widget from Market Data page
 #US-T136
 Validate the Barrons digest notification
     [Documentation]  This test case validates the Barrons digest notification
-    [Tags]  Regression  Notifications             US-T136
+    [Tags]  Regression  Notifications   US-T136
     BarronsMailboxPage.Navigate Mailbox page
     BarronsMailboxPage.Login
     BarronsMailboxPage.Select Inbox
@@ -332,10 +332,10 @@ Validate the Barrons real-time stock picks notification
     BarronsMailboxPage.Search Your Barrons real-time stock picks notification
     BarronsMailboxPage.Validate Barrons real-time stock picks notification
 
-#US T357
+#US-T357
 Validate Postback on Preference Center
     [Documentation]  This test case validates the Barrons Postback on Preference Center
-    [Tags]  Regression  Postback  Follow1
+    [Tags]  Regression  Postback  US-T357
     BarronsPreferenceCenterPage.Add Breaking News By Hotlink
     DefinedKeywords.Sign In Process
     BarronsPreferenceCenterPage.Validate Followed Breaking News

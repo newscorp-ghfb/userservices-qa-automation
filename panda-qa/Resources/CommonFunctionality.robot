@@ -16,7 +16,7 @@ ${ExpectedCookieValue2}=   5Nnx9DUR7NQg8XPwvztud7o0OivfiKth
 
 ${Browser}=  ff  #headless, ff, chrome, edge, safari
 
-${Env}=  dev   #dev, prod, stg
+${Env}=  prod  #dev, prod, stg
 
 ${Email_prod}=  barronsadvisorcs@gmail.com
 
@@ -269,8 +269,8 @@ Start WSJ Article without byline
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.wsj.com  ${Browser}  options=${options}
-        Go To  https://www.wsj.com/articles/let-desantis-fight-trump-before-putin-bakhmut-offensive-cease-fire-settlement-kremlin-weapons-b127514a?cx_testId=3&cx_testVariant=cx_171&cx_artPos=1&mod=WTRN#cxrecs_s
+        #Open Browser  https://www.wsj.com  ${Browser}  options=${options}
+        Go To  https://www.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001
     ELSE IF  "${Env}" == "dev"
         Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}
 
@@ -426,15 +426,22 @@ Start Barrons Stock Picks for Stock Picks breadcrumb
 Start Barrons Stock Picks
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
-       Open Browser  https://www.s.dev.barrons.com  ${Browser}  options=${options}
-        Go To   https://www.s.dev.barrons.com/market-data/stocks/stock-picks?mod=BOL_TOPNAV
+    IF  "${Env}" == "prod"
+        Open Browser  https://www.barrons.com  ${Browser}  options=${options}
+        Go To  https://www.barrons.com/market-data/stocks/stock-picks?mod=BOL_TOPNAV
+    ELSE IF  "${Env}" == "dev"
+        Open Browser  https://www.s.dev.barrons.com  ${Browser}  options=${options}
+        Go To  https://www.s.dev.barrons.com/market-data/stocks/stock-picks?mod=BOL_TOPNAV
+    END
     Maximize Browser Window
+
+
 
 Start Barrons Stock Screener Page for Featured Preset Screener
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.barrons.com  ${Browser}  options=${options}
+        #Open Browser  https://www.barrons.com  ${Browser}  options=${options}
         Go To  https://www.barrons.com/market-data/barrons-stock-screener?mod=stock_screener_internal
     ELSE IF  "${Env}" == "dev"
         Open Browser  https://www.s.dev.barrons.com  ${Browser}  options=${options}
@@ -445,10 +452,10 @@ Start Barrons Stock Picks for Stock Picks in article
     Set Selenium Speed  0.5 seconds
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
-        Open Browser  https://www.barrons.com  ${Browser}  options=${options}
+        #Open Browser  https://www.barrons.com  ${Browser}  options=${options}
         Go To  https://www.barrons.com/articles/buy-rockwell-automation-stock-pick-price-cc120733?mod=stock_picks_lp
     ELSE IF  "${Env}" == "dev"
-        Open Browser  https://www.s.dev.barrons.com  ${Browser}  options=${options}
+       # Open Browser  https://www.s.dev.barrons.com  ${Browser}  options=${options}
         Go To  https://www.s.dev.barrons.com/articles/buy-rockwell-automation-stock-pick-price-cc120733?mod=stock_picks_lp
     END
     Maximize Browser Window

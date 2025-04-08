@@ -134,7 +134,7 @@ Validate Following Button 2
     Element Text Should Be  dom:${JSFollowButtonBarrons2Path}  Following  timeout=15
 
 Validate author on article page
-   Page Should Contain  Teresa Rivas
+   Page Should Contain  Angela Palumbo
 
 Validate Custom Topic Stock Pick Follow Button
     Set Selenium Implicit Wait  20s

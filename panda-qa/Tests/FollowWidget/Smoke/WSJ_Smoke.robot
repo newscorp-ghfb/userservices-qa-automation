@@ -20,15 +20,15 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T22
 Validate the follow button from articles page
     [Documentation]  This test case validates the follow button from articles page
-    [Tags]  Smoke  Follow  Article  21
+    [Tags]  Smoke  Follow  Article  US-T23
     #IF  "${Env}" == "prod"
         #DefinedKeywords.WSJ Sign In Process
     #ELSE IF  "${Env}" == "dev"
        DefinedKeywords.WSJ Sign In Process
         #DefinedKeywords.Sign In Process
     #END
-
     WSJArticlePage.Validate Follow Button
+    CommonFunctionality.Start WSJ Article
     DefinedKeywords.WSJ Sign In Process
     WSJArticlePage.Click Follow Button
     #WSJArticlePage.Validate Sign In Modal
@@ -43,7 +43,6 @@ Validate the follow button from articles page
     #END
 
     #Set Selenium Speed  0.2 seconds
-    DefinedKeywords.WSJ Sign In Process
       WSJArticlePage.Click Follow Button
     WSJArticlePage.Scroll Down
     WSJArticlePage.Validate Following Button
@@ -62,6 +61,7 @@ Validate the follow button from articles page
     #WSJArticlePage.Click Follow Button
     #WSJArticlePage.Click Preference Center link
     #WSJPreferenceCenterPage.Validate Preference Center page
+
 #US-T159
 #US-T47
 #US-T48
