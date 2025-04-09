@@ -1,11 +1,5 @@
-datasources:58a48580aa16db7b74a71d3d5dcdeba46e612e2d
-commandlineoptions:34112abee2e952388e0b6bb2a1fdbe7f8b34d275
+datasources:a94585876197cd11e9913c1975e823a54690f83e
+commandlineoptions:986d9c7c9da868696935d92259d57f1482c6cd52
 suitesfrom:no-suites-from-option
-file:da8fa90282e791448c04e52d5f4178acab6c3238
+file:da61845806e95770c75256d2174389f519f797d4
 --suite Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression.WSJ Regression
---suite Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression.API Automation
---suite Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression.Barrons Regression
---suite Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression.FN Regression
---suite Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression.MansionGlobal Regression
---suite Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression.MarketWatch Regression
---suite Userservices-Qa-Automation.Panda-Qa.Tests.FollowWidget.Regression.PEN Regression

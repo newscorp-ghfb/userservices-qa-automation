@@ -9,7 +9,7 @@ ${JSFollowButtonWSJPath}=  document.querySelector("#author-card > div > div.styl
 *** Keywords ***
 Validate Authors Page
     IF  "${Env}" == "prod"
-        Page Should Contain  John West
+        Page Should Contain  Dave Michaels
     ELSE IF  "${Env}" == "dev"
         Page Should Contain  Dave Michaels
     END

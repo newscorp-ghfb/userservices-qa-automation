@@ -27,7 +27,7 @@ Validate the multiple authors follow button from articles page
     [Tags]  Regression  Author  Follow  US-T75
     #Set Selenium Implicit Wait  10s
     #DefinedKeywords.WSJ Sign In Process
-    #Set Selenium Speed  0.2 seconds
+    Set Selenium Speed  5 seconds
     #Set Selenium Implicit Wait  10s
     Execute javascript  window.scrollTo(0,500)
     WSJArticlePage.Validate Follow Button

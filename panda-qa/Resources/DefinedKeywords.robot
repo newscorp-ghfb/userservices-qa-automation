@@ -12,7 +12,7 @@ ${Barrons} =  document.querySelector("body > section > nav > nav-hat").shadowRoo
 *** Keywords ***
 
 Set Implicit Wait
-    Set Selenium Implicit Wait  50s
+    Set Selenium Implicit Wait  20s
 
 Sign In Process
     #IF  "${Env}" == "prod"

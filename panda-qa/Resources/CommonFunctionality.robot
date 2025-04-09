@@ -134,6 +134,7 @@ Start WSJ Article
     ${options} =  Set Browser Options
     IF  "${Env}" == "prod"
         Open Browser  https://www.wsj.com  ${Browser}  options=${options}
+        Set Selenium Timeout  10 seconds
         Go To  https://www.wsj.com/articles/twitter-elon-musk-to-argue-over-trial-timetable-to-force-44-billion-takeover-11658223001?cx_testId=3&cx_testVariant=cx_5&cx_artPos=6&mod=WTRN#cxrecs_s
     ELSE IF  "${Env}" == "dev"
         Open Browser  https://www.dev.wsj.com  ${Browser}  options=${options}

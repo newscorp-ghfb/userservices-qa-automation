@@ -80,7 +80,7 @@ Validate the stock pick follow button from articles page
 #US-T254
 Validate the Barrons Preference Center page
     [Documentation]  This test case validates the barrons preference center page
-    [Tags]  Smoke  PreferenceCenter   US-T79
+    [Tags]  Smoke  PreferenceCenter   JenkinsTest  #US-T79
     Set Selenium Speed  0.2 seconds
     BarronsPreferenceCenterPage.Navigate Preference Center page
     DefinedKeywords.Sign In Process
