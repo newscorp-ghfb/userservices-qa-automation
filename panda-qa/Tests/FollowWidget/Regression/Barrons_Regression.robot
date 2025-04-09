@@ -67,7 +67,7 @@ Validate the Barrons Preference Center page watchlist logout
 #US-T81
 Validate the Barrons Preference Center page
     [Documentation]  This test case validates the barrons preference center page
-    [Tags]  Regression  PreferenceCenter  JenkinsTest
+    [Tags]  Regression  PreferenceCenter  80
 
     Set Selenium Speed  5 seconds
     BarronsPreferenceCenterPage.Add Author By Hotlink
@@ -295,7 +295,7 @@ Validate the Watchlist widget from Market Data page
 #US-T136
 Validate the Barrons digest notification
     [Documentation]  This test case validates the Barrons digest notification
-    [Tags]  Regression  Notifications   JenkinsTest  #US-T136
+    [Tags]  Regression  Notifications     #US-T136
     BarronsMailboxPage.Navigate Mailbox page
     BarronsMailboxPage.Login
     BarronsMailboxPage.Select Inbox
@@ -315,7 +315,7 @@ Validate the Barrons real-time author notification
 #US-T137
 Validate the Barrons real-time company notification
     [Documentation]  This test case validates the Barrons real-time company notification
-    [Tags]  Regression  Notifications  Company  US-T137
+    [Tags]  Regression  Notifications  Company  JenkinsTest  #US-T137
     BarronsMailboxPage.Navigate Mailbox page
     BarronsMailboxPage.Login
     BarronsMailboxPage.Select Inbox
