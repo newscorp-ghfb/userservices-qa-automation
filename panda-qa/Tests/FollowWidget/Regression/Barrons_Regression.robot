@@ -315,7 +315,7 @@ Validate the Barrons real-time author notification
 #US-T137
 Validate the Barrons real-time company notification
     [Documentation]  This test case validates the Barrons real-time company notification
-    [Tags]  Regression  Notifications  Company    #US-T137
+    [Tags]  Regression  Notifications  Company   JenkinsTest  #US-T137
     BarronsMailboxPage.Navigate Mailbox page
     BarronsMailboxPage.Login
     BarronsMailboxPage.Select Inbox
