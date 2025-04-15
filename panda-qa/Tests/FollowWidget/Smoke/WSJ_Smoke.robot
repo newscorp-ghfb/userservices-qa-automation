@@ -70,7 +70,7 @@ Validate the follow button from articles page
 
 Validate the follow button from authors page
     [Documentation]  This test case validates the follow button from authors page
-    [Tags]  Smoke  Follow  Authors  JenkinsTest  #US-T47
+    [Tags]  Smoke  Follow  Authors    #US-T47
     Set Selenium Speed  10 seconds
     WSJArticlePage.Validate author hyperlink
     WSJArticlePage.Click author hyperlink

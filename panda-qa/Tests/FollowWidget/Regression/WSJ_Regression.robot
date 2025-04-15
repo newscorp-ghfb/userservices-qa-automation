@@ -24,7 +24,7 @@ ${URL}=  https://www.wsj.com/preference-center/alerts?alert=section&id=tech%2Fai
 #US-T75
 Validate the multiple authors follow button from articles page
     [Documentation]  This test case validates the multiple authors follow button from articles page
-    [Tags]  Regression  Author  Follow  US-T75
+    [Tags]  Regression  Author  Follow  JenkinsTest  #US-T75
     #Set Selenium Implicit Wait  10s
     #DefinedKeywords.WSJ Sign In Process
     Set Selenium Speed  5 seconds
