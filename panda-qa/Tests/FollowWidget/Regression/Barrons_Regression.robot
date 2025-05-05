@@ -217,7 +217,7 @@ Verify if a user is able to login into Barrons Stock Screener and access the Fea
 #US-T385
 Verify if a user is able to navigate to Barrons Stock Screener and subscribe in order to edit the list of featured preset screens.
     [Documentation]  This test case validates that a user is able to subscribe and login into Barrons Stock Screener in order to edit the list of featured preset screens.
-    [Tags]  Barrons StockScreener Page   JenkinsTest  #US-T385
+    [Tags]  Barrons StockScreener Page   US-T385
 
     CommonFunctionality.Start Barrons Stock Screener Page for Featured Preset Screener
     Set Selenium Speed  0.2 seconds
