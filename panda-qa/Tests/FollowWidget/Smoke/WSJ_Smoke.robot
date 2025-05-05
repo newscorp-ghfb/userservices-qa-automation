@@ -20,7 +20,7 @@ Test Teardown  CommonFunctionality.Finish Testcase
 #US-T22
 Validate the follow button from articles page
     [Documentation]  This test case validates the follow button from articles page
-    [Tags]  Smoke  Follow  Article  US-T23
+    [Tags]  Smoke  Follow  Article  US-T21
     #IF  "${Env}" == "prod"
         #DefinedKeywords.WSJ Sign In Process
     #ELSE IF  "${Env}" == "dev"

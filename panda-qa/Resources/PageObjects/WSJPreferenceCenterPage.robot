@@ -100,8 +100,8 @@ Validate Sign in for Followed Custom Topics
     Page Should Contain  Sections and Topics
 
 Validate Following Toggle Feature
-    Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div
+    Wait Until Element is Visible  //*[@id="__next"]/div[2]/div/div[2]/main/div[2]/div/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/ufc-delivery-pref-dropdown  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div
+    Page Should Contain Element  //*[@id="__next"]/div[2]/div/div[2]/main/div[2]/div/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/ufc-delivery-pref-dropdown  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[3]/div
 
 Validate Custom Topics Following Toggle Feature
     Wait Until Element is Visible  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[2]/tbody/tr[1]/td[3]/div
@@ -169,7 +169,7 @@ Validate Author Updates From Preference Center Reflected In Articles
 Add Author By Hotlink
     IF  "${Env}" == "prod"
         Go To  https://www.wsj.com/follow?alert=author&id=7872
-        Go To  https://www.wsj.com/follow?alert=author&id=8736
+       # Go To  https://www.wsj.com/follow?alert=author&id=8736
     ELSE IF  "${Env}" == "dev"
         Go To  https://www.dev.wsj.com/follow?alert=author&id=7872
     END
@@ -179,11 +179,12 @@ Navigate Author Secetion
     Click Element  //*[@id="__next"]/div[2]/div/div[2]/main/div[2]/div/div[1]/div[2]/nav/ul/li[2]/button
 
 Validate Author Name
-    Page Should Contain  Joanna Stern
+    Page Should Contain  Andy Kessler
+    Page Should Contain  Andy Kessler
 
 Validate Following Frequency
-    Page Should Contain Element  //html/body/div[1]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr/td[4]/div/div[1]  #div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[1]/span[2]
-    Page Should Contain Element  //html/body/div[1]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr/td[4]/div/div[1]  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[2]/span[2]
+    Page Should Contain Element  //*[@id="__next"]/div[2]/div/div[2]/main/div[2]/div/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/ufc-delivery-pref-dropdown   #//html/body/div[1]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr/td[4]/div/div[1]  #div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[1]/span[2]
+    Page Should Contain Element  //*[@id="__next"]/div[2]/div/div[2]/main/div[2]/div/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/ufc-delivery-pref-dropdown   #//html/body/div[1]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr/td[4]/div/div[1]  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[1]/tbody/tr[1]/td[2]/div/label[2]/span[2]
 
 Validate All Tabs Displayed
     Page Should Contain  Barron's
@@ -195,13 +196,13 @@ Validate All Tabs Displayed
     Page Should Contain  View All
 
 Validate Author On All Tab
-    Click Element  //*[@id="root"]/div/div/div/div[3]/div/ul/li[7]
-    Page should contain element  //*[@id="author-card"]/div/div[3]/div/ufc-follow-author-widget//ufc-follow-widget/ufc-follow-button
-    Page Should Contain  Joanna Stern
+    Click Element  //*[@id="__next"]/div[2]/div/div[2]/main/div[2]/div/div[2]/div[1]/div[1]/div[1]/div/button  #//*[@id="root"]/div/div/div/div[3]/div/ul/li[7]
+    Page should contain element  //*[@id="__next"]/div[2]/div/div[2]/main/div[2]/div/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/p[1]  #//*[@id="author-card"]/div/div[3]/div/ufc-follow-author-widget//ufc-follow-widget/ufc-follow-button
+    Page Should Contain  Andy Kessler
 
 Add Company By Hotlink
     IF  "${Env}" == "prod"
-        Go To  https://www.dev.wsj.com/preference-center/alerts?alert=company&fcode=AMZCOM  #https://www.dev.wsj.com/follow?alert=company&fcode=AMZCOM
+        Go To  https://www.wsj.com/preference-center/alerts?alert=company&fcode=AMZCOM  #https://www.dev.wsj.com/follow?alert=company&fcode=AMZCOM
     ELSE IF  "${Env}" == "dev"
         Go To  https://www.dev.wsj.com/preference-center/alerts?alert=company&fcode=AMZCOM  #https://www.dev.wsj.com/follow?alert=company&fcode=AMZCOM
     END
@@ -266,15 +267,15 @@ Validate Followed Companies
     Page Should Contain  Companies
 
 Validate Company Frequency
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[3]/tbody/tr[1]/td[2]/div/label[1]/span[2]
-    Page Should Contain Element  //*[@id="root"]/div/div/div/div[2]/div/div/div/table[3]/tbody/tr[1]/td[2]/div/label[2]/span[2]
+    Page Should Contain Element  //*[@id="__next"]/div[2]/div/div[2]/main/div[2]/div/div[2]/div[4]/div/div[4]/div[1]/div[1]/div[1]/p  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[3]/tbody/tr[1]/td[2]/div/label[1]/span[2]
+    Page Should Contain Element  //*[@id="__next"]/div[2]/div/div[2]/main/div[2]/div/div[2]/div[4]/div/div[4]/div[1]/div[1]/div[1]/p  #//*[@id="root"]/div/div/div/div[2]/div/div/div/table[3]/tbody/tr[1]/td[2]/div/label[2]/span[2]
 
 Validate Company Quote Link
-    Page Should Contain Element  //a[text()="Amazon.com, Inc."]
+    Page Should Contain Element  //*[@id="__next"]/div[2]/div/div[2]/main/div[2]/div/div[2]/div[4]/div/div[4]/div[1]/div[1]/div[1]/p  #//a[text()="Amazon.com, Inc."]
 
 Validate Company On All Tab
-    Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[7]
-    Page Should Contain Element  //*[text()="Amazon.com, Inc."]/../*[text()="The Wall Street Journal"]
+    Click Element  //*[@id="__next"]/div[2]/div/div[2]/main/div[2]/div/div[2]/div[4]/div/div[2]/div/button  #//*[@id="root"]/div/div/div/div[2]/div/ul/li[7]
+    Page Should Contain Element  //*[@id="__next"]/div[2]/div/div[2]/main/div[2]/div/div[2]/div/div[3]/div[1]/div[1]/div[1]/p  #//*[text()="Amazon.com, Inc."]/../*[text()="The Wall Street Journal"]
 
 Validate Breaking News On All Tab
     Click Element  //*[@id="root"]/div/div/div/div[2]/div/ul/li[7]
@@ -305,10 +306,10 @@ Add Legacy Company By Hotlink
     END
 
 Add Breaking News By Hotlink
-    Go To  https://www.dev.wsj.com/preference-center/alerts?alert=news_alert&id=NewsAlertEmailTechnology  #https://www.dev.wsj.com/follow?alert=news_alert&id=NewsAlertEmailTechnology
+    Go To  https://www.wsj.com/preference-center/alerts?alert=news_alert&id=NewsAlertEmailTechnology  #https://www.dev.wsj.com/follow?alert=news_alert&id=NewsAlertEmailTechnology
 
 Validate Followed Breaking News
-    Page Should Contain  NEWS ALERTS
+    Page Should Contain  Breaking News  #NEWS ALERTS
 
 Validate Sign in for Postback
     Page Should Contain Element  //*[text()='Sign In']

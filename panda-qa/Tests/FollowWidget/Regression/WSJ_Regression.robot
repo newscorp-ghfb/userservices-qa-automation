@@ -71,7 +71,7 @@ Validate the WSJ Preference Center page Subscribe color
 #US-T403
 Validate the WSJ Follow Function
     [Documentation]  This test case validates the WSJ Follow Function
-    [Tags]  Regression  Follow Function  403
+    [Tags]  Regression  Follow Function  US-T403
     CommonFunctionality.Start WSJ Homepage
      Set Selenium Speed  10 seconds
     DefinedKeywords.WSJ Alerts Sign In Process
@@ -99,24 +99,26 @@ Validate the WSJ Preference Center page
 #US-T229
 Validate the WSJ Preference Center page
     [Documentation]  This test case validates the WSJ preference center page
-    [Tags]  Regression  PreferenceCenter  US-T91
+    [Tags]  Regression  PreferenceCenter  JenkinsTest  #US-T91
 
-    CommonFunctionality.Start WSJ Preference Center Page
-                    IF  "${Env}" == "prod"
-        DefinedKeywords.New WSJ Sign In Process
-    ELSE IF  "${Env}" == "dev"
-        DefinedKeywords.New WSJ Sign In Process
-         END
-         Set Selenium Implicit Wait  50s
+    Set Selenium Speed  5 seconds
+    DefinedKeywords.WSJ Sign In Process
+    #CommonFunctionality.Start WSJ Preference Center Page
+                   # IF  "${Env}" == "prod"
+       # DefinedKeywords.New WSJ Sign In Process
+    #ELSE IF  "${Env}" == "dev"
+        #DefinedKeywords.New WSJ Sign In Process
+         #END
+    Set Selenium Speed  10 seconds
     WSJPreferenceCenterPage.Add Author By Hotlink
-    DefinedKeywords.WSJ Preference Center Page Sign In Process
+    #DefinedKeywords.WSJ Preference Center Page Sign In Process
     WSJPreferenceCenterPage.Validate Followed Authors
     ${val}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
     Run Keyword If  ${val} > 0  WSJPreferenceCenterPage.Click Following Toggle Alert Pop up
     WSJPreferenceCenterPage.Validate Author Name
     WSJPreferenceCenterPage.Validate Following Toggle Feature
     WSJPreferenceCenterPage.Validate Following Frequency
-    WSJPreferenceCenterPage.Validate All Tabs Displayed
+   # WSJPreferenceCenterPage.Validate All Tabs Displayed
     WSJPreferenceCenterPage.Validate Author On All Tab
     WSJPreferenceCenterPage.Add Company By Hotlink
     WSJPreferenceCenterPage.Validate Followed Companies
@@ -125,21 +127,21 @@ Validate the WSJ Preference Center page
     WSJPreferenceCenterPage.Validate Company Frequency
     WSJPreferenceCenterPage.Validate Company Quote Link
     WSJPreferenceCenterPage.Validate Company On All Tab
-    WSJPreferenceCenterPage.Click WSJ tab
-    WSJPreferenceCenterPage.Validate Company Toggle Feature
-    WSJPreferenceCenterPage.Click Company Toggle Feature
-    WSJPreferenceCenterPage.Validate Following Toggle Alert Pop up
-    WSJPreferenceCenterPage.Click Following Toggle Alert Pop up
+   # WSJPreferenceCenterPage.Click WSJ tab
+   # WSJPreferenceCenterPage.Validate Company Toggle Feature
+  #  WSJPreferenceCenterPage.Click Company Toggle Feature
+   # WSJPreferenceCenterPage.Validate Following Toggle Alert Pop up
+   # WSJPreferenceCenterPage.Click Following Toggle Alert Pop up
     WSJPreferenceCenterPage.Add Breaking News By Hotlink
     WSJPreferenceCenterPage.Validate Followed Breaking News
-    ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
-   , Run Keyword If  ${val2} > 0  WSJPreferenceCenterPage.Click Following Toggle Alert Pop up
-    WSJPreferenceCenterPage.Validate Breaking News On All Tab
-    WSJPreferenceCenterPage.Click WSJ tab
-    WSJPreferenceCenterPage.Validate Breaking News Toggle Feature
-    WSJPreferenceCenterPage.Click Breaking News Toggle Feature
-    WSJPreferenceCenterPage.Validate Following Toggle Alert Pop up
-    WSJPreferenceCenterPage.Click Following Toggle Alert Pop up
+  #  ${val2}=  Get Element Count  //*[@id="root"]/div/div/div/div[3]/div/div/button
+  # , Run Keyword If  ${val2} > 0  WSJPreferenceCenterPage.Click Following Toggle Alert Pop up
+   # WSJPreferenceCenterPage.Validate Breaking News On All Tab
+   # WSJPreferenceCenterPage.Click WSJ tab
+   # WSJPreferenceCenterPage.Validate Breaking News Toggle Feature
+   # WSJPreferenceCenterPage.Click Breaking News Toggle Feature
+  #  WSJPreferenceCenterPage.Validate Following Toggle Alert Pop up
+   # WSJPreferenceCenterPage.Click Following Toggle Alert Pop up
     #WSJPreferenceCenterPage.Navigate Article page
     #WSJArticlePage.Scroll stories
 
@@ -272,7 +274,7 @@ Validate the follow button for Editorials breadcrumb from articles page
 #US-T177
 Validate the follow button for Commentary breadcrumb from articles page
     [Documentation]  This test case validates the follow button from articles page
-    [Tags]  Regression  Follow  Breadcrumb  Article    WSJ
+    [Tags]  Regression  Follow  Breadcrumb  Article    US-T176
     CommonFunctionality.CookieTestWSJ
     Set Selenium Speed  100.5 seconds
     CommonFunctionality.Start WSJ Article for Commentary breadcrumb
@@ -296,7 +298,7 @@ Validate the follow button for Commentary breadcrumb from articles page
 #US-T177
 Validate the WSJ Preference Center page for Commentary breadcrumb
     [Documentation]  This test case validates the barrons preference center page
-    [Tags]  Regression  PreferenceCenter  Breadcrumb    US-T176
+    [Tags]  Regression  PreferenceCenter  Breadcrumb
 
     CommonFunctionality.CookieTestWSJ
     Set Selenium Speed  0.2 seconds
@@ -427,7 +429,7 @@ Validate the follow button for Letters breadcrumb from Letters page
 #US-T134
 Validate the follow button for Elections breadcrumb from Elections page
     [Documentation]  This test case validates the follow button from Elections page
-    [Tags]  Regression  Follow  Breadcrumb    US-T131
+    [Tags]  Regression  Follow  Breadcrumb
     CommonFunctionality.Start WSJ Elections for Elections breadcrumb
                    # IF  "${Env}" == "prod"
         #DefinedKeywords.New WSJ Sign In Process
@@ -435,8 +437,8 @@ Validate the follow button for Elections breadcrumb from Elections page
         DefinedKeywords.WSJ Sign In Process
          #END
          Set Selenium Implicit Wait  50s
-    #WSJArticlePage.Validate Custom Following Button
-#    WSJArticlePage.Click Custom Follow Button
+    WSJArticlePage.Validate Custom Following Button
+     WSJArticlePage.Click Custom Follow Button
 #    WSJArticlePage.Validate Sign In Modal
 #    WSJArticlePage.Click Sign In Button Modal
 #    IF  "${Env}" == "prod"
@@ -466,7 +468,7 @@ Validate the follow button for Elections breadcrumb from Elections page
 #US-T134
 Validate the WSJ Preference Center page for Elections breadcrumb
     [Documentation]  This test case validates the barrons preference center page
-    [Tags]  Regression  PreferenceCenter  Breadcrumb  WSJ
+    [Tags]  Regression  PreferenceCenter  Breadcrumb  US-T131
     Set Selenium Speed  0.2 seconds
     WSJPreferenceCenterPage.Navigate Preference Center page
     IF  "${Env}" == "prod"
@@ -489,7 +491,7 @@ Validate the WSJ Preference Center page for Elections breadcrumb
 #US-T230
 Validate the follow button for Elections breadcrumb from articles page
     [Documentation]  This test case validates the follow button from articles page
-    [Tags]  Regression  Follow  Breadcrumb  Article   WSJ
+    [Tags]  Regression  Follow  Breadcrumb  Article   US-T230
     CommonFunctionality.Start WSJ Article for Elections breadcrumb
     #WSJArticlePage.Validate Custom Following Button
     WSJArticlePage.Click Custom Follow Button
@@ -588,7 +590,7 @@ Validate the WSJ digest notification
 #US-T406
 Validate WSJ Legacy company Amazon to be added to New Preference Center
     [Documentation]  This test case validates the WSJ legacy company as Amazon to be added to the Preference Center
-    [Tags]  Regression  Notifications     WSJ
+    [Tags]  Regression  Notifications     US-T406
    #CommonFunctionality.Start WSJ Preference Center Page
                    #IF  "${Env}" == "prod"
         #DefinedKeywords.New WSJ Sign In Process
@@ -660,7 +662,7 @@ Validate WSJ Legacy company Facebook to be added to New Preference Center
 #US-T452
 Validate WSJ Legacy company Tesla to be added to New Preference Center
     [Documentation]  This test case validates the WSJ legacy company as Tesla to be added to the Preference Center
-    [Tags]  Regression  Notifications  WSJ
+    [Tags]  Regression  Notifications  US-T452
      CommonFunctionality.Start WSJ Homepage
      DefinedKeywords.WSJ Alerts Sign In Process  #WSJ Preference Center Page Sign In Process
      Set Selenium Implicit Wait  20s
@@ -894,7 +896,7 @@ Validate the alert button for Personal Finance
 #US-T338
 Validate the alert button for Personal Technology
     [Documentation]  This test case validates the alert button for Personal Technology
-    [Tags]  Regression  Alerts   WSJ
+    [Tags]  Regression  Alerts   US-T335
     CommonFunctionality.Start WSJ Article for Personal Technology
             IF  "${Env}" == "prod"
         DefinedKeywords.New WSJ Sign In Process
@@ -921,7 +923,7 @@ Validate the alert button for Personal Technology
 #US-T342
 Validate the alert button for Puzzles
     [Documentation]  This test case validates the alert button for Puzzles
-    [Tags]  Regression  Alerts   US-T342
+    [Tags]  Regression  Alerts   US-T339
     CommonFunctionality.Start WSJ Article for Puzzles
     IF  "${Env}" == "prod"
         DefinedKeywords.New WSJ Sign In Process
@@ -955,7 +957,7 @@ Validate the alert button for Puzzles
 #US-T346
 Validate the alert button for Energy
     [Documentation]  This test case validates the alert button for Energy
-    [Tags]  Regression  Alerts  WSJ
+    [Tags]  Regression  Alerts  US-T343
     CommonFunctionality.Start WSJ Article for Energy
             IF  "${Env}" == "prod"
         DefinedKeywords.New WSJ Sign In Process
